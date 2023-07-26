@@ -1,3 +1,10 @@
+# [1.0.0-beta.2](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.1...v1.0.0-beta.2) (2023-07-26)
+
+
+### Features
+
+* remove shidoka components ([987d9bd](https://github.com/kyndryl-design-system/foundation/commit/987d9bd1176f0d79ed737df64f0e45df14e575a4))
+
 # 1.0.0-beta.1 (2023-07-26)
 
 
