@@ -3,7 +3,7 @@ import './icon';
 import userIcon from '@carbon/icons/es/user--avatar/24';
 
 export default {
-  title: 'Reusable/Icon',
+  title: 'Components/Icon',
   component: 'kyn-icon',
   argTypes: {
     fill: {

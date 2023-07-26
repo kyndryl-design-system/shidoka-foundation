@@ -1,11 +1,11 @@
 import { withDesign } from 'storybook-addon-designs';
 import { html } from 'lit';
-import '../../reusable/button/button';
-import '../../reusable/icon/icon';
+import './button';
+import '../icon';
 import arrowRightIcon from '@carbon/icons/es/arrow--right/16';
 
 export default {
-  title: 'Reusable/Button (WIP)',
+  title: 'Components/Button (WIP)',
   component: 'kyn-button',
   decorators: [withDesign],
   argTypes: {

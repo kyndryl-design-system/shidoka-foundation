@@ -1,6 +1,6 @@
 # Kyndryl Design System - Foundation
 
-[![kyndryl-web-components](https://github.kyndryl.net/kyndryl-design-system/web-components/actions/workflows/actions.yml/badge.svg)](https://github.kyndryl.net/kyndryl-design-system/web-components/actions/workflows/actions.yml)
+[![kyndryl-foundation](https://github.com/kyndryl-design-system/foundation/actions/workflows/actions.yml/badge.svg)](https://github.com/kyndryl-design-system/foundation/actions/workflows/actions.yml)
 
 # Contributing to this project
 
