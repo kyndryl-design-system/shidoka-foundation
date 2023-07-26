@@ -1,10 +1,10 @@
-# Kyndryl Design System - Web Components
+# Kyndryl Design System - Foundation
 
 [![kyndryl-web-components](https://github.kyndryl.net/kyndryl-design-system/web-components/actions/workflows/actions.yml/badge.svg)](https://github.kyndryl.net/kyndryl-design-system/web-components/actions/workflows/actions.yml)
 
 # Contributing to this project
 
-Read the [Contributing Guide](https://github.kyndryl.net/kyndryl-design-system/web-components/blob/beta/CONTRIBUTING.md) here.
+Read the [Contributing Guide](https://github.kyndryl.net/kyndryl-design-system/foundation/blob/beta/CONTRIBUTING.md) here.
 
 # Using this library in another project
 
@@ -14,10 +14,10 @@ Read the [Contributing Guide](https://github.kyndryl.net/kyndryl-design-system/w
 
 ```bash
 # stable/main
-npm install @kyndryl-design-system/web-components -S
+npm install @kyndryl-design-system/foundation -S
 
 # beta (use until first stable release)
-npm install @kyndryl-design-system/web-components@beta -S
+npm install @kyndryl-design-system/foundation@beta -S
 # when using beta, lock the version, as breaking changes can happen at any time
 ```
 
@@ -26,9 +26,9 @@ npm install @kyndryl-design-system/web-components@beta -S
 The method used (JS Import, SCSS @use, CSS @import, or &lt;style&gt; tag) will vary based on your framework/bundler, but the stylesheet can be found in `node_modules` at:
 
 ```js
-@kyndryl-design-system/web-components/scss/root.scss
+@kyndryl-design-system/foundation/scss/root.scss
 // or
-@kyndryl-design-system/web-components/css/root.css
+@kyndryl-design-system/foundation/css/root.css
 ```
 
 ### Use CSS tokens/variables
@@ -37,14 +37,14 @@ You can make use of tokens/variables included in root.css such as `--kyn-header-
 
 ## Start using components
 
-See [Storybook](https://pages.github.kyndryl.net/kyndryl-design-system/web-components/) for the full components documentation.
+See [Storybook](https://pages.github.kyndryl.net/kyndryl-design-system/foundation/) for the full components documentation.
 
 ### Example: Component with Sub-components
 
 This example imports the Header component AND all of it's subcomponents by targeting the index file.
 
 ```js
-import '@kyndryl-design-system/web-components/components/global/header';
+import '@kyndryl-design-system/foundation/components/global/header';
 ```
 
 ```html
@@ -60,7 +60,7 @@ import '@kyndryl-design-system/web-components/components/global/header';
 This example imports the HeaderLink component by targeting the component file directly.
 
 ```js
-import '@kyndryl-design-system/web-components/components/global/header/headerLink';
+import '@kyndryl-design-system/foundation/components/global/header/headerLink';
 ```
 
 ```html

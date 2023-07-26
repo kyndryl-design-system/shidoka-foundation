@@ -1,4 +1,4 @@
-name: kyndryl-web-components
+name: kyndryl-foundation
 on:
   push:
     branches:

@@ -1,7 +1,7 @@
 {
-  "name": "@kyndryl-design-system/web-components",
+  "name": "@kyndryl-design-system/foundation",
   "version": "0.0.0-semantic-release",
-  "description": "Web Components for Kyndryl Design System",
+  "description": "Foundation for Kyndryl Design System",
   "main": "index.js",
   "type": "module",
   "publishConfig": {
