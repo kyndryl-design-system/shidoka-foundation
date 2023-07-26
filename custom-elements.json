@@ -9,74 +9,10 @@
       "exports": [
         {
           "kind": "js",
-          "name": "Header",
-          "declaration": {
-            "name": "Header",
-            "module": "./components/global/header"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "HeaderNav",
-          "declaration": {
-            "name": "HeaderNav",
-            "module": "./components/global/header"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "HeaderLink",
-          "declaration": {
-            "name": "HeaderLink",
-            "module": "./components/global/header"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "HeaderFlyouts",
-          "declaration": {
-            "name": "HeaderFlyouts",
-            "module": "./components/global/header"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "HeaderFlyout",
-          "declaration": {
-            "name": "HeaderFlyout",
-            "module": "./components/global/header"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "HeaderAvatar",
-          "declaration": {
-            "name": "HeaderAvatar",
-            "module": "./components/global/header"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "SideNav",
-          "declaration": {
-            "name": "SideNav",
-            "module": "./components/global/sideNav"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "SideNavLink",
-          "declaration": {
-            "name": "SideNavLink",
-            "module": "./components/global/sideNav"
-          }
-        },
-        {
-          "kind": "js",
           "name": "Button",
           "declaration": {
             "name": "Button",
-            "module": "./components/reusable/button"
+            "module": "./components/button"
           }
         },
         {
@@ -84,31 +20,7 @@
           "name": "Icon",
           "declaration": {
             "name": "Icon",
-            "module": "./components/reusable/icon"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Footer",
-          "declaration": {
-            "name": "Footer",
-            "module": "./components/global/footer"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "FooterNav",
-          "declaration": {
-            "name": "FooterNav",
-            "module": "./components/global/footer"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "FooterNavLink",
-          "declaration": {
-            "name": "FooterNavLink",
-            "module": "./components/global/footer"
+            "module": "./components/icon"
           }
         }
       ]
