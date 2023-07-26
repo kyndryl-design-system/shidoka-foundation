@@ -29,7 +29,7 @@ export default {
         { src: 'README.md', dest: 'dist' },
         { src: 'src/root.css', dest: 'dist' },
         { src: 'src/assets', dest: 'dist' },
-        { src: 'src/common/scss', dest: 'dist' },
+        { src: 'src/scss', dest: 'dist' },
       ],
     }),
     InlineSvg(),
