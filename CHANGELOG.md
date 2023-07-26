@@ -1,3 +1,10 @@
+# [1.0.0-beta.3](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.2...v1.0.0-beta.3) (2023-07-26)
+
+
+### Bug Fixes
+
+* **typography:** scss relative file paths ([015bb03](https://github.com/kyndryl-design-system/foundation/commit/015bb03d74f82cd7c33775dba9420d1456b075ff))
+
 # [1.0.0-beta.2](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.1...v1.0.0-beta.2) (2023-07-26)
 
 
