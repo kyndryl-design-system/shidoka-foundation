@@ -1,4 +1,3 @@
-import { withDesign } from 'storybook-addon-designs';
 import { html } from 'lit';
 import './button';
 import '../icon';
@@ -7,7 +6,6 @@ import arrowRightIcon from '@carbon/icons/es/arrow--right/16';
 export default {
   title: 'Components/Button (WIP)',
   component: 'kyn-button',
-  decorators: [withDesign],
   argTypes: {
     kind: {
       control: { type: 'select' },
