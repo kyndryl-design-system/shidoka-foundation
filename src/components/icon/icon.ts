@@ -14,7 +14,7 @@ export class Icon extends LitElement {
 
   /** The imported Carbon icon. */
   @property({ type: Object })
-  icon: Object = {};
+  icon: any = {};
 
   /** Icon fill color. */
   @property({ type: String })
