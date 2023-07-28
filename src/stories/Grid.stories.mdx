@@ -102,6 +102,12 @@ margin: 0;
   </div>
 </div>
 
+<div className="kd-grid-container kd-grid-container--no-padding">
+  <div className="kd-grid-col--sm-4 kd-grid-col--md-8 kd-grid-col--lg-12">
+    No left/right padding
+  </div>
+</div>
+
 <div className="kd-grid-container kd-grid-container--align-left">
   <div className="kd-grid-col--sm-4 kd-grid-col--md-8 kd-grid-col--lg-12">
     Left aligned
@@ -121,7 +127,11 @@ margin: 0;
 @use '~@kyndryl-design-system/foundation/scss/mixins/grid.scss';
 
 .your-container-css-selector {
-  @include grid-container($align-left: false, $no-max: false);
+  @include grid-container(
+    $align-left: false,
+    $no-max: false,
+    $no-padding: false
+  );
 }
 
 .your-child-css-selector {

@@ -11,6 +11,10 @@
   &--no-max {
     max-width: none;
   }
+
+  &--no-padding {
+    padding: 0;
+  }
 }
 
 // generate sm classes
