@@ -21,7 +21,7 @@
   @if $no-padding {
     padding: 0;
   } @else {
-    padding: 0 16px;
+    padding: 0 var(--kd-grid-padding);
   }
 
   @media (min-width: breakpoints.$bp-md) {
