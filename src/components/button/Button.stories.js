@@ -2,12 +2,10 @@ import { html } from 'lit';
 import './button';
 import '../icon';
 import arrowRightIcon from '@carbon/icons/es/arrow--right/16';
-import { withDesign } from '@storybook/addon-designs';
 
 export default {
   title: 'Components/Button (WIP)',
   component: 'kyn-button',
-  decorators: [withDesign],
   argTypes: {
     kind: {
       control: { type: 'select' },
