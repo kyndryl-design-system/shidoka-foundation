@@ -8,3 +8,110 @@
     --kyn-spacing-gutter: 32px;
   }
 }
+
+//Spacer Definitions
+$spacer-unit-2: 2px;
+$spacer-unit-4: 4px;
+$spacer-unit-8: 8px;
+$spacer-unit-12: 12px;
+$spacer-unit-24: 24px;
+$spacer-unit-32: 32px;
+$spacer-unit-40: 40px;
+$spacer-unit-48: 48px;
+$spacer-unit-64: 64px;
+$spacer-unit-80: 80px;
+$spacer-unit-96: 96px;
+$spacer-unit-128: 128px;
+$spacer-unit-160: 160px;
+
+@mixin spacer($property, $value) {
+  @each $dir in (top, right, bottom, left) {
+    #{$property}-#{$dir}: $value;
+  }
+ }
+ 
+ @mixin spacer-vertical($property, $value) {
+  @each $dir in (top, bottom) {
+    #{$property}-#{$dir}: $value;
+  }
+ }
+ 
+ @mixin spacer-horizontal($property, $value) {
+  @each $dir in (left, right) {
+    #{$property}-#{$dir}: $value;
+  }
+ }
+
+:root {
+// define CSS variables for the spacing values
+ --spacing-0: 0;
+ --spacing-2: #{$spacer-unit-2};
+ --spacing-4: #{$spacer-unit-4};
+ --spacing-8: #{$spacer-unit-8};
+ --spacing-12: #{$spacer-unit-12};
+ --spacing-24: #{$spacer-unit-24};
+ --spacing-32: #{$spacer-unit-32};
+ --spacing-40: #{$spacer-unit-40};
+ --spacing-48: #{$spacer-unit-48};
+ --spacing-64: #{$spacer-unit-64};
+ --spacing-80: #{$spacer-unit-80};
+ --spacing-96: #{$spacer-unit-96};
+ --spacing-128: #{$spacer-unit-128};
+ --spacing-160: #{$spacer-unit-160};
+ }
+
+ .spacing-0 {
+  @include spacer-vertical(padding, var(--spacing-0));
+ }
+ 
+ .spacing-1 {
+  @include spacer-vertical(padding, var(--spacing-2));
+ }
+ 
+ .spacing-2 {
+  @include spacer-vertical(padding, var(--spacing-4));
+ }
+ 
+ .spacing-3 {
+  @include spacer-vertical(padding, var(--spacing-8));
+ }
+ 
+ .spacing-4 {
+  @include spacer-vertical(padding, var(--spacing-12));
+ }
+ 
+ .spacing-5 {
+  @include spacer-vertical(padding, var(--spacing-24));
+ }
+ 
+ .spacing-6 {
+  @include spacer-vertical(padding, var(--spacing-32));
+ }
+ 
+ .spacing-7 {
+  @include spacer-vertical(padding, var(--spacing-40));
+ }
+ 
+ .spacing-8 {
+  @include spacer-vertical(padding, var(--spacing-48));
+ }
+ 
+ .spacing-9 {
+  @include spacer-vertical(padding, var(--spacing-64));
+ }
+ 
+ .spacing-10 {
+  @include spacer-vertical(padding, var(--spacing-80));
+ }
+ 
+ .spacing-11 {
+  @include spacer-vertical(padding, var(--spacing-96));
+ }
+ 
+ .spacing-12 {
+  @include spacer-vertical(padding, var(--spacing-128));
+ }
+
+ .spacing-13 {
+  @include spacer-vertical(padding, var(--spacing-160));
+ }
