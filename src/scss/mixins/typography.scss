@@ -1,146 +1,1863 @@
-@mixin type-hero--01 {
-  font-family: var(--kyn-type-hero--01-family);
-  font-size: var(--kyn-type-hero--01-size);
-  line-height: var(--kyn-type-hero--01-height);
-  letter-spacing: var(--kyn-type-hero--01-spacing);
+@use '../variables/typography.scss';
+@use '../variables/breakpoints.scss';
+
+@mixin type-hero-01-ultralight {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-hero-1-sm;
+    line-height: typography.$k-line-height-hero-1-sm;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-hero-1-md;
+    line-height: typography.$k-line-height-hero-1-md;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-hero-1-lg;
+    line-height: typography.$k-line-height-hero-1-lg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-hero-1-max-xlg;
+    line-height: typography.$k-line-height-hero-1-max-xlg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-hero-1-max-xlg;
+    line-height: typography.$k-line-height-hero-1-max-xlg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
 }
 
-@mixin type-hero--02 {
-  font-family: var(--kyn-type-hero--02-family);
-  font-size: var(--kyn-type-hero--02-size);
-  line-height: var(--kyn-type-hero--02-height);
-  letter-spacing: var(--kyn-type-hero--02-spacing);
+@mixin type-hero-01-light {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-hero-1-sm;
+    line-height: typography.$k-line-height-hero-1-sm;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-hero-1-md;
+    line-height: typography.$k-line-height-hero-1-md;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-hero-1-lg;
+    line-height: typography.$k-line-height-hero-1-lg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-hero-1-max-xlg;
+    line-height: typography.$k-line-height-hero-1-max-xlg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-hero-1-max-xlg;
+    line-height: typography.$k-line-height-hero-1-max-xlg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-light;
+  }
 }
 
-@mixin type-hero--03 {
-  font-family: var(--kyn-type-hero--03-family);
-  font-size: var(--kyn-type-hero--03-size);
-  line-height: var(--kyn-type-hero--03-height);
-  letter-spacing: var(--kyn-type-hero--03-spacing);
+@mixin type-hero-01-bold {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-hero-1-sm;
+    line-height: typography.$k-line-height-hero-1-sm;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-bold;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-hero-1-md;
+    line-height: typography.$k-line-height-hero-1-md;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-bold;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-hero-1-lg;
+    line-height: typography.$k-line-height-hero-1-lg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-bold;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-hero-1-max-xlg;
+    line-height: typography.$k-line-height-hero-1-max-xlg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-bold;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-hero-1-max-xlg;
+    line-height: typography.$k-line-height-hero-1-max-xlg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-bold;
+  }
 }
 
-@mixin type-hero--04 {
-  font-family: var(--kyn-type-hero--04-family);
-  font-size: var(--kyn-type-hero--04-size);
-  line-height: var(--kyn-type-hero--04-height);
-  letter-spacing: var(--kyn-type-hero--04-spacing);
+@mixin type-hero-02-ultralight {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-hero-2-sm;
+    line-height: typography.$k-line-height-hero-2-sm;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-hero-2-md;
+    line-height: typography.$k-line-height-hero-2-md;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-hero-2-lg;
+    line-height: typography.$k-line-height-hero-2-lg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-hero-2-xlg;
+    line-height: typography.$k-line-height-hero-2-xlg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-hero-2-max;
+    line-height: typography.$k-line-height-hero-2-max;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
 }
 
-@mixin type-display--01 {
-  font-family: var(--kyn-type-display--01-family);
-  font-size: var(--kyn-type-display--01-size);
-  line-height: var(--kyn-type-display--01-height);
-  letter-spacing: var(--kyn-type-display--01-spacing);
+@mixin type-hero-02-light {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-hero-2-sm;
+    line-height: typography.$k-line-height-hero-2-sm;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-hero-2-md;
+    line-height: typography.$k-line-height-hero-2-md;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-hero-2-lg;
+    line-height: typography.$k-line-height-hero-2-lg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-hero-2-xlg;
+    line-height: typography.$k-line-height-hero-2-xlg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-hero-2-max;
+    line-height: typography.$k-line-height-hero-2-max;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-light;
+  }
 }
 
-@mixin type-display--02 {
-  font-family: var(--kyn-type-display--02-family);
-  font-size: var(--kyn-type-display--02-size);
-  line-height: var(--kyn-type-display--02-height);
-  letter-spacing: var(--kyn-type-display--02-spacing);
+@mixin type-hero-02-bold {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-hero-2-sm;
+    line-height: typography.$k-line-height-hero-2-sm;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-bold;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-hero-2-md;
+    line-height: typography.$k-line-height-hero-2-md;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-bold;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-hero-2-lg;
+    line-height: typography.$k-line-height-hero-2-lg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-bold;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-hero-2-xlg;
+    line-height: typography.$k-line-height-hero-2-xlg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-bold;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-hero-2-max;
+    line-height: typography.$k-line-height-hero-2-max;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-bold;
+  }
 }
 
-@mixin type-display--03 {
-  font-family: var(--kyn-type-display--03-family);
-  font-size: var(--kyn-type-display--03-size);
-  line-height: var(--kyn-type-display--03-height);
-  letter-spacing: var(--kyn-type-display--03-spacing);
+@mixin type-hero-03-ultralight {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-hero-3-sm;
+    line-height: typography.$k-line-height-hero-3-sm;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-hero-3-md;
+    line-height: typography.$k-line-height-hero-3-md;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-hero-3-lg;
+    line-height: typography.$k-line-height-hero-3-lg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-hero-3-xlg;
+    line-height: typography.$k-line-height-hero-3-xlg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-hero-3-max;
+    line-height: typography.$k-line-height-hero-3-max;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
 }
 
-@mixin type-headline--01 {
-  font-family: var(--kyn-type-headline--01-family);
-  font-size: var(--kyn-type-headline--01-size);
-  line-height: var(--kyn-type-headline--01-height);
-  letter-spacing: var(--kyn-type-headline--01-spacing);
+@mixin type-hero-03-light {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-hero-3-sm;
+    line-height: typography.$k-line-height-hero-3-sm;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-hero-3-md;
+    line-height: typography.$k-line-height-hero-3-md;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-hero-3-lg;
+    line-height: typography.$k-line-height-hero-3-lg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-hero-3-xlg;
+    line-height: typography.$k-line-height-hero-3-xlg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-hero-3-max;
+    line-height: typography.$k-line-height-hero-3-max;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-light;
+  }
 }
 
-@mixin type-headline--02 {
-  font-family: var(--kyn-type-headline--02-family);
-  font-size: var(--kyn-type-headline--02-size);
-  line-height: var(--kyn-type-headline--02-height);
-  letter-spacing: var(--kyn-type-headline--02-spacing);
+@mixin type-hero-03-bold {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-hero-3-sm;
+    line-height: typography.$k-line-height-hero-3-sm;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-bold;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-hero-3-md;
+    line-height: typography.$k-line-height-hero-3-md;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-bold;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-hero-3-lg;
+    line-height: typography.$k-line-height-hero-3-lg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-bold;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-hero-3-xlg;
+    line-height: typography.$k-line-height-hero-3-xlg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-bold;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-hero-3-max;
+    line-height: typography.$k-line-height-hero-3-max;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-bold;
+  }
 }
 
-@mixin type-headline--03 {
-  font-family: var(--kyn-type-headline--03-family);
-  font-size: var(--kyn-type-headline--03-size);
-  line-height: var(--kyn-type-headline--03-height);
-  letter-spacing: var(--kyn-type-headline--03-spacing);
+@mixin type-display-01-ultralight {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-display-1-sm;
+    line-height: typography.$k-line-height-display-1-sm;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-display-1-md;
+    line-height: typography.$k-line-height-display-1-md;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-display-1-lg;
+    line-height: typography.$k-line-height-display-1-lg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-display-1-xlg;
+    line-height: typography.$k-line-height-display-1-xlg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-display-1-max;
+    line-height: typography.$k-line-height-display-1-max;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
 }
 
-@mixin type-headline--04 {
-  font-family: var(--kyn-type-headline--04-family);
-  font-size: var(--kyn-type-headline--04-size);
-  line-height: var(--kyn-type-headline--04-height);
-  letter-spacing: var(--kyn-type-headline--04-spacing);
+@mixin type-display-01-light {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-display-1-sm;
+    line-height: typography.$k-line-height-display-1-sm;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-display-1-md;
+    line-height: typography.$k-line-height-display-1-md;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-display-1-lg;
+    line-height: typography.$k-line-height-display-1-lg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-display-1-xlg;
+    line-height: typography.$k-line-height-display-1-xlg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-display-1-max;
+    line-height: typography.$k-line-height-display-1-max;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-light;
+  }
 }
 
-@mixin type-headline--05 {
-  font-family: var(--kyn-type-headline--05-family);
-  font-size: var(--kyn-type-headline--05-size);
-  line-height: var(--kyn-type-headline--05-height);
-  letter-spacing: var(--kyn-type-headline--05-spacing);
+@mixin type-display-02-ultralight {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-display-2-sm;
+    line-height: typography.$k-line-height-display-2-sm;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-display-2-md;
+    line-height: typography.$k-line-height-display-2-md;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-display-2-lg;
+    line-height: typography.$k-line-height-display-2-lg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-display-2-xlg;
+    line-height: typography.$k-line-height-display-2-xlg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-display-2-max;
+    line-height: typography.$k-line-height-display-2-max;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
 }
 
-@mixin type-headline--06 {
-  font-family: var(--kyn-type-headline--06-family);
-  font-size: var(--kyn-type-headline--06-size);
-  line-height: var(--kyn-type-headline--06-height);
-  letter-spacing: var(--kyn-type-headline--06-spacing);
+@mixin type-display-02-light {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-display-2-sm;
+    line-height: typography.$k-line-height-display-2-sm;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-display-2-md;
+    line-height: typography.$k-line-height-display-2-md;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-display-2-lg;
+    line-height: typography.$k-line-height-display-2-lg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-display-2-xlg;
+    line-height: typography.$k-line-height-display-2-xlg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-display-2-max;
+    line-height: typography.$k-line-height-display-2-max;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-light;
+  }
 }
 
-@mixin type-headline--07 {
-  font-family: var(--kyn-type-headline--07-family);
-  font-size: var(--kyn-type-headline--07-size);
-  line-height: var(--kyn-type-headline--07-height);
-  letter-spacing: var(--kyn-type-headline--07-spacing);
+@mixin type-display-03-ultralight {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-display-3-sm;
+    line-height: typography.$k-line-height-display-3-sm;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-display-3-md;
+    line-height: typography.$k-line-height-display-3-md;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-display-3-lg;
+    line-height: typography.$k-line-height-display-3-lg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-display-3-xlg;
+    line-height: typography.$k-line-height-display-3-xlg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-display-3-max;
+    line-height: typography.$k-line-height-display-3-max;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
 }
 
-@mixin type-headline--08 {
-  font-family: var(--kyn-type-headline--08-family);
-  font-size: var(--kyn-type-headline--08-size);
-  line-height: var(--kyn-type-headline--08-height);
-  letter-spacing: var(--kyn-type-headline--08-spacing);
+@mixin type-display-03-light {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-display-3-sm;
+    line-height: typography.$k-line-height-display-3-sm;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-display-3-md;
+    line-height: typography.$k-line-height-display-3-md;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-display-3-lg;
+    line-height: typography.$k-line-height-display-3-lg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-display-3-xlg;
+    line-height: typography.$k-line-height-display-3-xlg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-display-3-max;
+    line-height: typography.$k-line-height-display-3-max;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-light;
+  }
 }
 
-@mixin type-body--01 {
-  font-family: var(--kyn-type-body--01-family);
-  font-size: var(--kyn-type-body--01-size);
-  line-height: var(--kyn-type-body--01-height);
-  letter-spacing: var(--kyn-type-body--01-spacing);
+@mixin type-display-04-ultralight {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-display-4-sm;
+    line-height: typography.$k-line-height-display-4-sm;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-display-4-md;
+    line-height: typography.$k-line-height-display-4-md;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-display-4-lg;
+    line-height: typography.$k-line-height-display-4-lg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-display-4-xlg;
+    line-height: typography.$k-line-height-display-4-xlg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-display-4-max;
+    line-height: typography.$k-line-height-display-4-max;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
 }
 
-@mixin type-body--02 {
-  font-family: var(--kyn-type-body--02-family);
-  font-size: var(--kyn-type-body--02-size);
-  line-height: var(--kyn-type-body--02-height);
-  letter-spacing: var(--kyn-type-body--02-spacing);
+@mixin type-display-04-light {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-display-4-sm;
+    line-height: typography.$k-line-height-display-4-sm;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-display-4-md;
+    line-height: typography.$k-line-height-display-4-md;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-display-4-lg;
+    line-height: typography.$k-line-height-display-4-lg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-display-4-xlg;
+    line-height: typography.$k-line-height-display-4-xlg;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-display-4-max;
+    line-height: typography.$k-line-height-display-4-max;
+    letter-spacing: typography.$k-letter-spacing-1;
+    font-weight: typography.$k-font-weight-light;
+  }
+}
+@mixin type-headline-01-ultralight {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-headline-1-md-sm;
+    line-height: typography.$k-line-height-headline-1-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-headline-1-md-sm;
+    line-height: typography.$k-line-height-headline-1-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-headline-1-lg;
+    line-height: typography.$k-line-height-headline-1-lg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-headline-1-xlg;
+    line-height: typography.$k-line-height-headline-1-max-xlg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-headline-1-max;
+    line-height: typography.$k-line-height-headline-1-max-xlg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
 }
 
-@mixin type-ui--01 {
-  font-family: var(--kyn-type-ui--01-family);
-  font-size: var(--kyn-type-ui--01-size);
-  line-height: var(--kyn-type-ui--01-height);
-  letter-spacing: var(--kyn-type-ui--01-spacing);
+@mixin type-headline-01-light {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-headline-1-md-sm;
+    line-height: typography.$k-line-height-headline-1-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-headline-1-md-sm;
+    line-height: typography.$k-line-height-headline-1-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-headline-1-lg;
+    line-height: typography.$k-line-height-headline-1-lg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-headline-1-xlg;
+    line-height: typography.$k-line-height-headline-1-max-xlg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-headline-1-max;
+    line-height: typography.$k-line-height-headline-1-max-xlg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
 }
 
-@mixin type-ui--02 {
-  font-family: var(--kyn-type-ui--02-family);
-  font-size: var(--kyn-type-ui--02-size);
-  line-height: var(--kyn-type-ui--02-height);
-  letter-spacing: var(--kyn-type-ui--02-spacing);
+@mixin type-headline-01-regular {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-headline-1-md-sm;
+    line-height: typography.$k-line-height-headline-1-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-headline-1-md-sm;
+    line-height: typography.$k-line-height-headline-1-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-headline-1-lg;
+    line-height: typography.$k-line-height-headline-1-lg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-headline-1-xlg;
+    line-height: typography.$k-line-height-headline-1-max-xlg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-headline-1-max;
+    line-height: typography.$k-line-height-headline-1-max-xlg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
 }
 
-@mixin type-ui--03 {
-  font-family: var(--kyn-type-ui--03-family);
-  font-size: var(--kyn-type-ui--03-size);
-  line-height: var(--kyn-type-ui--03-height);
-  letter-spacing: var(--kyn-type-ui--03-spacing);
+@mixin type-headline-02-ultralight {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-headline-2-md-sm;
+    line-height: typography.$k-line-height-headline-2-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-headline-2-md-sm;
+    line-height: typography.$k-line-height-headline-2-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-headline-2-lg;
+    line-height: typography.$k-line-height-headline-2-lg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-headline-2-xlg;
+    line-height: typography.$k-line-height-headline-2-xlg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-headline-2-max;
+    line-height: typography.$k-line-height-headline-2-max;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
 }
 
-@mixin type-ui--04 {
-  font-family: var(--kyn-type-ui--04-family);
-  font-size: var(--kyn-type-ui--04-size);
-  line-height: var(--kyn-type-ui--04-height);
-  letter-spacing: var(--kyn-type-ui--04-spacing);
+@mixin type-headline-02-light {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-headline-2-md-sm;
+    line-height: typography.$k-line-height-headline-2-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-headline-2-md-sm;
+    line-height: typography.$k-line-height-headline-2-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-headline-2-lg;
+    line-height: typography.$k-line-height-headline-2-lg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-headline-2-xlg;
+    line-height: typography.$k-line-height-headline-2-xlg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-headline-2-max;
+    line-height: typography.$k-line-height-headline-2-max;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+}
+
+@mixin type-headline-02-regular {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-headline-2-md-sm;
+    line-height: typography.$k-line-height-headline-2-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-headline-2-md-sm;
+    line-height: typography.$k-line-height-headline-2-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-headline-2-lg;
+    line-height: typography.$k-line-height-headline-2-lg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-headline-2-xlg;
+    line-height: typography.$k-line-height-headline-2-xlg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-headline-2-max;
+    line-height: typography.$k-line-height-headline-2-max;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+}
+
+@mixin type-headline-03-ultralight {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-headline-3-md-sm;
+    line-height: typography.$k-line-height-headline-3-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-headline-3-md-sm;
+    line-height: typography.$k-line-height-headline-3-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-headline-3-lg;
+    line-height: typography.$k-line-height-headline-3-lg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-headline-3-xlg;
+    line-height: typography.$k-line-height-headline-3-xlg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-headline-3-max;
+    line-height: typography.$k-line-height-headline-3-max;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-ultralight;
+  }
+}
+
+@mixin type-headline-03-light {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-headline-3-md-sm;
+    line-height: typography.$k-line-height-headline-3-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-headline-3-md-sm;
+    line-height: typography.$k-line-height-headline-3-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-headline-3-lg;
+    line-height: typography.$k-line-height-headline-3-lg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-headline-3-xlg;
+    line-height: typography.$k-line-height-headline-3-xlg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-headline-3-max;
+    line-height: typography.$k-line-height-headline-3-max;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+}
+
+@mixin type-headline-03-regular {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-headline-3-md-sm;
+    line-height: typography.$k-line-height-headline-3-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-headline-3-md-sm;
+    line-height: typography.$k-line-height-headline-3-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-headline-3-lg;
+    line-height: typography.$k-line-height-headline-3-lg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-headline-3-xlg;
+    line-height: typography.$k-line-height-headline-3-xlg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-headline-3-max;
+    line-height: typography.$k-line-height-headline-3-max;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+}
+
+@mixin type-headline-04-light {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-headline-4-md-sm;
+    line-height: typography.$k-line-height-headline-4-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-headline-4-md-sm;
+    line-height: typography.$k-line-height-headline-4-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-headline-4-lg;
+    line-height: typography.$k-line-height-headline-4-lg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-headline-4-xlg;
+    line-height: typography.$k-line-height-headline-4-xlg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-headline-4-max;
+    line-height: typography.$k-line-height-headline-4-max;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+}
+
+@mixin type-headline-04-regular {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-headline-4-md-sm;
+    line-height: typography.$k-line-height-headline-4-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-headline-4-md-sm;
+    line-height: typography.$k-line-height-headline-4-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-headline-4-lg;
+    line-height: typography.$k-line-height-headline-4-lg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-headline-4-xlg;
+    line-height: typography.$k-line-height-headline-4-xlg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-headline-4-max;
+    line-height: typography.$k-line-height-headline-4-max;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+}
+
+@mixin type-headline-05-light {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-headline-5-md-sm;
+    line-height: typography.$k-line-height-headline-5-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-headline-5-md-sm;
+    line-height: typography.$k-line-height-headline-5-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-headline-5-lg;
+    line-height: typography.$k-line-height-headline-5-lg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-headline-5-xlg;
+    line-height: typography.$k-line-height-headline-5-xlg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-headline-5-max;
+    line-height: typography.$k-line-height-headline-5-max;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+}
+
+@mixin type-headline-05-regular {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-headline-5-md-sm;
+    line-height: typography.$k-line-height-headline-5-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-headline-5-md-sm;
+    line-height: typography.$k-line-height-headline-5-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-headline-5-lg;
+    line-height: typography.$k-line-height-headline-5-lg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-headline-5-xlg;
+    line-height: typography.$k-line-height-headline-5-xlg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-headline-5-max;
+    line-height: typography.$k-line-height-headline-5-max;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+}
+
+@mixin type-headline-06-light {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-headline-6-md-sm;
+    line-height: typography.$k-line-height-headline-6-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-headline-6-md-sm;
+    line-height: typography.$k-line-height-headline-6-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-headline-6-lg;
+    line-height: typography.$k-line-height-headline-6-lg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-headline-6-xlg;
+    line-height: typography.$k-line-height-headline-6-xlg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-headline-6-max;
+    line-height: typography.$k-line-height-headline-6-max;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+}
+
+@mixin type-headline-06-regular {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-headline-6-md-sm;
+    line-height: typography.$k-line-height-headline-6-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-headline-6-md-sm;
+    line-height: typography.$k-line-height-headline-6-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-headline-6-lg;
+    line-height: typography.$k-line-height-headline-6-lg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-headline-6-xlg;
+    line-height: typography.$k-line-height-headline-6-xlg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-headline-6-max;
+    line-height: typography.$k-line-height-headline-6-max;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+}
+
+@mixin type-headline-07-light {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-headline-7-md-sm;
+    line-height: typography.$k-line-height-headline-7-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-headline-7-md-sm;
+    line-height: typography.$k-line-height-headline-7-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-headline-7-lg;
+    line-height: typography.$k-line-height-headline-7-lg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-headline-7-xlg;
+    line-height: typography.$k-line-height-headline-7-xlg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-headline-7-max;
+    line-height: typography.$k-line-height-headline-7-max;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+}
+
+@mixin type-headline-07-regular {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-headline-7-md-sm;
+    line-height: typography.$k-line-height-headline-7-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-headline-7-md-sm;
+    line-height: typography.$k-line-height-headline-7-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-headline-7-lg;
+    line-height: typography.$k-line-height-headline-7-lg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-headline-7-xlg;
+    line-height: typography.$k-line-height-headline-7-xlg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-headline-7-max;
+    line-height: typography.$k-line-height-headline-7-max;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+}
+
+@mixin type-headline-08-light {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-headline-8-md-sm;
+    line-height: typography.$k-line-height-headline-8-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-headline-8-md-sm;
+    line-height: typography.$k-line-height-headline-8-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-headline-8-lg;
+    line-height: typography.$k-line-height-headline-8-lg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-headline-8-xlg;
+    line-height: typography.$k-line-height-headline-8-xlg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-headline-8-max;
+    line-height: typography.$k-line-height-headline-8-max;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-light;
+  }
+}
+
+@mixin type-headline-08-regular {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-headline-8-md-sm;
+    line-height: typography.$k-line-height-headline-8-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-headline-8-md-sm;
+    line-height: typography.$k-line-height-headline-8-md-sm;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-headline-8-lg;
+    line-height: typography.$k-line-height-headline-8-lg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-headline-8-xlg;
+    line-height: typography.$k-line-height-headline-8-xlg;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-headline-8-max;
+    line-height: typography.$k-line-height-headline-8-max;
+    letter-spacing: typography.$k-letter-spacing-3;
+    font-weight: typography.$k-font-weight-regular;
+  }
+}
+
+@mixin type-body-01-light {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-body-1-md-sm;
+    line-height: typography.$k-line-height-body-1-md-sm;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-body-1-md-sm;
+    line-height: typography.$k-line-height-body-1-md-sm;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-body-1-lg;
+    line-height: typography.$k-line-height-body-1-lg;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-body-1-xlg;
+    line-height: typography.$k-line-height-body-1-xlg;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-body-1-max;
+    line-height: typography.$k-line-height-body-1-max;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-light;
+  }
+}
+
+@mixin type-body-01-regular {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-body-1-md-sm;
+    line-height: typography.$k-line-height-body-1-md-sm;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-body-1-md-sm;
+    line-height: typography.$k-line-height-body-1-md-sm;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-body-1-lg;
+    line-height: typography.$k-line-height-body-1-lg;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-body-1-xlg;
+    line-height: typography.$k-line-height-body-1-xlg;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-body-1-max;
+    line-height: typography.$k-line-height-body-1-max;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-regular;
+  }
+}
+
+@mixin type-body-01-medium {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-body-1-md-sm;
+    line-height: typography.$k-line-height-body-1-md-sm;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-medium;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-body-1-md-sm;
+    line-height: typography.$k-line-height-body-1-md-sm;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-medium;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-body-1-lg;
+    line-height: typography.$k-line-height-body-1-lg;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-medium;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-body-1-xlg;
+    line-height: typography.$k-line-height-body-1-xlg;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-medium;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-body-1-max;
+    line-height: typography.$k-line-height-body-1-max;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-medium;
+  }
+}
+
+@mixin type-body-02-medium {
+  font-family: typography.$k-font-family-secondary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-body-2-md-sm;
+    line-height: typography.$k-line-height-body-2-md-sm;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-medium;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-body-2-md-sm;
+    line-height: typography.$k-line-height-body-2-md-sm;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-medium;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-body-2-lg;
+    line-height: typography.$k-line-height-body-2-lg;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-medium;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-body-2-xlg;
+    line-height: typography.$k-line-height-body-2-xlg;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-medium;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-body-2-max;
+    line-height: typography.$k-line-height-body-2-max;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-medium;
+  }
+}
+
+@mixin type-body-02-regular {
+  font-family: typography.$k-font-family-secondary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-body-2-md-sm;
+    line-height: typography.$k-line-height-body-2-md-sm;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-body-2-md-sm;
+    line-height: typography.$k-line-height-body-2-md-sm;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-body-2-lg;
+    line-height: typography.$k-line-height-body-2-lg;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-body-2-xlg;
+    line-height: typography.$k-line-height-body-2-xlg;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-body-2-max;
+    line-height: typography.$k-line-height-body-2-max;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-regular;
+  }
+}
+
+@mixin type-ui-01-light {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-utility-1-md-sm;
+    line-height: typography.$k-line-height-utility-1-md-sm;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-utility-1-md-sm;
+    line-height: typography.$k-line-height-utility-1-md-sm;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-utility-1-lg;
+    line-height: typography.$k-line-height-utility-1-lg;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-utility-1-xlg;
+    line-height: typography.$k-line-height-utility-1-xlg;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-light;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-utility-1-max;
+    line-height: typography.$k-line-height-utility-1-max;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-light;
+  }
+}
+
+@mixin type-ui-01-medium {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-utility-1-md-sm;
+    line-height: typography.$k-line-height-utility-1-md-sm;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-medium;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-utility-1-md-sm;
+    line-height: typography.$k-line-height-utility-1-md-sm;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-medium;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-utility-1-lg;
+    line-height: typography.$k-line-height-utility-1-lg;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-medium;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-utility-1-xlg;
+    line-height: typography.$k-line-height-utility-1-xlg;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-medium;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-utility-1-max;
+    line-height: typography.$k-line-height-utility-1-max;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-medium;
+  }
+}
+
+@mixin type-ui-02-medium {
+  font-family: typography.$k-font-family-secondary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-utility-2-md-sm;
+    line-height: typography.$k-line-height-utility-2-md-sm;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-medium;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-utility-2-md-sm;
+    line-height: typography.$k-line-height-utility-2-md-sm;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-medium;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-utility-2-lg;
+    line-height: typography.$k-line-height-utility-2-lg;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-medium;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-utility-2-xlg;
+    line-height: typography.$k-line-height-utility-2-xlg;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-medium;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-utility-2-max;
+    line-height: typography.$k-line-height-utility-2-max;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-medium;
+  }
+}
+
+@mixin type-ui-02-regular {
+  font-family: typography.$k-font-family-secondary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-utility-2-md-sm;
+    line-height: typography.$k-line-height-utility-2-md-sm;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-utility-2-md-sm;
+    line-height: typography.$k-line-height-utility-2-md-sm;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-utility-2-lg;
+    line-height: typography.$k-line-height-utility-2-lg;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-utility-2-xlg;
+    line-height: typography.$k-line-height-utility-2-xlg;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-utility-2-max;
+    line-height: typography.$k-line-height-utility-2-max;
+    letter-spacing: typography.$k-letter-spacing-4;
+    font-weight: typography.$k-font-weight-regular;
+  }
+}
+
+@mixin type-ui-03-regular {
+  font-family: typography.$k-font-family-secondary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-utility-3-regular;
+    line-height: typography.$k-line-height-utility-3-regular;
+    letter-spacing: typography.$k-letter-spacing-5;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-utility-3-regular;
+    line-height: typography.$k-line-height-utility-3-regular;
+    letter-spacing: typography.$k-letter-spacing-5;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-utility-3-regular;
+    line-height: typography.$k-line-height-utility-3-regular;
+    letter-spacing: typography.$k-letter-spacing-5;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-utility-3-regular;
+    line-height: typography.$k-line-height-utility-3-regular;
+    letter-spacing: typography.$k-letter-spacing-5;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-utility-3-regular;
+    line-height: typography.$k-line-height-utility-3-regular;
+    letter-spacing: typography.$k-letter-spacing-5;
+    font-weight: typography.$k-font-weight-regular;
+  }
+}
+
+@mixin type-ui-03-medium {
+  font-family: typography.$k-font-family-secondary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-utility-3-medium;
+    line-height: typography.$k-line-height-utility-3-medium;
+    letter-spacing: typography.$k-letter-spacing-5;
+    font-weight: typography.$k-font-weight-medium;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-utility-3-medium;
+    line-height: typography.$k-line-height-utility-3-medium;
+    letter-spacing: typography.$k-letter-spacing-5;
+    font-weight: typography.$k-font-weight-medium;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-utility-3-medium;
+    line-height: typography.$k-line-height-utility-3-medium;
+    letter-spacing: typography.$k-letter-spacing-5;
+    font-weight: typography.$k-font-weight-medium;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-utility-3-medium;
+    line-height: typography.$k-line-height-utility-3-medium;
+    letter-spacing: typography.$k-letter-spacing-5;
+    font-weight: typography.$k-font-weight-medium;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-utility-3-medium;
+    line-height: typography.$k-line-height-utility-3-medium;
+    letter-spacing: typography.$k-letter-spacing-5;
+    font-weight: typography.$k-font-weight-medium;
+  }
+}
+
+@mixin type-ui-04-regular {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-utility-4-md-sm;
+    line-height: typography.$k-line-height-utility-4-md-sm;
+    letter-spacing: typography.$k-letter-spacing-5;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-utility-4-md-sm;
+    line-height: typography.$k-line-height-utility-4-md-sm;
+    letter-spacing: typography.$k-letter-spacing-5;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-utility-4-lg;
+    line-height: typography.$k-line-height-utility-4-lg;
+    letter-spacing: typography.$k-letter-spacing-5;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-utility-4-xlg;
+    line-height: typography.$k-line-height-utility-4-xlg;
+    letter-spacing: typography.$k-letter-spacing-5;
+    font-weight: typography.$k-font-weight-regular;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-utility-4-max;
+    line-height: typography.$k-line-height-utility-4-max;
+    letter-spacing: typography.$k-letter-spacing-5;
+    font-weight: typography.$k-font-weight-regular;
+  }
+}
+
+@mixin type-ui-04-medium {
+  font-family: typography.$k-font-family-primary;
+  @media (min-width: breakpoints.$bp-sm) {
+    font-size: typography.$k-font-size-utility-4-md-sm;
+    line-height: typography.$k-line-height-utility-4-md-sm;
+    letter-spacing: typography.$k-letter-spacing-5;
+    font-weight: typography.$k-font-weight-medium;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    font-size: typography.$k-font-size-utility-4-md-sm;
+    line-height: typography.$k-line-height-utility-4-md-sm;
+    letter-spacing: typography.$k-letter-spacing-5;
+    font-weight: typography.$k-font-weight-medium;
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    font-size: typography.$k-font-size-utility-4-lg;
+    line-height: typography.$k-line-height-utility-4-lg;
+    letter-spacing: typography.$k-letter-spacing-5;
+    font-weight: typography.$k-font-weight-medium;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: typography.$k-font-size-utility-4-xlg;
+    line-height: typography.$k-line-height-utility-4-xlg;
+    letter-spacing: typography.$k-letter-spacing-5;
+    font-weight: typography.$k-font-weight-medium;
+  }
+
+  @media (min-width: breakpoints.$bp-max) {
+    font-size: typography.$k-font-size-utility-4-max;
+    line-height: typography.$k-line-height-utility-4-max;
+    letter-spacing: typography.$k-letter-spacing-5;
+    font-weight: typography.$k-font-weight-medium;
+  }
 }
