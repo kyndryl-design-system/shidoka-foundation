@@ -123,11 +123,11 @@ margin: 0;
 @use '~@kyndryl-design-system/foundation/scss/mixins/grid.scss';
 
 .your-css-selector {
-  @include grid($align-left: false, $no-max: false);
+  @include grid.grid($align-left: false, $no-max: false);
 }
 
 .your-child-css-selector {
-  @include grid-col(num_cols);
+  @include grid.grid-col(num_cols);
 }
 ```
 
