@@ -1,9 +1,11 @@
 @use 'breakpoints.scss';
 
 :root {
-  --kyn-spacing-gutter: 16px;
+  --kd-page-gutter: 16px;
+  --kd-page-gutter-offset: 24px;
 
   @media screen and (min-width: breakpoints.$bp-md) {
-    --kyn-spacing-gutter: 32px;
+    --kd-page-gutter: 32px;
+    --kd-page-gutter-offset: 40px;
   }
 }

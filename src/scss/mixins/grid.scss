@@ -1,6 +1,6 @@
 @use '../variables/breakpoints.scss';
 
-@mixin grid-container($align-left: false, $no-max: false, $no-padding: false) {
+@mixin grid($align-left: false, $no-max: false) {
   display: grid;
   grid-template-columns: repeat(4, 1fr); // 4 cols at sm
   gap: var(--kd-grid-gap);
@@ -16,12 +16,6 @@
     margin: 0;
   } @else {
     margin: 0 auto;
-  }
-
-  @if $no-padding {
-    padding: 0;
-  } @else {
-    padding: 0 var(--kd-grid-padding);
   }
 
   @media (min-width: breakpoints.$bp-md) {

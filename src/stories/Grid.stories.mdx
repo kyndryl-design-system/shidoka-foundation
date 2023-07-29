@@ -14,104 +14,98 @@ import { Meta, Unstyled, Source } from '@storybook/blocks';
 <style>
 {`
 .sbdocs-content {
-  max-width: none;
+  max-width: none !important;
 }
 
-.kd-grid-container {
+.kd-grid {
 margin-top: 32px;
 margin-bottom: 32px;
 }
 
-.kd-grid-container > div {
+.kd-grid > div {
 text-align: center;
 border: 1px solid lightgray;
 padding: 16px;
 }
 
-.kd-grid-container p {
+.kd-grid p {
 margin: 0;
 }
 `}
 
 </style>
 
-<div className="kd-grid-container">
-  <div className="kd-grid-col--sm-4 kd-grid-col--md-8 kd-grid-col--lg-12">
+<div className="kd-grid">
+  <div className="kd-grid__col--sm-4 kd-grid__col--md-8 kd-grid__col--lg-12">
     12 cols @ max, xl, lg, 8 cols @ md, and 4 cols @ sm
   </div>
 </div>
 
-<div className="kd-grid-container">
-  <div className="kd-grid-col--sm-4 kd-grid-col--md-4 kd-grid-col--lg-6">
+<div className="kd-grid">
+  <div className="kd-grid__col--sm-4 kd-grid__col--md-4 kd-grid__col--lg-6">
     6 cols @ max, xl, lg, 4 cols @ md and sm
   </div>
-  <div className="kd-grid-col--sm-4 kd-grid-col--md-4 kd-grid-col--lg-6">
+  <div className="kd-grid__col--sm-4 kd-grid__col--md-4 kd-grid__col--lg-6">
     6 cols @ max, xl, lg, 4 cols @ md and sm
   </div>
 </div>
 
-<div className="kd-grid-container">
-  <div className="kd-grid-col--sm-2 kd-grid-col--md-4 kd-grid-col--lg-4">
+<div className="kd-grid">
+  <div className="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-4">
     4 cols @ max, xl, lg, md and 2 cols @ sm
   </div>
-  <div className="kd-grid-col--sm-2 kd-grid-col--md-4 kd-grid-col--lg-4">
+  <div className="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-4">
     4 cols @ max, xl, lg, md and 2 cols @ sm
   </div>
-  <div className="kd-grid-col--sm-2 kd-grid-col--md-4 kd-grid-col--lg-4">
+  <div className="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-4">
     4 cols @ max, xl, lg, md and 2 cols @ sm
   </div>
 </div>
 
-<div className="kd-grid-container">
-  <div className="kd-grid-col--sm-2 kd-grid-col--md-4 kd-grid-col--lg-3">
+<div className="kd-grid">
+  <div className="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-3">
     3 cols @ max, xl, lg, 4 cols @ md, and 2 cols @ sm
   </div>
-  <div className="kd-grid-col--sm-2 kd-grid-col--md-4 kd-grid-col--lg-3">
+  <div className="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-3">
     3 cols @ max, xl, lg, 4 cols @ md, and 2 cols @ sm
   </div>
-  <div className="kd-grid-col--sm-2 kd-grid-col--md-4 kd-grid-col--lg-3">
+  <div className="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-3">
     3 cols @ max, xl, lg, 4 cols @ md, and 2 cols @ sm
   </div>
-  <div className="kd-grid-col--sm-2 kd-grid-col--md-4 kd-grid-col--lg-3">
+  <div className="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-3">
     3 cols @ max, xl, lg, 4 cols @ md, and 2 cols @ sm
   </div>
 </div>
 
-<div className="kd-grid-container">
-  <div className="kd-grid-col--sm-2 kd-grid-col--md-4 kd-grid-col--lg-2">
+<div className="kd-grid">
+  <div className="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-2">
     2 cols @ max, xl, lg, sm, 4 cols @ md
   </div>
-  <div className="kd-grid-col--sm-2 kd-grid-col--md-4 kd-grid-col--lg-2">
+  <div className="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-2">
     2 cols @ max, xl, lg, sm, 4 cols @ md
   </div>
-  <div className="kd-grid-col--sm-2 kd-grid-col--md-4 kd-grid-col--lg-2">
+  <div className="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-2">
     2 cols @ max, xl, lg, sm, 4 cols @ md
   </div>
-  <div className="kd-grid-col--sm-2 kd-grid-col--md-4 kd-grid-col--lg-2">
+  <div className="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-2">
     2 cols @ max, xl, lg, sm, 4 cols @ md
   </div>
-  <div className="kd-grid-col--sm-2 kd-grid-col--md-4 kd-grid-col--lg-2">
+  <div className="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-2">
     2 cols @ max, xl, lg, sm, 4 cols @ md
   </div>
-  <div className="kd-grid-col--sm-2 kd-grid-col--md-4 kd-grid-col--lg-2">
+  <div className="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-2">
     2 cols @ max, xl, lg, sm, 4 cols @ md
   </div>
 </div>
 
-<div className="kd-grid-container kd-grid-container--no-max">
-  <div className="kd-grid-col--sm-4 kd-grid-col--md-8 kd-grid-col--lg-12">
+<div className="kd-grid kd-grid--no-max">
+  <div className="kd-grid__col--sm-4 kd-grid__col--md-8 kd-grid__col--lg-12">
     Removed max width
   </div>
 </div>
 
-<div className="kd-grid-container kd-grid-container--no-padding">
-  <div className="kd-grid-col--sm-4 kd-grid-col--md-8 kd-grid-col--lg-12">
-    No left/right padding
-  </div>
-</div>
-
-<div className="kd-grid-container kd-grid-container--align-left">
-  <div className="kd-grid-col--sm-4 kd-grid-col--md-8 kd-grid-col--lg-12">
+<div className="kd-grid kd-grid--align-left">
+  <div className="kd-grid__col--sm-4 kd-grid__col--md-8 kd-grid__col--lg-12">
     Left aligned
   </div>
 </div>
@@ -128,12 +122,8 @@ margin: 0;
 ```css
 @use '~@kyndryl-design-system/foundation/scss/mixins/grid.scss';
 
-.your-container-css-selector {
-  @include grid-container(
-    $align-left: false,
-    $no-max: false,
-    $no-padding: false
-  );
+.your-css-selector {
+  @include grid($align-left: false, $no-max: false, $no-padding: false);
 }
 
 .your-child-css-selector {
@@ -164,8 +154,8 @@ import '@kyndryl-design-system/foundation/css/grid.css';
 #### Example HTML
 
 ```html
-<div class="kd-grid-container">
-  <div class="kd-grid-col--sm-4 kd-grid-col--md-8 kd-grid-col--lg-12">
+<div class="kd-grid">
+  <div class="kd-grid__col--sm-4 kd-grid__col--md-8 kd-grid__col--lg-12">
     12 cols @ max, xl, lg, 8 cols @ md, and 4 cols @ sm
   </div>
 </div>
@@ -174,7 +164,7 @@ import '@kyndryl-design-system/foundation/css/grid.css';
 #### Column class name schema
 
 ```
-kd-grid-col--${breakpoint}-${num_cols}
+kd-grid__col--${breakpoint}-${num_cols}
 ```
 
 ## Breakpoints
@@ -191,8 +181,7 @@ kd-grid-col--${breakpoint}-${num_cols}
 
 ### Container
 
-| Description                             | Class                         |
-| --------------------------------------- | ----------------------------- |
-| Left align grid container               | kd-grid-container--align-left |
-| Remove grid container max-width         | kd-grid-container--no-max     |
-| Remove grid container left/rightpadding | kd-grid-container--no-padding |
+| Description                     | Class               |
+| ------------------------------- | ------------------- |
+| Left align grid container       | kd-grid--align-left |
+| Remove grid container max-width | kd-grid--no-max     |

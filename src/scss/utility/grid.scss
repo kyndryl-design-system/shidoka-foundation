@@ -1,8 +1,8 @@
 @use '../variables/breakpoints.scss';
 @use '../mixins/grid.scss';
 
-.kd-grid-container {
-  @include grid.grid-container;
+.kd-grid {
+  @include grid.grid;
 
   &--align-left {
     margin: 0;
@@ -12,44 +12,40 @@
     max-width: none;
   }
 
-  &--no-padding {
-    padding: 0;
-  }
-}
-
-// generate sm classes
-@for $i from 1 through 4 {
-  .kd-grid-col--sm-#{$i} {
-    @include grid.grid-col($i);
-  }
-}
-
-// generate md classes
-@for $i from 1 through 8 {
-  .kd-grid-col--md-#{$i} {
-    @media (min-width: breakpoints.$bp-md) {
-      @include grid.grid-col($i);
-    }
-  }
-}
-
-// generate lg, xlg, max classes
-@for $i from 1 through 12 {
-  .kd-grid-col--lg-#{$i} {
-    @media (min-width: breakpoints.$bp-lg) {
+  // generate sm classes
+  @for $i from 1 through 4 {
+    &__col--sm-#{$i} {
       @include grid.grid-col($i);
     }
   }
 
-  .kd-grid-col--xl-#{$i} {
-    @media (min-width: breakpoints.$bp-xl) {
-      @include grid.grid-col($i);
+  // generate md classes
+  @for $i from 1 through 8 {
+    &__col--md-#{$i} {
+      @media (min-width: breakpoints.$bp-md) {
+        @include grid.grid-col($i);
+      }
     }
   }
 
-  .kd-grid-col--max-#{$i} {
-    @media (min-width: breakpoints.$bp-max) {
-      @include grid.grid-col($i);
+  // generate lg, xlg, max classes
+  @for $i from 1 through 12 {
+    &__col--lg-#{$i} {
+      @media (min-width: breakpoints.$bp-lg) {
+        @include grid.grid-col($i);
+      }
+    }
+
+    &__col--xl-#{$i} {
+      @media (min-width: breakpoints.$bp-xl) {
+        @include grid.grid-col($i);
+      }
+    }
+
+    &__col--max-#{$i} {
+      @media (min-width: breakpoints.$bp-max) {
+        @include grid.grid-col($i);
+      }
     }
   }
 }
