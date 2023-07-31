@@ -2,10 +2,8 @@
 
 :root {
   --kd-page-gutter: 16px;
-  --kd-page-gutter-offset: 24px;
 
   @media screen and (min-width: breakpoints.$bp-md) {
     --kd-page-gutter: 32px;
-    --kd-page-gutter-offset: 40px;
   }
 }
