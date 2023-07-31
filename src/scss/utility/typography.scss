@@ -1,197 +1,107 @@
 @use '../mixins/typography.scss';
 
-.hero-01-ultralight {
-  @include typography.type-hero-01-ultralight;
+//Font-weight-classes
+
+.kd-type--weight-ultralight {
+  font-weight: var(--k-font-weight-ultralight);
 }
 
-.hero-01-light {
-  @include typography.type-hero-01-light;
+.kd-type--weight-light {
+  font-weight: var(--k-font-weight-light);
 }
 
-.hero-01-bold {
-  @include typography.type-hero-01-bold;
+.kd-type--weight-regular {
+  font-weight: var(--k-font-weight-regular);
 }
 
-.hero-02-ultralight {
-  @include typography.type-hero-02-ultralight;
+.kd-type--weight-medium {
+  font-weight: var(--k-font-weight-medium);
 }
 
-.hero-02-light {
-  @include typography.type-hero-02-light;
+.kd-type--weight-bold {
+  font-weight: var(--k-font-weight-bold);
 }
 
-.hero-02-bold {
-  @include typography.type-hero-02-bold;
+.kd-type--hero-01 {
+  @include typography.type-hero-01;
 }
 
-.hero-03-ultralight {
-  @include typography.type-hero-03-ultralight;
+.kd-type--hero-02 {
+  @include typography.type-hero-02;
 }
 
-.hero-03-light {
-  @include typography.type-hero-03-light;
+.kd-type--hero-03 {
+  @include typography.type-hero-03;
 }
 
-.hero-03-bold {
-  @include typography.type-hero-03-bold;
+.kd-type--display-01 {
+  @include typography.type-display-01;
 }
 
-.display-01-ultralight {
-  @include typography.type-display-01-ultralight;
+.kd-type--display-02 {
+  @include typography.type-display-02;
 }
 
-.display-01-light {
-  @include typography.type-display-01-light;
+.kd-type--display-03 {
+  @include typography.type-display-03;
 }
 
-.display-02-ultralight {
-  @include typography.type-display-02-ultralight;
+.kd-type--display-04 {
+  @include typography.type-display-04;
 }
 
-.display-02-light {
-  @include typography.type-display-02-light;
+.kd-type--headline-01 {
+  @include typography.type-headline-01;
 }
 
-.display-03-ultralight {
-  @include typography.type-display-03-ultralight;
+.kd-type--headline-02 {
+  @include typography.type-headline-02;
 }
 
-.display-03-light {
-  @include typography.type-display-03-light;
+.kd-type--headline-03 {
+  @include typography.type-headline-03;
 }
 
-.display-04-ultralight {
-  @include typography.type-display-04-ultralight;
+.kd-type--headline-04 {
+  @include typography.type-headline-04;
 }
 
-.display-04-light {
-  @include typography.type-display-04-light;
+.kd-type--headline-05 {
+  @include typography.type-headline-05;
 }
 
-.headline-01-ultralight {
-  @include typography.type-headline-01-ultralight;
+.kd-type--headline-06 {
+  @include typography.type-headline-06;
 }
 
-.headline-01-light {
-  @include typography.type-headline-01-light;
+.kd-type--headline-07 {
+  @include typography.type-headline-07;
 }
 
-.headline-01-regular {
-  @include typography.type-headline-01-regular;
+.kd-type--headline-08 {
+  @include typography.type-headline-08;
 }
 
-.headline-02-ultralight {
-  @include typography.type-headline-02-ultralight;
+.kd-type--body-01 {
+  @include typography.type-body-01;
 }
 
-.headline-02-light {
-  @include typography.type-headline-02-light;
+.kd-type--body-02 {
+  @include typography.type-body-02;
 }
 
-.headline-02-regular {
-  @include typography.type-headline-02-regular;
+.kd-type--ui-01 {
+  @include typography.type-ui-01;
 }
 
-.headline-03-ultralight {
-  @include typography.type-headline-03-ultralight;
+.kd-type--ui-02 {
+  @include typography.type-ui-02;
 }
 
-.headline-03-light {
-  @include typography.type-headline-03-light;
+.kd-type--ui-03 {
+  @include typography.type-ui-03;
 }
 
-.headline-03-regular {
-  @include typography.type-headline-03-regular;
-}
-
-.headline-04-light {
-  @include typography.type-headline-04-light;
-}
-
-.headline-04-regular {
-  @include typography.type-headline-04-regular;
-}
-
-.headline-05-light {
-  @include typography.type-headline-05-light;
-}
-
-.headline-05-regular {
-  @include typography.type-headline-05-regular;
-}
-
-.headline-06-light {
-  @include typography.type-headline-05-light;
-}
-
-.headline-06-regular {
-  @include typography.type-headline-05-regular;
-}
-
-.headline-07-light {
-  @include typography.type-headline-07-light;
-}
-
-.headline-07-regular {
-  @include typography.type-headline-07-regular;
-}
-
-.headline-08-light {
-  @include typography.type-headline-08-light;
-}
-
-.headline-08-regular {
-  @include typography.type-headline-08-regular;
-}
-
-.body-01-light {
-  @include typography.type-body-01-light;
-}
-
-.body-01-regular {
-  @include typography.type-body-01-regular;
-}
-
-.body-01-medium {
-  @include typography.type-body-01-medium;
-}
-
-.body-02-regular {
-  @include typography.type-body-02-regular;
-}
-
-.body-02-medium {
-  @include typography.type-body-02-medium;
-}
-
-.ui-01-light {
-  @include typography.type-ui-01-light;
-}
-
-.ui-01-medium {
-  @include typography.type-ui-01-medium;
-}
-
-.ui-02-regular {
-  @include typography.type-ui-02-regular;
-}
-
-.ui-02-medium {
-  @include typography.type-ui-02-medium;
-}
-
-.ui-03-regular {
-  @include typography.type-ui-03-regular;
-}
-
-.ui-03-medium {
-  @include typography.type-ui-03-medium;
-}
-
-.ui-04-regular {
-  @include typography.type-ui-04-regular;
-}
-
-.ui-04-medium {
-  @include typography.type-ui-04-medium;
+.kd-type--ui-04 {
+  @include typography.type-ui-04;
 }
