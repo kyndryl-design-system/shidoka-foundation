@@ -1,27 +1,5 @@
 @use '../mixins/typography.scss';
 
-//Font-weight-classes
-
-.kd-type--weight-ultralight {
-  font-weight: var(--k-font-weight-ultralight);
-}
-
-.kd-type--weight-light {
-  font-weight: var(--k-font-weight-light);
-}
-
-.kd-type--weight-regular {
-  font-weight: var(--k-font-weight-regular);
-}
-
-.kd-type--weight-medium {
-  font-weight: var(--k-font-weight-medium);
-}
-
-.kd-type--weight-bold {
-  font-weight: var(--k-font-weight-bold);
-}
-
 .kd-type--hero-01 {
   @include typography.type-hero-01;
 }
@@ -104,4 +82,26 @@
 
 .kd-type--ui-04 {
   @include typography.type-ui-04;
+}
+
+//Font-weight-classes
+
+.kd-type--weight-ultralight {
+  font-weight: var(--k-font-weight-ultralight);
+}
+
+.kd-type--weight-light {
+  font-weight: var(--k-font-weight-light);
+}
+
+.kd-type--weight-regular {
+  font-weight: var(--k-font-weight-regular);
+}
+
+.kd-type--weight-medium {
+  font-weight: var(--k-font-weight-medium);
+}
+
+.kd-type--weight-bold {
+  font-weight: var(--k-font-weight-bold);
 }
