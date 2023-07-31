@@ -4,6 +4,7 @@
   font-family: var(--k-font-family-primary);
   font-size: var(--k-font-size-hero-1-sm);
   line-height: var(--k-line-height-hero-1-sm);
+  font-weight: var(--k-font-weight-ultralight);
   letter-spacing: var(--k-letter-spacing-1);
 
   @media (min-width: breakpoints.$bp-md) {
@@ -31,6 +32,7 @@
   font-family: var(--k-font-family-primary);
   font-size: var(--k-font-size-hero-2-sm);
   line-height: var(--k-line-height-hero-2-sm);
+  font-weight: var(--k-font-weight-ultralight);
   letter-spacing: var(--k-letter-spacing-1);
 
   @media (min-width: breakpoints.$bp-md) {
@@ -58,6 +60,7 @@
   font-family: var(--k-font-family-primary);
   font-size: var(--k-font-size-hero-3-sm);
   line-height: var(--k-line-height-hero-3-sm);
+  font-weight: var(--k-font-weight-ultralight);
   letter-spacing: var(--k-letter-spacing-1);
 
   @media (min-width: breakpoints.$bp-md) {
@@ -85,6 +88,7 @@
   font-family: var(--k-font-family-primary);
   font-size: var(--k-font-size-hero-4-sm);
   line-height: var(--k-line-height-hero-4-sm);
+  font-weight: var(--k-font-weight-ultralight);
   letter-spacing: var(--k-letter-spacing-1);
 
   @media (min-width: breakpoints.$bp-md) {
@@ -112,6 +116,7 @@
   font-family: var(--k-font-family-primary);
   font-size: var(--k-font-size-display-1-sm);
   line-height: var(--k-line-height-display-1-sm);
+  font-weight: var(--k-font-weight-ultralight);
   letter-spacing: var(--k-letter-spacing-2);
 
   @media (min-width: breakpoints.$bp-md) {
@@ -139,6 +144,7 @@
   font-family: var(--k-font-family-primary);
   font-size: var(--k-font-size-display-2-sm);
   line-height: var(--k-line-height-display-2-sm);
+  font-weight: var(--k-font-weight-ultralight);
   letter-spacing: var(--k-letter-spacing-2);
 
   @media (min-width: breakpoints.$bp-md) {
@@ -166,6 +172,7 @@
   font-family: var(--k-font-family-primary);
   font-size: var(--k-font-size-display-3-sm);
   line-height: var(--k-line-height-display-3-sm);
+  font-weight: var(--k-font-weight-ultralight);
   letter-spacing: var(--k-letter-spacing-2);
 
   @media (min-width: breakpoints.$bp-md) {
@@ -193,6 +200,7 @@
   font-family: var(--k-font-family-primary);
   font-size: var(--k-font-size-headline-1-sm);
   line-height: var(--k-line-height-headline-1-sm);
+  font-weight: var(--k-font-weight-light);
   letter-spacing: var(--k-letter-spacing-2);
 
   @media (min-width: breakpoints.$bp-md) {
@@ -220,6 +228,7 @@
   font-family: var(--k-font-family-primary);
   font-size: var(--k-font-size-headline-2-sm);
   line-height: var(--k-line-height-headline-2-sm);
+  font-weight: var(--k-font-weight-light);
   letter-spacing: var(--k-letter-spacing-2);
 
   @media (min-width: breakpoints.$bp-md) {
@@ -247,6 +256,7 @@
   font-family: var(--k-font-family-primary);
   font-size: var(--k-font-size-headline-3-sm);
   line-height: var(--k-line-height-headline-3-sm);
+  font-weight: var(--k-font-weight-light);
   letter-spacing: var(--k-letter-spacing-2);
 
   @media (min-width: breakpoints.$bp-md) {
@@ -274,6 +284,7 @@
   font-family: var(--k-font-family-primary);
   font-size: var(--k-font-size-headline-4-sm);
   line-height: var(--k-line-height-headline-4-sm);
+  font-weight: var(--k-font-weight-regular);
   letter-spacing: var(--k-letter-spacing-3);
 
   @media (min-width: breakpoints.$bp-md) {
@@ -301,6 +312,7 @@
   font-family: var(--k-font-family-primary);
   font-size: var(--k-font-size-headline-5-sm);
   line-height: var(--k-line-height-headline-5-sm);
+  font-weight: var(--k-font-weight-regular);
   letter-spacing: var(--k-letter-spacing-3);
 
   @media (min-width: breakpoints.$bp-md) {
@@ -328,6 +340,7 @@
   font-family: var(--k-font-family-primary);
   font-size: var(--k-font-size-headline-6-sm);
   line-height: var(--k-line-height-headline-6-sm);
+  font-weight: var(--k-font-weight-regular);
   letter-spacing: var(--k-letter-spacing-3);
 
   @media (min-width: breakpoints.$bp-md) {
@@ -355,6 +368,7 @@
   font-family: var(--k-font-family-primary);
   font-size: var(--k-font-size-headline-7-sm);
   line-height: var(--k-line-height-headline-7-sm);
+  font-weight: var(--k-font-weight-regular);
   letter-spacing: var(--k-letter-spacing-3);
 
   @media (min-width: breakpoints.$bp-md) {
@@ -382,6 +396,7 @@
   font-family: var(--k-font-family-primary);
   font-size: var(--k-font-size-headline-8-sm);
   line-height: var(--k-line-height-headline-8-sm);
+  font-weight: var(--k-font-weight-regular);
   letter-spacing: var(--k-letter-spacing-3);
 
   @media (min-width: breakpoints.$bp-md) {
@@ -409,6 +424,7 @@
   font-family: var(--k-font-family-primary);
   font-size: var(--k-font-size-body-1-sm);
   line-height: var(--k-line-height-body-1-sm);
+  font-weight: var(--k-font-weight-regular);
   letter-spacing: var(--k-letter-spacing-4);
 
   @media (min-width: breakpoints.$bp-md) {
@@ -436,6 +452,7 @@
   font-family: var(--k-font-family-secondary);
   font-size: var(--k-font-size-body-2-sm);
   line-height: var(--k-line-height-body-2-sm);
+  font-weight: var(--k-font-weight-regular);
   letter-spacing: var(--k-letter-spacing-4);
 
   @media (min-width: breakpoints.$bp-md) {
@@ -463,6 +480,7 @@
   font-family: var(--k-font-family-primary);
   font-size: var(--k-font-size-utility-1-sm);
   line-height: var(--k-line-height-utility-1-sm);
+  font-weight: var(--k-font-weight-regular);
   letter-spacing: var(--k-letter-spacing-5);
 
   @media (min-width: breakpoints.$bp-md) {
@@ -490,6 +508,7 @@
   font-family: var(--k-font-family-secondary);
   font-size: var(--k-font-size-utility-2-sm);
   line-height: var(--k-line-height-utility-2-sm);
+  font-weight: var(--k-font-weight-regular);
   letter-spacing: var(--k-letter-spacing-5);
 
   @media (min-width: breakpoints.$bp-md) {
@@ -517,6 +536,7 @@
   font-family: var(--k-font-family-secondary);
   font-size: var(--k-font-size-utility-3-sm);
   line-height: var(--k-line-height-utility-3-sm);
+  font-weight: var(--k-font-weight-regular);
   letter-spacing: var(--k-letter-spacing-5);
 
   @media (min-width: breakpoints.$bp-md) {
@@ -544,6 +564,7 @@
   font-family: var(--k-font-family-primary);
   font-size: var(--k-font-size-utility-4-sm);
   line-height: var(--k-line-height-utility-4-sm);
+  font-weight: var(--k-font-weight-regular);
   letter-spacing: var(--k-letter-spacing-5);
 
   @media (min-width: breakpoints.$bp-md) {
