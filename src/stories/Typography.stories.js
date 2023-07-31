@@ -8,7 +8,7 @@ export default {
 export const Hero = {
   argTypes: {
     fontWeight: {
-      options: ['ultralight', 'light', 'bold'],
+      options: ['default', 'ultralight', 'light', 'bold'],
       control: { type: 'select' },
       description: 'Change font weight.',
       table: {
@@ -17,7 +17,7 @@ export const Hero = {
     },
   },
   args: {
-    fontWeight: 'ultralight',
+    fontWeight: 'default',
   },
   render: (args) => {
     const weightClasses = {
@@ -42,7 +42,7 @@ export const Hero = {
 export const Display = {
   argTypes: {
     fontWeight: {
-      options: ['ultralight', 'light'],
+      options: ['default', 'ultralight', 'light'],
       control: { type: 'select' },
       description: 'Change font weight.',
       table: {
@@ -51,7 +51,7 @@ export const Display = {
     },
   },
   args: {
-    fontWeight: 'ultralight',
+    fontWeight: 'default',
   },
   render: (args) => {
     const weightClasses = {
@@ -78,16 +78,16 @@ export const Display = {
 export const Headline = {
   argTypes: {
     fontWeight: {
-      options: ['ultralight', 'light', 'regular'],
+      options: ['default', 'ultralight', 'light', 'regular'],
       control: { type: 'select' },
       description: 'Change font weight.',
       table: {
-        defaultValue: { summary: '1-3=light, 4-8=regular' },
+        defaultValue: { summary: '01-03=light, 04-08=regular' },
       },
     },
   },
   args: {
-    fontWeight: 'light',
+    fontWeight: 'default',
   },
   render: (args) => {
     const weightClasses = {
@@ -130,7 +130,7 @@ export const Headline = {
 export const Body = {
   argTypes: {
     fontWeight: {
-      options: ['light', 'regular', 'medium'],
+      options: ['default', 'light', 'regular', 'medium'],
       control: { type: 'select' },
       description: 'Change font weight.',
       table: {
@@ -139,7 +139,7 @@ export const Body = {
     },
   },
   args: {
-    fontWeight: 'regular',
+    fontWeight: 'default',
   },
   render: (args) => {
     const weightClasses = {
@@ -160,7 +160,7 @@ export const Body = {
 export const Utility = {
   argTypes: {
     fontWeight: {
-      options: ['light', 'regular', 'medium'],
+      options: ['default', 'light', 'regular', 'medium'],
       control: { type: 'select' },
       description: 'Change font weight.',
       table: {
@@ -169,7 +169,7 @@ export const Utility = {
     },
   },
   args: {
-    fontWeight: 'regular',
+    fontWeight: 'default',
   },
   render: (args) => {
     const weightClasses = {
