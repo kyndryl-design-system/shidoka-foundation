@@ -55,19 +55,6 @@ export const Grid = {
 
     return html`
       <div class="grid-examples">
-        <style>
-          .kd-grid {
-            margin-top: 32px;
-            margin-bottom: 32px;
-          }
-
-          .kd-grid > div {
-            text-align: center;
-            border: 1px solid lightgray;
-            padding: 16px;
-          }
-        </style>
-
         <div class="${classMap(gridClasses)}">
           <div
             class="kd-grid__col--sm-4 kd-grid__col--md-8 kd-grid__col--lg-12"
