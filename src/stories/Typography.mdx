@@ -1,0 +1,110 @@
+import { Meta, Story, Canvas, Controls, Stories } from '@storybook/blocks';
+import * as TypographyStories from './Typography.stories.js';
+
+<Meta of={TypographyStories} />
+
+# Typography
+
+[Figma Design Source](https://www.figma.com/file/drsMVy2kvcMkAoQQq7THww/KDS-%26-SDS-Foundation?node-id=301%3A81&mode=dev)
+
+## Included Fonts
+
+TWK Everett: 200, 300, 400, 500, 700
+
+Roboto: 300, 400, 400 italic, 500, 500 italic
+
+## Example
+
+<Canvas>
+  <Story of={TypographyStories.Headline} />
+</Canvas>
+
+### Controls
+
+<Controls of={TypographyStories.Headline} />
+
+## Styles
+
+| Style       | Mixin            | Utiliy Class         |
+| ----------- | ---------------- | -------------------- |
+| Hero-01     | type-hero-01     | kd-type--hero-01     |
+| Hero-02     | type-hero-02     | kd-type--hero-02     |
+| Hero-03     | type-hero-03     | kd-type--hero-03     |
+| Hero-04     | type-hero-04     | kd-type--hero-04     |
+|             |                  |                      |
+| Display-01  | type-display-01  | kd-type--display-01  |
+| Display-02  | type-display-02  | kd-type--display-02  |
+| Display-03  | type-display-03  | kd-type--display-03  |
+|             |                  |                      |
+| Headline-01 | type-headline-01 | kd-type--headline-01 |
+| Headline-02 | type-headline-02 | kd-type--headline-02 |
+| Headline-03 | type-headline-03 | kd-type--headline-03 |
+| Headline-04 | type-headline-04 | kd-type--headline-04 |
+| Headline-05 | type-headline-05 | kd-type--headline-05 |
+| Headline-06 | type-headline-06 | kd-type--headline-06 |
+| Headline-07 | type-headline-07 | kd-type--headline-07 |
+| Headline-08 | type-headline-08 | kd-type--headline-08 |
+|             |                  |                      |
+| Body-01     | type-body-01     | kd-type--body-01     |
+| Body-02     | type-body-02     | kd-type--body-02     |
+|             |                  |                      |
+| UI-01       | type-ui-01       | kd-type--ui-01       |
+| UI-02       | type-ui-02       | kd-type--ui-02       |
+| UI-03       | type-ui-03       | kd-type--ui-03       |
+| UI-04       | type-ui-04       | kd-type--ui-04       |
+
+## Utility Helper Classes
+
+### Weight
+
+| Weight | Class                      |
+| ------ | -------------------------- |
+| 200    | kd-type--weight-ultralight |
+| 300    | kd-type--weight-light      |
+| 400    | kd-type--weight-regular    |
+| 500    | kd-type--weight-medium     |
+| 700    | kd-type--weight-bold       |
+
+## Usage
+
+### SCSS Mixins
+
+```css
+@use '~@kyndryl-design-system/foundation/scss/mixins/typography.scss';
+
+.your-css-selector {
+  @include typography.type-hero-01;
+}
+```
+
+### Utility Classes
+
+#### Import to SCSS
+
+```css
+@use '~@kyndryl-design-system/foundation/scss/utility/typography.scss';
+```
+
+#### Import to CSS
+
+```css
+@import '@kyndryl-design-system/foundation/css/typography.css';
+```
+
+#### Import to JS
+
+```js
+import '@kyndryl-design-system/foundation/css/typography.css';
+```
+
+#### Example HTML
+
+```html
+<h1 className="kd-type--hero-0i kd-type--weight-ultralight">
+  Hero-01 Ultralight
+</h1>
+```
+
+## More Examples
+
+<Stories />
