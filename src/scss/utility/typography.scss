@@ -34,6 +34,10 @@
   @include typography.type-hero-03;
 }
 
+.kd-type--hero-04 {
+  @include typography.type-hero-04;
+}
+
 .kd-type--display-01 {
   @include typography.type-display-01;
 }
@@ -44,10 +48,6 @@
 
 .kd-type--display-03 {
   @include typography.type-display-03;
-}
-
-.kd-type--display-04 {
-  @include typography.type-display-04;
 }
 
 .kd-type--headline-01 {

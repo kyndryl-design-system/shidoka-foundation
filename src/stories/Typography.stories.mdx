@@ -21,16 +21,8 @@ Roboto: 300, 400, 400 italic, 500, 500 italic
 <Unstyled>
 <style>
 {`
-.sbdocs-content {
-  max-width: 1600px;
-}
-
 p {
 margin: 0;
-}
-
-.type-styles > div {
-margin: 8px 0;
 }
 `}
 
@@ -50,6 +42,10 @@ margin: 8px 0;
 <p class="kd-type--hero-03 kd-type--weight-ultralight">Hero-03 Ultralight</p>
 <p class="kd-type--hero-03 kd-type--weight-light">Hero-03 Light</p>
 <p class="kd-type--hero-03 kd-type--weight-bold">Hero-03 Bold</p>
+
+<p class="kd-type--hero-04 kd-type--weight-ultralight">Hero-04 Ultralight</p>
+<p class="kd-type--hero-04 kd-type--weight-light">Hero-04 Light</p>
+<p class="kd-type--hero-04 kd-type--weight-bold">Hero-04 Bold</p>
 </Unstyled>
 ## Display
 <Unstyled>
@@ -65,9 +61,6 @@ margin: 8px 0;
   Display-03 Ultralight
 </p>
 <p class="kd-type--display-03 kd-type--weight-light">Display-03 Light</p>
-
-<p class="kd-type--display-04 kd-type--weight-ultralight">Display-04 Ultralight</p>
-<p class="kd-type--display-04 kd-type--weight-light">Display-04 Light</p>
 </Unstyled>
 ## Headline
 <Unstyled>
@@ -107,8 +100,8 @@ margin: 8px 0;
 <Unstyled>
 <p class="kd-type--body-01 kd-type--weight-light">Body-01 Light</p>
 <p class="kd-type--body-01 kd-type--weight-regular">Body-01 Regular</p>
-<p class="kd-type--body-01 kd-type--weight-medium">Body-01 Medium</p>
 
+<p class="kd-type--body-02 kd-type--weight-light">Body-02 Light</p>
 <p class="kd-type--body-02 kd-type--weight-regular">Body-02 Regular</p>
 <p class="kd-type--body-02 kd-type--weight-medium">Body-02 Medium</p>
 </Unstyled>
@@ -139,10 +132,12 @@ margin: 8px 0;
 | Hero-01     | type-hero-01     | kd-type--hero-01     |
 | Hero-02     | type-hero-02     | kd-type--hero-02     |
 | Hero-03     | type-hero-03     | kd-type--hero-03     |
+| Hero-04     | type-hero-04     | kd-type--hero-04     |
+|             |                  |                      |
 | Display-01  | type-display-01  | kd-type--display-01  |
 | Display-02  | type-display-02  | kd-type--display-02  |
 | Display-03  | type-display-03  | kd-type--display-03  |
-| Display-04  | type-display-04  | kd-type--display-04  |
+|             |                  |                      |
 | Headline-01 | type-headline-01 | kd-type--headline-01 |
 | Headline-02 | type-headline-02 | kd-type--headline-02 |
 | Headline-03 | type-headline-03 | kd-type--headline-03 |
@@ -151,8 +146,10 @@ margin: 8px 0;
 | Headline-06 | type-headline-06 | kd-type--headline-06 |
 | Headline-07 | type-headline-07 | kd-type--headline-07 |
 | Headline-08 | type-headline-08 | kd-type--headline-08 |
+|             |                  |                      |
 | Body-01     | type-body-01     | kd-type--body-01     |
 | Body-02     | type-body-02     | kd-type--body-02     |
+|             |                  |                      |
 | Ui-01       | type-ui-01       | kd-type--ui-01       |
 | Ui-02       | type-ui-02       | kd-type--ui-02       |
 | Ui-03       | type-ui-03       | kd-type--ui-03       |
@@ -168,7 +165,7 @@ margin: 8px 0;
 | 300    | kd-type--weight-light      |
 | 400    | kd-type--weight-regular    |
 | 500    | kd-type--weight-medium     |
-| 600    | kd-type--weight-bold       |
+| 700    | kd-type--weight-bold       |
 
 ## Usage
 
@@ -177,7 +174,7 @@ margin: 8px 0;
 ### SCSS Mixins
 
 ```css
-@use '@kyndryl-design-system/foundation/scss/mixins/typography.scss';
+@use '~@kyndryl-design-system/foundation/scss/mixins/typography.scss';
 
 .your-css-selector {
   @include typography.type-hero-01;
@@ -186,11 +183,21 @@ margin: 8px 0;
 
 ### Utility Classes
 
+#### Import to SCSS
+
+```css
+@use '~@kyndryl-design-system/foundation/scss/utility/typography.scss';
+```
+
+#### Import to CSS
+
+```css
+@import '@kyndryl-design-system/foundation/css/utility/typography.css';
+```
+
 #### Import to JS
 
 ```js
-import '@kyndryl-design-system/foundation/scss/utility/typography.scss';
-// or
 import '@kyndryl-design-system/foundation/css/typography.css';
 ```
 
@@ -203,5 +210,5 @@ import '@kyndryl-design-system/foundation/css/typography.css';
 #### Example HTML
 
 ```html
-<h1 class="kd-type--hero-0i kd-type-weight-ultralight">Hero-01 Ultralight</h1>
+<h1 class="kd-type--hero-0i kd-type--weight-ultralight">Hero-01 Ultralight</h1>
 ```
