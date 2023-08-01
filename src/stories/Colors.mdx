@@ -1,0 +1,50 @@
+import { Meta, Story, Canvas, Controls, Stories } from '@storybook/blocks';
+import * as ColorsStories from './Colors.stories.js';
+
+<Meta of={ColorsStories} />
+
+# Colors
+
+[Figma Design Source](https://www.figma.com/file/tTu138pz3jLk0mykJSg3t4/KDS---Foundation-v1.0.0?type=design&node-id=965-3806&mode=design&t=SyYtt2cw0sKnToqf-0)
+
+<Stories />
+
+## Usage
+
+### SCSS Mixins
+
+```css
+@use '~@kyndryl-design-system/foundation/scss/mixins/colors.scss';
+
+.your-css-selector {
+  @include colors.dark-theme-darkstone-80;
+}
+```
+
+### Utility Classes
+
+#### Import to SCSS
+
+```css
+@use '~@kyndryl-design-system/foundation/scss/utility/colors.scss';
+```
+
+#### Import to CSS
+
+```css
+@import '@kyndryl-design-system/foundation/css/colors.css';
+```
+
+#### Import to JS
+
+```js
+import '@kyndryl-design-system/foundation/css/colors.css';
+```
+
+#### Example HTML
+
+```html
+<html class="kd-theme--darkstone-80">
+  <!-- rest of your HTML here -->
+</html>
+```
