@@ -1,0 +1,48 @@
+import { Meta, Story, Canvas, Controls, Stories } from '@storybook/blocks';
+import * as ThemesStories from './Themes.stories.js';
+
+<Meta of={ThemesStories} />
+
+# Themes
+
+Work in progress
+
+## Usage
+
+### SCSS Mixins
+
+```css
+@use '~@kyndryl-design-system/foundation/scss/mixins/themes.scss';
+
+.your-css-selector {
+  @include themes.dark-theme-darkstone-80;
+}
+```
+
+### Utility Classes
+
+#### Import to SCSS
+
+```css
+@use '~@kyndryl-design-system/foundation/scss/utility/themes.scss';
+```
+
+#### Import to CSS
+
+```css
+@import '@kyndryl-design-system/foundation/css/themes.css';
+```
+
+#### Import to JS
+
+```js
+import '@kyndryl-design-system/foundation/css/themes.css';
+```
+
+#### Example HTML
+
+```html
+<html class="kd-theme--darkstone-80">
+  <!-- rest of your HTML here -->
+</html>
+```
