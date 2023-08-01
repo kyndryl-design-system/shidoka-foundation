@@ -1,3 +1,11 @@
+# [1.0.0-beta.5](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.4...v1.0.0-beta.5) (2023-08-01)
+
+
+### Bug Fixes
+
+* **color:** separate themes from color ([6e31f7d](https://github.com/kyndryl-design-system/foundation/commit/6e31f7d81170af84101951a2c4cb9bf307fbe0cc))
+* **colors:** token typos ([eadf460](https://github.com/kyndryl-design-system/foundation/commit/eadf460a338e4f4a5693a3a3958fe35dbf0e79fc))
+
 # [1.0.0-beta.4](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.3...v1.0.0-beta.4) (2023-08-01)
 
 
