@@ -1,3 +1,28 @@
+# [1.0.0-beta.4](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.3...v1.0.0-beta.4) (2023-08-01)
+
+
+### Bug Fixes
+
+* **grid:** tokenize container padding ([513153a](https://github.com/kyndryl-design-system/foundation/commit/513153a1656c6ceb8b3a3cbb5d4634c879024cde))
+* **grid:** utility class BEM name cleanup, adjust page gutters, kd token prefixes ([6d14cef](https://github.com/kyndryl-design-system/foundation/commit/6d14cef85a63b049d664aee748a840eb85b82fe3))
+* **typography:** normalize token prefix ([09b270a](https://github.com/kyndryl-design-system/foundation/commit/09b270a35b319cee5ead325e6ec8e2924d286b80))
+* **typography:** weight class order ([1cfd228](https://github.com/kyndryl-design-system/foundation/commit/1cfd228fe9373b7638a08908195dc4ddcdc0aa6e))
+
+
+### Features
+
+* add colors from marketing design system ([cebe1b9](https://github.com/kyndryl-design-system/foundation/commit/cebe1b9c93386c93289235ba58eb3de1064756ac))
+* **color:** revise color story and remove old css variables ([eb7e138](https://github.com/kyndryl-design-system/foundation/commit/eb7e138cfccdd30268afa8593c2df211fb9953ed))
+* **grid:** container padding ([e0dbb19](https://github.com/kyndryl-design-system/foundation/commit/e0dbb190fb58c252e4b2c16c89a2c83f2a1c4ac0))
+* **grid:** initial design delivery updates ([6be5a7e](https://github.com/kyndryl-design-system/foundation/commit/6be5a7e291f8b486d538c8515a8ec62ba6884eab))
+* **typography:** add default weights ([cdc9214](https://github.com/kyndryl-design-system/foundation/commit/cdc9214bcb24a9801a8b4c7b21bc3d141697899b))
+* **typography:** port typography from marketing design system ([c13e2a3](https://github.com/kyndryl-design-system/foundation/commit/c13e2a35fe89cfd1c39963c4142de2d21f3a2961))
+* **typography:** restore font-weight table to story ([7106ad3](https://github.com/kyndryl-design-system/foundation/commit/7106ad352083e6f1da2bd8c64e37b13d7a6f1cf5))
+* **typography:** restore style table to story ([67f0623](https://github.com/kyndryl-design-system/foundation/commit/67f0623215a02ab5357485a578c845f0c20b12ed))
+* **typography:** resturcture typography to use mixins ([90eb00f](https://github.com/kyndryl-design-system/foundation/commit/90eb00f63eae0fd23c74aed3c41e5cfca3f0c9ec))
+* **typography:** revisions to typography based on code review ([f5b5347](https://github.com/kyndryl-design-system/foundation/commit/f5b5347a0025bd47b230a61c9d43f2fcc92b026e))
+* **typography:** updated values and cleanup ([d6cc5f5](https://github.com/kyndryl-design-system/foundation/commit/d6cc5f539d45fb48cdcecf05d6b48f7b84643672))
+
 # [1.0.0-beta.3](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.2...v1.0.0-beta.3) (2023-07-26)
 
 
