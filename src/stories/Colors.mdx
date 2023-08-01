@@ -11,40 +11,10 @@ import * as ColorsStories from './Colors.stories.js';
 
 ## Usage
 
-### SCSS Mixins
+### CSS Vars
 
 ```css
-@use '~@kyndryl-design-system/foundation/scss/mixins/colors.scss';
-
 .your-css-selector {
-  @include colors.dark-theme-darkstone-80;
+  background-color: var(--kd-color-background-primary);
 }
-```
-
-### Utility Classes
-
-#### Import to SCSS
-
-```css
-@use '~@kyndryl-design-system/foundation/scss/utility/colors.scss';
-```
-
-#### Import to CSS
-
-```css
-@import '@kyndryl-design-system/foundation/css/colors.css';
-```
-
-#### Import to JS
-
-```js
-import '@kyndryl-design-system/foundation/css/colors.css';
-```
-
-#### Example HTML
-
-```html
-<html class="kd-theme--darkstone-80">
-  <!-- rest of your HTML here -->
-</html>
 ```
