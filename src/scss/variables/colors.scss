@@ -1,23 +1,200 @@
 :root {
-  --kyn-color-brand: #ff462d;
-  --kyn-color-brand-text: #fb4425;
-  --kyn-color-text-on-brand: #fff;
-  --kyn-color-text: #3d3c3c;
-  --kyn-color-text-light: #666;
-  --kyn-color-text-hover: #2f808c;
-  --kyn-color-primary: #29707a;
-  --kyn-color-primary-text: #ffffff;
-  --kyn-color-primary-hover: #2f808c;
-  --kyn-color-primary-focus: #2f808c;
-  --kyn-color-primary-active: #163d43;
-  --kyn-color-primary-active-text: #f9f9f9;
-  --kyn-color-secondary: #f7f7f7;
-  --kyn-color-background: #ffffff;
-  --kyn-color-background-hover: #f4f4f4;
-  --kyn-color-background-focus: #f4f4f4;
-  --kyn-color-border: #e2e2e2;
-  --kyn-color-divider: #8c8c8c;
-  --kyn-color-divider-light: #dcdad8;
-  --kyn-color-disabled: rgba(0, 0, 0, 0.1);
-  --kyn-color-disabled-text: rgba(100, 110, 117, 0.75);
+  $colors: (
+    spruce: (
+      100: #081618,
+      90: #0E272A,
+      80: #163D43,
+      70: #205961,
+      60: #29707A,
+      50: #2F808C,
+      40: #3797A4,
+      30: #3FADBD,
+      20: #8ECFD9,
+      10: #DDF0F3,
+    ),
+    skye: (
+      100: #091714,
+      90: #102824,
+      80: #193F38,
+      70: #23564D,
+      60: #2C6E61,
+      50: #38887B,
+      40: #44A895,
+      30: #5FBEAC,
+      20: #AADCD3,
+      10: #E4F4F1,
+    ),
+    deepforest: (
+      100: #02150D,
+      90: #042315,
+      80: #074127,
+      70: #0A5734,
+      60: #0D7546,
+      50: #0F8853,
+      40: #13A865,
+      30: #15BE72,
+      20: #19DB83,
+      10: #A3F4CF,
+    ),
+    springgreen: (
+      100: #03140A,
+      90: #072914,
+      80: #0d4422,
+      70: #10592C,
+      60: #187E3F,
+      50: #1B904B,
+      40: #1FA452,
+      30: #24C060,
+      20: #4CDD84,
+      10: #B6F1CD,
+    ),
+    warmred: (
+      100: #410700,
+      90: #6A0C00,
+      80: #9B1200,
+      70: #CC1800,
+      60: #FF2306,
+      50: #FF462D,
+      40: #FF6B57,
+      30: #FF9688,
+      20: #FEC1B9,
+      10: #FEDEDA,
+    ),
+    earth: (
+      100: #161412,
+      90: #2D2824,
+      80: #3F3833,
+      70: #565049,
+      60: #70655B,
+      50: #8B7D71,
+      40: #9E9287,
+      30: #BFB7B0,
+      20: #DCD8D4,
+      10: #F5F4F3,
+    ),
+    cloud: (
+      100: #171511,
+      90: #29271F,
+      80: #3C382D,
+      70: #534E3F,
+      60: #6E6854,
+      50: #8A826A,
+      40: #A49D89,
+      30: #BDB8A9,
+      20: #DDDAD3,
+      10: #F2F1EE,
+    ),
+    darkstone: (
+      100: #161616,
+      90: #272727,
+      80: #3D3C3C,
+      70: #515151,
+      60: #6D6D6D,
+      50: #898888,
+      40: #A8A5A6,
+      30: #BCBAB8,
+      20: #DCDAD8,
+      10: #F9F9F9,
+    ),
+    warmgray: (
+      100: #141313,
+      90: #2D2B2B,
+      80: #423F3F,
+      70: #565353,
+      60: #746F6F,
+      50: #8D8888,
+      40: #A5A0A0,
+      30: #C1BEBE,
+      20: #D9D7D7,
+      10: #F1F0F0,
+    ),
+    coolgray: (
+      100: #121415,
+      90: #222527,
+      80: #383E41,
+      70: #4B5357,
+      60: #667076,
+      50: #79858B,
+      40: #97A1A6,
+      30: #B6BDC0,
+      20: #D5D9DB,
+      10: #EDF1F2,
+    ),
+  );
+
+  /* Generating tokens based on the values defined in colors */
+  @each $colorname, $color in $colors {
+    @each $key, $value in $color {
+        $keyname: "--kd-color-" + $colorname + "-" + $key;
+        #{$keyname}: #{$value};
+    }
+  }
+  /* Exceptions */
+  --kd-color-dk-springgreen-60: #187E3F;
+
+  /* The most basic colors */
+  --kd-color-neutral-white: #FFFFFF;
+
+  /* Status colors */
+  --kd-color-success: #1FA452;
+  --kd-color-success-light: #E5F7EB;
+  --kd-color-error: #CC1800;
+  --kd-color-error-light: #F7E6E6;
+  --kd-color-warning: #F5C400;
+  --kd-color-warning-light: #FEF9E5;
+  --kd-color-informational: #1473FF;
+  --kd-color-informational-light: #E9F2FF;
+
+  /* Statuses */
+  --kd-color-status-success: var(--kd-color-success);
+  --kd-color-status-success-light: var(--kd-color-success-light);
+  --kd-color-status-error: var(--kd-color-error);
+  --kd-color-status-error-light: var(--kd-color-error-light);
+  --kd-color-status-warning: var(--kd-color-warning);
+  --kd-color-status-warning-light: var(--kd-color-warning-light);
+  --kd-color-status-informational: var(--kd-color-informational);
+  --kd-color-status-informational-light: var(--kd-color-informational-light);
+
+  /* Text colors */
+  --kd-color-text-primary: var(--kd-color-darkstone-80);
+  --kd-color-text-secondary: var(--kd-color-darkstone-50);
+  --kd-color-text-tertiary: var(--kd-color-spruce-60);
+  --kd-color-text-featured: var(--kd-color-warmred-50);
+  --kd-color-text-inversed: var(--kd-color-neutral-white);
+  --kd-color-text-disabled: var(--kd-color-warmgray-20);
+  --kd-color-text-accent-01: var(--kd-color-spruce-40);
+  --kd-color-text-accent-02: var(--kd-color-springgreen-20);
+  --kd-color-text-link: var(--kd-color-darkstone-80);
+  --kd-color-text-link-hover: var(--kd-color-darkstone-100);
+
+  /* Background colors */
+  --kd-color-background-primary: var(--kd-color-neutral-white);
+  --kd-color-background-secondary: var(--kd-color-cloud-10);
+  --kd-color-background-tertiary: var(--kd-color-skye-20);
+  --kd-color-theme-darkstone-80: var(--kd-color-darkstone-80);
+  --kd-color-theme-spruce-60: var(--kd-color-spruce-60);
+  --kd-color-theme-spruce-80: var(--kd-color-spruce-80);
+  --kd-color-theme-dk-springgreen-60: var(--kd-color-dk-springgreen-60);
+  --kd-color-theme-warmred-50: var(--kd-color-warmred-50);
+  --kd-color-theme-springgreen-20: var(--kd-color-springgreen-20);
+
+  /* Border colors */
+  --kd-color-border-primary: var(--kd-color-coolgray-30);
+  --kd-color-border-light: var(--kd-color-coolgray-20);
+  --kd-color-border-dark: var(--kd-color-warmgray-50);
+  --kd-color-border-inversed: var(--kd-color-neutral-white);
+  --kd-color-border-accent-springgreen: var(--kd-color-springgreen20);
+  --kd-color-border-accent-spruce: var(--kd-color-spruce30);
+  --kd-color-border-accent-warmred: var(--kd-color-warmred50);
+
+  /* UI colors */
+  --kd-color-ui-dark: var(--kd-color-darkstone-80);
+  --kd-color-ui-mid-dark: var(--kd-color-darkstone-50);
+  --kd-color-ui-medium: var(--kd-color-darkstone-20);
+  --kd-color-ui-light: var(--kd-color-darkstone-10);
+
+  /* Opacity */
+  --kd-color-transparent: rgba(0, 0, 0, 0);
+  --kd-color-light-opacity-50: rgba(255, 255, 255, 0.5);
+  --kd-color-dark-opacity-50: rgba(61, 60, 60, 0.5);
 }

@@ -1,0 +1,83 @@
+@use '../variables/colors.scss';
+
+/* Dark themes */
+@mixin dark-theme-darkstone-80 {
+  --kd-theme-color-darkstone-background: var(--kd-color-darkstone-80);
+  --kd-theme-color-darkstone-foreground: var(--kd-color-neutral-white);
+  --kd-theme-color-darkstone-accent-primary: var(--kd-color-springgreen-20);
+  --kd-theme-color-darkstone-accent-secondary: var(--kd-color-coolgray-40);
+  --kd-theme-color-darkstone-accent-tertiary: var(--kd-color-darkstone-70);
+}
+
+@mixin dark-theme-spruce-60 {
+  --kd-theme-color-spruce-background: var(--kd-color-spruce-60);
+  --kd-theme-color-spruce-foreground: var(--kd-color-neutral-white);
+  --kd-theme-color-spruce-accent-primary: var(--kd-color-springgreen-20);
+  --kd-theme-color-spruce-accent-secondary: var(--kd-color-springgreen-10);
+  --kd-theme-color-spruce-accent-tertiary: var(--kd-color-spruce-50);
+}
+
+@mixin dark-theme-spruce-80 {
+  --kd-theme-color-spruce-background: var(--kd-color-spruce-80);
+  --kd-theme-color-spruce-foreground: var(--kd-color-neutral-white);
+  --kd-theme-color-spruce-accent-primary: var(--kd-color-springgreen-20);
+  --kd-theme-color-spruce-accent-secondary: var(--kd-color-spruce-30);
+  --kd-theme-color-spruce-accent-tertiary: var(--kd-color-spruce-70);
+}
+
+@mixin dark-theme-darkspring-60 {
+  --kd-theme-color-darkspring-background: var(--kd-color-spruce-80);
+  --kd-theme-color-darkspring-foreground: var(--kd-color-neutral-white);
+  --kd-theme-color-darkspring-accent-primary: var(--kd-color-springgreen-10);
+  --kd-theme-color-darkspring-accent-secondary: var(--kd-color-springgreen-20);
+  --kd-theme-color-darkspring-accent-tertiary: var(--kd-color-springgreen-50);
+}
+
+@mixin dark-theme-warmred-50 {
+  --kd-theme-color-warmred-background: var(--kd-color-warmred-50);
+  --kd-theme-color-warmred-foreground: var(--kd-color-neutral-white);
+  --kd-theme-color-warmred-accent-primary: var(--kd-color-neutral-white);
+  --kd-theme-color-warmred-accent-secondary: var(--kd-color-darkstone-80);
+  --kd-theme-color-warmred-accent-tertiary: var(--kd-color-warmred-40);
+}
+
+@mixin dark-theme-springgreen-20 {
+  --kd-theme-color-springgreen-background: var(--kd-color-springgreen-20);
+  --kd-theme-color-springgreen-foreground: var(--kd-color-deepforest-90);
+  --kd-theme-color-springgreen-accent-primary: var(--kd-color-deepforest-90);
+  --kd-theme-color-springgreen-accent-secondary: var(--kd-color-spruce-70);
+  --kd-theme-color-springgreen-accent-tertiary: var(--kd-color-springgreen-30);
+}
+
+/* Light themes */
+@mixin light-theme-darkstone-light {
+  --kd-theme-color-darkstone-background: var(--kd-color-darkstone-10);
+  --kd-theme-color-darkstone-foreground: var(--kd-color-darkstone-80);
+  --kd-theme-color-darkstone-accent-primary: var(--kd-color-warmred-50);
+  --kd-theme-color-darkstone-accent-secondary: var(--kd-color-spruce-60);
+  --kd-theme-color-darkstone-accent-tertiary: var(--kd-color-darkstone-20);
+}
+
+@mixin light-theme-skye-10 {
+  --kd-theme-color-skye-background: var(--kd-color-skye-10);
+  --kd-theme-color-skye-foreground: var(--kd-color-darkstone-80);
+  --kd-theme-color-skye-accent-primary: var(--kd-color-warmred-50);
+  --kd-theme-color-skye-accent-secondary: var(--kd-color-spruce-60);
+  --kd-theme-color-skye-accent-tertiary: var(--kd-color-skye-20);
+}
+
+@mixin light-theme-cloud-10 {
+  --kd-theme-color-cloud-background: var(--kd-color-cloud-10);
+  --kd-theme-color-cloud-foreground: var(--kd-color-darkstone-80);
+  --kd-theme-color-cloud-accent-primary: var(--kd-color-warmred-50);
+  --kd-theme-color-cloud-accent-secondary: var(--kd-color-spruce-60);
+  --kd-theme-color-cloud-accent-tertiary: var(--kd-color-cloud-20);
+}
+
+@mixin light-theme-white {
+  --kd-theme-color-white-background: var(--kd-color-neutral-white);
+  --kd-theme-color-white-foreground: var(--kd-color-darkstone-80);
+  --kd-theme-color-white-accent-primary: var(--kd-color-warmred-50);
+  --kd-theme-color-white-accent-secondary: var(--kd-color-spruce-60);
+  --kd-theme-color-white-accent-tertiary: var(--kd-color-darkstone-10);
+}
