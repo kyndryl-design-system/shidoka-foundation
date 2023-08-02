@@ -1,3 +1,10 @@
+# [1.0.0-beta.6](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.5...v1.0.0-beta.6) (2023-08-02)
+
+
+### Bug Fixes
+
+* changed display classes number ([73050e8](https://github.com/kyndryl-design-system/foundation/commit/73050e8facf415cfdaafc8051a5cf71cb17fe71a))
+
 # [1.0.0-beta.5](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.4...v1.0.0-beta.5) (2023-08-01)
 
 
