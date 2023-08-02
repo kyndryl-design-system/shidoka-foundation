@@ -26,7 +26,7 @@ export default {
 };
 
 export const Palette = {
-  render: (args) => {
+  render: () => {
     return html`
       <table>
         <thead>
@@ -1373,7 +1373,7 @@ export const Palette = {
 };
 
 export const Text = {
-  render: (args) => {
+  render: () => {
     return html`
       <table>
         <thead>
@@ -1520,7 +1520,7 @@ export const Text = {
 };
 
 export const Background = {
-  render: (args) => {
+  render: () => {
     return html`
       <table>
         <thead>
@@ -1576,7 +1576,7 @@ export const Background = {
 };
 
 export const Borders = {
-  render: (args) => {
+  render: () => {
     return html`
       <table>
         <thead>
@@ -1684,7 +1684,7 @@ export const Borders = {
 };
 
 export const Status = {
-  render: (args) => {
+  render: () => {
     return html`
       <table>
         <thead>
@@ -1805,7 +1805,7 @@ export const Status = {
 };
 
 export const UI = {
-  render: (args) => {
+  render: () => {
     return html`
       <table>
         <thead>
