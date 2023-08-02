@@ -1,5 +1,4 @@
 @use '../mixins/typography.scss';
-@use '../variables/breakpoints.scss';
 
 // generate hero class
 @for $i from 1 through 4 {
