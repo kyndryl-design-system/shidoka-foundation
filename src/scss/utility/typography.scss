@@ -7,7 +7,7 @@
   }
 }
 // generate display class
-@for $i from 1 through 4 {
+@for $i from 1 through 3 {
   .kd-type--display-0#{$i} {
     @include typography.type-display-0($i);
   }
