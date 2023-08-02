@@ -1,3 +1,10 @@
+# [1.0.0-beta.8](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.7...v1.0.0-beta.8) (2023-08-02)
+
+
+### Bug Fixes
+
+* **typography:** revert scss optimizations ([229fee1](https://github.com/kyndryl-design-system/foundation/commit/229fee12959cc90d8b722cb6a3e9c6031bb11976))
+
 # [1.0.0-beta.7](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.6...v1.0.0-beta.7) (2023-08-02)
 
 
