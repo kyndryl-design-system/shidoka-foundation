@@ -1,63 +1,22 @@
 @use '../mixins/typography.scss';
 
-.kd-type--hero-01 {
-  @include typography.type-hero-01;
+// generate hero class
+@for $i from 1 through 4 {
+  .kd-type--hero-0#{$i} {
+    @include typography.type-hero-0($i);
+  }
 }
-
-.kd-type--hero-02 {
-  @include typography.type-hero-02;
+// generate display class
+@for $i from 1 through 3 {
+  .kd-type--display-0#{$i} {
+    @include typography.type-display-0($i);
+  }
 }
-
-.kd-type--hero-03 {
-  @include typography.type-hero-03;
-}
-
-.kd-type--hero-04 {
-  @include typography.type-hero-04;
-}
-
-.kd-type--display-01 {
-  @include typography.type-display-01;
-}
-
-.kd-type--display-02 {
-  @include typography.type-display-02;
-}
-
-.kd-type--display-03 {
-  @include typography.type-display-03;
-}
-
-.kd-type--headline-01 {
-  @include typography.type-headline-01;
-}
-
-.kd-type--headline-02 {
-  @include typography.type-headline-02;
-}
-
-.kd-type--headline-03 {
-  @include typography.type-headline-03;
-}
-
-.kd-type--headline-04 {
-  @include typography.type-headline-04;
-}
-
-.kd-type--headline-05 {
-  @include typography.type-headline-05;
-}
-
-.kd-type--headline-06 {
-  @include typography.type-headline-06;
-}
-
-.kd-type--headline-07 {
-  @include typography.type-headline-07;
-}
-
-.kd-type--headline-08 {
-  @include typography.type-headline-08;
+// generate headline class
+@for $i from 1 through 8 {
+  .kd-type--headline-0#{$i} {
+    @include typography.type-headline-0($i);
+  }
 }
 
 .kd-type--body-01 {
@@ -68,20 +27,11 @@
   @include typography.type-body-02;
 }
 
-.kd-type--ui-01 {
-  @include typography.type-ui-01;
-}
-
-.kd-type--ui-02 {
-  @include typography.type-ui-02;
-}
-
-.kd-type--ui-03 {
-  @include typography.type-ui-03;
-}
-
-.kd-type--ui-04 {
-  @include typography.type-ui-04;
+// generate ui class
+@for $i from 1 through 4 {
+  .kd-type--ui-0#{$i} {
+    @include typography.type-ui-0($i);
+  }
 }
 
 //Font-weight-classes
