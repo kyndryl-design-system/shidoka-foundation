@@ -1,3 +1,10 @@
+# [1.0.0-beta.7](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.6...v1.0.0-beta.7) (2023-08-02)
+
+
+### Bug Fixes
+
+* **typography:** add UI-05 style ([7ff7185](https://github.com/kyndryl-design-system/foundation/commit/7ff7185300987bdf20a31e3e59057622b87c3524))
+
 # [1.0.0-beta.6](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.5...v1.0.0-beta.6) (2023-08-02)
 
 
