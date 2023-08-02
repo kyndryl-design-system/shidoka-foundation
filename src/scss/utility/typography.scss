@@ -28,7 +28,7 @@
 }
 
 // generate ui class
-@for $i from 1 through 4 {
+@for $i from 1 through 5 {
   .kd-type--ui-0#{$i} {
     @include typography.type-ui-0($i);
   }

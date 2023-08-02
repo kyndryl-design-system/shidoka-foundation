@@ -184,6 +184,7 @@ export const Utility = {
         <div class="kd-type--ui-02 ${classMap(weightClasses)}">UI-02</div>
         <div class="kd-type--ui-03 ${classMap(weightClasses)}">UI-03</div>
         <div class="kd-type--ui-04 ${classMap(weightClasses)}">UI-04</div>
+        <div class="kd-type--ui-05 ${classMap(weightClasses)}">UI-05</div>
       </div>
     `;
   },
