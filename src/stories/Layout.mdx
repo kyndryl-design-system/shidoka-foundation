@@ -15,7 +15,11 @@ Work in progress
 @use '~@kyndryl-design-system/foundation/scss/mixins/layout.scss';
 
 .your-css-selector {
-  @include layout.dark-theme-darkstone-80;
+  @include layout.aspect-ratio('16:9');
+}
+
+.your-css-selector img {
+  @include layout.object-fit('cover');
 }
 ```
 
@@ -42,7 +46,7 @@ import '@kyndryl-design-system/foundation/css/layout.css';
 #### Example HTML
 
 ```html
-<html class="kd-theme--darkstone-80">
-  <!-- rest of your HTML here -->
-</html>
+<div class="kd-layout--aspect-ratio-16x9">
+  <img src="your-image" class="kd-layout--object-fit-cover" />
+</div>
 ```
