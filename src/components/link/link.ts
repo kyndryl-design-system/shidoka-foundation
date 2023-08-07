@@ -3,7 +3,7 @@ import { customElement, property } from 'lit/decorators.js';
 import LinkStyles from './link.scss';
 
 /**
- * Component for navigation links within the Footer.
+ * Component for navigation links.
  * @fires on-click - Captures the click event and emits the original event details.
  * @slot unnamed - Slot for link text/content.
  */
