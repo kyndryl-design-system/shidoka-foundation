@@ -1,5 +1,6 @@
 import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
+import LinkStyles from './link.scss';
 
 /**
  * Component for navigation links within the Footer.
@@ -9,6 +10,7 @@ import { customElement, property } from 'lit/decorators.js';
 
 @customElement('kd-link')
 export class Link extends LitElement {
+  static override styles = LinkStyles;  
 
   /** Defines a target attribute for where to load the URL. Possible options include "_self" (deafult), "_blank", "_parent", "_top" */
   @property({ type: String })
@@ -27,6 +29,7 @@ export class Link extends LitElement {
       <a
         class="text-link"
         target=${this.target}
+        role='link'
         rel=${this.rel}
         href=${this.href ? this.href : 'javascript:void(0)'}
         @click=${(e: Event) => this.handleClick(e)}
@@ -37,6 +40,8 @@ export class Link extends LitElement {
   }
 
   private handleClick(e: Event) {
+    console.log('called');
+    
     const event = new CustomEvent('on-click', {
       detail: { origEvent: e },
     });
