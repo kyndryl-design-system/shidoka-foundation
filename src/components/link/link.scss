@@ -1,0 +1,33 @@
+@use '../../scss/global.scss';
+
+:host {
+  display: inline-block;
+  margin: 4px 0;
+}
+
+.text-link {
+  display: inline-block;
+  padding: 0 12px;
+  position: relative;
+  text-decoration: none;
+  color: var(--kd-color-text-link);
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: calc(100% - 24px);
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 12px;
+    top: auto;
+    background-color: var(--kd-color-border-accent-warmred);
+    transform-origin: bottom left;
+    transition: transform 0.15s ease-out;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    transform: scaleX(1);
+  }
+}
