@@ -22,6 +22,14 @@
             "name": "Icon",
             "module": "./components/icon"
           }
+        },
+        {
+          "kind": "js",
+          "name": "Link",
+          "declaration": {
+            "name": "Link",
+            "module": "./components/link"
+          }
         }
       ]
     },
@@ -345,6 +353,142 @@
           "declaration": {
             "name": "Icon",
             "module": "./icon"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/link/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Link",
+          "declaration": {
+            "name": "Link",
+            "module": "./link"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/link/link.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "Component for navigation links within the Footer.",
+          "name": "Link",
+          "slots": [
+            {
+              "description": "Slot for link text/content.",
+              "name": "unnamed"
+            }
+          ],
+          "members": [
+            {
+              "kind": "field",
+              "name": "target",
+              "default": "'_self'",
+              "type": {
+                "text": "'_self'"
+              },
+              "description": "Defines a target attribute for where to load the URL. Possible options include \"_self\" (deafult), \"_blank\", \"_parent\", \"_top\"",
+              "attribute": "target"
+            },
+            {
+              "kind": "field",
+              "name": "rel",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "description": "Defines a relationship between a linked resource and the document. An empty string (default) means no particular relationship",
+              "attribute": "rel"
+            },
+            {
+              "kind": "field",
+              "name": "href",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "description": "Link url.",
+              "attribute": "href"
+            },
+            {
+              "kind": "method",
+              "name": "handleClick",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "e",
+                  "type": {
+                    "text": "Event"
+                  }
+                }
+              ]
+            }
+          ],
+          "events": [
+            {
+              "description": "Captures the click event and emits the original event details.",
+              "name": "on-click"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "target",
+              "default": "'_self'",
+              "type": {
+                "text": "'_self'"
+              },
+              "description": "Defines a target attribute for where to load the URL. Possible options include \"_self\" (deafult), \"_blank\", \"_parent\", \"_top\"",
+              "fieldName": "target"
+            },
+            {
+              "name": "rel",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "description": "Defines a relationship between a linked resource and the document. An empty string (default) means no particular relationship",
+              "fieldName": "rel"
+            },
+            {
+              "name": "href",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "description": "Link url.",
+              "fieldName": "href"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "kd-link",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Link",
+          "declaration": {
+            "name": "Link",
+            "module": "src/components/link/link.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "kd-link",
+          "declaration": {
+            "name": "Link",
+            "module": "src/components/link/link.ts"
           }
         }
       ]
