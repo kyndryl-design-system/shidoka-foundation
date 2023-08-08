@@ -1,0 +1,19 @@
+@mixin spacer($property, $value) {
+    @each $dir in (top, right, bottom, left) {
+    #{$property}-#{$dir}: $value;
+    }
+    }
+    
+    
+    @mixin spacer-vertical($property, $value) {
+    @each $dir in (top, bottom) {
+    #{$property}-#{$dir}: $value;
+    }
+    }
+    
+    
+    @mixin spacer-horizontal($property, $value) {
+    @each $dir in (left, right) {
+    #{$property}-#{$dir}: $value;
+    }
+    }
