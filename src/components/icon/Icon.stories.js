@@ -4,7 +4,7 @@ import userIcon from '@carbon/icons/es/user--avatar/24';
 
 export default {
   title: 'Components/Icon',
-  component: 'kyn-icon',
+  component: 'kd-icon',
   argTypes: {
     fill: {
       control: { type: 'color' },
@@ -22,10 +22,10 @@ export const Icon = {
     sizeOverride: null,
   },
   render: (args) => html`
-    <kyn-icon
+    <kd-icon
       .icon=${args.icon}
       fill=${args.fill}
       sizeOverride=${args.sizeOverride}
-    ></kyn-icon>
+    ></kd-icon>
   `,
 };
