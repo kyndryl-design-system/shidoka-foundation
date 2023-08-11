@@ -5,29 +5,87 @@
   margin: 4px 0;
 }
 
-.text-link {
-  display: inline-block;
-  padding: 0 12px;
+// base class
+.kd-link-text {
+  display: inline-flex;
+  padding: 0 2px;
   position: relative;
   text-decoration: none;
-  color: var(--kd-color-text-link);
 
-  &::after {
-    content: '';
-    position: absolute;
-    width: calc(100% - 24px);
-    transform: scaleX(0);
-    height: 1px;
-    bottom: 0;
-    left: 12px;
-    top: auto;
-    background-color: var(--kd-color-border-accent-warmred);
-    transform-origin: bottom left;
-    transition: transform 0.15s ease-out;
+  // Primary (app)
+  &-primary {
+    color: var(--kd-color-spruce-60);
+    // text-decoration: underline; // for inline
+
+    &:hover {
+      color: var(--kd-color-spruce-50);
+    }
+    &:focus {
+      border: 1px solid var(--kd-color-spruce-20);
+      text-decoration: none;
+    }
+    &:active {
+      color: var(--kd-color-spruce-80);
+      font-weight: var(--kd-font-weight-medium);
+      text-decoration: underline;
+      border: none;
+    }
+    &:visited {
+      color: var(--kd-color-spruce-60);
+      text-decoration: underline;
+    }
   }
 
-  &:hover::after,
-  &:focus::after {
-    transform: scaleX(1);
+  // Secondary (web)
+  &-secondary {
+    color: var(--kd-color-darkstone-80);
+    // text-decoration: underline; // for inline
+
+    &:hover {
+      color: var(--kd-color-darkstone-60);
+    }
+    &:focus {
+      border: 1px solid var(--kd-color-darkstone-20);
+      text-decoration: none;
+    }
+    &:active {
+      font-weight: var(--kd-font-weight-medium);
+      text-decoration: underline;
+      border: none;
+    }
+    &:visited {
+      color: var(--kd-color-darkstone-80);
+      text-decoration: underline;
+    }
+  }
+  // Link disable class
+  &-disabled {
+    cursor: not-allowed;
+    color: var(--kd-color-darkstone-20);
+    text-decoration: none;
+    border: none;
+    outline: none;
+  }
+
+  // Link Inline - standalone class
+  &-inline {
+    text-decoration: underline;
+  }
+  &-standalone {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  // Link sizes : md, lg, sm
+  &-md {
+    font-size: 1rem;
+  }
+  &-lg {
+    font-size: 1.25rem;
+  }
+  &-sm {
+    font-size: 0.875rem;
   }
 }
