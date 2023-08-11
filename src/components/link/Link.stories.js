@@ -22,10 +22,12 @@ const args = {
   size: 'md',
   target: '_self',
   kind: 'primary',
+  disabled: false,
 };
 
 const linkIconArgs = { ...args, sizeOverride: 16 };
 
+// Inline link
 export const Link = {
   args: args,
   render: (args) =>
@@ -36,12 +38,14 @@ export const Link = {
         size=${args.size}
         target=${args.target}
         kind=${args.kind}
+        ?disabled=${args.disabled}
       >
         Link1
       </kd-link>
     `,
 };
 
+// Standalone Link
 export const LinkWithIcon = {
   args: linkIconArgs,
   render: (args) => html`
@@ -50,6 +54,7 @@ export const LinkWithIcon = {
       size=${args.size}
       target=${args.target}
       kind=${args.kind}
+      ?disabled=${args.disabled}
     >
       Link1
       <span style="display: inline-flex; align-self: center; margin-left:2px;">

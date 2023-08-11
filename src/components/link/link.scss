@@ -66,6 +66,15 @@
     text-decoration: none;
     border: none;
     outline: none;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:visited {
+      color: var(--kd-color-darkstone-20);
+      border: none;
+      text-decoration: none;
+    }
   }
 
   // Link Inline - standalone class
