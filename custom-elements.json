@@ -311,7 +311,7 @@
             "name": "LitElement",
             "package": "lit"
           },
-          "tagName": "kyn-icon",
+          "tagName": "kd-icon",
           "customElement": true
         }
       ],
@@ -326,7 +326,7 @@
         },
         {
           "kind": "custom-element-definition",
-          "name": "kyn-icon",
+          "name": "kd-icon",
           "declaration": {
             "name": "Icon",
             "module": "src/components/icon/icon.ts"
