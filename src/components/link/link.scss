@@ -49,6 +49,7 @@
       text-decoration: none;
     }
     &:active {
+      color: var(--kd-color-darkstone-100);
       font-weight: var(--kd-font-weight-medium);
       text-decoration: underline;
       border: none;

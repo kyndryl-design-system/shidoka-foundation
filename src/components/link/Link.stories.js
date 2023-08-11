@@ -52,7 +52,7 @@ export const LinkWithIcon = {
       kind=${args.kind}
     >
       Link1
-      <span style="display: inline-flex; align-self: center;">
+      <span style="display: inline-flex; align-self: center; margin-left:2px;">
         <kyn-icon
           .icon=${arrowRightIcon}
           sizeOverride=${args.size === 'lg' ? '20' : args.sizeOverride}
