@@ -39,7 +39,7 @@ export class Link extends LitElement {
    * Defines a relationship between a linked resource and the document. An empty string (default) means no particular relationship
    * */
   @property({ type: String })
-  rel = this.target === '_blank' ? 'noopener' : undefined;
+  rel = this.target === '_blank' ? 'noopener' : '';
   /**
    * @description Disables the link (bydefault false).
    */
