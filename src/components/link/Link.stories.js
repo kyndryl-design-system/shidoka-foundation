@@ -54,12 +54,10 @@ export const LinkWithIcon = {
       ?disabled=${args.disabled}
     >
       Link1
-      <span style="display: inline-flex; align-self: center; margin-left:2px;">
-        <kd-icon
-          .icon=${arrowRightIcon}
-          sizeOverride=${args.sizeOverride}
-        ></kd-icon>
-      </span>
+      <kd-icon
+        .icon=${arrowRightIcon}
+        sizeOverride=${args.sizeOverride}
+      ></kd-icon>
     </kd-link>
   `,
 };
