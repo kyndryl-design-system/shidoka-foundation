@@ -49,7 +49,7 @@ export const ButtonWithIcon = {
       ?disabled=${args.disabled}
     >
       Button
-      <kyn-icon .icon=${arrowRightIcon}></kyn-icon>
+      <kd-icon .icon=${arrowRightIcon}></kd-icon>
     </kyn-button>
   `,
 };
