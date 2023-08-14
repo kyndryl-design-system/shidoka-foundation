@@ -1,7 +1,7 @@
 import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { classMap } from 'lit-html/directives/class-map.js';
-import { LINK_TYPES, LINK_TARGETS, LINK_SIZES } from './defs';
+import { LINK_TYPES, LINK_TARGETS } from './defs';
 
 import LinkStyles from './link.scss';
 
@@ -26,10 +26,6 @@ export class Link extends LitElement {
   @property({ type: String }) target = LINK_TARGETS.SELF;
 
   /**
-   * @description The Link size.
-   * */
-  @property({ type: String }) size = LINK_SIZES.MEDIUM; // default : App (primary)
-  /**
    * @description The Link type.
    * */
   @property() kind = LINK_TYPES.PRIMARY;
@@ -48,7 +44,6 @@ export class Link extends LitElement {
   @property({ type: Boolean })
   disabled = false;
 
-  // @property({type: String}) variant = LINK_VARIANTS.INLINE;
   /**
    * @description whether you want the inline version of Link.
    */
@@ -56,7 +51,6 @@ export class Link extends LitElement {
   inline = false;
 
   override render() {
-    
     const classes = this.returnClassMap();
 
     return html`
@@ -69,14 +63,13 @@ export class Link extends LitElement {
               ?disabled=${this.disabled}
               aria-disabled=${true}
             >
-              <slot></slot>
+            <slot></slot>
             </a>
           `
         : html`
             <a
               class="kd-link-text ${classes}"
               target=${this.target}
-              role="link"
               rel=${this.rel}
               href=${this.href ? this.href : 'javascript:void(0)'}
               ?disabled=${this.disabled}
@@ -92,17 +85,12 @@ export class Link extends LitElement {
     if (this.disabled) {
       return classMap({
         ['kd-link-text-disabled']: this.disabled,
-        ['kd-link-text-md']: this.size === LINK_SIZES.MEDIUM,
-        ['kd-link-text-lg']: this.size === LINK_SIZES.LARGE,
-        ['kd-link-text-sm']: this.size === LINK_SIZES.SMALL,
       });
     } else {
       return classMap({
-        ['kd-link-text-primary']: this.kind === LINK_TYPES.PRIMARY || !this.kind,
+        ['kd-link-text-primary']:
+          this.kind === LINK_TYPES.PRIMARY || !this.kind,
         ['kd-link-text-secondary']: this.kind === LINK_TYPES.SECONDARY,
-        ['kd-link-text-md']: this.size === LINK_SIZES.MEDIUM,
-        ['kd-link-text-lg']: this.size === LINK_SIZES.LARGE,
-        ['kd-link-text-sm']: this.size === LINK_SIZES.SMALL,
         ['kd-link-text-inline']: this.inline,
         ['kd-link-text-standalone']: !this.inline,
       });

@@ -15,10 +15,10 @@
   // Primary (app)
   &-primary {
     color: var(--kd-color-spruce-60);
-    // text-decoration: underline; // for inline
 
     &:hover {
       color: var(--kd-color-spruce-50);
+      font-weight: var(--kd-font-weight-medium);
     }
     &:focus {
       border: 1px solid var(--kd-color-spruce-20);
@@ -26,7 +26,6 @@
     }
     &:active {
       color: var(--kd-color-spruce-80);
-      font-weight: var(--kd-font-weight-medium);
       text-decoration: underline;
       border: none;
     }
@@ -39,10 +38,10 @@
   // Secondary (web)
   &-secondary {
     color: var(--kd-color-darkstone-80);
-    // text-decoration: underline; // for inline
 
     &:hover {
       color: var(--kd-color-darkstone-60);
+      font-weight: var(--kd-font-weight-medium);
     }
     &:focus {
       border: 1px solid var(--kd-color-darkstone-20);
@@ -50,7 +49,6 @@
     }
     &:active {
       color: var(--kd-color-darkstone-100);
-      font-weight: var(--kd-font-weight-medium);
       text-decoration: underline;
       border: none;
     }
@@ -77,7 +75,7 @@
     }
   }
 
-  // Link Inline - standalone class
+  // Link Inline - standalone classes
   &-inline {
     text-decoration: underline;
   }
@@ -86,16 +84,5 @@
     &:hover {
       text-decoration: underline;
     }
-  }
-
-  // Link sizes : md, lg, sm
-  &-md {
-    font-size: 1rem;
-  }
-  &-lg {
-    font-size: 1.25rem;
-  }
-  &-sm {
-    font-size: 0.875rem;
   }
 }

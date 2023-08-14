@@ -6,20 +6,19 @@ export default {
   title: 'Components/Link',
   component: 'kd-link',
   argTypes: {
-    size: {
-      control: { type: 'select' },
-      options: ['sm', 'md', 'lg'],
-    },
     kind: {
       control: { type: 'select' },
       options: ['primary', 'secondary'],
+    },
+    target: {
+      control: { type: 'select' },
+      options: ['_self', '_blank', '_top', '_parent'],
     },
   },
 };
 
 const args = {
   href: '',
-  size: 'md',
   target: '_self',
   kind: 'primary',
   disabled: false,
@@ -35,7 +34,6 @@ export const Link = {
       <kd-link
         inline
         href=${args.href}
-        size=${args.size}
         target=${args.target}
         kind=${args.kind}
         ?disabled=${args.disabled}
@@ -51,7 +49,6 @@ export const LinkWithIcon = {
   render: (args) => html`
     <kd-link
       href=${args.href}
-      size=${args.size}
       target=${args.target}
       kind=${args.kind}
       ?disabled=${args.disabled}
@@ -60,7 +57,7 @@ export const LinkWithIcon = {
       <span style="display: inline-flex; align-self: center; margin-left:2px;">
         <kyn-icon
           .icon=${arrowRightIcon}
-          sizeOverride=${args.size === 'lg' ? '20' : args.sizeOverride}
+          sizeOverride=${args.sizeOverride}
         ></kyn-icon>
       </span>
     </kd-link>

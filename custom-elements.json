@@ -378,7 +378,7 @@
       "declarations": [
         {
           "kind": "class",
-          "description": "Component for navigation links within the Footer.",
+          "description": "Component for navigation links.",
           "name": "Link",
           "slots": [
             {
@@ -389,33 +389,50 @@
           "members": [
             {
               "kind": "field",
-              "name": "target",
-              "default": "'_self'",
-              "type": {
-                "text": "'_self'"
-              },
-              "description": "Defines a target attribute for where to load the URL. Possible options include \"_self\" (deafult), \"_blank\", \"_parent\", \"_top\"",
-              "attribute": "target"
-            },
-            {
-              "kind": "field",
-              "name": "rel",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "description": "Defines a relationship between a linked resource and the document. An empty string (default) means no particular relationship",
-              "attribute": "rel"
-            },
-            {
-              "kind": "field",
               "name": "href",
               "type": {
                 "text": "string"
               },
               "default": "''",
-              "description": "Link url.",
               "attribute": "href"
+            },
+            {
+              "kind": "field",
+              "name": "target",
+              "attribute": "target"
+            },
+            {
+              "kind": "field",
+              "name": "kind",
+              "attribute": "kind"
+            },
+            {
+              "kind": "field",
+              "name": "rel",
+              "attribute": "rel"
+            },
+            {
+              "kind": "field",
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "disabled"
+            },
+            {
+              "kind": "field",
+              "name": "inline",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "inline"
+            },
+            {
+              "kind": "method",
+              "name": "returnClassMap",
+              "privacy": "private"
             },
             {
               "kind": "method",
@@ -439,31 +456,40 @@
           ],
           "attributes": [
             {
-              "name": "target",
-              "default": "'_self'",
-              "type": {
-                "text": "'_self'"
-              },
-              "description": "Defines a target attribute for where to load the URL. Possible options include \"_self\" (deafult), \"_blank\", \"_parent\", \"_top\"",
-              "fieldName": "target"
-            },
-            {
-              "name": "rel",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "description": "Defines a relationship between a linked resource and the document. An empty string (default) means no particular relationship",
-              "fieldName": "rel"
-            },
-            {
               "name": "href",
               "type": {
                 "text": "string"
               },
               "default": "''",
-              "description": "Link url.",
               "fieldName": "href"
+            },
+            {
+              "name": "target",
+              "fieldName": "target"
+            },
+            {
+              "name": "kind",
+              "fieldName": "kind"
+            },
+            {
+              "name": "rel",
+              "fieldName": "rel"
+            },
+            {
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "disabled"
+            },
+            {
+              "name": "inline",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "inline"
             }
           ],
           "superclass": {
