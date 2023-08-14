@@ -55,10 +55,10 @@ export const LinkWithIcon = {
     >
       Link1
       <span style="display: inline-flex; align-self: center; margin-left:2px;">
-        <kyn-icon
+        <kd-icon
           .icon=${arrowRightIcon}
           sizeOverride=${args.sizeOverride}
-        ></kyn-icon>
+        ></kd-icon>
       </span>
     </kd-link>
   `,
