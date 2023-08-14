@@ -53,30 +53,28 @@ See [Storybook](https://kyndryl-design-system.github.io/foundation/) for the ful
 
 ### Example: Component with Sub-components
 
-This example imports the Header component AND all of it's subcomponents by targeting the index file.
+This example imports a component AND all of it's subcomponents by targeting the index file.
 
 ```js
-import '@kyndryl-design-system/foundation/components/global/header';
+import '@kyndryl-design-system/foundation/components/example';
 ```
 
 ```html
-<kyn-header>
-  <kyn-header-nav>
-    <kyn-header-link>Link</kyn-header-link>
-  </kyn-header-nav>
-</kyn-header>
+<kyn-example>
+  <kyn-example-sub></kyn-example-sub>
+</kyn-example>
 ```
 
 ### Example: Single Component
 
-This example imports the HeaderLink component by targeting the component file directly.
+This example imports one specific component by targeting the component file directly.
 
 ```js
-import '@kyndryl-design-system/foundation/components/global/header/headerLink';
+import '@kyndryl-design-system/foundation/components/example/example-sub';
 ```
 
 ```html
-<kyn-header-link>Link</kyn-header-link>
+<kyn-example-sub>Link</kyn-example-sub>
 ```
 
 ### React usage

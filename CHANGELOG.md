@@ -1,3 +1,10 @@
+# [1.0.0-beta.9](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.8...v1.0.0-beta.9) (2023-08-11)
+
+
+### Bug Fixes
+
+* **icon:** change prefix to kd ([4a7ec90](https://github.com/kyndryl-design-system/foundation/commit/4a7ec9062d7a624f1a1e0cbe03072878c29c44b7))
+
 # [1.0.0-beta.8](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.7...v1.0.0-beta.8) (2023-08-02)
 
 

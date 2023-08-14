@@ -8,7 +8,7 @@ import IconScss from './icon.scss';
  * Wrapper for vanilla Carbon icons to simplify usage.
  * @slot unnamed - The default slot for button content.
  */
-@customElement('kyn-icon')
+@customElement('kd-icon')
 export class Icon extends LitElement {
   static override styles = IconScss;
 
@@ -44,6 +44,6 @@ export class Icon extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'kyn-icon': Icon;
+    'kd-icon': Icon;
   }
 }
