@@ -56,6 +56,21 @@
               }
             }
           ]
+        },
+        {
+          "kind": "function",
+          "name": "createOptionsArray",
+          "parameters": [
+            {
+              "name": "options",
+              "default": "{}",
+              "type": {
+                "text": "*"
+              },
+              "description": " imported enums object"
+            }
+          ],
+          "description": "Convert an object to an array of only its values.\nUsed when importing enums in component stories for populating argType dropdowns."
         }
       ],
       "exports": [
@@ -74,6 +89,14 @@
             "name": "stringToReactHtml",
             "module": "src/common/helpers/helpers.ts"
           }
+        },
+        {
+          "kind": "js",
+          "name": "createOptionsArray",
+          "declaration": {
+            "name": "createOptionsArray",
+            "module": "src/common/helpers/helpers.ts"
+          }
         }
       ]
     },
@@ -83,44 +106,77 @@
       "declarations": [
         {
           "kind": "class",
-          "description": "Primary UI component for user interaction.",
+          "description": "Kyndryl-branded L0 Button component.",
           "name": "Button",
           "cssParts": [
             {
-              "description": "Styles to override the button",
+              "description": "Styles applied to the button.",
               "name": "button"
+            }
+          ],
+          "slots": [
+            {
+              "description": "Content slot for the button.",
+              "name": ""
             }
           ],
           "members": [
             {
               "kind": "field",
-              "name": "kind",
+              "name": "dataTestId",
               "type": {
                 "text": "string"
               },
-              "default": "'primary'",
-              "description": "The kind of button to render.",
-              "attribute": "kind"
+              "default": "'kd-button-testId'",
+              "description": "Identifier used primarily for testing purposes.",
+              "attribute": "data-testid"
+            },
+            {
+              "kind": "field",
+              "name": "description",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "description": "ARIA label for the button for accessibility.",
+              "attribute": "description"
+            },
+            {
+              "kind": "field",
+              "name": "type",
+              "type": {
+                "text": "BUTTON_TYPES"
+              },
+              "description": "Specifies the visual appearance/type of the button.",
+              "attribute": "type"
+            },
+            {
+              "kind": "field",
+              "name": "app",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "true",
+              "description": "Indicates if the context pertains to an app.",
+              "attribute": "app"
             },
             {
               "kind": "field",
               "name": "size",
               "type": {
-                "text": "string"
+                "text": "BUTTON_SIZES"
               },
-              "default": "'md'",
-              "description": "The button size.",
+              "description": "Specifies the size of the button.",
               "attribute": "size"
             },
             {
               "kind": "field",
-              "name": "href",
+              "name": "iconPosition",
               "type": {
-                "text": "string"
+                "text": "BUTTON_ICON_POSITION | undefined"
               },
-              "default": "''",
-              "description": "Converts to an &lt;a&gt; tag to create a link.",
-              "attribute": "href"
+              "description": "Specifies the position of the icon relative to any button text.",
+              "attribute": "iconPosition"
             },
             {
               "kind": "field",
@@ -129,56 +185,73 @@
                 "text": "boolean"
               },
               "default": "false",
-              "description": "Disables the button.",
-              "attribute": "disabled"
+              "description": "Determines if the button is disabled.",
+              "attribute": "disabled",
+              "reflects": true
             },
             {
-              "kind": "method",
-              "name": "handleClick",
-              "privacy": "private",
-              "parameters": [
-                {
-                  "name": "e",
-                  "type": {
-                    "text": "Event"
-                  }
-                }
-              ]
-            }
-          ],
-          "events": [
-            {
-              "description": "Captures the click event and emits the original event details.",
-              "name": "on-click"
+              "kind": "field",
+              "name": "destructive",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Determines if the button indicates a destructive action.",
+              "attribute": "destructive",
+              "reflects": true
             }
           ],
           "attributes": [
             {
-              "name": "kind",
+              "name": "data-testid",
               "type": {
                 "text": "string"
               },
-              "default": "'primary'",
-              "description": "The kind of button to render.",
-              "fieldName": "kind"
+              "default": "'kd-button-testId'",
+              "description": "Identifier used primarily for testing purposes.",
+              "fieldName": "dataTestId"
             },
             {
-              "name": "size",
-              "type": {
-                "text": "string"
-              },
-              "default": "'md'",
-              "description": "The button size.",
-              "fieldName": "size"
-            },
-            {
-              "name": "href",
+              "name": "description",
               "type": {
                 "text": "string"
               },
               "default": "''",
-              "description": "Converts to an &lt;a&gt; tag to create a link.",
-              "fieldName": "href"
+              "description": "ARIA label for the button for accessibility.",
+              "fieldName": "description"
+            },
+            {
+              "name": "type",
+              "type": {
+                "text": "BUTTON_TYPES"
+              },
+              "description": "Specifies the visual appearance/type of the button.",
+              "fieldName": "type"
+            },
+            {
+              "name": "app",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "true",
+              "description": "Indicates if the context pertains to an app.",
+              "fieldName": "app"
+            },
+            {
+              "name": "size",
+              "type": {
+                "text": "BUTTON_SIZES"
+              },
+              "description": "Specifies the size of the button.",
+              "fieldName": "size"
+            },
+            {
+              "name": "iconPosition",
+              "type": {
+                "text": "BUTTON_ICON_POSITION | undefined"
+              },
+              "description": "Specifies the position of the icon relative to any button text.",
+              "fieldName": "iconPosition"
             },
             {
               "name": "disabled",
@@ -186,15 +259,24 @@
                 "text": "boolean"
               },
               "default": "false",
-              "description": "Disables the button.",
+              "description": "Determines if the button is disabled.",
               "fieldName": "disabled"
+            },
+            {
+              "name": "destructive",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Determines if the button indicates a destructive action.",
+              "fieldName": "destructive"
             }
           ],
           "superclass": {
             "name": "LitElement",
             "package": "lit"
           },
-          "tagName": "kyn-button",
+          "tagName": "kd-button",
           "customElement": true
         }
       ],
@@ -209,13 +291,19 @@
         },
         {
           "kind": "custom-element-definition",
-          "name": "kyn-button",
+          "name": "kd-button",
           "declaration": {
             "name": "Button",
             "module": "src/components/button/button.ts"
           }
         }
       ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/button/defs.ts",
+      "declarations": [],
+      "exports": []
     },
     {
       "kind": "javascript-module",

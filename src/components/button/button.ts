@@ -1,68 +1,79 @@
-import { LitElement, html } from 'lit';
+/**
+ * Copyright Kyndryl, Inc. 2023
+ */
+
+import { html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import ButtonScss from './button.scss';
+import { ifDefined } from 'lit/directives/if-defined.js';
+import { classMap } from 'lit-html/directives/class-map.js';
+
+import { BUTTON_SIZES, BUTTON_TYPES, BUTTON_ICON_POSITION } from './defs';
+
+import stylesheet from './button.scss';
 
 /**
- * Primary UI component for user interaction.
- * @fires on-click - Captures the click event and emits the original event details.
- * @csspart button - Styles to override the button
+ * Kyndryl-branded L0 Button component.
+ *
+ * @slot - Content slot for the button.
+ * @csspart button - Styles applied to the button.
  */
-@customElement('kyn-button')
+@customElement('kd-button')
 export class Button extends LitElement {
-  static override styles = ButtonScss;
+  static override styles = [stylesheet];
 
-  /** The kind of button to render. */
-  @property({ type: String })
-  kind = 'primary';
+  /** Identifier used primarily for testing purposes. */
+  @property({ type: String, attribute: 'data-testid' }) dataTestId =
+    'kd-button-testId';
 
-  /** The button size. */
-  @property({ type: String })
-  size = 'md';
+  /** ARIA label for the button for accessibility. */
+  @property({ type: String }) description = '';
 
-  /** Converts to an &lt;a&gt; tag to create a link. */
-  @property({ type: String })
-  href = '';
+  /** Specifies the visual appearance/type of the button. */
+  @property() type: BUTTON_TYPES = BUTTON_TYPES.PRIMARY;
 
-  /** Disables the button. */
-  @property({ type: Boolean })
-  disabled = false;
+  /** Indicates if the context pertains to an app. */
+  @property({ type: Boolean }) app = true;
+
+  /** Specifies the size of the button. */
+  @property() size: BUTTON_SIZES = BUTTON_SIZES.MEDIUM;
+
+  /** Specifies the position of the icon relative to any button text. */
+  @property() iconPosition?: BUTTON_ICON_POSITION = BUTTON_ICON_POSITION.LEFT;
+
+  /** Determines if the button is disabled. */
+  @property({ type: Boolean, reflect: true }) disabled = false;
+
+  /** Determines if the button indicates a destructive action. */
+  @property({ type: Boolean, reflect: true }) destructive = false;
 
   override render() {
-    return html`
-      ${this.href != ''
-        ? html`
-            <a
-              href=${this.href}
-              class="btn btn--${this.kind} btn--${this.size}"
-              part="button"
-              ?disabled=${this.disabled}
-              @click=${(e: Event) => this.handleClick(e)}
-            >
-              <slot></slot>
-            </a>
-          `
-        : html`
-            <button
-              class="btn btn--${this.kind} btn--${this.size}"
-              part="button"
-              ?disabled=${this.disabled}
-            >
-              <slot></slot>
-            </button>
-          `}
-    `;
-  }
+    const typeClassMap = {
+      [BUTTON_TYPES.PRIMARY]: 'primary',
+      [BUTTON_TYPES.SECONDARY]: 'secondary',
+      [BUTTON_TYPES.TERTIARY]: 'tertiary',
+    };
 
-  private handleClick(e: Event) {
-    const event = new CustomEvent('on-click', {
-      detail: { origEvent: e },
-    });
-    this.dispatchEvent(event);
-  }
-}
+    const baseTypeClass = typeClassMap[this.type];
+    const appOrWeb = this.app ? 'app' : 'web';
+    const destructModifier = this.destructive ? '-destructive' : '';
 
-declare global {
-  interface HTMLElementTagNameMap {
-    'kyn-button': Button;
+    const classes = {
+      [`kd-btn--${baseTypeClass}${destructModifier}`]: true,
+      [`kd-btn--${baseTypeClass}-${appOrWeb}`]:
+        baseTypeClass === 'primary' && !this.destructive,
+      'kd-btn--large': this.size === BUTTON_SIZES.LARGE,
+      'kd-btn--small': this.size === BUTTON_SIZES.SMALL,
+      'kd-btn--medium': this.size === BUTTON_SIZES.MEDIUM,
+      [`kd-btn--icon-${this.iconPosition}`]: !!this.iconPosition,
+    };
+
+    return html`<button
+      data-testid=${this.dataTestId}
+      class=${classMap(classes)}
+      ?disabled=${this.disabled}
+      aria-label=${ifDefined(this.description || undefined)}
+    >
+      <slot></slot>
+    </button>`;
   }
 }
