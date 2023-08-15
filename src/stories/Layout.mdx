@@ -1,0 +1,66 @@
+import { Meta, Story, Canvas, Controls, Stories } from '@storybook/blocks';
+import * as LayoutStories from './Layout.stories.js';
+
+<Meta of={LayoutStories} />
+
+# Layout
+
+[Figma Design Source](https://www.figma.com/file/tTu138pz3jLk0mykJSg3t4/KDS---Foundation-v1.0.0?node-id=152%3A1500&mode=dev)
+
+## Example
+
+<Canvas>
+  <Story of={LayoutStories.AspectRatio} />
+</Canvas>
+
+### Controls
+
+<Controls of={LayoutStories.AspectRatio} />
+
+## Usage
+
+### SCSS Mixins
+
+```css
+@use '~@kyndryl-design-system/foundation/scss/mixins/layout.scss';
+
+.your-css-selector {
+  @include layout.aspect-ratio('16:9');
+}
+
+.your-css-selector img {
+  @include layout.object-fit('cover');
+}
+```
+
+### Utility Classes
+
+#### Import to SCSS
+
+```css
+@use '~@kyndryl-design-system/foundation/scss/utility/layout.scss';
+```
+
+#### Import to CSS
+
+```css
+@import '@kyndryl-design-system/foundation/css/layout.css';
+```
+
+#### Import to JS
+
+```js
+import '@kyndryl-design-system/foundation/css/layout.css';
+```
+
+#### Example HTML
+
+```html
+<div class="kd-layout--aspect-ratio-16x9">
+  <img src="your-image" class="kd-layout--object-fit-cover" />
+</div>
+```
+
+## More Examples
+
+<Stories />
