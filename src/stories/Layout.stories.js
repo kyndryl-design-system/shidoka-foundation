@@ -9,14 +9,14 @@ export default {
         <style>
           .layout-examples .aspect-ratio-box {
             width: 500px;
-            background: var(--kd-color-background-secondary);
+            background: var(--kd-color-background-ui-medium);
             display: flex;
             align-items: center;
             justify-content: center;
           }
 
           .layout-examples .object-fit-box {
-            width: 500px;
+            max-width: 500px;
             border: 1px solid var(--kd-color-background-secondary);
           }
         </style>
@@ -43,7 +43,7 @@ export const AspectRatio = {
   },
 
   render: (args) => {
-    const aspectRatioClass = 'kd-layout--aspect-ratio-' + args.aspectRatio;
+    const aspectRatioClass = 'kd-layout__aspect-ratio--' + args.aspectRatio;
     return html`
       <div class="layout-examples">
         <h3>Aspect Ratio</h3>
@@ -73,13 +73,13 @@ export const ObjectFit = {
   },
 
   render: (args) => {
-    const objectFitClass = 'kd-layout--object-fit-' + args.objectFit;
+    const objectFitClass = 'kd-layout__object-fit--' + args.objectFit;
 
     return html`
       <div class="layout-examples">
         <h3>Object Fit</h3>
         <p>A 16x9 image in a 4x3 container</p>
-        <div class="object-fit-box kd-layout--aspect-ratio-4x3">
+        <div class="object-fit-box kd-layout__aspect-ratio--4x3">
           <img
             class="${objectFitClass}"
             src="https://s7d1.scene7.com/is/image/kyndryl/ls_windingriver_16x9?qlt=85&wid=1200&ts=1650983065999&dpr=off"
