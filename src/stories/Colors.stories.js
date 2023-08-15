@@ -479,15 +479,15 @@ export const Palette = {
           </tr>
 
           <tr>
-            <td>--kd-color-dk-springgreen-60</td>
+            <td>--kd-color-springgreen-60</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-dk-springgreen-60'
+                '--kd-color-springgreen-60'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-dk-springgreen-60)"
+              style="background-color: var(--kd-color-springgreen-60)"
             ></td>
           </tr>
 
@@ -1398,6 +1398,32 @@ export const Text = {
           </tr>
 
           <tr>
+            <td>--kd-color-text-primary-hover</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-text-primary-hover'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-text-primary-hover)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-text-primary-pressed</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-text-primary-pressed'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-text-primary-pressed)"
+            ></td>
+          </tr>
+
+          <tr>
             <td>--kd-color-text-secondary</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
@@ -1424,15 +1450,41 @@ export const Text = {
           </tr>
 
           <tr>
-            <td>--kd-color-text-featured</td>
+            <td>--kd-color-text-tertiary-bold</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-text-featured'
+                '--kd-color-text-tertiary-bold'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-text-featured)"
+              style="background-color: var(--kd-color-text-tertiary-bold)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-text-eyebrow</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-text-eyebrow'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-text-eyebrow)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-text-brand</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-text-brand'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-text-brand)"
             ></td>
           </tr>
 
@@ -1463,32 +1515,6 @@ export const Text = {
           </tr>
 
           <tr>
-            <td>--kd-color-text-accent-01</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-text-accent-01'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-text-accent-01)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-text-accent-02</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-text-accent-02'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-text-accent-02)"
-            ></td>
-          </tr>
-
-          <tr>
             <td>--kd-color-text-link</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
@@ -1513,6 +1539,84 @@ export const Text = {
               style="background-color: var(--kd-color-text-link-hover)"
             ></td>
           </tr>
+
+          <tr>
+            <td>--kd-color-text-link-pressed</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-text-link-pressed'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-text-link-pressed)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-text-placeholder</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-text-placeholder'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-text-placeholder)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-text-success</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-text-success'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-text-success)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-text-error</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-text-error'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-text-error)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-text-warning</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-text-warning'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-text-warning)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-text-informational</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-text-informational'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-text-informational)"
+            ></td>
+          </tr>
         </tbody>
       </table>
     `;
@@ -1532,6 +1636,110 @@ export const Background = {
         </thead>
         <tbody>
           <tr>
+            <td>--kd-color-background-ui-light</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-background-ui-light'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-background-ui-light)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-background-ui-medium</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-background-ui-medium'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-background-ui-medium)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-background-ui-mid-dark</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-background-ui-mid-dark'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-background-ui-mid-dark)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-background-ui-dark</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-background-ui-dark'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-background-ui-dark)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-background-brand</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-background-brand'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-background-brand)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-background-ui</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-background-ui'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-background-ui)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-background-ui-hover</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-background-ui-hover'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-background-ui-hover)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-background-ui-pressed</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-background-ui-pressed'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-background-ui-pressed)"
+            ></td>
+          </tr>
+
+          <tr>
             <td>--kd-color-background-primary</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
@@ -1541,6 +1749,32 @@ export const Background = {
             <td
               class="preview"
               style="background-color: var(--kd-color-background-primary)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-background-primary-hover</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-background-primary-hover'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-background-primary-hover)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-background-primary-pressed</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-background-primary-pressed'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-background-primary-pressed)"
             ></td>
           </tr>
 
@@ -1558,15 +1792,288 @@ export const Background = {
           </tr>
 
           <tr>
-            <td>--kd-color-background-tertiary</td>
+            <td>--kd-color-background-secondary-hover</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-tertiary'
+                '--kd-color-background-secondary-hover'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-background-tertiary)"
+              style="background-color: var(--kd-color-background-secondary-hover)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-background-secondary-pressed</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-background-secondary-pressed'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-background-secondary-pressed)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-background-destructive</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-background-destructive'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-background-destructive)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-background-destructive-hover</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-background-destructive-hover'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-background-destructive-hover)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-background-destructive-pressed</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-background-destructive-pressed'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-background-destructive-pressed)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-background-focus</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-background-focus'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-background-focus)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-background-inverse</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-background-inverse'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-background-inverse)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-background-inverse-hover</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-background-inverse-hover'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-background-inverse-hover)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-background-accent-stone</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-background-accent-stone'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-background-accent-stone)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-background-accent-skye</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-background-accent-skye'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-background-accent-skye)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-background-accent-springgreen</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-background-accent-springgreen'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-background-accent-springgreen)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-background-accent-spruce-light</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-background-accent-spruce-light'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-background-accent-spruce-light)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-background-accent-spruce-dark</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-background-accent-spruce-dark'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-background-accent-spruce-dark)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-background-success</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-background-success'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-background-success)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-background-success-light</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-background-success-light'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-background-success-light)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-background-error</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-background-error'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-background-error)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-background-error-light</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-background-error-light'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-background-error-light)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-background-warning</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-background-warning'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-background-warning)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-background-warning-light</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-background-warning-light'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-background-warning-light)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-background-informational</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-background-informational'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-background-informational)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-background-informational-light</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-background-informational-light'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-background-informational-light)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-background-disabled</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-background-disabled'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-background-disabled)"
             ></td>
           </tr>
         </tbody>
@@ -1601,41 +2108,132 @@ export const Borders = {
           </tr>
 
           <tr>
-            <td>--kd-color-border-light</td>
+            <td>--kd-color-border-secondary</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-border-light'
+                '--kd-color-border-secondary'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-border-light)"
+              style="background-color: var(--kd-color-border-secondary)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-border-dark</td>
+            <td>--kd-color-border-tertiary</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-border-dark'
+                '--kd-color-border-tertiary'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-border-dark)"
+              style="background-color: var(--kd-color-border-tertiary)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-border-inversed</td>
+            <td>--kd-color-border-tertiary-bold</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-border-inversed'
+                '--kd-color-border-tertiary-bold'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-border-inversed)"
+              style="background-color: var(--kd-color-border-tertiary-bold)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-border-brand</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-border-brand'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-border-brand)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-border-focus</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-border-focus'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-border-focus)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-border-destructive</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-border-destructive'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-border-destructive)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-border-inverse</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-border-inverse'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-border-inverse)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-border-hover</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-border-hover'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-border-hover)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-border-pressed</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-border-pressed'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-border-pressed)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-border-disabled</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-border-disabled'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-border-disabled)"
             ></td>
           </tr>
 
@@ -1653,218 +2251,67 @@ export const Borders = {
           </tr>
 
           <tr>
-            <td>--kd-color-border-accent-spruce</td>
+            <td>--kd-color-border-accent-spruce-light</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-border-accent-spruce'
+                '--kd-color-border-accent-spruce-light'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-border-accent-spruce)"
+              style="background-color: var(--kd-color-border-accent-spruce-light)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-border-accent-warmred</td>
+            <td>--kd-color-border-success</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-border-accent-warmred'
+                '--kd-color-border-success'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-border-accent-warmred)"
-            ></td>
-          </tr>
-        </tbody>
-      </table>
-    `;
-  },
-};
-
-export const Status = {
-  render: () => {
-    return html`
-      <table>
-        <thead>
-          <tr>
-            <th>Variable Name</th>
-            <th>Hex value</th>
-            <th>Preview</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>--kd-color-success</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-success'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-success)"
+              style="background-color: var(--kd-color-border-success)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-success-light</td>
+            <td>--kd-color-border-error</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-success-light'
+                '--kd-color-border-error'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-success-light)"
+              style="background-color: var(--kd-color-border-error)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-error</td>
+            <td>--kd-color-border-warning</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-error'
+                '--kd-color-border-warning'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-error)"
+              style="background-color: var(--kd-color-border-warning)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-error-light</td>
+            <td>--kd-color-border-informational</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-error-light'
+                '--kd-color-border-informational'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-error-light)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-warning</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-warning'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-warning)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-warning-light</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-warning-light'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-warning-light)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-informational</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-informational'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-informational)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-informational-light</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-informational-light'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-informational-light)"
-            ></td>
-          </tr>
-        </tbody>
-      </table>
-    `;
-  },
-};
-
-export const UI = {
-  render: () => {
-    return html`
-      <table>
-        <thead>
-          <tr>
-            <th>Variable Name</th>
-            <th>Hex value</th>
-            <th>Preview</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>--kd-color-ui-dark</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-ui-dark'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-ui-dark)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-ui-mid-dark</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-ui-mid-dark'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-ui-mid-dark)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-ui-medium</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-ui-medium'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-ui-medium)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-ui-light</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-ui-light'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-ui-light)"
+              style="background-color: var(--kd-color-border-informational)"
             ></td>
           </tr>
         </tbody>

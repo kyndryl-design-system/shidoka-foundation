@@ -1,3 +1,10 @@
+# [1.0.0-beta.10](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.9...v1.0.0-beta.10) (2023-08-14)
+
+
+### Features
+
+* **color:** update color tokens ([9a4c33d](https://github.com/kyndryl-design-system/foundation/commit/9a4c33d8b40283709fcedd22deea99980b72ac8d))
+
 # [1.0.0-beta.9](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.8...v1.0.0-beta.9) (2023-08-11)
 
 
