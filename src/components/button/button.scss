@@ -118,8 +118,7 @@
   @extend .kd-btn;
   background-color: var(--kd-color-transparent);
   color: var(--kd-color-text-primary);
-  border-width: 1px;
-  border-color: var(--kd-color-border-primary);
+  border: 1px solid var(--kd-color-border-primary);
 
   &:hover {
     background-color: var(--kd-color-background-secondary-hover);
