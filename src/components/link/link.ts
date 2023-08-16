@@ -32,7 +32,7 @@ export class Link extends LitElement {
   // Reference for disabled links:
   // https://www.scottohara.me/blog/2021/05/28/disabled-links.html
   @property({ type: Boolean })
-  disabled = false;
+  disabled = false; 
 
   /** whether you want the inline version of Link. */
   @property({ type: Boolean })
