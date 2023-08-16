@@ -1,3 +1,10 @@
+# [1.0.0-beta.15](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.14...v1.0.0-beta.15) (2023-08-16)
+
+
+### Bug Fixes
+
+* **button:** update animations ([ec76b25](https://github.com/kyndryl-design-system/foundation/commit/ec76b25a0eb047a9fedc527c1f5ac048d0131865))
+
 # [1.0.0-beta.14](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.13...v1.0.0-beta.14) (2023-08-16)
 
 
