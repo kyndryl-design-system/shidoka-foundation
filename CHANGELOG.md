@@ -1,3 +1,15 @@
+# [1.0.0-beta.12](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.11...v1.0.0-beta.12) (2023-08-16)
+
+
+### Bug Fixes
+
+* **color:** border-ui shade ([ae67da7](https://github.com/kyndryl-design-system/foundation/commit/ae67da751ec1c1c0182e19c5a6d62ac62c955340))
+
+
+### Features
+
+* **color:** add color-border-ui tokens ([5e14057](https://github.com/kyndryl-design-system/foundation/commit/5e14057a4c75c843d12654f145b72238a6f5f4ed))
+
 # [1.0.0-beta.11](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.10...v1.0.0-beta.11) (2023-08-15)
 
 
