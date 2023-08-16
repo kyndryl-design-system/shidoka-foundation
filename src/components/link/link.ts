@@ -49,7 +49,6 @@ export class Link extends LitElement {
               role="link"
               rel=${this.rel}
               ?disabled=${this.disabled}
-              aria-disabled=${true}
             >
             <slot></slot>
             </a>
@@ -86,6 +85,7 @@ export class Link extends LitElement {
   }
 
   private handleClick(e: Event) {
+    console.log('I m clickable');
     const event = new CustomEvent('on-click', {
       detail: { origEvent: e },
     });
