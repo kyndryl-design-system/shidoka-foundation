@@ -28,13 +28,13 @@
     }
     &:focus {
       color: var(--kd-color-text-tertiary);
-      border: 1px solid var(--kd-color-border-focus);
+      outline: 1px solid var(--kd-color-border-focus);
       text-decoration: none;
     }
     &:active {
       color: var(--kd-color-text-link-pressed);
       text-decoration: underline;
-      border: none;
+      outline: none;
     }
   }
 
@@ -47,13 +47,13 @@
       font-weight: var(--kd-font-weight-medium);
     }
     &:focus {
-      border: 1px solid var(--kd-color-border-focus);
+      outline: 1px solid var(--kd-color-border-focus);
       text-decoration: none;
     }
     &:active {
       color: var(--kd-color-text-primary-pressed);
       text-decoration: underline;
-      border: none;
+      outline: none;
     }
   }
   // Link disable class
@@ -70,6 +70,7 @@
     &:visited {
       color: var(--kd-color-darkstone-40);
       border: none;
+      outline: none;
       text-decoration: none;
       ::slotted(kd-icon) {
         transform: translate(0px, 0);
