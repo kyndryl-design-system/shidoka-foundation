@@ -7,10 +7,10 @@
 
 // Base Button Styles
 .kd-btn {
-  -webkit-transition: border-color 0.3s, color 0.3s, background-color 0.3s;
-  transition: border-color 0.3s, color 0.3s, background-color 0.3s;
+  transition: outline-color 0.3s, color 0.3s, background-color 0.3s;
   white-space: nowrap;
-  border: 1px solid;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
   border-radius: 4px;
   text-decoration: none;
   cursor: pointer;
@@ -47,8 +47,6 @@
 }
 
 @mixin kd-btn-focus {
-  outline-offset: 2px;
-  outline: 2px solid transparent;
   outline-color: var(--kd-color-border-focus);
 }
 
@@ -91,7 +89,8 @@
 }
 
 // Primary Destructive Button
-.kd-btn--primary-destructive {
+.kd-btn--primary-app-destructive,
+.kd-btn--primary-web-destructive {
   @extend .kd-btn;
   background-color: var(--kd-color-background-destructive);
   color: var(--kd-color-text-inversed);
@@ -119,28 +118,29 @@
   @extend .kd-btn;
   background-color: var(--kd-color-transparent);
   color: var(--kd-color-text-primary);
+  border-width: 1px;
   border-color: var(--kd-color-border-primary);
 
   &:hover {
     background-color: var(--kd-color-background-secondary-hover);
     color: var(--kd-color-text-inversed);
-    border-color: none;
+    border-color: var(--kd-color-background-secondary-hover);
   }
 
   &:active {
     background-color: var(--kd-color-background-secondary-pressed);
     color: var(--kd-color-text-inversed);
-    border-color: transparent;
+    border-color: var(--kd-color-border-primary);
   }
 
   &:focus {
-    border-color: var(--kd-color-border-focus);
+    @include kd-btn-focus;
   }
 
   &:disabled {
     @include kd-btn-disabled;
     background-color: var(--kd-color-transparent);
-    color: var( --kd-color-text-disabled);
+    color: var(--kd-color-text-disabled);
     border: 1px solid var(--kd-color-border-disabled);
   }
 }
@@ -151,7 +151,8 @@
   color: var(--kd--color-text-destructive);
   border-color: var(--kd-color-border-destructive);
 
-  &:hover, &:active {
+  &:hover,
+  &:active {
     background-color: var(--kd-color-background-destructive-hover);
     color: var(--kd-color-text-inversed);
     border-color: transparent;
@@ -162,10 +163,11 @@
 .kd-btn--tertiary {
   @extend .kd-btn;
   background-color: var(--kd-color-transparent);
-  color: var( --kd-color-text-tertiary);
+  color: var(--kd-color-text-tertiary);
   border: none;
 
-  &:hover, &:active {
+  &:hover,
+  &:active {
     background-color: var(--kd-color-background-accent-stone);
   }
 
@@ -174,13 +176,13 @@
   }
 
   &:focus {
-    border: 1px solid var(--kd-color-border-focus);
+    @include kd-btn-focus;
   }
 
   &:disabled {
     @include kd-btn-disabled;
     background-color: var(--kd-color-transparent);
-    color: var( --kd-color-text-disabled);
+    color: var(--kd-color-text-disabled);
   }
 }
 
@@ -189,7 +191,9 @@
   @extend .kd-btn--tertiary;
   color: var(--kd--color-text-destructive);
 
-  &:hover, &:active, &:focus {
+  &:hover,
+  &:active,
+  &:focus {
     color: var(--kd--color-text-destructive);
   }
 }
@@ -203,7 +207,6 @@
 }
 
 .kd-btn--icon {
-
   // Styles for buttons with icons on the left side
   &-left {
     // Reverse the flex direction to place the icon to the left

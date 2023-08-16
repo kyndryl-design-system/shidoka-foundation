@@ -27,29 +27,94 @@
     },
     {
       "kind": "javascript-module",
+      "path": "src/common/helpers/helpers.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "debounce",
+          "parameters": [
+            {
+              "name": "fn",
+              "type": {
+                "text": "Function"
+              }
+            },
+            {
+              "name": "ms",
+              "default": "100"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "stringToReactHtml",
+          "parameters": [
+            {
+              "name": "string",
+              "type": {
+                "text": "String"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "createOptionsArray",
+          "parameters": [
+            {
+              "name": "options",
+              "default": "{}",
+              "type": {
+                "text": "*"
+              },
+              "description": " imported enums object"
+            }
+          ],
+          "description": "Convert an object to an array of only its values.\r\nUsed when importing enums in component stories for populating argType dropdowns."
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "debounce",
+          "declaration": {
+            "name": "debounce",
+            "module": "src/common/helpers/helpers.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "stringToReactHtml",
+          "declaration": {
+            "name": "stringToReactHtml",
+            "module": "src/common/helpers/helpers.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "createOptionsArray",
+          "declaration": {
+            "name": "createOptionsArray",
+            "module": "src/common/helpers/helpers.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/components/button/button.ts",
       "declarations": [
         {
           "kind": "class",
-          "description": "Kyndryl-branded L0 Button component.",
+          "description": "Button component.",
           "name": "Button",
           "slots": [
             {
-              "description": "Content slot for the button.",
+              "description": "Content slot for the button text/icon.",
               "name": ""
             }
           ],
           "members": [
-            {
-              "kind": "field",
-              "name": "dataTestId",
-              "type": {
-                "text": "string"
-              },
-              "default": "'kd-button-testId'",
-              "description": "Identifier used primarily for testing purposes.",
-              "attribute": "data-testid"
-            },
             {
               "kind": "field",
               "name": "description",
@@ -66,18 +131,27 @@
               "type": {
                 "text": "BUTTON_TYPES"
               },
-              "description": "Specifies the visual appearance/type of the button.",
+              "description": "Type for the &lt;button&gt; element.",
               "attribute": "type"
             },
             {
               "kind": "field",
-              "name": "app",
+              "name": "kind",
               "type": {
-                "text": "boolean"
+                "text": "BUTTON_KINDS"
               },
-              "default": "true",
-              "description": "Indicates if the context pertains to an app.",
-              "attribute": "app"
+              "description": "Specifies the visual appearance/kind of the button.",
+              "attribute": "kind"
+            },
+            {
+              "kind": "field",
+              "name": "href",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "description": "Converts the button to an &lt;a&gt; tag if specified.",
+              "attribute": "href"
             },
             {
               "kind": "field",
@@ -92,7 +166,7 @@
               "kind": "field",
               "name": "iconPosition",
               "type": {
-                "text": "BUTTON_ICON_POSITION | undefined"
+                "text": "BUTTON_ICON_POSITION"
               },
               "description": "Specifies the position of the icon relative to any button text.",
               "attribute": "iconPosition"
@@ -133,16 +207,13 @@
               ]
             }
           ],
-          "attributes": [
+          "events": [
             {
-              "name": "data-testid",
-              "type": {
-                "text": "string"
-              },
-              "default": "'kd-button-testId'",
-              "description": "Identifier used primarily for testing purposes.",
-              "fieldName": "dataTestId"
-            },
+              "description": "Emits the original click event.",
+              "name": "on-click"
+            }
+          ],
+          "attributes": [
             {
               "name": "description",
               "type": {
@@ -157,17 +228,25 @@
               "type": {
                 "text": "BUTTON_TYPES"
               },
-              "description": "Specifies the visual appearance/type of the button.",
+              "description": "Type for the &lt;button&gt; element.",
               "fieldName": "type"
             },
             {
-              "name": "app",
+              "name": "kind",
               "type": {
-                "text": "boolean"
+                "text": "BUTTON_KINDS"
               },
-              "default": "true",
-              "description": "Indicates if the context pertains to an app.",
-              "fieldName": "app"
+              "description": "Specifies the visual appearance/kind of the button.",
+              "fieldName": "kind"
+            },
+            {
+              "name": "href",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "description": "Converts the button to an &lt;a&gt; tag if specified.",
+              "fieldName": "href"
             },
             {
               "name": "size",
@@ -180,7 +259,7 @@
             {
               "name": "iconPosition",
               "type": {
-                "text": "BUTTON_ICON_POSITION | undefined"
+                "text": "BUTTON_ICON_POSITION"
               },
               "description": "Specifies the position of the icon relative to any button text.",
               "fieldName": "iconPosition"
@@ -365,87 +444,6 @@
           "declaration": {
             "name": "Icon",
             "module": "./icon"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/global/defs/themes.ts",
-      "declarations": [],
-      "exports": []
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/common/helpers/helpers.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "debounce",
-          "parameters": [
-            {
-              "name": "fn",
-              "type": {
-                "text": "Function"
-              }
-            },
-            {
-              "name": "ms",
-              "default": "100"
-            }
-          ]
-        },
-        {
-          "kind": "function",
-          "name": "stringToReactHtml",
-          "parameters": [
-            {
-              "name": "string",
-              "type": {
-                "text": "String"
-              }
-            }
-          ]
-        },
-        {
-          "kind": "function",
-          "name": "createOptionsArray",
-          "parameters": [
-            {
-              "name": "options",
-              "default": "{}",
-              "type": {
-                "text": "*"
-              },
-              "description": " imported enums object"
-            }
-          ],
-          "description": "Convert an object to an array of only its values.\nUsed when importing enums in component stories for populating argType dropdowns."
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "debounce",
-          "declaration": {
-            "name": "debounce",
-            "module": "src/common/helpers/helpers.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "stringToReactHtml",
-          "declaration": {
-            "name": "stringToReactHtml",
-            "module": "src/common/helpers/helpers.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "createOptionsArray",
-          "declaration": {
-            "name": "createOptionsArray",
-            "module": "src/common/helpers/helpers.ts"
           }
         }
       ]

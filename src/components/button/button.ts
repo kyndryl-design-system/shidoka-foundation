@@ -7,75 +7,102 @@ import { customElement, property } from 'lit/decorators.js';
 import { ifDefined } from 'lit/directives/if-defined.js';
 import { classMap } from 'lit-html/directives/class-map.js';
 
-import { BUTTON_SIZES, BUTTON_TYPES, BUTTON_ICON_POSITION } from './defs';
+import {
+  BUTTON_KINDS,
+  BUTTON_SIZES,
+  BUTTON_TYPES,
+  BUTTON_ICON_POSITION,
+} from './defs';
 
 import stylesheet from './button.scss';
 
 /**
- * Kyndryl-branded L0 Button component.
+ * Button component.
  *
- * @slot - Content slot for the button.
- * @styles button - Styles applied to the button.
+ * @slot - Content slot for the button text/icon.
+ * @fires on-click - Emits the original click event.
  */
 @customElement('kd-button')
 export class Button extends LitElement {
   static override styles = [stylesheet];
 
-  /** Identifier used primarily for testing purposes. */
-  @property({ type: String, attribute: 'data-testid' }) dataTestId =
-    'kd-button-testId';
-
   /** ARIA label for the button for accessibility. */
-  @property({ type: String }) description = '';
+  @property({ type: String })
+  description = '';
 
-  /** Specifies the visual appearance/type of the button. */
-  @property() type: BUTTON_TYPES = BUTTON_TYPES.PRIMARY;
+  /** Type for the &lt;button&gt; element. */
+  @property({ type: String })
+  type: BUTTON_TYPES = BUTTON_TYPES.BUTTON;
 
-  /** Indicates if the context pertains to an app. */
-  @property({ type: Boolean }) app = true;
+  /** Specifies the visual appearance/kind of the button. */
+  @property({ type: String })
+  kind: BUTTON_KINDS = BUTTON_KINDS.PRIMARY_APP;
+
+  /** Converts the button to an &lt;a&gt; tag if specified. */
+  @property({ type: String })
+  href = '';
 
   /** Specifies the size of the button. */
-  @property() size: BUTTON_SIZES = BUTTON_SIZES.MEDIUM;
+  @property({ type: String })
+  size: BUTTON_SIZES = BUTTON_SIZES.MEDIUM;
 
   /** Specifies the position of the icon relative to any button text. */
-  @property() iconPosition?: BUTTON_ICON_POSITION = BUTTON_ICON_POSITION.LEFT;
+  @property({ type: String })
+  iconPosition: BUTTON_ICON_POSITION = BUTTON_ICON_POSITION.CENTER;
 
   /** Determines if the button is disabled. */
-  @property({ type: Boolean, reflect: true }) disabled = false;
+  @property({ type: Boolean, reflect: true })
+  disabled = false;
 
   /** Determines if the button indicates a destructive action. */
-  @property({ type: Boolean, reflect: true }) destructive = false;
+  @property({ type: Boolean, reflect: true })
+  destructive = false;
 
   override render() {
     const typeClassMap = {
-      [BUTTON_TYPES.PRIMARY]: 'primary',
-      [BUTTON_TYPES.SECONDARY]: 'secondary',
-      [BUTTON_TYPES.TERTIARY]: 'tertiary',
+      [BUTTON_KINDS.PRIMARY_APP]: 'primary-app',
+      [BUTTON_KINDS.PRIMARY_WEB]: 'primary-web',
+      [BUTTON_KINDS.SECONDARY]: 'secondary',
+      [BUTTON_KINDS.TERTIARY]: 'tertiary',
     };
 
-    const baseTypeClass = typeClassMap[this.type];
-    const appOrWeb = this.app ? 'app' : 'web';
+    const baseTypeClass = typeClassMap[this.kind];
     const destructModifier = this.destructive ? '-destructive' : '';
 
     const classes = {
       [`kd-btn--${baseTypeClass}${destructModifier}`]: true,
-      [`kd-btn--${baseTypeClass}-${appOrWeb}`]:
-        baseTypeClass === 'primary' && !this.destructive,
+      [`kd-btn--${baseTypeClass}`]: !this.destructive,
       'kd-btn--large': this.size === BUTTON_SIZES.LARGE,
       'kd-btn--small': this.size === BUTTON_SIZES.SMALL,
       'kd-btn--medium': this.size === BUTTON_SIZES.MEDIUM,
       [`kd-btn--icon-${this.iconPosition}`]: !!this.iconPosition,
     };
 
-    return html`<button
-      data-testid=${this.dataTestId}
-      class=${classMap(classes)}
-      ?disabled=${this.disabled}
-      aria-label=${ifDefined(this.description || undefined)}
-      @click=${(e: Event) => this.handleClick(e)}
-    >
-      <slot></slot>
-    </button>`;
+    return html`
+      ${this.href !== ''
+        ? html`
+            <a
+              class=${classMap(classes)}
+              href=${this.href}
+              ?disabled=${this.disabled}
+              aria-label=${ifDefined(this.description || undefined)}
+              @click=${(e: Event) => this.handleClick(e)}
+            >
+              <slot></slot>
+            </a>
+          `
+        : html`
+            <button
+              class=${classMap(classes)}
+              type=${this.type}
+              ?disabled=${this.disabled}
+              aria-label=${ifDefined(this.description || undefined)}
+              @click=${(e: Event) => this.handleClick(e)}
+            >
+              <slot></slot>
+            </button>
+          `}
+    `;
   }
 
   private handleClick(e: Event) {

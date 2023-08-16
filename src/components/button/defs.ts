@@ -1,5 +1,12 @@
 export enum BUTTON_TYPES {
-  PRIMARY = 'primary',
+  BUTTON = 'button',
+  SUBMIT = 'submit',
+  RESET = 'reset',
+}
+
+export enum BUTTON_KINDS {
+  PRIMARY_APP = 'primary-app',
+  PRIMARY_WEB = 'primary-web',
   SECONDARY = 'secondary',
   TERTIARY = 'tertiary',
 }
