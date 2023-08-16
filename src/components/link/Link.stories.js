@@ -27,7 +27,7 @@ const args = {
 const linkIconArgs = { ...args, sizeOverride: 16 };
 
 // Inline link
-export const Link = {
+export const Inline = {
   args: args,
   render: (args) =>
     html`
