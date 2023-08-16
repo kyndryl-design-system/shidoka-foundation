@@ -1,3 +1,16 @@
+# [1.0.0-beta.13](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.12...v1.0.0-beta.13) (2023-08-16)
+
+
+### Bug Fixes
+
+* **button:** secondary border style ([a8986c5](https://github.com/kyndryl-design-system/foundation/commit/a8986c5cbf1766eb39edc5e1b9c5ef140ab8844d))
+
+
+### Features
+
+* **button:** cleanup props and controls ([7c49a76](https://github.com/kyndryl-design-system/foundation/commit/7c49a76127f3f25fb99a52d3a65eba1804e930b7))
+* **button:** update button to new designs ([b1ef171](https://github.com/kyndryl-design-system/foundation/commit/b1ef17164b69d8548ef96c2bc637f951a4182f8d))
+
 # [1.0.0-beta.12](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.11...v1.0.0-beta.12) (2023-08-16)
 
 
