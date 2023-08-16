@@ -359,6 +359,12 @@
     },
     {
       "kind": "javascript-module",
+      "path": "src/components/link/defs.ts",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/components/link/index.ts",
       "declarations": [],
       "exports": [
@@ -394,21 +400,25 @@
                 "text": "string"
               },
               "default": "''",
+              "description": "Link url.",
               "attribute": "href"
             },
             {
               "kind": "field",
               "name": "target",
+              "description": "Defines a target attribute for where to load the URL. Possible options include \"_self\" (deafult), \"_blank\", \"_parent\", \"_top\"",
               "attribute": "target"
             },
             {
               "kind": "field",
               "name": "kind",
+              "description": "The Link type. Primary(App) or Secondary(Web).",
               "attribute": "kind"
             },
             {
               "kind": "field",
               "name": "rel",
+              "description": "Defines a relationship between a linked resource and the document. An empty string (default) means no particular relationship",
               "attribute": "rel"
             },
             {
@@ -418,6 +428,7 @@
                 "text": "boolean"
               },
               "default": "false",
+              "description": "Disables the link.",
               "attribute": "disabled"
             },
             {
@@ -426,7 +437,8 @@
               "type": {
                 "text": "boolean"
               },
-              "default": "false",
+              "default": "true",
+              "description": "whether you want the inline version of Link.",
               "attribute": "inline"
             },
             {
@@ -461,18 +473,24 @@
                 "text": "string"
               },
               "default": "''",
+              "description": "Link url.",
               "fieldName": "href"
             },
             {
               "name": "target",
+              "default": "_self",
+              "description": "Defines a target attribute for where to load the URL. Possible options include \"_self\" (deafult), \"_blank\", \"_parent\", \"_top\"",
               "fieldName": "target"
             },
             {
               "name": "kind",
+              "default": "primary",
+              "description": "The Link type. Primary(App) or Secondary(Web).",
               "fieldName": "kind"
             },
             {
               "name": "rel",
+              "description": "Defines a relationship between a linked resource and the document. An empty string (default) means no particular relationship",
               "fieldName": "rel"
             },
             {
@@ -481,6 +499,7 @@
                 "text": "boolean"
               },
               "default": "false",
+              "description": "Disables the link.",
               "fieldName": "disabled"
             },
             {
@@ -488,7 +507,8 @@
               "type": {
                 "text": "boolean"
               },
-              "default": "false",
+              "default": "true",
+              "description": "whether you want the inline version of Link.",
               "fieldName": "inline"
             }
           ],

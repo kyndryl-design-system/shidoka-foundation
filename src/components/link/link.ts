@@ -15,40 +15,28 @@ import LinkStyles from './link.scss';
 export class Link extends LitElement {
   static override styles = LinkStyles;
 
-  /**
-   * @description Link url.
-   * */
+  /** Link url. */
   @property({ type: String })
   href = '';
-  /**
-   * @description Link target.
-   * */
+
+  /** Defines a target attribute for where to load the URL. Possible options include "_self" (deafult), "_blank", "_parent", "_top" */
   @property({ type: String }) target = LINK_TARGETS.SELF;
 
-  /**
-   * @description The Link type.
-   * */
-  @property() kind = LINK_TYPES.PRIMARY;
+  /** The Link type. Primary(App) or Secondary(Web).*/
+  @property({ type: String }) kind = LINK_TYPES.PRIMARY;
 
-  /**
-   * @description
-   * Defines a relationship between a linked resource and the document. An empty string (default) means no particular relationship
-   * */
+  /** Defines a relationship between a linked resource and the document. An empty string (default) means no particular relationship */
   @property({ type: String })
   rel = this.target === '_blank' ? 'noopener' : '';
-  /**
-   * @description Disables the link (bydefault false).
-   */
+  /** Disables the link.*/
   // Reference for disabled links:
   // https://www.scottohara.me/blog/2021/05/28/disabled-links.html
   @property({ type: Boolean })
   disabled = false;
 
-  /**
-   * @description whether you want the inline version of Link.
-   */
+  /** whether you want the inline version of Link. */
   @property({ type: Boolean })
-  inline = false;
+  inline = true;
 
   override render() {
     const classes = this.returnClassMap();
