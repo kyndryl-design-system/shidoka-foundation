@@ -2121,6 +2121,45 @@ export const Borders = {
           </tr>
 
           <tr>
+            <td>--kd-color-border-ui</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-border-ui'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-border-ui)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-border-ui-hover</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-border-ui-hover'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-border-ui-hover)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-border-ui-disabled</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-border-ui-disabled'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-border-ui-disabled)"
+            ></td>
+          </tr>
+
+          <tr>
             <td>--kd-color-border-tertiary</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
