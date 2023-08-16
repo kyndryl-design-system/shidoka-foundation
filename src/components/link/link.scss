@@ -12,6 +12,12 @@
   position: relative;
   text-decoration: none;
 
+  &:hover {
+    ::slotted(kd-icon) {
+      transform: translate(4px, 0);
+    }
+  }
+
   // Primary (app)
   &-primary {
     color: var(--kd-color-spruce-60);
@@ -72,6 +78,9 @@
       color: var(--kd-color-darkstone-40);
       border: none;
       text-decoration: none;
+      ::slotted(kd-icon) {
+        transform: translate(0px, 0);
+      }
     }
   }
 
@@ -90,5 +99,6 @@
 ::slotted(kd-icon) {
   display: inline-flex;
   align-self: center;
-  margin-left: 2px;
+  margin-left: 0px;
+  transition: 300ms ease-in-out;
 }
