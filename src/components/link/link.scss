@@ -20,47 +20,40 @@
 
   // Primary (app)
   &-primary {
-    color: var(--kd-color-spruce-60);
+    color: var(--kd-color-text-link);
 
     &:hover {
-      color: var(--kd-color-spruce-50);
+      color: var(--kd-color-text-link-hover);
       font-weight: var(--kd-font-weight-medium);
     }
     &:focus {
-      border: 1px solid var(--kd-color-spruce-60);
+      color: var(--kd-color-text-tertiary);
+      border: 1px solid var(--kd-color-border-focus);
       text-decoration: none;
     }
     &:active {
-      color: var(--kd-color-spruce-80);
+      color: var(--kd-color-text-link-pressed);
       text-decoration: underline;
       border: none;
-    }
-    &:visited {
-      color: var(--kd-color-spruce-60);
-      text-decoration: underline;
     }
   }
 
   // Secondary (web)
   &-secondary {
-    color: var(--kd-color-darkstone-80);
+    color: var(--kd-color-text-primary);
 
     &:hover {
-      color: var(--kd-color-darkstone-60);
+      color: var(--kd-color-text-primary-hover);
       font-weight: var(--kd-font-weight-medium);
     }
     &:focus {
-      border: 1px solid var(--kd-color-spruce-60);
+      border: 1px solid var(--kd-color-border-focus);
       text-decoration: none;
     }
     &:active {
-      color: var(--kd-color-darkstone-100);
+      color: var(--kd-color-text-primary-pressed);
       text-decoration: underline;
       border: none;
-    }
-    &:visited {
-      color: var(--kd-color-darkstone-80);
-      text-decoration: underline;
     }
   }
   // Link disable class
