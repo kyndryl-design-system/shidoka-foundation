@@ -7,7 +7,8 @@
 
 // Base Button Styles
 .kd-btn {
-  transition: outline-color 0.3s, color 0.3s, background-color 0.3s;
+  transition: outline-color 0.2s ease-in-out, color 0.2s ease-in-out,
+    background-color 0.2s ease-in-out;
   white-space: nowrap;
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -50,6 +51,10 @@
   outline-color: var(--kd-color-border-focus);
 }
 
+span {
+  z-index: 1;
+}
+
 // Primary Button Styles (Web & App)
 .kd-btn--primary-web,
 .kd-btn--primary-app {
@@ -57,14 +62,37 @@
   background-color: var(--kd-color-background-primary);
   color: var(--kd-color-text-inversed);
   border: none;
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--kd-color-background-primary-hover);
+    transition: transform 300ms ease-out, opacity 200ms ease-out,
+      background-color 150ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+    opacity: 0;
+  }
 
   &:hover {
-    background-color: var(--kd-color-background-primary-hover);
+    &:before {
+      transform: scaleX(1);
+      opacity: 1;
+    }
   }
 
   &:active {
-    background-color: var(--kd-color-background-primary-pressed);
     border: none;
+
+    &:before {
+      background-color: var(--kd-color-background-primary-pressed);
+    }
   }
 
   &:focus {
@@ -79,11 +107,11 @@
 .kd-btn--primary-web {
   background-color: var(--kd-color-background-secondary);
 
-  &:hover {
+  &:before {
     background-color: var(--kd-color-background-secondary-hover);
   }
 
-  &:active {
+  &:active:before {
     background-color: var(--kd-color-background-secondary-pressed);
   }
 }
@@ -95,12 +123,32 @@
   background-color: var(--kd-color-background-destructive);
   color: var(--kd-color-text-inversed);
   border: none;
+  position: relative;
+  overflow: hidden;
 
-  &:hover {
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background-color: var(--kd-color-background-destructive-hover);
+    transition: transform 300ms ease-out, opacity 200ms ease-out,
+      background-color 150ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+    opacity: 0;
   }
 
-  &:active {
+  &:hover {
+    &:before {
+      transform: scaleX(1);
+      opacity: 1;
+    }
+  }
+
+  &:active:before {
     background-color: var(--kd-color-background-destructive-pressed);
   }
 

@@ -101,7 +101,7 @@ export class Button extends LitElement {
               aria-label=${ifDefined(this.description || undefined)}
               @click=${(e: Event) => this.handleClick(e)}
             >
-              <slot></slot>
+              <span><slot></slot></span>
             </a>
           `
         : html`
@@ -112,7 +112,7 @@ export class Button extends LitElement {
               aria-label=${ifDefined(this.description || undefined)}
               @click=${(e: Event) => this.handleClick(e)}
             >
-              <slot></slot>
+              <span><slot></slot></span>
             </button>
           `}
     `;
