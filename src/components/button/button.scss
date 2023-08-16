@@ -2,17 +2,13 @@
  * Copyright Kyndryl, Inc. 2023
  */
 
-@import '../../scss/variables/index';
-@import '../../scss/global.scss';
+@use '../../scss/global';
+@use '../../scss/mixins/typography';
 
 // Base Button Styles
 .kd-btn {
   -webkit-transition: border-color 0.3s, color 0.3s, background-color 0.3s;
   transition: border-color 0.3s, color 0.3s, background-color 0.3s;
-  font-size: var(--kd-font-size-body-2-md);
-  font-weight: var(--kd-font-weight-regular);
-  font-family: var(--kd-font-family-secondary);
-  line-height: var(--kd-line-height-body-2-md);
   white-space: nowrap;
   border: 1px solid;
   border-radius: 4px;
@@ -23,6 +19,7 @@
   align-items: center;
   display: inline-flex;
   flex-direction: row;
+  @include typography.type-body-02;
 
   &--small {
     padding: 4px 16px;
@@ -50,8 +47,9 @@
 }
 
 @mixin kd-btn-focus {
-  outline: none; // clear default browser outlines
-  box-shadow: 0 0 0 2px var(--kd-color-border-focus);
+  outline-offset: 2px;
+  outline: 2px solid transparent;
+  outline-color: var(--kd-color-border-focus);
 }
 
 // Primary Button Styles (Web & App)

@@ -15,7 +15,7 @@ import stylesheet from './button.scss';
  * Kyndryl-branded L0 Button component.
  *
  * @slot - Content slot for the button.
- * @csspart button - Styles applied to the button.
+ * @styles button - Styles applied to the button.
  */
 @customElement('kd-button')
 export class Button extends LitElement {
@@ -72,8 +72,22 @@ export class Button extends LitElement {
       class=${classMap(classes)}
       ?disabled=${this.disabled}
       aria-label=${ifDefined(this.description || undefined)}
+      @click=${(e: Event) => this.handleClick(e)}
     >
       <slot></slot>
     </button>`;
+  }
+
+  private handleClick(e: Event) {
+    const event = new CustomEvent('on-click', {
+      detail: { origEvent: e },
+    });
+    this.dispatchEvent(event);
+  }
+}
+
+declare global {
+  interface HTMLElementTagNameMap {
+    'kd-button': Button;
   }
 }
