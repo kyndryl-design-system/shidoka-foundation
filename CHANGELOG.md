@@ -1,3 +1,19 @@
+# [1.0.0-beta.11](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.10...v1.0.0-beta.11) (2023-08-15)
+
+
+### Bug Fixes
+
+* **layout:** change class name scheme. ([a311537](https://github.com/kyndryl-design-system/foundation/commit/a31153711021e8e857b25b05542b19e302f3593b))
+* **layout:** enchange stroies for layout ([2467f1c](https://github.com/kyndryl-design-system/foundation/commit/2467f1cf4cc57ef3c2f8b285ca96a8a817b6e2fd))
+* **layout:** remove empty file ([7b38fe5](https://github.com/kyndryl-design-system/foundation/commit/7b38fe55ded98cc3c4aeda995185093702bf7427))
+
+# [1.0.0-beta.10](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.9...v1.0.0-beta.10) (2023-08-14)
+
+
+### Features
+
+* **color:** update color tokens ([9a4c33d](https://github.com/kyndryl-design-system/foundation/commit/9a4c33d8b40283709fcedd22deea99980b72ac8d))
+
 # [1.0.0-beta.9](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.8...v1.0.0-beta.9) (2023-08-11)
 
 
