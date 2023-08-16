@@ -3,7 +3,7 @@
  */
 
 import { html, LitElement } from 'lit';
-import { customElement, property } from 'lit/decorators.js';
+import { customElement, property, state } from 'lit/decorators.js';
 import { ifDefined } from 'lit/directives/if-defined.js';
 import { classMap } from 'lit-html/directives/class-map.js';
 
@@ -25,6 +25,19 @@ import stylesheet from './button.scss';
 @customElement('kd-button')
 export class Button extends LitElement {
   static override styles = [stylesheet];
+
+  /**
+   * Associate the component with forms.
+   * @ignore
+   */
+  static formAssociated = true;
+
+  /**
+   * Attached internals for form association.
+   * @ignore
+   */
+  @state()
+  internals = this.attachInternals();
 
   /** ARIA label for the button for accessibility. */
   @property({ type: String })
@@ -106,6 +119,14 @@ export class Button extends LitElement {
   }
 
   private handleClick(e: Event) {
+    if (this.internals.form) {
+      if (this.type === 'submit') {
+        this.internals.form.submit();
+      } else if (this.type === 'reset') {
+        this.internals.form.reset();
+      }
+    }
+
     const event = new CustomEvent('on-click', {
       detail: { origEvent: e },
     });
