@@ -111,7 +111,7 @@
           "slots": [
             {
               "description": "Content slot for the button text/icon.",
-              "name": ""
+              "name": "unnamed"
             }
           ],
           "members": [

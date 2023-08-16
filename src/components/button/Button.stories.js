@@ -60,6 +60,7 @@ export default {
 };
 
 const args = {
+  unnamed: 'Button Text',
   kind: 'primary-app',
   type: 'button',
   size: 'medium',
@@ -85,7 +86,7 @@ export const Button = {
         href=${args.href}
         @on-click=${(e) => action(e.type)(e)}
       >
-        Button Text
+        ${args.unnamed}
       </kd-button>
     `;
   },
@@ -113,7 +114,7 @@ export const ButtonWithIcon = {
         href=${args.href}
         @on-click=${(e) => action(e.type)(e)}
       >
-        Button Text
+        ${args.unnamed}
         <kd-icon .icon=${chevronRightIcon}></kd-icon>
       </kd-button>
     `;

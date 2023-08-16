@@ -19,7 +19,7 @@ import stylesheet from './button.scss';
 /**
  * Button component.
  *
- * @slot - Content slot for the button text/icon.
+ * @slot unnamed - Content slot for the button text/icon.
  * @fires on-click - Emits the original click event.
  */
 @customElement('kd-button')
