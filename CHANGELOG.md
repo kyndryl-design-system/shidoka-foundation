@@ -1,3 +1,10 @@
+# [1.0.0-beta.17](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.16...v1.0.0-beta.17) (2023-08-17)
+
+
+### Bug Fixes
+
+* **button:** separate slot for icon ([7bb61f6](https://github.com/kyndryl-design-system/foundation/commit/7bb61f6e79757aa5bc8cdd4562a61022a983bc81))
+
 # [1.0.0-beta.16](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.15...v1.0.0-beta.16) (2023-08-17)
 
 
