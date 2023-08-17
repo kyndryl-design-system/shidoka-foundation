@@ -20,11 +20,11 @@ export class Link extends LitElement {
   href = '';
 
   /** Defines a target attribute for where to load the URL. Possible options include "_self" (deafult), "_blank", "_parent", "_top" */
-  @property({ type: String }) 
+  @property({ type: String })
   target: LINK_TARGETS = LINK_TARGETS.SELF;
 
   /** The Link type. Primary(App) or Secondary(Web).*/
-  @property({ type: String }) 
+  @property({ type: String })
   kind: LINK_TYPES = LINK_TYPES.PRIMARY;
 
   /** Defines a relationship between a linked resource and the document. An empty string (default) means no particular relationship */
@@ -35,7 +35,7 @@ export class Link extends LitElement {
   // Reference for disabled links:
   // https://www.scottohara.me/blog/2021/05/28/disabled-links.html
   @property({ type: Boolean, reflect: true })
-  disabled = false; 
+  disabled = false;
 
   /** Whether you want the standalone Link. Bydefault false. Use this prop. (true) with icon with link variant. */
   @property({ type: Boolean })
@@ -45,39 +45,24 @@ export class Link extends LitElement {
     const classes = this.returnClassMap();
 
     return html`
-      ${this.disabled
-        ? html`
-            <a
-              class="kd-link-text ${classes}"
-              role="link"
-              rel=${this.rel}
-              ?disabled=${this.disabled}
-              @click=${(e: Event) => this.handleClick(e)}
-            >
-            <span class="kd-link-text-inline-flex">
-                <slot></slot>
-            </span>
-            </a>
-          `
-        : html`
-            <a
-              class="kd-link-text ${classes}"
-              target=${this.target}
-              rel=${this.rel}
-              href=${this.href ? this.href : 'javascript:void(0)'}
-              ?disabled=${this.disabled}
-              @click=${(e: Event) => this.handleClick(e)}
-            >
-              <span class="kd-link-text-inline-flex">
-                <slot></slot>
-              </span>
-            </a>
-          `}
+      <a
+        class="kd-link-text ${classes}"
+        target=${this.target}
+        role="link"
+        rel=${this.rel}
+        href=${this.href ? this.href : 'javascript:void(0)'}
+        ?disabled=${this.disabled}
+        @click=${(e: Event) => this.handleClick(e)}
+      >
+        <span class="kd-link-text-inline-flex">
+          <slot></slot>
+        </span>
+      </a>
     `;
   }
   // -- Apply classes according to states, kind etc. -- //
   private returnClassMap() {
-    if (this.disabled) { 
+    if (this.disabled) {
       return classMap({
         ['kd-link-text-disabled']: this.disabled,
       });
@@ -93,9 +78,9 @@ export class Link extends LitElement {
   }
 
   private handleClick(e: Event) {
-    if(this.disabled){
-        e.preventDefault();
-        return;
+    if (this.disabled) {
+      e.preventDefault();
+      return;
     }
     const event = new CustomEvent('on-click', {
       detail: { origEvent: e },
