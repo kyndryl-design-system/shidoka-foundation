@@ -21,7 +21,7 @@ import { createOptionsArray } from '../../common/helpers/helpers';
 const createSelectOptions = (defs) => [null, ...createOptionsArray(defs)];
 
 export default {
-  title: 'Foundation/Button',
+  title: 'Components/Button',
   component: 'kd-button',
   parameters: {},
   argTypes: {
