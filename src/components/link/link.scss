@@ -11,6 +11,10 @@
   padding: 0 2px;
   position: relative;
   text-decoration: none;
+  -webkit-transition: color 300ms ease-in-out;
+  -moz-transition: color 300ms ease-in-out;
+  -o-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
 
   &:hover {
     ::slotted(kd-icon) {
@@ -28,6 +32,10 @@
     &:focus {
       color: var(--kd-color-text-tertiary);
       outline: 1px solid var(--kd-color-border-focus);
+      -webkit-transition: outline 100ms ease-in-out;
+      -moz-transition: outline 100ms ease-in-out;
+      -o-transition: outline 100ms ease-in-out;
+      transition: outline 100ms ease-in-out;
       text-decoration: none;
     }
     &:active {
@@ -46,6 +54,10 @@
     }
     &:focus {
       outline: 1px solid var(--kd-color-border-focus);
+      -webkit-transition: outline 100ms ease-in-out;
+      -moz-transition: outline 100ms ease-in-out;
+      -o-transition: outline 100ms ease-in-out;
+      transition: outline 100ms ease-in-out;
       text-decoration: none;
     }
     &:active {
@@ -96,4 +108,7 @@
   align-self: center;
   margin-left: 0px;
   transition: 300ms ease-in-out;
+  -moz-transition: 300ms ease-in-out;
+  -o-transition: 300ms ease-in-out;
+  -webkit-transition: 300ms ease-in-out;
 }
