@@ -37,9 +37,9 @@ export class Link extends LitElement {
   @property({ type: Boolean, reflect: true })
   disabled = false; 
 
-  /** Whether you want the inline Link. Don't use when Link with icon. */
+  /** Whether you want the standalone Link. Bydefault false. Use this prop. (true) with icon with link variant. */
   @property({ type: Boolean })
-  inline = false;
+  standalone = false;
 
   override render() {
     const classes = this.returnClassMap();
@@ -86,8 +86,8 @@ export class Link extends LitElement {
         ['kd-link-text-primary']:
           this.kind === LINK_TYPES.PRIMARY || !this.kind,
         ['kd-link-text-secondary']: this.kind === LINK_TYPES.SECONDARY,
-        ['kd-link-text-inline']: this.inline,
-        ['kd-link-text-standalone']: !this.inline,
+        ['kd-link-text-inline']: !this.standalone,
+        ['kd-link-text-standalone']: this.standalone,
       });
     }
   }

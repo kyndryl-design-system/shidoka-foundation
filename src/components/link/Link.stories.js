@@ -46,10 +46,14 @@ const linkIconArgs = { ...args, sizeOverride: 16 };
 // Inline link
 export const Link = {
   args: args,
+  argTypes: {
+    standalone: {
+      control: false,
+    },
+  },
   render: (args) =>
     html`
       <kd-link
-        inline
         href=${args.href}
         target=${args.target}
         kind=${args.kind}
@@ -63,13 +67,9 @@ export const Link = {
 // Standalone Link
 export const LinkWithIcon = {
   args: linkIconArgs,
-  argTypes: {
-    inline: {
-      control: false,
-    },
-  },
   render: (args) => html`
     <kd-link
+      standalone
       href=${args.href}
       target=${args.target}
       kind=${args.kind}

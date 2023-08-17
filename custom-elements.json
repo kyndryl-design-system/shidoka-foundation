@@ -543,13 +543,13 @@
             },
             {
               "kind": "field",
-              "name": "inline",
+              "name": "standalone",
               "type": {
                 "text": "boolean"
               },
               "default": "false",
-              "description": "Whether you want the inline Link. Don't use when Link with icon.",
-              "attribute": "inline"
+              "description": "Whether you want the standalone Link. Bydefault false. Use this prop. (true) with icon with link variant.",
+              "attribute": "standalone"
             },
             {
               "kind": "method",
@@ -621,13 +621,13 @@
               "fieldName": "disabled"
             },
             {
-              "name": "inline",
+              "name": "standalone",
               "type": {
                 "text": "boolean"
               },
               "default": "false",
-              "description": "Whether you want the inline Link. Don't use when Link with icon.",
-              "fieldName": "inline"
+              "description": "Whether you want the standalone Link. Bydefault false. Use this prop. (true) with icon with link variant.",
+              "fieldName": "standalone"
             }
           ],
           "superclass": {
