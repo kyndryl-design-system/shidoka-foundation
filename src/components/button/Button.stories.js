@@ -115,7 +115,7 @@ export const ButtonWithIcon = {
         @on-click=${(e) => action(e.type)(e)}
       >
         ${args.unnamed}
-        <kd-icon .icon=${chevronRightIcon}></kd-icon>
+        <kd-icon slot="icon" .icon=${chevronRightIcon}></kd-icon>
       </kd-button>
     `;
   },
@@ -136,7 +136,7 @@ export const IconOnly = {
         href=${args.href}
         @on-click=${(e) => action(e.type)(e)}
       >
-        <kd-icon .icon=${chevronRightIcon}></kd-icon>
+        <kd-icon slot="icon" .icon=${chevronRightIcon}></kd-icon>
       </kd-button>
     `;
   },

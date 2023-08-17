@@ -52,6 +52,8 @@
 }
 
 span {
+  display: flex;
+  align-items: center;
   z-index: 1;
 }
 
@@ -245,22 +247,14 @@ span {
   }
 }
 
-// Base styles for button icons
-::slotted(kd-icon) {
-  svg {
-    height: 20px;
-    width: 20px;
-  }
-}
-
 .kd-btn--icon {
   // Styles for buttons with icons on the left side
-  &-left {
+  &-left span {
     // Reverse the flex direction to place the icon to the left
     flex-direction: row-reverse;
 
     // Styling for the actual icon within the button
-    ::slotted(kd-icon) {
+    slot[name='icon']::slotted(*) {
       // Add margin to the right to space the icon from the text
       margin-right: 8px;
     }
@@ -269,7 +263,7 @@ span {
   // Styles for buttons with icons on the right side
   &-right {
     // Styling for the actual icon within the button
-    ::slotted(kd-icon) {
+    slot[name='icon']::slotted(*) {
       // Add margin to the left to space the icon from the text
       margin-left: 8px;
     }

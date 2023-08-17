@@ -19,7 +19,8 @@ import stylesheet from './button.scss';
 /**
  * Button component.
  *
- * @slot unnamed - Content slot for the button text/icon.
+ * @slot unnamed - Slot for button text.
+ * @slot icon - Slot for an icon.
  * @fires on-click - Emits the original click event.
  */
 @customElement('kd-button')
@@ -101,7 +102,7 @@ export class Button extends LitElement {
               aria-label=${ifDefined(this.description || undefined)}
               @click=${(e: Event) => this.handleClick(e)}
             >
-              <span><slot></slot></span>
+              <span><slot></slot><slot name="icon"></slot></span>
             </a>
           `
         : html`
@@ -112,7 +113,7 @@ export class Button extends LitElement {
               aria-label=${ifDefined(this.description || undefined)}
               @click=${(e: Event) => this.handleClick(e)}
             >
-              <span><slot></slot></span>
+              <span><slot></slot><slot name="icon"></slot></span>
             </button>
           `}
     `;

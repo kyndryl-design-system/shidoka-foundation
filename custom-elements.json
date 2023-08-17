@@ -118,8 +118,12 @@
           "name": "Button",
           "slots": [
             {
-              "description": "Content slot for the button text/icon.",
+              "description": "Slot for button text.",
               "name": "unnamed"
+            },
+            {
+              "description": "Slot for an icon.",
+              "name": "icon"
             }
           ],
           "members": [
