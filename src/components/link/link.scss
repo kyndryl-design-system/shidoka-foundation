@@ -73,6 +73,7 @@
     text-decoration: none;
     border: none;
     outline: none;
+    pointer-events: none;
 
     &:hover,
     &:focus,
