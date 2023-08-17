@@ -13,30 +13,33 @@ import LinkStyles from './link.scss';
 
 @customElement('kd-link')
 export class Link extends LitElement {
-  static override styles = LinkStyles;
+  static override styles = [LinkStyles];
 
   /** Link url. */
   @property({ type: String })
   href = '';
 
   /** Defines a target attribute for where to load the URL. Possible options include "_self" (deafult), "_blank", "_parent", "_top" */
-  @property({ type: String }) target = LINK_TARGETS.SELF;
+  @property({ type: String }) 
+  target: LINK_TARGETS = LINK_TARGETS.SELF;
 
   /** The Link type. Primary(App) or Secondary(Web).*/
-  @property({ type: String }) kind = LINK_TYPES.PRIMARY;
+  @property({ type: String }) 
+  kind: LINK_TYPES = LINK_TYPES.PRIMARY;
 
   /** Defines a relationship between a linked resource and the document. An empty string (default) means no particular relationship */
   @property({ type: String })
-  rel = this.target === '_blank' ? 'noopener' : '';
-  /** Disables the link.*/
+  rel = '';
+
+  /** Determines if the link is disabled.*/
   // Reference for disabled links:
   // https://www.scottohara.me/blog/2021/05/28/disabled-links.html
-  @property({ type: Boolean })
+  @property({ type: Boolean, reflect: true })
   disabled = false; 
 
-  /** whether you want the inline version of Link. */
+  /** Whether you want the inline Link. Don't use when Link with icon. */
   @property({ type: Boolean })
-  inline = true;
+  inline = false;
 
   override render() {
     const classes = this.returnClassMap();
@@ -49,8 +52,11 @@ export class Link extends LitElement {
               role="link"
               rel=${this.rel}
               ?disabled=${this.disabled}
+              @click=${(e: Event) => this.handleClick(e)}
             >
-            <slot></slot>
+            <span class="kd-link-text-inline-flex">
+                <slot></slot>
+            </span>
             </a>
           `
         : html`
@@ -62,14 +68,16 @@ export class Link extends LitElement {
               ?disabled=${this.disabled}
               @click=${(e: Event) => this.handleClick(e)}
             >
-              <slot></slot>
+              <span class="kd-link-text-inline-flex">
+                <slot></slot>
+              </span>
             </a>
           `}
     `;
   }
   // -- Apply classes according to states, kind etc. -- //
   private returnClassMap() {
-    if (this.disabled) {
+    if (this.disabled) { 
       return classMap({
         ['kd-link-text-disabled']: this.disabled,
       });
@@ -85,7 +93,10 @@ export class Link extends LitElement {
   }
 
   private handleClick(e: Event) {
-    console.log('I m clickable');
+    if(this.disabled){
+        e.preventDefault();
+        return;
+    }
     const event = new CustomEvent('on-click', {
       detail: { origEvent: e },
     });

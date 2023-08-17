@@ -505,18 +505,28 @@
             {
               "kind": "field",
               "name": "target",
+              "type": {
+                "text": "LINK_TARGETS"
+              },
               "description": "Defines a target attribute for where to load the URL. Possible options include \"_self\" (deafult), \"_blank\", \"_parent\", \"_top\"",
               "attribute": "target"
             },
             {
               "kind": "field",
               "name": "kind",
+              "type": {
+                "text": "LINK_TYPES"
+              },
               "description": "The Link type. Primary(App) or Secondary(Web).",
               "attribute": "kind"
             },
             {
               "kind": "field",
               "name": "rel",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
               "description": "Defines a relationship between a linked resource and the document. An empty string (default) means no particular relationship",
               "attribute": "rel"
             },
@@ -527,8 +537,9 @@
                 "text": "boolean"
               },
               "default": "false",
-              "description": "Disables the link.",
-              "attribute": "disabled"
+              "description": "Determines if the link is disabled.",
+              "attribute": "disabled",
+              "reflects": true
             },
             {
               "kind": "field",
@@ -536,8 +547,8 @@
               "type": {
                 "text": "boolean"
               },
-              "default": "true",
-              "description": "whether you want the inline version of Link.",
+              "default": "false",
+              "description": "Whether you want the inline Link. Don't use when Link with icon.",
               "attribute": "inline"
             },
             {
@@ -577,18 +588,26 @@
             },
             {
               "name": "target",
-              "default": "_self",
+              "type": {
+                "text": "LINK_TARGETS"
+              },
               "description": "Defines a target attribute for where to load the URL. Possible options include \"_self\" (deafult), \"_blank\", \"_parent\", \"_top\"",
               "fieldName": "target"
             },
             {
               "name": "kind",
-              "default": "primary",
+              "type": {
+                "text": "LINK_TYPES"
+              },
               "description": "The Link type. Primary(App) or Secondary(Web).",
               "fieldName": "kind"
             },
             {
               "name": "rel",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
               "description": "Defines a relationship between a linked resource and the document. An empty string (default) means no particular relationship",
               "fieldName": "rel"
             },
@@ -598,7 +617,7 @@
                 "text": "boolean"
               },
               "default": "false",
-              "description": "Disables the link.",
+              "description": "Determines if the link is disabled.",
               "fieldName": "disabled"
             },
             {
@@ -606,8 +625,8 @@
               "type": {
                 "text": "boolean"
               },
-              "default": "true",
-              "description": "whether you want the inline version of Link.",
+              "default": "false",
+              "description": "Whether you want the inline Link. Don't use when Link with icon.",
               "fieldName": "inline"
             }
           ],

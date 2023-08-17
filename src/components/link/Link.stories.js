@@ -5,6 +5,12 @@ import arrowRightIcon from '@carbon/icons/es/chevron--right/16';
 export default {
   title: 'Components/Link',
   component: 'kd-link',
+  parameters: {
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/file/tTu138pz3jLk0mykJSg3t4/KDS---Foundation-v1.0.0?type=design&node-id=4860-23646&mode=design&t=qd3pGvXxQckM9VJ2-0',
+    },
+  },
   argTypes: {
     kind: {
       control: { type: 'select' },
@@ -18,6 +24,7 @@ export default {
 };
 
 const args = {
+  unnamed: 'Link Text',
   href: '',
   target: '_self',
   kind: 'primary',
@@ -27,7 +34,7 @@ const args = {
 const linkIconArgs = { ...args, sizeOverride: 16 };
 
 // Inline link
-export const Inline = {
+export const Link = {
   args: args,
   render: (args) =>
     html`
@@ -38,7 +45,7 @@ export const Inline = {
         kind=${args.kind}
         ?disabled=${args.disabled}
       >
-        Link1
+        ${args.unnamed}
       </kd-link>
     `,
 };
@@ -46,6 +53,11 @@ export const Inline = {
 // Standalone Link
 export const LinkWithIcon = {
   args: linkIconArgs,
+  argTypes: {
+    inline: {
+      control: false,
+    },
+  },
   render: (args) => html`
     <kd-link
       href=${args.href}
@@ -53,7 +65,7 @@ export const LinkWithIcon = {
       kind=${args.kind}
       ?disabled=${args.disabled}
     >
-      Link1
+      ${args.unnamed}
       <kd-icon
         .icon=${arrowRightIcon}
         sizeOverride=${args.sizeOverride}

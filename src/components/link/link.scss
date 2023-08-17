@@ -86,6 +86,9 @@
       text-decoration: underline;
     }
   }
+  &-inline-flex {
+    display: inline-flex;
+  }
 }
 
 ::slotted(kd-icon) {
