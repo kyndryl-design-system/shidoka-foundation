@@ -1,6 +1,10 @@
 import { html } from 'lit';
 import './link';
 import arrowRightIcon from '@carbon/icons/es/chevron--right/16';
+import { LINK_TYPES, LINK_TARGETS } from './defs';
+import { createOptionsArray } from '../../common/helpers/helpers';
+
+const createSelectOptions = (defs) => [null, ...createOptionsArray(defs)];
 
 export default {
   title: 'Components/Link',
@@ -13,12 +17,18 @@ export default {
   },
   argTypes: {
     kind: {
-      control: { type: 'select' },
-      options: ['primary', 'secondary'],
+      options: createSelectOptions(LINK_TYPES),
+      control: { type: 'select', labels: { null: LINK_TYPES.PRIMARY } },
+      table: {
+        defaultValue: { summary: LINK_TYPES.PRIMARY },
+      },
     },
     target: {
-      control: { type: 'select' },
-      options: ['_self', '_blank', '_top', '_parent'],
+      options: createSelectOptions(LINK_TARGETS),
+      control: { type: 'select', labels: { bull: LINK_TARGETS.SELF } },
+      table: {
+        defaultValue: { summary: LINK_TARGETS.SELF },
+      },
     },
   },
 };
