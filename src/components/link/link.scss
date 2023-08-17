@@ -24,7 +24,6 @@
 
     &:hover {
       color: var(--kd-color-text-link-hover);
-      font-weight: var(--kd-font-weight-medium);
     }
     &:focus {
       color: var(--kd-color-text-tertiary);
@@ -44,7 +43,6 @@
 
     &:hover {
       color: var(--kd-color-text-primary-hover);
-      font-weight: var(--kd-font-weight-medium);
     }
     &:focus {
       outline: 1px solid var(--kd-color-border-focus);
