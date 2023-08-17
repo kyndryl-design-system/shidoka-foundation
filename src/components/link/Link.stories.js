@@ -47,11 +47,6 @@ const linkIconArgs = { ...args, standalone: true, sizeOverride: 16 };
 // Inline link
 export const Link = {
   args: args,
-  argTypes: {
-    standalone: {
-      control: false,
-    },
-  },
   render: (args) =>
     html`
       <kd-link
