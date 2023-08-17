@@ -1,59 +1,132 @@
-import { LitElement, html } from 'lit';
-import { customElement, property } from 'lit/decorators.js';
-import ButtonScss from './button.scss';
+/**
+ * Copyright Kyndryl, Inc. 2023
+ */
+
+import { html, LitElement } from 'lit';
+import { customElement, property, state } from 'lit/decorators.js';
+import { ifDefined } from 'lit/directives/if-defined.js';
+import { classMap } from 'lit-html/directives/class-map.js';
+
+import {
+  BUTTON_KINDS,
+  BUTTON_SIZES,
+  BUTTON_TYPES,
+  BUTTON_ICON_POSITION,
+} from './defs';
+
+import stylesheet from './button.scss';
 
 /**
- * Primary UI component for user interaction.
- * @fires on-click - Captures the click event and emits the original event details.
- * @csspart button - Styles to override the button
+ * Button component.
+ *
+ * @slot unnamed - Content slot for the button text/icon.
+ * @fires on-click - Emits the original click event.
  */
-@customElement('kyn-button')
+@customElement('kd-button')
 export class Button extends LitElement {
-  static override styles = ButtonScss;
+  static override styles = [stylesheet];
 
-  /** The kind of button to render. */
+  /**
+   * Associate the component with forms.
+   * @ignore
+   */
+  static formAssociated = true;
+
+  /**
+   * Attached internals for form association.
+   * @ignore
+   */
+  @state()
+  internals = this.attachInternals();
+
+  /** ARIA label for the button for accessibility. */
   @property({ type: String })
-  kind = 'primary';
+  description = '';
 
-  /** The button size. */
+  /** Type for the &lt;button&gt; element. */
   @property({ type: String })
-  size = 'md';
+  type: BUTTON_TYPES = BUTTON_TYPES.BUTTON;
 
-  /** Converts to an &lt;a&gt; tag to create a link. */
+  /** Specifies the visual appearance/kind of the button. */
+  @property({ type: String })
+  kind: BUTTON_KINDS = BUTTON_KINDS.PRIMARY_APP;
+
+  /** Converts the button to an &lt;a&gt; tag if specified. */
   @property({ type: String })
   href = '';
 
-  /** Disables the button. */
-  @property({ type: Boolean })
+  /** Specifies the size of the button. */
+  @property({ type: String })
+  size: BUTTON_SIZES = BUTTON_SIZES.MEDIUM;
+
+  /** Specifies the position of the icon relative to any button text. */
+  @property({ type: String })
+  iconPosition: BUTTON_ICON_POSITION = BUTTON_ICON_POSITION.CENTER;
+
+  /** Determines if the button is disabled. */
+  @property({ type: Boolean, reflect: true })
   disabled = false;
 
+  /** Determines if the button indicates a destructive action. */
+  @property({ type: Boolean, reflect: true })
+  destructive = false;
+
   override render() {
+    const typeClassMap = {
+      [BUTTON_KINDS.PRIMARY_APP]: 'primary-app',
+      [BUTTON_KINDS.PRIMARY_WEB]: 'primary-web',
+      [BUTTON_KINDS.SECONDARY]: 'secondary',
+      [BUTTON_KINDS.TERTIARY]: 'tertiary',
+    };
+
+    const baseTypeClass = typeClassMap[this.kind];
+    const destructModifier = this.destructive ? '-destructive' : '';
+
+    const classes = {
+      [`kd-btn--${baseTypeClass}${destructModifier}`]: true,
+      [`kd-btn--${baseTypeClass}`]: !this.destructive,
+      'kd-btn--large': this.size === BUTTON_SIZES.LARGE,
+      'kd-btn--small': this.size === BUTTON_SIZES.SMALL,
+      'kd-btn--medium': this.size === BUTTON_SIZES.MEDIUM,
+      [`kd-btn--icon-${this.iconPosition}`]: !!this.iconPosition,
+    };
+
     return html`
-      ${this.href != ''
+      ${this.href !== ''
         ? html`
             <a
+              class=${classMap(classes)}
               href=${this.href}
-              class="btn btn--${this.kind} btn--${this.size}"
-              part="button"
               ?disabled=${this.disabled}
+              aria-label=${ifDefined(this.description || undefined)}
               @click=${(e: Event) => this.handleClick(e)}
             >
-              <slot></slot>
+              <span><slot></slot></span>
             </a>
           `
         : html`
             <button
-              class="btn btn--${this.kind} btn--${this.size}"
-              part="button"
+              class=${classMap(classes)}
+              type=${this.type}
               ?disabled=${this.disabled}
+              aria-label=${ifDefined(this.description || undefined)}
+              @click=${(e: Event) => this.handleClick(e)}
             >
-              <slot></slot>
+              <span><slot></slot></span>
             </button>
           `}
     `;
   }
 
   private handleClick(e: Event) {
+    if (this.internals.form) {
+      if (this.type === 'submit') {
+        this.internals.form.submit();
+      } else if (this.type === 'reset') {
+        this.internals.form.reset();
+      }
+    }
+
     const event = new CustomEvent('on-click', {
       detail: { origEvent: e },
     });
@@ -63,6 +136,6 @@ export class Button extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'kyn-button': Button;
+    'kd-button': Button;
   }
 }

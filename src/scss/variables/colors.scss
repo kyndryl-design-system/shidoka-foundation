@@ -162,6 +162,7 @@
   --kd-color-text-error: var(--kd-color-error);
   --kd-color-text-warning: var(--kd-color-warning);
   --kd-color-text-informational: var(--kd-color-informational);
+  --kd--color-text-destructive: var(--kd-color-warmred-70);
 
   /* Background colors */
   --kd-color-background-ui-light: var(--kd-color-neutral-white);
@@ -204,6 +205,9 @@
   /* Border colors */
   --kd-color-border-primary: var(--kd-color-darkstone-80);
   --kd-color-border-secondary: var(--kd-color-darkstone-60);
+  --kd-color-border-ui: var(--kd-color-darkstone-50);
+  --kd-color-border-ui-hover: var(--kd-color-spruce-60);
+  --kd-color-border-ui-disabled: var(--kd-color-darkstone-40);
   --kd-color-border-tertiary: var(--kd-color-spruce-60);
   --kd-color-border-tertiary-bold: var(--kd-color-spruce-80);
   --kd-color-border-brand: var(--kd-color-warmred-50);

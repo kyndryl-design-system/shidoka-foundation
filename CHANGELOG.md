@@ -1,3 +1,42 @@
+# [1.0.0-beta.15](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.14...v1.0.0-beta.15) (2023-08-16)
+
+
+### Bug Fixes
+
+* **button:** update animations ([ec76b25](https://github.com/kyndryl-design-system/foundation/commit/ec76b25a0eb047a9fedc527c1f5ac048d0131865))
+
+# [1.0.0-beta.14](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.13...v1.0.0-beta.14) (2023-08-16)
+
+
+### Bug Fixes
+
+* **button:** add form association ([8c31da1](https://github.com/kyndryl-design-system/foundation/commit/8c31da1f4ded52ed1d71b918341a10d9d14beba8))
+
+# [1.0.0-beta.13](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.12...v1.0.0-beta.13) (2023-08-16)
+
+
+### Bug Fixes
+
+* **button:** secondary border style ([a8986c5](https://github.com/kyndryl-design-system/foundation/commit/a8986c5cbf1766eb39edc5e1b9c5ef140ab8844d))
+
+
+### Features
+
+* **button:** cleanup props and controls ([7c49a76](https://github.com/kyndryl-design-system/foundation/commit/7c49a76127f3f25fb99a52d3a65eba1804e930b7))
+* **button:** update button to new designs ([b1ef171](https://github.com/kyndryl-design-system/foundation/commit/b1ef17164b69d8548ef96c2bc637f951a4182f8d))
+
+# [1.0.0-beta.12](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.11...v1.0.0-beta.12) (2023-08-16)
+
+
+### Bug Fixes
+
+* **color:** border-ui shade ([ae67da7](https://github.com/kyndryl-design-system/foundation/commit/ae67da751ec1c1c0182e19c5a6d62ac62c955340))
+
+
+### Features
+
+* **color:** add color-border-ui tokens ([5e14057](https://github.com/kyndryl-design-system/foundation/commit/5e14057a4c75c843d12654f145b72238a6f5f4ed))
+
 # [1.0.0-beta.11](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.10...v1.0.0-beta.11) (2023-08-15)
 
 
