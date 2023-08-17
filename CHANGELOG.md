@@ -1,3 +1,31 @@
+# [1.0.0-beta.16](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.15...v1.0.0-beta.16) (2023-08-17)
+
+
+### Bug Fixes
+
+* build fail lint issue ([eae1679](https://github.com/kyndryl-design-system/foundation/commit/eae167999435690954c4c6e4ae7086f7736f74a1))
+* change kyn-icon to kd-icon ([8ec5103](https://github.com/kyndryl-design-system/foundation/commit/8ec5103002749c8e870579d323e260fc4f33d67f))
+* pointer events for disabled link ([65f6610](https://github.com/kyndryl-design-system/foundation/commit/65f66109cd047a0b003728643045b95d8f2b064a))
+* removed aria-disabled prop. ([030b6c5](https://github.com/kyndryl-design-system/foundation/commit/030b6c5f6e5a7a8db22182af774c7bd7690d2bb7))
+* removed bold from hovers ([a90f1a8](https://github.com/kyndryl-design-system/foundation/commit/a90f1a84cc556159fd779ef9847ade2efbd6ae60))
+* standalone togglelable ([b5b6900](https://github.com/kyndryl-design-system/foundation/commit/b5b6900c7f9250723a722697f47afaecedfede55))
+* standlaone false instead inlne true ([b569047](https://github.com/kyndryl-design-system/foundation/commit/b569047623f2a9e89fc9186bbaf8c058e7336e34))
+* story and docs ([218f648](https://github.com/kyndryl-design-system/foundation/commit/218f6484a10ecbd12576a5e2d404fc85ac5de01e))
+* story docs and PR suggessions ([ce60821](https://github.com/kyndryl-design-system/foundation/commit/ce60821fcda448bb4b55edff635776ceb44320ab))
+* styles according to specs ([d485ea2](https://github.com/kyndryl-design-system/foundation/commit/d485ea28a0b4d728fa082096d4f96871212566c9))
+* updated color tokens ([dd59775](https://github.com/kyndryl-design-system/foundation/commit/dd59775a8f00bec724356ceb6c922e359a28e14d))
+
+
+### Features
+
+* Added disabled mode for links ([1c6bfff](https://github.com/kyndryl-design-system/foundation/commit/1c6bfffe914c652cf1ebd41d41b0905bb52ce248))
+* added link component ([4c66f1c](https://github.com/kyndryl-design-system/foundation/commit/4c66f1ccc48f1b58bae4b3f86d771b03e105b9bb))
+* added link component into index.ts ([bff9b98](https://github.com/kyndryl-design-system/foundation/commit/bff9b98b9ed677105373095d3550e257c5f11747))
+* Added primary and secondary classes with inline and standalone link variant ([1cc5308](https://github.com/kyndryl-design-system/foundation/commit/1cc5308c69fba4d857429ed088c7034aaeca2af5))
+* added story docs ([419c696](https://github.com/kyndryl-design-system/foundation/commit/419c69631d9c31482b7d168c4025a99f8d646fb4))
+* eliminate sizes for both variants of link (according to UX) ([ef09e73](https://github.com/kyndryl-design-system/foundation/commit/ef09e7306542fe2bbf9253264e8a6c23005e265b))
+* updated story docs ([8df7fc6](https://github.com/kyndryl-design-system/foundation/commit/8df7fc619d4460959d09b79a84718f3c459ed1bd))
+
 # [1.0.0-beta.15](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.14...v1.0.0-beta.15) (2023-08-16)
 
 
