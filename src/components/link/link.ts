@@ -8,7 +8,8 @@ import LinkStyles from './link.scss';
 /**
  * Component for navigation links.
  * @fires on-click - Captures the click event and emits the original event details.
- * @slot unnamed - Slot for link text/content.
+ * @slot unnamed - Slot for link text.
+ * @slot icon - Slot for an icon.
  */
 
 @customElement('kd-link')
@@ -54,8 +55,9 @@ export class Link extends LitElement {
         ?disabled=${this.disabled}
         @click=${(e: Event) => this.handleClick(e)}
       >
-        <span class="kd-link-text-inline-flex">
+        <span class="kd-link-text-span-flex">
           <slot></slot>
+          <slot name="icon"></slot>
         </span>
       </a>
     `;
