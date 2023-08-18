@@ -1,3 +1,10 @@
+# [1.0.0-beta.18](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.17...v1.0.0-beta.18) (2023-08-18)
+
+
+### Bug Fixes
+
+* some link css and intoduce icon slot ([97df4ea](https://github.com/kyndryl-design-system/foundation/commit/97df4ea15998ac74971b8054e8edee85fab3b4dd))
+
 # [1.0.0-beta.17](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.16...v1.0.0-beta.17) (2023-08-17)
 
 
