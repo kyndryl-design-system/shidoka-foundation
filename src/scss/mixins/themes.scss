@@ -2,7 +2,6 @@
   /* Text colors */
   --kd-color-text-primary: var(--kd-color-neutral-white);
   --kd-color-text-primary-hover: var(--kd-color-darkstone-60);
-  --kd-color-text-primary-pressed: var(--kd-color-darkstone-100);
   --kd-color-text-secondary: var(--kd-color-neutral-white);
   --kd-color-text-tertiary: var(--kd-color-darkstone-50);
   --kd-color-text-tertiary-bold: var(--kd-color-darkstone-100);
@@ -18,6 +17,10 @@
   --kd-color-background-secondary: var(--kd-color-darkstone-10);
   --kd-color-background-secondary-hover: var(--kd-color-darkstone-60);
   --kd-color-background-secondary-pressed: var(--kd-color-darkstone-100);
+  --kd-color-background-accent-primary: var(--kd-color-springgreen-20);
+  --kd-color-background-accent-secondary: var(--kd-color-coolgray-40);
+  --kd-color-background-accent-tertiary: var(--kd-color-darkstone-70);
+  --kd-color-background-disabled: var(--kd-color-darkstone-60);
 
   /* Border colors */
   --kd-color-border-primary: var(--kd-color-neutral-white);
@@ -35,7 +38,6 @@
   /* Text colors */
   --kd-color-text-primary: var(--kd-color-neutral-white);
   --kd-color-text-primary-hover: var(--kd-color-spruce-50);
-  --kd-color-text-primary-pressed: var(--kd-color-spruce-100);
   --kd-color-text-secondary: var(--kd-color-neutral-white);
   --kd-color-text-tertiary: var(--kd-color-spruce-30);
   --kd-color-text-tertiary-bold: var(--kd-color-spruce-100);
@@ -51,6 +53,10 @@
   --kd-color-background-secondary: var(--kd-color-darkstone-10);
   --kd-color-background-secondary-hover: var(--kd-color-spruce-50);
   --kd-color-background-secondary-pressed: var(--kd-color-spruce-100);
+  --kd-color-background-accent-primary: var(--kd-color-springgreen-20);
+  --kd-color-background-accent-secondary: var(--kd-color-spruce-30);
+  --kd-color-background-accent-tertiary: var(--kd-color-spruce-70);
+  --kd-color-background-disabled: var(--kd-color-darkstone-20);
 
   /* Border colors */
   --kd-color-border-primary: var(--kd-color-neutral-white);
@@ -68,7 +74,6 @@
   /* Text colors */
   --kd-color-text-primary: var(--kd-color-neutral-white);
   --kd-color-text-primary-hover: var(--kd-color-spruce-50);
-  --kd-color-text-primary-pressed: var(--kd-color-spruce-80);
   --kd-color-text-secondary: var(--kd-color-neutral-white);
   --kd-color-text-tertiary: var(--kd-color-spruce-30);
   --kd-color-text-tertiary-bold: var(--kd-color-spruce-100);
@@ -84,6 +89,10 @@
   --kd-color-background-secondary: var(--kd-color-darkstone-10);
   --kd-color-background-secondary-hover: var(--kd-color-spruce-50);
   --kd-color-background-secondary-pressed: var(--kd-color-spruce-80);
+  --kd-color-background-accent-primary: var(--kd-color-springgreen-20);
+  --kd-color-background-accent-secondary: var(--kd-color-springgreen-10);
+  --kd-color-background-accent-tertiary: var(--kd-color-spruce-50);
+  --kd-color-background-disabled: var(--kd-color-darkstone-20);
 
   /* Border colors */
   --kd-color-border-primary: var(--kd-color-neutral-white);
@@ -101,7 +110,6 @@
   /* Text colors */
   --kd-color-text-primary: var(--kd-color-neutral-white);
   --kd-color-text-primary-hover: var(--kd-color-springgreen-50);
-  --kd-color-text-primary-pressed: var(--kd-color-springgreen-80);
   --kd-color-text-secondary: var(--kd-color-neutral-white);
   --kd-color-text-tertiary: var(--kd-color-springgreen-20);
   --kd-color-text-tertiary-bold: var(--kd-color-springgreen-80);
@@ -117,6 +125,10 @@
   --kd-color-background-secondary: var(--kd-color-darkstone-10);
   --kd-color-background-secondary-hover: var(--kd-color-springgreen-50);
   --kd-color-background-secondary-pressed: var(--kd-color-springgreen-70);
+  --kd-color-background-accent-primary: var(--kd-color-springgreen-10);
+  --kd-color-background-accent-secondary: var(--kd-color-springgreen-20);
+  --kd-color-background-accent-tertiary: var(--kd-color-springgreen-50);
+  --kd-color-background-disabled: var(--kd-color-darkstone-20);
 
   /* Border colors */
   --kd-color-border-primary: var(--kd-color-neutral-white);
@@ -134,7 +146,6 @@
   /* Text colors */
   --kd-color-text-primary: var(--kd-color-darkstone-80);
   --kd-color-text-primary-hover: var(--kd-color-darkstone-60);
-  --kd-color-text-primary-pressed: var(--kd-color-darkstone-100);
   --kd-color-text-secondary: var(--kd-color-deepforest-90);
   --kd-color-text-tertiary: var(--kd-color-spruce-70);
   --kd-color-text-tertiary-bold: var(--kd-color-spruce-100);
@@ -150,6 +161,10 @@
   --kd-color-background-secondary: var(--kd-color-darkstone-80);
   --kd-color-background-secondary-hover: var(--kd-color-darkstone-60);
   --kd-color-background-secondary-pressed: var(--kd-color-darkstone-100);
+  --kd-color-background-accent-primary: var(--kd-color-deepforest-90);
+  --kd-color-background-accent-secondary: var(--kd-color-spruce-70);
+  --kd-color-background-accent-tertiary: var(--kd-color-springgreen-30);
+  --kd-color-background-disabled: var(--kd-color-darkstone-20);
 
   /* Border colors */
   --kd-color-border-primary: var(--kd-color-darkstone-80);
@@ -167,7 +182,6 @@
   /* Text colors */
   --kd-color-text-primary: var(--kd-color-neutral-white);
   --kd-color-text-primary-hover: var(--kd-color-warmred-40);
-  --kd-color-text-primary-pressed: var(--kd-color-coolgray-80);
   --kd-color-text-secondary: var(--kd-color-neutral-white);
   --kd-color-text-tertiary: var(--kd-color-darkstone-80);
   --kd-color-text-tertiary-bold: var(--kd-color-darkstone-100);
@@ -183,6 +197,10 @@
   --kd-color-background-secondary: var(--kd-color-darkstone-10);
   --kd-color-background-secondary-hover: var(--kd-color-warmred-40);
   --kd-color-background-secondary-pressed: var(--kd-color-coolgray-60);
+  --kd-color-background-accent-primary: var(--kd-color-neutral-white);
+  --kd-color-background-accent-secondary: var(--kd-color-darkstone-80);
+  --kd-color-background-accent-tertiary: var(--kd-color-warmred-40);
+  --kd-color-background-disabled: var(--kd-color-darkstone-20);
 
   /* Border colors */
   --kd-color-border-primary: var(--kd-color-darkstone-80);
