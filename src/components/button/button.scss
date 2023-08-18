@@ -5,6 +5,10 @@
 @use '../../scss/global';
 @use '../../scss/mixins/typography';
 
+:host {
+  display: inline-block;
+}
+
 // Base Button Styles
 .kd-btn {
   transition: outline-color 0.2s ease-in-out, color 0.2s ease-in-out,
@@ -15,11 +19,7 @@
   border-radius: 4px;
   text-decoration: none;
   cursor: pointer;
-  text-align: left;
-  vertical-align: middle;
-  align-items: center;
-  display: inline-flex;
-  flex-direction: row;
+  display: flex;
   @include typography.type-body-02;
 
   &--small {

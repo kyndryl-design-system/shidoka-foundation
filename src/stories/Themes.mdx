@@ -5,7 +5,13 @@ import * as ThemesStories from './Themes.stories.js';
 
 # Themes
 
-Work in progress
+Use the theme switcher at the top of Storybook (picture icon) to switch between different themes. This can be done anywhere in the Storybook.
+
+## Example
+
+<Canvas>
+  <Story of={ThemesStories.Example} />
+</Canvas>
 
 ## Usage
 
@@ -15,7 +21,7 @@ Work in progress
 @use '~@kyndryl-design-system/foundation/scss/mixins/themes.scss';
 
 .your-css-selector {
-  @include themes.dark-theme-darkstone-80;
+  @include themes.darkstone-80;
 }
 ```
 
@@ -42,7 +48,7 @@ import '@kyndryl-design-system/foundation/css/themes.css';
 #### Example HTML
 
 ```html
-<html class="kd-theme--darkstone-80">
+<body class="kd-theme--darkstone-80">
   <!-- rest of your HTML here -->
-</html>
+</body>
 ```
