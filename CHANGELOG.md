@@ -1,3 +1,11 @@
+# [1.0.0-beta.21](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.20...v1.0.0-beta.21) (2023-08-18)
+
+
+### Bug Fixes
+
+* **link:** remove top/bottom margin ([0624e9f](https://github.com/kyndryl-design-system/foundation/commit/0624e9f29a2c4aeed9692accdaa2c3f67e2e7a6f))
+* theme docs example and minor cleanup ([79882b8](https://github.com/kyndryl-design-system/foundation/commit/79882b8b53df82f25e488419b93352a2877056cc))
+
 # [1.0.0-beta.20](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.19...v1.0.0-beta.20) (2023-08-18)
 
 
