@@ -1342,6 +1342,110 @@ export const Palette = {
           </tr>
 
           <tr>
+            <td>--kd-color-success</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-success'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-success)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-success-light</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-success-light'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-success-light)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-error</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-error'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-error)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-error-light</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-error-light'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-error-light)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-warning</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-warning'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-warning)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-warning-light</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-warning-light'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-warning-light)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-informational</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-informational'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-informational)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-informational-light</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-informational-light'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-informational-light)"
+            ></td>
+          </tr>
+
+          <tr>
             <td>--kd-color-transparent</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
