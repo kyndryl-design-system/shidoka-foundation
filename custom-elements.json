@@ -491,8 +491,12 @@
           "name": "Link",
           "slots": [
             {
-              "description": "Slot for link text/content.",
+              "description": "Slot for link text.",
               "name": "unnamed"
+            },
+            {
+              "description": "Slot for an icon.",
+              "name": "icon"
             }
           ],
           "members": [

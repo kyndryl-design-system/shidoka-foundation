@@ -1,4 +1,9 @@
+/**
+ * Copyright Kyndryl, Inc. 2023
+ */
 import { html } from 'lit';
+import { action } from '@storybook/addon-actions';
+
 import './link';
 import arrowRightIcon from '@carbon/icons/es/chevron--right/16';
 import { LINK_TYPES, LINK_TARGETS } from './defs';
@@ -25,7 +30,7 @@ export default {
     },
     target: {
       options: createSelectOptions(LINK_TARGETS),
-      control: { type: 'select', labels: { bull: LINK_TARGETS.SELF } },
+      control: { type: 'select', labels: { null: LINK_TARGETS.SELF } },
       table: {
         defaultValue: { summary: LINK_TARGETS.SELF },
       },
@@ -55,6 +60,7 @@ export const Link = {
         target=${args.target}
         kind=${args.kind}
         ?disabled=${args.disabled}
+        @on-click=${(e) => action(e.type)(e)}
       >
         ${args.unnamed}
       </kd-link>
@@ -71,9 +77,11 @@ export const LinkWithIcon = {
       target=${args.target}
       kind=${args.kind}
       ?disabled=${args.disabled}
+      @on-click=${(e) => action(e.type)(e)}
     >
       ${args.unnamed}
       <kd-icon
+        slot="icon"
         .icon=${arrowRightIcon}
         sizeOverride=${args.sizeOverride}
       ></kd-icon>

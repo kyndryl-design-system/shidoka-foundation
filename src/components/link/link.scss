@@ -83,7 +83,7 @@
       border: none;
       outline: none;
       text-decoration: none;
-      ::slotted(kd-icon) {
+      slot[name='icon']::slotted(*) {
         transform: translate(0px, 0);
       }
     }
@@ -99,17 +99,18 @@
       text-decoration: underline;
     }
   }
-  &-inline-flex {
-    display: inline-flex;
-  }
-}
+  &-span-flex {
+    display: flex;
+    align-items: center;
 
-::slotted(kd-icon) {
-  display: inline-flex;
-  align-self: center;
-  margin-left: 0px;
-  transition: 300ms ease-in-out;
-  -moz-transition: 300ms ease-in-out;
-  -o-transition: 300ms ease-in-out;
-  -webkit-transition: 300ms ease-in-out;
+    slot[name='icon']::slotted(*) {
+      display: inline-flex;
+      align-self: center;
+      margin-left: 0px;
+      transition: 300ms ease-in-out;
+      -moz-transition: 300ms ease-in-out;
+      -o-transition: 300ms ease-in-out;
+      -webkit-transition: 300ms ease-in-out;
+    }
+  }
 }
