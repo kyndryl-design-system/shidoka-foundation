@@ -9,7 +9,7 @@ export default {
         <style>
           .layout-examples .aspect-ratio-box {
             width: 500px;
-            background: var(--kd-color-background-ui-medium);
+            background: var(--kd-color-background-ui-subtle);
             display: flex;
             align-items: center;
             justify-content: center;

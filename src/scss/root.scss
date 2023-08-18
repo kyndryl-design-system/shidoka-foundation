@@ -59,6 +59,6 @@ body {
 
 body {
   @include typography.type-body-02;
-  background: var(--kd-color-background-ui-light);
+  background: var(--kd-color-background-ui-default);
   color: var(--kd-color-text-primary);
 }

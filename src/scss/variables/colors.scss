@@ -167,10 +167,10 @@
   --kd--color-text-destructive: var(--kd-color-warmred-70);
 
   /* Background colors */
-  --kd-color-background-ui-light: var(--kd-color-neutral-white);
-  --kd-color-background-ui-medium: var(--kd-color-darkstone-20);
-  --kd-color-background-ui-mid-dark: var(--kd-color-darkstone-50);
-  --kd-color-background-ui-dark: var(--kd-color-darkstone-80);
+  --kd-color-background-ui-default: var(--kd-color-neutral-white);
+  --kd-color-background-ui-subtle: var(--kd-color-darkstone-20);
+  --kd-color-background-ui-bold: var(--kd-color-darkstone-50);
+  --kd-color-background-ui-strong: var(--kd-color-darkstone-80);
   --kd-color-background-brand: var(--kd-color-warmred-50);
   --kd-color-background-ui: var(--kd-color-darkstone-50);
   --kd-color-background-ui-hover: var(--kd-color-spruce-60);
@@ -187,11 +187,11 @@
   --kd-color-background-focus: var(--kd-color-spruce-60);
   --kd-color-background-inverse: var(--kd-color-neutral-white);
   --kd-color-background-inverse-hover: var(--kd-color-spruce-10);
-  --kd-color-background-accent-stone: var(--kd-color-darkstone-10);
-  --kd-color-background-accent-skye: var(--kd-color-skye-20);
-  --kd-color-background-accent-springgreen: var(--kd-color-springgreen-20);
-  --kd-color-background-accent-spruce-light: var(--kd-color-spruce-30);
-  --kd-color-background-accent-spruce-dark: var(--kd-color-spruce-80);
+  --kd-color-background-accent-subtle: var(--kd-color-darkstone-10);
+  --kd-color-background-accent-ui: var(--kd-color-skye-20);
+  --kd-color-background-accent-primary: var(--kd-color-warmred-50);
+  --kd-color-background-accent-secondary: var(--kd-color-spruce-60);
+  --kd-color-background-accent-tertiary: var(--kd-color-darkstone-20);
   --kd-color-background-success: var(--kd-color-success);
   --kd-color-background-success-light: var(--kd-color-success-light);
   --kd-color-background-error: var(--kd-color-error);

@@ -1753,54 +1753,54 @@ export const Background = {
         </thead>
         <tbody>
           <tr>
-            <td>--kd-color-background-ui-light</td>
+            <td>--kd-color-background-ui-default</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-ui-light'
+                '--kd-color-background-ui-default'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-background-ui-light)"
+              style="background-color: var(--kd-color-background-ui-default)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-background-ui-medium</td>
+            <td>--kd-color-background-ui-subtle</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-ui-medium'
+                '--kd-color-background-ui-subtle'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-background-ui-medium)"
+              style="background-color: var(--kd-color-background-ui-subtle)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-background-ui-mid-dark</td>
+            <td>--kd-color-background-ui-bold</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-ui-mid-dark'
+                '--kd-color-background-ui-bold'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-background-ui-mid-dark)"
+              style="background-color: var(--kd-color-background-ui-bold)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-background-ui-dark</td>
+            <td>--kd-color-background-ui-strong</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-ui-dark'
+                '--kd-color-background-ui-strong'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-background-ui-dark)"
+              style="background-color: var(--kd-color-background-ui-strong)"
             ></td>
           </tr>
 
@@ -2013,67 +2013,67 @@ export const Background = {
           </tr>
 
           <tr>
-            <td>--kd-color-background-accent-stone</td>
+            <td>--kd-color-background-accent-subtle</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-accent-stone'
+                '--kd-color-background-accent-subtle'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-background-accent-stone)"
+              style="background-color: var(--kd-color-background-accent-subtle)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-background-accent-skye</td>
+            <td>--kd-color-background-accent-ui</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-accent-skye'
+                '--kd-color-background-accent-ui'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-background-accent-skye)"
+              style="background-color: var(--kd-color-background-accent-ui)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-background-accent-springgreen</td>
+            <td>--kd-color-background-accent-primary</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-accent-springgreen'
+                '--kd-color-background-accent-primary'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-background-accent-springgreen)"
+              style="background-color: var(--kd-color-background-accent-primary)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-background-accent-spruce-light</td>
+            <td>--kd-color-background-accent-secondary</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-accent-spruce-light'
+                '--kd-color-background-accent-secondary'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-background-accent-spruce-light)"
+              style="background-color: var(--kd-color-background-accent-secondary)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-background-accent-spruce-dark</td>
+            <td>--kd-color-background-accent-tertiary</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-accent-spruce-dark'
+                '--kd-color-background-accent-tertiary'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-background-accent-spruce-dark)"
+              style="background-color: var(--kd-color-background-accent-tertiary)"
             ></td>
           </tr>
 
