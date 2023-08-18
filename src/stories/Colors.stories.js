@@ -1329,6 +1329,19 @@ export const Palette = {
           </tr>
 
           <tr>
+            <td>--kd-color-neutral-white</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-neutral-white'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-neutral-white)"
+            ></td>
+          </tr>
+
+          <tr>
             <td>--kd-color-transparent</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(

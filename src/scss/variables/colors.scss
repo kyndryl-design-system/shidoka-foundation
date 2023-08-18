@@ -1,3 +1,4 @@
+/* BEGIN PALETTE COLORS */
 :root {
   $colors: (
     spruce: (
@@ -143,6 +144,7 @@
   --kd-color-informational: #1473ff;
   --kd-color-informational-light: #e9f2ff;
 
+  /* BEGIN NON-PALETTE COLORS */
   /* Text colors */
   --kd-color-text-primary: var(--kd-color-darkstone-80);
   --kd-color-text-primary-hover: var(--kd-color-darkstone-60);
