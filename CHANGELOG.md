@@ -1,3 +1,15 @@
+# [1.0.0-beta.20](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.19...v1.0.0-beta.20) (2023-08-18)
+
+
+### Features
+
+* **themes:** add background theme overrirde values ([087b342](https://github.com/kyndryl-design-system/foundation/commit/087b342af7333ede4f7f517092be85ab4ccc3d8a))
+* **themes:** add border theme overrirde values ([67cdc15](https://github.com/kyndryl-design-system/foundation/commit/67cdc15f1764b78c2c9f49b09fa35dbe94b715a9))
+* **themes:** add missed colors and remove text-pressed state ([9929da6](https://github.com/kyndryl-design-system/foundation/commit/9929da6ef27e99cb2e87fe1c8869dc3df61624fe))
+* **themes:** add text theme overrirde values ([93041a8](https://github.com/kyndryl-design-system/foundation/commit/93041a800b42fc4294e29ebd31b85397969116c1))
+* **themes:** revert change to theme story ([2c3dc92](https://github.com/kyndryl-design-system/foundation/commit/2c3dc92d0d678e7e54132c71a43b9255a4332b99))
+* **themes:** update changed border theme ([1406556](https://github.com/kyndryl-design-system/foundation/commit/14065565b7cedfbe4b89bf9ad1edac4e252bb431))
+
 # [1.0.0-beta.19](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.18...v1.0.0-beta.19) (2023-08-18)
 
 
