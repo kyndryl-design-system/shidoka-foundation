@@ -1,0 +1,83 @@
+@mixin spacer($property, $value) {
+    @each $dir in (top, right, bottom, left) {
+    #{$property}-#{$dir}: $value;
+    }
+    }
+    
+    
+    @mixin spacer-vertical($property, $value) {
+    @each $dir in (top, bottom) {
+    #{$property}-#{$dir}: $value;
+    }
+    }
+    
+    
+    @mixin spacer-horizontal($property, $value) {
+    @each $dir in (left, right) {
+    #{$property}-#{$dir}: $value;
+    }
+    }
+    
+    
+    @mixin generate-spacings($property, $values) {
+    @each $value in $values {
+    .kd-spacing__#{$property}-#{$value} {
+    @include spacer(#{$property}, var(--kd-spacing-#{$value}));
+    }
+    }
+    }
+    
+    
+    @mixin spacing-top-bottom($property, $values) {
+    @each $value in $values {
+    .kd-spacing__#{$property}-top-bottom-#{$value} {
+    @include spacer-vertical(#{$property}, var(--kd-spacing-#{$value}));
+    }
+    }
+    }
+    
+    
+    @mixin spacing-left-right($property, $values) {
+    @each $value in $values {
+    .kd-spacing__#{$property}-left-right-#{$value} {
+    @include spacer-horizontal(#{$property}, var(--kd-spacing-#{$value}));
+    }
+    }
+    }
+    
+    
+    @mixin spacing-top($property, $values) {
+    @each $value in $values {
+    .kd-spacing__#{$property}-top-#{$value} {
+    #{$property}-top: var(--kd-spacing-#{$value});
+    }
+    }
+    }
+    
+    
+    @mixin spacing-bottom($property, $values) {
+    @each $value in $values {
+    .kd-spacing__#{$property}-bottom-#{$value} {
+    #{$property}-bottom: var(--kd-spacing-#{$value});
+    }
+    }
+    }
+    
+    
+    @mixin spacing-left($property, $values) {
+    @each $value in $values {
+    .kd-spacing__#{$property}-left-#{$value} {
+    #{$property}-left: var(--kd-spacing-#{$value});
+    }
+    }
+    }
+    
+    
+    @mixin spacing-right($property, $values) {
+    @each $value in $values {
+    .kd-spacing__#{$property}-right-#{$value} {
+    #{$property}-right: var(--kd-spacing-#{$value});
+    }
+    }
+    }
+    

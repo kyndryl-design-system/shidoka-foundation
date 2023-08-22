@@ -1,0 +1,129 @@
+import { Meta, Story, Canvas, Controls } from '@storybook/blocks';
+import * as SpacingStories from './Spacing.stories.js';
+
+<Meta title="Foundation/Spacing" of={SpacingStories} />
+
+
+# Spacing
+
+
+[Figma Design Source](https://www.figma.com/file/tTu138pz3jLk0mykJSg3t4/KDS---Foundation-v1.0.0?node-id=4138%3A3703&mode=dev)
+
+
+## Example
+
+
+<style>
+{`
+.sbdocs-content {
+padding: 10px !important;
+}
+`}
+</style>
+
+
+<Canvas>
+<Story of={SpacingStories.Spacing} />
+</Canvas>
+
+
+### Controls
+
+
+<Controls of={SpacingStories.Spacing} />
+
+
+## Usage
+
+
+### SCSS Mixins
+
+
+```css
+@use '~@kyndryl-design-system/foundation/scss/mixins/spacing.scss';
+
+
+.your-css-selector {
+@include spacing.generate-spacings(padding, $kd-spacing-values);
+}
+
+
+.your-css-selector {
+@include spacing.spacing-top-bottom(padding, $kd-spacing-values);
+}
+
+
+.your-css-selector {
+@include spacing.spacing-left-right(padding, $kd-spacing-values);
+}
+
+
+.your-css-selector {
+@include spacing.spacing-top(padding, $kd-spacing-values);
+}
+
+
+.your-css-selector {
+@include spacing.spacing-bottom(padding, $kd-spacing-values);
+}
+
+
+.your-css-selector {
+@include spacing.spacing-left(padding, $kd-spacing-values);
+}
+
+
+.your-css-selector {
+@include spacing.spacing-right(padding, $kd-spacing-values);
+}
+
+
+.your-css-selector {
+@include spacing.spacing-right(margin, $kd-spacing-values);
+}
+```
+
+
+### Utility Classes
+
+
+#### Import to SCSS
+
+
+```css
+@use '~@kyndryl-design-system/foundation/scss/utility/spacing.scss';
+```
+
+
+#### Import to CSS
+
+
+```css
+@import '@kyndryl-design-system/foundation/css/spacing.css';
+```
+
+
+#### Import to JS
+
+
+```js
+import '@kyndryl-design-system/foundation/css/spacing.css';
+```
+
+
+#### Example HTML
+
+
+```html
+<div class="kd-spacing__padding-right-2">Hallo!</div>
+```
+
+
+#### Column class name schema
+
+
+```
+kd-spacing__${property}-right-${value}
+
+
+```

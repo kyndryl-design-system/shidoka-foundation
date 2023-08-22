@@ -1,0 +1,43 @@
+@use '../mixins/spacing.scss';
+@use '../variables/breakpoints.scss';
+
+:root {
+    
+    /* Spacing Variables */
+    --kd-spacing-0: 0;
+    --kd-spacing-2: 2px;
+    --kd-spacing-4: 4px;
+    --kd-spacing-8: 8px;
+    --kd-spacing-12: 12px;
+    --kd-spacing-16: 16px;
+    --kd-spacing-24: 24px;
+    --kd-spacing-32: 32px;
+    --kd-spacing-40: 40px;
+    --kd-spacing-48: 48px;
+    --kd-spacing-64: 64px;
+    --kd-spacing-72: 72px;
+    --kd-spacing-80: 80px;
+    --kd-spacing-96: 96px;
+    --kd-spacing-144: 144px;
+    --kd-spacing-160: 160px;
+    --kd-spacing-192: 192px;
+    }
+    
+
+
+$kd-spacing-values: 0, 2, 4, 8, 12, 16, 24, 32, 40, 48, 64, 72, 80, 96, 144, 160, 192;
+
+@include spacing.generate-spacings(padding, $kd-spacing-values);
+@include spacing.spacing-top-bottom(padding, $kd-spacing-values);
+@include spacing.spacing-left-right(padding, $kd-spacing-values);
+@include spacing.spacing-top(padding, $kd-spacing-values);
+@include spacing.spacing-bottom(padding, $kd-spacing-values);
+@include spacing.spacing-left(padding, $kd-spacing-values);
+@include spacing.spacing-right(padding, $kd-spacing-values);
+@include spacing.generate-spacings(margin, $kd-spacing-values);
+@include spacing.spacing-top-bottom(margin, $kd-spacing-values);
+@include spacing.spacing-left-right(margin, $kd-spacing-values);
+@include spacing.spacing-top(margin, $kd-spacing-values);
+@include spacing.spacing-bottom(margin, $kd-spacing-values);
+@include spacing.spacing-left(margin, $kd-spacing-values);
+@include spacing.spacing-right(margin, $kd-spacing-values);
