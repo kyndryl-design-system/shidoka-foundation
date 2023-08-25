@@ -1,3 +1,10 @@
+# [1.0.0-beta.22](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.21...v1.0.0-beta.22) (2023-08-25)
+
+
+### Bug Fixes
+
+* **themes:** remove themes (migrating to Content) ([513e42f](https://github.com/kyndryl-design-system/foundation/commit/513e42f2c9d4b554e8a2ea41f1e79dadf2fc09f8))
+
 # [1.0.0-beta.21](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.20...v1.0.0-beta.21) (2023-08-18)
 
 
