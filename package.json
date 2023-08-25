@@ -1,7 +1,7 @@
 {
   "name": "@kyndryl-design-system/foundation",
   "version": "0.0.0-semantic-release",
-  "description": "Foundation for Kyndryl Design System",
+  "description": "Shidoka Foundation",
   "main": "index.js",
   "type": "module",
   "publishConfig": {

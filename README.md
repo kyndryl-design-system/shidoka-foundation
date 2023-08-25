@@ -1,4 +1,4 @@
-# Kyndryl Design System - Foundation
+# Shidoka Foundation
 
 [![kyndryl-foundation](https://github.com/kyndryl-design-system/foundation/actions/workflows/actions.yml/badge.svg)](https://github.com/kyndryl-design-system/foundation/actions/workflows/actions.yml)
 
@@ -60,9 +60,9 @@ import '@kyndryl-design-system/foundation/components/example';
 ```
 
 ```html
-<kyn-example>
-  <kyn-example-sub></kyn-example-sub>
-</kyn-example>
+<kd-example>
+  <kd-example-sub></kd-example-sub>
+</kd-example>
 ```
 
 ### Example: Single Component
@@ -74,7 +74,7 @@ import '@kyndryl-design-system/foundation/components/example/example-sub';
 ```
 
 ```html
-<kyn-example-sub>Link</kyn-example-sub>
+<kd-example-sub></kd-example-sub>
 ```
 
 ### React usage
