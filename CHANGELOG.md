@@ -1,3 +1,10 @@
+# [1.0.0-beta.23](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.22...v1.0.0-beta.23) (2023-08-28)
+
+
+### Bug Fixes
+
+* **link:** remove extra whitespace ([806395e](https://github.com/kyndryl-design-system/foundation/commit/806395ed1127f2014c973caf9a3a877071741540))
+
 # [1.0.0-beta.22](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.21...v1.0.0-beta.22) (2023-08-25)
 
 
