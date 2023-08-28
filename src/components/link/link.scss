@@ -6,8 +6,7 @@
 
 // base class
 .kd-link-text {
-  display: inline-flex;
-  padding: 0 2px;
+  display: flex;
   position: relative;
   text-decoration: none;
   -webkit-transition: color 300ms ease-in-out;
