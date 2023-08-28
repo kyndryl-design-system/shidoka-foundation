@@ -1,0 +1,29 @@
+@use '../../scss/global';
+@use '../../scss/mixins/typography';
+
+.breadcrumbs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+
+  .breadcrumbs-item {
+    @include typography.type-body-02;
+
+    &::after {
+      content: '\2014'; // Unicode for em dash
+      margin: 0 16px;   // Provide margins on both sides of the em dash
+      color: var(--kd-color-background-ui-subtle);
+    }
+
+    &:last-child {
+      text-decoration: none;
+      color: var(--kd-color-text-primary);
+
+      // Remove em dash for the last item
+      &::after {
+        content: none;
+      }
+    }
+  }
+}

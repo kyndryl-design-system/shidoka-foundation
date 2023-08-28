@@ -35,75 +35,113 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/common/helpers/helpers.ts",
+      "path": "src/components/breadcrumbs/Breadcrumbs.stories.ts",
       "declarations": [
         {
-          "kind": "function",
-          "name": "debounce",
-          "parameters": [
-            {
-              "name": "fn",
-              "type": {
-                "text": "Function"
-              }
-            },
-            {
-              "name": "ms",
-              "default": "100"
-            }
-          ]
+          "kind": "variable",
+          "name": "meta",
+          "type": {
+            "text": "Meta"
+          },
+          "default": "{\n  title: 'Components/Breadcrumbs',\n  component: 'kd-breadcrumbs',\n  parameters: {\n    design: {\n      type: 'figma',\n      url: 'https://www.figma.com/file/6AovH7Iay9Y7BkpoL5975s/Component-Library-for-Dev?node-id=459%3A39033&mode=dev',\n    },\n  },\n  argTypes: {\n    items: {\n      description: 'Array of breadcrumb items',\n      control: 'object'\n    },\n  },\n}"
         },
         {
-          "kind": "function",
-          "name": "stringToReactHtml",
-          "parameters": [
-            {
-              "name": "string",
-              "type": {
-                "text": "String"
-              }
-            }
-          ]
-        },
-        {
-          "kind": "function",
-          "name": "createOptionsArray",
-          "parameters": [
-            {
-              "name": "options",
-              "default": "{}",
-              "type": {
-                "text": "*"
-              },
-              "description": " imported enums object"
-            }
-          ],
-          "description": "Convert an object to an array of only its values.\r\nUsed when importing enums in component stories for populating argType dropdowns."
+          "kind": "variable",
+          "name": "Breadcrumbs",
+          "type": {
+            "text": "Story"
+          },
+          "default": "{\n  args: {\n    items: [\n      { label: 'Bridge', href: '/' },\n      { label: 'Catalog', href: '/catalog' },\n      { label: 'FinOps' },\n    ],\n  },\n}"
         }
       ],
       "exports": [
         {
           "kind": "js",
-          "name": "debounce",
+          "name": "default",
           "declaration": {
-            "name": "debounce",
-            "module": "src/common/helpers/helpers.ts"
+            "name": "meta",
+            "module": "src/components/breadcrumbs/Breadcrumbs.stories.ts"
           }
         },
         {
           "kind": "js",
-          "name": "stringToReactHtml",
+          "name": "Breadcrumbs",
           "declaration": {
-            "name": "stringToReactHtml",
-            "module": "src/common/helpers/helpers.ts"
+            "name": "Breadcrumbs",
+            "module": "src/components/breadcrumbs/Breadcrumbs.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/breadcrumbs/breadcrumbs.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "Breadcrumbs",
+          "members": [
+            {
+              "kind": "field",
+              "name": "items",
+              "type": {
+                "text": "Array<{label: string, [href]: string}>"
+              },
+              "default": "[]",
+              "description": "An array of breadcrumb items to be displayed.",
+              "attribute": "items"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "items",
+              "type": {
+                "text": "Array<{label: string, [href]: string}>"
+              },
+              "default": "[]",
+              "description": "An array of breadcrumb items to be displayed.",
+              "fieldName": "items"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "kd-breadcrumbs",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Breadcrumbs",
+          "declaration": {
+            "name": "Breadcrumbs",
+            "module": "src/components/breadcrumbs/breadcrumbs.ts"
           }
         },
         {
-          "kind": "js",
-          "name": "createOptionsArray",
+          "kind": "custom-element-definition",
+          "name": "kd-breadcrumbs",
           "declaration": {
-            "name": "createOptionsArray",
-            "module": "src/common/helpers/helpers.ts"
+            "name": "Breadcrumbs",
+            "module": "src/components/breadcrumbs/breadcrumbs.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/breadcrumbs/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Breadcrumbs",
+          "declaration": {
+            "name": "Breadcrumbs",
+            "module": "./breadcrumbs"
           }
         }
       ]
@@ -661,6 +699,81 @@
           "declaration": {
             "name": "Link",
             "module": "src/components/link/link.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/common/helpers/helpers.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "debounce",
+          "parameters": [
+            {
+              "name": "fn",
+              "type": {
+                "text": "Function"
+              }
+            },
+            {
+              "name": "ms",
+              "default": "100"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "stringToReactHtml",
+          "parameters": [
+            {
+              "name": "string",
+              "type": {
+                "text": "String"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "createOptionsArray",
+          "parameters": [
+            {
+              "name": "options",
+              "default": "{}",
+              "type": {
+                "text": "*"
+              },
+              "description": " imported enums object"
+            }
+          ],
+          "description": "Convert an object to an array of only its values.\nUsed when importing enums in component stories for populating argType dropdowns."
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "debounce",
+          "declaration": {
+            "name": "debounce",
+            "module": "src/common/helpers/helpers.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "stringToReactHtml",
+          "declaration": {
+            "name": "stringToReactHtml",
+            "module": "src/common/helpers/helpers.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "createOptionsArray",
+          "declaration": {
+            "name": "createOptionsArray",
+            "module": "src/common/helpers/helpers.ts"
           }
         }
       ]
