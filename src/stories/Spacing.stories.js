@@ -111,7 +111,7 @@ export const Spacing = {
   },
 
   render: (args) => {
-    const spacingClasses = classMap({
+    const spacingClasses = {
       [`kd-spacing--padding-left-${args.paddingLeft}`]: true,
       [`kd-spacing--padding-right-${args.paddingRight}`]: true,
       [`kd-spacing--padding-top-${args.paddingTop}`]: true,
@@ -121,7 +121,7 @@ export const Spacing = {
       [`kd-spacing--margin-top-${args.marginTop}`]: true,
       [`kd-spacing--margin-bottom-${args.marginBottom}`]: true,
       [`middle-container`]: true,
-    });
+    };
     return html`
       <style>
         .outer-container {
@@ -139,7 +139,7 @@ export const Spacing = {
         }
       </style>
       <div class="outer-container">
-        <div class="${spacingClasses}">
+        <div class="${classMap(spacingClasses)}">
           <div class="inner-container">Sample Text</div>
           <div></div>
         </div>
