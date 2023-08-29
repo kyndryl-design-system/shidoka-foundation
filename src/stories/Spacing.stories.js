@@ -1,37 +1,153 @@
 import { html } from 'lit-html';
+import { classMap } from 'lit/directives/class-map.js';
 
+let spacingOptions = [
+  '0',
+  '2',
+  '4',
+  '8',
+  '12',
+  '16',
+  '24',
+  '32',
+  '40',
+  '48',
+  '64',
+  '72',
+  '80',
+  '96',
+  '120',
+  '128',
+  '144',
+  '160',
+  '192',
+];
+export const Spacing = {
+  argTypes: {
+    paddingLeft: {
+      options: spacingOptions,
+      control: { type: 'select' },
+      description: 'Padding Left',
+      table: {
+        type: { summary: 'select' },
+        defaultValue: { summary: '0' },
+      },
+    },
+    paddingRight: {
+      options: spacingOptions,
+      control: { type: 'select' },
+      description: 'Padding Right',
+      table: {
+        type: { summary: 'select' },
+        defaultValue: { summary: '0' },
+      },
+    },
+    paddingTop: {
+      options: spacingOptions,
+      control: { type: 'select' },
+      description: 'Padding Top',
+      table: {
+        type: { summary: 'select' },
+        defaultValue: { summary: '0' },
+      },
+    },
+    paddingBottom: {
+      options: spacingOptions,
+      control: { type: 'select' },
+      description: 'Padding Bottom',
+      table: {
+        type: { summary: 'select' },
+        defaultValue: { summary: '0' },
+      },
+    },
 
-export const Spacing = () => html`
-<div>
-<!-- Your content using spacing utility classes -->
-<div class="kd-spacing__padding-top-8">kd-spacing__padding-top-8</div>
-<div class="kd-spacing__padding-bottom-8">kd-spacing__padding-bottom-8</div>
-<div class="kd-spacing__padding-left-8">kd-spacing__padding-left-8</div>
-<div class="kd-spacing__padding-right-8">kd-spacing__padding-right-8</div>
-<div class="kd-spacing__margin-right-8">kd-spacing__margin-right-8</div>
-<div class="kd-spacing__margin-left-8">kd-spacing__margin-left-8</div>
-<div class="kd-spacing__padding-top-32">kd-spacing__padding-top-32</div>
-<div class="kd-spacing__margin-0">Hello! </div>
-<div class="kd-spacing__padding-0">Hello! (padding-0)</div>
-<div class="kd-spacing__padding-2">Hello! (padding-2)</div>
-<div class="kd-spacing__padding-4">Hello! (padding-4)</div>
-<div class="kd-spacing__padding-8">Hello! (padding-8)</div>
-<div class="kd-spacing__padding-12">Hello! (padding-12)</div>
-<div class="kd-spacing__padding-16">Hello! (padding-16)</div>
-<div class="kd-spacing__padding-24">Hello! (padding-24)</div>
-<div class="kd-spacing__padding-32">Hello! (padding-32)</div>
-<div class="kd-spacing__padding-40">Hello! (padding-40)</div>
-<div class="kd-spacing__padding-48">Hello! (padding-48)</div>
-<div class="kd-spacing__padding-64">Hello! (padding-64)</div>
-<div class="kd-spacing__padding-72">Hello! (padding-72)</div>
-<div class="kd-spacing__padding-80">Hello! (padding-80)</div>
-<div class="kd-spacing__padding-96">Hello! (padding-96)</div>
-<div class="kd-spacing__padding-144">Hello! (padding-144)</div>
-<div class="kd-spacing__padding-160">Hello! (padding-160)</div>
-</div>
-`;
+    marginLeft: {
+      options: spacingOptions,
+      control: { type: 'select' },
+      description: 'Margin Left',
+      table: {
+        type: { summary: 'select' },
+        defaultValue: { summary: '0' },
+      },
+    },
+    marginRight: {
+      options: spacingOptions,
+      control: { type: 'select' },
+      description: 'Margin Right',
+      table: {
+        type: { summary: 'select' },
+        defaultValue: { summary: '0' },
+      },
+    },
+    marginTop: {
+      options: spacingOptions,
+      control: { type: 'select' },
+      description: 'Margin Top',
+      table: {
+        type: { summary: 'select' },
+        defaultValue: { summary: '0' },
+      },
+    },
+    marginBottom: {
+      options: spacingOptions,
+      control: { type: 'select' },
+      description: 'Margin Bottom',
+      table: {
+        type: { summary: 'select' },
+        defaultValue: { summary: '0' },
+      },
+    },
+  },
 
+  args: {
+    paddingLeft: '0',
+    paddingRight: '0',
+    paddingTop: '0',
+    paddingBottom: '0',
+    marginLeft: '0',
+    marginRight: '0',
+    marginTop: '0',
+    marginBottom: '0',
+  },
+
+  render: (args) => {
+    const spacingClasses = classMap({
+      [`kd-spacing--padding-left-${args.paddingLeft}`]: true,
+      [`kd-spacing--padding-right-${args.paddingRight}`]: true,
+      [`kd-spacing--padding-top-${args.paddingTop}`]: true,
+      [`kd-spacing--padding-bottom-${args.paddingBottom}`]: true,
+      [`kd-spacing--margin-left-${args.marginLeft}`]: true,
+      [`kd-spacing--margin-right-${args.marginRight}`]: true,
+      [`kd-spacing--margin-top-${args.marginTop}`]: true,
+      [`kd-spacing--margin-bottom-${args.marginBottom}`]: true,
+      [`middle-container`]: true,
+    });
+    return html`
+      <style>
+        .outer-container {
+          background: #ffaaaa;
+          display: inline-block;
+        }
+
+        .middle-container {
+          display: inline-block;
+          border: 1px solid #000;
+          background: #aaffaa;
+        }
+        .inner-container {
+          background: #fff;
+        }
+      </style>
+      <div class="outer-container">
+        <div class="${spacingClasses}">
+          <div class="inner-container">Sample Text</div>
+          <div></div>
+        </div>
+      </div>
+    `;
+  },
+};
 
 export default {
-title: 'Foundation/Spacing',
+  title: 'Foundation/Spacing',
 };
