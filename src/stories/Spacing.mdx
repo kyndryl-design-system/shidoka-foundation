@@ -1,0 +1,88 @@
+import { Meta, Story, Canvas, Controls } from '@storybook/blocks';
+import * as SpacingStories from './Spacing.stories.js';
+
+<Meta title="Foundation/Spacing" of={SpacingStories} />
+
+# Spacing
+
+[Figma Design Source](https://www.figma.com/file/tTu138pz3jLk0mykJSg3t4/KDS---Foundation-v1.0.0?node-id=4138%3A3703&mode=dev)
+
+## Example
+
+<Canvas>
+  <Story of={SpacingStories.Spacing} />
+</Canvas>
+
+### Controls
+
+<Controls of={SpacingStories.Spacing} />
+
+## Usage
+
+### SCSS Mixins
+
+```css
+@use '~@kyndryl-design-system/foundation/scss/mixins/spacing.scss';
+
+.your-css-selector {
+  @include spacing.spacer('margin', 'left', '48');
+}
+```
+
+### Utility Classes
+
+#### Import to SCSS
+
+```css
+@use '~@kyndryl-design-system/foundation/scss/utility/spacing.scss';
+```
+
+#### Import to CSS
+
+```css
+@import '@kyndryl-design-system/foundation/css/spacing.css';
+```
+
+#### Import to JS
+
+```js
+import '@kyndryl-design-system/foundation/css/spacing.css';
+```
+
+#### Example HTML
+
+```html
+<div class="kd-spacing--padding-right-2">Hello!</div>
+```
+
+#### Column class name schema
+
+```
+kd-spacing--${property}-${direction}-${value}
+
+
+```
+
+### CSS Variables
+
+| Variable Name    | Space in Pixels |
+| ---------------- | --------------- |
+| --kd-spacing-0   | 0               |
+| --kd-spacing-2   | 2               |
+| --kd-spacing-4   | 4               |
+| --kd-spacing-8   | 8               |
+| --kd-spacing-12  | 12              |
+| --kd-spacing-16  | 16              |
+| --kd-spacing-24  | 24              |
+| --kd-spacing-32  | 32              |
+| --kd-spacing-40  | 40              |
+| --kd-spacing-48  | 48              |
+| --kd-spacing-64  | 64              |
+| --kd-spacing-72  | 72              |
+| --kd-spacing-80  | 80              |
+| --kd-spacing-96  | 96              |
+| --kd-spacing-120 | 120             |
+| --kd-spacing-128 | 128             |
+| --kd-spacing-144 | 144             |
+| --kd-spacing-160 | 160             |
+| --kd-spacing-192 | 192             |

@@ -1,0 +1,20 @@
+@use '../mixins/spacing.scss';
+@use '../variables/spacing.scss' as spacingVariables;
+
+//Generate padding classes
+@each $direction in spacingVariables.$spacingDirections {
+  @each $space in spacingVariables.$spacingInPixels {
+    .kd-spacing--padding-#{$direction}-#{$space} {
+      @include spacing.spacer('padding', $direction, $space);
+    }
+  }
+}
+
+//Generate margin classes
+@each $direction in spacingVariables.$spacingDirections {
+  @each $space in spacingVariables.$spacingInPixels {
+    .kd-spacing--margin-#{$direction}-#{$space} {
+      @include spacing.spacer('margin', $direction, $space);
+    }
+  }
+}

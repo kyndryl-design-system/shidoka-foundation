@@ -1,0 +1,3 @@
+@mixin spacer($property, $direction, $value) {
+  #{$property}-#{$direction}: $value + px;
+}
