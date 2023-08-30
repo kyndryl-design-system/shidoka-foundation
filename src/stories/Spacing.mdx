@@ -9,14 +9,6 @@ import * as SpacingStories from './Spacing.stories.js';
 
 ## Example
 
-<style>
-  {`
-.sbdocs-content {
-padding: 10px !important;
-}
-`}
-</style>
-
 <Canvas>
   <Story of={SpacingStories.Spacing} />
 </Canvas>
@@ -66,7 +58,31 @@ import '@kyndryl-design-system/foundation/css/spacing.css';
 #### Column class name schema
 
 ```
-kd-spacing--${property}-right-${value}
+kd-spacing--${property}-${direction}-${value}
 
 
 ```
+
+### CSS Variables
+
+| Variable Name    | Space in Pixels |
+| ---------------- | --------------- |
+| --kd-spacing-0   | 0               |
+| --kd-spacing-2   | 2               |
+| --kd-spacing-4   | 4               |
+| --kd-spacing-8   | 8               |
+| --kd-spacing-12  | 12              |
+| --kd-spacing-16  | 16              |
+| --kd-spacing-24  | 24              |
+| --kd-spacing-32  | 32              |
+| --kd-spacing-40  | 40              |
+| --kd-spacing-48  | 48              |
+| --kd-spacing-64  | 64              |
+| --kd-spacing-72  | 72              |
+| --kd-spacing-80  | 80              |
+| --kd-spacing-96  | 96              |
+| --kd-spacing-120 | 120             |
+| --kd-spacing-128 | 128             |
+| --kd-spacing-144 | 144             |
+| --kd-spacing-160 | 160             |
+| --kd-spacing-192 | 192             |
