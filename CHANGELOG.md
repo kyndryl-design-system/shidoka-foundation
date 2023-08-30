@@ -1,3 +1,12 @@
+# [1.0.0-beta.24](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.23...v1.0.0-beta.24) (2023-08-30)
+
+
+### Features
+
+* **spacing:** clear up lint error ([2d1a2fa](https://github.com/kyndryl-design-system/foundation/commit/2d1a2faeeba854e2460c3fa5dfde216666d6c42e))
+* **spacing:** enhance the spacing story ([2e659d9](https://github.com/kyndryl-design-system/foundation/commit/2e659d94f98985f760b8b20eb92864bcfeeef905))
+* **spacing:** revise spacing implementation ([ed3b425](https://github.com/kyndryl-design-system/foundation/commit/ed3b4259518f5a6989640b1f41958e000fc64e0d))
+
 # [1.0.0-beta.23](https://github.com/kyndryl-design-system/foundation/compare/v1.0.0-beta.22...v1.0.0-beta.23) (2023-08-28)
 
 
