@@ -1,4 +1,4 @@
-name: kyndryl-foundation
+name: shidoka-foundation
 on:
   push:
     branches:

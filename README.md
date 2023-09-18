@@ -1,10 +1,10 @@
 # Shidoka Foundation
 
-[![kyndryl-foundation](https://github.com/kyndryl-design-system/foundation/actions/workflows/actions.yml/badge.svg)](https://github.com/kyndryl-design-system/foundation/actions/workflows/actions.yml)
+[![shidoka-foundation](https://github.com/kyndryl-design-system/shidoka-foundation/actions/workflows/actions.yml/badge.svg)](https://github.com/kyndryl-design-system/shidoka-foundation/actions/workflows/actions.yml)
 
 # Contributing to this project
 
-Read the [Contributing Guide](https://github.com/kyndryl-design-system/foundation/blob/beta/CONTRIBUTING.md) here.
+Read the [Contributing Guide](https://github.com/kyndryl-design-system/shidoka-foundation/blob/beta/CONTRIBUTING.md) here.
 
 # Using this library in another project
 
@@ -14,10 +14,10 @@ Read the [Contributing Guide](https://github.com/kyndryl-design-system/foundatio
 
 ```bash
 # stable/main
-npm install @kyndryl-design-system/foundation -S
+npm install @kyndryl-design-system/shidoka-foundation -S
 
 # beta (use until first stable release)
-npm install @kyndryl-design-system/foundation@beta -S
+npm install @kyndryl-design-system/shidoka-foundation@beta -S
 # when using beta, lock the version, as breaking changes can happen at any time
 ```
 
@@ -28,19 +28,19 @@ The method used (SCSS @use, CSS @import, JS import, or &lt;style&gt; tag) will v
 ### SCSS
 
 ```css
-@use '~@kyndryl-design-system/foundation/scss/root.scss';
+@use '~@kyndryl-design-system/shidoka-foundation/scss/root.scss';
 ```
 
 ### CSS
 
 ```css
-@import '@kyndryl-design-system/foundation/css/root.css';
+@import '@kyndryl-design-system/shidoka-foundation/css/root.css';
 ```
 
 ### JS
 
 ```js
-import '@kyndryl-design-system/foundation/css/root.css';
+import '@kyndryl-design-system/shidoka-foundation/css/root.css';
 ```
 
 ### Use CSS tokens/variables
@@ -49,14 +49,14 @@ You can make use of tokens/variables included in root.css such as `--kd-header-h
 
 ## Start using components
 
-See [Storybook](https://kyndryl-design-system.github.io/foundation/) for the full components documentation.
+See [Storybook](https://kyndryl-design-system.github.io/shidoka-foundation/) for the full components documentation.
 
 ### Example: Component with Sub-components
 
 This example imports a component AND all of it's subcomponents by targeting the index file.
 
 ```js
-import '@kyndryl-design-system/foundation/components/example';
+import '@kyndryl-design-system/shidoka-foundation/components/example';
 ```
 
 ```html
@@ -70,7 +70,7 @@ import '@kyndryl-design-system/foundation/components/example';
 This example imports one specific component by targeting the component file directly.
 
 ```js
-import '@kyndryl-design-system/foundation/components/example/example-sub';
+import '@kyndryl-design-system/shidoka-foundation/components/example/example-sub';
 ```
 
 ```html

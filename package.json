@@ -1,5 +1,5 @@
 {
-  "name": "@kyndryl-design-system/foundation",
+  "name": "@kyndryl-design-system/shidoka-foundation",
   "version": "0.0.0-semantic-release",
   "description": "Shidoka Foundation",
   "main": "index.js",
