@@ -1,3 +1,10 @@
+# [1.0.0-beta.25](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.0.0-beta.24...v1.0.0-beta.25) (2023-09-18)
+
+
+### Bug Fixes
+
+* rename to shidoka-foundation ([5a0b585](https://github.com/kyndryl-design-system/shidoka-foundation/commit/5a0b58562c2ca690a6cc8c285abe9bc8e565bea6))
+
 # [1.0.0-beta.24](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.0.0-beta.23...v1.0.0-beta.24) (2023-08-30)
 
 ### Features
