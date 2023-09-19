@@ -52,13 +52,13 @@
 }
 
 /* define any inheritable styles that we want to pierce the shadow dom */
-html,
-body {
-  min-height: 100%;
+html {
+  height: 100%;
 }
 
 body {
   @include typography.type-body-02;
+  min-height: 100%;
   background: var(--kd-color-background-ui-default);
   color: var(--kd-color-text-primary);
 }
