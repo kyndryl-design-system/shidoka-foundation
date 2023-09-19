@@ -1,4 +1,14 @@
 <style>
+  :root {
+    --kd-negative-page-gutter: -16px;
+  }
+
+  @media (min-width: 42rem) {
+    :root {
+      --kd-negative-page-gutter: -32px;
+    }
+  }
+
   .sb-show-main.sb-main-padded {
     padding: var(--kd-page-gutter);
   }
@@ -13,5 +23,9 @@
 
   .docs-story {
     background: var(--kd-color-background-ui-default);
+  }
+
+  .docs-story > div:first-child {
+    padding: var(--kd-page-gutter);
   }
 </style>
