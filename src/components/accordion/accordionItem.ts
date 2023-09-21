@@ -18,12 +18,7 @@ export class AccordionItem extends LitElement {
 
   @state() private _index = 1;
   @state() private showNumber = false;
-  @state() private opened = false;
-
-  constructor() {
-    super();
-    this.opened = this.startOpened;
-  }
+  private opened = false;
 
   setIndex(index: number) {
     this._index = index;
