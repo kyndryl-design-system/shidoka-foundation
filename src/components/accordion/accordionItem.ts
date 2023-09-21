@@ -18,6 +18,12 @@ export class AccordionItem extends LitElement {
 
   @state() private _index = 1;
   @state() private showNumber = false;
+  @state() private opened = false;
+
+  constructor() {
+    super();
+    this.opened = this.startOpened;
+  }
 
   setIndex(index: number) {
     this._index = index;
@@ -27,13 +33,11 @@ export class AccordionItem extends LitElement {
   }
 
   open() {
-    const accordionItem = this.renderRoot.querySelector('.kd-accordion-item');
-    this._toggleOpenState();
+    if (!this.opened) this._toggleOpenState();
   }
 
   close() {
-    const accordionItem = this.renderRoot.querySelector('.kd-accordion-item');
-    this._toggleOpenState();
+    if (this.opened) this._toggleOpenState();
   }
 
   private _handleClick(e: Event) {
@@ -47,14 +51,17 @@ export class AccordionItem extends LitElement {
   }
 
   private _toggleOpenState() {
+    if (this.opened) {
+      this.ariaExpanded = 'false';
+      this.opened = false;
+    } else {
+      this.ariaExpanded = 'true';
+      this.opened = true;
+    }
+
     const accordionItem = this.renderRoot.querySelector('.kd-accordion-item');
     if (accordionItem) {
       accordionItem.classList.toggle('opened');
-      if (this.ariaExpanded == 'true') {
-        this.ariaExpanded = 'false';
-      } else {
-        this.ariaExpanded = 'true';
-      }
     }
   }
 
@@ -90,8 +97,7 @@ export class AccordionItem extends LitElement {
     let classAdditions = '';
     classAdditions += `kd-accordion-item`;
     if (this.startOpened) {
-      classAdditions += ' opened';
-      this.ariaExpanded = 'true';
+      this._toggleOpenState();
     }
     if (this._index == 1) {
       classAdditions += ` first-item`;
