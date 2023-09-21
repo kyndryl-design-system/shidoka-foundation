@@ -78,7 +78,7 @@
               "description": " imported enums object"
             }
           ],
-          "description": "Convert an object to an array of only its values.\r\nUsed when importing enums in component stories for populating argType dropdowns."
+          "description": "Convert an object to an array of only its values.\nUsed when importing enums in component stories for populating argType dropdowns."
         }
       ],
       "exports": [
@@ -104,6 +104,177 @@
           "declaration": {
             "name": "createOptionsArray",
             "module": "src/common/helpers/helpers.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/accordion/accordion.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "kdAccordion",
+          "members": [
+            {
+              "kind": "field",
+              "name": "_childItems",
+              "type": {
+                "text": "kdAccordionItem[]"
+              },
+              "privacy": "private",
+              "default": "[]"
+            },
+            {
+              "kind": "method",
+              "name": "_handleSlotChange",
+              "privacy": "protected",
+              "parameters": [
+                {
+                  "name": "event",
+                  "type": {
+                    "text": "Event"
+                  }
+                }
+              ]
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "kdAccordion",
+          "declaration": {
+            "name": "kdAccordion",
+            "module": "src/components/accordion/accordion.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "declaration": {
+            "name": "kdAccordion",
+            "module": "src/components/accordion/accordion.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/accordion/accordionItem.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "kd-accordion-item web component",
+          "name": "kdAccordionItem",
+          "members": [
+            {
+              "kind": "field",
+              "name": "heading",
+              "attribute": "heading"
+            },
+            {
+              "kind": "field",
+              "name": "opened",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "opened"
+            },
+            {
+              "kind": "field",
+              "name": "_index",
+              "type": {
+                "text": "number"
+              },
+              "privacy": "private",
+              "default": "0"
+            },
+            {
+              "kind": "method",
+              "name": "setIndex",
+              "parameters": [
+                {
+                  "name": "index",
+                  "type": {
+                    "text": "number"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "_handleClick",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "e"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "_toggleOpenState",
+              "privacy": "private"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "heading",
+              "fieldName": "heading"
+            },
+            {
+              "name": "opened",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "opened"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "kdAccordionItem",
+          "declaration": {
+            "name": "kdAccordionItem",
+            "module": "src/components/accordion/accordionItem.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "declaration": {
+            "name": "kdAccordionItem",
+            "module": "src/components/accordion/accordionItem.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/accordion/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Accordion",
+          "declaration": {
+            "name": "Accordion",
+            "module": "./accordion"
           }
         }
       ]

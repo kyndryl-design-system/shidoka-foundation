@@ -1,0 +1,95 @@
+/**
+ * Copyright Kyndryl, Inc. 2023
+ */
+
+@use '../../scss/mixins/typography';
+
+.kd-accordion-item {
+  padding: 0px 0px;
+  border-width: 0 0 1px 0;
+  border-color: var(--kd-color-brand-sage);
+  border-style: solid;
+  display: block;
+  background-color: var(--kd-color-background-ui-default);
+  box-sizing: border-box;
+
+  &.first-item {
+    border-top: 1px;
+    border-color: var(--kd-color-brand-sage);
+    border-style: solid;
+  }
+
+  .kd-accordion-item-title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+    background: none;
+    border: 0;
+    position: relative;
+    @include typography.type-body-01;
+    font-weight: var(--kd-font-weight-medium);
+    padding: 24px 16px;
+
+    &:hover {
+      background: var(--kd-color-background-accent-subtle);
+    }
+
+    &:focus {
+      border: 2px solid var(--kd-color-border-focus);
+    }
+
+    &:after {
+      position: absolute;
+      top: calc(50% - 16px);
+      right: 16px;
+      content: '+';
+      font-size: 32px;
+    }
+
+    .number,
+    .icon {
+      padding-right: 2em;
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: auto;
+      align-self: auto;
+      order: 0;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+    }
+    .title {
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: auto;
+      align-self: auto;
+      order: 0;
+    }
+  }
+
+  &.opened .kd-accordion-item-title:after {
+    content: '-';
+  }
+
+  & .kd-accordion-item-body {
+    padding: 24px 64px 24px 16px;
+    display: none;
+  }
+
+  &.opened .kd-accordion-item-body {
+    display: block;
+  }
+
+  .icon {
+    vertical-align: middle;
+  }
+
+  .kd-accordion-item-subtitle {
+    @include typography.type-ui-02;
+    font-weight: var(--kd-font-weight-regular);
+  }
+}

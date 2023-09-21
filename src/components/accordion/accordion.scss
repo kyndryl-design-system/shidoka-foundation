@@ -1,0 +1,17 @@
+/**
+ * Copyright Kyndryl, Inc. 2023
+ */
+
+@use '../../scss/mixins/typography';
+
+.kd-accordion {
+  .toggle-container {
+    text-align: right;
+    padding: 8px 0;
+    @include typography.type-body-02;
+
+    svg {
+      vertical-align: sub;
+    }
+  }
+}
