@@ -30,6 +30,14 @@
             "name": "Link",
             "module": "./components/link"
           }
+        },
+        {
+          "kind": "js",
+          "name": "Accordion",
+          "declaration": {
+            "name": "Accordion",
+            "module": "./components/accordion"
+          }
         }
       ]
     },
@@ -115,16 +123,43 @@
         {
           "kind": "class",
           "description": "",
-          "name": "kdAccordion",
+          "name": "Accordion",
           "members": [
+            {
+              "kind": "field",
+              "name": "showNumbers",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "showNumbers"
+            },
+            {
+              "kind": "field",
+              "name": "startNumber",
+              "type": {
+                "text": "number"
+              },
+              "default": "1",
+              "attribute": "startNumber"
+            },
             {
               "kind": "field",
               "name": "_childItems",
               "type": {
-                "text": "kdAccordionItem[]"
+                "text": "AccordionItem[]"
               },
               "privacy": "private",
               "default": "[]"
+            },
+            {
+              "kind": "field",
+              "name": "_allOpenState",
+              "type": {
+                "text": "boolean"
+              },
+              "privacy": "private",
+              "default": "false"
             },
             {
               "kind": "method",
@@ -138,6 +173,47 @@
                   }
                 }
               ]
+            },
+            {
+              "kind": "method",
+              "name": "_openAllItems",
+              "privacy": "protected"
+            },
+            {
+              "kind": "method",
+              "name": "_closeAllItems",
+              "privacy": "protected"
+            },
+            {
+              "kind": "method",
+              "name": "_toggleExpandAll",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "e",
+                  "type": {
+                    "text": "Event"
+                  }
+                }
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "showNumbers",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "showNumbers"
+            },
+            {
+              "name": "startNumber",
+              "type": {
+                "text": "number"
+              },
+              "default": "1",
+              "fieldName": "startNumber"
             }
           ],
           "superclass": {
@@ -150,16 +226,16 @@
       "exports": [
         {
           "kind": "js",
-          "name": "kdAccordion",
+          "name": "Accordion",
           "declaration": {
-            "name": "kdAccordion",
+            "name": "Accordion",
             "module": "src/components/accordion/accordion.ts"
           }
         },
         {
           "kind": "custom-element-definition",
           "declaration": {
-            "name": "kdAccordion",
+            "name": "Accordion",
             "module": "src/components/accordion/accordion.ts"
           }
         }
@@ -172,21 +248,25 @@
         {
           "kind": "class",
           "description": "kd-accordion-item web component",
-          "name": "kdAccordionItem",
+          "name": "AccordionItem",
           "members": [
             {
               "kind": "field",
-              "name": "heading",
-              "attribute": "heading"
-            },
-            {
-              "kind": "field",
-              "name": "opened",
+              "name": "startOpened",
               "type": {
                 "text": "boolean"
               },
               "default": "false",
-              "attribute": "opened"
+              "attribute": "startOpened"
+            },
+            {
+              "kind": "field",
+              "name": "ariaExpanded",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "ariaExpanded"
             },
             {
               "kind": "field",
@@ -195,7 +275,16 @@
                 "text": "number"
               },
               "privacy": "private",
-              "default": "0"
+              "default": "1"
+            },
+            {
+              "kind": "field",
+              "name": "showNumber",
+              "type": {
+                "text": "boolean"
+              },
+              "privacy": "private",
+              "default": "false"
             },
             {
               "kind": "method",
@@ -211,11 +300,47 @@
             },
             {
               "kind": "method",
+              "name": "setShowNumbers",
+              "parameters": [
+                {
+                  "name": "value",
+                  "type": {
+                    "text": "boolean"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "open"
+            },
+            {
+              "kind": "method",
+              "name": "close"
+            },
+            {
+              "kind": "method",
               "name": "_handleClick",
               "privacy": "private",
               "parameters": [
                 {
-                  "name": "e"
+                  "name": "e",
+                  "type": {
+                    "text": "Event"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "_handleKeypress",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "e",
+                  "type": {
+                    "text": "KeyboardEvent"
+                  }
                 }
               ]
             },
@@ -223,20 +348,36 @@
               "kind": "method",
               "name": "_toggleOpenState",
               "privacy": "private"
+            },
+            {
+              "kind": "field",
+              "name": "numberTemplate"
+            },
+            {
+              "kind": "field",
+              "name": "iconTemplate"
+            },
+            {
+              "kind": "field",
+              "name": "subtitleTemplate"
             }
           ],
           "attributes": [
             {
-              "name": "heading",
-              "fieldName": "heading"
-            },
-            {
-              "name": "opened",
+              "name": "startOpened",
               "type": {
                 "text": "boolean"
               },
               "default": "false",
-              "fieldName": "opened"
+              "fieldName": "startOpened"
+            },
+            {
+              "name": "ariaExpanded",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "ariaExpanded"
             }
           ],
           "superclass": {
@@ -249,16 +390,16 @@
       "exports": [
         {
           "kind": "js",
-          "name": "kdAccordionItem",
+          "name": "AccordionItem",
           "declaration": {
-            "name": "kdAccordionItem",
+            "name": "AccordionItem",
             "module": "src/components/accordion/accordionItem.ts"
           }
         },
         {
           "kind": "custom-element-definition",
           "declaration": {
-            "name": "kdAccordionItem",
+            "name": "AccordionItem",
             "module": "src/components/accordion/accordionItem.ts"
           }
         }
