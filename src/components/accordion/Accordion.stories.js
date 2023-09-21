@@ -33,7 +33,7 @@ export const Accordion = {
         ?showNumbers="${args.showNumbers}"
         startNumber="${args.startNumber}"
       >
-        <kd-accordion-item>
+        <kd-accordion-item startOpened>
           <span slot="title">Accordion Title 1</span>
           <span slot="subtitle">Accordion subtitle 1</span>
           <div slot="body">
@@ -41,7 +41,7 @@ export const Accordion = {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </div>
         </kd-accordion-item>
-        <kd-accordion-item startOpened="true">
+        <kd-accordion-item>
           <span slot="title">Accordion Title 2</span>
           <span slot="subtitle">Accordion subtitle 2</span>
           <div slot="body">

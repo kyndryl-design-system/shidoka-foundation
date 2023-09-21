@@ -27,19 +27,30 @@ export class Accordion extends LitElement {
     this._childItems = slottedNodes.filter(
       (node) => node instanceof AccordionItem
     ) as AccordionItem[];
+    this._childItems.map((item, index) => {
+      (item as AccordionItem).setIndex(this.startNumber + index);
+      (item as AccordionItem).setShowNumbers(this.showNumbers);
+      return item;
+    });
+  }
+
+  override willUpdate() {
+    this._childItems.map((item, index) => {
+      (item as AccordionItem).setIndex(this.startNumber + index);
+      (item as AccordionItem).setShowNumbers(this.showNumbers);
+      return item;
+    });
   }
 
   protected _openAllItems() {
-    this._childItems.map((tab) => {
-      (tab as AccordionItem).open();
-      return tab;
+    this._childItems.map((item) => {
+      (item as AccordionItem).open();
     });
   }
 
   protected _closeAllItems() {
-    this._childItems.map((tab) => {
-      (tab as AccordionItem).close();
-      return tab;
+    this._childItems.map((item) => {
+      (item as AccordionItem).close();
     });
   }
 
@@ -55,11 +66,6 @@ export class Accordion extends LitElement {
   }
 
   override render() {
-    this._childItems.map((item, index) => {
-      (item as AccordionItem).setIndex(this.startNumber + index);
-      (item as AccordionItem).setShowNumbers(this.showNumbers);
-      return item;
-    });
     return html`
       <div class="kd-accordion">
         <div class="toggle-container">
