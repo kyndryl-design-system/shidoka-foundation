@@ -15,7 +15,6 @@ export class AccordionItem extends LitElement {
   static override styles = [stylesheet];
 
   @property({ type: Boolean }) startOpened = false;
-  @property({ type: Boolean }) override ariaExpanded = false;
 
   @state() private _index = 1;
   @state() private showNumber = false;
@@ -29,16 +28,12 @@ export class AccordionItem extends LitElement {
 
   open() {
     const accordionItem = this.renderRoot.querySelector('.kd-accordion-item');
-    if (accordionItem) {
-      accordionItem.classList.add('opened');
-    }
+    this._toggleOpenState();
   }
 
   close() {
     const accordionItem = this.renderRoot.querySelector('.kd-accordion-item');
-    if (accordionItem) {
-      accordionItem.classList.remove('opened');
-    }
+    this._toggleOpenState();
   }
 
   private _handleClick(e: Event) {
@@ -55,7 +50,11 @@ export class AccordionItem extends LitElement {
     const accordionItem = this.renderRoot.querySelector('.kd-accordion-item');
     if (accordionItem) {
       accordionItem.classList.toggle('opened');
-      this.ariaExpanded = !this.ariaExpanded;
+      if (this.ariaExpanded == 'true') {
+        this.ariaExpanded = 'false';
+      } else {
+        this.ariaExpanded = 'true';
+      }
     }
   }
 
@@ -92,22 +91,24 @@ export class AccordionItem extends LitElement {
     classAdditions += `kd-accordion-item`;
     if (this.startOpened) {
       classAdditions += ' opened';
-      this.ariaExpanded = true;
+      this.ariaExpanded = 'true';
     }
     if (this._index == 1) {
       classAdditions += ` first-item`;
     }
 
     return html`
-      <div class="${classAdditions}">
+      <div
+        class="${classAdditions}"
+        aria-expanded="${this.ariaExpanded}"
+        aria-controls="kd-accordion-item-detail-${this._index}"
+        tabindex="${this._index}"
+        @click="${(e: Event) => this._handleClick(e)}"
+        @keypress="${(e: KeyboardEvent) => this._handleKeypress(e)}"
+      >
         <div
           id="kd-accordion-item-title-${this._index}"
-          tabindex="${this._index}"
           class="kd-accordion-item-title"
-          @click="${(e: Event) => this._handleClick(e)}"
-          @keypress="${(e: Event) => this._handleKeypress(e)}"
-          aria-expanded="${this.ariaExpanded}"
-          aria-controls="kd-accordion-item-detail-${this._index}"
         >
           ${this.iconTemplate} ${this.numberTemplate}
           <div class="title">
