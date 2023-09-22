@@ -95,7 +95,7 @@ export const Button = {
 Button.parameters = {
   design: {
     type: 'figma',
-    url: 'https://www.figma.com/file/tTu138pz3jLk0mykJSg3t4/KDS---Foundation-v1.0.0?node-id=4703%3A29021&mode=dev',
+    url: 'https://www.figma.com/file/5TqtPa7KWfhJbQv6ELnbqf/Foundation?node-id=72%3A18796&mode=dev',
   },
 };
 
