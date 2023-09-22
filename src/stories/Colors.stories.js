@@ -1658,15 +1658,15 @@ export const Text = {
           </tr>
 
           <tr>
-            <td>--kd-color-text-link-pressed</td>
+            <td>--kd-color-text-pressed</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-text-link-pressed'
+                '--kd-color-text-pressed'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-text-link-pressed)"
+              style="background-color: var(--kd-color-text-pressed)"
             ></td>
           </tr>
 
@@ -1762,6 +1762,19 @@ export const Background = {
             <td
               class="preview"
               style="background-color: var(--kd-color-background-ui-default)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-background-ui-soft</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-background-ui-soft'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-background-ui-soft)"
             ></td>
           </tr>
 
@@ -2211,6 +2224,32 @@ export const Borders = {
           </tr>
         </thead>
         <tbody>
+          <tr>
+            <td>--kd-color-border-default</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-border-default'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-border-default)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-border-light</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-border-light'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-border-light)"
+            ></td>
+          </tr>
+
           <tr>
             <td>--kd-color-border-primary</td>
             <td>
