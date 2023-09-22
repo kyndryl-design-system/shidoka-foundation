@@ -1,3 +1,10 @@
+# [1.0.0-beta.27](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.0.0-beta.26...v1.0.0-beta.27) (2023-09-22)
+
+
+### Bug Fixes
+
+* **color:** add 3 missing tokens ([c79e41a](https://github.com/kyndryl-design-system/shidoka-foundation/commit/c79e41aec3acb4fd803870cc27da467f7ece443b))
+
 # [1.0.0-beta.26](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.0.0-beta.25...v1.0.0-beta.26) (2023-09-19)
 
 
