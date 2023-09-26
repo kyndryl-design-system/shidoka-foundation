@@ -4,7 +4,7 @@
 
 import { html, LitElement } from 'lit';
 import { state, property, customElement } from 'lit/decorators.js';
-
+import { ifDefined } from 'lit/directives/if-defined.js';
 import stylesheet from './accordionItem.scss';
 
 /**
@@ -58,6 +58,7 @@ export class AccordionItem extends LitElement {
     } else {
       this.ariaExpanded = 'true';
       this.opened = true;
+      this.ariaExpanded;
     }
 
     const accordionItem = this.renderRoot.querySelector('.kd-accordion-item');
@@ -105,7 +106,13 @@ export class AccordionItem extends LitElement {
     return html`
       <div
         class="${classAdditions}"
-        aria-expanded="${this.ariaExpanded}"
+        aria-expanded="${ifDefined(
+          this.ariaExpanded === null
+            ? undefined
+            : this.ariaExpanded === 'true'
+            ? true
+            : false
+        )}"
         aria-controls="kd-accordion-item-detail-${this._index}"
         tabindex="${this._index}"
         @click="${(e: Event) => this._handleClick(e)}"
