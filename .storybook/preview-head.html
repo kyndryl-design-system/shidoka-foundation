@@ -1,9 +1,12 @@
 <style>
-  html,
-  body,
-  #storybook-root,
-  #root-inner {
-    min-height: 100%;
+  :root {
+    --kd-negative-page-gutter: -16px;
+  }
+
+  @media (min-width: 42rem) {
+    :root {
+      --kd-negative-page-gutter: -32px;
+    }
   }
 
   .sb-show-main.sb-main-padded {
@@ -20,5 +23,9 @@
 
   .docs-story {
     background: var(--kd-color-background-ui-default);
+  }
+
+  .docs-story > div:first-child {
+    padding: var(--kd-page-gutter);
   }
 </style>

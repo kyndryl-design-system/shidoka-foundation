@@ -1,3 +1,17 @@
+# [1.0.0-beta.27](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.0.0-beta.26...v1.0.0-beta.27) (2023-09-22)
+
+
+### Bug Fixes
+
+* **color:** add 3 missing tokens ([c79e41a](https://github.com/kyndryl-design-system/shidoka-foundation/commit/c79e41aec3acb4fd803870cc27da467f7ece443b))
+
+# [1.0.0-beta.26](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.0.0-beta.25...v1.0.0-beta.26) (2023-09-19)
+
+
+### Bug Fixes
+
+* root scss html/body height ([a2f13db](https://github.com/kyndryl-design-system/shidoka-foundation/commit/a2f13db8a3be34fd8427c8923b71648c8f20c631))
+
 # [1.0.0-beta.25](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.0.0-beta.24...v1.0.0-beta.25) (2023-09-18)
 
 

@@ -155,19 +155,20 @@
   --kd-color-text-eyebrow: var(--kd-color-spruce-50);
   --kd-color-text-brand: var(--kd-color-warmred-50);
   --kd-color-text-inversed: var(--kd-color-neutral-white);
+  --kd-color-text-destructive: var(--kd-color-warmred-70);
   --kd-color-text-disabled: var(--kd-color-darkstone-40);
   --kd-color-text-link: var(--kd-color-spruce-60);
   --kd-color-text-link-hover: var(--kd-color-spruce-50);
-  --kd-color-text-link-pressed: var(--kd-color-spruce-80);
+  --kd-color-text-pressed: var(--kd-color-spruce-80);
   --kd-color-text-placeholder: var(--kd-color-darkstone-50);
   --kd-color-text-success: var(--kd-color-success);
   --kd-color-text-error: var(--kd-color-error);
   --kd-color-text-warning: var(--kd-color-warning);
   --kd-color-text-informational: var(--kd-color-informational);
-  --kd--color-text-destructive: var(--kd-color-warmred-70);
 
   /* Background colors */
   --kd-color-background-ui-default: var(--kd-color-neutral-white);
+  --kd-color-background-ui-soft: var(--kd-color-warmgray-10);
   --kd-color-background-ui-subtle: var(--kd-color-darkstone-20);
   --kd-color-background-ui-bold: var(--kd-color-darkstone-50);
   --kd-color-background-ui-strong: var(--kd-color-darkstone-80);
@@ -205,6 +206,8 @@
   --kd-color-background-disabled: var(--kd-color-darkstone-40);
 
   /* Border colors */
+  --kd-color-border-default: var(--kd-color-darkstone-50);
+  --kd-color-border-light: var(--kd-color-darkstone-20);
   --kd-color-border-primary: var(--kd-color-darkstone-80);
   --kd-color-border-secondary: var(--kd-color-darkstone-60);
   --kd-color-border-ui: var(--kd-color-darkstone-50);

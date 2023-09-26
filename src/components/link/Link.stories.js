@@ -17,7 +17,7 @@ export default {
   parameters: {
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/file/tTu138pz3jLk0mykJSg3t4/KDS---Foundation-v1.0.0?type=design&node-id=4860-23646&mode=design&t=qd3pGvXxQckM9VJ2-0',
+      url: 'https://www.figma.com/file/5TqtPa7KWfhJbQv6ELnbqf/Foundation?node-id=72%3A24578&mode=dev',
     },
   },
   argTypes: {
