@@ -1,3 +1,17 @@
+# [1.0.0-beta.29](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.0.0-beta.28...v1.0.0-beta.29) (2023-09-27)
+
+
+### Features
+
+* **accodion:** add firstUpdated method to handle the opening of any startOpened items ([e2d84ac](https://github.com/kyndryl-design-system/shidoka-foundation/commit/e2d84acd1354e94ad5b4bbe1e5b77a661ad34260))
+* **accodion:** correct updating numbers ([2f16ac8](https://github.com/kyndryl-design-system/shidoka-foundation/commit/2f16ac8e26b7d9aaef9e7f4349e8dedd61c2aae0))
+* **accodion:** initial work on accordion ([a4df262](https://github.com/kyndryl-design-system/shidoka-foundation/commit/a4df2629085115926910370e706ddd8e195c6bab))
+* **accodion:** revise open/close behavior ([db86722](https://github.com/kyndryl-design-system/shidoka-foundation/commit/db8672246c0fadf4ebcc6de46531679caf998bd8))
+* **accodion:** revise open/close behavior ([fd4b00b](https://github.com/kyndryl-design-system/shidoka-foundation/commit/fd4b00b7dfffa77a5a32105e51a4ab9b9a7b1632))
+* **accodion:** revise open/close behavior ([741458a](https://github.com/kyndryl-design-system/shidoka-foundation/commit/741458ad00c390be4a4c9566413fd4252330cbe1))
+* **accodion:** update element manifest ([d84fb7f](https://github.com/kyndryl-design-system/shidoka-foundation/commit/d84fb7f67778d6574d7da74ce4a43cab9517707b))
+* **accordion:** fix build errors ([2e17f62](https://github.com/kyndryl-design-system/shidoka-foundation/commit/2e17f62cd06a6056bf7bacae46cb9b4e01e5b870))
+
 # [1.0.0-beta.28](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.0.0-beta.27...v1.0.0-beta.28) (2023-09-26)
 
 
