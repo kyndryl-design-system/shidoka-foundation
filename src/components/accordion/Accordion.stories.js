@@ -9,7 +9,7 @@ import '../icon';
 import checkmarkOutlineIcon from '@carbon/icons/es/checkmark--outline/16';
 
 export default {
-  title: 'Components/Accordion',
+  title: 'Work in Progress/Accordion',
   component: `kd-accordion`,
   argTypes: {
     showNumbers: {
