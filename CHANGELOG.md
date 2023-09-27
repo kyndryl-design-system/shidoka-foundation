@@ -1,3 +1,10 @@
+# [1.0.0-beta.28](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.0.0-beta.27...v1.0.0-beta.28) (2023-09-26)
+
+
+### Bug Fixes
+
+* **button:** the icon is not vertically center aligned within the button ([bb7937a](https://github.com/kyndryl-design-system/shidoka-foundation/commit/bb7937a417fd0bea0632e742bba8986cbd4b98e5))
+
 # [1.0.0-beta.27](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.0.0-beta.26...v1.0.0-beta.27) (2023-09-22)
 
 
