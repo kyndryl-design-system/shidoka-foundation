@@ -18,11 +18,19 @@ export default {
     startNumber: {
       control: { type: 'number' },
     },
+    expandLabel: {
+      control: { type: 'text' },
+    },
+    collapseLabel: {
+      control: { type: 'text' },
+    },
   },
 };
 const args = {
   showNumbers: true,
   startNumber: '1',
+  expandLabel: 'Expand',
+  collapseLabel: 'Collapse',
 };
 
 export const Accordion = {
@@ -32,6 +40,8 @@ export const Accordion = {
       <kd-accordion
         ?showNumbers="${args.showNumbers}"
         startNumber="${args.startNumber}"
+        expandLabel="${args.expandLabel}"
+        collapseLabel="${args.collapseLabel}"
       >
         <kd-accordion-item startOpened>
           <span slot="title">Accordion Title 1</span>

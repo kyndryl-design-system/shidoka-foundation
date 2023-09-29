@@ -18,6 +18,7 @@ export class AccordionItem extends LitElement {
 
   @state() private _index = 1;
   @state() private showNumber = false;
+  @state() private _first = false;
   private opened = false;
 
   override firstUpdated() {
@@ -29,6 +30,11 @@ export class AccordionItem extends LitElement {
   setIndex(index: number) {
     this._index = index;
   }
+
+  setFirst() {
+    this._first = true;
+  }
+
   setShowNumbers(value: boolean) {
     this.showNumber = value;
   }
@@ -99,7 +105,7 @@ export class AccordionItem extends LitElement {
     let classAdditions = '';
     classAdditions += `kd-accordion-item`;
 
-    if (this._index == 1) {
+    if (this._first == true) {
       classAdditions += ` first-item`;
     }
 

@@ -10,8 +10,14 @@
     padding: 8px 0;
     @include typography.type-body-02;
 
-    svg {
-      vertical-align: sub;
+    a:hover {
+      text-decoration: underline;
     }
+  }
+
+  kd-accordion-item:first-of-type {
+    border-top: 1px;
+    border-color: var(--kd-color-brand-sage);
+    border-style: solid;
   }
 }

@@ -3,7 +3,7 @@
  */
 
 import { html, LitElement } from 'lit';
-import { property, customElement } from 'lit/decorators.js';
+import { property, state, customElement } from 'lit/decorators.js';
 import { AccordionItem } from './accordionItem';
 import stylesheet from './accordion.scss';
 import { unsafeSVG } from 'lit-html/directives/unsafe-svg.js';
@@ -13,9 +13,11 @@ import onToggleSwitchSmall from '../../assets/svg/on-toggle-switch-small.svg';
 export class Accordion extends LitElement {
   @property({ type: Boolean }) showNumbers = false;
   @property({ type: Number }) startNumber = 1;
+  @property({ type: String }) expandLabel = 'Expand';
+  @property({ type: String }) collapseLabel = 'Collapse';
 
-  private _childItems: AccordionItem[] = [];
-  private _allOpenState = false;
+  @state() private _childItems: AccordionItem[] = [];
+  @state() private _allOpenState = false;
 
   static override styles = [stylesheet];
 
@@ -28,6 +30,10 @@ export class Accordion extends LitElement {
       (node) => node instanceof AccordionItem
     ) as AccordionItem[];
     this._childItems.map((item, index) => {
+      console.log(index);
+      if (index == 0) {
+        (item as AccordionItem).setFirst();
+      }
       (item as AccordionItem).setIndex(this.startNumber + index);
       (item as AccordionItem).setShowNumbers(this.showNumbers);
       return item;
@@ -36,6 +42,9 @@ export class Accordion extends LitElement {
 
   override willUpdate() {
     this._childItems.map((item, index) => {
+      if (index == 0) {
+        (item as AccordionItem).setFirst();
+      }
       (item as AccordionItem).setIndex(this.startNumber + index);
       (item as AccordionItem).setShowNumbers(this.showNumbers);
       return item;
@@ -55,7 +64,6 @@ export class Accordion extends LitElement {
   }
 
   private _toggleExpandAll(e: Event) {
-    e.preventDefault();
     if (this._allOpenState) {
       this._closeAllItems();
       this._allOpenState = false;
@@ -69,9 +77,9 @@ export class Accordion extends LitElement {
     return html`
       <div class="kd-accordion">
         <div class="toggle-container">
-          <label @click="${(e: Event) => this._toggleExpandAll(e)}"
-            >${unsafeSVG(onToggleSwitchSmall)} Expand all Items</label
-          >
+          <a @click="${(e: Event) => this._toggleExpandAll(e)}">
+            ${this._allOpenState ? this.collapseLabel : this.expandLabel}
+          </a>
         </div>
         <div class="accordion-item-container">
           <slot @slotchange="${this._handleSlotChange}"></slot>
