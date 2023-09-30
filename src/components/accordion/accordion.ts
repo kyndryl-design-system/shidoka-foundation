@@ -38,14 +38,14 @@ export class Accordion extends LitElement {
   }
 
   override willUpdate() {
-    /*this._childItems.map((item, index) => {
+    this._childItems.map((item, index) => {
       if (index == 0) {
         (item as AccordionItem).setFirst();
       }
       (item as AccordionItem).setIndex(this.startNumber + index);
       (item as AccordionItem).setShowNumbers(this.showNumbers);
       return item;
-    });*/
+    });
   }
 
   protected _openAllItems() {

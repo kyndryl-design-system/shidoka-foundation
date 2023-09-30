@@ -68,11 +68,6 @@ export class AccordionItem extends LitElement {
       this.ariaExpanded = 'true';
       this.opened = true;
     }
-
-    /*const accordionItem = this.renderRoot.querySelector('.kd-accordion-item');
-    if (accordionItem) {
-      accordionItem.classList.toggle('opened');
-    }*/
   }
 
   get numberTemplate() {
