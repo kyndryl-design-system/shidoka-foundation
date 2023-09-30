@@ -6,8 +6,6 @@ import { html, LitElement } from 'lit';
 import { property, state, customElement } from 'lit/decorators.js';
 import { AccordionItem } from './accordionItem';
 import stylesheet from './accordion.scss';
-import { unsafeSVG } from 'lit-html/directives/unsafe-svg.js';
-import onToggleSwitchSmall from '../../assets/svg/on-toggle-switch-small.svg';
 
 @customElement(`kd-accordion`)
 export class Accordion extends LitElement {
@@ -30,7 +28,6 @@ export class Accordion extends LitElement {
       (node) => node instanceof AccordionItem
     ) as AccordionItem[];
     this._childItems.map((item, index) => {
-      console.log(index);
       if (index == 0) {
         (item as AccordionItem).setFirst();
       }
@@ -41,14 +38,14 @@ export class Accordion extends LitElement {
   }
 
   override willUpdate() {
-    this._childItems.map((item, index) => {
+    /*this._childItems.map((item, index) => {
       if (index == 0) {
         (item as AccordionItem).setFirst();
       }
       (item as AccordionItem).setIndex(this.startNumber + index);
       (item as AccordionItem).setShowNumbers(this.showNumbers);
       return item;
-    });
+    });*/
   }
 
   protected _openAllItems() {

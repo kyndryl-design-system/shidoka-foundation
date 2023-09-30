@@ -41,14 +41,6 @@
       border: 2px solid var(--kd-color-border-focus);
     }
 
-    &:after {
-      position: absolute;
-      top: calc(50% - 16px);
-      right: 16px;
-      content: '+';
-      font-size: 32px;
-    }
-
     .number,
     .icon {
       padding-right: 2em;
@@ -71,10 +63,6 @@
     }
   }
 
-  &.opened .kd-accordion-item-title:after {
-    content: '-';
-  }
-
   & .kd-accordion-item-body {
     padding: 24px 64px 24px 16px;
     display: none;
@@ -86,6 +74,13 @@
 
   .icon {
     vertical-align: middle;
+  }
+
+  .expand-icon {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
   }
 
   .kd-accordion-item-subtitle {

@@ -6,6 +6,8 @@ import { html, LitElement } from 'lit';
 import { state, property, customElement } from 'lit/decorators.js';
 import { ifDefined } from 'lit/directives/if-defined.js';
 import stylesheet from './accordionItem.scss';
+import addIcon from '@carbon/icons/es/add/32';
+import subtractIcon from '@carbon/icons/es/subtract/32';
 
 /**
  * kd-accordion-item web component
@@ -17,13 +19,14 @@ export class AccordionItem extends LitElement {
   @property({ type: Boolean }) startOpened = false;
 
   @state() private _index = 1;
-  @state() private showNumber = false;
+  @state() private _showNumber = false;
   @state() private _first = false;
-  private opened = false;
+  @state() private opened = false;
 
-  override firstUpdated() {
+  override connectedCallback() {
+    super.connectedCallback();
     if (this.startOpened) {
-      this._toggleOpenState();
+      this.open();
     }
   }
 
@@ -36,7 +39,7 @@ export class AccordionItem extends LitElement {
   }
 
   setShowNumbers(value: boolean) {
-    this.showNumber = value;
+    this._showNumber = value;
   }
 
   open() {
@@ -64,17 +67,16 @@ export class AccordionItem extends LitElement {
     } else {
       this.ariaExpanded = 'true';
       this.opened = true;
-      this.ariaExpanded;
     }
 
-    const accordionItem = this.renderRoot.querySelector('.kd-accordion-item');
+    /*const accordionItem = this.renderRoot.querySelector('.kd-accordion-item');
     if (accordionItem) {
       accordionItem.classList.toggle('opened');
-    }
+    }*/
   }
 
   get numberTemplate() {
-    if (this.showNumber) {
+    if (this._showNumber) {
       return html`<div class="number">${this._index}</div>`;
     } else {
       return '';
@@ -101,12 +103,29 @@ export class AccordionItem extends LitElement {
     }
   }
 
+  get expandIconTemplate() {
+    if (this.opened)
+      return html`
+        <div class="expand-icon">
+          <kd-icon .icon="${subtractIcon}"></kd-icon>
+        </div>
+      `;
+    else {
+      return html`
+        <div class="expand-icon"><kd-icon .icon="${addIcon}"></kd-icon></div>
+      `;
+    }
+  }
+
   override render() {
     let classAdditions = '';
     classAdditions += `kd-accordion-item`;
 
-    if (this._first == true) {
+    if (this._first === true) {
       classAdditions += ` first-item`;
+    }
+    if (this.opened === true) {
+      classAdditions += ` opened`;
     }
 
     return html`
@@ -133,6 +152,7 @@ export class AccordionItem extends LitElement {
             <div><slot name="title"></slot></div>
             ${this.subtitleTemplate}
           </div>
+          ${this.expandIconTemplate}
         </div>
 
         <div
