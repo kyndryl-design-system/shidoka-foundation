@@ -145,6 +145,24 @@
             },
             {
               "kind": "field",
+              "name": "expandLabel",
+              "type": {
+                "text": "string"
+              },
+              "default": "'Expand'",
+              "attribute": "expandLabel"
+            },
+            {
+              "kind": "field",
+              "name": "collapseLabel",
+              "type": {
+                "text": "string"
+              },
+              "default": "'Collapse'",
+              "attribute": "collapseLabel"
+            },
+            {
+              "kind": "field",
               "name": "_childItems",
               "type": {
                 "text": "AccordionItem[]"
@@ -214,6 +232,22 @@
               },
               "default": "1",
               "fieldName": "startNumber"
+            },
+            {
+              "name": "expandLabel",
+              "type": {
+                "text": "string"
+              },
+              "default": "'Expand'",
+              "fieldName": "expandLabel"
+            },
+            {
+              "name": "collapseLabel",
+              "type": {
+                "text": "string"
+              },
+              "default": "'Collapse'",
+              "fieldName": "collapseLabel"
             }
           ],
           "superclass": {
@@ -261,15 +295,6 @@
             },
             {
               "kind": "field",
-              "name": "ariaExpanded",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "attribute": "ariaExpanded"
-            },
-            {
-              "kind": "field",
               "name": "_index",
               "type": {
                 "text": "number"
@@ -279,7 +304,25 @@
             },
             {
               "kind": "field",
-              "name": "showNumber",
+              "name": "_showNumber",
+              "type": {
+                "text": "boolean"
+              },
+              "privacy": "private",
+              "default": "false"
+            },
+            {
+              "kind": "field",
+              "name": "_first",
+              "type": {
+                "text": "boolean"
+              },
+              "privacy": "private",
+              "default": "false"
+            },
+            {
+              "kind": "field",
+              "name": "opened",
               "type": {
                 "text": "boolean"
               },
@@ -297,6 +340,10 @@
                   }
                 }
               ]
+            },
+            {
+              "kind": "method",
+              "name": "setFirst"
             },
             {
               "kind": "method",
@@ -360,6 +407,10 @@
             {
               "kind": "field",
               "name": "subtitleTemplate"
+            },
+            {
+              "kind": "field",
+              "name": "expandIconTemplate"
             }
           ],
           "attributes": [
@@ -370,14 +421,6 @@
               },
               "default": "false",
               "fieldName": "startOpened"
-            },
-            {
-              "name": "ariaExpanded",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "fieldName": "ariaExpanded"
             }
           ],
           "superclass": {
