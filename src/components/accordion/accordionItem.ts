@@ -22,6 +22,7 @@ export class AccordionItem extends LitElement {
   @state() private _showNumber = false;
   @state() private _first = false;
   @state() private opened = false;
+  @state() private _filledHeader = false;
 
   override connectedCallback() {
     super.connectedCallback();
@@ -40,6 +41,10 @@ export class AccordionItem extends LitElement {
 
   setShowNumbers(value: boolean) {
     this._showNumber = value;
+  }
+
+  setFilledHeader(value: boolean) {
+    this._filledHeader = value;
   }
 
   open() {
@@ -121,6 +126,9 @@ export class AccordionItem extends LitElement {
     }
     if (this.opened === true) {
       classAdditions += ` opened`;
+    }
+    if (this._filledHeader === true) {
+      classAdditions += ` filled-header`;
     }
 
     return html`

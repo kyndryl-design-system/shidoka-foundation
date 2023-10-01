@@ -34,7 +34,7 @@
     padding: 24px 16px;
 
     &:hover {
-      background: var(--kd-color-background-accent-subtle);
+      background-color: var(--kd-color-background-accent-subtle);
     }
 
     &:focus {
@@ -61,6 +61,10 @@
       align-self: auto;
       order: 0;
     }
+  }
+
+  &.filled-header .kd-accordion-item-title {
+    background-color: var(--kd-color-background-accent-subtle);
   }
 
   & .kd-accordion-item-body {

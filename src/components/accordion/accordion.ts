@@ -11,6 +11,7 @@ import stylesheet from './accordion.scss';
 export class Accordion extends LitElement {
   @property({ type: Boolean }) showNumbers = false;
   @property({ type: Number }) startNumber = 1;
+  @property({ type: Boolean }) filledHeaders = false;
   @property({ type: String }) expandLabel = 'Expand';
   @property({ type: String }) collapseLabel = 'Collapse';
 
@@ -31,6 +32,7 @@ export class Accordion extends LitElement {
       if (index == 0) {
         (item as AccordionItem).setFirst();
       }
+      (item as AccordionItem).setFilledHeader(this.filledHeaders);
       (item as AccordionItem).setIndex(this.startNumber + index);
       (item as AccordionItem).setShowNumbers(this.showNumbers);
       return item;
@@ -42,6 +44,7 @@ export class Accordion extends LitElement {
       if (index == 0) {
         (item as AccordionItem).setFirst();
       }
+      (item as AccordionItem).setFilledHeader(this.filledHeaders);
       (item as AccordionItem).setIndex(this.startNumber + index);
       (item as AccordionItem).setShowNumbers(this.showNumbers);
       return item;

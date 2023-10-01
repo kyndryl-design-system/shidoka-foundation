@@ -12,6 +12,9 @@ export default {
   title: 'Work in Progress/Accordion',
   component: `kd-accordion`,
   argTypes: {
+    filledHeaders: {
+      control: { type: 'boolean' },
+    },
     showNumbers: {
       control: { type: 'boolean' },
     },
@@ -27,6 +30,7 @@ export default {
   },
 };
 const args = {
+  filledHeaders: false,
   showNumbers: true,
   startNumber: '1',
   expandLabel: 'Expand',
@@ -38,6 +42,7 @@ export const Accordion = {
   render: (args) => {
     return html`
       <kd-accordion
+        ?filledHeaders="${args.filledHeaders}"
         ?showNumbers="${args.showNumbers}"
         startNumber="${args.startNumber}"
         expandLabel="${args.expandLabel}"
@@ -76,6 +81,7 @@ export const AccordionWithIcons = {
   render: (args) => {
     return html`
       <kd-accordion
+        ?filledHeaders="${args.filledHeaders}"
         ?showNumbers="${args.showNumbers}"
         startNumber="${args.startNumber}"
       >
