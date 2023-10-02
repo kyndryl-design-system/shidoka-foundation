@@ -68,8 +68,19 @@
     }
   }
 
-  &.filled-header .kd-accordion-item-title {
-    background-color: var(--kd-color-background-accent-subtle);
+  &.filled-header {
+    border: 1px solid var(--kd-color-border-light);
+
+    &:hover {
+      border-color: var(--kd-color-border-primary);
+    }
+    &:focus {
+      border: 2px solid var(--kd-color-border-focus);
+    }
+
+    .kd-accordion-item-title {
+      background-color: var(--kd-color-background-accent-subtle);
+    }
   }
 
   &.compact .kd-accordion-item-title {
