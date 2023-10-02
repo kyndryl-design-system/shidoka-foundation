@@ -43,81 +43,6 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/common/helpers/helpers.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "debounce",
-          "parameters": [
-            {
-              "name": "fn",
-              "type": {
-                "text": "Function"
-              }
-            },
-            {
-              "name": "ms",
-              "default": "100"
-            }
-          ]
-        },
-        {
-          "kind": "function",
-          "name": "stringToReactHtml",
-          "parameters": [
-            {
-              "name": "string",
-              "type": {
-                "text": "String"
-              }
-            }
-          ]
-        },
-        {
-          "kind": "function",
-          "name": "createOptionsArray",
-          "parameters": [
-            {
-              "name": "options",
-              "default": "{}",
-              "type": {
-                "text": "*"
-              },
-              "description": " imported enums object"
-            }
-          ],
-          "description": "Convert an object to an array of only its values.\nUsed when importing enums in component stories for populating argType dropdowns."
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "debounce",
-          "declaration": {
-            "name": "debounce",
-            "module": "src/common/helpers/helpers.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "stringToReactHtml",
-          "declaration": {
-            "name": "stringToReactHtml",
-            "module": "src/common/helpers/helpers.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "createOptionsArray",
-          "declaration": {
-            "name": "createOptionsArray",
-            "module": "src/common/helpers/helpers.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
       "path": "src/components/accordion/accordion.ts",
       "declarations": [
         {
@@ -142,6 +67,24 @@
               },
               "default": "1",
               "attribute": "startNumber"
+            },
+            {
+              "kind": "field",
+              "name": "filledHeaders",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "filledHeaders"
+            },
+            {
+              "kind": "field",
+              "name": "compact",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "compact"
             },
             {
               "kind": "field",
@@ -234,6 +177,22 @@
               "fieldName": "startNumber"
             },
             {
+              "name": "filledHeaders",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "filledHeaders"
+            },
+            {
+              "name": "compact",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "compact"
+            },
+            {
               "name": "expandLabel",
               "type": {
                 "text": "string"
@@ -322,12 +281,39 @@
             },
             {
               "kind": "field",
-              "name": "opened",
+              "name": "_opened",
               "type": {
                 "text": "boolean"
               },
               "privacy": "private",
               "default": "false"
+            },
+            {
+              "kind": "field",
+              "name": "_filledHeader",
+              "type": {
+                "text": "boolean"
+              },
+              "privacy": "private",
+              "default": "false"
+            },
+            {
+              "kind": "field",
+              "name": "_compact",
+              "type": {
+                "text": "boolean"
+              },
+              "privacy": "private",
+              "default": "false"
+            },
+            {
+              "kind": "field",
+              "name": "_id",
+              "type": {
+                "text": "string"
+              },
+              "privacy": "private",
+              "default": "''"
             },
             {
               "kind": "method",
@@ -348,6 +334,30 @@
             {
               "kind": "method",
               "name": "setShowNumbers",
+              "parameters": [
+                {
+                  "name": "value",
+                  "type": {
+                    "text": "boolean"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "setFilledHeader",
+              "parameters": [
+                {
+                  "name": "value",
+                  "type": {
+                    "text": "boolean"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "setCompact",
               "parameters": [
                 {
                   "name": "value",
@@ -1016,6 +1026,81 @@
           "declaration": {
             "name": "Link",
             "module": "src/components/link/link.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/common/helpers/helpers.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "debounce",
+          "parameters": [
+            {
+              "name": "fn",
+              "type": {
+                "text": "Function"
+              }
+            },
+            {
+              "name": "ms",
+              "default": "100"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "stringToReactHtml",
+          "parameters": [
+            {
+              "name": "string",
+              "type": {
+                "text": "String"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "createOptionsArray",
+          "parameters": [
+            {
+              "name": "options",
+              "default": "{}",
+              "type": {
+                "text": "*"
+              },
+              "description": " imported enums object"
+            }
+          ],
+          "description": "Convert an object to an array of only its values.\nUsed when importing enums in component stories for populating argType dropdowns."
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "debounce",
+          "declaration": {
+            "name": "debounce",
+            "module": "src/common/helpers/helpers.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "stringToReactHtml",
+          "declaration": {
+            "name": "stringToReactHtml",
+            "module": "src/common/helpers/helpers.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "createOptionsArray",
+          "declaration": {
+            "name": "createOptionsArray",
+            "module": "src/common/helpers/helpers.ts"
           }
         }
       ]
