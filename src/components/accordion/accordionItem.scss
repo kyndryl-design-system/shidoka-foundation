@@ -19,6 +19,10 @@
     border-style: solid;
   }
 
+  &:focus {
+    border: 2px solid var(--kd-color-border-focus);
+  }
+
   .kd-accordion-item-title {
     display: flex;
     flex-direction: row;
@@ -35,10 +39,6 @@
 
     &:hover {
       background-color: var(--kd-color-background-accent-subtle);
-    }
-
-    &:focus {
-      border: 2px solid var(--kd-color-border-focus);
     }
 
     .number,
@@ -65,6 +65,10 @@
 
   &.filled-header .kd-accordion-item-title {
     background-color: var(--kd-color-background-accent-subtle);
+  }
+
+  &.compact .kd-accordion-item-title {
+    padding: 16px;
   }
 
   & .kd-accordion-item-body {

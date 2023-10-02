@@ -21,8 +21,9 @@ export class AccordionItem extends LitElement {
   @state() private _index = 1;
   @state() private _showNumber = false;
   @state() private _first = false;
-  @state() private opened = false;
+  @state() private _opened = false;
   @state() private _filledHeader = false;
+  @state() private _compact = false;
 
   override connectedCallback() {
     super.connectedCallback();
@@ -47,12 +48,16 @@ export class AccordionItem extends LitElement {
     this._filledHeader = value;
   }
 
+  setCompact(value: boolean) {
+    this._compact = value;
+  }
+
   open() {
-    if (!this.opened) this._toggleOpenState();
+    if (!this._opened) this._toggleOpenState();
   }
 
   close() {
-    if (this.opened) this._toggleOpenState();
+    if (this._opened) this._toggleOpenState();
   }
 
   private _handleClick(e: Event) {
@@ -66,12 +71,12 @@ export class AccordionItem extends LitElement {
   }
 
   private _toggleOpenState() {
-    if (this.opened) {
+    if (this._opened) {
       this.ariaExpanded = 'false';
-      this.opened = false;
+      this._opened = false;
     } else {
       this.ariaExpanded = 'true';
-      this.opened = true;
+      this._opened = true;
     }
   }
 
@@ -104,7 +109,7 @@ export class AccordionItem extends LitElement {
   }
 
   get expandIconTemplate() {
-    if (this.opened)
+    if (this._opened)
       return html`
         <div class="expand-icon">
           <kd-icon .icon="${subtractIcon}"></kd-icon>
@@ -124,11 +129,14 @@ export class AccordionItem extends LitElement {
     if (this._first === true) {
       classAdditions += ` first-item`;
     }
-    if (this.opened === true) {
+    if (this._opened === true) {
       classAdditions += ` opened`;
     }
     if (this._filledHeader === true) {
       classAdditions += ` filled-header`;
+    }
+    if (this._compact === true) {
+      classAdditions += ` compact`;
     }
 
     return html`

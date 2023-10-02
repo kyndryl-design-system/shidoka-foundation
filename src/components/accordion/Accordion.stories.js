@@ -15,6 +15,9 @@ export default {
     filledHeaders: {
       control: { type: 'boolean' },
     },
+    compact: {
+      control: { type: 'boolean' },
+    },
     showNumbers: {
       control: { type: 'boolean' },
     },
@@ -31,6 +34,7 @@ export default {
 };
 const args = {
   filledHeaders: false,
+  compact: false,
   showNumbers: true,
   startNumber: '1',
   expandLabel: 'Expand',
@@ -43,6 +47,7 @@ export const Accordion = {
     return html`
       <kd-accordion
         ?filledHeaders="${args.filledHeaders}"
+        ?compact="${args.compact}"
         ?showNumbers="${args.showNumbers}"
         startNumber="${args.startNumber}"
         expandLabel="${args.expandLabel}"
@@ -82,8 +87,11 @@ export const AccordionWithIcons = {
     return html`
       <kd-accordion
         ?filledHeaders="${args.filledHeaders}"
+        ?compact="${args.compact}"
         ?showNumbers="${args.showNumbers}"
         startNumber="${args.startNumber}"
+        expandLabel="${args.expandLabel}"
+        collapseLabel="${args.collapseLabel}"
       >
         <kd-accordion-item>
           <span slot="icon"
