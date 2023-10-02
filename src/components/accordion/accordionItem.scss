@@ -7,7 +7,7 @@
 .kd-accordion-item {
   padding: 0px 0px;
   border-width: 0 0 1px 0;
-  border-color: var(--kd-color-brand-sage);
+  border-color: var(--kd-color-border-light);
   border-style: solid;
   display: block;
   background-color: var(--kd-color-background-ui-default);
@@ -15,12 +15,10 @@
 
   &.first-item {
     border-top: 1px;
-    border-color: var(--kd-color-brand-sage);
+    border-color: var(--kd-color-border-light);
     border-style: solid;
-  }
-
-  &:focus {
-    border: 2px solid var(--kd-color-border-focus);
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
   }
 
   .kd-accordion-item-title {
@@ -39,6 +37,12 @@
 
     &:hover {
       background-color: var(--kd-color-background-accent-subtle);
+      outline: 0;
+    }
+    &:focus,
+    &:focus-visible {
+      border: 2px solid var(--kd-color-border-focus);
+      outline: 0px;
     }
 
     .number,
