@@ -32,6 +32,7 @@ export default {
     },
   },
 };
+
 const args = {
   filledHeaders: false,
   compact: false,
@@ -81,6 +82,14 @@ export const Accordion = {
     `;
   },
 };
+
+Accordion.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/5TqtPa7KWfhJbQv6ELnbqf/Foundation?node-id=707%3A2396&mode=dev',
+  },
+};
+
 export const AccordionWithIcons = {
   args: args,
   render: (args) => {
