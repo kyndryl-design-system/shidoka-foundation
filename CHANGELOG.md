@@ -1,3 +1,27 @@
+# [1.0.0-beta.30](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.0.0-beta.29...v1.0.0-beta.30) (2023-10-02)
+
+
+### Bug Fixes
+
+* **accordion:** add unique id and correct title element ([ee148f1](https://github.com/kyndryl-design-system/shidoka-foundation/commit/ee148f10289cbf400f4ee2ec107c97003f90a6a1))
+* **accordion:** additional code review corrections ([00b7c9b](https://github.com/kyndryl-design-system/shidoka-foundation/commit/00b7c9b39acbdfdbed67b44942e08fabf168d703))
+* **accordion:** additional code review corrections ([c6113f3](https://github.com/kyndryl-design-system/shidoka-foundation/commit/c6113f38d51a47dfec13cdc10496c674cacff561))
+* **accordion:** allow for compact display ([4c30cd4](https://github.com/kyndryl-design-system/shidoka-foundation/commit/4c30cd4a0caa296aa53079d097c3a90648ae345a))
+* **accordion:** allow for filled headers ([fa04a78](https://github.com/kyndryl-design-system/shidoka-foundation/commit/fa04a78e4786d085dcee756c77e73651526a1314))
+* **accordion:** clean up comments ([19c2e59](https://github.com/kyndryl-design-system/shidoka-foundation/commit/19c2e5908473003cafcd974ec368d4ca5e5294c3))
+* **accordion:** correct border issues and property reference generation ([6b6052d](https://github.com/kyndryl-design-system/shidoka-foundation/commit/6b6052d018d9666d82c0009f4f00fb1b84ee223a))
+* **accordion:** correct expand control and correct border display ([eb07651](https://github.com/kyndryl-design-system/shidoka-foundation/commit/eb07651bf14ea9b055e78d28aa3cf82b28a90387))
+* **accordion:** correct focus colors ([e39c212](https://github.com/kyndryl-design-system/shidoka-foundation/commit/e39c212adaf761846039c0b999b8ce3db7562484))
+* **accordion:** correct number color ([05420ab](https://github.com/kyndryl-design-system/shidoka-foundation/commit/05420ab661927697d970e1bd297c24f2e3640d0b))
+* **accordion:** correct startOpened logic ([3c93eb9](https://github.com/kyndryl-design-system/shidoka-foundation/commit/3c93eb9351ced1001deaa496877ec4dae37b903f))
+* **accordion:** fix build error ([1c0f268](https://github.com/kyndryl-design-system/shidoka-foundation/commit/1c0f268930fa8d7a1758ba4f3eea7c740da33710))
+* **accordion:** fix filled border styles ([e1db273](https://github.com/kyndryl-design-system/shidoka-foundation/commit/e1db273545f19c273487e253d3ff6bc224f49aaa))
+* **accordion:** update custom-elements.json ([f425722](https://github.com/kyndryl-design-system/shidoka-foundation/commit/f425722633dd3c3ae6b822d193e3aed14d6ef8fe))
+* **accordion:** update custon-elements.json ([edac34e](https://github.com/kyndryl-design-system/shidoka-foundation/commit/edac34ea4792c4cc135e71b48d48de68b3b7562b))
+* **accordion:** update manifest ([f115a95](https://github.com/kyndryl-design-system/shidoka-foundation/commit/f115a95f9d910ee812e945b7228c63c0bd6adac1))
+* **accordion:** update manifest ([70b12f6](https://github.com/kyndryl-design-system/shidoka-foundation/commit/70b12f66a4e57ff975b2bb27595e6bbcc95d9f74))
+* **accordion:** update story with figma link ([2fcd84b](https://github.com/kyndryl-design-system/shidoka-foundation/commit/2fcd84bc6c7661a818a2c72c9661b0687e173a69))
+
 # [1.0.0-beta.29](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.0.0-beta.28...v1.0.0-beta.29) (2023-09-27)
 
 
