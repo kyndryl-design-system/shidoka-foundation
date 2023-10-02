@@ -5,6 +5,10 @@
 @use '../../scss/mixins/typography';
 
 .kd-accordion {
+  .accordion-item-container {
+    border-radius: 4px;
+  }
+
   .toggle-container {
     text-align: right;
     padding: 8px 0;
@@ -13,11 +17,5 @@
     a:hover {
       text-decoration: underline;
     }
-  }
-
-  kd-accordion-item:first-of-type {
-    border-top: 1px;
-    border-color: var(--kd-color-brand-sage);
-    border-style: solid;
   }
 }

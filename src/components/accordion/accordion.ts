@@ -7,16 +7,48 @@ import { property, state, customElement } from 'lit/decorators.js';
 import { AccordionItem } from './accordionItem';
 import stylesheet from './accordion.scss';
 
+/**
+ * Accordion component.
+ *
+ * @slot unnamed - Holds Accordion Items (kd-accordion-item) that make up the accordion
+ *
+ */
 @customElement(`kd-accordion`)
 export class Accordion extends LitElement {
-  @property({ type: Boolean }) showNumbers = false;
-  @property({ type: Number }) startNumber = 1;
-  @property({ type: Boolean }) filledHeaders = false;
-  @property({ type: Boolean }) compact = false;
-  @property({ type: String }) expandLabel = 'Expand';
-  @property({ type: String }) collapseLabel = 'Collapse';
+  /** Specifies whether to show numbers on the list items. */
+  @property({ type: Boolean })
+  showNumbers = false;
 
+  /** Specifies the number to start at if the list has numbers. */
+  @property({ type: Number })
+  startNumber = 1;
+
+  /** Specifies whether to show the accordion items with filled headers. */
+  @property({ type: Boolean })
+  filledHeaders = false;
+
+  /** Display the accordion as compact or the default large size. */
+  @property({ type: Boolean })
+  compact = false;
+
+  /** The string that displays on the toggle to enpand all the accordion items. */
+  @property({ type: String })
+  expandLabel = 'Expand';
+
+  /** The string that displays on the toggle to collapse all the accordion items. */
+  @property({ type: String })
+  collapseLabel = 'Collapse';
+
+  /**
+   * The children accordion items
+   * @ignore
+   */
   @state() private _childItems: AccordionItem[] = [];
+
+  /**
+   * The state of the toggle controling the "expand all" functionality
+   * @ignore
+   */
   @state() private _allOpenState = false;
 
   static override styles = [stylesheet];
@@ -37,6 +69,9 @@ export class Accordion extends LitElement {
       (item as AccordionItem).setCompact(this.compact);
       (item as AccordionItem).setIndex(this.startNumber + index);
       (item as AccordionItem).setShowNumbers(this.showNumbers);
+      if (index == this._childItems.length - 1) {
+        (item as AccordionItem).setLast();
+      }
       return item;
     });
   }
@@ -50,6 +85,9 @@ export class Accordion extends LitElement {
       (item as AccordionItem).setCompact(this.compact);
       (item as AccordionItem).setIndex(this.startNumber + index);
       (item as AccordionItem).setShowNumbers(this.showNumbers);
+      if (index == this._childItems.length - 1) {
+        (item as AccordionItem).setLast();
+      }
       return item;
     });
   }

@@ -21,6 +21,7 @@ export class AccordionItem extends LitElement {
   @state() private _index = 1;
   @state() private _showNumber = false;
   @state() private _first = false;
+  @state() private _last = false;
   @state() private _opened = false;
   @state() private _filledHeader = false;
   @state() private _compact = false;
@@ -40,6 +41,10 @@ export class AccordionItem extends LitElement {
 
   setFirst() {
     this._first = true;
+  }
+
+  setLast() {
+    this._last = true;
   }
 
   setShowNumbers(value: boolean) {
@@ -130,6 +135,9 @@ export class AccordionItem extends LitElement {
 
     if (this._first === true) {
       classAdditions += ` first-item`;
+    }
+    if (this._last === true) {
+      classAdditions += ` last-item`;
     }
     if (this._opened === true) {
       classAdditions += ` opened`;

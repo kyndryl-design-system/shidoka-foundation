@@ -12,15 +12,14 @@
   display: block;
   background-color: var(--kd-color-background-ui-default);
   box-sizing: border-box;
+  overflow: hidden;
 
   &.first-item {
-    border-top: 1px;
-    border-color: var(--kd-color-border-light);
-    border-style: solid;
     border-top-right-radius: 4px;
     border-top-left-radius: 4px;
+    border-top-width: 1px;
   }
-  &.first-item {
+  &.last-item {
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
   }
@@ -78,6 +77,7 @@
 
   &.filled-header {
     &.first-item {
+      border-top-width: 0px;
       .kd-accordion-item-title {
         border-top-width: 1px;
       }
@@ -88,7 +88,7 @@
       border-width: 0px 1px 1px 1px;
 
       &:hover {
-        border-color: var(--kd-color-border-primary);
+        border: 1px solid var(--kd-color-border-primary);
       }
       &:focus {
         border: 2px solid var(--kd-color-border-focus);

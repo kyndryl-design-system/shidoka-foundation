@@ -9,28 +9,9 @@ import '../icon';
 import checkmarkOutlineIcon from '@carbon/icons/es/checkmark--outline/16';
 
 export default {
-  title: 'Work in Progress/Accordion',
+  title: 'Components/Accordion',
   component: `kd-accordion`,
-  argTypes: {
-    filledHeaders: {
-      control: { type: 'boolean' },
-    },
-    compact: {
-      control: { type: 'boolean' },
-    },
-    showNumbers: {
-      control: { type: 'boolean' },
-    },
-    startNumber: {
-      control: { type: 'number' },
-    },
-    expandLabel: {
-      control: { type: 'text' },
-    },
-    collapseLabel: {
-      control: { type: 'text' },
-    },
-  },
+  subcomponent: `kd-accordion-item`,
 };
 
 const args = {

@@ -43,12 +43,93 @@
     },
     {
       "kind": "javascript-module",
+      "path": "src/common/helpers/helpers.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "debounce",
+          "parameters": [
+            {
+              "name": "fn",
+              "type": {
+                "text": "Function"
+              }
+            },
+            {
+              "name": "ms",
+              "default": "100"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "stringToReactHtml",
+          "parameters": [
+            {
+              "name": "string",
+              "type": {
+                "text": "String"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "createOptionsArray",
+          "parameters": [
+            {
+              "name": "options",
+              "default": "{}",
+              "type": {
+                "text": "*"
+              },
+              "description": " imported enums object"
+            }
+          ],
+          "description": "Convert an object to an array of only its values.\nUsed when importing enums in component stories for populating argType dropdowns."
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "debounce",
+          "declaration": {
+            "name": "debounce",
+            "module": "src/common/helpers/helpers.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "stringToReactHtml",
+          "declaration": {
+            "name": "stringToReactHtml",
+            "module": "src/common/helpers/helpers.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "createOptionsArray",
+          "declaration": {
+            "name": "createOptionsArray",
+            "module": "src/common/helpers/helpers.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/components/accordion/accordion.ts",
       "declarations": [
         {
           "kind": "class",
-          "description": "",
+          "description": "Accordion component.",
           "name": "Accordion",
+          "slots": [
+            {
+              "description": "Holds Accordion Items (kd-accordion-item) that make up the accordion",
+              "name": "unnamed"
+            }
+          ],
           "members": [
             {
               "kind": "field",
@@ -57,6 +138,7 @@
                 "text": "boolean"
               },
               "default": "false",
+              "description": "Specifies whether to show numbers on the list items.",
               "attribute": "showNumbers"
             },
             {
@@ -66,6 +148,7 @@
                 "text": "number"
               },
               "default": "1",
+              "description": "Specifies the number to start at if the list has numbers.",
               "attribute": "startNumber"
             },
             {
@@ -75,6 +158,7 @@
                 "text": "boolean"
               },
               "default": "false",
+              "description": "Specifies whether to show the accordion items with filled headers.",
               "attribute": "filledHeaders"
             },
             {
@@ -84,6 +168,7 @@
                 "text": "boolean"
               },
               "default": "false",
+              "description": "Display the accordion as compact or the default large size.",
               "attribute": "compact"
             },
             {
@@ -93,6 +178,7 @@
                 "text": "string"
               },
               "default": "'Expand'",
+              "description": "The string that displays on the toggle to enpand all the accordion items.",
               "attribute": "expandLabel"
             },
             {
@@ -102,6 +188,7 @@
                 "text": "string"
               },
               "default": "'Collapse'",
+              "description": "The string that displays on the toggle to collapse all the accordion items.",
               "attribute": "collapseLabel"
             },
             {
@@ -148,15 +235,7 @@
             {
               "kind": "method",
               "name": "_toggleExpandAll",
-              "privacy": "private",
-              "parameters": [
-                {
-                  "name": "e",
-                  "type": {
-                    "text": "Event"
-                  }
-                }
-              ]
+              "privacy": "private"
             }
           ],
           "attributes": [
@@ -166,6 +245,7 @@
                 "text": "boolean"
               },
               "default": "false",
+              "description": "Specifies whether to show numbers on the list items.",
               "fieldName": "showNumbers"
             },
             {
@@ -174,6 +254,7 @@
                 "text": "number"
               },
               "default": "1",
+              "description": "Specifies the number to start at if the list has numbers.",
               "fieldName": "startNumber"
             },
             {
@@ -182,6 +263,7 @@
                 "text": "boolean"
               },
               "default": "false",
+              "description": "Specifies whether to show the accordion items with filled headers.",
               "fieldName": "filledHeaders"
             },
             {
@@ -190,6 +272,7 @@
                 "text": "boolean"
               },
               "default": "false",
+              "description": "Display the accordion as compact or the default large size.",
               "fieldName": "compact"
             },
             {
@@ -198,6 +281,7 @@
                 "text": "string"
               },
               "default": "'Expand'",
+              "description": "The string that displays on the toggle to enpand all the accordion items.",
               "fieldName": "expandLabel"
             },
             {
@@ -206,6 +290,7 @@
                 "text": "string"
               },
               "default": "'Collapse'",
+              "description": "The string that displays on the toggle to collapse all the accordion items.",
               "fieldName": "collapseLabel"
             }
           ],
@@ -1026,81 +1111,6 @@
           "declaration": {
             "name": "Link",
             "module": "src/components/link/link.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/common/helpers/helpers.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "debounce",
-          "parameters": [
-            {
-              "name": "fn",
-              "type": {
-                "text": "Function"
-              }
-            },
-            {
-              "name": "ms",
-              "default": "100"
-            }
-          ]
-        },
-        {
-          "kind": "function",
-          "name": "stringToReactHtml",
-          "parameters": [
-            {
-              "name": "string",
-              "type": {
-                "text": "String"
-              }
-            }
-          ]
-        },
-        {
-          "kind": "function",
-          "name": "createOptionsArray",
-          "parameters": [
-            {
-              "name": "options",
-              "default": "{}",
-              "type": {
-                "text": "*"
-              },
-              "description": " imported enums object"
-            }
-          ],
-          "description": "Convert an object to an array of only its values.\nUsed when importing enums in component stories for populating argType dropdowns."
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "debounce",
-          "declaration": {
-            "name": "debounce",
-            "module": "src/common/helpers/helpers.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "stringToReactHtml",
-          "declaration": {
-            "name": "stringToReactHtml",
-            "module": "src/common/helpers/helpers.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "createOptionsArray",
-          "declaration": {
-            "name": "createOptionsArray",
-            "module": "src/common/helpers/helpers.ts"
           }
         }
       ]
