@@ -66,7 +66,7 @@ export class Accordion extends LitElement {
     });
   }
 
-  private _toggleExpandAll(e: Event) {
+  private _toggleExpandAll() {
     if (this._allOpenState) {
       this._closeAllItems();
       this._allOpenState = false;
@@ -80,7 +80,7 @@ export class Accordion extends LitElement {
     return html`
       <div class="kd-accordion">
         <div class="toggle-container">
-          <a @click="${(e: Event) => this._toggleExpandAll(e)}">
+          <a @click="${this._toggleExpandAll}">
             ${this._allOpenState ? this.collapseLabel : this.expandLabel}
           </a>
         </div>
