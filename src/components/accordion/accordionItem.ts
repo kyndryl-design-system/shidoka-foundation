@@ -6,39 +6,110 @@ import { html, LitElement } from 'lit';
 import { state, property, customElement } from 'lit/decorators.js';
 import { ifDefined } from 'lit/directives/if-defined.js';
 import stylesheet from './accordionItem.scss';
+import addIcon from '@carbon/icons/es/add/32';
+import subtractIcon from '@carbon/icons/es/subtract/32';
 
 /**
- * kd-accordion-item web component
+ * AccordionItem component.
+ *
+ * @slot icon - Optional leading icon
+ * @slot body - Body of the accordion item
+ * @slot title - Title of the accordion item
+ * @slot subtitle - Optional subtitle of the accordion item
+ *
  */
-@customElement(`kd-accordion-item`)
+@customElement('kd-accordion-item')
 export class AccordionItem extends LitElement {
   static override styles = [stylesheet];
-
+  /** Specifies whether to show the accordion item starts opened. */
   @property({ type: Boolean }) startOpened = false;
 
+  /**
+   * The index of this item. Passed from the Accordion.
+   * @ignore
+   */
   @state() private _index = 1;
-  @state() private showNumber = false;
-  private opened = false;
 
-  override firstUpdated() {
+  /**
+   * Whether the number should be shown. Passed from the Accordion.
+   * @ignore
+   */
+  @state() private _showNumber = false;
+
+  /**
+   * Whether this item is the first item. Passed from the Accordion.
+   * @ignore
+   */
+  @state() private _first = false;
+
+  /**
+   * Whether this item is the last item. Passed from the Accordion.
+   * @ignore
+   */
+  @state() private _last = false;
+
+  /**
+   * Whether this item is opened.
+   * @ignore
+   */
+  @state() private _opened = false;
+
+  /**
+   * Whether this item displays a filled header. Passed from the Accordion.
+   * @ignore
+   */
+  @state() private _filledHeader = false;
+
+  /**
+   * Whether this item is compact. Passed from the Accordion.
+   * @ignore
+   */
+  @state() private _compact = false;
+
+  /**
+   * A generated unique id
+   * @ignore
+   */
+  @state() private _id = '';
+
+  override connectedCallback() {
+    super.connectedCallback();
     if (this.startOpened) {
-      this._toggleOpenState();
+      this.open();
     }
+    this._id = crypto.randomUUID();
   }
 
   setIndex(index: number) {
     this._index = index;
   }
+
+  setFirst() {
+    this._first = true;
+  }
+
+  setLast() {
+    this._last = true;
+  }
+
   setShowNumbers(value: boolean) {
-    this.showNumber = value;
+    this._showNumber = value;
+  }
+
+  setFilledHeader(value: boolean) {
+    this._filledHeader = value;
+  }
+
+  setCompact(value: boolean) {
+    this._compact = value;
   }
 
   open() {
-    if (!this.opened) this._toggleOpenState();
+    if (!this._opened) this._toggleOpenState();
   }
 
   close() {
-    if (this.opened) this._toggleOpenState();
+    if (this._opened) this._toggleOpenState();
   }
 
   private _handleClick(e: Event) {
@@ -52,29 +123,31 @@ export class AccordionItem extends LitElement {
   }
 
   private _toggleOpenState() {
-    if (this.opened) {
+    if (this._opened) {
       this.ariaExpanded = 'false';
-      this.opened = false;
+      this._opened = false;
     } else {
       this.ariaExpanded = 'true';
-      this.opened = true;
-      this.ariaExpanded;
-    }
-
-    const accordionItem = this.renderRoot.querySelector('.kd-accordion-item');
-    if (accordionItem) {
-      accordionItem.classList.toggle('opened');
+      this._opened = true;
     }
   }
 
+  /**
+   * Generates the number template
+   * @ignore
+   */
   get numberTemplate() {
-    if (this.showNumber) {
+    if (this._showNumber) {
       return html`<div class="number">${this._index}</div>`;
     } else {
       return '';
     }
   }
 
+  /**
+   * Generates the icon template
+   * @ignore
+   */
   get iconTemplate() {
     if (this.querySelector('[slot="icon"]')) {
       return html`<div class="icon"><slot name="icon"></slot></div>`;
@@ -83,6 +156,10 @@ export class AccordionItem extends LitElement {
     }
   }
 
+  /**
+   * Generates the subtitle template
+   * @ignore
+   */
   get subtitleTemplate() {
     if (this.querySelector('[slot="subtitle"]')) {
       return html`
@@ -95,42 +172,71 @@ export class AccordionItem extends LitElement {
     }
   }
 
+  /**
+   * Generates the item level expand/collapse template
+   * @ignore
+   */
+  get expandIconTemplate() {
+    if (this._opened)
+      return html`
+        <div class="expand-icon">
+          <kd-icon .icon="${subtractIcon}"></kd-icon>
+        </div>
+      `;
+    else {
+      return html`
+        <div class="expand-icon"><kd-icon .icon="${addIcon}"></kd-icon></div>
+      `;
+    }
+  }
+
   override render() {
     let classAdditions = '';
-    classAdditions += `kd-accordion-item`;
+    classAdditions += 'kd-accordion-item';
 
-    if (this._index == 1) {
-      classAdditions += ` first-item`;
+    if (this._first === true) {
+      classAdditions += ' first-item';
+    }
+    if (this._last === true) {
+      classAdditions += ' last-item';
+    }
+    if (this._opened === true) {
+      classAdditions += ' opened';
+    }
+    if (this._filledHeader === true) {
+      classAdditions += ' filled-header';
+    }
+    if (this._compact === true) {
+      classAdditions += ' compact';
     }
 
     return html`
-      <div
-        class="${classAdditions}"
-        aria-expanded="${ifDefined(
-          this.ariaExpanded === null
-            ? undefined
-            : this.ariaExpanded === 'true'
-            ? true
-            : false
-        )}"
-        aria-controls="kd-accordion-item-detail-${this._index}"
-        tabindex="${this._index}"
-        @click="${(e: Event) => this._handleClick(e)}"
-        @keypress="${(e: KeyboardEvent) => this._handleKeypress(e)}"
-      >
+      <div class="${classAdditions}">
         <div
-          id="kd-accordion-item-title-${this._index}"
           class="kd-accordion-item-title"
+          aria-controls="kd-accordion-item-detail-${this._index}"
+          tabindex="${this._index}"
+          @click="${(e: Event) => this._handleClick(e)}"
+          @keypress="${(e: KeyboardEvent) => this._handleKeypress(e)}"
+          id="${this._id}"
         >
           ${this.iconTemplate} ${this.numberTemplate}
           <div class="title">
             <div><slot name="title"></slot></div>
             ${this.subtitleTemplate}
           </div>
+          ${this.expandIconTemplate}
         </div>
 
         <div
           class="kd-accordion-item-body"
+          aria-expanded="${ifDefined(
+            this.ariaExpanded === null
+              ? undefined
+              : this.ariaExpanded === 'true'
+              ? true
+              : false
+          )}"
           id="kd-accordion-item-body-${this._index}"
           aria-labelledby="kd-accordion-item-title-${this._index}"
         >

@@ -7,16 +7,21 @@
 .kd-accordion-item {
   padding: 0px 0px;
   border-width: 0 0 1px 0;
-  border-color: var(--kd-color-brand-sage);
+  border-color: var(--kd-color-border-light);
   border-style: solid;
   display: block;
   background-color: var(--kd-color-background-ui-default);
   box-sizing: border-box;
+  overflow: hidden;
 
   &.first-item {
-    border-top: 1px;
-    border-color: var(--kd-color-brand-sage);
-    border-style: solid;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-width: 1px;
+  }
+  &.last-item {
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
   }
 
   .kd-accordion-item-title {
@@ -34,19 +39,13 @@
     padding: 24px 16px;
 
     &:hover {
-      background: var(--kd-color-background-accent-subtle);
+      background-color: var(--kd-color-background-accent-subtle);
+      outline: 0;
     }
-
-    &:focus {
+    &:focus,
+    &:focus-visible {
       border: 2px solid var(--kd-color-border-focus);
-    }
-
-    &:after {
-      position: absolute;
-      top: calc(50% - 16px);
-      right: 16px;
-      content: '+';
-      font-size: 32px;
+      outline: 0px;
     }
 
     .number,
@@ -62,6 +61,11 @@
       align-content: center;
       flex-direction: column;
     }
+
+    .number {
+      color: var(--kd-color-text-placeholder);
+    }
+
     .title {
       flex-grow: 1;
       flex-shrink: 1;
@@ -71,8 +75,26 @@
     }
   }
 
-  &.opened .kd-accordion-item-title:after {
-    content: '-';
+  &.filled-header {
+    &.first-item {
+      border-top-width: 0px;
+    }
+
+    .kd-accordion-item-title {
+      background-color: var(--kd-color-background-accent-subtle);
+      border-top: 1px solid var(--kd-color-border-light);
+
+      &:hover {
+        border: 1px solid var(--kd-color-border-primary);
+      }
+      &:focus {
+        border: 2px solid var(--kd-color-border-focus);
+      }
+    }
+  }
+
+  &.compact .kd-accordion-item-title {
+    padding: 16px;
   }
 
   & .kd-accordion-item-body {
@@ -86,6 +108,13 @@
 
   .icon {
     vertical-align: middle;
+  }
+
+  .expand-icon {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
   }
 
   .kd-accordion-item-subtitle {

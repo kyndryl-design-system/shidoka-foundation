@@ -122,8 +122,14 @@
       "declarations": [
         {
           "kind": "class",
-          "description": "",
+          "description": "Accordion component.",
           "name": "Accordion",
+          "slots": [
+            {
+              "description": "Holds Accordion Items (kd-accordion-item) that make up the accordion",
+              "name": "unnamed"
+            }
+          ],
           "members": [
             {
               "kind": "field",
@@ -132,6 +138,7 @@
                 "text": "boolean"
               },
               "default": "false",
+              "description": "Specifies whether to show numbers on the list items.",
               "attribute": "showNumbers"
             },
             {
@@ -141,25 +148,48 @@
                 "text": "number"
               },
               "default": "1",
+              "description": "Specifies the number to start at if the list has numbers.",
               "attribute": "startNumber"
             },
             {
               "kind": "field",
-              "name": "_childItems",
-              "type": {
-                "text": "AccordionItem[]"
-              },
-              "privacy": "private",
-              "default": "[]"
-            },
-            {
-              "kind": "field",
-              "name": "_allOpenState",
+              "name": "filledHeaders",
               "type": {
                 "text": "boolean"
               },
-              "privacy": "private",
-              "default": "false"
+              "default": "false",
+              "description": "Specifies whether to show the accordion items with filled headers.",
+              "attribute": "filledHeaders"
+            },
+            {
+              "kind": "field",
+              "name": "compact",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Display the accordion as compact or the default large size.",
+              "attribute": "compact"
+            },
+            {
+              "kind": "field",
+              "name": "expandLabel",
+              "type": {
+                "text": "string"
+              },
+              "default": "'Expand'",
+              "description": "The string that displays on the toggle to enpand all the accordion items.",
+              "attribute": "expandLabel"
+            },
+            {
+              "kind": "field",
+              "name": "collapseLabel",
+              "type": {
+                "text": "string"
+              },
+              "default": "'Collapse'",
+              "description": "The string that displays on the toggle to collapse all the accordion items.",
+              "attribute": "collapseLabel"
             },
             {
               "kind": "method",
@@ -187,15 +217,7 @@
             {
               "kind": "method",
               "name": "_toggleExpandAll",
-              "privacy": "private",
-              "parameters": [
-                {
-                  "name": "e",
-                  "type": {
-                    "text": "Event"
-                  }
-                }
-              ]
+              "privacy": "private"
             }
           ],
           "attributes": [
@@ -205,6 +227,7 @@
                 "text": "boolean"
               },
               "default": "false",
+              "description": "Specifies whether to show numbers on the list items.",
               "fieldName": "showNumbers"
             },
             {
@@ -213,13 +236,51 @@
                 "text": "number"
               },
               "default": "1",
+              "description": "Specifies the number to start at if the list has numbers.",
               "fieldName": "startNumber"
+            },
+            {
+              "name": "filledHeaders",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Specifies whether to show the accordion items with filled headers.",
+              "fieldName": "filledHeaders"
+            },
+            {
+              "name": "compact",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Display the accordion as compact or the default large size.",
+              "fieldName": "compact"
+            },
+            {
+              "name": "expandLabel",
+              "type": {
+                "text": "string"
+              },
+              "default": "'Expand'",
+              "description": "The string that displays on the toggle to enpand all the accordion items.",
+              "fieldName": "expandLabel"
+            },
+            {
+              "name": "collapseLabel",
+              "type": {
+                "text": "string"
+              },
+              "default": "'Collapse'",
+              "description": "The string that displays on the toggle to collapse all the accordion items.",
+              "fieldName": "collapseLabel"
             }
           ],
           "superclass": {
             "name": "LitElement",
             "package": "lit"
           },
+          "tagName": "kd-accordion",
           "customElement": true
         }
       ],
@@ -234,6 +295,7 @@
         },
         {
           "kind": "custom-element-definition",
+          "name": "kd-accordion",
           "declaration": {
             "name": "Accordion",
             "module": "src/components/accordion/accordion.ts"
@@ -247,8 +309,26 @@
       "declarations": [
         {
           "kind": "class",
-          "description": "kd-accordion-item web component",
+          "description": "AccordionItem component.",
           "name": "AccordionItem",
+          "slots": [
+            {
+              "description": "Optional leading icon",
+              "name": "icon"
+            },
+            {
+              "description": "Body of the accordion item",
+              "name": "body"
+            },
+            {
+              "description": "Title of the accordion item",
+              "name": "title"
+            },
+            {
+              "description": "Optional subtitle of the accordion item",
+              "name": "subtitle"
+            }
+          ],
           "members": [
             {
               "kind": "field",
@@ -257,34 +337,8 @@
                 "text": "boolean"
               },
               "default": "false",
+              "description": "Specifies whether to show the accordion item starts opened.",
               "attribute": "startOpened"
-            },
-            {
-              "kind": "field",
-              "name": "ariaExpanded",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "attribute": "ariaExpanded"
-            },
-            {
-              "kind": "field",
-              "name": "_index",
-              "type": {
-                "text": "number"
-              },
-              "privacy": "private",
-              "default": "1"
-            },
-            {
-              "kind": "field",
-              "name": "showNumber",
-              "type": {
-                "text": "boolean"
-              },
-              "privacy": "private",
-              "default": "false"
             },
             {
               "kind": "method",
@@ -300,7 +354,39 @@
             },
             {
               "kind": "method",
+              "name": "setFirst"
+            },
+            {
+              "kind": "method",
+              "name": "setLast"
+            },
+            {
+              "kind": "method",
               "name": "setShowNumbers",
+              "parameters": [
+                {
+                  "name": "value",
+                  "type": {
+                    "text": "boolean"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "setFilledHeader",
+              "parameters": [
+                {
+                  "name": "value",
+                  "type": {
+                    "text": "boolean"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "setCompact",
               "parameters": [
                 {
                   "name": "value",
@@ -348,18 +434,6 @@
               "kind": "method",
               "name": "_toggleOpenState",
               "privacy": "private"
-            },
-            {
-              "kind": "field",
-              "name": "numberTemplate"
-            },
-            {
-              "kind": "field",
-              "name": "iconTemplate"
-            },
-            {
-              "kind": "field",
-              "name": "subtitleTemplate"
             }
           ],
           "attributes": [
@@ -369,21 +443,15 @@
                 "text": "boolean"
               },
               "default": "false",
+              "description": "Specifies whether to show the accordion item starts opened.",
               "fieldName": "startOpened"
-            },
-            {
-              "name": "ariaExpanded",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "fieldName": "ariaExpanded"
             }
           ],
           "superclass": {
             "name": "LitElement",
             "package": "lit"
           },
+          "tagName": "kd-accordion-item",
           "customElement": true
         }
       ],
@@ -398,6 +466,7 @@
         },
         {
           "kind": "custom-element-definition",
+          "name": "kd-accordion-item",
           "declaration": {
             "name": "AccordionItem",
             "module": "src/components/accordion/accordionItem.ts"

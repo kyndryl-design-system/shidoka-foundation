@@ -5,24 +5,23 @@
 import { html } from 'lit';
 
 import './accordion';
+import './accordionItem';
 import '../icon';
 import checkmarkOutlineIcon from '@carbon/icons/es/checkmark--outline/16';
 
 export default {
-  title: 'Work in Progress/Accordion',
-  component: `kd-accordion`,
-  argTypes: {
-    showNumbers: {
-      control: { type: 'boolean' },
-    },
-    startNumber: {
-      control: { type: 'number' },
-    },
-  },
+  title: 'Components/Accordion',
+  component: 'kd-accordion',
+  subcomponents: { 'kd-accordion-item': 'kd-accordion-item' },
 };
+
 const args = {
+  filledHeaders: false,
+  compact: false,
   showNumbers: true,
   startNumber: '1',
+  expandLabel: 'Expand',
+  collapseLabel: 'Collapse',
 };
 
 export const Accordion = {
@@ -30,8 +29,12 @@ export const Accordion = {
   render: (args) => {
     return html`
       <kd-accordion
+        ?filledHeaders="${args.filledHeaders}"
+        ?compact="${args.compact}"
         ?showNumbers="${args.showNumbers}"
         startNumber="${args.startNumber}"
+        expandLabel="${args.expandLabel}"
+        collapseLabel="${args.collapseLabel}"
       >
         <kd-accordion-item startOpened>
           <span slot="title">Accordion Title 1</span>
@@ -61,13 +64,25 @@ export const Accordion = {
     `;
   },
 };
+
+Accordion.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/5TqtPa7KWfhJbQv6ELnbqf/Foundation?node-id=707%3A2396&mode=dev',
+  },
+};
+
 export const AccordionWithIcons = {
   args: args,
   render: (args) => {
     return html`
       <kd-accordion
+        ?filledHeaders="${args.filledHeaders}"
+        ?compact="${args.compact}"
         ?showNumbers="${args.showNumbers}"
         startNumber="${args.startNumber}"
+        expandLabel="${args.expandLabel}"
+        collapseLabel="${args.collapseLabel}"
       >
         <kd-accordion-item>
           <span slot="icon"

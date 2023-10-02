@@ -1,17 +1,25 @@
 /**
  * Copyright Kyndryl, Inc. 2023
  */
-
+@use '../../scss/global.scss';
 @use '../../scss/mixins/typography';
 
 .kd-accordion {
+  .accordion-item-container {
+    border-radius: 4px;
+
+    &.filled-headers {
+      border: 1px solid var(--kd-color-border-light);
+    }
+  }
+
   .toggle-container {
     text-align: right;
     padding: 8px 0;
     @include typography.type-body-02;
 
-    svg {
-      vertical-align: sub;
+    a:hover {
+      text-decoration: underline;
     }
   }
 }
