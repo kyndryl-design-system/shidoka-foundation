@@ -54,6 +54,11 @@
       align-content: center;
       flex-direction: column;
     }
+
+    .number {
+      color: var(--kd-color-text-placeholder);
+    }
+
     .title {
       flex-grow: 1;
       flex-shrink: 1;
