@@ -13,7 +13,7 @@ import stylesheet from './accordion.scss';
  * @slot unnamed - Holds Accordion Items (kd-accordion-item) that make up the accordion
  *
  */
-@customElement(`kd-accordion`)
+@customElement('kd-accordion')
 export class Accordion extends LitElement {
   /** Specifies whether to show numbers on the list items. */
   @property({ type: Boolean })
@@ -115,6 +115,8 @@ export class Accordion extends LitElement {
   }
 
   override render() {
+    let itemContainerClasses = '';
+    if (this.filledHeaders) itemContainerClasses += ' filled-headers';
     return html`
       <div class="kd-accordion">
         <div class="toggle-container">
@@ -122,7 +124,7 @@ export class Accordion extends LitElement {
             ${this._allOpenState ? this.collapseLabel : this.expandLabel}
           </a>
         </div>
-        <div class="accordion-item-container">
+        <div class="accordion-item-container${itemContainerClasses}">
           <slot @slotchange="${this._handleSlotChange}"></slot>
         </div>
       </div>

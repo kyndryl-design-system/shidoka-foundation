@@ -280,6 +280,7 @@
             "name": "LitElement",
             "package": "lit"
           },
+          "tagName": "kd-accordion",
           "customElement": true
         }
       ],
@@ -294,6 +295,7 @@
         },
         {
           "kind": "custom-element-definition",
+          "name": "kd-accordion",
           "declaration": {
             "name": "Accordion",
             "module": "src/components/accordion/accordion.ts"
@@ -432,22 +434,6 @@
               "kind": "method",
               "name": "_toggleOpenState",
               "privacy": "private"
-            },
-            {
-              "kind": "field",
-              "name": "numberTemplate"
-            },
-            {
-              "kind": "field",
-              "name": "iconTemplate"
-            },
-            {
-              "kind": "field",
-              "name": "subtitleTemplate"
-            },
-            {
-              "kind": "field",
-              "name": "expandIconTemplate"
             }
           ],
           "attributes": [
@@ -465,6 +451,7 @@
             "name": "LitElement",
             "package": "lit"
           },
+          "tagName": "kd-accordion-item",
           "customElement": true
         }
       ],
@@ -479,6 +466,7 @@
         },
         {
           "kind": "custom-element-definition",
+          "name": "kd-accordion-item",
           "declaration": {
             "name": "AccordionItem",
             "module": "src/components/accordion/accordionItem.ts"

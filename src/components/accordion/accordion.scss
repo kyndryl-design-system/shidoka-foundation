@@ -1,12 +1,16 @@
 /**
  * Copyright Kyndryl, Inc. 2023
  */
-
+@use '../../scss/global.scss';
 @use '../../scss/mixins/typography';
 
 .kd-accordion {
   .accordion-item-container {
     border-radius: 4px;
+
+    &.filled-headers {
+      border: 1px solid var(--kd-color-border-light);
+    }
   }
 
   .toggle-container {

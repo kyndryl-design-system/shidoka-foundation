@@ -18,7 +18,7 @@ import subtractIcon from '@carbon/icons/es/subtract/32';
  * @slot subtitle - Optional subtitle of the accordion item
  *
  */
-@customElement(`kd-accordion-item`)
+@customElement('kd-accordion-item')
 export class AccordionItem extends LitElement {
   static override styles = [stylesheet];
   /** Specifies whether to show the accordion item starts opened. */
@@ -132,6 +132,10 @@ export class AccordionItem extends LitElement {
     }
   }
 
+  /**
+   * Generates the number template
+   * @ignore
+   */
   get numberTemplate() {
     if (this._showNumber) {
       return html`<div class="number">${this._index}</div>`;
@@ -140,6 +144,10 @@ export class AccordionItem extends LitElement {
     }
   }
 
+  /**
+   * Generates the icon template
+   * @ignore
+   */
   get iconTemplate() {
     if (this.querySelector('[slot="icon"]')) {
       return html`<div class="icon"><slot name="icon"></slot></div>`;
@@ -148,6 +156,10 @@ export class AccordionItem extends LitElement {
     }
   }
 
+  /**
+   * Generates the subtitle template
+   * @ignore
+   */
   get subtitleTemplate() {
     if (this.querySelector('[slot="subtitle"]')) {
       return html`
@@ -160,6 +172,10 @@ export class AccordionItem extends LitElement {
     }
   }
 
+  /**
+   * Generates the item level expand/collapse template
+   * @ignore
+   */
   get expandIconTemplate() {
     if (this._opened)
       return html`
@@ -176,22 +192,22 @@ export class AccordionItem extends LitElement {
 
   override render() {
     let classAdditions = '';
-    classAdditions += `kd-accordion-item`;
+    classAdditions += 'kd-accordion-item';
 
     if (this._first === true) {
-      classAdditions += ` first-item`;
+      classAdditions += ' first-item';
     }
     if (this._last === true) {
-      classAdditions += ` last-item`;
+      classAdditions += ' last-item';
     }
     if (this._opened === true) {
-      classAdditions += ` opened`;
+      classAdditions += ' opened';
     }
     if (this._filledHeader === true) {
-      classAdditions += ` filled-header`;
+      classAdditions += ' filled-header';
     }
     if (this._compact === true) {
-      classAdditions += ` compact`;
+      classAdditions += ' compact';
     }
 
     return html`

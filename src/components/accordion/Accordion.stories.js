@@ -11,8 +11,8 @@ import checkmarkOutlineIcon from '@carbon/icons/es/checkmark--outline/16';
 
 export default {
   title: 'Components/Accordion',
-  component: `kd-accordion`,
-  subcomponents: `kd-accordion-item`,
+  component: 'kd-accordion',
+  subcomponents: { 'kd-accordion-item': 'kd-accordion-item' },
 };
 
 const args = {
