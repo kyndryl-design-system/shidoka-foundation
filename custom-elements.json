@@ -192,24 +192,6 @@
               "attribute": "collapseLabel"
             },
             {
-              "kind": "field",
-              "name": "_childItems",
-              "type": {
-                "text": "AccordionItem[]"
-              },
-              "privacy": "private",
-              "default": "[]"
-            },
-            {
-              "kind": "field",
-              "name": "_allOpenState",
-              "type": {
-                "text": "boolean"
-              },
-              "privacy": "private",
-              "default": "false"
-            },
-            {
               "kind": "method",
               "name": "_handleSlotChange",
               "privacy": "protected",
@@ -366,6 +348,15 @@
             },
             {
               "kind": "field",
+              "name": "_last",
+              "type": {
+                "text": "boolean"
+              },
+              "privacy": "private",
+              "default": "false"
+            },
+            {
+              "kind": "field",
               "name": "_opened",
               "type": {
                 "text": "boolean"
@@ -415,6 +406,10 @@
             {
               "kind": "method",
               "name": "setFirst"
+            },
+            {
+              "kind": "method",
+              "name": "setLast"
             },
             {
               "kind": "method",
