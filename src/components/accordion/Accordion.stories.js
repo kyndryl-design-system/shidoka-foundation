@@ -5,13 +5,14 @@
 import { html } from 'lit';
 
 import './accordion';
+import './accordionItem';
 import '../icon';
 import checkmarkOutlineIcon from '@carbon/icons/es/checkmark--outline/16';
 
 export default {
   title: 'Components/Accordion',
   component: `kd-accordion`,
-  subcomponent: `kd-accordion-item`,
+  subcomponents: `kd-accordion-item`,
 };
 
 const args = {

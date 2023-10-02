@@ -307,8 +307,26 @@
       "declarations": [
         {
           "kind": "class",
-          "description": "kd-accordion-item web component",
+          "description": "AccordionItem component.",
           "name": "AccordionItem",
+          "slots": [
+            {
+              "description": "Optional leading icon",
+              "name": "icon"
+            },
+            {
+              "description": "Body of the accordion item",
+              "name": "body"
+            },
+            {
+              "description": "Title of the accordion item",
+              "name": "title"
+            },
+            {
+              "description": "Optional subtitle of the accordion item",
+              "name": "subtitle"
+            }
+          ],
           "members": [
             {
               "kind": "field",
@@ -317,79 +335,8 @@
                 "text": "boolean"
               },
               "default": "false",
+              "description": "Specifies whether to show the accordion item starts opened.",
               "attribute": "startOpened"
-            },
-            {
-              "kind": "field",
-              "name": "_index",
-              "type": {
-                "text": "number"
-              },
-              "privacy": "private",
-              "default": "1"
-            },
-            {
-              "kind": "field",
-              "name": "_showNumber",
-              "type": {
-                "text": "boolean"
-              },
-              "privacy": "private",
-              "default": "false"
-            },
-            {
-              "kind": "field",
-              "name": "_first",
-              "type": {
-                "text": "boolean"
-              },
-              "privacy": "private",
-              "default": "false"
-            },
-            {
-              "kind": "field",
-              "name": "_last",
-              "type": {
-                "text": "boolean"
-              },
-              "privacy": "private",
-              "default": "false"
-            },
-            {
-              "kind": "field",
-              "name": "_opened",
-              "type": {
-                "text": "boolean"
-              },
-              "privacy": "private",
-              "default": "false"
-            },
-            {
-              "kind": "field",
-              "name": "_filledHeader",
-              "type": {
-                "text": "boolean"
-              },
-              "privacy": "private",
-              "default": "false"
-            },
-            {
-              "kind": "field",
-              "name": "_compact",
-              "type": {
-                "text": "boolean"
-              },
-              "privacy": "private",
-              "default": "false"
-            },
-            {
-              "kind": "field",
-              "name": "_id",
-              "type": {
-                "text": "string"
-              },
-              "privacy": "private",
-              "default": "''"
             },
             {
               "kind": "method",
@@ -510,6 +457,7 @@
                 "text": "boolean"
               },
               "default": "false",
+              "description": "Specifies whether to show the accordion item starts opened.",
               "fieldName": "startOpened"
             }
           ],

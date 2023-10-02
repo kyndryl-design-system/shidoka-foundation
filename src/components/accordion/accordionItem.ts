@@ -10,21 +10,66 @@ import addIcon from '@carbon/icons/es/add/32';
 import subtractIcon from '@carbon/icons/es/subtract/32';
 
 /**
- * kd-accordion-item web component
+ * AccordionItem component.
+ *
+ * @slot icon - Optional leading icon
+ * @slot body - Body of the accordion item
+ * @slot title - Title of the accordion item
+ * @slot subtitle - Optional subtitle of the accordion item
+ *
  */
 @customElement(`kd-accordion-item`)
 export class AccordionItem extends LitElement {
   static override styles = [stylesheet];
-
+  /** Specifies whether to show the accordion item starts opened. */
   @property({ type: Boolean }) startOpened = false;
 
+  /**
+   * The index of this item. Passed from the Accordion.
+   * @ignore
+   */
   @state() private _index = 1;
+
+  /**
+   * Whether the number should be shown. Passed from the Accordion.
+   * @ignore
+   */
   @state() private _showNumber = false;
+
+  /**
+   * Whether this item is the first item. Passed from the Accordion.
+   * @ignore
+   */
   @state() private _first = false;
+
+  /**
+   * Whether this item is the last item. Passed from the Accordion.
+   * @ignore
+   */
   @state() private _last = false;
+
+  /**
+   * Whether this item is opened.
+   * @ignore
+   */
   @state() private _opened = false;
+
+  /**
+   * Whether this item displays a filled header. Passed from the Accordion.
+   * @ignore
+   */
   @state() private _filledHeader = false;
+
+  /**
+   * Whether this item is compact. Passed from the Accordion.
+   * @ignore
+   */
   @state() private _compact = false;
+
+  /**
+   * A generated unique id
+   * @ignore
+   */
   @state() private _id = '';
 
   override connectedCallback() {
