@@ -24,12 +24,14 @@ export class AccordionItem extends LitElement {
   @state() private _opened = false;
   @state() private _filledHeader = false;
   @state() private _compact = false;
+  @state() private _id = '';
 
   override connectedCallback() {
     super.connectedCallback();
     if (this.startOpened) {
       this.open();
     }
+    this._id = crypto.randomUUID();
   }
 
   setIndex(index: number) {
@@ -140,23 +142,14 @@ export class AccordionItem extends LitElement {
     }
 
     return html`
-      <div
-        class="${classAdditions}"
-        aria-expanded="${ifDefined(
-          this.ariaExpanded === null
-            ? undefined
-            : this.ariaExpanded === 'true'
-            ? true
-            : false
-        )}"
-        aria-controls="kd-accordion-item-detail-${this._index}"
-        tabindex="${this._index}"
-        @click="${(e: Event) => this._handleClick(e)}"
-        @keypress="${(e: KeyboardEvent) => this._handleKeypress(e)}"
-      >
+      <div class="${classAdditions}">
         <div
-          id="kd-accordion-item-title-${this._index}"
           class="kd-accordion-item-title"
+          aria-controls="kd-accordion-item-detail-${this._index}"
+          tabindex="${this._index}"
+          @click="${(e: Event) => this._handleClick(e)}"
+          @keypress="${(e: KeyboardEvent) => this._handleKeypress(e)}"
+          id="${this._id}"
         >
           ${this.iconTemplate} ${this.numberTemplate}
           <div class="title">
@@ -168,6 +161,13 @@ export class AccordionItem extends LitElement {
 
         <div
           class="kd-accordion-item-body"
+          aria-expanded="${ifDefined(
+            this.ariaExpanded === null
+              ? undefined
+              : this.ariaExpanded === 'true'
+              ? true
+              : false
+          )}"
           id="kd-accordion-item-body-${this._index}"
           aria-labelledby="kd-accordion-item-title-${this._index}"
         >
