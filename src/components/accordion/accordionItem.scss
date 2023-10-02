@@ -20,6 +20,10 @@
     border-top-right-radius: 4px;
     border-top-left-radius: 4px;
   }
+  &.first-item {
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
 
   .kd-accordion-item-title {
     display: flex;
@@ -73,17 +77,27 @@
   }
 
   &.filled-header {
-    border: 1px solid var(--kd-color-border-light);
-
-    &:hover {
-      border-color: var(--kd-color-border-primary);
+    &.first-item {
+      .kd-accordion-item-title {
+        border-top-width: 1px;
+      }
     }
-    &:focus {
-      border: 2px solid var(--kd-color-border-focus);
-    }
-
     .kd-accordion-item-title {
       background-color: var(--kd-color-background-accent-subtle);
+      border: solid var(--kd-color-border-light);
+      border-width: 0px 1px 1px 1px;
+
+      &:hover {
+        border-color: var(--kd-color-border-primary);
+      }
+      &:focus {
+        border: 2px solid var(--kd-color-border-focus);
+      }
+    }
+
+    & .kd-accordion-item-body {
+      border: solid var(--kd-color-border-light);
+      border-width: 0px 1px;
     }
   }
 
