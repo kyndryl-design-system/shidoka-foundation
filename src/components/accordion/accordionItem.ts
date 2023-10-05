@@ -173,7 +173,7 @@ export class AccordionItem extends LitElement {
   }
 
   override render() {
-    const classes = classMap({
+    const classes: any = classMap({
       'kd-accordion-item': true,
       opened: this._opened,
       'filled-header': this._filledHeader,
