@@ -3,8 +3,12 @@
  */
 
 import { html, LitElement } from 'lit';
-import { property, state, customElement } from 'lit/decorators.js';
-import { AccordionItem } from './accordionItem';
+import {
+  property,
+  state,
+  customElement,
+  queryAssignedElements,
+} from 'lit/decorators.js';
 import stylesheet from './accordion.scss';
 
 /**
@@ -15,6 +19,8 @@ import stylesheet from './accordion.scss';
  */
 @customElement('kd-accordion')
 export class Accordion extends LitElement {
+  static override styles = [stylesheet];
+
   /** Specifies whether to show numbers on the list items. */
   @property({ type: Boolean })
   showNumbers = false;
@@ -31,19 +37,13 @@ export class Accordion extends LitElement {
   @property({ type: Boolean })
   compact = false;
 
-  /** The string that displays on the toggle to enpand all the accordion items. */
+  /** The string that displays on the toggle to expand all the accordion items. */
   @property({ type: String })
-  expandLabel = 'Expand';
+  expandLabel = 'Expand all items';
 
   /** The string that displays on the toggle to collapse all the accordion items. */
   @property({ type: String })
-  collapseLabel = 'Collapse';
-
-  /**
-   * The children accordion items
-   * @ignore
-   */
-  @state() private _childItems: AccordionItem[] = [];
+  collapseLabel = 'Collapse all items';
 
   /**
    * The state of the toggle controling the "expand all" functionality
@@ -51,56 +51,45 @@ export class Accordion extends LitElement {
    */
   @state() private _allOpenState = false;
 
-  static override styles = [stylesheet];
+  /** Slotted children kd-accordion-item
+   * @internal
+   */
+  @queryAssignedElements({ selector: 'kd-accordion-item' })
+  _accordionItems!: Array<any>;
 
-  protected _handleSlotChange(event: Event) {
-    const slottedNodes = (event.target as HTMLSlotElement).assignedNodes({
-      flatten: true,
-    });
-
-    this._childItems = slottedNodes.filter(
-      (node) => node instanceof AccordionItem
-    ) as AccordionItem[];
-    this._childItems.map((item, index) => {
-      if (index == 0) {
-        (item as AccordionItem).setFirst();
-      }
-      (item as AccordionItem).setFilledHeader(this.filledHeaders);
-      (item as AccordionItem).setCompact(this.compact);
-      (item as AccordionItem).setIndex(this.startNumber + index);
-      (item as AccordionItem).setShowNumbers(this.showNumbers);
-      if (index == this._childItems.length - 1) {
-        (item as AccordionItem).setLast();
-      }
-      return item;
-    });
+  protected _handleSlotChange() {
+    this._updateChildren();
   }
 
-  override willUpdate() {
-    this._childItems.map((item, index) => {
-      if (index == 0) {
-        (item as AccordionItem).setFirst();
-      }
-      (item as AccordionItem).setFilledHeader(this.filledHeaders);
-      (item as AccordionItem).setCompact(this.compact);
-      (item as AccordionItem).setIndex(this.startNumber + index);
-      (item as AccordionItem).setShowNumbers(this.showNumbers);
-      if (index == this._childItems.length - 1) {
-        (item as AccordionItem).setLast();
-      }
-      return item;
+  override willUpdate(changedProps: any) {
+    if (
+      changedProps.has('filledHeaders') ||
+      changedProps.has('compact') ||
+      changedProps.has('startNumber') ||
+      changedProps.has('showNumbers')
+    ) {
+      this._updateChildren();
+    }
+  }
+
+  protected _updateChildren() {
+    this._accordionItems.forEach((item, index) => {
+      item.setFilledHeader(this.filledHeaders);
+      item.setCompact(this.compact);
+      item.setIndex(this.startNumber + index);
+      item.setShowNumbers(this.showNumbers);
     });
   }
 
   protected _openAllItems() {
-    this._childItems.map((item) => {
-      (item as AccordionItem).open();
+    this._accordionItems.map((item) => {
+      item.open();
     });
   }
 
   protected _closeAllItems() {
-    this._childItems.map((item) => {
-      (item as AccordionItem).close();
+    this._accordionItems.map((item) => {
+      item.close();
     });
   }
 
@@ -120,10 +109,11 @@ export class Accordion extends LitElement {
     return html`
       <div class="kd-accordion">
         <div class="toggle-container">
-          <a @click="${this._toggleExpandAll}">
+          <a href="javascript:void(0)" @click="${this._toggleExpandAll}">
             ${this._allOpenState ? this.collapseLabel : this.expandLabel}
           </a>
         </div>
+
         <div class="accordion-item-container${itemContainerClasses}">
           <slot @slotchange="${this._handleSlotChange}"></slot>
         </div>

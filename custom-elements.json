@@ -38,6 +38,14 @@
             "name": "Accordion",
             "module": "./components/accordion"
           }
+        },
+        {
+          "kind": "js",
+          "name": "AccordionItem",
+          "declaration": {
+            "name": "AccordionItem",
+            "module": "./components/accordion"
+          }
         }
       ]
     },
@@ -86,7 +94,7 @@
               "description": " imported enums object"
             }
           ],
-          "description": "Convert an object to an array of only its values.\nUsed when importing enums in component stories for populating argType dropdowns."
+          "description": "Convert an object to an array of only its values.\r\nUsed when importing enums in component stories for populating argType dropdowns."
         }
       ],
       "exports": [
@@ -177,8 +185,8 @@
               "type": {
                 "text": "string"
               },
-              "default": "'Expand'",
-              "description": "The string that displays on the toggle to enpand all the accordion items.",
+              "default": "'Expand all items'",
+              "description": "The string that displays on the toggle to expand all the accordion items.",
               "attribute": "expandLabel"
             },
             {
@@ -187,22 +195,19 @@
               "type": {
                 "text": "string"
               },
-              "default": "'Collapse'",
+              "default": "'Collapse all items'",
               "description": "The string that displays on the toggle to collapse all the accordion items.",
               "attribute": "collapseLabel"
             },
             {
               "kind": "method",
               "name": "_handleSlotChange",
-              "privacy": "protected",
-              "parameters": [
-                {
-                  "name": "event",
-                  "type": {
-                    "text": "Event"
-                  }
-                }
-              ]
+              "privacy": "protected"
+            },
+            {
+              "kind": "method",
+              "name": "_updateChildren",
+              "privacy": "protected"
             },
             {
               "kind": "method",
@@ -262,8 +267,8 @@
               "type": {
                 "text": "string"
               },
-              "default": "'Expand'",
-              "description": "The string that displays on the toggle to enpand all the accordion items.",
+              "default": "'Expand all items'",
+              "description": "The string that displays on the toggle to expand all the accordion items.",
               "fieldName": "expandLabel"
             },
             {
@@ -271,7 +276,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "'Collapse'",
+              "default": "'Collapse all items'",
               "description": "The string that displays on the toggle to collapse all the accordion items.",
               "fieldName": "collapseLabel"
             }
@@ -351,14 +356,6 @@
                   }
                 }
               ]
-            },
-            {
-              "kind": "method",
-              "name": "setFirst"
-            },
-            {
-              "kind": "method",
-              "name": "setLast"
             },
             {
               "kind": "method",
@@ -485,6 +482,14 @@
           "declaration": {
             "name": "Accordion",
             "module": "./accordion"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "AccordionItem",
+          "declaration": {
+            "name": "AccordionItem",
+            "module": "./accordionItem"
           }
         }
       ]

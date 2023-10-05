@@ -7,7 +7,7 @@ import { html } from 'lit';
 import './accordion';
 import './accordionItem';
 import '../icon';
-import checkmarkOutlineIcon from '@carbon/icons/es/checkmark--outline/16';
+import checkmarkOutlineIcon from '@carbon/icons/es/checkmark--outline/32';
 
 export default {
   title: 'Components/Accordion',
@@ -18,10 +18,10 @@ export default {
 const args = {
   filledHeaders: false,
   compact: false,
-  showNumbers: true,
-  startNumber: '1',
-  expandLabel: 'Expand',
-  collapseLabel: 'Collapse',
+  showNumbers: false,
+  startNumber: 1,
+  expandLabel: 'Expand all items',
+  collapseLabel: 'Collapse all items',
 };
 
 export const Accordion = {
@@ -85,9 +85,7 @@ export const AccordionWithIcons = {
         collapseLabel="${args.collapseLabel}"
       >
         <kd-accordion-item>
-          <span slot="icon"
-            ><kd-icon .icon=${checkmarkOutlineIcon}></kd-icon
-          ></span>
+          <kd-icon slot="icon" .icon=${checkmarkOutlineIcon}></kd-icon>
           <span slot="title">Accordion Title 1</span>
           <span slot="subtitle">Accordion subtitle 1</span>
           <div slot="body">
@@ -95,10 +93,9 @@ export const AccordionWithIcons = {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </div>
         </kd-accordion-item>
+
         <kd-accordion-item>
-          <span slot="icon"
-            ><kd-icon .icon=${checkmarkOutlineIcon}></kd-icon
-          ></span>
+          <kd-icon slot="icon" .icon=${checkmarkOutlineIcon}></kd-icon>
           <span slot="title">Accordion Title 2</span>
           <span slot="subtitle">Accordion subtitle 2</span>
           <div slot="body">
@@ -106,10 +103,9 @@ export const AccordionWithIcons = {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </div>
         </kd-accordion-item>
+
         <kd-accordion-item>
-          <span slot="icon"
-            ><kd-icon .icon=${checkmarkOutlineIcon}></kd-icon
-          ></span>
+          <kd-icon slot="icon" .icon=${checkmarkOutlineIcon}></kd-icon>
           <span slot="title">Accordion Title 3</span>
           <span slot="subtitle">Accordion subtitle 3</span>
           <div slot="body">
