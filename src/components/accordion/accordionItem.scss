@@ -91,6 +91,10 @@
     display: none;
   }
 
+  &.opened.filled-header .kd-accordion-item-title {
+    border-radius: 0;
+  }
+
   &.opened .kd-accordion-item-body {
     display: block;
   }
