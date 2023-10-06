@@ -1619,6 +1619,19 @@ export const Text = {
           </tr>
 
           <tr>
+            <td>--kd-color-text-destructive</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-text-destructive'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-text-destructive)"
+            ></td>
+          </tr>
+
+          <tr>
             <td>--kd-color-text-disabled</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
