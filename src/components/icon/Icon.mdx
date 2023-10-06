@@ -1,9 +1,17 @@
-import { Meta, IconGallery, IconItem } from '@storybook/blocks';
-import { stringToReactHtml } from '../common/helpers/helpers.ts';
+import {
+  Meta,
+  Story,
+  Canvas,
+  Controls,
+  IconGallery,
+  IconItem,
+} from '@storybook/blocks';
+import * as IconStories from './Icon.stories.js';
+import { stringToReactHtml } from '../../common/helpers/helpers.ts';
 
-import logoutIcon from '../assets/svg/logout.svg';
+import logoutIcon from '../../assets/svg/logout.svg';
 
-<Meta title="Guidelines/Icons" />
+<Meta of={IconStories} />
 
 # Icons
 
@@ -28,12 +36,18 @@ Use the `<kd-icon>` component to make using [vanilla Carbon Icons](https://githu
 
 ```js
 import '@kyndryl-design-system/shidoka-foundation/components/icon';
-import overflowIcon from '@carbon/icons/es/overflow-menu--vertical/24';
+import userAvatarIcon from '@carbon/icons/es/user--avatar/24';
 ```
 
 ```html
-<kd-icon .icon="${overflowIcon}"></kd-icon>
+<kd-icon .icon="${userAvatarIcon}"></kd-icon>
 ```
+
+<Canvas>
+  <Story of={IconStories.Icon} />
+</Canvas>
+
+<Controls of={IconStories.Icon} />
 
 ### Gallery
 

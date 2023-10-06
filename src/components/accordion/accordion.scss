@@ -4,12 +4,36 @@
 @use '../../scss/global.scss';
 @use '../../scss/mixins/typography';
 
+:host {
+  display: block;
+}
+
 .kd-accordion {
   .accordion-item-container {
-    border-radius: 4px;
+    border-top: 1px solid var(--kd-color-border-light);
+    border-bottom: 1px solid var(--kd-color-border-light);
+
+    ::slotted(kd-accordion-item) {
+      border-top: 1px solid var(--kd-color-border-light);
+    }
+
+    ::slotted(kd-accordion-item:first-child) {
+      border-top: none;
+    }
 
     &.filled-headers {
       border: 1px solid var(--kd-color-border-light);
+      border-radius: 4px;
+
+      ::slotted(kd-accordion-item:first-child) {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+      }
+
+      ::slotted(kd-accordion-item:last-child) {
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+      }
     }
   }
 
@@ -18,8 +42,19 @@
     padding: 8px 0;
     @include typography.type-body-02;
 
-    a:hover {
-      text-decoration: underline;
+    a {
+      color: var(--kd-color-text-primary);
+      text-decoration: none;
+      outline: 2px solid transparent;
+      transition: outline-color 150ms ease-out;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &:focus {
+        outline-color: var(--kd-color-border-focus);
+      }
     }
   }
 }
