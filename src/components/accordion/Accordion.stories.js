@@ -7,7 +7,9 @@ import { html } from 'lit';
 import './accordion';
 import './accordionItem';
 import '../icon';
-import checkmarkOutlineIcon from '@carbon/icons/es/checkmark--outline/32';
+import circleDashIcon from '@carbon/icons/es/circle-dash/24';
+import checkmarkOutlineIcon from '@carbon/icons/es/checkmark--outline/24';
+import errorFilledIcon from '@carbon/icons/es/error--filled/24';
 
 export default {
   title: 'Components/Accordion',
@@ -36,7 +38,7 @@ export const Accordion = {
         expandLabel="${args.expandLabel}"
         collapseLabel="${args.collapseLabel}"
       >
-        <kd-accordion-item startOpened>
+        <kd-accordion-item opened>
           <span slot="title">Accordion Title 1</span>
           <span slot="subtitle">Accordion subtitle 1</span>
           <div slot="body">
@@ -44,6 +46,7 @@ export const Accordion = {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </div>
         </kd-accordion-item>
+
         <kd-accordion-item>
           <span slot="title">Accordion Title 2</span>
           <span slot="subtitle">Accordion subtitle 2</span>
@@ -52,6 +55,7 @@ export const Accordion = {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </div>
         </kd-accordion-item>
+
         <kd-accordion-item>
           <span slot="title">Accordion Title 3</span>
           <span slot="subtitle">Accordion subtitle 3</span>
@@ -85,7 +89,11 @@ export const AccordionWithIcons = {
         collapseLabel="${args.collapseLabel}"
       >
         <kd-accordion-item>
-          <kd-icon slot="icon" .icon=${checkmarkOutlineIcon}></kd-icon>
+          <kd-icon
+            slot="icon"
+            .icon=${circleDashIcon}
+            fill="var(--kd-color-text-placeholder)"
+          ></kd-icon>
           <span slot="title">Accordion Title 1</span>
           <span slot="subtitle">Accordion subtitle 1</span>
           <div slot="body">
@@ -95,7 +103,11 @@ export const AccordionWithIcons = {
         </kd-accordion-item>
 
         <kd-accordion-item>
-          <kd-icon slot="icon" .icon=${checkmarkOutlineIcon}></kd-icon>
+          <kd-icon
+            slot="icon"
+            .icon=${checkmarkOutlineIcon}
+            fill="var(--kd-color-text-success)"
+          ></kd-icon>
           <span slot="title">Accordion Title 2</span>
           <span slot="subtitle">Accordion subtitle 2</span>
           <div slot="body">
@@ -105,7 +117,11 @@ export const AccordionWithIcons = {
         </kd-accordion-item>
 
         <kd-accordion-item>
-          <kd-icon slot="icon" .icon=${checkmarkOutlineIcon}></kd-icon>
+          <kd-icon
+            slot="icon"
+            .icon=${errorFilledIcon}
+            fill="var(--kd-color-text-destructive)"
+          ></kd-icon>
           <span slot="title">Accordion Title 3</span>
           <span slot="subtitle">Accordion subtitle 3</span>
           <div slot="body">
