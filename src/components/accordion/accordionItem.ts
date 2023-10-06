@@ -23,8 +23,8 @@ import subtractIcon from '@carbon/icons/es/subtract/32';
 export class AccordionItem extends LitElement {
   static override styles = [stylesheet];
 
-  /** Specifies whether to show the accordion item starts opened. */
-  @property({ type: Boolean }) startOpened = false;
+  /** Accordion item opened state. */
+  @property({ type: Boolean }) opened = false;
 
   /**
    * The index of this item. Passed from the Accordion.
@@ -37,12 +37,6 @@ export class AccordionItem extends LitElement {
    * @ignore
    */
   @state() private _showNumber = false;
-
-  /**
-   * Whether this item is opened.
-   * @ignore
-   */
-  @state() private _opened = false;
 
   /**
    * Whether this item displays a filled header. Passed from the Accordion.
@@ -60,15 +54,7 @@ export class AccordionItem extends LitElement {
    * A generated unique id
    * @ignore
    */
-  @state() private _id = '';
-
-  override connectedCallback() {
-    super.connectedCallback();
-    if (this.startOpened) {
-      this.open();
-    }
-    this._id = crypto.randomUUID();
-  }
+  @state() private _id = crypto.randomUUID();
 
   setIndex(index: number) {
     this._index = index;
@@ -87,11 +73,11 @@ export class AccordionItem extends LitElement {
   }
 
   open() {
-    if (!this._opened) this._toggleOpenState();
+    if (!this.opened) this._toggleOpenState();
   }
 
   close() {
-    if (this._opened) this._toggleOpenState();
+    if (this.opened) this._toggleOpenState();
   }
 
   private _handleClick(e: Event) {
@@ -105,12 +91,12 @@ export class AccordionItem extends LitElement {
   }
 
   private _toggleOpenState() {
-    if (this._opened) {
+    if (this.opened) {
       this.ariaExpanded = 'false';
-      this._opened = false;
+      this.opened = false;
     } else {
       this.ariaExpanded = 'true';
-      this._opened = true;
+      this.opened = true;
     }
   }
 
@@ -159,7 +145,7 @@ export class AccordionItem extends LitElement {
    * @ignore
    */
   get expandIconTemplate() {
-    if (this._opened)
+    if (this.opened)
       return html`
         <div class="expand-icon">
           <kd-icon .icon="${subtractIcon}"></kd-icon>
@@ -175,7 +161,7 @@ export class AccordionItem extends LitElement {
   override render() {
     const classes: any = classMap({
       'kd-accordion-item': true,
-      opened: this._opened,
+      opened: this.opened,
       'filled-header': this._filledHeader,
       compact: this._compact,
     });

@@ -46,7 +46,7 @@ export class Accordion extends LitElement {
   collapseLabel = 'Collapse all items';
 
   /**
-   * The state of the toggle controling the "expand all" functionality
+   * The state of the toggle controlling the "expand all" functionality
    * @ignore
    */
   @state() private _allOpenState = false;

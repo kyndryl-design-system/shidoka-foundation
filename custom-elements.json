@@ -337,13 +337,13 @@
           "members": [
             {
               "kind": "field",
-              "name": "startOpened",
+              "name": "opened",
               "type": {
                 "text": "boolean"
               },
               "default": "false",
-              "description": "Specifies whether to show the accordion item starts opened.",
-              "attribute": "startOpened"
+              "description": "Accordion item opened state.",
+              "attribute": "opened"
             },
             {
               "kind": "method",
@@ -435,13 +435,13 @@
           ],
           "attributes": [
             {
-              "name": "startOpened",
+              "name": "opened",
               "type": {
                 "text": "boolean"
               },
               "default": "false",
-              "description": "Specifies whether to show the accordion item starts opened.",
-              "fieldName": "startOpened"
+              "description": "Accordion item opened state.",
+              "fieldName": "opened"
             }
           ],
           "superclass": {
