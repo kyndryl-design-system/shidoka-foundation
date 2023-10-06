@@ -1,3 +1,12 @@
+# [1.0.0-beta.31](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.0.0-beta.30...v1.0.0-beta.31) (2023-10-06)
+
+
+### Bug Fixes
+
+* **accordion-item:** consolidate opened props ([258ae4a](https://github.com/kyndryl-design-system/shidoka-foundation/commit/258ae4a550700fa3b30a820b65de8ff855cb8838))
+* **accordion:** fixes, cleanup, and polish ([a4911b8](https://github.com/kyndryl-design-system/shidoka-foundation/commit/a4911b84aae81749ec45d5b1daecca5587e3d6d3))
+* **accordion:** last item border radius ([3ffacce](https://github.com/kyndryl-design-system/shidoka-foundation/commit/3ffacce59758ec10a95b4b3bf115f6a916ad5a69))
+
 # [1.0.0-beta.30](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.0.0-beta.29...v1.0.0-beta.30) (2023-10-02)
 
 
