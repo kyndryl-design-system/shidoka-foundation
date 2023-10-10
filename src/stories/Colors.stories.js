@@ -28,6 +28,11 @@ export default {
 export const Palette = {
   render: () => {
     return html`
+      <p>
+        <strong>Note:</strong> Do <strong><em>not</em></strong> use Palette
+        tokens directly. Only use contextual tokens in designs and code.
+      </p>
+
       <table>
         <thead>
           <tr>
