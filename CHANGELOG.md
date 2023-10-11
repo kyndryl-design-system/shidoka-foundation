@@ -1,3 +1,11 @@
+# [1.0.0-beta.32](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.0.0-beta.31...v1.0.0-beta.32) (2023-10-11)
+
+
+### Bug Fixes
+
+* add kyndryl logo and side nav tokens ([63a9abe](https://github.com/kyndryl-design-system/shidoka-foundation/commit/63a9abe1a83ad27f736b739a4ac1c51432fb8ef0))
+* side nav token value ([e0a9358](https://github.com/kyndryl-design-system/shidoka-foundation/commit/e0a935832eaa489aa8fcda126404d7e01a149802))
+
 # [1.0.0-beta.31](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.0.0-beta.30...v1.0.0-beta.31) (2023-10-06)
 
 
