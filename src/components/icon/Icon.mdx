@@ -1,15 +1,11 @@
-import {
-  Meta,
-  Story,
-  Canvas,
-  Controls,
-  IconGallery,
-  IconItem,
-} from '@storybook/blocks';
+import { Meta, Story, Canvas, Controls } from '@storybook/blocks';
 import * as IconStories from './Icon.stories.js';
 import { stringToReactHtml } from '../../common/helpers/helpers.ts';
 
 import logoutIcon from '../../assets/svg/logout.svg';
+import kyndrylIcon from '../../assets/svg/kyndryl-logo.svg';
+import bridgeSmallIcon from '../../assets/svg/bridge-logo-small.svg';
+import bridgeLargeIcon from '../../assets/svg/bridge-logo-large.svg';
 
 <Meta of={IconStories} />
 
@@ -79,10 +75,41 @@ The method for placing them in your app at this point will vary based on the fra
 
 ### Gallery
 
-<br />
-
-<IconGallery>
-  <IconItem name="logout">
-    <span dangerouslySetInnerHTML={stringToReactHtml(logoutIcon)}></span>
-  </IconItem>
-</IconGallery>
+<table>
+  <thead>
+    <tr>
+      <th>Icon</th>
+      <th>filename</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <span dangerouslySetInnerHTML={stringToReactHtml(logoutIcon)}></span>
+      </td>
+      <td>logout.svg</td>
+    </tr>
+    <tr>
+      <td>
+        <span dangerouslySetInnerHTML={stringToReactHtml(kyndrylIcon)}></span>
+      </td>
+      <td>kyndryl-logo.svg</td>
+    </tr>
+    <tr>
+      <td>
+        <span
+          dangerouslySetInnerHTML={stringToReactHtml(bridgeSmallIcon)}
+        ></span>
+      </td>
+      <td>bridge-logo-small.svg</td>
+    </tr>
+    <tr>
+      <td>
+        <span
+          dangerouslySetInnerHTML={stringToReactHtml(bridgeLargeIcon)}
+        ></span>
+      </td>
+      <td>bridge-logo-large.svg</td>
+    </tr>
+  </tbody>
+</table>
