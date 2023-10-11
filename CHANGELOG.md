@@ -1,3 +1,10 @@
+# [1.0.0-beta.33](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.0.0-beta.32...v1.0.0-beta.33) (2023-10-11)
+
+
+### Bug Fixes
+
+* rename side nav tokens ([3b50514](https://github.com/kyndryl-design-system/shidoka-foundation/commit/3b505148bb9f33c0bcf90b8c3c13363a7b33906d))
+
 # [1.0.0-beta.32](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.0.0-beta.31...v1.0.0-beta.32) (2023-10-11)
 
 
