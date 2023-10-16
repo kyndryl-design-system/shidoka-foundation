@@ -5,7 +5,6 @@
 import { html, LitElement } from 'lit';
 import { state, property, customElement } from 'lit/decorators.js';
 import { classMap } from 'lit-html/directives/class-map.js';
-import { ifDefined } from 'lit/directives/if-defined.js';
 import stylesheet from './accordionItem.scss';
 import addIcon from '@carbon/icons/es/add/32';
 import subtractIcon from '@carbon/icons/es/subtract/32';
