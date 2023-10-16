@@ -92,10 +92,8 @@ export class AccordionItem extends LitElement {
 
   private _toggleOpenState() {
     if (this.opened) {
-      this.ariaExpanded = 'false';
       this.opened = false;
     } else {
-      this.ariaExpanded = 'true';
       this.opened = true;
     }
   }
@@ -170,7 +168,8 @@ export class AccordionItem extends LitElement {
       <div class="${classes}">
         <div
           class="kd-accordion-item-title"
-          aria-controls="kd-accordion-item-detail-${this._index}-${this._id}"
+          aria-controls="kd-accordion-item-body-${this._index}-${this._id}"
+          aria-expanded=${this.opened}
           tabindex="${this._index}"
           role="button"
           @click="${(e: Event) => this._handleClick(e)}"
@@ -190,13 +189,6 @@ export class AccordionItem extends LitElement {
 
         <div
           class="kd-accordion-item-body"
-          aria-expanded="${ifDefined(
-            this.ariaExpanded === null
-              ? undefined
-              : this.ariaExpanded === 'true'
-              ? true
-              : false
-          )}"
           id="kd-accordion-item-body-${this._index}-${this._id}"
           aria-labelledby="kd-accordion-item-title-${this._index}-${this._id}"
         >
