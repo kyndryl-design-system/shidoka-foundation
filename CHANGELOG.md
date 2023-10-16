@@ -1,3 +1,10 @@
+# [1.0.0-beta.34](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.0.0-beta.33...v1.0.0-beta.34) (2023-10-16)
+
+
+### Bug Fixes
+
+* **accordion:** fix aria-expanded placement ([e6326c6](https://github.com/kyndryl-design-system/shidoka-foundation/commit/e6326c61ede312e160c6c77f5a4f91c4e1009a07))
+
 # [1.0.0-beta.33](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.0.0-beta.32...v1.0.0-beta.33) (2023-10-11)
 
 
