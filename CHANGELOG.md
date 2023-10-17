@@ -1,3 +1,10 @@
+# [1.0.0-beta.35](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.0.0-beta.34...v1.0.0-beta.35) (2023-10-17)
+
+
+### Bug Fixes
+
+* add switcher icon ([67786a4](https://github.com/kyndryl-design-system/shidoka-foundation/commit/67786a4b1c4c55b2acc960773f51bbfffd441e87))
+
 # [1.0.0-beta.34](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.0.0-beta.33...v1.0.0-beta.34) (2023-10-16)
 
 
