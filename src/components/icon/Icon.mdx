@@ -6,6 +6,7 @@ import logoutIcon from '../../assets/svg/logout.svg';
 import kyndrylIcon from '../../assets/svg/kyndryl-logo.svg';
 import bridgeSmallIcon from '../../assets/svg/bridge-logo-small.svg';
 import bridgeLargeIcon from '../../assets/svg/bridge-logo-large.svg';
+import switcherIcon from '../../assets/svg/switcher.svg';
 
 <Meta of={IconStories} />
 
@@ -66,7 +67,7 @@ It is recommended to use an SVG loader to inject the SVG as inline HTML into you
 SVG files can then be imported like this:
 
 ```js
-import iconName from '@kyndryl-design-system/shidoka-foundation/assets/svg/<filename>.svg';
+import iconName from '@kyndryl-design-system/shidoka-foundation/assets/svg/<filename>';
 ```
 
 The method for placing them in your app at this point will vary based on the framework/loader.
@@ -88,6 +89,12 @@ The method for placing them in your app at this point will vary based on the fra
         <span dangerouslySetInnerHTML={stringToReactHtml(logoutIcon)}></span>
       </td>
       <td>logout.svg</td>
+    </tr>
+    <tr>
+      <td>
+        <span dangerouslySetInnerHTML={stringToReactHtml(switcherIcon)}></span>
+      </td>
+      <td>switcher.svg</td>
     </tr>
     <tr>
       <td>
