@@ -1,3 +1,11 @@
+# [1.0.0-beta.36](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.0.0-beta.35...v1.0.0-beta.36) (2023-10-20)
+
+
+### Bug Fixes
+
+* **button:** icon only padding & destructive color ([ff75485](https://github.com/kyndryl-design-system/shidoka-foundation/commit/ff7548588938653acfea2d9632458941639c4619))
+* lint errors ([45f6105](https://github.com/kyndryl-design-system/shidoka-foundation/commit/45f61057b9f8af008b8e7e9c3b4bcedcbb03a9c5))
+
 # [1.0.0-beta.35](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.0.0-beta.34...v1.0.0-beta.35) (2023-10-17)
 
 
