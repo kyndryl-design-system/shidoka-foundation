@@ -81,13 +81,13 @@ export class Button extends LitElement {
    * @internal
    */
   @queryAssignedNodes()
-  _slottedEls = [];
+  _slottedEls!: Array<any>;
 
   /** Queries icon slot nodes.
    * @internal
    */
   @queryAssignedNodes({ slot: 'icon' })
-  _iconEls = [];
+  _iconEls!: Array<any>;
 
   override render() {
     const TextNodes = this._slottedEls.filter((node: any) => {
@@ -125,10 +125,10 @@ export class Button extends LitElement {
               @click=${(e: Event) => this.handleClick(e)}
             >
               <span>
-                <slot @slotchange=${this._handleSlotChange()}></slot>
+                <slot @slotchange=${() => this._handleSlotChange()}></slot>
                 <slot
                   name="icon"
-                  @slotchange=${this._handleSlotChange()}
+                  @slotchange=${() => this._handleSlotChange()}
                 ></slot>
               </span>
             </a>
@@ -142,10 +142,10 @@ export class Button extends LitElement {
               @click=${(e: Event) => this.handleClick(e)}
             >
               <span>
-                <slot @slotchange=${this._handleSlotChange()}></slot>
+                <slot @slotchange=${() => this._handleSlotChange()}></slot>
                 <slot
                   name="icon"
-                  @slotchange=${this._handleSlotChange()}
+                  @slotchange=${() => this._handleSlotChange()}
                 ></slot>
               </span>
             </button>
