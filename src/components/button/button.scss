@@ -26,16 +26,28 @@
   &--small {
     padding: 4px 16px;
     height: 32px;
+
+    &.icon-only {
+      padding: 6px;
+    }
   }
 
   &--medium {
     padding: 12px 16px;
     height: 48px;
+
+    &.icon-only {
+      padding: 14px;
+    }
   }
 
   &--large {
     padding: 16px 16px;
     height: 56px;
+
+    &.icon-only {
+      padding: 18px;
+    }
   }
 }
 
@@ -198,7 +210,7 @@ span {
 // Secondary Destructive Button
 .kd-btn--secondary-destructive {
   @extend .kd-btn--secondary;
-  color: var(--kd--color-text-destructive);
+  color: var(--kd-color-text-destructive);
   border-color: var(--kd-color-border-destructive);
 
   &:hover,
@@ -239,12 +251,12 @@ span {
 // Tertiary Destructive Button
 .kd-btn--tertiary-destructive {
   @extend .kd-btn--tertiary;
-  color: var(--kd--color-text-destructive);
+  color: var(--kd-color-text-destructive);
 
   &:hover,
   &:active,
   &:focus {
-    color: var(--kd--color-text-destructive);
+    color: var(--kd-color-text-destructive);
   }
 }
 

@@ -3,7 +3,12 @@
  */
 
 import { html, LitElement } from 'lit';
-import { customElement, property, state } from 'lit/decorators.js';
+import {
+  customElement,
+  property,
+  state,
+  queryAssignedNodes,
+} from 'lit/decorators.js';
 import { ifDefined } from 'lit/directives/if-defined.js';
 import { classMap } from 'lit-html/directives/class-map.js';
 
@@ -72,7 +77,23 @@ export class Button extends LitElement {
   @property({ type: Boolean, reflect: true })
   destructive = false;
 
+  /** Queries default slot nodes.
+   * @internal
+   */
+  @queryAssignedNodes()
+  _slottedEls = [];
+
+  /** Queries icon slot nodes.
+   * @internal
+   */
+  @queryAssignedNodes({ slot: 'icon' })
+  _iconEls = [];
+
   override render() {
+    const TextNodes = this._slottedEls.filter((node: any) => {
+      return node.textContent.trim() !== '';
+    });
+
     const typeClassMap = {
       [BUTTON_KINDS.PRIMARY_APP]: 'primary-app',
       [BUTTON_KINDS.PRIMARY_WEB]: 'primary-web',
@@ -90,6 +111,7 @@ export class Button extends LitElement {
       'kd-btn--small': this.size === BUTTON_SIZES.SMALL,
       'kd-btn--medium': this.size === BUTTON_SIZES.MEDIUM,
       [`kd-btn--icon-${this.iconPosition}`]: !!this.iconPosition,
+      'icon-only': this._iconEls.length && !TextNodes.length,
     };
 
     return html`
@@ -102,7 +124,13 @@ export class Button extends LitElement {
               aria-label=${ifDefined(this.description || undefined)}
               @click=${(e: Event) => this.handleClick(e)}
             >
-              <span><slot></slot><slot name="icon"></slot></span>
+              <span>
+                <slot @slotchange=${this._handleSlotChange()}></slot>
+                <slot
+                  name="icon"
+                  @slotchange=${this._handleSlotChange()}
+                ></slot>
+              </span>
             </a>
           `
         : html`
@@ -113,7 +141,13 @@ export class Button extends LitElement {
               aria-label=${ifDefined(this.description || undefined)}
               @click=${(e: Event) => this.handleClick(e)}
             >
-              <span><slot></slot><slot name="icon"></slot></span>
+              <span>
+                <slot @slotchange=${this._handleSlotChange()}></slot>
+                <slot
+                  name="icon"
+                  @slotchange=${this._handleSlotChange()}
+                ></slot>
+              </span>
             </button>
           `}
     `;
@@ -132,6 +166,14 @@ export class Button extends LitElement {
       detail: { origEvent: e },
     });
     this.dispatchEvent(event);
+  }
+
+  private _handleSlotChange() {
+    this.requestUpdate();
+  }
+
+  override firstUpdated() {
+    this._handleSlotChange();
   }
 }
 
