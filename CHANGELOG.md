@@ -1,3 +1,10 @@
+# [1.0.0-beta.37](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.0.0-beta.36...v1.0.0-beta.37) (2023-10-24)
+
+
+### Bug Fixes
+
+* correct token name ([b85850a](https://github.com/kyndryl-design-system/shidoka-foundation/commit/b85850a73c53fdf251b012880dcec40f270ed535))
+
 # [1.0.0-beta.36](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.0.0-beta.35...v1.0.0-beta.36) (2023-10-20)
 
 
