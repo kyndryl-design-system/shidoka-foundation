@@ -59,6 +59,7 @@ html {
 body {
   @include typography.type-body-02;
   min-height: 100%;
+  margin: 0;
   background: var(--kd-color-background-ui-default);
   color: var(--kd-color-text-primary);
 }
