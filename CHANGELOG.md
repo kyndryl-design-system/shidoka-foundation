@@ -1,3 +1,10 @@
+# [1.0.0-beta.38](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.0.0-beta.37...v1.0.0-beta.38) (2023-10-26)
+
+
+### Bug Fixes
+
+* add minimal css reset ([7d6d13a](https://github.com/kyndryl-design-system/shidoka-foundation/commit/7d6d13ada0ee59c4293de76ef9ca38c04c2c48bb))
+
 # [1.0.0-beta.37](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.0.0-beta.36...v1.0.0-beta.37) (2023-10-24)
 
 
