@@ -33,7 +33,7 @@ import * as GridStories from './Grid.stories.js';
 @use '~@kyndryl-design-system/shidoka-foundation/scss/mixins/grid.scss';
 
 .your-css-selector {
-  @include grid.grid($align-left: false, $no-max: false);
+  @include grid.grid($align-left: false, $no-max: false, $no-pad: false);
 }
 
 .your-child-css-selector {
@@ -64,9 +64,11 @@ import '@kyndryl-design-system/shidoka-foundation/css/grid.css';
 #### Example HTML
 
 ```html
-<div class="kd-grid">
-  <div class="kd-grid__col--sm-4 kd-grid__col--md-8 kd-grid__col--lg-12">
-    12 cols @ max, xl, lg, 8 cols @ md, and 4 cols @ sm
+<div class="kd-grid-container">
+  <div class="kd-grid">
+    <div class="kd-grid__col--sm-4 kd-grid__col--md-8 kd-grid__col--lg-12">
+      12 cols @ max, xl, lg, 8 cols @ md, and 4 cols @ sm
+    </div>
   </div>
 </div>
 ```
@@ -95,3 +97,4 @@ kd-grid__col--${breakpoint}-${num_cols}
 | ------------------------------- | ------------------- |
 | Left align grid container       | kd-grid--align-left |
 | Remove grid container max-width | kd-grid--no-max     |
+| Remove grid padding             | kd-grid--no-pad     |

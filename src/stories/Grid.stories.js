@@ -18,17 +18,31 @@ export default {
         defaultValue: { summary: false },
       },
     },
+    noPad: {
+      control: { type: 'boolean' },
+      description: 'Remove grid padding.',
+      table: {
+        defaultValue: { summary: false },
+      },
+    },
   },
   decorators: [
     (story) =>
       html`
         <style>
+          .grid-examples {
+            background: aliceblue;
+            border: 1px dashed lightgray;
+          }
+
           .grid-examples .kd-grid {
+            background: lightpink;
             margin-top: 32px;
             margin-bottom: 32px;
           }
 
           .grid-examples .kd-grid > div {
+            background: white;
             text-align: center;
             border: 1px solid lightgray;
             padding: 16px;
@@ -42,19 +56,25 @@ export default {
 const args = {
   alignLeft: false,
   noMax: false,
+  noPad: false,
 };
 
 export const Grid = {
   args: args,
   render: (args) => {
+    const gridContainerClasses = {
+      'grid-examples': true,
+      'kd-grid-container': true,
+    };
     const gridClasses = {
       'kd-grid': true,
-      'kd-grid--align-left': args.alignLeft,
       'kd-grid--no-max': args.noMax,
+      'kd-grid--no-pad': args.noPad,
+      'kd-grid--align-left': args.alignLeft,
     };
 
     return html`
-      <div class="grid-examples">
+      <div class="${classMap(gridContainerClasses)}">
         <div class="${classMap(gridClasses)}">
           <div
             class="kd-grid__col--sm-4 kd-grid__col--md-8 kd-grid__col--lg-12"

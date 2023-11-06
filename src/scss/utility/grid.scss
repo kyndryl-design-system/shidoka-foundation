@@ -1,8 +1,19 @@
 @use '../variables/breakpoints.scss';
 @use '../mixins/grid.scss';
 
+.kd-grid-container {
+  margin: 0 auto;
+  max-width: var(--kd-grid-container-max-width);
+}
+
 .kd-grid {
   @include grid.grid;
+
+  &--no-pad {
+    gap: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
 
   &--align-left {
     margin: 0;

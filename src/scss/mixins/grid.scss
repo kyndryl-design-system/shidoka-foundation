@@ -1,21 +1,26 @@
 @use '../variables/breakpoints.scss';
 
-@mixin grid($align-left: false, $no-max: false) {
+@mixin grid($align-left: false, $no-max: false, $no-pad: false) {
   display: grid;
   grid-template-columns: repeat(4, 1fr); // 4 cols at sm
   gap: var(--kd-grid-gap);
-  max-width: breakpoints.$bp-max;
+  margin: 0 auto;
+  max-width: var(--kd-grid-max-width);
+  padding-left: var(--kd-grid-gap-half); // add gap outside first/last column
+  padding-right: var(--kd-grid-gap-half);
+
+  @if $no-pad {
+    gap: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
 
   @if $no-max {
     max-width: none;
-  } @else {
-    max-width: breakpoints.$bp-max;
   }
 
   @if $align-left {
     margin: 0;
-  } @else {
-    margin: 0 auto;
   }
 
   @media (min-width: breakpoints.$bp-md) {

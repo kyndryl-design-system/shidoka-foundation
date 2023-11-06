@@ -1,9 +1,5 @@
-$bp-sm: 20rem;
-$bp-md: 42rem;
-$bp-lg: 74rem;
-$bp-xl: 82rem;
-$bp-max: 99rem;
-
-:root {
-  --kd-grid-max-width: #{$bp-max};
-}
+$bp-sm: 20rem; // 320
+$bp-md: 42rem; // 672
+$bp-lg: 74rem; // 1184
+$bp-xl: 82rem; // 1312
+$bp-max: 99rem; // 1584
