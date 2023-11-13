@@ -28,6 +28,9 @@ export class Icon extends LitElement {
     const attributes = JSON.parse(JSON.stringify(this.icon.attrs));
     attributes.fill = this.fill;
 
+    // Add ::part attribute to allow CSS overrides from parent component (responsive size, etc.)
+    attributes.part = 'kd-icon-part';
+
     if (this.sizeOverride) {
       attributes.width = this.sizeOverride;
       attributes.height = this.sizeOverride;
