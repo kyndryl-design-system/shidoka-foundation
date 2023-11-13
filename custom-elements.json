@@ -12,7 +12,7 @@
           "name": "Button",
           "declaration": {
             "name": "Button",
-            "module": "src/index.ts"
+            "module": "./components/button"
           }
         },
         {
@@ -20,63 +20,31 @@
           "name": "Icon",
           "declaration": {
             "name": "Icon",
-            "module": "src/index.ts"
+            "module": "./components/icon"
           }
         },
         {
           "kind": "js",
-          "name": "Header",
+          "name": "Link",
           "declaration": {
-            "name": "Header",
-            "module": "src/index.ts"
+            "name": "Link",
+            "module": "./components/link"
           }
         },
         {
           "kind": "js",
-          "name": "HeaderNav",
+          "name": "Accordion",
           "declaration": {
-            "name": "HeaderNav",
-            "module": "src/index.ts"
+            "name": "Accordion",
+            "module": "./components/accordion"
           }
         },
         {
           "kind": "js",
-          "name": "HeaderNavLink",
+          "name": "AccordionItem",
           "declaration": {
-            "name": "HeaderNavLink",
-            "module": "src/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "HeaderFlyouts",
-          "declaration": {
-            "name": "HeaderFlyouts",
-            "module": "src/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "HeaderFlyout",
-          "declaration": {
-            "name": "HeaderFlyout",
-            "module": "src/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "SideNav",
-          "declaration": {
-            "name": "SideNav",
-            "module": "src/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "SideNavLink",
-          "declaration": {
-            "name": "SideNavLink",
-            "module": "src/index.ts"
+            "name": "AccordionItem",
+            "module": "./components/accordion"
           }
         }
       ]
@@ -100,6 +68,33 @@
               "default": "100"
             }
           ]
+        },
+        {
+          "kind": "function",
+          "name": "stringToReactHtml",
+          "parameters": [
+            {
+              "name": "string",
+              "type": {
+                "text": "String"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "createOptionsArray",
+          "parameters": [
+            {
+              "name": "options",
+              "default": "{}",
+              "type": {
+                "text": "*"
+              },
+              "description": " imported enums object"
+            }
+          ],
+          "description": "Convert an object to an array of only its values.\r\nUsed when importing enums in component stories for populating argType dropdowns."
         }
       ],
       "exports": [
@@ -110,590 +105,305 @@
             "name": "debounce",
             "module": "src/common/helpers/helpers.ts"
           }
+        },
+        {
+          "kind": "js",
+          "name": "stringToReactHtml",
+          "declaration": {
+            "name": "stringToReactHtml",
+            "module": "src/common/helpers/helpers.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "createOptionsArray",
+          "declaration": {
+            "name": "createOptionsArray",
+            "module": "src/common/helpers/helpers.ts"
+          }
         }
       ]
     },
     {
       "kind": "javascript-module",
-      "path": "src/components/global/header/header.ts",
+      "path": "src/components/accordion/accordion.ts",
       "declarations": [
         {
           "kind": "class",
-          "description": "The global Header component.",
-          "name": "Header",
+          "description": "Accordion component.",
+          "name": "Accordion",
           "slots": [
             {
-              "description": "The default slot for all empty space right of the logo/title.",
+              "description": "Holds Accordion Items (kd-accordion-item) that make up the accordion",
               "name": "unnamed"
             }
           ],
           "members": [
             {
               "kind": "field",
-              "name": "rootUrl",
-              "type": {
-                "text": "string"
-              },
-              "default": "'/'",
-              "description": "URL for the header logo link. Should target the application home page.",
-              "attribute": "rootUrl"
-            },
-            {
-              "kind": "field",
-              "name": "appTitle",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "description": "App title text next to logo.  Hidden on smaller screens.",
-              "attribute": "appTitle"
-            },
-            {
-              "kind": "field",
-              "name": "appSubtitle",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "description": "App subtitle text.",
-              "attribute": "appSubtitle"
-            },
-            {
-              "kind": "field",
-              "name": "smallLogo",
+              "name": "showNumbers",
               "type": {
                 "text": "boolean"
               },
               "default": "false",
-              "description": "Use K logo instead of full Kyndryl logo.",
-              "attribute": "smallLogo"
+              "description": "Specifies whether to show numbers on the list items.",
+              "attribute": "showNumbers"
             },
             {
               "kind": "field",
-              "name": "breakpoint",
+              "name": "startNumber",
               "type": {
                 "text": "number"
               },
-              "default": "672",
-              "description": "The breakpoint (in px) to convert the nav to a flyout menu for small screens.",
-              "attribute": "breakpoint"
+              "default": "1",
+              "description": "Specifies the number to start at if the list has numbers.",
+              "attribute": "startNumber"
             },
             {
-              "kind": "method",
-              "name": "testBreakpoint",
-              "privacy": "private"
-            },
-            {
-              "kind": "method",
-              "name": "handleRootLinkClick",
-              "privacy": "private",
-              "parameters": [
-                {
-                  "name": "e",
-                  "type": {
-                    "text": "Event"
-                  }
-                }
-              ]
-            },
-            {
-              "kind": "method",
-              "name": "toggleMenu",
-              "privacy": "private"
-            }
-          ],
-          "events": [
-            {
-              "description": "Captures the menu toggle click event and emits the menu open state in the detail.",
-              "name": "on-menu-toggle"
-            },
-            {
-              "description": "Captures the logo link click event and emits the original event details.",
-              "name": "on-root-link-click"
-            }
-          ],
-          "attributes": [
-            {
-              "name": "rootUrl",
-              "type": {
-                "text": "string"
-              },
-              "default": "'/'",
-              "description": "URL for the header logo link. Should target the application home page.",
-              "fieldName": "rootUrl"
-            },
-            {
-              "name": "appTitle",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "description": "App title text next to logo.  Hidden on smaller screens.",
-              "fieldName": "appTitle"
-            },
-            {
-              "name": "appSubtitle",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "description": "App subtitle text.",
-              "fieldName": "appSubtitle"
-            },
-            {
-              "name": "smallLogo",
+              "kind": "field",
+              "name": "filledHeaders",
               "type": {
                 "text": "boolean"
               },
               "default": "false",
-              "description": "Use K logo instead of full Kyndryl logo.",
-              "fieldName": "smallLogo"
+              "description": "Specifies whether to show the accordion items with filled headers.",
+              "attribute": "filledHeaders"
             },
             {
-              "name": "breakpoint",
+              "kind": "field",
+              "name": "compact",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Display the accordion as compact or the default large size.",
+              "attribute": "compact"
+            },
+            {
+              "kind": "field",
+              "name": "expandLabel",
+              "type": {
+                "text": "string"
+              },
+              "default": "'Expand all items'",
+              "description": "The string that displays on the toggle to expand all the accordion items.",
+              "attribute": "expandLabel"
+            },
+            {
+              "kind": "field",
+              "name": "collapseLabel",
+              "type": {
+                "text": "string"
+              },
+              "default": "'Collapse all items'",
+              "description": "The string that displays on the toggle to collapse all the accordion items.",
+              "attribute": "collapseLabel"
+            },
+            {
+              "kind": "method",
+              "name": "_handleSlotChange",
+              "privacy": "protected"
+            },
+            {
+              "kind": "method",
+              "name": "_updateChildren",
+              "privacy": "protected"
+            },
+            {
+              "kind": "method",
+              "name": "_openAllItems",
+              "privacy": "protected"
+            },
+            {
+              "kind": "method",
+              "name": "_closeAllItems",
+              "privacy": "protected"
+            },
+            {
+              "kind": "method",
+              "name": "_toggleExpandAll",
+              "privacy": "private"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "showNumbers",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Specifies whether to show numbers on the list items.",
+              "fieldName": "showNumbers"
+            },
+            {
+              "name": "startNumber",
               "type": {
                 "text": "number"
               },
-              "default": "672",
-              "description": "The breakpoint (in px) to convert the nav to a flyout menu for small screens.",
-              "fieldName": "breakpoint"
-            }
-          ],
-          "superclass": {
-            "name": "LitElement",
-            "package": "lit"
-          },
-          "tagName": "kyn-header",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "Header",
-          "declaration": {
-            "name": "Header",
-            "module": "src/components/global/header/header.ts"
-          }
-        },
-        {
-          "kind": "custom-element-definition",
-          "name": "kyn-header",
-          "declaration": {
-            "name": "Header",
-            "module": "src/components/global/header/header.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/components/global/header/headerFlyout.ts",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "Component for header flyout items.",
-          "name": "HeaderFlyout",
-          "slots": [
-            {
-              "description": "Slot for flyout menu content.",
-              "name": "unnamed"
+              "default": "1",
+              "description": "Specifies the number to start at if the list has numbers.",
+              "fieldName": "startNumber"
             },
             {
-              "description": "Slot for button/toggle content.",
-              "name": "button"
-            }
-          ],
-          "members": [
-            {
-              "kind": "field",
-              "name": "anchorLeft",
+              "name": "filledHeaders",
               "type": {
                 "text": "boolean"
               },
               "default": "false",
-              "description": "Anchor flyout menu to the left edge of the button instead of the right edge.",
-              "attribute": "anchorLeft"
-            }
-          ],
-          "attributes": [
+              "description": "Specifies whether to show the accordion items with filled headers.",
+              "fieldName": "filledHeaders"
+            },
             {
-              "name": "anchorLeft",
+              "name": "compact",
               "type": {
                 "text": "boolean"
               },
               "default": "false",
-              "description": "Anchor flyout menu to the left edge of the button instead of the right edge.",
-              "fieldName": "anchorLeft"
-            }
-          ],
-          "superclass": {
-            "name": "LitElement",
-            "package": "lit"
-          },
-          "tagName": "kyn-header-flyout",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "HeaderFlyout",
-          "declaration": {
-            "name": "HeaderFlyout",
-            "module": "src/components/global/header/headerFlyout.ts"
-          }
-        },
-        {
-          "kind": "custom-element-definition",
-          "name": "kyn-header-flyout",
-          "declaration": {
-            "name": "HeaderFlyout",
-            "module": "src/components/global/header/headerFlyout.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/components/global/header/headerFlyouts.ts",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "Container for header flyout items, aligns to the right, place last.",
-          "name": "HeaderFlyouts",
-          "slots": [
+              "description": "Display the accordion as compact or the default large size.",
+              "fieldName": "compact"
+            },
             {
-              "description": "This element has a slot.",
-              "name": "unnamed"
-            }
-          ],
-          "members": [],
-          "superclass": {
-            "name": "LitElement",
-            "package": "lit"
-          },
-          "tagName": "kyn-header-flyouts",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "HeaderFlyouts",
-          "declaration": {
-            "name": "HeaderFlyouts",
-            "module": "src/components/global/header/headerFlyouts.ts"
-          }
-        },
-        {
-          "kind": "custom-element-definition",
-          "name": "kyn-header-flyouts",
-          "declaration": {
-            "name": "HeaderFlyouts",
-            "module": "src/components/global/header/headerFlyouts.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/components/global/header/headerNav.ts",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "Container for header navigation links.",
-          "name": "HeaderNav",
-          "slots": [
-            {
-              "description": "This element has a slot.",
-              "name": "unnamed"
-            }
-          ],
-          "members": [
-            {
-              "kind": "method",
-              "name": "testBreakpoint",
-              "privacy": "private"
-            }
-          ],
-          "superclass": {
-            "name": "LitElement",
-            "package": "lit"
-          },
-          "tagName": "kyn-header-nav",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "HeaderNav",
-          "declaration": {
-            "name": "HeaderNav",
-            "module": "src/components/global/header/headerNav.ts"
-          }
-        },
-        {
-          "kind": "custom-element-definition",
-          "name": "kyn-header-nav",
-          "declaration": {
-            "name": "HeaderNav",
-            "module": "src/components/global/header/headerNav.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/components/global/header/headerNavLink.ts",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "Component for navigation links within the Header.",
-          "name": "HeaderNavLink",
-          "members": [
-            {
-              "kind": "field",
-              "name": "text",
+              "name": "expandLabel",
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "description": "Link text.",
-              "attribute": "text"
+              "default": "'Expand all items'",
+              "description": "The string that displays on the toggle to expand all the accordion items.",
+              "fieldName": "expandLabel"
             },
             {
-              "kind": "field",
-              "name": "href",
+              "name": "collapseLabel",
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "description": "Link url.",
-              "attribute": "href"
-            },
-            {
-              "kind": "method",
-              "name": "handleClick",
-              "privacy": "private",
-              "parameters": [
-                {
-                  "name": "e",
-                  "type": {
-                    "text": "Event"
-                  }
-                }
-              ]
-            },
-            {
-              "kind": "method",
-              "name": "determineIfSlotted",
-              "privacy": "private"
-            },
-            {
-              "kind": "method",
-              "name": "determineLevel",
-              "privacy": "private"
-            },
-            {
-              "kind": "method",
-              "name": "testBreakpoint",
-              "privacy": "private"
-            }
-          ],
-          "events": [
-            {
-              "description": "Captures the click event and emits the original event details.",
-              "name": "on-click"
-            }
-          ],
-          "attributes": [
-            {
-              "name": "text",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "description": "Link text.",
-              "fieldName": "text"
-            },
-            {
-              "name": "href",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "description": "Link url.",
-              "fieldName": "href"
+              "default": "'Collapse all items'",
+              "description": "The string that displays on the toggle to collapse all the accordion items.",
+              "fieldName": "collapseLabel"
             }
           ],
           "superclass": {
             "name": "LitElement",
             "package": "lit"
           },
-          "tagName": "kyn-header-nav-link",
+          "tagName": "kd-accordion",
           "customElement": true
         }
       ],
       "exports": [
         {
           "kind": "js",
-          "name": "HeaderNavLink",
+          "name": "Accordion",
           "declaration": {
-            "name": "HeaderNavLink",
-            "module": "src/components/global/header/headerNavLink.ts"
+            "name": "Accordion",
+            "module": "src/components/accordion/accordion.ts"
           }
         },
         {
           "kind": "custom-element-definition",
-          "name": "kyn-header-nav-link",
+          "name": "kd-accordion",
           "declaration": {
-            "name": "HeaderNavLink",
-            "module": "src/components/global/header/headerNavLink.ts"
+            "name": "Accordion",
+            "module": "src/components/accordion/accordion.ts"
           }
         }
       ]
     },
     {
       "kind": "javascript-module",
-      "path": "src/components/global/sideNav/sideNav.ts",
+      "path": "src/components/accordion/accordionItem.ts",
       "declarations": [
         {
           "kind": "class",
-          "description": "The global Side Navigation component.",
-          "name": "SideNav",
+          "description": "AccordionItem component.",
+          "name": "AccordionItem",
           "slots": [
             {
-              "description": "The default slot, for side nav links.",
-              "name": "unnamed"
-            }
-          ],
-          "members": [
-            {
-              "kind": "field",
-              "name": "collapsed",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "description": "Side nav collapsed state.",
-              "attribute": "collapsed"
-            },
-            {
-              "kind": "method",
-              "name": "onNavToggle",
-              "privacy": "private",
-              "parameters": [
-                {
-                  "name": "e",
-                  "type": {
-                    "text": "Event"
-                  }
-                }
-              ]
-            }
-          ],
-          "events": [
-            {
-              "description": "Captures the click event and emits the collapsed state and original event details.",
-              "name": "on-toggle"
-            }
-          ],
-          "attributes": [
-            {
-              "name": "collapsed",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "description": "Side nav collapsed state.",
-              "fieldName": "collapsed"
-            }
-          ],
-          "superclass": {
-            "name": "LitElement",
-            "package": "lit"
-          },
-          "tagName": "kyn-side-nav",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "SideNav",
-          "declaration": {
-            "name": "SideNav",
-            "module": "src/components/global/sideNav/sideNav.ts"
-          }
-        },
-        {
-          "kind": "custom-element-definition",
-          "name": "kyn-side-nav",
-          "declaration": {
-            "name": "SideNav",
-            "module": "src/components/global/sideNav/sideNav.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/components/global/sideNav/sideNavLink.ts",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "Link component for use in the global Side Navigation component.",
-          "name": "SideNavLink",
-          "slots": [
-            {
-              "description": "The default slot, for the link text.",
-              "name": "unnamed"
-            },
-            {
-              "description": "Slot for an icon, level 1 links only.",
+              "description": "Optional leading icon",
               "name": "icon"
             },
             {
-              "description": "Slot for the next level of links, supports three levels.",
-              "name": "links"
+              "description": "Body of the accordion item",
+              "name": "body"
+            },
+            {
+              "description": "Title of the accordion item",
+              "name": "title"
+            },
+            {
+              "description": "Optional subtitle of the accordion item",
+              "name": "subtitle"
             }
           ],
           "members": [
             {
               "kind": "field",
-              "name": "href",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "description": "Link url.",
-              "attribute": "href"
-            },
-            {
-              "kind": "field",
-              "name": "expanded",
+              "name": "opened",
               "type": {
                 "text": "boolean"
               },
               "default": "false",
-              "description": "Level 1 link expanded state.",
-              "attribute": "expanded"
+              "description": "Accordion item opened state.",
+              "attribute": "opened"
             },
             {
               "kind": "method",
-              "name": "determineIfSlotted",
-              "privacy": "private"
+              "name": "setIndex",
+              "parameters": [
+                {
+                  "name": "index",
+                  "type": {
+                    "text": "number"
+                  }
+                }
+              ]
             },
             {
               "kind": "method",
-              "name": "determineLevel",
-              "privacy": "private"
+              "name": "setShowNumbers",
+              "parameters": [
+                {
+                  "name": "value",
+                  "type": {
+                    "text": "boolean"
+                  }
+                }
+              ]
             },
             {
               "kind": "method",
-              "name": "handleClick",
+              "name": "setFilledHeader",
+              "parameters": [
+                {
+                  "name": "value",
+                  "type": {
+                    "text": "boolean"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "setCompact",
+              "parameters": [
+                {
+                  "name": "value",
+                  "type": {
+                    "text": "boolean"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "open"
+            },
+            {
+              "kind": "method",
+              "name": "close"
+            },
+            {
+              "kind": "method",
+              "name": "_handleClick",
               "privacy": "private",
               "parameters": [
                 {
@@ -706,115 +416,158 @@
             },
             {
               "kind": "method",
-              "name": "onNavLinkHover",
+              "name": "_handleKeypress",
               "privacy": "private",
               "parameters": [
                 {
                   "name": "e",
                   "type": {
-                    "text": "Event"
+                    "text": "KeyboardEvent"
                   }
                 }
               ]
-            }
-          ],
-          "events": [
+            },
             {
-              "description": "Captures the click event and emits the original event, level, and if default was prevented.",
-              "name": "on-click"
+              "kind": "method",
+              "name": "_toggleOpenState",
+              "privacy": "private"
             }
           ],
           "attributes": [
             {
-              "name": "href",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "description": "Link url.",
-              "fieldName": "href"
-            },
-            {
-              "name": "expanded",
+              "name": "opened",
               "type": {
                 "text": "boolean"
               },
               "default": "false",
-              "description": "Level 1 link expanded state.",
-              "fieldName": "expanded"
+              "description": "Accordion item opened state.",
+              "fieldName": "opened"
             }
           ],
           "superclass": {
             "name": "LitElement",
             "package": "lit"
           },
-          "tagName": "kyn-side-nav-link",
+          "tagName": "kd-accordion-item",
           "customElement": true
         }
       ],
       "exports": [
         {
           "kind": "js",
-          "name": "SideNavLink",
+          "name": "AccordionItem",
           "declaration": {
-            "name": "SideNavLink",
-            "module": "src/components/global/sideNav/sideNavLink.ts"
+            "name": "AccordionItem",
+            "module": "src/components/accordion/accordionItem.ts"
           }
         },
         {
           "kind": "custom-element-definition",
-          "name": "kyn-side-nav-link",
+          "name": "kd-accordion-item",
           "declaration": {
-            "name": "SideNavLink",
-            "module": "src/components/global/sideNav/sideNavLink.ts"
+            "name": "AccordionItem",
+            "module": "src/components/accordion/accordionItem.ts"
           }
         }
       ]
     },
     {
       "kind": "javascript-module",
-      "path": "src/components/reusable/button/button.ts",
+      "path": "src/components/accordion/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Accordion",
+          "declaration": {
+            "name": "Accordion",
+            "module": "./accordion"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "AccordionItem",
+          "declaration": {
+            "name": "AccordionItem",
+            "module": "./accordionItem"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/button/button.ts",
       "declarations": [
         {
           "kind": "class",
-          "description": "Primary UI component for user interaction.",
+          "description": "Button component.",
           "name": "Button",
-          "cssParts": [
+          "slots": [
             {
-              "description": "Styles to override the button",
-              "name": "button"
+              "description": "Slot for button text.",
+              "name": "unnamed"
+            },
+            {
+              "description": "Slot for an icon.",
+              "name": "icon"
             }
           ],
           "members": [
+            {
+              "kind": "field",
+              "name": "description",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "description": "ARIA label for the button for accessibility.",
+              "attribute": "description"
+            },
+            {
+              "kind": "field",
+              "name": "type",
+              "type": {
+                "text": "BUTTON_TYPES"
+              },
+              "description": "Type for the &lt;button&gt; element.",
+              "attribute": "type"
+            },
             {
               "kind": "field",
               "name": "kind",
               "type": {
-                "text": "string"
+                "text": "BUTTON_KINDS"
               },
-              "default": "'primary'",
-              "description": "The kind of button to render.",
+              "description": "Specifies the visual appearance/kind of the button.",
               "attribute": "kind"
             },
             {
               "kind": "field",
-              "name": "size",
-              "type": {
-                "text": "string"
-              },
-              "default": "'md'",
-              "description": "The button size.",
-              "attribute": "size"
-            },
-            {
-              "kind": "field",
               "name": "href",
               "type": {
                 "text": "string"
               },
               "default": "''",
-              "description": "Converts to an &lt;a&gt; tag to create a link.",
+              "description": "Converts the button to an &lt;a&gt; tag if specified.",
               "attribute": "href"
+            },
+            {
+              "kind": "field",
+              "name": "size",
+              "type": {
+                "text": "BUTTON_SIZES"
+              },
+              "description": "Specifies the size of the button.",
+              "attribute": "size"
+            },
+            {
+              "kind": "field",
+              "name": "iconPosition",
+              "type": {
+                "text": "BUTTON_ICON_POSITION"
+              },
+              "description": "Specifies the position of the icon relative to any button text.",
+              "attribute": "iconPosition"
             },
             {
               "kind": "field",
@@ -823,8 +576,20 @@
                 "text": "boolean"
               },
               "default": "false",
-              "description": "Disables the button.",
-              "attribute": "disabled"
+              "description": "Determines if the button is disabled.",
+              "attribute": "disabled",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "destructive",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Determines if the button indicates a destructive action.",
+              "attribute": "destructive",
+              "reflects": true
             },
             {
               "kind": "method",
@@ -842,28 +607,35 @@
           ],
           "events": [
             {
-              "description": "Captures the click event and emits the original event details.",
+              "description": "Emits the original click event.",
               "name": "on-click"
             }
           ],
           "attributes": [
             {
-              "name": "kind",
+              "name": "description",
               "type": {
                 "text": "string"
               },
-              "default": "'primary'",
-              "description": "The kind of button to render.",
-              "fieldName": "kind"
+              "default": "''",
+              "description": "ARIA label for the button for accessibility.",
+              "fieldName": "description"
             },
             {
-              "name": "size",
+              "name": "type",
               "type": {
-                "text": "string"
+                "text": "BUTTON_TYPES"
               },
-              "default": "'md'",
-              "description": "The button size.",
-              "fieldName": "size"
+              "description": "Type for the &lt;button&gt; element.",
+              "fieldName": "type"
+            },
+            {
+              "name": "kind",
+              "type": {
+                "text": "BUTTON_KINDS"
+              },
+              "description": "Specifies the visual appearance/kind of the button.",
+              "fieldName": "kind"
             },
             {
               "name": "href",
@@ -871,8 +643,24 @@
                 "text": "string"
               },
               "default": "''",
-              "description": "Converts to an &lt;a&gt; tag to create a link.",
+              "description": "Converts the button to an &lt;a&gt; tag if specified.",
               "fieldName": "href"
+            },
+            {
+              "name": "size",
+              "type": {
+                "text": "BUTTON_SIZES"
+              },
+              "description": "Specifies the size of the button.",
+              "fieldName": "size"
+            },
+            {
+              "name": "iconPosition",
+              "type": {
+                "text": "BUTTON_ICON_POSITION"
+              },
+              "description": "Specifies the position of the icon relative to any button text.",
+              "fieldName": "iconPosition"
             },
             {
               "name": "disabled",
@@ -880,15 +668,24 @@
                 "text": "boolean"
               },
               "default": "false",
-              "description": "Disables the button.",
+              "description": "Determines if the button is disabled.",
               "fieldName": "disabled"
+            },
+            {
+              "name": "destructive",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Determines if the button indicates a destructive action.",
+              "fieldName": "destructive"
             }
           ],
           "superclass": {
             "name": "LitElement",
             "package": "lit"
           },
-          "tagName": "kyn-button",
+          "tagName": "kd-button",
           "customElement": true
         }
       ],
@@ -898,22 +695,43 @@
           "name": "Button",
           "declaration": {
             "name": "Button",
-            "module": "src/components/reusable/button/button.ts"
+            "module": "src/components/button/button.ts"
           }
         },
         {
           "kind": "custom-element-definition",
-          "name": "kyn-button",
+          "name": "kd-button",
           "declaration": {
             "name": "Button",
-            "module": "src/components/reusable/button/button.ts"
+            "module": "src/components/button/button.ts"
           }
         }
       ]
     },
     {
       "kind": "javascript-module",
-      "path": "src/components/reusable/icon/icon.ts",
+      "path": "src/components/button/defs.ts",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/button/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Button",
+          "declaration": {
+            "name": "Button",
+            "module": "./button"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/icon/icon.ts",
       "declarations": [
         {
           "kind": "class",
@@ -990,7 +808,7 @@
             "name": "LitElement",
             "package": "lit"
           },
-          "tagName": "kyn-icon",
+          "tagName": "kd-icon",
           "customElement": true
         }
       ],
@@ -1000,15 +818,235 @@
           "name": "Icon",
           "declaration": {
             "name": "Icon",
-            "module": "src/components/reusable/icon/icon.ts"
+            "module": "src/components/icon/icon.ts"
           }
         },
         {
           "kind": "custom-element-definition",
-          "name": "kyn-icon",
+          "name": "kd-icon",
           "declaration": {
             "name": "Icon",
-            "module": "src/components/reusable/icon/icon.ts"
+            "module": "src/components/icon/icon.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/icon/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Icon",
+          "declaration": {
+            "name": "Icon",
+            "module": "./icon"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/link/defs.ts",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/link/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Link",
+          "declaration": {
+            "name": "Link",
+            "module": "./link"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/link/link.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "Component for navigation links.",
+          "name": "Link",
+          "slots": [
+            {
+              "description": "Slot for link text.",
+              "name": "unnamed"
+            },
+            {
+              "description": "Slot for an icon.",
+              "name": "icon"
+            }
+          ],
+          "members": [
+            {
+              "kind": "field",
+              "name": "href",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "description": "Link url.",
+              "attribute": "href"
+            },
+            {
+              "kind": "field",
+              "name": "target",
+              "type": {
+                "text": "LINK_TARGETS"
+              },
+              "description": "Defines a target attribute for where to load the URL. Possible options include \"_self\" (deafult), \"_blank\", \"_parent\", \"_top\"",
+              "attribute": "target"
+            },
+            {
+              "kind": "field",
+              "name": "kind",
+              "type": {
+                "text": "LINK_TYPES"
+              },
+              "description": "The Link type. Primary(App) or Secondary(Web).",
+              "attribute": "kind"
+            },
+            {
+              "kind": "field",
+              "name": "rel",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "description": "Defines a relationship between a linked resource and the document. An empty string (default) means no particular relationship",
+              "attribute": "rel"
+            },
+            {
+              "kind": "field",
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Determines if the link is disabled.",
+              "attribute": "disabled",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "standalone",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Whether you want the standalone Link. Bydefault false. Use this prop. (true) with icon with link variant.",
+              "attribute": "standalone"
+            },
+            {
+              "kind": "method",
+              "name": "returnClassMap",
+              "privacy": "private"
+            },
+            {
+              "kind": "method",
+              "name": "handleClick",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "e",
+                  "type": {
+                    "text": "Event"
+                  }
+                }
+              ]
+            }
+          ],
+          "events": [
+            {
+              "description": "Captures the click event and emits the original event details.",
+              "name": "on-click"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "href",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "description": "Link url.",
+              "fieldName": "href"
+            },
+            {
+              "name": "target",
+              "type": {
+                "text": "LINK_TARGETS"
+              },
+              "description": "Defines a target attribute for where to load the URL. Possible options include \"_self\" (deafult), \"_blank\", \"_parent\", \"_top\"",
+              "fieldName": "target"
+            },
+            {
+              "name": "kind",
+              "type": {
+                "text": "LINK_TYPES"
+              },
+              "description": "The Link type. Primary(App) or Secondary(Web).",
+              "fieldName": "kind"
+            },
+            {
+              "name": "rel",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "description": "Defines a relationship between a linked resource and the document. An empty string (default) means no particular relationship",
+              "fieldName": "rel"
+            },
+            {
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Determines if the link is disabled.",
+              "fieldName": "disabled"
+            },
+            {
+              "name": "standalone",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Whether you want the standalone Link. Bydefault false. Use this prop. (true) with icon with link variant.",
+              "fieldName": "standalone"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "kd-link",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Link",
+          "declaration": {
+            "name": "Link",
+            "module": "src/components/link/link.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "kd-link",
+          "declaration": {
+            "name": "Link",
+            "module": "src/components/link/link.ts"
           }
         }
       ]

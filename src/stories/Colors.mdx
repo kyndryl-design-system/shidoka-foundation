@@ -1,0 +1,20 @@
+import { Meta, Story, Canvas, Controls, Stories } from '@storybook/blocks';
+import * as ColorsStories from './Colors.stories.js';
+
+<Meta of={ColorsStories} />
+
+# Colors
+
+[Figma Design Source](https://www.figma.com/file/5TqtPa7KWfhJbQv6ELnbqf/Foundation?node-id=72%3A17784&mode=dev)
+
+<Stories />
+
+## Usage
+
+### CSS Vars
+
+```css
+.your-css-selector {
+  background-color: var(--kd-color-background-primary);
+}
+```

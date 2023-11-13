@@ -1,0 +1,122 @@
+/**
+ * Copyright Kyndryl, Inc. 2023
+ */
+@use '../../scss/global';
+@use '../../scss/mixins/typography';
+
+:host {
+  display: block;
+}
+
+.kd-accordion-item {
+  padding: 0px 0px;
+  display: block;
+  background-color: var(--kd-color-background-ui-default);
+  border-radius: inherit;
+
+  .kd-accordion-item-title {
+    border-radius: inherit;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+    background: none;
+    position: relative;
+    @include typography.type-body-01;
+    font-weight: var(--kd-font-weight-medium);
+    padding: 24px 16px;
+    outline: 2px solid transparent;
+    transition: background-color 150ms ease-out, outline-color 150ms ease-out;
+    outline-offset: -1px;
+
+    &:hover {
+      background-color: var(--kd-color-background-accent-subtle);
+    }
+
+    &:focus {
+      outline-color: var(--kd-color-border-focus);
+    }
+
+    .number,
+    .icon {
+      font-weight: var(--kd-font-weight-regular);
+      padding-right: 2em;
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: auto;
+      align-self: auto;
+      order: 0;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+    }
+
+    .number {
+      color: var(--kd-color-text-placeholder);
+    }
+
+    .title {
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: auto;
+      align-self: auto;
+      order: 0;
+    }
+  }
+
+  &.filled-header {
+    .kd-accordion-item-title {
+      background-color: var(--kd-color-background-accent-subtle);
+
+      &:hover {
+        outline-width: 1px;
+        outline-color: var(--kd-color-border-primary);
+      }
+    }
+
+    .kd-accordion-item-body {
+      border-top: 1px solid var(--kd-color-border-light);
+    }
+  }
+
+  &.compact .kd-accordion-item-title {
+    padding: 16px;
+  }
+
+  & .kd-accordion-item-body {
+    padding: 24px 64px 24px 16px;
+    display: none;
+  }
+
+  &.opened.filled-header .kd-accordion-item-title {
+    border-radius: 0;
+  }
+
+  &.opened .kd-accordion-item-body {
+    display: block;
+  }
+
+  .icon {
+    vertical-align: middle;
+  }
+
+  .expand-icon {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  .kd-accordion-item-subtitle {
+    @include typography.type-ui-02;
+    font-weight: var(--kd-font-weight-regular);
+    color: var(--kd-color-text-secondary);
+  }
+}
+
+::slotted(kd-icon) {
+  display: block;
+}

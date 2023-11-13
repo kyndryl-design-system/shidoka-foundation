@@ -1,0 +1,18 @@
+@use 'breakpoints.scss';
+
+$spacingInPixels: 0, 2, 4, 8, 12, 16, 24, 32, 40, 48, 64, 72, 80, 96, 120, 128,
+  144, 160, 192;
+$spacingDirections: top, right, bottom, left;
+
+:root {
+  @each $pixelValue in $spacingInPixels {
+    $keyname: '--kd-spacing-' + $pixelValue;
+    #{$keyname}: #{$pixelValue + 'px'};
+  }
+
+  --kd-page-gutter: 16px;
+
+  @media screen and (min-width: breakpoints.$bp-md) {
+    --kd-page-gutter: 32px;
+  }
+}

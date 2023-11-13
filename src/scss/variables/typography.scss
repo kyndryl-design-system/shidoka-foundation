@@ -1,0 +1,282 @@
+@use '../variables/breakpoints.scss';
+
+:root {
+  --kd-font-family-primary: 'TWK Everett', 'Helvetica', 'Arial', sans-serif;
+  --kd-font-family-secondary: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+
+  --kd-font-weight-ultralight: 200;
+  --kd-font-weight-light: 300;
+  --kd-font-weight-regular: 400;
+  --kd-font-weight-medium: 500;
+  --kd-font-weight-bold: 700;
+
+  --kd-letter-spacing-1: -0.16px;
+  --kd-letter-spacing-2: -0.08px;
+  --kd-letter-spacing-3: 0px;
+  --kd-letter-spacing-4: 0.16px;
+  --kd-letter-spacing-5: 0.32px;
+
+  --kd-font-size-hero-1-max: 18rem;
+  --kd-font-size-hero-1-xlg: 18rem;
+  --kd-font-size-hero-1-lg: 13.5rem;
+  --kd-font-size-hero-1-md: 9rem;
+  --kd-font-size-hero-1-sm: 6rem;
+
+  --kd-line-height-hero-1-max: 21rem;
+  --kd-line-height-hero-1-xlg: 21rem;
+  --kd-line-height-hero-1-lg: 16rem;
+  --kd-line-height-hero-1-md: 10.5rem;
+  --kd-line-height-hero-1-sm: 7rem;
+
+  --kd-font-size-hero-2-max: 13.5rem;
+  --kd-font-size-hero-2-xlg: 12rem;
+  --kd-font-size-hero-2-lg: 9rem;
+  --kd-font-size-hero-2-md: 6rem;
+  --kd-font-size-hero-2-sm: 5rem;
+
+  --kd-line-height-hero-2-max: 16rem;
+  --kd-line-height-hero-2-xlg: 14rem;
+  --kd-line-height-hero-2-lg: 10.5rem;
+  --kd-line-height-hero-2-md: 7rem;
+  --kd-line-height-hero-2-sm: 5.5rem;
+
+  --kd-font-size-hero-3-max: 9.75rem;
+  --kd-font-size-hero-3-xlg: 9rem;
+  --kd-font-size-hero-3-lg: 6rem;
+  --kd-font-size-hero-3-md: 5rem;
+  --kd-font-size-hero-3-sm: 4rem;
+
+  --kd-line-height-hero-3-max: 14rem;
+  --kd-line-height-hero-3-xlg: 10.5rem;
+  --kd-line-height-hero-3-lg: 7rem;
+  --kd-line-height-hero-3-md: 5.5rem;
+  --kd-line-height-hero-3-sm: 4.625rem;
+
+  --kd-font-size-hero-4-max: 9rem;
+  --kd-font-size-hero-4-xlg: 7.5rem;
+  --kd-font-size-hero-4-lg: 5rem;
+  --kd-font-size-hero-4-md: 4.5rem;
+  --kd-font-size-hero-4-sm: 4rem;
+
+  --kd-line-height-hero-4-max: 10.5rem;
+  --kd-line-height-hero-4-xlg: 8.75rem;
+  --kd-line-height-hero-4-lg: 5.5rem;
+  --kd-line-height-hero-4-md: 5.25rem;
+  --kd-line-height-hero-4-sm: 4.625rem;
+
+  --kd-font-size-display-1-max: 9rem;
+  --kd-font-size-display-1-xlg: 6rem;
+  --kd-font-size-display-1-lg: 5rem;
+  --kd-font-size-display-1-md: 4.5rem;
+  --kd-font-size-display-1-sm: 4rem;
+
+  --kd-line-height-display-1-max: 10.5rem;
+  --kd-line-height-display-1-xlg: 7rem;
+  --kd-line-height-display-1-lg: 5.5rem;
+  --kd-line-height-display-1-md: 5.25rem;
+  --kd-line-height-display-1-sm: 4.625rem;
+
+  --kd-font-size-display-2-max: 6rem;
+  --kd-font-size-display-2-xlg: 5rem;
+  --kd-font-size-display-2-lg: 4.5rem;
+  --kd-font-size-display-2-md: 4rem;
+  --kd-font-size-display-2-sm: 3.5rem;
+
+  --kd-line-height-display-2-max: 7rem;
+  --kd-line-height-display-2-xlg: 5.5rem;
+  --kd-line-height-display-2-lg: 5.25rem;
+  --kd-line-height-display-2-md: 4.625rem;
+  --kd-line-height-display-2-sm: 4rem;
+
+  --kd-font-size-display-3-max: 5rem;
+  --kd-font-size-display-3-xlg: 4.5rem;
+  --kd-font-size-display-3-lg: 4rem;
+  --kd-font-size-display-3-md: 3.5rem;
+  --kd-font-size-display-3-sm: 3rem;
+
+  --kd-line-height-display-3-max: 5.5rem;
+  --kd-line-height-display-3-xlg: 5.25rem;
+  --kd-line-height-display-3-lg: 4.625rem;
+  --kd-line-height-display-3-md: 4rem;
+  --kd-line-height-display-3-sm: 3.5rem;
+
+  --kd-font-size-headline-1-max: 4.5rem;
+  --kd-font-size-headline-1-xlg: 4rem;
+  --kd-font-size-headline-1-lg: 3.5rem;
+  --kd-font-size-headline-1-md: 2.5rem;
+  --kd-font-size-headline-1-sm: 2.5rem;
+
+  --kd-line-height-headline-1-max: 5.25rem;
+  --kd-line-height-headline-1-xlg: 4.625rem;
+  --kd-line-height-headline-1-lg: 4rem;
+  --kd-line-height-headline-1-md: 3rem;
+  --kd-line-height-headline-1-sm: 3rem;
+
+  --kd-font-size-headline-2-max: 4rem;
+  --kd-font-size-headline-2-xlg: 3.5rem;
+  --kd-font-size-headline-2-lg: 3rem;
+  --kd-font-size-headline-2-md: 2.25rem;
+  --kd-font-size-headline-2-sm: 2.25rem;
+
+  --kd-line-height-headline-2-max: 4.625rem;
+  --kd-line-height-headline-2-xlg: 4rem;
+  --kd-line-height-headline-2-lg: 3.5rem;
+  --kd-line-height-headline-2-md: 2.75rem;
+  --kd-line-height-headline-2-sm: 2.75rem;
+
+  --kd-font-size-headline-3-max: 3rem;
+  --kd-font-size-headline-3-xlg: 3rem;
+  --kd-font-size-headline-3-lg: 2.5rem;
+  --kd-font-size-headline-3-md: 2rem;
+  --kd-font-size-headline-3-sm: 2rem;
+
+  --kd-line-height-headline-3-max: 3.5rem;
+  --kd-line-height-headline-3-xlg: 3.5rem;
+  --kd-line-height-headline-3-lg: 3rem;
+  --kd-line-height-headline-3-md: 2.5rem;
+  --kd-line-height-headline-3-sm: 2.5rem;
+
+  --kd-font-size-headline-4-max: 3rem;
+  --kd-font-size-headline-4-xlg: 2.5rem;
+  --kd-font-size-headline-4-lg: 2.25rem;
+  --kd-font-size-headline-4-md: 1.75rem;
+  --kd-font-size-headline-4-sm: 1.75rem;
+
+  --kd-line-height-headline-4-max: 3.5rem;
+  --kd-line-height-headline-4-xlg: 3rem;
+  --kd-line-height-headline-4-lg: 2.75rem;
+  --kd-line-height-headline-4-md: 2.25rem;
+  --kd-line-height-headline-4-sm: 2.25rem;
+
+  --kd-font-size-headline-5-max: 2.5rem;
+  --kd-font-size-headline-5-xlg: 2.25rem;
+  --kd-font-size-headline-5-lg: 2rem;
+  --kd-font-size-headline-5-md: 1.75rem;
+  --kd-font-size-headline-5-sm: 1.75rem;
+
+  --kd-line-height-headline-5-max: 3rem;
+  --kd-line-height-headline-5-xlg: 2.75rem;
+  --kd-line-height-headline-5-lg: 2.5rem;
+  --kd-line-height-headline-5-md: 2.25rem;
+  --kd-line-height-headline-5-sm: 2.25rem;
+
+  --kd-font-size-headline-6-max: 2.5rem;
+  --kd-font-size-headline-6-xlg: 2rem;
+  --kd-font-size-headline-6-lg: 1.75rem;
+  --kd-font-size-headline-6-md: 1.5rem;
+  --kd-font-size-headline-6-sm: 1.5rem;
+
+  --kd-line-height-headline-6-max: 3rem;
+  --kd-line-height-headline-6-xlg: 2.5rem;
+  --kd-line-height-headline-6-lg: 2.25rem;
+  --kd-line-height-headline-6-md: 2rem;
+  --kd-line-height-headline-6-sm: 2rem;
+
+  --kd-font-size-headline-7-max: 2rem;
+  --kd-font-size-headline-7-xlg: 1.75rem;
+  --kd-font-size-headline-7-lg: 1.75rem;
+  --kd-font-size-headline-7-md: 1.5rem;
+  --kd-font-size-headline-7-sm: 1.5rem;
+
+  --kd-line-height-headline-7-max: 2.5rem;
+  --kd-line-height-headline-7-xlg: 2.25rem;
+  --kd-line-height-headline-7-lg: 2.25rem;
+  --kd-line-height-headline-7-md: 2rem;
+  --kd-line-height-headline-7-sm: 2rem;
+
+  --kd-font-size-headline-8-max: 1.75rem;
+  --kd-font-size-headline-8-xlg: 1.5rem;
+  --kd-font-size-headline-8-lg: 1.5rem;
+  --kd-font-size-headline-8-md: 1.25rem;
+  --kd-font-size-headline-8-sm: 1.25rem;
+
+  --kd-line-height-headline-8-max: 2.25rem;
+  --kd-line-height-headline-8-xlg: 2rem;
+  --kd-line-height-headline-8-lg: 2rem;
+  --kd-line-height-headline-8-md: 1.75rem;
+  --kd-line-height-headline-8-sm: 1.75rem;
+
+  --kd-font-size-body-1-max: 1.25rem;
+  --kd-font-size-body-1-xlg: 1.25rem;
+  --kd-font-size-body-1-lg: 1.25rem;
+  --kd-font-size-body-1-md: 1.25rem;
+  --kd-font-size-body-1-sm: 1.25rem;
+
+  --kd-line-height-body-1-max: 1.75rem;
+  --kd-line-height-body-1-xlg: 1.75rem;
+  --kd-line-height-body-1-lg: 1.75rem;
+  --kd-line-height-body-1-md: 1.75rem;
+  --kd-line-height-body-1-sm: 1.75rem;
+
+  --kd-font-size-body-2-max: 1rem;
+  --kd-font-size-body-2-xlg: 1rem;
+  --kd-font-size-body-2-lg: 1rem;
+  --kd-font-size-body-2-md: 1rem;
+  --kd-font-size-body-2-sm: 1rem;
+
+  --kd-line-height-body-2-max: 1.5rem;
+  --kd-line-height-body-2-xlg: 1.5rem;
+  --kd-line-height-body-2-lg: 1.5rem;
+  --kd-line-height-body-2-md: 1.5rem;
+  --kd-line-height-body-2-sm: 1.5rem;
+
+  --kd-font-size-utility-1-max: 1rem;
+  --kd-font-size-utility-1-xlg: 1rem;
+  --kd-font-size-utility-1-lg: 1rem;
+  --kd-font-size-utility-1-md: 1rem;
+  --kd-font-size-utility-1-sm: 1rem;
+
+  --kd-line-height-utility-1-max: 1.5rem;
+  --kd-line-height-utility-1-xlg: 1.5rem;
+  --kd-line-height-utility-1-lg: 1.5rem;
+  --kd-line-height-utility-1-md: 1.5rem;
+  --kd-line-height-utility-1-sm: 1.5rem;
+
+  --kd-font-size-utility-2-max: 0.875rem;
+  --kd-font-size-utility-2-xlg: 0.875rem;
+  --kd-font-size-utility-2-lg: 0.875rem;
+  --kd-font-size-utility-2-md: 0.875rem;
+  --kd-font-size-utility-2-sm: 0.875rem;
+
+  --kd-line-height-utility-2-max: 1.25rem;
+  --kd-line-height-utility-2-xlg: 1.25rem;
+  --kd-line-height-utility-2-lg: 1.25rem;
+  --kd-line-height-utility-2-md: 1.25rem;
+  --kd-line-height-utility-2-sm: 1.25rem;
+
+  --kd-font-size-utility-3-max: 0.75rem;
+  --kd-font-size-utility-3-xlg: 0.75rem;
+  --kd-font-size-utility-3-lg: 0.75rem;
+  --kd-font-size-utility-3-md: 0.75rem;
+  --kd-font-size-utility-3-sm: 0.75rem;
+
+  --kd-line-height-utility-3-max: 1rem;
+  --kd-line-height-utility-3-xlg: 1rem;
+  --kd-line-height-utility-3-lg: 1rem;
+  --kd-line-height-utility-3-md: 1rem;
+  --kd-line-height-utility-3-sm: 1rem;
+
+  --kd-font-size-utility-4-max: 0.75rem;
+  --kd-font-size-utility-4-xlg: 0.75rem;
+  --kd-font-size-utility-4-lg: 0.75rem;
+  --kd-font-size-utility-4-md: 0.75rem;
+  --kd-font-size-utility-4-sm: 0.75rem;
+
+  --kd-line-height-utility-4-max: 1rem;
+  --kd-line-height-utility-4-xlg: 1rem;
+  --kd-line-height-utility-4-lg: 1rem;
+  --kd-line-height-utility-4-md: 1rem;
+  --kd-line-height-utility-4-sm: 1rem;
+
+  --kd-font-size-utility-5-max: 0.875rem;
+  --kd-font-size-utility-5-xlg: 0.875rem;
+  --kd-font-size-utility-5-lg: 0.875rem;
+  --kd-font-size-utility-5-md: 0.875rem;
+  --kd-font-size-utility-5-sm: 0.875rem;
+
+  --kd-line-height-utility-5-max: 1.125rem;
+  --kd-line-height-utility-5-xlg: 1.125rem;
+  --kd-line-height-utility-5-lg: 1.125rem;
+  --kd-line-height-utility-5-md: 1.125rem;
+  --kd-line-height-utility-5-sm: 1.125rem;
+}

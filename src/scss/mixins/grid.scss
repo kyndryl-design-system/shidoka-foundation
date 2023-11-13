@@ -1,0 +1,32 @@
+@use '../variables/breakpoints.scss';
+
+@mixin grid($align-left: false, $no-max: false) {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); // 4 cols at sm
+  gap: var(--kd-grid-gap);
+  max-width: breakpoints.$bp-max;
+
+  @if $no-max {
+    max-width: none;
+  } @else {
+    max-width: breakpoints.$bp-max;
+  }
+
+  @if $align-left {
+    margin: 0;
+  } @else {
+    margin: 0 auto;
+  }
+
+  @media (min-width: breakpoints.$bp-md) {
+    grid-template-columns: repeat(8, 1fr); // 8 cols at md
+  }
+
+  @media (min-width: breakpoints.$bp-lg) {
+    grid-template-columns: repeat(12, 1fr); // 12 cols at lg+
+  }
+}
+
+@mixin grid-col($span) {
+  grid-column: auto / span $span;
+}

@@ -1,0 +1,111 @@
+@use '../mixins/typography.scss';
+
+.kd-type--hero-01 {
+  @include typography.type-hero-01;
+}
+
+.kd-type--hero-02 {
+  @include typography.type-hero-02;
+}
+
+.kd-type--hero-03 {
+  @include typography.type-hero-03;
+}
+
+.kd-type--hero-04 {
+  @include typography.type-hero-04;
+}
+
+.kd-type--display-01 {
+  @include typography.type-display-01;
+}
+
+.kd-type--display-02 {
+  @include typography.type-display-02;
+}
+
+.kd-type--display-03 {
+  @include typography.type-display-03;
+}
+
+.kd-type--headline-01 {
+  @include typography.type-headline-01;
+}
+
+.kd-type--headline-02 {
+  @include typography.type-headline-02;
+}
+
+.kd-type--headline-03 {
+  @include typography.type-headline-03;
+}
+
+.kd-type--headline-04 {
+  @include typography.type-headline-04;
+}
+
+.kd-type--headline-05 {
+  @include typography.type-headline-05;
+}
+
+.kd-type--headline-06 {
+  @include typography.type-headline-06;
+}
+
+.kd-type--headline-07 {
+  @include typography.type-headline-07;
+}
+
+.kd-type--headline-08 {
+  @include typography.type-headline-08;
+}
+
+.kd-type--body-01 {
+  @include typography.type-body-01;
+}
+
+.kd-type--body-02 {
+  @include typography.type-body-02;
+}
+
+.kd-type--ui-01 {
+  @include typography.type-ui-01;
+}
+
+.kd-type--ui-02 {
+  @include typography.type-ui-02;
+}
+
+.kd-type--ui-03 {
+  @include typography.type-ui-03;
+}
+
+.kd-type--ui-04 {
+  @include typography.type-ui-04;
+}
+
+.kd-type--ui-05 {
+  @include typography.type-ui-05;
+}
+
+//Font-weight-classes
+
+.kd-type--weight-ultralight {
+  font-weight: var(--kd-font-weight-ultralight);
+}
+
+.kd-type--weight-light {
+  font-weight: var(--kd-font-weight-light);
+}
+
+.kd-type--weight-regular {
+  font-weight: var(--kd-font-weight-regular);
+}
+
+.kd-type--weight-medium {
+  font-weight: var(--kd-font-weight-medium);
+}
+
+.kd-type--weight-bold {
+  font-weight: var(--kd-font-weight-bold);
+}
