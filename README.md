@@ -13,12 +13,7 @@ Read the [Contributing Guide](https://github.com/kyndryl-design-system/shidoka-f
 <!-- Note: This will not work until you have configured the enterprise package registry following the instructions above. -->
 
 ```bash
-# stable/main
 npm install @kyndryl-design-system/shidoka-foundation -S
-
-# beta (use until first stable release)
-npm install @kyndryl-design-system/shidoka-foundation@beta -S
-# when using beta, lock the version, as breaking changes can happen at any time
 ```
 
 ## Import the root stylesheet to your app's global styles
