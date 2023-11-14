@@ -4,7 +4,7 @@
 
 # Contributing to this project
 
-Read the [Contributing Guide](https://github.com/kyndryl-design-system/shidoka-foundation/blob/beta/CONTRIBUTING.md) here.
+Read the [Contributing Guide](CONTRIBUTING.md) here.
 
 # Using this library in another project
 
