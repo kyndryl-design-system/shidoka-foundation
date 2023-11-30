@@ -16,12 +16,23 @@ export const stringToReactHtml = (string: String) => {
  * @param {*} options
  *  imported enums object
  */
-export function createOptionsArray(options: any = {}) {
-  const optionsArray: any = [];
+export function createOptionsArray(options: object = {}) {
+  const optionsArray: Array<string> = [];
 
   Object.keys(options).map((key) => {
-    optionsArray.push(options[key]);
+    optionsArray.push(options[key as keyof typeof options]);
   });
 
   return optionsArray;
+}
+
+/**
+ * Get the current breakpoint from CSS variable.
+ * Used for conditional logic and/or rendering in component JS
+ * by matching the current breakpoint with values in common/defs/breakpoints.
+ */
+export function getCurrentBreakpoint() {
+  return getComputedStyle(document.documentElement).getPropertyValue(
+    '--kd-current-breakpoint'
+  );
 }
