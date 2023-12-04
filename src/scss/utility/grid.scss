@@ -9,10 +9,8 @@
 .kd-grid {
   @include grid.grid;
 
-  &--no-pad {
+  &--no-gap {
     gap: 0;
-    padding-left: 0;
-    padding-right: 0;
   }
 
   &--align-left {

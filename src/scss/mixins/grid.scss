@@ -1,18 +1,14 @@
 @use '../variables/breakpoints.scss';
 
-@mixin grid($align-left: false, $no-max: false, $no-pad: false) {
+@mixin grid($align-left: false, $no-max: false, $no-gap: false) {
   display: grid;
   grid-template-columns: repeat(4, 1fr); // 4 cols at sm
   gap: var(--kd-grid-gap);
   margin: 0 auto;
   max-width: var(--kd-grid-max-width);
-  padding-left: var(--kd-grid-gap-half); // add gap outside first/last column
-  padding-right: var(--kd-grid-gap-half);
 
-  @if $no-pad {
+  @if $no-gap {
     gap: 0;
-    padding-left: 0;
-    padding-right: 0;
   }
 
   @if $no-max {

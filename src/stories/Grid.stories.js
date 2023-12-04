@@ -18,9 +18,9 @@ export default {
         defaultValue: { summary: false },
       },
     },
-    noPad: {
+    noGap: {
       control: { type: 'boolean' },
-      description: 'Remove grid padding.',
+      description: 'Remove column gap.',
       table: {
         defaultValue: { summary: false },
       },
@@ -56,7 +56,7 @@ export default {
 const args = {
   alignLeft: false,
   noMax: false,
-  noPad: false,
+  noGap: false,
 };
 
 export const Grid = {
@@ -69,7 +69,7 @@ export const Grid = {
     const gridClasses = {
       'kd-grid': true,
       'kd-grid--no-max': args.noMax,
-      'kd-grid--no-pad': args.noPad,
+      'kd-grid--no-gap': args.noGap,
       'kd-grid--align-left': args.alignLeft,
     };
 
