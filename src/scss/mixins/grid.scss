@@ -6,6 +6,7 @@
   gap: var(--kd-grid-gap);
   margin: 0 auto;
   max-width: var(--kd-grid-max-width);
+  position: relative;
 
   @if $no-gap {
     gap: 0;

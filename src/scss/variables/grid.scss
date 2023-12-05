@@ -1,28 +1,10 @@
 @use 'breakpoints.scss';
 
 :root {
-  --kd-grid-container-max-width: 100%;
   --kd-grid-gap: 32px;
-  --kd-grid-margin: 0;
-  --kd-grid-max-width: calc(var(--kd-grid-container-max-width) - var(--kd-grid-margin) - var(--kd-grid-margin));
-
-  @media (min-width: breakpoints.$bp-md) {
-    --kd-grid-margin: 16px;
-    --kd-grid-container-max-width: #{breakpoints.$bp-md};
-  }
-
-  @media (min-width: breakpoints.$bp-lg) {
-    --kd-grid-margin: 16px;
-    --kd-grid-container-max-width: #{breakpoints.$bp-lg};
-  }
-
-  @media (min-width: breakpoints.$bp-xl) {
-    --kd-grid-margin: 32px;
-    --kd-grid-container-max-width: #{breakpoints.$bp-xl};
-  }
+  --kd-grid-max-width: 100%;
 
   @media (min-width: breakpoints.$bp-max) {
-    --kd-grid-margin: 24px;
-    --kd-grid-container-max-width: #{breakpoints.$bp-max};
+    --kd-grid-max-width: #{breakpoints.$bp-max};
   }
 }
