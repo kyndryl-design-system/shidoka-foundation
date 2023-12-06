@@ -18,3 +18,8 @@
     }
   }
 }
+
+.kd-spacing--page-gutter {
+  padding-left: var(--kd-page-gutter);
+  padding-right: var(--kd-page-gutter);
+}

@@ -4,6 +4,10 @@
 .kd-grid {
   @include grid.grid;
 
+  &--no-gap {
+    gap: 0;
+  }
+
   &--align-left {
     margin: 0;
   }

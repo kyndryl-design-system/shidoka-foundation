@@ -5,7 +5,6 @@ $bp-xl: 82rem;
 $bp-max: 99rem;
 
 :root {
-  --kd-grid-max-width: #{$bp-max};
   --kd-current-breakpoint: sm;
 
   @media (min-width: $bp-md) {
