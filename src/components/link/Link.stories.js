@@ -7,7 +7,7 @@ import { action } from '@storybook/addon-actions';
 import './link';
 import arrowRightIcon from '@carbon/icons/es/chevron--right/16';
 import { LINK_TYPES, LINK_TARGETS } from './defs';
-import { createOptionsArray } from '../../common/helpers/helpers';
+import { createOptionsArray } from '../../common/helpers/storybook';
 
 const createSelectOptions = (defs) => [null, ...createOptionsArray(defs)];
 

@@ -1,5 +1,25 @@
-$bp-sm: 20rem; // 320
-$bp-md: 42rem; // 672
-$bp-lg: 74rem; // 1184
-$bp-xl: 82rem; // 1312
-$bp-max: 99rem; // 1584
+$bp-sm: 20rem;
+$bp-md: 42rem;
+$bp-lg: 74rem;
+$bp-xl: 82rem;
+$bp-max: 99rem;
+
+:root {
+  --kd-current-breakpoint: sm;
+
+  @media (min-width: $bp-md) {
+    --kd-current-breakpoint: md;
+  }
+
+  @media (min-width: $bp-lg) {
+    --kd-current-breakpoint: lg;
+  }
+
+  @media (min-width: $bp-xl) {
+    --kd-current-breakpoint: xl;
+  }
+
+  @media (min-width: $bp-max) {
+    --kd-current-breakpoint: max;
+  }
+}

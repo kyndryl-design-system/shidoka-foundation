@@ -16,7 +16,7 @@ import {
   BUTTON_TYPES,
   BUTTON_ICON_POSITION,
 } from './defs';
-import { createOptionsArray } from '../../common/helpers/helpers';
+import { createOptionsArray } from '../../common/helpers/storybook';
 
 const createSelectOptions = (defs) => [null, ...createOptionsArray(defs)];
 

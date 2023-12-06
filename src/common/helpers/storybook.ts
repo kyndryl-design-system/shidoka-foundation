@@ -1,11 +1,3 @@
-export const debounce = (fn: Function, ms = 100) => {
-  let timer: ReturnType<typeof setTimeout>;
-  return function (e: Event) {
-    clearTimeout(timer);
-    timer = setTimeout(() => fn.apply(e), ms);
-  };
-};
-
 export const stringToReactHtml = (string: String) => {
   return { __html: string };
 };
@@ -16,11 +8,11 @@ export const stringToReactHtml = (string: String) => {
  * @param {*} options
  *  imported enums object
  */
-export function createOptionsArray(options: any = {}) {
-  const optionsArray: any = [];
+export function createOptionsArray(options: object = {}) {
+  const optionsArray: Array<string> = [];
 
   Object.keys(options).map((key) => {
-    optionsArray.push(options[key]);
+    optionsArray.push(options[key as keyof typeof options]);
   });
 
   return optionsArray;
