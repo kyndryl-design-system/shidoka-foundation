@@ -1,3 +1,12 @@
+# [1.1.0](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.0.0...v1.1.0) (2023-12-06)
+
+
+### Features
+
+* **grid:** fix documentation ([432485d](https://github.com/kyndryl-design-system/shidoka-foundation/commit/432485d7b76141ed17ff588f0be96c2768cf13ad))
+* **grid:** replace padding option with no gap option ([c7cb82d](https://github.com/kyndryl-design-system/shidoka-foundation/commit/c7cb82dbd79e8d0fe3c703976e52ca7fcb53c728))
+* **grid:** revert breakpoint max widths. add page gutter utility class instead of grid container. ([9a5f695](https://github.com/kyndryl-design-system/shidoka-foundation/commit/9a5f6950fe08f697498cb8e2b6ea92cd24eb7a48))
+
 # 1.0.0 (2023-11-13)
 
 
