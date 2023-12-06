@@ -18,17 +18,28 @@ export default {
         defaultValue: { summary: false },
       },
     },
+    noGap: {
+      control: { type: 'boolean' },
+      description: 'Remove column gap.',
+      table: {
+        defaultValue: { summary: false },
+      },
+    },
   },
   decorators: [
     (story) =>
       html`
         <style>
-          .grid-examples .kd-grid {
+          .storybook-grid-example {
+            margin: var(--kd-negative-page-gutter);
+          }
+          
+          .kd-grid {
             margin-top: 32px;
             margin-bottom: 32px;
           }
 
-          .grid-examples .kd-grid > div {
+          .kd-grid > div {
             text-align: center;
             border: 1px solid lightgray;
             padding: 16px;
@@ -42,6 +53,7 @@ export default {
 const args = {
   alignLeft: false,
   noMax: false,
+  noGap: false,
 };
 
 export const Grid = {
@@ -49,74 +61,77 @@ export const Grid = {
   render: (args) => {
     const gridClasses = {
       'kd-grid': true,
-      'kd-grid--align-left': args.alignLeft,
       'kd-grid--no-max': args.noMax,
+      'kd-grid--no-gap': args.noGap,
+      'kd-grid--align-left': args.alignLeft,
     };
 
     return html`
-      <div class="grid-examples">
-        <div class="${classMap(gridClasses)}">
-          <div
-            class="kd-grid__col--sm-4 kd-grid__col--md-8 kd-grid__col--lg-12"
-          >
-            12 cols @ max, xl, lg, 8 cols @ md, and 4 cols @ sm
+      <div class="storybook-grid-example">
+        <div class="kd-spacing--page-gutter">
+          <div class="${classMap(gridClasses)}">
+            <div
+              class="kd-grid__col--sm-4 kd-grid__col--md-8 kd-grid__col--lg-12"
+            >
+              12 cols @ max, xl, lg, 8 cols @ md, and 4 cols @ sm
+            </div>
           </div>
-        </div>
-
-        <div class="${classMap(gridClasses)}">
-          <div class="kd-grid__col--sm-4 kd-grid__col--md-4 kd-grid__col--lg-6">
-            6 cols @ max, xl, lg, 4 cols @ md and sm
+    
+          <div class="${classMap(gridClasses)}">
+            <div class="kd-grid__col--sm-4 kd-grid__col--md-4 kd-grid__col--lg-6">
+              6 cols @ max, xl, lg, 4 cols @ md and sm
+            </div>
+            <div class="kd-grid__col--sm-4 kd-grid__col--md-4 kd-grid__col--lg-6">
+              6 cols @ max, xl, lg, 4 cols @ md and sm
+            </div>
           </div>
-          <div class="kd-grid__col--sm-4 kd-grid__col--md-4 kd-grid__col--lg-6">
-            6 cols @ max, xl, lg, 4 cols @ md and sm
+    
+          <div class="${classMap(gridClasses)}">
+            <div class="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-4">
+              4 cols @ max, xl, lg, md and 2 cols @ sm
+            </div>
+            <div class="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-4">
+              4 cols @ max, xl, lg, md and 2 cols @ sm
+            </div>
+            <div class="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-4">
+              4 cols @ max, xl, lg, md and 2 cols @ sm
+            </div>
           </div>
-        </div>
-
-        <div class="${classMap(gridClasses)}">
-          <div class="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-4">
-            4 cols @ max, xl, lg, md and 2 cols @ sm
+    
+          <div class="${classMap(gridClasses)}">
+            <div class="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-3">
+              3 cols @ max, xl, lg, 4 cols @ md, and 2 cols @ sm
+            </div>
+            <div class="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-3">
+              3 cols @ max, xl, lg, 4 cols @ md, and 2 cols @ sm
+            </div>
+            <div class="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-3">
+              3 cols @ max, xl, lg, 4 cols @ md, and 2 cols @ sm
+            </div>
+            <div class="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-3">
+              3 cols @ max, xl, lg, 4 cols @ md, and 2 cols @ sm
+            </div>
           </div>
-          <div class="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-4">
-            4 cols @ max, xl, lg, md and 2 cols @ sm
-          </div>
-          <div class="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-4">
-            4 cols @ max, xl, lg, md and 2 cols @ sm
-          </div>
-        </div>
-
-        <div class="${classMap(gridClasses)}">
-          <div class="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-3">
-            3 cols @ max, xl, lg, 4 cols @ md, and 2 cols @ sm
-          </div>
-          <div class="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-3">
-            3 cols @ max, xl, lg, 4 cols @ md, and 2 cols @ sm
-          </div>
-          <div class="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-3">
-            3 cols @ max, xl, lg, 4 cols @ md, and 2 cols @ sm
-          </div>
-          <div class="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-3">
-            3 cols @ max, xl, lg, 4 cols @ md, and 2 cols @ sm
-          </div>
-        </div>
-
-        <div class="${classMap(gridClasses)}">
-          <div class="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-2">
-            2 cols @ max, xl, lg, sm, 4 cols @ md
-          </div>
-          <div class="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-2">
-            2 cols @ max, xl, lg, sm, 4 cols @ md
-          </div>
-          <div class="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-2">
-            2 cols @ max, xl, lg, sm, 4 cols @ md
-          </div>
-          <div class="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-2">
-            2 cols @ max, xl, lg, sm, 4 cols @ md
-          </div>
-          <div class="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-2">
-            2 cols @ max, xl, lg, sm, 4 cols @ md
-          </div>
-          <div class="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-2">
-            2 cols @ max, xl, lg, sm, 4 cols @ md
+    
+          <div class="${classMap(gridClasses)}">
+            <div class="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-2">
+              2 cols @ max, xl, lg, sm, 4 cols @ md
+            </div>
+            <div class="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-2">
+              2 cols @ max, xl, lg, sm, 4 cols @ md
+            </div>
+            <div class="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-2">
+              2 cols @ max, xl, lg, sm, 4 cols @ md
+            </div>
+            <div class="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-2">
+              2 cols @ max, xl, lg, sm, 4 cols @ md
+            </div>
+            <div class="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-2">
+              2 cols @ max, xl, lg, sm, 4 cols @ md
+            </div>
+            <div class="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-2">
+              2 cols @ max, xl, lg, sm, 4 cols @ md
+            </div>
           </div>
         </div>
       </div>
