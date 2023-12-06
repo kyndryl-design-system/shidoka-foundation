@@ -1,3 +1,16 @@
+# [1.2.0](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.1.0...v1.2.0) (2023-12-06)
+
+
+### Bug Fixes
+
+* **breakpoint-vars:** update comments ([2517ebc](https://github.com/kyndryl-design-system/shidoka-foundation/commit/2517ebc2295151d6bf07262d6adec70805cc9cd2))
+
+
+### Features
+
+* **breakpoint-vars:** add vars for breakpoints to use in JS ([7414ca7](https://github.com/kyndryl-design-system/shidoka-foundation/commit/7414ca7ef9501ed64d7a6122e73d31b0925cca6f))
+* **breakpoint-vars:** organize helpers into individual files ([69f3e69](https://github.com/kyndryl-design-system/shidoka-foundation/commit/69f3e69cec9068198e0940e327f5f17c22707844))
+
 # [1.1.0](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.0.0...v1.1.0) (2023-12-06)
 
 
