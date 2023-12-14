@@ -1,0 +1,60 @@
+import { Meta, Story, Canvas, Controls, Stories } from '@storybook/blocks';
+import * as VisibilityStories from './Visibility.stories.js';
+
+<Meta of={VisibilityStories} />
+
+## Example
+
+<Canvas>
+  <Story of={VisibilityStories.Visibility} />
+</Canvas>
+
+## Usage
+
+### SCSS Mixins
+
+```css
+@use '~@kyndryl-design-system/shidoka-foundation/scss/mixins/visibility.scss';
+
+.your-css-selector {
+  @include visibility.sr-only;
+  @include visibility.hidden;
+  @include visibility.hidden-sm;
+  @include visibility.hidden-md;
+  @include visibility.hidden-lg;
+  @include visibility.hidden-xl;
+  @include visibility.hidden-max;
+}
+```
+
+### Utility Classes
+
+#### Import to SCSS
+
+```css
+@use '~@kyndryl-design-system/shidoka-foundation/scss/utility/visibility.scss';
+```
+
+#### Import to CSS
+
+```css
+@import '@kyndryl-design-system/shidoka-foundation/css/visibility.css';
+```
+
+#### Import to JS
+
+```js
+import '@kyndryl-design-system/shidoka-foundation/css/visibility.css';
+```
+
+#### Example HTML
+
+```html
+<div class="kd-visibility--sr-only">Screen reader only</div>
+<div class="kd-visibility--hidden">Hidden all breakpoints</div>
+<div class="kd-visibility--hidden-sm">Hidden Small (sm)</div>
+<div class="kd-visibility--hidden-md">Hidden Medium (md)</div>
+<div class="kd-visibility--hidden-lg">Hidden Large (lg)</div>
+<div class="kd-visibility--hidden-xl">Hidden X-Large (xl)</div>
+<div class="kd-visibility--hidden-max">Hidden Max (max)</div>
+```
