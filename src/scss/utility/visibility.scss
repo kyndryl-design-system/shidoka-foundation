@@ -2,39 +2,39 @@
 @use '../variables/breakpoints.scss';
 
 .kd-visibility--sr-only {
-	@include visibility.sr-only;
+  @include visibility.sr-only;
 }
 
 .kd-visibility--hidden {
-	@include visibility.hidden;
+  @include visibility.hidden;
 }
 
 @media (max-width: calc(#{breakpoints.$bp-md} - 1px)) {
-	.kd-visibility--hidden-sm {
-		@include visibility.hidden;
-	}
+  .kd-visibility--hidden-sm {
+    @include visibility.hidden;
+  }
 }
 
 @media (min-width: breakpoints.$bp-md) and (max-width: calc(#{breakpoints.$bp-lg} - 1px)) {
-	.kd-visibility--hidden-md {
-		@include visibility.hidden;
-	}
+  .kd-visibility--hidden-md {
+    @include visibility.hidden;
+  }
 }
 
 @media (min-width: breakpoints.$bp-lg) and (max-width: calc(#{breakpoints.$bp-xl} - 1px)) {
-	.kd-visibility--hidden-lg {
-		@include visibility.hidden;
-	}
+  .kd-visibility--hidden-lg {
+    @include visibility.hidden;
+  }
 }
 
 @media (min-width: breakpoints.$bp-xl) and (max-width: calc(#{breakpoints.$bp-max} - 1px)) {
-	.kd-visibility--hidden-xl {
-		@include visibility.hidden;
-	}
+  .kd-visibility--hidden-xl {
+    @include visibility.hidden;
+  }
 }
 
 @media (min-width: breakpoints.$bp-max) {
-	.kd-visibility--hidden-max {
-		@include visibility.hidden;
-	}
+  .kd-visibility--hidden-max {
+    @include visibility.hidden;
+  }
 }
