@@ -1,3 +1,12 @@
+# [1.3.0](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.2.0...v1.3.0) (2023-12-15)
+
+
+### Features
+
+* **visibility-utils:** add documentation and mixin for each breakpoint ([0478e3f](https://github.com/kyndryl-design-system/shidoka-foundation/commit/0478e3f11350beaba1a679f98fa4864bb3b9367d))
+* **visibility-utils:** add responsive utility classes for visibility ([e3b489b](https://github.com/kyndryl-design-system/shidoka-foundation/commit/e3b489bf4bd4599c28f6056ae06ed68554f31e04))
+* **visibility-utils:** use spaces instead of tabs ([d9e6644](https://github.com/kyndryl-design-system/shidoka-foundation/commit/d9e664447d3f4815a48086d5ec49eb11cf934287))
+
 # [1.2.0](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.1.0...v1.2.0) (2023-12-06)
 
 
