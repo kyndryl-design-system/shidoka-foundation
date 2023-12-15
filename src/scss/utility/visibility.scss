@@ -1,0 +1,30 @@
+@use '../mixins/visibility.scss';
+@use '../variables/breakpoints.scss';
+
+.kd-visibility--sr-only {
+  @include visibility.sr-only;
+}
+
+.kd-visibility--hidden {
+  @include visibility.hidden;
+}
+
+.kd-visibility--hidden-sm {
+  @include visibility.hidden-sm;
+}
+
+.kd-visibility--hidden-md {
+  @include visibility.hidden-md;
+}
+
+.kd-visibility--hidden-lg {
+  @include visibility.hidden-lg;
+}
+
+.kd-visibility--hidden-xl {
+  @include visibility.hidden-xl;
+}
+
+.kd-visibility--hidden-max {
+  @include visibility.hidden-max;
+}

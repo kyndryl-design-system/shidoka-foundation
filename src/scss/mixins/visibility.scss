@@ -1,0 +1,48 @@
+@use '../variables/breakpoints.scss';
+
+@mixin sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  text-indent: 200%;
+  white-space: nowrap;
+  width: 1px;
+}
+
+@mixin hidden {
+  display: none !important;
+}
+
+@mixin hidden-sm {
+  @media (max-width: calc(#{breakpoints.$bp-md} - 1px)) {
+    display: none !important;
+  }
+}
+
+@mixin hidden-md {
+  @media (min-width: breakpoints.$bp-md) and (max-width: calc(#{breakpoints.$bp-lg} - 1px)) {
+    display: none !important;
+  }
+}
+
+@mixin hidden-lg {
+  @media (min-width: breakpoints.$bp-lg) and (max-width: calc(#{breakpoints.$bp-xl} - 1px)) {
+    display: none !important;
+  }
+}
+
+@mixin hidden-xl {
+  @media (min-width: breakpoints.$bp-xl) and (max-width: calc(#{breakpoints.$bp-max} - 1px)) {
+    display: none !important;
+  }
+}
+
+@mixin hidden-max {
+  @media (min-width: breakpoints.$bp-max) {
+    display: none !important;
+  }
+}
