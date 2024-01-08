@@ -77,6 +77,14 @@ export class Button extends LitElement {
   @property({ type: Boolean, reflect: true })
   destructive = false;
 
+  /** Button value.  */
+  @property({ type: String })
+  value!: string;
+
+  /** Button formmethod.  */
+  @property({ type: String })
+  formmethod!: string;
+
   /** Queries default slot nodes.
    * @internal
    */
@@ -139,6 +147,8 @@ export class Button extends LitElement {
               type=${this.type}
               ?disabled=${this.disabled}
               aria-label=${ifDefined(this.description || undefined)}
+              value=${ifDefined(this.value)}
+              formmethod=${ifDefined(this.formmethod)}
               @click=${(e: Event) => this.handleClick(e)}
             >
               <span>
