@@ -83,7 +83,7 @@ export class Button extends LitElement {
 
   /** Button formmethod.  */
   @property({ type: String })
-  formmethod!: string;
+  formmethod!: any;
 
   /** Queries default slot nodes.
    * @internal
