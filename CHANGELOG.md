@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.0...v1.3.1) (2024-01-08)
+
+
+### Bug Fixes
+
+* **button:** add value and formmethod props ([10834f8](https://github.com/kyndryl-design-system/shidoka-foundation/commit/10834f8cdcd12065906aeb921fb5374d907b4c9b))
+
 # [1.3.0](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.2.0...v1.3.0) (2023-12-15)
 
 
