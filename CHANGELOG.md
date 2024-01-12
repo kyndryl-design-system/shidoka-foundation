@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.1...v1.3.2) (2024-01-12)
+
+
+### Bug Fixes
+
+* **button:** make button match host width ([974c44c](https://github.com/kyndryl-design-system/shidoka-foundation/commit/974c44c14e6ddec414aec1eb77e25e27f9d09d9a))
+
 ## [1.3.1](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.0...v1.3.1) (2024-01-08)
 
 
