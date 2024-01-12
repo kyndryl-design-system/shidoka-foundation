@@ -130,6 +130,7 @@ export class Button extends LitElement {
               href=${this.href}
               ?disabled=${this.disabled}
               aria-label=${ifDefined(this.description || undefined)}
+              title=${ifDefined(this.description || undefined)}
               @click=${(e: Event) => this.handleClick(e)}
             >
               <span>
@@ -147,6 +148,7 @@ export class Button extends LitElement {
               type=${this.type}
               ?disabled=${this.disabled}
               aria-label=${ifDefined(this.description || undefined)}
+              title=${ifDefined(this.description || undefined)}
               value=${ifDefined(this.value)}
               formmethod=${ifDefined(this.formmethod)}
               @click=${(e: Event) => this.handleClick(e)}
