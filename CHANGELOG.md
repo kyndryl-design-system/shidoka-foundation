@@ -1,3 +1,10 @@
+## [1.3.4](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.3...v1.3.4) (2024-01-12)
+
+
+### Bug Fixes
+
+* **button:** center content ([f1522e7](https://github.com/kyndryl-design-system/shidoka-foundation/commit/f1522e70be1be676bd8a73c7495506f1f9a6d4a6))
+
 ## [1.3.3](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.2...v1.3.3) (2024-01-12)
 
 
