@@ -1,3 +1,11 @@
+## [1.3.5](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.4...v1.3.5) (2024-01-25)
+
+
+### Bug Fixes
+
+* **button:** add min-width ([54fecdc](https://github.com/kyndryl-design-system/shidoka-foundation/commit/54fecdcdfbe97aecb763e09c08e6ba987ad959df))
+* **color:** correct background disabled color ([53a0758](https://github.com/kyndryl-design-system/shidoka-foundation/commit/53a0758af5e75a2431782758c6452aaf56cfd402))
+
 ## [1.3.4](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.3...v1.3.4) (2024-01-12)
 
 
