@@ -1,3 +1,10 @@
+## [1.3.6](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.5...v1.3.6) (2024-01-29)
+
+
+### Bug Fixes
+
+* **button:** requestSubmit for type submit ([4283921](https://github.com/kyndryl-design-system/shidoka-foundation/commit/428392198b9f53a494dcb54d05e1851474a14259))
+
 ## [1.3.5](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.4...v1.3.5) (2024-01-25)
 
 
