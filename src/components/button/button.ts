@@ -98,12 +98,6 @@ export class Button extends LitElement {
   @queryAssignedNodes({ slot: 'icon' })
   _iconEls!: Array<any>;
 
-  /** Queries the button element.
-   * @internal
-   */
-  @query('.button')
-  _buttonEl: any;
-
   override render() {
     const TextNodes = this._slottedEls.filter((node: any) => {
       return node.textContent.trim() !== '';
@@ -176,7 +170,7 @@ export class Button extends LitElement {
   private handleClick(e: Event) {
     if (this.internals.form) {
       if (this.type === 'submit') {
-        this.internals.form.requestSubmit(this._buttonEl);
+        this.internals.form.requestSubmit(this);
       } else if (this.type === 'reset') {
         this.internals.form.reset();
       }
