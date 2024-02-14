@@ -1,3 +1,10 @@
+## [1.3.11](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.10...v1.3.11) (2024-02-14)
+
+
+### Bug Fixes
+
+* **button:** add shadowRoot delegatesFocus ([40998e7](https://github.com/kyndryl-design-system/shidoka-foundation/commit/40998e7a5233b8402ac3346b421f1b147f49f73b))
+
 ## [1.3.10](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.9...v1.3.10) (2024-02-14)
 
 
