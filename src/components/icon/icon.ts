@@ -25,20 +25,24 @@ export class Icon extends LitElement {
   sizeOverride = null;
 
   override render() {
-    const attributes = JSON.parse(JSON.stringify(this.icon.attrs));
-    attributes.fill = this.fill;
+    if (Object.keys(this.icon).length > 0) {
+      const attributes = JSON.parse(JSON.stringify(this.icon.attrs));
+      attributes.fill = this.fill;
 
-    if (this.sizeOverride) {
-      attributes.width = this.sizeOverride;
-      attributes.height = this.sizeOverride;
+      if (this.sizeOverride) {
+        attributes.width = this.sizeOverride;
+        attributes.height = this.sizeOverride;
+      }
+
+      const iconString = toString({
+        ...this.icon,
+        attrs: getAttributes(attributes),
+      });
+
+      return html` ${unsafeHTML(iconString)} `;
+    } else {
+      return null;
     }
-
-    const iconString = toString({
-      ...this.icon,
-      attrs: getAttributes(attributes),
-    });
-
-    return html` ${unsafeHTML(iconString)} `;
   }
 }
 
