@@ -32,6 +32,11 @@ import stylesheet from './button.scss';
 export class Button extends LitElement {
   static override styles = [stylesheet];
 
+  static override shadowRootOptions = {
+    ...LitElement.shadowRootOptions,
+    delegatesFocus: true,
+  };
+
   /**
    * Associate the component with forms.
    * @ignore
