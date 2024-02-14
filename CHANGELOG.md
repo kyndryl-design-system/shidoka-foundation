@@ -1,3 +1,10 @@
+## [1.3.8](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.7...v1.3.8) (2024-02-14)
+
+
+### Bug Fixes
+
+* **icon:** prevent rendering empty icon ([f6bf515](https://github.com/kyndryl-design-system/shidoka-foundation/commit/f6bf515343b3ff84666e973e677e832420b30b07))
+
 ## [1.3.7](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.6...v1.3.7) (2024-02-14)
 
 
