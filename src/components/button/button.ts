@@ -7,7 +7,6 @@ import {
   customElement,
   property,
   state,
-  query,
   queryAssignedNodes,
 } from 'lit/decorators.js';
 import { ifDefined } from 'lit/directives/if-defined.js';
