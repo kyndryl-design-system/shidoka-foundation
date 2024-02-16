@@ -2070,6 +2070,19 @@ export const Background = {
           </tr>
 
           <tr>
+            <td>--kd-color-background-accent-ui-light</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-background-accent-ui-light'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-background-accent-ui-light)"
+            ></td>
+          </tr>
+
+          <tr>
             <td>--kd-color-background-accent-primary</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
