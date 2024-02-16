@@ -1,3 +1,10 @@
+## [1.3.12](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.11...v1.3.12) (2024-02-16)
+
+
+### Bug Fixes
+
+* **colors:** add background-accent-ui-light ([da912ce](https://github.com/kyndryl-design-system/shidoka-foundation/commit/da912cee83fce9ed305cd0e5d7b31fb5412eb98b))
+
 ## [1.3.11](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.10...v1.3.11) (2024-02-14)
 
 
