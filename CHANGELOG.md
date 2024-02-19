@@ -1,3 +1,10 @@
+## [1.3.13](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.12...v1.3.13) (2024-02-19)
+
+
+### Bug Fixes
+
+* **accordion-item:** new title font style ([554affd](https://github.com/kyndryl-design-system/shidoka-foundation/commit/554affd2eac34fa52a0508337b3cbf136b0a7f20))
+
 ## [1.3.12](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.11...v1.3.12) (2024-02-16)
 
 
