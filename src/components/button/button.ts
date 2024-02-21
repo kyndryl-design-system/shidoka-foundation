@@ -106,6 +106,13 @@ export class Button extends LitElement {
     const TextNodes = this._slottedEls.filter((node: any) => {
       return node.textContent.trim() !== '';
     });
+    const VisibleNodes = TextNodes.filter((node: any) => {
+      if (node.tagName) {
+        return node.offsetParent;
+      } else {
+        return true;
+      }
+    });
 
     const typeClassMap = {
       [BUTTON_KINDS.PRIMARY_APP]: 'primary-app',
@@ -124,8 +131,10 @@ export class Button extends LitElement {
       'kd-btn--large': this.size === BUTTON_SIZES.LARGE,
       'kd-btn--small': this.size === BUTTON_SIZES.SMALL,
       'kd-btn--medium': this.size === BUTTON_SIZES.MEDIUM,
-      [`kd-btn--icon-${this.iconPosition}`]: !!this.iconPosition,
-      'icon-only': this._iconEls.length && !TextNodes.length,
+      [`kd-btn--icon-${this.iconPosition}`]:
+        !!this.iconPosition && VisibleNodes.length,
+      [`kd-btn--icon-center`]: this._iconEls.length && !VisibleNodes.length,
+      'icon-only': this._iconEls.length && !VisibleNodes.length,
     };
 
     return html`
