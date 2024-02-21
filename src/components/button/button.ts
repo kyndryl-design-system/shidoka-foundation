@@ -11,6 +11,7 @@ import {
 } from 'lit/decorators.js';
 import { ifDefined } from 'lit/directives/if-defined.js';
 import { classMap } from 'lit-html/directives/class-map.js';
+import { debounce } from '../../common/helpers/events';
 
 import {
   BUTTON_KINDS,
@@ -74,6 +75,12 @@ export class Button extends LitElement {
   @property({ type: String })
   iconPosition: BUTTON_ICON_POSITION = BUTTON_ICON_POSITION.CENTER;
 
+  /** Determines if the button is disabled.
+   * @internal
+   */
+  @state()
+  iconOnly = false;
+
   /** Determines if the button is disabled. */
   @property({ type: Boolean, reflect: true })
   disabled = false;
@@ -103,17 +110,6 @@ export class Button extends LitElement {
   _iconEls!: Array<any>;
 
   override render() {
-    const TextNodes = this._slottedEls.filter((node: any) => {
-      return node.textContent.trim() !== '';
-    });
-    const VisibleNodes = TextNodes.filter((node: any) => {
-      if (node.tagName) {
-        return node.offsetParent;
-      } else {
-        return true;
-      }
-    });
-
     const typeClassMap = {
       [BUTTON_KINDS.PRIMARY_APP]: 'primary-app',
       [BUTTON_KINDS.PRIMARY_WEB]: 'primary-web',
@@ -132,9 +128,9 @@ export class Button extends LitElement {
       'kd-btn--small': this.size === BUTTON_SIZES.SMALL,
       'kd-btn--medium': this.size === BUTTON_SIZES.MEDIUM,
       [`kd-btn--icon-${this.iconPosition}`]:
-        !!this.iconPosition && VisibleNodes.length,
-      [`kd-btn--icon-center`]: this._iconEls.length && !VisibleNodes.length,
-      'icon-only': this._iconEls.length && !VisibleNodes.length,
+        !!this.iconPosition && !this.iconOnly,
+      [`kd-btn--icon-center`]: this._iconEls.length && this.iconOnly,
+      'icon-only': this._iconEls.length && this.iconOnly,
     };
 
     return html`
@@ -195,12 +191,46 @@ export class Button extends LitElement {
     this.dispatchEvent(event);
   }
 
+  private _testIconOnly() {
+    const TextNodes = this._slottedEls.filter((node: any) => {
+      return node.textContent.trim() !== '';
+    });
+    const VisibleTextNodes = TextNodes.filter((node: any) => {
+      if (node.tagName) {
+        return node.offsetParent;
+      } else {
+        return true;
+      }
+    });
+
+    this.iconOnly = !VisibleTextNodes.length;
+  }
+
   private _handleSlotChange() {
+    this._testIconOnly();
     this.requestUpdate();
   }
 
-  override firstUpdated() {
-    this._handleSlotChange();
+  override connectedCallback() {
+    super.connectedCallback();
+
+    window.addEventListener(
+      'resize',
+      debounce(() => {
+        this._testIconOnly();
+      })
+    );
+  }
+
+  override disconnectedCallback() {
+    window.addEventListener(
+      'resize',
+      debounce(() => {
+        this._testIconOnly();
+      })
+    );
+
+    super.disconnectedCallback();
   }
 }
 
