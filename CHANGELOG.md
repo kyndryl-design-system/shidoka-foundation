@@ -1,3 +1,10 @@
+## [1.3.14](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.13...v1.3.14) (2024-02-21)
+
+
+### Bug Fixes
+
+* **button:** support button with icon and hidden text ([8d8885e](https://github.com/kyndryl-design-system/shidoka-foundation/commit/8d8885e01805ce6383528e8c3d3891e02847960d))
+
 ## [1.3.13](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.12...v1.3.13) (2024-02-19)
 
 
