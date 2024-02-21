@@ -1,3 +1,12 @@
+## [1.3.15](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.14...v1.3.15) (2024-02-21)
+
+
+### Bug Fixes
+
+* **button:** test iconOnly on resize ([d56a21e](https://github.com/kyndryl-design-system/shidoka-foundation/commit/d56a21e5f730a2100f1ec1bf3b63570bade3d119))
+* **button:** update iconOnly test ([d1b01d4](https://github.com/kyndryl-design-system/shidoka-foundation/commit/d1b01d46ed63249408267321f4899c4c73c0d9a1))
+* **button:** update iconOnly test ([624d2fa](https://github.com/kyndryl-design-system/shidoka-foundation/commit/624d2fa5c8ba904d241a2afa7c0ead981cd0c7b4))
+
 ## [1.3.14](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.13...v1.3.14) (2024-02-21)
 
 
