@@ -192,6 +192,10 @@ export class Button extends LitElement {
   }
 
   private _testIconOnly() {
+    if (!this._iconEls.length) {
+      return false;
+    }
+
     const TextNodes = this._slottedEls.filter((node: any) => {
       return node.textContent.trim() !== '';
     });
