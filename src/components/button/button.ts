@@ -193,7 +193,6 @@ export class Button extends LitElement {
 
   private _testIconOnly() {
     if (!this._iconEls.length) {
-      this.iconOnly = false;
       return false;
     }
 
@@ -208,11 +207,11 @@ export class Button extends LitElement {
       }
     });
 
-    this.iconOnly = !VisibleTextNodes.length;
+    return !VisibleTextNodes.length;
   }
 
   private _handleSlotChange() {
-    this._testIconOnly();
+    this.iconOnly = this._testIconOnly();
     this.requestUpdate();
   }
 
@@ -222,16 +221,16 @@ export class Button extends LitElement {
     window.addEventListener(
       'resize',
       debounce(() => {
-        this._testIconOnly();
+        this.iconOnly = this._testIconOnly();
       })
     );
   }
 
   override disconnectedCallback() {
-    window.addEventListener(
+    window.removeEventListener(
       'resize',
       debounce(() => {
-        this._testIconOnly();
+        this.iconOnly = this._testIconOnly();
       })
     );
 
