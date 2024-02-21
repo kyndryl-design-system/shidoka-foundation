@@ -193,6 +193,7 @@ export class Button extends LitElement {
 
   private _testIconOnly() {
     if (!this._iconEls.length) {
+      this.iconOnly = false;
       return false;
     }
 
