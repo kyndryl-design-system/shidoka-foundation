@@ -192,7 +192,7 @@ export class Button extends LitElement {
   private handleClick(e: Event) {
     if (this.internals.form) {
       if (this.type === 'submit') {
-        this.internals.form.requestSubmit(this._btnEl);
+        this.internals.form.requestSubmit(this);
       } else if (this.type === 'reset') {
         this.internals.form.reset();
       }
