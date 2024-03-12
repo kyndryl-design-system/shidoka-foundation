@@ -33,6 +33,7 @@ import stylesheet from './button.scss';
 export class Button extends LitElement {
   static override styles = [stylesheet];
 
+  /** @ignore */
   static override shadowRootOptions = {
     ...LitElement.shadowRootOptions,
     delegatesFocus: true,
@@ -53,7 +54,7 @@ export class Button extends LitElement {
 
   /** ARIA label for the button for accessibility. */
   @property({ type: String })
-  description = '';
+  description!: string;
 
   /** Type for the &lt;button&gt; element. */
   @property({ type: String })
@@ -65,7 +66,7 @@ export class Button extends LitElement {
 
   /** Converts the button to an &lt;a&gt; tag if specified. */
   @property({ type: String })
-  href = '';
+  href!: string;
 
   /** Specifies the size of the button. */
   @property({ type: String })
@@ -92,6 +93,10 @@ export class Button extends LitElement {
   /** Button value.  */
   @property({ type: String })
   value!: string;
+
+  /** Button name. */
+  @property({ type: String })
+  name!: string;
 
   /** Button formmethod.  */
   @property({ type: String })
@@ -140,8 +145,8 @@ export class Button extends LitElement {
               class=${classMap(classes)}
               href=${this.href}
               ?disabled=${this.disabled}
-              aria-label=${ifDefined(this.description || undefined)}
-              title=${ifDefined(this.description || undefined)}
+              aria-label=${ifDefined(this.description)}
+              title=${ifDefined(this.description)}
               @click=${(e: Event) => this.handleClick(e)}
             >
               <span>
@@ -158,8 +163,9 @@ export class Button extends LitElement {
               class=${classMap(classes)}
               type=${this.type}
               ?disabled=${this.disabled}
-              aria-label=${ifDefined(this.description || undefined)}
-              title=${ifDefined(this.description || undefined)}
+              aria-label=${ifDefined(this.description)}
+              title=${ifDefined(this.description)}
+              name=${ifDefined(this.name)}
               value=${ifDefined(this.value)}
               formmethod=${ifDefined(this.formmethod)}
               @click=${(e: Event) => this.handleClick(e)}

@@ -601,20 +601,10 @@
           "members": [
             {
               "kind": "field",
-              "name": "shadowRootOptions",
-              "type": {
-                "text": "object"
-              },
-              "static": true,
-              "default": "{\r\n    ...LitElement.shadowRootOptions,\r\n    delegatesFocus: true,\r\n  }"
-            },
-            {
-              "kind": "field",
               "name": "description",
               "type": {
                 "text": "string"
               },
-              "default": "''",
               "description": "ARIA label for the button for accessibility.",
               "attribute": "description"
             },
@@ -642,7 +632,6 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
               "description": "Converts the button to an &lt;a&gt; tag if specified.",
               "attribute": "href"
             },
@@ -697,6 +686,15 @@
             },
             {
               "kind": "field",
+              "name": "name",
+              "type": {
+                "text": "string"
+              },
+              "description": "Button name.",
+              "attribute": "name"
+            },
+            {
+              "kind": "field",
               "name": "formmethod",
               "type": {
                 "text": "any"
@@ -740,7 +738,6 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
               "description": "ARIA label for the button for accessibility.",
               "fieldName": "description"
             },
@@ -765,7 +762,6 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
               "description": "Converts the button to an &lt;a&gt; tag if specified.",
               "fieldName": "href"
             },
@@ -810,6 +806,14 @@
               },
               "description": "Button value.",
               "fieldName": "value"
+            },
+            {
+              "name": "name",
+              "type": {
+                "text": "string"
+              },
+              "description": "Button name.",
+              "fieldName": "name"
             },
             {
               "name": "formmethod",
@@ -864,6 +868,123 @@
           "declaration": {
             "name": "Button",
             "module": "./button"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/icon/icon.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "Wrapper for vanilla Carbon icons to simplify usage.",
+          "name": "Icon",
+          "slots": [
+            {
+              "description": "The default slot for button content.",
+              "name": "unnamed"
+            }
+          ],
+          "members": [
+            {
+              "kind": "field",
+              "name": "icon",
+              "type": {
+                "text": "any"
+              },
+              "default": "{}",
+              "description": "The imported Carbon icon.",
+              "attribute": "icon"
+            },
+            {
+              "kind": "field",
+              "name": "fill",
+              "type": {
+                "text": "string"
+              },
+              "default": "'currentColor'",
+              "description": "Icon fill color.",
+              "attribute": "fill"
+            },
+            {
+              "kind": "field",
+              "name": "sizeOverride",
+              "type": {
+                "text": "null"
+              },
+              "default": "null",
+              "description": "Specify a size in pixels to override the imported Carbon icon's original size.",
+              "attribute": "sizeOverride"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "icon",
+              "type": {
+                "text": "any"
+              },
+              "default": "{}",
+              "description": "The imported Carbon icon.",
+              "fieldName": "icon"
+            },
+            {
+              "name": "fill",
+              "type": {
+                "text": "string"
+              },
+              "default": "'currentColor'",
+              "description": "Icon fill color.",
+              "fieldName": "fill"
+            },
+            {
+              "name": "sizeOverride",
+              "type": {
+                "text": "null"
+              },
+              "default": "null",
+              "description": "Specify a size in pixels to override the imported Carbon icon's original size.",
+              "fieldName": "sizeOverride"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "kd-icon",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Icon",
+          "declaration": {
+            "name": "Icon",
+            "module": "src/components/icon/icon.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "kd-icon",
+          "declaration": {
+            "name": "Icon",
+            "module": "src/components/icon/icon.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/icon/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Icon",
+          "declaration": {
+            "name": "Icon",
+            "module": "./icon"
           }
         }
       ]
@@ -1069,123 +1190,6 @@
           "declaration": {
             "name": "Link",
             "module": "src/components/link/link.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/components/icon/icon.ts",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "Wrapper for vanilla Carbon icons to simplify usage.",
-          "name": "Icon",
-          "slots": [
-            {
-              "description": "The default slot for button content.",
-              "name": "unnamed"
-            }
-          ],
-          "members": [
-            {
-              "kind": "field",
-              "name": "icon",
-              "type": {
-                "text": "any"
-              },
-              "default": "{}",
-              "description": "The imported Carbon icon.",
-              "attribute": "icon"
-            },
-            {
-              "kind": "field",
-              "name": "fill",
-              "type": {
-                "text": "string"
-              },
-              "default": "'currentColor'",
-              "description": "Icon fill color.",
-              "attribute": "fill"
-            },
-            {
-              "kind": "field",
-              "name": "sizeOverride",
-              "type": {
-                "text": "null"
-              },
-              "default": "null",
-              "description": "Specify a size in pixels to override the imported Carbon icon's original size.",
-              "attribute": "sizeOverride"
-            }
-          ],
-          "attributes": [
-            {
-              "name": "icon",
-              "type": {
-                "text": "any"
-              },
-              "default": "{}",
-              "description": "The imported Carbon icon.",
-              "fieldName": "icon"
-            },
-            {
-              "name": "fill",
-              "type": {
-                "text": "string"
-              },
-              "default": "'currentColor'",
-              "description": "Icon fill color.",
-              "fieldName": "fill"
-            },
-            {
-              "name": "sizeOverride",
-              "type": {
-                "text": "null"
-              },
-              "default": "null",
-              "description": "Specify a size in pixels to override the imported Carbon icon's original size.",
-              "fieldName": "sizeOverride"
-            }
-          ],
-          "superclass": {
-            "name": "LitElement",
-            "package": "lit"
-          },
-          "tagName": "kd-icon",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "Icon",
-          "declaration": {
-            "name": "Icon",
-            "module": "src/components/icon/icon.ts"
-          }
-        },
-        {
-          "kind": "custom-element-definition",
-          "name": "kd-icon",
-          "declaration": {
-            "name": "Icon",
-            "module": "src/components/icon/icon.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/components/icon/index.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "Icon",
-          "declaration": {
-            "name": "Icon",
-            "module": "./icon"
           }
         }
       ]
