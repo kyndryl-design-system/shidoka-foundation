@@ -1,3 +1,10 @@
+## [1.3.16](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.15...v1.3.16) (2024-03-12)
+
+
+### Bug Fixes
+
+* **button:** add name prop ([437bb3d](https://github.com/kyndryl-design-system/shidoka-foundation/commit/437bb3d384f6570c0be001edda2466a4f1c66c43))
+
 ## [1.3.15](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.14...v1.3.15) (2024-02-21)
 
 
