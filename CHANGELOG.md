@@ -1,3 +1,10 @@
+## [1.3.17](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.16...v1.3.17) (2024-03-12)
+
+
+### Bug Fixes
+
+* **button:** href issue ([db80ec2](https://github.com/kyndryl-design-system/shidoka-foundation/commit/db80ec213c62d4ca10436f6123c0c44216b66852))
+
 ## [1.3.16](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.15...v1.3.16) (2024-03-12)
 
 
