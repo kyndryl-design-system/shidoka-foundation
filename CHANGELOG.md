@@ -1,3 +1,10 @@
+## [1.3.19](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.18...v1.3.19) (2024-03-12)
+
+
+### Bug Fixes
+
+* **button:** use host as submitter ([f14533b](https://github.com/kyndryl-design-system/shidoka-foundation/commit/f14533ba6cc188d69744db74c1711cf321e10de2))
+
 ## [1.3.18](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.17...v1.3.18) (2024-03-12)
 
 
