@@ -54,7 +54,7 @@ export class Button extends LitElement {
 
   /** ARIA label for the button for accessibility. */
   @property({ type: String })
-  description!: string;
+  description = '';
 
   /** Type for the &lt;button&gt; element. */
   @property({ type: String })
@@ -66,7 +66,7 @@ export class Button extends LitElement {
 
   /** Converts the button to an &lt;a&gt; tag if specified. */
   @property({ type: String })
-  href!: string;
+  href = '';
 
   /** Specifies the size of the button. */
   @property({ type: String })
@@ -92,11 +92,11 @@ export class Button extends LitElement {
 
   /** Button value.  */
   @property({ type: String })
-  value!: string;
+  value = '';
 
   /** Button name. */
   @property({ type: String })
-  name!: string;
+  name = '';
 
   /** Button formmethod.  */
   @property({ type: String })
@@ -139,7 +139,7 @@ export class Button extends LitElement {
     };
 
     return html`
-      ${this.href !== ''
+      ${this.href && this.href !== ''
         ? html`
             <a
               class=${classMap(classes)}
