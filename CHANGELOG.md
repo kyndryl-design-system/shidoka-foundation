@@ -1,3 +1,10 @@
+## [1.3.20](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.19...v1.3.20) (2024-03-12)
+
+
+### Bug Fixes
+
+* **button:** revert submitter ([3e0c906](https://github.com/kyndryl-design-system/shidoka-foundation/commit/3e0c9069345af2cd0d98b65083fa524309eccefe))
+
 ## [1.3.19](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.18...v1.3.19) (2024-03-12)
 
 
