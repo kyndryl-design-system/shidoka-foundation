@@ -605,6 +605,7 @@
               "type": {
                 "text": "string"
               },
+              "default": "''",
               "description": "ARIA label for the button for accessibility.",
               "attribute": "description"
             },
@@ -632,6 +633,7 @@
               "type": {
                 "text": "string"
               },
+              "default": "''",
               "description": "Converts the button to an &lt;a&gt; tag if specified.",
               "attribute": "href"
             },
@@ -681,6 +683,7 @@
               "type": {
                 "text": "string"
               },
+              "default": "''",
               "description": "Button value.",
               "attribute": "value"
             },
@@ -690,6 +693,7 @@
               "type": {
                 "text": "string"
               },
+              "default": "''",
               "description": "Button name.",
               "attribute": "name"
             },
@@ -738,6 +742,7 @@
               "type": {
                 "text": "string"
               },
+              "default": "''",
               "description": "ARIA label for the button for accessibility.",
               "fieldName": "description"
             },
@@ -762,6 +767,7 @@
               "type": {
                 "text": "string"
               },
+              "default": "''",
               "description": "Converts the button to an &lt;a&gt; tag if specified.",
               "fieldName": "href"
             },
@@ -804,6 +810,7 @@
               "type": {
                 "text": "string"
               },
+              "default": "''",
               "description": "Button value.",
               "fieldName": "value"
             },
@@ -812,6 +819,7 @@
               "type": {
                 "text": "string"
               },
+              "default": "''",
               "description": "Button name.",
               "fieldName": "name"
             },

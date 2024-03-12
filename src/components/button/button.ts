@@ -7,6 +7,7 @@ import {
   customElement,
   property,
   state,
+  query,
   queryAssignedNodes,
 } from 'lit/decorators.js';
 import { ifDefined } from 'lit/directives/if-defined.js';
@@ -114,6 +115,12 @@ export class Button extends LitElement {
   @queryAssignedNodes({ slot: 'icon' })
   _iconEls!: Array<any>;
 
+  /** Queries the .button element.
+   * @internal
+   */
+  @query('.button')
+  _btnEl!: any;
+
   override render() {
     const typeClassMap = {
       [BUTTON_KINDS.PRIMARY_APP]: 'primary-app',
@@ -185,7 +192,7 @@ export class Button extends LitElement {
   private handleClick(e: Event) {
     if (this.internals.form) {
       if (this.type === 'submit') {
-        this.internals.form.requestSubmit();
+        this.internals.form.requestSubmit(this._btnEl);
       } else if (this.type === 'reset') {
         this.internals.form.reset();
       }
