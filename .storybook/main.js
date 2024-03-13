@@ -67,7 +67,7 @@ export default {
         },
       },
     },
-    '@storybook/addon-webpack5-compiler-babel'
+    '@storybook/addon-webpack5-compiler-babel',
   ],
   framework: {
     name: '@storybook/web-components-webpack5',
@@ -78,5 +78,9 @@ export default {
   },
   docs: {
     autodocs: true,
+  },
+  async babel(options) {
+    options.presets = ['@babel/preset-react'];
+    return options;
   },
 };
