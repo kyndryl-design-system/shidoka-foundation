@@ -1,3 +1,10 @@
+## [1.3.21](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.20...v1.3.21) (2024-03-13)
+
+
+### Bug Fixes
+
+* **colors:** add missing neutral tokens ([9280a29](https://github.com/kyndryl-design-system/shidoka-foundation/commit/9280a295a2c1fbfc3ec26405a4e80bd38f5de2a6))
+
 ## [1.3.20](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.19...v1.3.20) (2024-03-12)
 
 
