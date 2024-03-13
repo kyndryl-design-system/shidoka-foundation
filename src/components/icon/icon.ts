@@ -22,7 +22,7 @@ export class Icon extends LitElement {
 
   /** Specify a size in pixels to override the imported Carbon icon's original size. */
   @property({ type: Number })
-  sizeOverride = null;
+  sizeOverride!: number;
 
   override render() {
     if (Object.keys(this.icon).length > 0) {
