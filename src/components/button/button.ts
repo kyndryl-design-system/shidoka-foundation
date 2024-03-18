@@ -11,7 +11,7 @@ import {
   queryAssignedNodes,
 } from 'lit/decorators.js';
 import { ifDefined } from 'lit/directives/if-defined.js';
-import { classMap } from 'lit-html/directives/class-map.js';
+import { classMap } from 'lit/directives/class-map.js';
 import { debounce } from '../../common/helpers/events';
 
 import {
@@ -51,75 +51,75 @@ export class Button extends LitElement {
    * @ignore
    */
   @state()
-  internals = this.attachInternals();
+  accessor internals = this.attachInternals();
 
   /** ARIA label for the button for accessibility. */
   @property({ type: String })
-  description = '';
+  accessor description = '';
 
   /** Type for the &lt;button&gt; element. */
   @property({ type: String })
-  type: BUTTON_TYPES = BUTTON_TYPES.BUTTON;
+  accessor type: BUTTON_TYPES = BUTTON_TYPES.BUTTON;
 
   /** Specifies the visual appearance/kind of the button. */
   @property({ type: String })
-  kind: BUTTON_KINDS = BUTTON_KINDS.PRIMARY_APP;
+  accessor kind: BUTTON_KINDS = BUTTON_KINDS.PRIMARY_APP;
 
   /** Converts the button to an &lt;a&gt; tag if specified. */
   @property({ type: String })
-  href = '';
+  accessor href = '';
 
   /** Specifies the size of the button. */
   @property({ type: String })
-  size: BUTTON_SIZES = BUTTON_SIZES.MEDIUM;
+  accessor size: BUTTON_SIZES = BUTTON_SIZES.MEDIUM;
 
   /** Specifies the position of the icon relative to any button text. */
   @property({ type: String })
-  iconPosition: BUTTON_ICON_POSITION = BUTTON_ICON_POSITION.CENTER;
+  accessor iconPosition: BUTTON_ICON_POSITION = BUTTON_ICON_POSITION.CENTER;
 
   /** Determines if the button is disabled.
    * @internal
    */
   @state()
-  iconOnly = false;
+  accessor iconOnly = false;
 
   /** Determines if the button is disabled. */
   @property({ type: Boolean, reflect: true })
-  disabled = false;
+  accessor disabled = false;
 
   /** Determines if the button indicates a destructive action. */
   @property({ type: Boolean, reflect: true })
-  destructive = false;
+  accessor destructive = false;
 
   /** Button value.  */
   @property({ type: String })
-  value = '';
+  accessor value = '';
 
   /** Button name. */
   @property({ type: String })
-  name = '';
+  accessor name = '';
 
   /** Button formmethod.  */
   @property({ type: String })
-  formmethod!: any;
+  accessor formmethod!: any;
 
   /** Queries default slot nodes.
    * @internal
    */
   @queryAssignedNodes()
-  _slottedEls!: Array<any>;
+  accessor _slottedEls!: Array<any>;
 
   /** Queries icon slot nodes.
    * @internal
    */
   @queryAssignedNodes({ slot: 'icon' })
-  _iconEls!: Array<any>;
+  accessor _iconEls!: Array<any>;
 
   /** Queries the .button element.
    * @internal
    */
   @query('.button')
-  _btnEl!: any;
+  accessor _btnEl!: any;
 
   override render() {
     const typeClassMap = {

@@ -43,7 +43,11 @@ suite('kd-link', () => {
 
   test('is secondary', async () => {
     const mockEl = await fixture(
-      html`<kd-link href="https://mock.com" target="_self" kind="secondary"></kd-link>`
+      html`<kd-link
+        href="https://mock.com"
+        target="_self"
+        kind="secondary"
+      ></kd-link>`
     );
     assert.shadowDom.equal(
       mockEl,
@@ -58,9 +62,9 @@ suite('kd-link', () => {
     );
   });
 
-  test('with icon', async() => {
+  test('with icon', async () => {
     const mockEl = await fixture(
-      html`<kd-link standalone="true" href="" target="_self" kind="primary"></kd-link>`
+      html`<kd-link standalone href="" target="_self" kind="primary"></kd-link>`
     );
     assert.shadowDom.equal(
       mockEl,

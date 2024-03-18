@@ -4,7 +4,7 @@
 
 import { html, LitElement } from 'lit';
 import { state, property, customElement } from 'lit/decorators.js';
-import { classMap } from 'lit-html/directives/class-map.js';
+import { classMap } from 'lit/directives/class-map.js';
 import stylesheet from './accordionItem.scss';
 import addIcon from '@carbon/icons/es/add/32';
 import subtractIcon from '@carbon/icons/es/subtract/32';
@@ -23,37 +23,43 @@ export class AccordionItem extends LitElement {
   static override styles = [stylesheet];
 
   /** Accordion item opened state. */
-  @property({ type: Boolean }) opened = false;
+  @property({ type: Boolean })
+  accessor opened = false;
 
   /**
    * The index of this item. Passed from the Accordion.
    * @ignore
    */
-  @state() private _index = 1;
+  @state()
+  accessor _index = 1;
 
   /**
    * Whether the number should be shown. Passed from the Accordion.
    * @ignore
    */
-  @state() private _showNumber = false;
+  @state()
+  accessor _showNumber = false;
 
   /**
    * Whether this item displays a filled header. Passed from the Accordion.
    * @ignore
    */
-  @state() private _filledHeader = false;
+  @state()
+  accessor _filledHeader = false;
 
   /**
    * Whether this item is compact. Passed from the Accordion.
    * @ignore
    */
-  @state() private _compact = false;
+  @state()
+  accessor _compact = false;
 
   /**
    * A generated unique id
    * @ignore
    */
-  @state() private _id = crypto.randomUUID();
+  @state()
+  accessor _id = crypto.randomUUID();
 
   setIndex(index: number) {
     this._index = index;
