@@ -3,7 +3,7 @@ name: Bug report
 about: Create a report to help us improve
 title: ''
 labels: 'bug'
-projects: 'kyndryl-design-system/2'
+projects: 'kyndryl-design-system/1'
 assignees: ''
 ---
 
