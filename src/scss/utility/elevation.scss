@@ -1,0 +1,21 @@
+@use '../mixins/elevation.scss';
+
+.kd-elevation--level-1 {
+  @include elevation.shadow('1');
+}
+
+.kd-elevation--level-2 {
+  @include elevation.shadow('2');
+}
+
+.kd-elevation--level-2-overflow {
+  @include elevation.shadow('2-overflow');
+}
+
+.kd-elevation--level-3 {
+  @include elevation.shadow('3');
+}
+
+.kd-elevation--level-4 {
+  @include elevation.shadow('4');
+}

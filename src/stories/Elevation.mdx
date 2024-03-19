@@ -1,0 +1,68 @@
+import {
+  Meta,
+  Story,
+  Canvas,
+  Controls,
+  Stories,
+  Title,
+  Primary,
+} from '@storybook/blocks';
+import * as ElevationStories from './Elevation.stories.js';
+
+<Meta of={ElevationStories} />
+
+<Title />
+
+[Figma Design Source](https://www.figma.com/file/6AovH7Iay9Y7BkpoL5975s/Applications-Specs-for-Devs?node-id=3949%3A9976&mode=dev)
+
+## Examples
+
+<Primary />
+
+## Usage
+
+### SCSS Mixins
+
+```css
+@use '@kyndryl-design-system/shidoka-foundation/scss/mixins/elevation.scss';
+
+.your-css-selector {
+  @include elevation.shadow($level);
+}
+```
+
+### Utility Classes
+
+#### Import to SCSS
+
+```css
+@use '@kyndryl-design-system/shidoka-foundation/scss/utility/elevation.scss';
+```
+
+#### Import to CSS
+
+```css
+@import '@kyndryl-design-system/shidoka-foundation/css/elevation.css';
+```
+
+#### Import to JS
+
+```js
+import '@kyndryl-design-system/shidoka-foundation/css/elevation.css';
+```
+
+#### Example HTML
+
+```html
+<div class="kd-elevation--level-1"></div>
+```
+
+#### Class & Variable Names
+
+| Level        | Class                          | Variable Name                   |
+| ------------ | ------------------------------ | ------------------------------- |
+| 1            | kd-elevation--level-1          | --kd-elevation-level-1          |
+| 2            | kd-elevation--level-2          | --kd-elevation-level-2          |
+| 2 - Overflow | kd-elevation--level-2-overflow | --kd-elevation-level-2-overflow |
+| 3            | kd-elevation--level-3          | --kd-elevation-level-3          |
+| 4            | kd-elevation--level-4          | --kd-elevation-level-4          |
