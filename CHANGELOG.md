@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.22...v1.4.0) (2024-03-19)
+
+
+### Features
+
+* **elevation:** add elevation vars, mixins, classes, docs ([#31](https://github.com/kyndryl-design-system/shidoka-foundation/issues/31)) ([a7a108d](https://github.com/kyndryl-design-system/shidoka-foundation/commit/a7a108d7e7614a55cedddaf1d29a754e4b2bd183))
+
 ## [1.3.22](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.21...v1.3.22) (2024-03-13)
 
 
