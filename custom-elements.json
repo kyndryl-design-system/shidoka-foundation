@@ -919,9 +919,8 @@
               "kind": "field",
               "name": "sizeOverride",
               "type": {
-                "text": "null"
+                "text": "number"
               },
-              "default": "null",
               "description": "Specify a size in pixels to override the imported Carbon icon's original size.",
               "attribute": "sizeOverride"
             }
@@ -948,9 +947,8 @@
             {
               "name": "sizeOverride",
               "type": {
-                "text": "null"
+                "text": "number"
               },
-              "default": "null",
               "description": "Specify a size in pixels to override the imported Carbon icon's original size.",
               "fieldName": "sizeOverride"
             }
