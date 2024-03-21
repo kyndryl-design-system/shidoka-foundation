@@ -64,6 +64,7 @@ jobs:
       - name: Test
         run: npm run test
   Build_Deploy_Storybook:
+    needs: Test
     runs-on: ubuntu-latest
     if: ${{ github.ref == 'refs/heads/main' && github.event_name == 'push' }}
     steps:
@@ -81,7 +82,7 @@ jobs:
       - name: Deploy Storybook to GitHub Pages
         run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
   Release:
-    needs: Build
+    needs: Test
     runs-on: ubuntu-latest
     if: ${{ (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/beta') && github.event_name == 'push' }}
     steps:
