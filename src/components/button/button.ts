@@ -9,6 +9,7 @@ import {
   state,
   query,
   queryAssignedNodes,
+  queryAssignedElements,
 } from 'lit/decorators.js';
 import { ifDefined } from 'lit/directives/if-defined.js';
 import { classMap } from 'lit/directives/class-map.js';
@@ -112,7 +113,7 @@ export class Button extends LitElement {
   /** Queries icon slot nodes.
    * @internal
    */
-  @queryAssignedNodes({ slot: 'icon' })
+  @queryAssignedElements({ slot: 'icon' })
   accessor _iconEls!: Array<any>;
 
   /** Queries the .button element.
@@ -141,8 +142,8 @@ export class Button extends LitElement {
       'kd-btn--medium': this.size === BUTTON_SIZES.MEDIUM,
       [`kd-btn--icon-${this.iconPosition}`]:
         !!this.iconPosition && !this.iconOnly,
-      [`kd-btn--icon-center`]: this._iconEls.length && this.iconOnly,
-      'icon-only': this._iconEls.length && this.iconOnly,
+      [`kd-btn--icon-center`]: this._iconEls?.length && this.iconOnly,
+      'icon-only': this._iconEls?.length && this.iconOnly,
     };
 
     return html`
@@ -205,7 +206,7 @@ export class Button extends LitElement {
   }
 
   private _testIconOnly() {
-    if (!this._iconEls.length) {
+    if (!this._iconEls?.length) {
       return false;
     }
 
