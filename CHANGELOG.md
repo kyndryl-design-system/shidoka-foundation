@@ -1,3 +1,10 @@
+## [1.4.9-beta.2](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.9-beta.1...v1.4.9-beta.2) (2024-03-21)
+
+
+### Bug Fixes
+
+* testing ([f235738](https://github.com/kyndryl-design-system/shidoka-foundation/commit/f2357386b6be04ad71ba47202f49b889a679e000))
+
 ## [1.4.9-beta.1](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.8...v1.4.9-beta.1) (2024-03-21)
 
 
