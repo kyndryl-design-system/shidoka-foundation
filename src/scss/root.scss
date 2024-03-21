@@ -3,9 +3,6 @@
 @use './mixins/typography.scss';
 @use './reset.scss';
 
-/* import roboto from google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap');
-
 /* include everett fonts locally */
 @font-face {
   font-family: 'TWK Everett';
@@ -50,6 +47,67 @@
   font-weight: 700;
   font-style: normal;
   font-display: swap;
+}
+
+/* include roboto fonts locally */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: url(../assets/fonts/roboto-latin-300-normal.woff2) format('woff2'),
+    url(../assets/fonts/roboto-latin-300-normal.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(../assets/fonts/roboto-latin-400-normal.woff2) format('woff2'),
+    url(../assets/fonts/roboto-latin-400-normal.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+  src: url(../assets/fonts/roboto-latin-400-italic.woff2) format('woff2'),
+    url(../assets/fonts/roboto-latin-400-italic.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url(../assets/fonts/roboto-latin-400-normal.woff2) format('woff2'),
+    url(../assets/fonts/roboto-latin-400-normal.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 500;
+  src: url(../assets/fonts/roboto-latin-500-italic.woff2) format('woff2'),
+    url(../assets/fonts/roboto-latin-500-italic.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 /* define any inheritable styles that we want to pierce the shadow dom */
