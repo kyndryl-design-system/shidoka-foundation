@@ -205,3 +205,9 @@ export class AccordionItem extends LitElement {
     `;
   }
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    'kd-accordion-item': AccordionItem;
+  }
+}
