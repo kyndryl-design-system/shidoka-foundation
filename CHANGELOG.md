@@ -1,3 +1,10 @@
+## [1.4.9](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.8...v1.4.9) (2024-03-21)
+
+
+### Reverts
+
+* Revert "chore: lit 3.x upgrade (#30)" ([a21536b](https://github.com/kyndryl-design-system/shidoka-foundation/commit/a21536bcc7bd1a303a2c45d25165412aca46e857)), closes [#30](https://github.com/kyndryl-design-system/shidoka-foundation/issues/30)
+
 ## [1.4.8](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.7...v1.4.8) (2024-03-21)
 
 
