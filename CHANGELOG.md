@@ -1,3 +1,13 @@
+## [1.4.7](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.6...v1.4.7) (2024-03-21)
+
+
+### Bug Fixes
+
+* assignedelements initalization ([4106c2b](https://github.com/kyndryl-design-system/shidoka-foundation/commit/4106c2b4ad1c39506d09cc039ad491775406df88))
+* queryassignedelements initialization ([4d3de88](https://github.com/kyndryl-design-system/shidoka-foundation/commit/4d3de880f261499ed68b06bbd4df979e6c4be859))
+* queryassignednodes initialization ([ded4c8f](https://github.com/kyndryl-design-system/shidoka-foundation/commit/ded4c8f8dbd6177fc7d86ac45d2cb636fa332a4a))
+* revert local nav width vars ([c9dbb3f](https://github.com/kyndryl-design-system/shidoka-foundation/commit/c9dbb3f8ef05553bab69386acfc1c9b1813ca470))
+
 ## [1.4.6](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.5...v1.4.6) (2024-03-21)
 
 
