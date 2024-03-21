@@ -74,22 +74,22 @@ export class Accordion extends LitElement {
   }
 
   protected _updateChildren() {
-    this._accordionItems?.forEach((item, index) => {
-      item.setFilledHeader(this.filledHeaders);
-      item.setCompact(this.compact);
-      item.setIndex(this.startNumber + index);
-      item.setShowNumbers(this.showNumbers);
+    this._accordionItems.forEach((item, index) => {
+      item._filledHeader = this.filledHeaders;
+      item._compact = this.compact;
+      item._index = this.startNumber + index;
+      item._showNumber = this.showNumbers;
     });
   }
 
   protected _openAllItems() {
-    this._accordionItems?.map((item) => {
+    this._accordionItems.map((item) => {
       item.open();
     });
   }
 
   protected _closeAllItems() {
-    this._accordionItems?.map((item) => {
+    this._accordionItems.map((item) => {
       item.close();
     });
   }

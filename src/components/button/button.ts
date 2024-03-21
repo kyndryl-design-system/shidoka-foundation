@@ -142,8 +142,8 @@ export class Button extends LitElement {
       'kd-btn--medium': this.size === BUTTON_SIZES.MEDIUM,
       [`kd-btn--icon-${this.iconPosition}`]:
         !!this.iconPosition && !this.iconOnly,
-      [`kd-btn--icon-center`]: this._iconEls?.length && this.iconOnly,
-      'icon-only': this._iconEls?.length && this.iconOnly,
+      [`kd-btn--icon-center`]: this._iconEls.length && this.iconOnly,
+      'icon-only': this._iconEls.length && this.iconOnly,
     };
 
     return html`
@@ -206,11 +206,11 @@ export class Button extends LitElement {
   }
 
   private _testIconOnly() {
-    if (!this._iconEls?.length) {
+    if (!this._iconEls.length) {
       return false;
     }
 
-    const TextNodes = this._slottedEls?.filter((node: any) => {
+    const TextNodes = this._slottedEls.filter((node: any) => {
       return node.textContent.trim() !== '';
     });
     const VisibleTextNodes = TextNodes.filter((node: any) => {

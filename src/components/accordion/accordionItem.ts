@@ -61,22 +61,6 @@ export class AccordionItem extends LitElement {
   @state()
   accessor _id = crypto.randomUUID();
 
-  setIndex(index: number) {
-    this._index = index;
-  }
-
-  setShowNumbers(value: boolean) {
-    this._showNumber = value;
-  }
-
-  setFilledHeader(value: boolean) {
-    this._filledHeader = value;
-  }
-
-  setCompact(value: boolean) {
-    this._compact = value;
-  }
-
   open() {
     if (!this.opened) this._toggleOpenState();
   }
