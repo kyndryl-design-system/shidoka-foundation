@@ -23,39 +23,40 @@ export class Accordion extends LitElement {
 
   /** Specifies whether to show numbers on the list items. */
   @property({ type: Boolean })
-  showNumbers = false;
+  accessor showNumbers = false;
 
   /** Specifies the number to start at if the list has numbers. */
   @property({ type: Number })
-  startNumber = 1;
+  accessor startNumber = 1;
 
   /** Specifies whether to show the accordion items with filled headers. */
   @property({ type: Boolean })
-  filledHeaders = false;
+  accessor filledHeaders = false;
 
   /** Display the accordion as compact or the default large size. */
   @property({ type: Boolean })
-  compact = false;
+  accessor compact = false;
 
   /** The string that displays on the toggle to expand all the accordion items. */
   @property({ type: String })
-  expandLabel = 'Expand all items';
+  accessor expandLabel = 'Expand all items';
 
   /** The string that displays on the toggle to collapse all the accordion items. */
   @property({ type: String })
-  collapseLabel = 'Collapse all items';
+  accessor collapseLabel = 'Collapse all items';
 
   /**
    * The state of the toggle controlling the "expand all" functionality
    * @ignore
    */
-  @state() private _allOpenState = false;
+  @state()
+  accessor _allOpenState = false;
 
   /** Slotted children kd-accordion-item
    * @internal
    */
   @queryAssignedElements({ selector: 'kd-accordion-item' })
-  _accordionItems!: Array<any>;
+  accessor _accordionItems!: Array<any>;
 
   protected _handleSlotChange() {
     this._updateChildren();
@@ -73,7 +74,7 @@ export class Accordion extends LitElement {
   }
 
   protected _updateChildren() {
-    this._accordionItems.forEach((item, index) => {
+    this._accordionItems?.forEach((item, index) => {
       item.setFilledHeader(this.filledHeaders);
       item.setCompact(this.compact);
       item.setIndex(this.startNumber + index);
@@ -82,13 +83,13 @@ export class Accordion extends LitElement {
   }
 
   protected _openAllItems() {
-    this._accordionItems.map((item) => {
+    this._accordionItems?.map((item) => {
       item.open();
     });
   }
 
   protected _closeAllItems() {
-    this._accordionItems.map((item) => {
+    this._accordionItems?.map((item) => {
       item.close();
     });
   }

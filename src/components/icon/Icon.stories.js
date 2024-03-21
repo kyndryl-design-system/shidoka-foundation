@@ -19,7 +19,7 @@ export const Icon = {
   args: {
     icon: userIcon,
     fill: 'currentColor',
-    sizeOverride: null,
+    sizeOverride: undefined,
   },
   render: (args) => html`
     <kd-icon

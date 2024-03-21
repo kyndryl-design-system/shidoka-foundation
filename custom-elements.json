@@ -683,14 +683,25 @@
               "type": {
                 "text": "string"
               },
+              "default": "''",
               "description": "Button value.",
               "attribute": "value"
             },
             {
               "kind": "field",
-              "name": "formmethod",
+              "name": "name",
               "type": {
                 "text": "string"
+              },
+              "default": "''",
+              "description": "Button name.",
+              "attribute": "name"
+            },
+            {
+              "kind": "field",
+              "name": "formmethod",
+              "type": {
+                "text": "any"
               },
               "description": "Button formmethod.",
               "attribute": "formmethod"
@@ -707,6 +718,11 @@
                   }
                 }
               ]
+            },
+            {
+              "kind": "method",
+              "name": "_testIconOnly",
+              "privacy": "private"
             },
             {
               "kind": "method",
@@ -794,13 +810,23 @@
               "type": {
                 "text": "string"
               },
+              "default": "''",
               "description": "Button value.",
               "fieldName": "value"
             },
             {
-              "name": "formmethod",
+              "name": "name",
               "type": {
                 "text": "string"
+              },
+              "default": "''",
+              "description": "Button name.",
+              "fieldName": "name"
+            },
+            {
+              "name": "formmethod",
+              "type": {
+                "text": "any"
               },
               "description": "Button formmethod.",
               "fieldName": "formmethod"
@@ -893,9 +919,8 @@
               "kind": "field",
               "name": "sizeOverride",
               "type": {
-                "text": "null"
+                "text": "number"
               },
-              "default": "null",
               "description": "Specify a size in pixels to override the imported Carbon icon's original size.",
               "attribute": "sizeOverride"
             }
@@ -922,9 +947,8 @@
             {
               "name": "sizeOverride",
               "type": {
-                "text": "null"
+                "text": "number"
               },
-              "default": "null",
               "description": "Specify a size in pixels to override the imported Carbon icon's original size.",
               "fieldName": "sizeOverride"
             }

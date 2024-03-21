@@ -7,10 +7,13 @@ import {
   customElement,
   property,
   state,
+  query,
   queryAssignedNodes,
+  queryAssignedElements,
 } from 'lit/decorators.js';
 import { ifDefined } from 'lit/directives/if-defined.js';
-import { classMap } from 'lit-html/directives/class-map.js';
+import { classMap } from 'lit/directives/class-map.js';
+import { debounce } from '../../common/helpers/events';
 
 import {
   BUTTON_KINDS,
@@ -32,6 +35,12 @@ import stylesheet from './button.scss';
 export class Button extends LitElement {
   static override styles = [stylesheet];
 
+  /** @ignore */
+  static override shadowRootOptions = {
+    ...LitElement.shadowRootOptions,
+    delegatesFocus: true,
+  };
+
   /**
    * Associate the component with forms.
    * @ignore
@@ -43,65 +52,77 @@ export class Button extends LitElement {
    * @ignore
    */
   @state()
-  internals = this.attachInternals();
+  accessor internals = this.attachInternals();
 
   /** ARIA label for the button for accessibility. */
   @property({ type: String })
-  description = '';
+  accessor description = '';
 
   /** Type for the &lt;button&gt; element. */
   @property({ type: String })
-  type: BUTTON_TYPES = BUTTON_TYPES.BUTTON;
+  accessor type: BUTTON_TYPES = BUTTON_TYPES.BUTTON;
 
   /** Specifies the visual appearance/kind of the button. */
   @property({ type: String })
-  kind: BUTTON_KINDS = BUTTON_KINDS.PRIMARY_APP;
+  accessor kind: BUTTON_KINDS = BUTTON_KINDS.PRIMARY_APP;
 
   /** Converts the button to an &lt;a&gt; tag if specified. */
   @property({ type: String })
-  href = '';
+  accessor href = '';
 
   /** Specifies the size of the button. */
   @property({ type: String })
-  size: BUTTON_SIZES = BUTTON_SIZES.MEDIUM;
+  accessor size: BUTTON_SIZES = BUTTON_SIZES.MEDIUM;
 
   /** Specifies the position of the icon relative to any button text. */
   @property({ type: String })
-  iconPosition: BUTTON_ICON_POSITION = BUTTON_ICON_POSITION.CENTER;
+  accessor iconPosition: BUTTON_ICON_POSITION = BUTTON_ICON_POSITION.CENTER;
+
+  /** Determines if the button is disabled.
+   * @internal
+   */
+  @state()
+  accessor iconOnly = false;
 
   /** Determines if the button is disabled. */
   @property({ type: Boolean, reflect: true })
-  disabled = false;
+  accessor disabled = false;
 
   /** Determines if the button indicates a destructive action. */
   @property({ type: Boolean, reflect: true })
-  destructive = false;
+  accessor destructive = false;
 
   /** Button value.  */
   @property({ type: String })
-  value!: string;
+  accessor value = '';
+
+  /** Button name. */
+  @property({ type: String })
+  accessor name = '';
 
   /** Button formmethod.  */
   @property({ type: String })
-  formmethod!: any;
+  accessor formmethod!: any;
 
   /** Queries default slot nodes.
    * @internal
    */
   @queryAssignedNodes()
-  _slottedEls!: Array<any>;
+  accessor _slottedEls!: Array<Node>;
 
   /** Queries icon slot nodes.
    * @internal
    */
-  @queryAssignedNodes({ slot: 'icon' })
-  _iconEls!: Array<any>;
+  @queryAssignedElements({ slot: 'icon' })
+  accessor _iconEls!: Array<any>;
+
+  /** Queries the .button element.
+   * @internal
+   */
+  @query('.button')
+  accessor _btnEl!: any;
 
   override render() {
-    const TextNodes = this._slottedEls.filter((node: any) => {
-      return node.textContent.trim() !== '';
-    });
-
     const typeClassMap = {
       [BUTTON_KINDS.PRIMARY_APP]: 'primary-app',
       [BUTTON_KINDS.PRIMARY_WEB]: 'primary-web',
@@ -113,24 +134,27 @@ export class Button extends LitElement {
     const destructModifier = this.destructive ? '-destructive' : '';
 
     const classes = {
+      button: true,
       [`kd-btn--${baseTypeClass}${destructModifier}`]: true,
       [`kd-btn--${baseTypeClass}`]: !this.destructive,
       'kd-btn--large': this.size === BUTTON_SIZES.LARGE,
       'kd-btn--small': this.size === BUTTON_SIZES.SMALL,
       'kd-btn--medium': this.size === BUTTON_SIZES.MEDIUM,
-      [`kd-btn--icon-${this.iconPosition}`]: !!this.iconPosition,
-      'icon-only': this._iconEls.length && !TextNodes.length,
+      [`kd-btn--icon-${this.iconPosition}`]:
+        !!this.iconPosition && !this.iconOnly,
+      [`kd-btn--icon-center`]: this._iconEls?.length && this.iconOnly,
+      'icon-only': this._iconEls?.length && this.iconOnly,
     };
 
     return html`
-      ${this.href !== ''
+      ${this.href && this.href !== ''
         ? html`
             <a
               class=${classMap(classes)}
               href=${this.href}
               ?disabled=${this.disabled}
-              aria-label=${ifDefined(this.description || undefined)}
-              title=${ifDefined(this.description || undefined)}
+              aria-label=${ifDefined(this.description)}
+              title=${ifDefined(this.description)}
               @click=${(e: Event) => this.handleClick(e)}
             >
               <span>
@@ -147,8 +171,9 @@ export class Button extends LitElement {
               class=${classMap(classes)}
               type=${this.type}
               ?disabled=${this.disabled}
-              aria-label=${ifDefined(this.description || undefined)}
-              title=${ifDefined(this.description || undefined)}
+              aria-label=${ifDefined(this.description)}
+              title=${ifDefined(this.description)}
+              name=${ifDefined(this.name)}
               value=${ifDefined(this.value)}
               formmethod=${ifDefined(this.formmethod)}
               @click=${(e: Event) => this.handleClick(e)}
@@ -180,12 +205,50 @@ export class Button extends LitElement {
     this.dispatchEvent(event);
   }
 
+  private _testIconOnly() {
+    if (!this._iconEls?.length) {
+      return false;
+    }
+
+    const TextNodes = this._slottedEls?.filter((node: any) => {
+      return node.textContent.trim() !== '';
+    });
+    const VisibleTextNodes = TextNodes.filter((node: any) => {
+      if (node.tagName) {
+        return node.offsetParent;
+      } else {
+        return true;
+      }
+    });
+
+    return !VisibleTextNodes.length;
+  }
+
   private _handleSlotChange() {
+    this.iconOnly = this._testIconOnly();
     this.requestUpdate();
   }
 
-  override firstUpdated() {
-    this._handleSlotChange();
+  override connectedCallback() {
+    super.connectedCallback();
+
+    window.addEventListener(
+      'resize',
+      debounce(() => {
+        this.iconOnly = this._testIconOnly();
+      })
+    );
+  }
+
+  override disconnectedCallback() {
+    window.removeEventListener(
+      'resize',
+      debounce(() => {
+        this.iconOnly = this._testIconOnly();
+      })
+    );
+
+    super.disconnectedCallback();
   }
 }
 

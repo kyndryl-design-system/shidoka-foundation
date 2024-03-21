@@ -66,9 +66,11 @@ const args = {
   size: 'medium',
   destructive: false,
   disabled: false,
-  description: '',
   iconPosition: 'right',
+  description: '',
   href: '',
+  name: '',
+  value: '',
 };
 
 export const Button = {
@@ -84,6 +86,8 @@ export const Button = {
         iconPosition=${args.iconPosition}
         description=${args.description}
         href=${args.href}
+        name=${args.name}
+        value=${args.value}
         @on-click=${(e) => action(e.type)(e)}
       >
         ${args.unnamed}
@@ -112,6 +116,8 @@ export const ButtonWithIcon = {
         iconPosition=${args.iconPosition}
         description=${args.description}
         href=${args.href}
+        name=${args.name}
+        value=${args.value}
         @on-click=${(e) => action(e.type)(e)}
       >
         ${args.unnamed}
@@ -134,6 +140,8 @@ export const IconOnly = {
         iconPosition="center"
         description=${args.description}
         href=${args.href}
+        name=${args.name}
+        value=${args.value}
         @on-click=${(e) => action(e.type)(e)}
       >
         <kd-icon slot="icon" .icon=${chevronRightIcon}></kd-icon>

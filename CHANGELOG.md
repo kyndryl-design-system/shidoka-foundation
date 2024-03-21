@@ -1,3 +1,188 @@
+## [1.4.8](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.7...v1.4.8) (2024-03-21)
+
+
+### Bug Fixes
+
+* undefined assignedElements ([b6f2d7d](https://github.com/kyndryl-design-system/shidoka-foundation/commit/b6f2d7d361d0892baa981ab0d89fa076462c4b8c))
+
+## [1.4.7](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.6...v1.4.7) (2024-03-21)
+
+
+### Bug Fixes
+
+* assignedelements initalization ([4106c2b](https://github.com/kyndryl-design-system/shidoka-foundation/commit/4106c2b4ad1c39506d09cc039ad491775406df88))
+* queryassignedelements initialization ([4d3de88](https://github.com/kyndryl-design-system/shidoka-foundation/commit/4d3de880f261499ed68b06bbd4df979e6c4be859))
+* queryassignednodes initialization ([ded4c8f](https://github.com/kyndryl-design-system/shidoka-foundation/commit/ded4c8f8dbd6177fc7d86ac45d2cb636fa332a4a))
+* revert local nav width vars ([c9dbb3f](https://github.com/kyndryl-design-system/shidoka-foundation/commit/c9dbb3f8ef05553bab69386acfc1c9b1813ca470))
+
+## [1.4.6](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.5...v1.4.6) (2024-03-21)
+
+
+### Bug Fixes
+
+* **accordion-item:** missing declare block ([587911d](https://github.com/kyndryl-design-system/shidoka-foundation/commit/587911deecd7b5e161c8591acec2bca60c13c9bc))
+
+## [1.4.5](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.4...v1.4.5) (2024-03-21)
+
+
+### Bug Fixes
+
+* **fonts:** self-host roboto ([6a88ce4](https://github.com/kyndryl-design-system/shidoka-foundation/commit/6a88ce497eb9e42bb0b56e8fd13d68c6673e7d1b))
+
+## [1.4.4](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.3...v1.4.4) (2024-03-21)
+
+
+### Reverts
+
+* Revert "Revert "fix: update local nav vars"" ([623025c](https://github.com/kyndryl-design-system/shidoka-foundation/commit/623025c53c3210821f58202b6449de30ce888b17))
+
+## [1.4.3](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.2...v1.4.3) (2024-03-21)
+
+
+### Bug Fixes
+
+* array initialization ([fc17d75](https://github.com/kyndryl-design-system/shidoka-foundation/commit/fc17d75630a5f2a9b9e0af0e26d9b5ce9a60809d))
+
+## [1.4.2](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.1...v1.4.2) (2024-03-21)
+
+
+### Bug Fixes
+
+* **button:** handle _iconEls undefined ([c1a1993](https://github.com/kyndryl-design-system/shidoka-foundation/commit/c1a199340a79afab481cc9d90ed3bbe68f51dfed))
+
+
+### Reverts
+
+* Revert "fix: update local nav vars" ([3c20cae](https://github.com/kyndryl-design-system/shidoka-foundation/commit/3c20caee54cc8f3a7b0e6d3cf09ebac2c93439f4))
+
+## [1.4.1](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.0...v1.4.1) (2024-03-20)
+
+
+### Bug Fixes
+
+* update local nav vars ([7979a51](https://github.com/kyndryl-design-system/shidoka-foundation/commit/7979a51a1d7403cc9f535917a923768dabde14b8))
+
+# [1.4.0](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.22...v1.4.0) (2024-03-19)
+
+
+### Features
+
+* **elevation:** add elevation vars, mixins, classes, docs ([#31](https://github.com/kyndryl-design-system/shidoka-foundation/issues/31)) ([a7a108d](https://github.com/kyndryl-design-system/shidoka-foundation/commit/a7a108d7e7614a55cedddaf1d29a754e4b2bd183))
+
+## [1.3.22](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.21...v1.3.22) (2024-03-13)
+
+
+### Bug Fixes
+
+* **icon:** sizeOverride default value ([8bc1dea](https://github.com/kyndryl-design-system/shidoka-foundation/commit/8bc1deaba8fddd866d7ac69dc761cd77e8e750fb))
+
+## [1.3.21](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.20...v1.3.21) (2024-03-13)
+
+
+### Bug Fixes
+
+* **colors:** add missing neutral tokens ([9280a29](https://github.com/kyndryl-design-system/shidoka-foundation/commit/9280a295a2c1fbfc3ec26405a4e80bd38f5de2a6))
+
+## [1.3.20](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.19...v1.3.20) (2024-03-12)
+
+
+### Bug Fixes
+
+* **button:** revert submitter ([3e0c906](https://github.com/kyndryl-design-system/shidoka-foundation/commit/3e0c9069345af2cd0d98b65083fa524309eccefe))
+
+## [1.3.19](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.18...v1.3.19) (2024-03-12)
+
+
+### Bug Fixes
+
+* **button:** use host as submitter ([f14533b](https://github.com/kyndryl-design-system/shidoka-foundation/commit/f14533ba6cc188d69744db74c1711cf321e10de2))
+
+## [1.3.18](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.17...v1.3.18) (2024-03-12)
+
+
+### Bug Fixes
+
+* **button:** add submitter to requestSubmit ([d592618](https://github.com/kyndryl-design-system/shidoka-foundation/commit/d592618bf05b052eb13893b491465ed83d2d3123))
+
+## [1.3.17](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.16...v1.3.17) (2024-03-12)
+
+
+### Bug Fixes
+
+* **button:** href issue ([db80ec2](https://github.com/kyndryl-design-system/shidoka-foundation/commit/db80ec213c62d4ca10436f6123c0c44216b66852))
+
+## [1.3.16](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.15...v1.3.16) (2024-03-12)
+
+
+### Bug Fixes
+
+* **button:** add name prop ([437bb3d](https://github.com/kyndryl-design-system/shidoka-foundation/commit/437bb3d384f6570c0be001edda2466a4f1c66c43))
+
+## [1.3.15](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.14...v1.3.15) (2024-02-21)
+
+
+### Bug Fixes
+
+* **button:** test iconOnly on resize ([d56a21e](https://github.com/kyndryl-design-system/shidoka-foundation/commit/d56a21e5f730a2100f1ec1bf3b63570bade3d119))
+* **button:** update iconOnly test ([d1b01d4](https://github.com/kyndryl-design-system/shidoka-foundation/commit/d1b01d46ed63249408267321f4899c4c73c0d9a1))
+* **button:** update iconOnly test ([624d2fa](https://github.com/kyndryl-design-system/shidoka-foundation/commit/624d2fa5c8ba904d241a2afa7c0ead981cd0c7b4))
+
+## [1.3.14](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.13...v1.3.14) (2024-02-21)
+
+
+### Bug Fixes
+
+* **button:** support button with icon and hidden text ([8d8885e](https://github.com/kyndryl-design-system/shidoka-foundation/commit/8d8885e01805ce6383528e8c3d3891e02847960d))
+
+## [1.3.13](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.12...v1.3.13) (2024-02-19)
+
+
+### Bug Fixes
+
+* **accordion-item:** new title font style ([554affd](https://github.com/kyndryl-design-system/shidoka-foundation/commit/554affd2eac34fa52a0508337b3cbf136b0a7f20))
+
+## [1.3.12](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.11...v1.3.12) (2024-02-16)
+
+
+### Bug Fixes
+
+* **colors:** add background-accent-ui-light ([da912ce](https://github.com/kyndryl-design-system/shidoka-foundation/commit/da912cee83fce9ed305cd0e5d7b31fb5412eb98b))
+
+## [1.3.11](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.10...v1.3.11) (2024-02-14)
+
+
+### Bug Fixes
+
+* **button:** add shadowRoot delegatesFocus ([40998e7](https://github.com/kyndryl-design-system/shidoka-foundation/commit/40998e7a5233b8402ac3346b421f1b147f49f73b))
+
+## [1.3.10](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.9...v1.3.10) (2024-02-14)
+
+
+### Bug Fixes
+
+* **button:** revert submitter ([b539f92](https://github.com/kyndryl-design-system/shidoka-foundation/commit/b539f92661e99778d41edbb8802fd372ff33941c))
+
+## [1.3.9](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.8...v1.3.9) (2024-02-14)
+
+
+### Bug Fixes
+
+* **button:** update submitter ([a752754](https://github.com/kyndryl-design-system/shidoka-foundation/commit/a752754b495a1b65958fd7881849eb4f3de14806))
+
+## [1.3.8](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.7...v1.3.8) (2024-02-14)
+
+
+### Bug Fixes
+
+* **icon:** prevent rendering empty icon ([f6bf515](https://github.com/kyndryl-design-system/shidoka-foundation/commit/f6bf515343b3ff84666e973e677e832420b30b07))
+
+## [1.3.7](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.6...v1.3.7) (2024-02-14)
+
+
+### Bug Fixes
+
+* **button:** add submitter to type submit ([fd2647f](https://github.com/kyndryl-design-system/shidoka-foundation/commit/fd2647f09f21bfd3ed76520e9699478a5fe66982))
+
 ## [1.3.6](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.3.5...v1.3.6) (2024-01-29)
 
 

@@ -19,12 +19,9 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: normal;
-    align-items: normal;
-    align-content: normal;
+    align-items: center;
     background: none;
     position: relative;
-    @include typography.type-body-01;
     font-weight: var(--kd-font-weight-medium);
     padding: 24px 16px;
     outline: 2px solid transparent;

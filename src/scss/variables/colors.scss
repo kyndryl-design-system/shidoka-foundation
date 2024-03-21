@@ -190,6 +190,7 @@
   --kd-color-background-inverse-hover: var(--kd-color-spruce-10);
   --kd-color-background-accent-subtle: var(--kd-color-darkstone-10);
   --kd-color-background-accent-ui: var(--kd-color-skye-20);
+  --kd-color-background-accent-ui-light: var(--kd-color-skye-10);
   --kd-color-background-accent-primary: var(--kd-color-warmred-50);
   --kd-color-background-accent-secondary: var(--kd-color-spruce-60);
   --kd-color-background-accent-tertiary: var(--kd-color-darkstone-20);
@@ -229,8 +230,12 @@
   --kd-color-border-warning: var(--kd-color-warning);
   --kd-color-border-informational: var(--kd-color-informational);
 
-  /* Opacity */
+  /* Neutral */
+  --kd-color-neutral-white: #ffffff;
+  --kd-color-neutral-black: #000000;
+  --kd-color-neutral-webgray: #fafafc;
   --kd-color-transparent: rgba(0, 0, 0, 0);
   --kd-color-light-opacity-50: rgba(255, 255, 255, 0.5);
   --kd-color-dark-opacity-50: rgba(61, 60, 60, 0.5);
+  --kd-color-dark-opacity-40: rgba(61, 60, 60, 0.4);
 }

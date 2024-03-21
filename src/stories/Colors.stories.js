@@ -1451,6 +1451,45 @@ export const Palette = {
           </tr>
 
           <tr>
+            <td>--kd-color-neutral-white</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-neutral-white'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-neutral-white)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-neutral-black</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-neutral-black'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-neutral-black)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-neutral-webgray</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-neutral-webgray'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-neutral-webgray)"
+            ></td>
+          </tr>
+
+          <tr>
             <td>--kd-color-transparent</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
@@ -1486,6 +1525,19 @@ export const Palette = {
             <td
               class="preview"
               style="background-color: var(--kd-color-dark-opacity-50)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-dark-opacity-40</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-dark-opacity-40'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-dark-opacity-40)"
             ></td>
           </tr>
         </tbody>
@@ -2066,6 +2118,19 @@ export const Background = {
             <td
               class="preview"
               style="background-color: var(--kd-color-background-accent-ui)"
+            ></td>
+          </tr>
+
+          <tr>
+            <td>--kd-color-background-accent-ui-light</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-background-accent-ui-light'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-background-accent-ui-light)"
             ></td>
           </tr>
 

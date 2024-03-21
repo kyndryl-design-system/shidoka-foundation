@@ -9,7 +9,6 @@ export default {
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
-    '@storybook/addon-designs',
     '@storybook/addon-storysource',
     'storybook-addon-themes',
     {
@@ -68,6 +67,7 @@ export default {
         },
       },
     },
+    '@storybook/addon-webpack5-compiler-babel',
   ],
   framework: {
     name: '@storybook/web-components-webpack5',
@@ -78,5 +78,10 @@ export default {
   },
   docs: {
     autodocs: true,
+  },
+  staticDirs: ['./static'],
+  async babel(options) {
+    options.presets = ['@babel/preset-react'];
+    return options;
   },
 };
