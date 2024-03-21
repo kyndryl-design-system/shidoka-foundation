@@ -56,7 +56,7 @@ export class Accordion extends LitElement {
    * @internal
    */
   @queryAssignedElements({ selector: 'kd-accordion-item' })
-  accessor _accordionItems!: Array<any>;
+  accessor _accordionItems: Array<any> = [];
 
   protected _handleSlotChange() {
     this._updateChildren();
