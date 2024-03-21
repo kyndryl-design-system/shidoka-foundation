@@ -1,3 +1,10 @@
+## [1.4.5](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.4...v1.4.5) (2024-03-21)
+
+
+### Bug Fixes
+
+* **fonts:** self-host roboto ([6a88ce4](https://github.com/kyndryl-design-system/shidoka-foundation/commit/6a88ce497eb9e42bb0b56e8fd13d68c6673e7d1b))
+
 ## [1.4.4](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.3...v1.4.4) (2024-03-21)
 
 
