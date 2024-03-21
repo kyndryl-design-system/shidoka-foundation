@@ -74,7 +74,7 @@ export class Accordion extends LitElement {
   }
 
   protected _updateChildren() {
-    this._accordionItems.forEach((item, index) => {
+    this._accordionItems?.forEach((item, index) => {
       item.setFilledHeader(this.filledHeaders);
       item.setCompact(this.compact);
       item.setIndex(this.startNumber + index);
@@ -83,13 +83,13 @@ export class Accordion extends LitElement {
   }
 
   protected _openAllItems() {
-    this._accordionItems.map((item) => {
+    this._accordionItems?.map((item) => {
       item.open();
     });
   }
 
   protected _closeAllItems() {
-    this._accordionItems.map((item) => {
+    this._accordionItems?.map((item) => {
       item.close();
     });
   }

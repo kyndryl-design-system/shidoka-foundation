@@ -210,7 +210,7 @@ export class Button extends LitElement {
       return false;
     }
 
-    const TextNodes = this._slottedEls.filter((node: any) => {
+    const TextNodes = this._slottedEls?.filter((node: any) => {
       return node.textContent.trim() !== '';
     });
     const VisibleTextNodes = TextNodes.filter((node: any) => {
