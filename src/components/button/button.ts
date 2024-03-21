@@ -113,7 +113,7 @@ export class Button extends LitElement {
   /** Queries icon slot nodes.
    * @internal
    */
-  @queryAssignedNodes({ slot: 'icon' })
+  @queryAssignedElements({ slot: 'icon' })
   _iconEls!: Array<any>;
 
   /** Queries the .button element.
