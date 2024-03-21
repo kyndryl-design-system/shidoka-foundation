@@ -1,3 +1,10 @@
+## [1.4.6](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.5...v1.4.6) (2024-03-21)
+
+
+### Bug Fixes
+
+* **accordion-item:** missing declare block ([587911d](https://github.com/kyndryl-design-system/shidoka-foundation/commit/587911deecd7b5e161c8591acec2bca60c13c9bc))
+
 ## [1.4.5](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.4...v1.4.5) (2024-03-21)
 
 
