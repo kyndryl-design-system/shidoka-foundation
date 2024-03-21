@@ -1,3 +1,10 @@
+## [1.4.8](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.7...v1.4.8) (2024-03-21)
+
+
+### Bug Fixes
+
+* undefined assignedElements ([b6f2d7d](https://github.com/kyndryl-design-system/shidoka-foundation/commit/b6f2d7d361d0892baa981ab0d89fa076462c4b8c))
+
 ## [1.4.7](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.6...v1.4.7) (2024-03-21)
 
 
