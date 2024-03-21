@@ -1,3 +1,10 @@
+## [1.4.3](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.2...v1.4.3) (2024-03-21)
+
+
+### Bug Fixes
+
+* array initialization ([fc17d75](https://github.com/kyndryl-design-system/shidoka-foundation/commit/fc17d75630a5f2a9b9e0af0e26d9b5ce9a60809d))
+
 ## [1.4.2](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.1...v1.4.2) (2024-03-21)
 
 
