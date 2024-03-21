@@ -1,3 +1,15 @@
+## [1.4.2](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.1...v1.4.2) (2024-03-21)
+
+
+### Bug Fixes
+
+* **button:** handle _iconEls undefined ([c1a1993](https://github.com/kyndryl-design-system/shidoka-foundation/commit/c1a199340a79afab481cc9d90ed3bbe68f51dfed))
+
+
+### Reverts
+
+* Revert "fix: update local nav vars" ([3c20cae](https://github.com/kyndryl-design-system/shidoka-foundation/commit/3c20caee54cc8f3a7b0e6d3cf09ebac2c93439f4))
+
 ## [1.4.1](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.0...v1.4.1) (2024-03-20)
 
 
