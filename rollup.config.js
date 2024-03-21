@@ -21,7 +21,8 @@ export default {
   plugins: [
     del({ targets: 'dist/*' }),
     multiInput.default(),
-    resolve({ dedupe: ['@lit/reactive-element', 'lit-html'] }),
+    resolve(),
+    // resolve({ dedupe: ['@lit/reactive-element', 'lit-html'] }),
     renameNodeModules(),
     copy({
       targets: [
