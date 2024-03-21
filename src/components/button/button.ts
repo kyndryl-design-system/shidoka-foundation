@@ -108,7 +108,7 @@ export class Button extends LitElement {
    * @internal
    */
   @queryAssignedNodes()
-  accessor _slottedEls: Array<any> = [];
+  accessor _slottedEls!: Array<Node>;
 
   /** Queries icon slot nodes.
    * @internal
