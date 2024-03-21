@@ -1,3 +1,10 @@
+## [1.4.4](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.3...v1.4.4) (2024-03-21)
+
+
+### Reverts
+
+* Revert "Revert "fix: update local nav vars"" ([623025c](https://github.com/kyndryl-design-system/shidoka-foundation/commit/623025c53c3210821f58202b6449de30ce888b17))
+
 ## [1.4.3](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.2...v1.4.3) (2024-03-21)
 
 
