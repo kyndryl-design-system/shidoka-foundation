@@ -1,3 +1,10 @@
+## [1.4.10](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.9...v1.4.10) (2024-03-22)
+
+
+### Bug Fixes
+
+* **accordion-item:** tabindex ([c5fb760](https://github.com/kyndryl-design-system/shidoka-foundation/commit/c5fb7605a48a69cdd46d6b2e3a754965aec39155))
+
 ## [1.4.9](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.8...v1.4.9) (2024-03-21)
 
 
