@@ -128,7 +128,10 @@ export const ButtonWithIcon = {
 };
 
 export const IconOnly = {
-  args,
+  args: {
+    ...args,
+    description: 'Button Description',
+  },
   render: (args) => {
     return html`
       <kd-button
