@@ -69,6 +69,7 @@ export default {
       },
     },
     '@storybook/addon-webpack5-compiler-babel',
+    '@storybook/addon-a11y',
   ],
   framework: {
     name: '@storybook/web-components-webpack5',

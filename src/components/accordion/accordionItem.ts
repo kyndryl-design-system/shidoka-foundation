@@ -169,7 +169,7 @@ export class AccordionItem extends LitElement {
           class="kd-accordion-item-title"
           aria-controls="kd-accordion-item-body-${this._index}-${this._id}"
           aria-expanded=${this.opened}
-          tabindex="${this._index}"
+          tabindex="0"
           role="button"
           @click="${(e: Event) => this._handleClick(e)}"
           @keypress="${(e: KeyboardEvent) => this._handleKeypress(e)}"
