@@ -1,3 +1,10 @@
+## [1.4.11](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.10...v1.4.11) (2024-03-22)
+
+
+### Bug Fixes
+
+* **accordion-item:** add region role ([ff3ac63](https://github.com/kyndryl-design-system/shidoka-foundation/commit/ff3ac630f1655dc8b8f65431caf96f919ded893c))
+
 ## [1.4.10](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.9...v1.4.10) (2024-03-22)
 
 
