@@ -189,6 +189,7 @@ export class AccordionItem extends LitElement {
         <div
           class="kd-accordion-item-body"
           id="kd-accordion-item-body-${this._index}-${this._id}"
+          role="region"
           aria-labelledby="kd-accordion-item-title-${this._index}-${this._id}"
         >
           <div class="kd-accordion-item-detail">

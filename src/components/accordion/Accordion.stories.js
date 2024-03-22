@@ -88,7 +88,7 @@ export const AccordionWithIcons = {
         expandLabel="${args.expandLabel}"
         collapseLabel="${args.collapseLabel}"
       >
-        <kd-accordion-item>
+        <kd-accordion-item opened>
           <kd-icon
             slot="icon"
             .icon=${circleDashIcon}
