@@ -1,3 +1,10 @@
+## [1.4.12](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.11...v1.4.12) (2024-03-25)
+
+
+### Bug Fixes
+
+* **misc:** update local nav vars ([f95ff5d](https://github.com/kyndryl-design-system/shidoka-foundation/commit/f95ff5d2c16de264e00db205fcd947944df70747))
+
 ## [1.4.11](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.10...v1.4.11) (2024-03-22)
 
 
