@@ -1,3 +1,10 @@
+## [1.4.13](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.12...v1.4.13) (2024-03-25)
+
+
+### Bug Fixes
+
+* **root:** roboto 500 ([527bfce](https://github.com/kyndryl-design-system/shidoka-foundation/commit/527bfce24b146d2f47c332ca585f2e9dd3228fe4))
+
 ## [1.4.12](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.11...v1.4.12) (2024-03-25)
 
 
