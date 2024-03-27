@@ -49,12 +49,6 @@ export class AccordionItem extends LitElement {
    */
   @state() private _compact = false;
 
-  /**
-   * A generated unique id
-   * @ignore
-   */
-  @state() private _id = crypto.randomUUID();
-
   setIndex(index: number) {
     this._index = index;
   }
