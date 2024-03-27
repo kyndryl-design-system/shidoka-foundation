@@ -16,22 +16,24 @@ module.exports = {
       },
     });
 
+    let html = await page.evaluate(
+      "document.querySelector('#root-inner').innerHTML"
+    );
+
     // filter out stories that don't use components
     if (context.title.toLowerCase().includes('components/')) {
-      const storyHtml = await page.evaluate(
-        "document.querySelector('#root-inner').innerHTML"
-      );
       // const outerHtml = await page.evaluate(
       //   "Array.prototype.slice.call(document.querySelectorAll('*')).find((el) => el.tagName.startsWith('KD-')).outerHTML"
       // );
       // const shadowRootHtml = await page.evaluate(
       //   "Array.prototype.slice.call(document.querySelectorAll('*')).find((el) => el.tagName.startsWith('KD-')).shadowRoot.innerHTML"
       // );
-      const shadowRootHtml = await page.evaluate(
+      // console.log(shadowRootHtml);
+      html += await page.evaluate(
         "let html = ''; Array.prototype.slice.call(document.querySelectorAll('*')).filter((el) => el.tagName.startsWith('KD-')).forEach((el) => { if (el.tagName.startsWith('KD-')) { html+= el?.shadowRoot?.innerHTML || '' }}); html;"
       );
-      // console.log(shadowRootHtml);
-      expect(storyHtml + shadowRootHtml).toMatchSnapshot();
     }
+
+    expect(html).toMatchSnapshot();
   },
 };
