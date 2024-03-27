@@ -43,6 +43,7 @@
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.23.3",
     "@babel/preset-typescript": "^7.18.6",
+    "@chromatic-com/storybook": "^1.2.25",
     "@commitlint/cli": "^17.4.4",
     "@commitlint/config-conventional": "^17.4.4",
     "@custom-elements-manifest/analyzer": "^0.9.4",

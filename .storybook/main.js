@@ -9,7 +9,6 @@ export default {
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
-    '@storybook/addon-designs',
     '@storybook/addon-storysource',
     'storybook-addon-themes',
     {
@@ -17,7 +16,7 @@ export default {
       options: {
         mdxPluginOptions: {
           mdxCompileOptions: {
-            remarkPlugins: [remarkGfm],
+            // remarkPlugins: [remarkGfm],
           },
         },
       },
@@ -70,6 +69,7 @@ export default {
     },
     '@storybook/addon-webpack5-compiler-babel',
     '@storybook/addon-a11y',
+    '@chromatic-com/storybook',
   ],
   framework: {
     name: '@storybook/web-components-webpack5',
