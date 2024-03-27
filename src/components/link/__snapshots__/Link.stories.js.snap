@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components/Link InteractionTests play-test 1`] = `
+<kd-link id="test"
+         href
+         target="_self"
+         kind="primary"
+>
+  Link Text
+</kd-link>
+<a role="link"
+   class="kd-link-text  kd-link-text-primary kd-link-text-inline "
+   target="_self"
+   rel
+   href="javascript:void(0)"
+>
+  <span class="kd-link-text-span-flex">
+    <slot>
+    </slot>
+    <slot name="icon">
+    </slot>
+  </span>
+</a>
+`;
+
+exports[`Components/Link Link smoke-test 1`] = `
+<kd-link id="test"
+         href
+         target="_self"
+         kind="primary"
+>
+  Link Text
+</kd-link>
+<a role="link"
+   class="kd-link-text  kd-link-text-primary kd-link-text-inline "
+   target="_self"
+   rel
+   href="javascript:void(0)"
+>
+  <span class="kd-link-text-span-flex">
+    <slot>
+    </slot>
+    <slot name="icon">
+    </slot>
+  </span>
+</a>
+`;
+
+exports[`Components/Link LinkWithIcon smoke-test 1`] = `
+<kd-link id="test"
+         standalone
+         href
+         target="_self"
+         kind="primary"
+>
+  Link Text
+  <kd-icon slot="icon"
+           sizeoverride="16"
+  >
+  </kd-icon>
+</kd-link>
+<a role="link"
+   class="kd-link-text  kd-link-text-primary kd-link-text-standalone "
+   target="_self"
+   rel
+   href="javascript:void(0)"
+>
+  <span class="kd-link-text-span-flex">
+    <slot>
+    </slot>
+    <slot name="icon">
+    </slot>
+  </span>
+</a>
+`;

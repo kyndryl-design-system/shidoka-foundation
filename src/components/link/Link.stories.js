@@ -58,6 +58,7 @@ export const Link = {
   render: (args) =>
     html`
       <kd-link
+        id="test"
         ?standalone=${args.standalone}
         href=${args.href}
         target=${args.target}
@@ -75,6 +76,7 @@ export const LinkWithIcon = {
   args: linkIconArgs,
   render: (args) => html`
     <kd-link
+      id="test"
       ?standalone=${args.standalone}
       href=${args.href}
       target=${args.target}
@@ -97,6 +99,7 @@ export const InteractionTests = {
   render: (args) =>
     html`
       <kd-link
+        id="test"
         ?standalone=${args.standalone}
         href=${args.href}
         target=${args.target}
