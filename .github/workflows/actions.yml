@@ -41,7 +41,7 @@ jobs:
         with:
           name: build-artifact
           path: dist
-  UnitTests:
+  Test:
     needs: Build
     runs-on: ubuntu-latest
     steps:
@@ -63,7 +63,7 @@ jobs:
         run: npx playwright install --with-deps
       - name: Test
         run: npm run test
-  StorybookTests:
+  TestStorybook:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
@@ -83,7 +83,7 @@ jobs:
             "npx http-server storybook-static --port 6006 --silent" \
             "npx wait-on tcp:6006 && npm run test-storybook"
   Release:
-    needs: [UnitTests, StorybookTests]
+    needs: [Test, TestStorybook]
     runs-on: ubuntu-latest
     if: ${{ (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/beta') && github.event_name == 'push' }}
     steps:
