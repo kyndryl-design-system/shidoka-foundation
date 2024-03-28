@@ -45,20 +45,22 @@ export class Link extends LitElement {
   override render() {
     const classes = this.returnClassMap();
 
-    return html`<a
-      class="kd-link-text ${classes}"
-      target=${this.target}
-      role="link"
-      rel=${this.rel}
-      href=${this.href ? this.href : 'javascript:void(0)'}
-      ?disabled=${this.disabled}
-      @click=${(e: Event) => this.handleClick(e)}
-    >
-      <span class="kd-link-text-span-flex">
-        <slot></slot>
-        <slot name="icon"></slot>
-      </span>
-    </a>`;
+    return html`
+      <a
+        class="kd-link-text ${classes}"
+        target=${this.target}
+        role="link"
+        rel=${this.rel}
+        href=${this.href ? this.href : 'javascript:void(0)'}
+        ?disabled=${this.disabled}
+        @click=${(e: Event) => this.handleClick(e)}
+      >
+        <span class="kd-link-text-span-flex">
+          <slot></slot>
+          <slot name="icon"></slot>
+        </span>
+      </a>
+    `;
   }
   // -- Apply classes according to states, kind etc. -- //
   private returnClassMap() {

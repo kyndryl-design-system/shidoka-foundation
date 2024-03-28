@@ -83,6 +83,7 @@ export const ObjectFit = {
           <img
             class="${objectFitClass}"
             src="https://s7d1.scene7.com/is/image/kyndryl/ls_windingriver_16x9?qlt=85&wid=1200&ts=1650983065999&dpr=off"
+            alt=""
           />
         </div>
       </div>

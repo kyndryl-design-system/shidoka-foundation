@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Foundation/Layout AspectRatio smoke-test 1`] = `
+<style>
+  .layout-examples .aspect-ratio-box {
+            width: 500px;
+            background: var(--kd-color-background-ui-subtle);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .layout-examples .object-fit-box {
+            max-width: 500px;
+            border: 1px solid var(--kd-color-background-secondary);
+          }
+</style>
+<div class="layout-examples">
+  <h3>
+    Aspect Ratio
+  </h3>
+  <div class="aspect-ratio-box  kd-type--display-02 kd-layout__aspect-ratio--16x9">
+    16x9
+  </div>
+</div>
+`;
+
+exports[`Foundation/Layout ObjectFit smoke-test 1`] = `
+<style>
+  .layout-examples .aspect-ratio-box {
+            width: 500px;
+            background: var(--kd-color-background-ui-subtle);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .layout-examples .object-fit-box {
+            max-width: 500px;
+            border: 1px solid var(--kd-color-background-secondary);
+          }
+</style>
+<div class="layout-examples">
+  <h3>
+    Object Fit
+  </h3>
+  <p>
+    A 16x9 image in a 4x3 container
+  </p>
+  <div class="object-fit-box kd-layout__aspect-ratio--4x3">
+    <img src="https://s7d1.scene7.com/is/image/kyndryl/ls_windingriver_16x9?qlt=85&amp;wid=1200&amp;ts=1650983065999&amp;dpr=off"
+         alt
+         class="kd-layout__object-fit--cover"
+    >
+  </div>
+</div>
+`;

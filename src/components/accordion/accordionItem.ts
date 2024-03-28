@@ -49,12 +49,6 @@ export class AccordionItem extends LitElement {
    */
   @state() private _compact = false;
 
-  /**
-   * A generated unique id
-   * @ignore
-   */
-  @state() private _id = crypto.randomUUID();
-
   setIndex(index: number) {
     this._index = index;
   }
@@ -167,13 +161,13 @@ export class AccordionItem extends LitElement {
       <div class="${classes}">
         <div
           class="kd-accordion-item-title"
-          aria-controls="kd-accordion-item-body-${this._index}-${this._id}"
+          aria-controls="kd-accordion-item-body-${this._index}"
           aria-expanded=${this.opened}
           tabindex="0"
           role="button"
           @click="${(e: Event) => this._handleClick(e)}"
           @keypress="${(e: KeyboardEvent) => this._handleKeypress(e)}"
-          id="kd-accordion-item-title-${this._index}-${this._id}"
+          id="kd-accordion-item-title-${this._index}"
         >
           ${this.iconTemplate} ${this.numberTemplate}
 
@@ -188,9 +182,9 @@ export class AccordionItem extends LitElement {
 
         <div
           class="kd-accordion-item-body"
-          id="kd-accordion-item-body-${this._index}-${this._id}"
+          id="kd-accordion-item-body-${this._index}"
           role="region"
-          aria-labelledby="kd-accordion-item-title-${this._index}-${this._id}"
+          aria-labelledby="kd-accordion-item-title-${this._index}"
         >
           <div class="kd-accordion-item-detail">
             <slot name="body"></slot>
