@@ -25,6 +25,24 @@ export default {
   },
 };
 
+export const BlankCard = {
+  args: {
+    type: 'normal',
+    href: '',
+    rel: '',
+    target: '_self',
+    hideBorder: false,
+  },
+  render: (args) => {
+    return html` <kd-card
+      type=${args.type}
+      href=${args.href}
+      target=${args.target}
+      rel=${args.rel}
+    ></kd-card>`;
+  },
+};
+
 export const Simple = {
   args: {
     type: 'normal',
