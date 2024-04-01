@@ -1,3 +1,16 @@
+# [1.5.0](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.13...v1.5.0) (2024-04-01)
+
+
+### Bug Fixes
+
+* **card:** Lint error ([7281422](https://github.com/kyndryl-design-system/shidoka-foundation/commit/72814227535eaac4320a008708e4d6cb80ed2af4))
+
+
+### Features
+
+* **card:** Added blank card as per UX discussion ([e071f86](https://github.com/kyndryl-design-system/shidoka-foundation/commit/e071f8675edeb2f416ee3fc96216e4d347063ffc))
+* **card:** Added kd-card component from shidoka application ([7ccf7d3](https://github.com/kyndryl-design-system/shidoka-foundation/commit/7ccf7d3fda9e9681418eec42d200a6adeeb285e5))
+
 ## [1.4.13](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.12...v1.4.13) (2024-03-25)
 
 
