@@ -82,8 +82,9 @@ export class Link extends LitElement {
       e.preventDefault();
       return;
     }
+
     const event = new CustomEvent('on-click', {
-      detail: { origEvent: e },
+      detail: { href: this.href, origEvent: e },
     });
     this.dispatchEvent(event);
   }
