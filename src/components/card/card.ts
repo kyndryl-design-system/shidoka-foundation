@@ -28,7 +28,7 @@ export class Card extends LitElement {
 
   /** Defines a target attribute for where to load the URL in case of clickable card. Possible options include `'_self'` (deafult), `'_blank'`, `'_parent`', `'_top'` */
   @property({ type: String })
-  target: any = '_self';
+  target = '_self';
 
   /** Hide card border. Useful when clickable card use inside `<kyn-notification>` component. */
   @property({ type: Boolean })
