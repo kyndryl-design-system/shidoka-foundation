@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.5.0...v1.5.1) (2024-04-02)
+
+
+### Bug Fixes
+
+* **link:** add href to on-click detail ([b94f4c3](https://github.com/kyndryl-design-system/shidoka-foundation/commit/b94f4c3b1c3e73ac65e425cea40a97c3b81a4ef6))
+
 # [1.5.0](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.4.13...v1.5.0) (2024-04-01)
 
 
