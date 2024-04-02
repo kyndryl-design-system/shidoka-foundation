@@ -1,29 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Components/Link InteractionTests play-test 1`] = `
-<kd-link id="test"
-         href
-         target="_self"
-         kind="primary"
->
-  Link Text
-</kd-link>
-<a role="link"
-   class="kd-link-text  kd-link-text-primary kd-link-text-inline "
-   target="_self"
-   rel
-   href="javascript:void(0)"
->
-  <span class="kd-link-text-span-flex">
-    <slot>
-    </slot>
-    <slot name="icon">
-    </slot>
-  </span>
-</a>
-`;
-
-exports[`Components/Link Link smoke-test 1`] = `
+exports[`Components/Link Link play-test 1`] = `
 <kd-link id="test"
          href
          target="_self"
@@ -72,4 +49,16 @@ exports[`Components/Link LinkWithIcon smoke-test 1`] = `
     </slot>
   </span>
 </a>
+<svg focusable="false"
+     preserveaspectratio="xMidYMid meet"
+     xmlns="http://www.w3.org/2000/svg"
+     fill="currentColor"
+     aria-hidden="true"
+     width="16"
+     height="16"
+     viewbox="0 0 16 16"
+>
+  <path d="M11 8L6 13 5.3 12.3 9.6 8 5.3 3.7 6 3z">
+  </path>
+</svg>
 `;
