@@ -18,7 +18,8 @@ Link here (if applicable).
 - [ ] Documented/updated all props, events, slots, parts, etc with JSDoc.
   - [ ] Ran the `analyze` command to update Storybook docs.
 - [ ] Added/updated Stories with controls to cover all variants.
-- [ ] Added/updated a basic unit test, at least, for each component.
+- [ ] Ran `test` locally to address any failures.
+  - [ ] Ran `test-update` to update any snapshots if necessary.
 - [ ] Added/updated the Figma link for the Story's Design tab.
 
 ## Testing Instructions

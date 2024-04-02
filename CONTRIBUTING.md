@@ -15,8 +15,11 @@ npm run build
 # lint
 npm run lint
 
-# test (must run build first)
+# test (storybook must be running)
 npm run test
+
+# update snapshot tests (storybook must be running)
+npm run test-update
 
 # generate new custom-elements.json (updates storybook docs/args)
 npm run analyze
@@ -46,7 +49,7 @@ npm run format
    1. Releases will trigger automatically when the right commit messages are pushed to `main` or `beta`.
    1. All testing must be done on the PR level before merging, since the release will happen automatically after merge.
 1. Creating Components
-   1. Components should be contained within their own folder containing `ts`, `scss`, `test`, and `stories` files. Subcomponents can share the same folder.
+   1. Components should be contained within their own folder containing `ts`, `scss`, and `stories` files. Sub-components can share the same folder.
    1. Add new components to the root `index.ts` file.
    1. Everything in the design system should be 100% generic. Remember that these components could be used to build any application. Application concerns must be separated.
    1. Use Lit [directives](https://lit.dev/docs/templates/directives/) and [decorators](https://lit.dev/docs/components/decorators/) whenever possible.
@@ -57,16 +60,21 @@ npm run format
    1. Write your storybook stories with controls enabled for every property where possible.
    1. When building modular components with subcomponents, write multiple stories to show different variations. Include any subcomponents in the main story so it renders a new tab with an args table.
 1. Testing
-   1. Testing strategy TBD.
+   1. We use [@storybook/test](https://storybook.js.org/docs/writing-tests) to execute a variety of automated tests.
+      1. The [Test Runner](https://storybook.js.org/docs/writing-tests/test-runner) is used to execute Accessibility, Snapshot, and Interaction tests both locally and in CI.
+      1. [Accessibility Tests](https://storybook.js.org/docs/writing-tests/accessibility-testing)
+      1. [Snapshot Tests](https://storybook.js.org/docs/writing-tests/snapshot-testing)
+      1. [Interaction Tests](https://storybook.js.org/docs/writing-tests/interaction-testing)
+         1. Interaction Test writing strategy TBD
+   1. [Visual Testing via Chromatic](https://www.chromatic.com/)
+      1. Provides visual screenshot comparison testing and a review process which integrates with our CI.
 
 ## Third-Party Docs Reference
 
 1. [Lit](https://lit.dev/docs/)
 1. [Storybook](https://storybook.js.org/docs/7.0/web-components/get-started/introduction)
-1. [@carbon](https://github.com/carbon-design-system/carbon)
-   1. [Icons](https://github.com/carbon-design-system/carbon/tree/main/packages/icons)
-1. [Web Test Runner](https://modern-web.dev/docs/test-runner/overview/)
-1. [@open-wc/testing](https://open-wc.org/docs/testing/testing-package/)
-1. [TypeScript](https://www.typescriptlang.org/docs/)
+1. [@storybook/test](https://storybook.js.org/docs/writing-tests)
+1. [@carbon/icons](https://github.com/carbon-design-system/carbon/tree/main/packages/icons)
 1. [SCSS](https://sass-lang.com/guide)
+1. [TypeScript](https://www.typescriptlang.org/docs/)
 1. [Rollup](https://rollupjs.org/guide/en/)
