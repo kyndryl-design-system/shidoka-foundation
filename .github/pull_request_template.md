@@ -19,7 +19,6 @@ Link here (if applicable).
   - [ ] Ran the `analyze` command to update Storybook docs.
 - [ ] Added/updated Stories with controls to cover all variants.
 - [ ] Ran `test` locally to address any failures.
-  - [ ] Ran `test-update` to update any snapshots if necessary.
 - [ ] Added/updated the Figma link for the Story's Design tab.
 
 ## Testing Instructions

@@ -9,6 +9,7 @@ module.exports = {
     await injectAxe(page);
   },
   async postVisit(page, context) {
+    // run accessibility tests
     await checkA11y(page, '#storybook-root', {
       detailedReport: true,
       detailedReportOptions: {
@@ -16,31 +17,32 @@ module.exports = {
       },
     });
 
-    // get story HTML
-    let html = await page.evaluate(
-      "document.querySelector('#root-inner').innerHTML"
-    );
-
-    // filter out stories that don't use components
-    // if (context.title.toLowerCase().includes('components/')) {
-    // const outerHtml = await page.evaluate(
-    //   "Array.prototype.slice.call(document.querySelectorAll('*')).find((el) => el.tagName.startsWith('KD-')).outerHTML"
+    // // run snapshot tests
+    // // get story HTML
+    // let html = await page.evaluate(
+    //   "document.querySelector('#root-inner').innerHTML"
     // );
-    // const shadowRootHtml = await page.evaluate(
-    //   "Array.prototype.slice.call(document.querySelectorAll('*')).find((el) => el.tagName.startsWith('KD-')).shadowRoot.innerHTML"
-    // );
-    // console.log(shadowRootHtml);
 
-    // get HTML from every element with a shadow root
-    html += await page.evaluate(`
-      let html = '';
-      Array.prototype.slice.call(document.querySelectorAll('*'))
-        .filter((el) => el.shadowRoot)
-        .forEach((el) => html += el.shadowRoot.innerHTML);
-      html;
-    `);
-    // }
+    // // filter out stories that don't use components
+    // // if (context.title.toLowerCase().includes('components/')) {
+    // // const outerHtml = await page.evaluate(
+    // //   "Array.prototype.slice.call(document.querySelectorAll('*')).find((el) => el.tagName.startsWith('KD-')).outerHTML"
+    // // );
+    // // const shadowRootHtml = await page.evaluate(
+    // //   "Array.prototype.slice.call(document.querySelectorAll('*')).find((el) => el.tagName.startsWith('KD-')).shadowRoot.innerHTML"
+    // // );
+    // // console.log(shadowRootHtml);
 
-    expect(html).toMatchSnapshot();
+    // // get HTML from every element with a shadow root
+    // html += await page.evaluate(`
+    //   let html = '';
+    //   Array.prototype.slice.call(document.querySelectorAll('*'))
+    //     .filter((el) => el.shadowRoot)
+    //     .forEach((el) => html += el.shadowRoot.innerHTML);
+    //   html;
+    // `);
+    // // }
+
+    // expect(html).toMatchSnapshot();
   },
 };

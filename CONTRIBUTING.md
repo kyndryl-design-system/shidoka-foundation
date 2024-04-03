@@ -18,9 +18,6 @@ npm run lint
 # test (storybook must be running)
 npm run test
 
-# update snapshot tests (storybook must be running)
-npm run test-update
-
 # generate new custom-elements.json (updates storybook docs/args)
 npm run analyze
 
@@ -58,12 +55,11 @@ npm run format
    1. Document everything in your components with [JSDoc](https://custom-elements-manifest.open-wc.org/analyzer/getting-started/#supported-jsdoc).
    1. Update the `custom-elements.json` file with the `npm run analyze` script any time you add or change documentation. This is where the Storybook args tables are derived from.
    1. Write your storybook stories with controls enabled for every property where possible.
-   1. When building modular components with subcomponents, write multiple stories to show different variations. Include any subcomponents in the main story so it renders a new tab with an args table.
+   1. When building modular components with sub-components, write multiple stories to show different variations. Include any sub-components in the main story so it renders a new tab with an args table.
 1. Testing
    1. We use [@storybook/test](https://storybook.js.org/docs/writing-tests) to execute a variety of automated tests.
-      1. The [Test Runner](https://storybook.js.org/docs/writing-tests/test-runner) is used to execute Accessibility, Snapshot, and Interaction tests both locally and in CI.
+      1. The [Test Runner](https://storybook.js.org/docs/writing-tests/test-runner) is used to execute Accessibility and Interaction tests both locally and in CI.
       1. [Accessibility Tests](https://storybook.js.org/docs/writing-tests/accessibility-testing)
-      1. [Snapshot Tests](https://storybook.js.org/docs/writing-tests/snapshot-testing)
       1. [Interaction Tests](https://storybook.js.org/docs/writing-tests/interaction-testing)
          1. Interaction Test writing strategy TBD
    1. [Visual Testing via Chromatic](https://www.chromatic.com/)
