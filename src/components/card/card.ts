@@ -42,6 +42,7 @@ export class Card extends LitElement {
 
     return html`${this.type === 'clickable'
       ? html`<a
+          part="card-wrapper"
           class="${classMap(cardWrapperClasses)}"
           href=${this.href}
           target=${this.target}
@@ -50,7 +51,7 @@ export class Card extends LitElement {
         >
           <slot></slot>
         </a>`
-      : html`<div class="card-wrapper">
+      : html`<div part="card-wrapper" class="card-wrapper">
           <slot></slot>
         </div>`} `;
   }

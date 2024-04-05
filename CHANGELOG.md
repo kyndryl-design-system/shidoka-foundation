@@ -1,3 +1,11 @@
+# [1.6.0](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.5.1...v1.6.0) (2024-04-05)
+
+
+### Features
+
+* **card:** Added ::part to handle shadow dom style ([ed21bf8](https://github.com/kyndryl-design-system/shidoka-foundation/commit/ed21bf852cf5dd93b82a6dfc81e5234c5d8d0d65))
+* **card:** Added part for non clickable varaints ([a664216](https://github.com/kyndryl-design-system/shidoka-foundation/commit/a6642162ab9ee703d24504f746f7c53a2e857433))
+
 ## [1.5.1](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.5.0...v1.5.1) (2024-04-02)
 
 
