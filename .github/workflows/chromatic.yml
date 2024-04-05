@@ -5,6 +5,7 @@ on:
       - main
       - beta
   pull_request:
+    types: [review_requested]
 jobs:
   chromatic:
     runs-on: ubuntu-latest
@@ -21,5 +22,6 @@ jobs:
         uses: chromaui/action@latest
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          autoAcceptChanges: '{main|beta}'
           onlyChanged: true
           zip: true
