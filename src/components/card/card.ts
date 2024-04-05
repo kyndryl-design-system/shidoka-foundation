@@ -51,7 +51,7 @@ export class Card extends LitElement {
         >
           <slot></slot>
         </a>`
-      : html`<div class="card-wrapper">
+      : html`<div part="card-wrapper" class="card-wrapper">
           <slot></slot>
         </div>`} `;
   }
