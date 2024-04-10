@@ -1,4 +1,5 @@
 const { injectAxe, checkA11y } = require('axe-playwright');
+const { getStoryContext } = require('@storybook/test-runner');
 
 /*
  * See https://storybook.js.org/docs/writing-tests/test-runner#test-hook-api
@@ -9,13 +10,32 @@ module.exports = {
     await injectAxe(page);
   },
   async postVisit(page, context) {
-    // run accessibility tests
-    await checkA11y(page, '#storybook-root', {
-      detailedReport: true,
-      detailedReportOptions: {
-        html: true,
-      },
-    });
+    const storyContext = await getStoryContext(page, context);
+
+    // run accessibility tests if not disabled
+    if (!storyContext.parameters?.a11y?.disable) {
+      const Options = {
+        detailedReport: true,
+        detailedReportOptions: {
+          html: true,
+        },
+      };
+
+      // get custom rules, convert from array to object structure, inject to options
+      const Rules = storyContext.parameters?.a11y?.config?.rules;
+      if (Rules) {
+        const RulesObj = {};
+        Rules.forEach((rule) => {
+          RulesObj[rule.id] = { enabled: rule.enabled };
+        });
+
+        Options.axeOptions = {
+          rules: RulesObj,
+        };
+      }
+
+      await checkA11y(page, '#storybook-root', Options);
+    }
 
     // // run snapshot tests
     // // get story HTML
