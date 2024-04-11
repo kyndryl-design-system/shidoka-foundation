@@ -2,9 +2,11 @@
  * Copyright Kyndryl, Inc. 2023
  */
 import { html } from 'lit';
-import { action } from '@storybook/addon-actions';
+import { userEvent, expect, waitFor, fn } from '@storybook/test';
+import { within } from 'shadow-dom-testing-library';
 
 import './link';
+import '../icon';
 import arrowRightIcon from '@carbon/icons/es/chevron--right/16';
 import { LINK_TYPES, LINK_TARGETS } from './defs';
 import { createOptionsArray } from '../../common/helpers/storybook';
@@ -45,6 +47,7 @@ const args = {
   kind: 'primary',
   disabled: false,
   standalone: false,
+  'on-click': fn(),
 };
 
 const linkIconArgs = { ...args, standalone: true, sizeOverride: 16 };
@@ -55,16 +58,24 @@ export const Link = {
   render: (args) =>
     html`
       <kd-link
+        id="test"
         ?standalone=${args.standalone}
         href=${args.href}
         target=${args.target}
         kind=${args.kind}
         ?disabled=${args.disabled}
-        @on-click=${(e) => action(e.type)(e)}
+        @on-click=${args['on-click']}
       >
         ${args.unnamed}
       </kd-link>
     `,
+  play: async ({ canvasElement }) => {
+    // example interaction test
+    const canvas = within(canvasElement);
+    await userEvent.click(canvas.getByShadowRole('link'));
+    await waitFor(() => expect(args['on-click']).toHaveBeenCalled());
+    canvas.getByShadowRole('link').blur();
+  },
 };
 
 // Standalone Link
@@ -72,12 +83,13 @@ export const LinkWithIcon = {
   args: linkIconArgs,
   render: (args) => html`
     <kd-link
+      id="test"
       ?standalone=${args.standalone}
       href=${args.href}
       target=${args.target}
       kind=${args.kind}
       ?disabled=${args.disabled}
-      @on-click=${(e) => action(e.type)(e)}
+      @on-click=${args['on-click']}
     >
       ${args.unnamed}
       <kd-icon
