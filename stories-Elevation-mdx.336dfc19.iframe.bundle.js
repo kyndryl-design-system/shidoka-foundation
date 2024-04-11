@@ -1,0 +1,57 @@
+"use strict";(self.webpackChunk_kyndryl_design_system_shidoka_foundation=self.webpackChunk_kyndryl_design_system_shidoka_foundation||[]).push([[58,564],{"./src/stories/Elevation.mdx":(__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{__webpack_require__.r(__webpack_exports__),__webpack_require__.d(__webpack_exports__,{default:()=>MDXContent});__webpack_require__("./node_modules/react/index.js");var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__=__webpack_require__("./node_modules/react/jsx-runtime.js"),_home_runner_work_shidoka_foundation_shidoka_foundation_node_modules_storybook_addon_docs_dist_shims_mdx_react_shim__WEBPACK_IMPORTED_MODULE_3__=__webpack_require__("./node_modules/@mdx-js/react/lib/index.js"),_storybook_blocks__WEBPACK_IMPORTED_MODULE_4__=__webpack_require__("./node_modules/@storybook/blocks/dist/index.mjs"),_Elevation_stories_js__WEBPACK_IMPORTED_MODULE_2__=__webpack_require__("./src/stories/Elevation.stories.js");function _createMdxContent(props){const _components={a:"a",code:"code",h2:"h2",h3:"h3",h4:"h4",p:"p",pre:"pre",table:"table",tbody:"tbody",td:"td",th:"th",thead:"thead",tr:"tr",...(0,_home_runner_work_shidoka_foundation_shidoka_foundation_node_modules_storybook_addon_docs_dist_shims_mdx_react_shim__WEBPACK_IMPORTED_MODULE_3__.R)(),...props.components};return(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment,{children:[(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_storybook_blocks__WEBPACK_IMPORTED_MODULE_4__.W8,{of:_Elevation_stories_js__WEBPACK_IMPORTED_MODULE_2__}),"\n",(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_storybook_blocks__WEBPACK_IMPORTED_MODULE_4__.hE,{}),"\n",(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.p,{children:(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.a,{href:"https://www.figma.com/file/6AovH7Iay9Y7BkpoL5975s/Applications-Specs-for-Devs?node-id=3949%3A9976&mode=dev",rel:"nofollow",children:"Figma Design Source"})}),"\n",(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.h2,{id:"examples",children:"Examples"}),"\n",(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_storybook_blocks__WEBPACK_IMPORTED_MODULE_4__.Tn,{}),"\n",(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.h2,{id:"usage",children:"Usage"}),"\n",(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.h3,{id:"scss-mixins",children:"SCSS Mixins"}),"\n",(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.pre,{children:(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.code,{className:"language-css",children:"@use '@kyndryl-design-system/shidoka-foundation/scss/mixins/elevation.scss';\n\n.your-css-selector {\n  @include elevation.shadow($level);\n}\n"})}),"\n",(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.h3,{id:"utility-classes",children:"Utility Classes"}),"\n",(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.h4,{id:"import-to-scss",children:"Import to SCSS"}),"\n",(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.pre,{children:(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.code,{className:"language-css",children:"@use '@kyndryl-design-system/shidoka-foundation/scss/utility/elevation.scss';\n"})}),"\n",(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.h4,{id:"import-to-css",children:"Import to CSS"}),"\n",(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.pre,{children:(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.code,{className:"language-css",children:"@import '@kyndryl-design-system/shidoka-foundation/css/elevation.css';\n"})}),"\n",(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.h4,{id:"import-to-js",children:"Import to JS"}),"\n",(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.pre,{children:(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.code,{className:"language-js",children:"import '@kyndryl-design-system/shidoka-foundation/css/elevation.css';\n"})}),"\n",(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.h4,{id:"example-html",children:"Example HTML"}),"\n",(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.pre,{children:(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.code,{className:"language-html",children:'<div class="kd-elevation--level-1"></div>\n'})}),"\n",(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.h4,{id:"class--variable-names",children:"Class & Variable Names"}),"\n",(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(_components.table,{children:[(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.thead,{children:(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(_components.tr,{children:[(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.th,{children:"Level"}),(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.th,{children:"Class"}),(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.th,{children:"Variable Name"})]})}),(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(_components.tbody,{children:[(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(_components.tr,{children:[(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.td,{children:"1"}),(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.td,{children:"kd-elevation--level-1"}),(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.td,{children:"--kd-elevation-level-1"})]}),(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(_components.tr,{children:[(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.td,{children:"2"}),(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.td,{children:"kd-elevation--level-2"}),(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.td,{children:"--kd-elevation-level-2"})]}),(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(_components.tr,{children:[(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.td,{children:"2 - Overflow"}),(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.td,{children:"kd-elevation--level-2-overflow"}),(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.td,{children:"--kd-elevation-level-2-overflow"})]}),(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(_components.tr,{children:[(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.td,{children:"3"}),(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.td,{children:"kd-elevation--level-3"}),(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.td,{children:"--kd-elevation-level-3"})]}),(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(_components.tr,{children:[(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.td,{children:"4"}),(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.td,{children:"kd-elevation--level-4"}),(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.td,{children:"--kd-elevation-level-4"})]})]})]})]})}function MDXContent(props={}){const{wrapper:MDXLayout}={...(0,_home_runner_work_shidoka_foundation_shidoka_foundation_node_modules_storybook_addon_docs_dist_shims_mdx_react_shim__WEBPACK_IMPORTED_MODULE_3__.R)(),...props.components};return MDXLayout?(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(MDXLayout,{...props,children:(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_createMdxContent,{...props})}):_createMdxContent(props)}},"./src/stories/Elevation.stories.js":(__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{__webpack_require__.r(__webpack_exports__),__webpack_require__.d(__webpack_exports__,{Elevation:()=>Elevation,__namedExportsOrder:()=>__namedExportsOrder,default:()=>__WEBPACK_DEFAULT_EXPORT__});var lit__WEBPACK_IMPORTED_MODULE_0__=__webpack_require__("./node_modules/lit/index.js");const __WEBPACK_DEFAULT_EXPORT__={title:"Foundation/Elevation",decorators:[story=>lit__WEBPACK_IMPORTED_MODULE_0__.qy`
+        <style>
+          .elevation-examples {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+
+            & > div {
+              padding: 16px;
+              border-radius: 8px;
+            }
+          }
+        </style>
+        ${story()}
+      `]},Elevation={render:()=>lit__WEBPACK_IMPORTED_MODULE_0__.qy`
+      <div class="elevation-examples">
+        <div class="kd-elevation--level-1">
+          <div class="kd-type--headline-07">Level 1</div>
+          <p>
+            Slight elevation, for subtle elements like navigation, cards and
+            widgets.
+          </p>
+        </div>
+
+        <div class="kd-elevation--level-2">
+          <div class="kd-type--headline-07">Level 2</div>
+          <p>
+            Moderate elevation, for rollover, menus, tooltips and overflow
+            menus.
+          </p>
+        </div>
+
+        <div class="kd-elevation--level-2-overflow">
+          <div class="kd-type--headline-07">Level 2 - Overflow</div>
+          <p>
+            Moderate elevation with equal distribution of shadow all around, for
+            element overflow.
+          </p>
+        </div>
+
+        <div class="kd-elevation--level-3">
+          <div class="kd-type--headline-07">Level 3</div>
+          <p>
+            Intense elevation, for critical components like alerts and modals.
+          </p>
+        </div>
+
+        <div class="kd-elevation--level-4">
+          <div class="kd-type--headline-07">Level 4</div>
+          <p>
+            Floating elevation, for floating elements like objects that are
+            being dragged.
+          </p>
+        </div>
+      </div>
+    `};Elevation.parameters={...Elevation.parameters,docs:{...Elevation.parameters?.docs,source:{originalSource:'{\n  render: () => {\n    return html`\n      <div class="elevation-examples">\n        <div class="kd-elevation--level-1">\n          <div class="kd-type--headline-07">Level 1</div>\n          <p>\n            Slight elevation, for subtle elements like navigation, cards and\n            widgets.\n          </p>\n        </div>\n\n        <div class="kd-elevation--level-2">\n          <div class="kd-type--headline-07">Level 2</div>\n          <p>\n            Moderate elevation, for rollover, menus, tooltips and overflow\n            menus.\n          </p>\n        </div>\n\n        <div class="kd-elevation--level-2-overflow">\n          <div class="kd-type--headline-07">Level 2 - Overflow</div>\n          <p>\n            Moderate elevation with equal distribution of shadow all around, for\n            element overflow.\n          </p>\n        </div>\n\n        <div class="kd-elevation--level-3">\n          <div class="kd-type--headline-07">Level 3</div>\n          <p>\n            Intense elevation, for critical components like alerts and modals.\n          </p>\n        </div>\n\n        <div class="kd-elevation--level-4">\n          <div class="kd-type--headline-07">Level 4</div>\n          <p>\n            Floating elevation, for floating elements like objects that are\n            being dragged.\n          </p>\n        </div>\n      </div>\n    `;\n  }\n}',...Elevation.parameters?.docs?.source}}};const __namedExportsOrder=["Elevation"]}}]);
+//# sourceMappingURL=stories-Elevation-mdx.336dfc19.iframe.bundle.js.map

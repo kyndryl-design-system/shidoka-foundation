@@ -1,0 +1,44 @@
+"use strict";(self.webpackChunk_kyndryl_design_system_shidoka_foundation=self.webpackChunk_kyndryl_design_system_shidoka_foundation||[]).push([[745,747],{"./src/stories/Visibility.mdx":(__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{__webpack_require__.r(__webpack_exports__),__webpack_require__.d(__webpack_exports__,{default:()=>MDXContent});__webpack_require__("./node_modules/react/index.js");var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__=__webpack_require__("./node_modules/react/jsx-runtime.js"),_home_runner_work_shidoka_foundation_shidoka_foundation_node_modules_storybook_addon_docs_dist_shims_mdx_react_shim__WEBPACK_IMPORTED_MODULE_3__=__webpack_require__("./node_modules/@mdx-js/react/lib/index.js"),_storybook_blocks__WEBPACK_IMPORTED_MODULE_4__=__webpack_require__("./node_modules/@storybook/blocks/dist/index.mjs"),_Visibility_stories_js__WEBPACK_IMPORTED_MODULE_2__=__webpack_require__("./src/stories/Visibility.stories.js");function _createMdxContent(props){const _components={code:"code",h2:"h2",h3:"h3",h4:"h4",pre:"pre",...(0,_home_runner_work_shidoka_foundation_shidoka_foundation_node_modules_storybook_addon_docs_dist_shims_mdx_react_shim__WEBPACK_IMPORTED_MODULE_3__.R)(),...props.components};return(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment,{children:[(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_storybook_blocks__WEBPACK_IMPORTED_MODULE_4__.W8,{of:_Visibility_stories_js__WEBPACK_IMPORTED_MODULE_2__}),"\n",(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.h2,{id:"example",children:"Example"}),"\n",(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_storybook_blocks__WEBPACK_IMPORTED_MODULE_4__.Hl,{children:(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_storybook_blocks__WEBPACK_IMPORTED_MODULE_4__.gG,{of:_Visibility_stories_js__WEBPACK_IMPORTED_MODULE_2__.Visibility})}),"\n",(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.h2,{id:"usage",children:"Usage"}),"\n",(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.h3,{id:"scss-mixins",children:"SCSS Mixins"}),"\n",(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.pre,{children:(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.code,{className:"language-css",children:"@use '@kyndryl-design-system/shidoka-foundation/scss/mixins/visibility.scss';\n\n.your-css-selector {\n  @include visibility.sr-only;\n  @include visibility.hidden;\n  @include visibility.hidden-sm;\n  @include visibility.hidden-md;\n  @include visibility.hidden-lg;\n  @include visibility.hidden-xl;\n  @include visibility.hidden-max;\n}\n"})}),"\n",(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.h3,{id:"utility-classes",children:"Utility Classes"}),"\n",(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.h4,{id:"import-to-scss",children:"Import to SCSS"}),"\n",(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.pre,{children:(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.code,{className:"language-css",children:"@use '@kyndryl-design-system/shidoka-foundation/scss/utility/visibility.scss';\n"})}),"\n",(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.h4,{id:"import-to-css",children:"Import to CSS"}),"\n",(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.pre,{children:(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.code,{className:"language-css",children:"@import '@kyndryl-design-system/shidoka-foundation/css/visibility.css';\n"})}),"\n",(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.h4,{id:"import-to-js",children:"Import to JS"}),"\n",(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.pre,{children:(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.code,{className:"language-js",children:"import '@kyndryl-design-system/shidoka-foundation/css/visibility.css';\n"})}),"\n",(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.h4,{id:"example-html",children:"Example HTML"}),"\n",(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.pre,{children:(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components.code,{className:"language-html",children:'<div class="kd-visibility--sr-only">Screen reader only</div>\n<div class="kd-visibility--hidden">Hidden all breakpoints</div>\n<div class="kd-visibility--hidden-sm">Hidden Small (sm)</div>\n<div class="kd-visibility--hidden-md">Hidden Medium (md)</div>\n<div class="kd-visibility--hidden-lg">Hidden Large (lg)</div>\n<div class="kd-visibility--hidden-xl">Hidden X-Large (xl)</div>\n<div class="kd-visibility--hidden-max">Hidden Max (max)</div>\n'})})]})}function MDXContent(props={}){const{wrapper:MDXLayout}={...(0,_home_runner_work_shidoka_foundation_shidoka_foundation_node_modules_storybook_addon_docs_dist_shims_mdx_react_shim__WEBPACK_IMPORTED_MODULE_3__.R)(),...props.components};return MDXLayout?(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(MDXLayout,{...props,children:(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_createMdxContent,{...props})}):_createMdxContent(props)}},"./src/stories/Visibility.stories.js":(__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{__webpack_require__.r(__webpack_exports__),__webpack_require__.d(__webpack_exports__,{Visibility:()=>Visibility,__namedExportsOrder:()=>__namedExportsOrder,default:()=>__WEBPACK_DEFAULT_EXPORT__});var lit__WEBPACK_IMPORTED_MODULE_0__=__webpack_require__("./node_modules/lit/index.js");const __WEBPACK_DEFAULT_EXPORT__={title:"Foundation/Visibility",decorators:[story=>lit__WEBPACK_IMPORTED_MODULE_0__.qy`
+        <style>
+          .storybook-visibility-example {
+            align-items: center;
+            background: var(--kd-color-cloud-10);
+            display: flex;
+            margin: 16px;
+            min-height: 4em;
+            padding: 16px;
+          }
+        </style>
+        ${story()}
+      `]},Visibility={args:{},render:()=>lit__WEBPACK_IMPORTED_MODULE_0__.qy`
+      <div class="storybook-visibility-example">
+        This block includes text for screen readers only.
+        <div class="kd-visibility--sr-only">screen reader only content</div>
+      </div>
+      <div class="storybook-visibility-example">
+        <div class="kd-visibility--hidden-sm">
+          Text hidden at Small (sm) breakpoint.
+        </div>
+      </div>
+      <div class="storybook-visibility-example">
+        <div class="kd-visibility--hidden-md">
+          Text hidden at Medium (md) breakpoint.
+        </div>
+      </div>
+      <div class="storybook-visibility-example">
+        <div class="kd-visibility--hidden-lg">
+          Text hidden at Large (lg) breakpoint.
+        </div>
+      </div>
+      <div class="storybook-visibility-example">
+        <div class="kd-visibility--hidden-xl">
+          Text hidden at X-Large (xl) breakpoint.
+        </div>
+      </div>
+      <div class="storybook-visibility-example">
+        <div class="kd-visibility--hidden-max">
+          Text hidden at Max (max) breakpoint.
+        </div>
+      </div>
+    `};Visibility.parameters={...Visibility.parameters,docs:{...Visibility.parameters?.docs,source:{originalSource:'{\n  args: args,\n  render: () => {\n    return html`\n      <div class="storybook-visibility-example">\n        This block includes text for screen readers only.\n        <div class="kd-visibility--sr-only">screen reader only content</div>\n      </div>\n      <div class="storybook-visibility-example">\n        <div class="kd-visibility--hidden-sm">\n          Text hidden at Small (sm) breakpoint.\n        </div>\n      </div>\n      <div class="storybook-visibility-example">\n        <div class="kd-visibility--hidden-md">\n          Text hidden at Medium (md) breakpoint.\n        </div>\n      </div>\n      <div class="storybook-visibility-example">\n        <div class="kd-visibility--hidden-lg">\n          Text hidden at Large (lg) breakpoint.\n        </div>\n      </div>\n      <div class="storybook-visibility-example">\n        <div class="kd-visibility--hidden-xl">\n          Text hidden at X-Large (xl) breakpoint.\n        </div>\n      </div>\n      <div class="storybook-visibility-example">\n        <div class="kd-visibility--hidden-max">\n          Text hidden at Max (max) breakpoint.\n        </div>\n      </div>\n    `;\n  }\n}',...Visibility.parameters?.docs?.source}}};const __namedExportsOrder=["Visibility"]}}]);
+//# sourceMappingURL=stories-Visibility-mdx.8fec26c7.iframe.bundle.js.map
