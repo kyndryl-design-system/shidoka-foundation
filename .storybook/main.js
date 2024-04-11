@@ -49,6 +49,7 @@ export default {
                       Sass.renderSync({ data, file: filePath }).css.toString(),
                   },
                 },
+                'sass-loader',
               ],
             },
           ],
