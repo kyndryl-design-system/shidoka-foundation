@@ -9,12 +9,13 @@
 .card {
   &-wrapper {
     position: relative;
-    padding: 24px;
+    padding: 16px;
     background-color: var(--kd-color-background-ui-default);
     outline: 1px solid var(--kd-color-border-light);
     border-radius: 8px;
     height: 100%;
   }
+
   &-wrapper-clickable {
     position: relative;
     display: inline-block;
@@ -23,15 +24,18 @@
     text-decoration: none;
     background-color: var(--kd-color-background-ui-default);
     border-radius: 8px;
-    padding: 24px;
-    transition: outline 200ms ease-out;
+    padding: 16px;
+    outline: 2px solid transparent;
+    transition: outline-color 150ms ease-out, box-shadow 150ms ease-out;
+
     &:hover {
-      outline: 2px solid var(--kd-color-border-ui-hover);
+      outline-color: var(--kd-color-border-ui-hover);
       @include elevation.shadow(2);
     }
   }
+
   &-border {
-    outline: 1px solid var(--kd-color-border-ui);
+    outline: 1px solid var(--kd-color-border-light);
     @include elevation.shadow(1);
   }
 }
