@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.6.0...v1.6.1) (2024-04-19)
+
+
+### Bug Fixes
+
+* **card:** style updates ([#38](https://github.com/kyndryl-design-system/shidoka-foundation/issues/38)) ([ce84a44](https://github.com/kyndryl-design-system/shidoka-foundation/commit/ce84a4497835dc9f1b4ff9c800868577befa574b))
+
 # [1.6.0](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.5.1...v1.6.0) (2024-04-05)
 
 
