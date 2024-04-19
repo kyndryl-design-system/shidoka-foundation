@@ -1,3 +1,10 @@
+## [1.6.2](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.6.1...v1.6.2) (2024-04-19)
+
+
+### Bug Fixes
+
+* **button:** icon-only width ([462fa60](https://github.com/kyndryl-design-system/shidoka-foundation/commit/462fa601ab522858cbbc33faef1f832f4aa43eb9))
+
 ## [1.6.1](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.6.0...v1.6.1) (2024-04-19)
 
 
