@@ -1,3 +1,11 @@
+## [1.6.3](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.6.2...v1.6.3) (2024-04-24)
+
+
+### Bug Fixes
+
+* **accordion-item:** add disabled prop ([95084d5](https://github.com/kyndryl-design-system/shidoka-foundation/commit/95084d57209ec4643c1b892ed4ef82a5ab9d23e4))
+* **accordion-item:** use aria-disabled ([2e0ca2a](https://github.com/kyndryl-design-system/shidoka-foundation/commit/2e0ca2aadad53d4d2b764fcfcc54719320992519))
+
 ## [1.6.2](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.6.1...v1.6.2) (2024-04-19)
 
 
