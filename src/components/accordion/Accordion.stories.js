@@ -3,6 +3,7 @@
  */
 
 import { html } from 'lit';
+import { action } from '@storybook/addon-actions';
 
 import './accordion';
 import './accordionItem';
@@ -38,7 +39,7 @@ export const Accordion = {
         expandLabel="${args.expandLabel}"
         collapseLabel="${args.collapseLabel}"
       >
-        <kd-accordion-item opened>
+        <kd-accordion-item opened @on-toggle=${(e) => action(e.type)(e)}>
           <span slot="title">Accordion Title 1</span>
           <span slot="subtitle">Accordion subtitle 1</span>
           <div slot="body">
@@ -47,7 +48,7 @@ export const Accordion = {
           </div>
         </kd-accordion-item>
 
-        <kd-accordion-item>
+        <kd-accordion-item @on-toggle=${(e) => action(e.type)(e)}>
           <span slot="title">Accordion Title 2</span>
           <span slot="subtitle">Accordion subtitle 2</span>
           <div slot="body">
@@ -56,7 +57,7 @@ export const Accordion = {
           </div>
         </kd-accordion-item>
 
-        <kd-accordion-item disabled>
+        <kd-accordion-item disabled @on-toggle=${(e) => action(e.type)(e)}>
           <span slot="title">Accordion Title 3</span>
           <span slot="subtitle">Accordion subtitle 3</span>
           <div slot="body">
@@ -88,7 +89,7 @@ export const AccordionWithIcons = {
         expandLabel="${args.expandLabel}"
         collapseLabel="${args.collapseLabel}"
       >
-        <kd-accordion-item opened>
+        <kd-accordion-item opened @on-toggle=${(e) => action(e.type)(e)}>
           <kd-icon
             slot="icon"
             .icon=${circleDashIcon}
@@ -102,7 +103,7 @@ export const AccordionWithIcons = {
           </div>
         </kd-accordion-item>
 
-        <kd-accordion-item>
+        <kd-accordion-item @on-toggle=${(e) => action(e.type)(e)}>
           <kd-icon
             slot="icon"
             .icon=${checkmarkOutlineIcon}
@@ -116,7 +117,7 @@ export const AccordionWithIcons = {
           </div>
         </kd-accordion-item>
 
-        <kd-accordion-item>
+        <kd-accordion-item @on-toggle=${(e) => action(e.type)(e)}>
           <kd-icon
             slot="icon"
             .icon=${errorFilledIcon}

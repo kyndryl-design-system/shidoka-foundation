@@ -11,8 +11,8 @@ import subtractIcon from '@carbon/icons/es/subtract/32';
 import '../icon';
 
 /**
- * AccordionItem component.
- *
+ * AccordionItem component. *
+ * @fires on-toggle - Emits the `opened` state when the accordion item opens/closes.
  * @slot icon - Optional leading icon
  * @slot body - Body of the accordion item
  * @slot title - Title of the accordion item
@@ -91,12 +91,17 @@ export class AccordionItem extends LitElement {
 
   private _toggleOpenState() {
     if (!this.disabled) {
-      if (this.opened) {
-        this.opened = false;
-      } else {
-        this.opened = true;
-      }
+      this.opened = !this.opened;
+
+      this._emitToggleEvent();
     }
+  }
+
+  private _emitToggleEvent() {
+    const event = new CustomEvent('on-toggle', {
+      detail: { opened: this.opened },
+    });
+    this.dispatchEvent(event);
   }
 
   /**
