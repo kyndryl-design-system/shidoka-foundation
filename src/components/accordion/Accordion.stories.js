@@ -56,7 +56,7 @@ export const Accordion = {
           </div>
         </kd-accordion-item>
 
-        <kd-accordion-item>
+        <kd-accordion-item disabled>
           <span slot="title">Accordion Title 3</span>
           <span slot="subtitle">Accordion subtitle 3</span>
           <div slot="body">

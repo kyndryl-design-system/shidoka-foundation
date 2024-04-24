@@ -24,7 +24,12 @@ export class AccordionItem extends LitElement {
   static override styles = [stylesheet];
 
   /** Accordion item opened state. */
-  @property({ type: Boolean }) opened = false;
+  @property({ type: Boolean })
+  opened = false;
+
+  /** Accordion item disabled state. */
+  @property({ type: Boolean })
+  disabled = false;
 
   /**
    * The index of this item. Passed from the Accordion.
@@ -85,10 +90,12 @@ export class AccordionItem extends LitElement {
   }
 
   private _toggleOpenState() {
-    if (this.opened) {
-      this.opened = false;
-    } else {
-      this.opened = true;
+    if (!this.disabled) {
+      if (this.opened) {
+        this.opened = false;
+      } else {
+        this.opened = true;
+      }
     }
   }
 
@@ -154,6 +161,7 @@ export class AccordionItem extends LitElement {
     const classes: any = classMap({
       'kd-accordion-item': true,
       opened: this.opened,
+      disabled: this.disabled,
       'filled-header': this._filledHeader,
       compact: this._compact,
     });

@@ -99,8 +99,8 @@
           "type": {
             "text": "object"
           },
-          "default": "{\n  SM: 'sm',\n  MD: 'md',\n  LG: 'lg',\n  XL: 'xl',\n  MAX: 'max',\n}",
-          "description": "Breakpoint values defined in variable: --kd-current-breakpoint\nUsed for conditional logic and/or rendering in component JS\nby matching the current breakpoint to one of these values."
+          "default": "{\r\n  SM: 'sm',\r\n  MD: 'md',\r\n  LG: 'lg',\r\n  XL: 'xl',\r\n  MAX: 'max',\r\n}",
+          "description": "Breakpoint values defined in variable: --kd-current-breakpoint\r\nUsed for conditional logic and/or rendering in component JS\r\nby matching the current breakpoint to one of these values."
         }
       ],
       "exports": [
@@ -121,7 +121,7 @@
         {
           "kind": "function",
           "name": "getCurrentBreakpoint",
-          "description": "Get the current breakpoint from CSS variable.\nUsed for conditional logic and/or rendering in component JS\nby matching the current breakpoint with values defined in common/defs/breakpoints."
+          "description": "Get the current breakpoint from CSS variable.\r\nUsed for conditional logic and/or rendering in component JS\r\nby matching the current breakpoint with values defined in common/defs/breakpoints."
         }
       ],
       "exports": [
@@ -196,7 +196,7 @@
               "description": " imported enums object"
             }
           ],
-          "description": "Convert an object to an array of only its values.\nUsed when importing enums in component stories for populating argType dropdowns."
+          "description": "Convert an object to an array of only its values.\r\nUsed when importing enums in component stories for populating argType dropdowns."
         }
       ],
       "exports": [
@@ -214,6 +214,395 @@
           "declaration": {
             "name": "createOptionsArray",
             "module": "src/common/helpers/storybook.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/accordion/accordion.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "Accordion component.",
+          "name": "Accordion",
+          "slots": [
+            {
+              "description": "Holds Accordion Items (kd-accordion-item) that make up the accordion",
+              "name": "unnamed"
+            }
+          ],
+          "members": [
+            {
+              "kind": "field",
+              "name": "showNumbers",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Specifies whether to show numbers on the list items.",
+              "attribute": "showNumbers"
+            },
+            {
+              "kind": "field",
+              "name": "startNumber",
+              "type": {
+                "text": "number"
+              },
+              "default": "1",
+              "description": "Specifies the number to start at if the list has numbers.",
+              "attribute": "startNumber"
+            },
+            {
+              "kind": "field",
+              "name": "filledHeaders",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Specifies whether to show the accordion items with filled headers.",
+              "attribute": "filledHeaders"
+            },
+            {
+              "kind": "field",
+              "name": "compact",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Display the accordion as compact or the default large size.",
+              "attribute": "compact"
+            },
+            {
+              "kind": "field",
+              "name": "expandLabel",
+              "type": {
+                "text": "string"
+              },
+              "default": "'Expand all items'",
+              "description": "The string that displays on the toggle to expand all the accordion items.",
+              "attribute": "expandLabel"
+            },
+            {
+              "kind": "field",
+              "name": "collapseLabel",
+              "type": {
+                "text": "string"
+              },
+              "default": "'Collapse all items'",
+              "description": "The string that displays on the toggle to collapse all the accordion items.",
+              "attribute": "collapseLabel"
+            },
+            {
+              "kind": "method",
+              "name": "_handleSlotChange",
+              "privacy": "protected"
+            },
+            {
+              "kind": "method",
+              "name": "_updateChildren",
+              "privacy": "protected"
+            },
+            {
+              "kind": "method",
+              "name": "_openAllItems",
+              "privacy": "protected"
+            },
+            {
+              "kind": "method",
+              "name": "_closeAllItems",
+              "privacy": "protected"
+            },
+            {
+              "kind": "method",
+              "name": "_toggleExpandAll",
+              "privacy": "private"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "showNumbers",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Specifies whether to show numbers on the list items.",
+              "fieldName": "showNumbers"
+            },
+            {
+              "name": "startNumber",
+              "type": {
+                "text": "number"
+              },
+              "default": "1",
+              "description": "Specifies the number to start at if the list has numbers.",
+              "fieldName": "startNumber"
+            },
+            {
+              "name": "filledHeaders",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Specifies whether to show the accordion items with filled headers.",
+              "fieldName": "filledHeaders"
+            },
+            {
+              "name": "compact",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Display the accordion as compact or the default large size.",
+              "fieldName": "compact"
+            },
+            {
+              "name": "expandLabel",
+              "type": {
+                "text": "string"
+              },
+              "default": "'Expand all items'",
+              "description": "The string that displays on the toggle to expand all the accordion items.",
+              "fieldName": "expandLabel"
+            },
+            {
+              "name": "collapseLabel",
+              "type": {
+                "text": "string"
+              },
+              "default": "'Collapse all items'",
+              "description": "The string that displays on the toggle to collapse all the accordion items.",
+              "fieldName": "collapseLabel"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "kd-accordion",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Accordion",
+          "declaration": {
+            "name": "Accordion",
+            "module": "src/components/accordion/accordion.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "kd-accordion",
+          "declaration": {
+            "name": "Accordion",
+            "module": "src/components/accordion/accordion.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/accordion/accordionItem.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "AccordionItem component.",
+          "name": "AccordionItem",
+          "slots": [
+            {
+              "description": "Optional leading icon",
+              "name": "icon"
+            },
+            {
+              "description": "Body of the accordion item",
+              "name": "body"
+            },
+            {
+              "description": "Title of the accordion item",
+              "name": "title"
+            },
+            {
+              "description": "Optional subtitle of the accordion item",
+              "name": "subtitle"
+            }
+          ],
+          "members": [
+            {
+              "kind": "field",
+              "name": "opened",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Accordion item opened state.",
+              "attribute": "opened"
+            },
+            {
+              "kind": "field",
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Accordion item disabled state.",
+              "attribute": "disabled"
+            },
+            {
+              "kind": "method",
+              "name": "setIndex",
+              "parameters": [
+                {
+                  "name": "index",
+                  "type": {
+                    "text": "number"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "setShowNumbers",
+              "parameters": [
+                {
+                  "name": "value",
+                  "type": {
+                    "text": "boolean"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "setFilledHeader",
+              "parameters": [
+                {
+                  "name": "value",
+                  "type": {
+                    "text": "boolean"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "setCompact",
+              "parameters": [
+                {
+                  "name": "value",
+                  "type": {
+                    "text": "boolean"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "open"
+            },
+            {
+              "kind": "method",
+              "name": "close"
+            },
+            {
+              "kind": "method",
+              "name": "_handleClick",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "e",
+                  "type": {
+                    "text": "Event"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "_handleKeypress",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "e",
+                  "type": {
+                    "text": "KeyboardEvent"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "_toggleOpenState",
+              "privacy": "private"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "opened",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Accordion item opened state.",
+              "fieldName": "opened"
+            },
+            {
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Accordion item disabled state.",
+              "fieldName": "disabled"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "kd-accordion-item",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "AccordionItem",
+          "declaration": {
+            "name": "AccordionItem",
+            "module": "src/components/accordion/accordionItem.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "kd-accordion-item",
+          "declaration": {
+            "name": "AccordionItem",
+            "module": "src/components/accordion/accordionItem.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/accordion/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Accordion",
+          "declaration": {
+            "name": "Accordion",
+            "module": "./accordion"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "AccordionItem",
+          "declaration": {
+            "name": "AccordionItem",
+            "module": "./accordionItem"
           }
         }
       ]
@@ -520,376 +909,6 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/components/accordion/accordion.ts",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "Accordion component.",
-          "name": "Accordion",
-          "slots": [
-            {
-              "description": "Holds Accordion Items (kd-accordion-item) that make up the accordion",
-              "name": "unnamed"
-            }
-          ],
-          "members": [
-            {
-              "kind": "field",
-              "name": "showNumbers",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "description": "Specifies whether to show numbers on the list items.",
-              "attribute": "showNumbers"
-            },
-            {
-              "kind": "field",
-              "name": "startNumber",
-              "type": {
-                "text": "number"
-              },
-              "default": "1",
-              "description": "Specifies the number to start at if the list has numbers.",
-              "attribute": "startNumber"
-            },
-            {
-              "kind": "field",
-              "name": "filledHeaders",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "description": "Specifies whether to show the accordion items with filled headers.",
-              "attribute": "filledHeaders"
-            },
-            {
-              "kind": "field",
-              "name": "compact",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "description": "Display the accordion as compact or the default large size.",
-              "attribute": "compact"
-            },
-            {
-              "kind": "field",
-              "name": "expandLabel",
-              "type": {
-                "text": "string"
-              },
-              "default": "'Expand all items'",
-              "description": "The string that displays on the toggle to expand all the accordion items.",
-              "attribute": "expandLabel"
-            },
-            {
-              "kind": "field",
-              "name": "collapseLabel",
-              "type": {
-                "text": "string"
-              },
-              "default": "'Collapse all items'",
-              "description": "The string that displays on the toggle to collapse all the accordion items.",
-              "attribute": "collapseLabel"
-            },
-            {
-              "kind": "method",
-              "name": "_handleSlotChange",
-              "privacy": "protected"
-            },
-            {
-              "kind": "method",
-              "name": "_updateChildren",
-              "privacy": "protected"
-            },
-            {
-              "kind": "method",
-              "name": "_openAllItems",
-              "privacy": "protected"
-            },
-            {
-              "kind": "method",
-              "name": "_closeAllItems",
-              "privacy": "protected"
-            },
-            {
-              "kind": "method",
-              "name": "_toggleExpandAll",
-              "privacy": "private"
-            }
-          ],
-          "attributes": [
-            {
-              "name": "showNumbers",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "description": "Specifies whether to show numbers on the list items.",
-              "fieldName": "showNumbers"
-            },
-            {
-              "name": "startNumber",
-              "type": {
-                "text": "number"
-              },
-              "default": "1",
-              "description": "Specifies the number to start at if the list has numbers.",
-              "fieldName": "startNumber"
-            },
-            {
-              "name": "filledHeaders",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "description": "Specifies whether to show the accordion items with filled headers.",
-              "fieldName": "filledHeaders"
-            },
-            {
-              "name": "compact",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "description": "Display the accordion as compact or the default large size.",
-              "fieldName": "compact"
-            },
-            {
-              "name": "expandLabel",
-              "type": {
-                "text": "string"
-              },
-              "default": "'Expand all items'",
-              "description": "The string that displays on the toggle to expand all the accordion items.",
-              "fieldName": "expandLabel"
-            },
-            {
-              "name": "collapseLabel",
-              "type": {
-                "text": "string"
-              },
-              "default": "'Collapse all items'",
-              "description": "The string that displays on the toggle to collapse all the accordion items.",
-              "fieldName": "collapseLabel"
-            }
-          ],
-          "superclass": {
-            "name": "LitElement",
-            "package": "lit"
-          },
-          "tagName": "kd-accordion",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "Accordion",
-          "declaration": {
-            "name": "Accordion",
-            "module": "src/components/accordion/accordion.ts"
-          }
-        },
-        {
-          "kind": "custom-element-definition",
-          "name": "kd-accordion",
-          "declaration": {
-            "name": "Accordion",
-            "module": "src/components/accordion/accordion.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/components/accordion/accordionItem.ts",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "AccordionItem component.",
-          "name": "AccordionItem",
-          "slots": [
-            {
-              "description": "Optional leading icon",
-              "name": "icon"
-            },
-            {
-              "description": "Body of the accordion item",
-              "name": "body"
-            },
-            {
-              "description": "Title of the accordion item",
-              "name": "title"
-            },
-            {
-              "description": "Optional subtitle of the accordion item",
-              "name": "subtitle"
-            }
-          ],
-          "members": [
-            {
-              "kind": "field",
-              "name": "opened",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "description": "Accordion item opened state.",
-              "attribute": "opened"
-            },
-            {
-              "kind": "method",
-              "name": "setIndex",
-              "parameters": [
-                {
-                  "name": "index",
-                  "type": {
-                    "text": "number"
-                  }
-                }
-              ]
-            },
-            {
-              "kind": "method",
-              "name": "setShowNumbers",
-              "parameters": [
-                {
-                  "name": "value",
-                  "type": {
-                    "text": "boolean"
-                  }
-                }
-              ]
-            },
-            {
-              "kind": "method",
-              "name": "setFilledHeader",
-              "parameters": [
-                {
-                  "name": "value",
-                  "type": {
-                    "text": "boolean"
-                  }
-                }
-              ]
-            },
-            {
-              "kind": "method",
-              "name": "setCompact",
-              "parameters": [
-                {
-                  "name": "value",
-                  "type": {
-                    "text": "boolean"
-                  }
-                }
-              ]
-            },
-            {
-              "kind": "method",
-              "name": "open"
-            },
-            {
-              "kind": "method",
-              "name": "close"
-            },
-            {
-              "kind": "method",
-              "name": "_handleClick",
-              "privacy": "private",
-              "parameters": [
-                {
-                  "name": "e",
-                  "type": {
-                    "text": "Event"
-                  }
-                }
-              ]
-            },
-            {
-              "kind": "method",
-              "name": "_handleKeypress",
-              "privacy": "private",
-              "parameters": [
-                {
-                  "name": "e",
-                  "type": {
-                    "text": "KeyboardEvent"
-                  }
-                }
-              ]
-            },
-            {
-              "kind": "method",
-              "name": "_toggleOpenState",
-              "privacy": "private"
-            }
-          ],
-          "attributes": [
-            {
-              "name": "opened",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "description": "Accordion item opened state.",
-              "fieldName": "opened"
-            }
-          ],
-          "superclass": {
-            "name": "LitElement",
-            "package": "lit"
-          },
-          "tagName": "kd-accordion-item",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "AccordionItem",
-          "declaration": {
-            "name": "AccordionItem",
-            "module": "src/components/accordion/accordionItem.ts"
-          }
-        },
-        {
-          "kind": "custom-element-definition",
-          "name": "kd-accordion-item",
-          "declaration": {
-            "name": "AccordionItem",
-            "module": "src/components/accordion/accordionItem.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/components/accordion/index.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "Accordion",
-          "declaration": {
-            "name": "Accordion",
-            "module": "./accordion"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "AccordionItem",
-          "declaration": {
-            "name": "AccordionItem",
-            "module": "./accordionItem"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
       "path": "src/components/card/card.sample.ts",
       "declarations": [
         {
@@ -973,10 +992,10 @@
               "kind": "field",
               "name": "target",
               "type": {
-                "text": "string"
+                "text": "any"
               },
               "default": "'_self'",
-              "description": "Defines a target attribute for where to load the URL in case of clickable card. Possible options include \"_self\" (deafult), \"_blank\", \"_parent\", \"_top\"",
+              "description": "Defines a target attribute for where to load the URL in case of clickable card. Possible options include `'_self'` (deafult), `'_blank'`, `'_parent`', `'_top'`",
               "attribute": "target"
             },
             {
@@ -1040,10 +1059,10 @@
             {
               "name": "target",
               "type": {
-                "text": "string"
+                "text": "any"
               },
               "default": "'_self'",
-              "description": "Defines a target attribute for where to load the URL in case of clickable card. Possible options include \"_self\" (deafult), \"_blank\", \"_parent\", \"_top\"",
+              "description": "Defines a target attribute for where to load the URL in case of clickable card. Possible options include `'_self'` (deafult), `'_blank'`, `'_parent`', `'_top'`",
               "fieldName": "target"
             },
             {
@@ -1094,121 +1113,6 @@
           "declaration": {
             "name": "Card",
             "module": "./card"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/components/icon/icon.ts",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "Wrapper for vanilla Carbon icons to simplify usage.",
-          "name": "Icon",
-          "slots": [
-            {
-              "description": "The default slot for button content.",
-              "name": "unnamed"
-            }
-          ],
-          "members": [
-            {
-              "kind": "field",
-              "name": "icon",
-              "type": {
-                "text": "any"
-              },
-              "default": "{}",
-              "description": "The imported Carbon icon.",
-              "attribute": "icon"
-            },
-            {
-              "kind": "field",
-              "name": "fill",
-              "type": {
-                "text": "string"
-              },
-              "default": "'currentColor'",
-              "description": "Icon fill color.",
-              "attribute": "fill"
-            },
-            {
-              "kind": "field",
-              "name": "sizeOverride",
-              "type": {
-                "text": "number"
-              },
-              "description": "Specify a size in pixels to override the imported Carbon icon's original size.",
-              "attribute": "sizeOverride"
-            }
-          ],
-          "attributes": [
-            {
-              "name": "icon",
-              "type": {
-                "text": "any"
-              },
-              "default": "{}",
-              "description": "The imported Carbon icon.",
-              "fieldName": "icon"
-            },
-            {
-              "name": "fill",
-              "type": {
-                "text": "string"
-              },
-              "default": "'currentColor'",
-              "description": "Icon fill color.",
-              "fieldName": "fill"
-            },
-            {
-              "name": "sizeOverride",
-              "type": {
-                "text": "number"
-              },
-              "description": "Specify a size in pixels to override the imported Carbon icon's original size.",
-              "fieldName": "sizeOverride"
-            }
-          ],
-          "superclass": {
-            "name": "LitElement",
-            "package": "lit"
-          },
-          "tagName": "kd-icon",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "Icon",
-          "declaration": {
-            "name": "Icon",
-            "module": "src/components/icon/icon.ts"
-          }
-        },
-        {
-          "kind": "custom-element-definition",
-          "name": "kd-icon",
-          "declaration": {
-            "name": "Icon",
-            "module": "src/components/icon/icon.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/components/icon/index.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "Icon",
-          "declaration": {
-            "name": "Icon",
-            "module": "./icon"
           }
         }
       ]
@@ -1414,6 +1318,121 @@
           "declaration": {
             "name": "Link",
             "module": "src/components/link/link.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/icon/icon.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "Wrapper for vanilla Carbon icons to simplify usage.",
+          "name": "Icon",
+          "slots": [
+            {
+              "description": "The default slot for button content.",
+              "name": "unnamed"
+            }
+          ],
+          "members": [
+            {
+              "kind": "field",
+              "name": "icon",
+              "type": {
+                "text": "any"
+              },
+              "default": "{}",
+              "description": "The imported Carbon icon.",
+              "attribute": "icon"
+            },
+            {
+              "kind": "field",
+              "name": "fill",
+              "type": {
+                "text": "string"
+              },
+              "default": "'currentColor'",
+              "description": "Icon fill color.",
+              "attribute": "fill"
+            },
+            {
+              "kind": "field",
+              "name": "sizeOverride",
+              "type": {
+                "text": "number"
+              },
+              "description": "Specify a size in pixels to override the imported Carbon icon's original size.",
+              "attribute": "sizeOverride"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "icon",
+              "type": {
+                "text": "any"
+              },
+              "default": "{}",
+              "description": "The imported Carbon icon.",
+              "fieldName": "icon"
+            },
+            {
+              "name": "fill",
+              "type": {
+                "text": "string"
+              },
+              "default": "'currentColor'",
+              "description": "Icon fill color.",
+              "fieldName": "fill"
+            },
+            {
+              "name": "sizeOverride",
+              "type": {
+                "text": "number"
+              },
+              "description": "Specify a size in pixels to override the imported Carbon icon's original size.",
+              "fieldName": "sizeOverride"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "kd-icon",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Icon",
+          "declaration": {
+            "name": "Icon",
+            "module": "src/components/icon/icon.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "kd-icon",
+          "declaration": {
+            "name": "Icon",
+            "module": "src/components/icon/icon.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/icon/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Icon",
+          "declaration": {
+            "name": "Icon",
+            "module": "./icon"
           }
         }
       ]
