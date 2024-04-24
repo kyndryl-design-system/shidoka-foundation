@@ -1,3 +1,10 @@
+## [1.6.4](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.6.3...v1.6.4) (2024-04-24)
+
+
+### Bug Fixes
+
+* **accordion-item:** add on-toggle event ([293223b](https://github.com/kyndryl-design-system/shidoka-foundation/commit/293223ba400aa1dac6307b67027643cd3b6c3fda))
+
 ## [1.6.3](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.6.2...v1.6.3) (2024-04-24)
 
 
