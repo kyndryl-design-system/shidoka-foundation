@@ -6,8 +6,7 @@ import { html, LitElement } from 'lit';
 import { state, property, customElement } from 'lit/decorators.js';
 import { classMap } from 'lit-html/directives/class-map.js';
 import stylesheet from './accordionItem.scss';
-import addIcon from '@carbon/icons/es/add/32';
-import subtractIcon from '@carbon/icons/es/subtract/32';
+import chevronIcon from '@carbon/icons/es/chevron--down/24';
 import '../icon';
 
 /**
@@ -144,24 +143,6 @@ export class AccordionItem extends LitElement {
     }
   }
 
-  /**
-   * Generates the item level expand/collapse template
-   * @ignore
-   */
-  get expandIconTemplate() {
-    if (this.opened)
-      return html`
-        <div class="expand-icon">
-          <kd-icon .icon="${subtractIcon}"></kd-icon>
-        </div>
-      `;
-    else {
-      return html`
-        <div class="expand-icon"><kd-icon .icon="${addIcon}"></kd-icon></div>
-      `;
-    }
-  }
-
   override render() {
     const classes: any = classMap({
       'kd-accordion-item': true,
@@ -192,7 +173,9 @@ export class AccordionItem extends LitElement {
             ${this.subtitleTemplate}
           </div>
 
-          ${this.expandIconTemplate}
+          <div class="expand-icon">
+            <kd-icon .icon="${chevronIcon}"></kd-icon>
+          </div>
         </div>
 
         <div
