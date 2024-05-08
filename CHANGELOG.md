@@ -1,3 +1,10 @@
+## [1.6.5](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.6.4...v1.6.5) (2024-05-08)
+
+
+### Bug Fixes
+
+* **accordion-item:** use chevron icon ([#40](https://github.com/kyndryl-design-system/shidoka-foundation/issues/40)) ([1cba501](https://github.com/kyndryl-design-system/shidoka-foundation/commit/1cba501260378579c5291cf56b118e2e12c025b8))
+
 ## [1.6.4](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.6.3...v1.6.4) (2024-04-24)
 
 
