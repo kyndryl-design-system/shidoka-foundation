@@ -49,12 +49,17 @@
   .icon {
     vertical-align: middle;
   }
+}
 
-  .expand-icon {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
+.expand-icon {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  transition: transform 150ms ease-out;
+
+  .opened & {
+    transform: rotate(-180deg);
   }
 }
 
