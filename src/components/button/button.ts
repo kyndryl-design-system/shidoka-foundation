@@ -229,24 +229,19 @@ export class Button extends LitElement {
     this.requestUpdate();
   }
 
+  /** @internal */
+  private _debounceResize = debounce(() => {
+    this.iconOnly = this._testIconOnly();
+  });
+
   override connectedCallback() {
     super.connectedCallback();
 
-    window.addEventListener(
-      'resize',
-      debounce(() => {
-        this.iconOnly = this._testIconOnly();
-      })
-    );
+    window.addEventListener('resize', this._debounceResize);
   }
 
   override disconnectedCallback() {
-    window.removeEventListener(
-      'resize',
-      debounce(() => {
-        this.iconOnly = this._testIconOnly();
-      })
-    );
+    window.removeEventListener('resize', this._debounceResize);
 
     super.disconnectedCallback();
   }
