@@ -1,3 +1,10 @@
+## [1.6.6](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.6.5...v1.6.6) (2024-05-16)
+
+
+### Bug Fixes
+
+* **button:** debounce remove listener ([5c42e82](https://github.com/kyndryl-design-system/shidoka-foundation/commit/5c42e82f717e356ce03109e08cbf56aa6b6ae975))
+
 ## [1.6.5](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.6.4...v1.6.5) (2024-05-08)
 
 
