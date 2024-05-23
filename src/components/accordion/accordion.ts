@@ -59,6 +59,7 @@ export class Accordion extends LitElement {
 
   protected _handleSlotChange() {
     this._updateChildren();
+    this._checkOpenItems();
   }
 
   override willUpdate(changedProps: any) {
@@ -106,6 +107,7 @@ export class Accordion extends LitElement {
   override render() {
     let itemContainerClasses = '';
     if (this.filledHeaders) itemContainerClasses += ' filled-headers';
+
     return html`
       <div class="kd-accordion">
         <div class="toggle-container">
@@ -119,6 +121,30 @@ export class Accordion extends LitElement {
         </div>
       </div>
     `;
+  }
+
+  private _handleToggle(e: any) {
+    e.stopPropagation();
+    this._checkOpenItems();
+  }
+
+  private _checkOpenItems() {
+    const OpenItems = this._accordionItems.filter((item) => item.opened);
+    const TotalItems = this._accordionItems.filter((item) => !item.disabled);
+
+    this._allOpenState = OpenItems.length === TotalItems.length;
+  }
+
+  override connectedCallback() {
+    super.connectedCallback();
+
+    this.addEventListener('on-toggle', (e: any) => this._handleToggle(e));
+  }
+
+  override disconnectedCallback() {
+    this.removeEventListener('on-toggle', (e: any) => this._handleToggle(e));
+
+    super.disconnectedCallback();
   }
 }
 declare global {

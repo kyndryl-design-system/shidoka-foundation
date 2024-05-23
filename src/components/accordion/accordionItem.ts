@@ -98,6 +98,8 @@ export class AccordionItem extends LitElement {
 
   private _emitToggleEvent() {
     const event = new CustomEvent('on-toggle', {
+      bubbles: true,
+      composed: true,
       detail: { opened: this.opened },
     });
     this.dispatchEvent(event);
