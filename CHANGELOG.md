@@ -1,3 +1,10 @@
+## [1.6.7](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.6.6...v1.6.7) (2024-05-23)
+
+
+### Bug Fixes
+
+* **accordion:** tie expand all link state to children, resolves [#179](https://github.com/kyndryl-design-system/shidoka-foundation/issues/179) ([7174a67](https://github.com/kyndryl-design-system/shidoka-foundation/commit/7174a67ebadfa7b008a2bbb207426ca05f04fab4))
+
 ## [1.6.6](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.6.5...v1.6.6) (2024-05-16)
 
 
