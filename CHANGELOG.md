@@ -1,3 +1,10 @@
+## [1.6.8](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.6.7...v1.6.8) (2024-06-07)
+
+
+### Bug Fixes
+
+* **link:** add iconLeft prop ([8e1a17d](https://github.com/kyndryl-design-system/shidoka-foundation/commit/8e1a17dd4bb7cb922f2099af9f4735a694d9b878))
+
 ## [1.6.7](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.6.6...v1.6.7) (2024-05-23)
 
 
