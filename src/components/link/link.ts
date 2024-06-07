@@ -20,7 +20,7 @@ export class Link extends LitElement {
   @property({ type: String })
   href = '';
 
-  /** Defines a target attribute for where to load the URL. Possible options include "_self" (deafult), "_blank", "_parent", "_top" */
+  /** Defines a target attribute for where to load the URL. Possible options include "_self" (default), "_blank", "_parent", "_top" */
   @property({ type: String })
   target: LINK_TARGETS = LINK_TARGETS.SELF;
 
@@ -38,9 +38,13 @@ export class Link extends LitElement {
   @property({ type: Boolean, reflect: true })
   disabled = false;
 
-  /** Whether you want the standalone Link. Bydefault false. Use this prop. (true) with icon with link variant. */
+  /** Whether you want the standalone Link. By default false. Use this prop. (true) with icon with link variant. */
   @property({ type: Boolean })
   standalone = false;
+
+  /** Positions icon on the left. */
+  @property({ type: Boolean })
+  iconLeft = false;
 
   override render() {
     const classes = this.returnClassMap();
@@ -75,6 +79,7 @@ export class Link extends LitElement {
         ['kd-link-text-secondary']: this.kind === LINK_TYPES.SECONDARY,
         ['kd-link-text-inline']: !this.standalone,
         ['kd-link-text-standalone']: this.standalone,
+        'icon-left': this.iconLeft,
       });
     }
   }

@@ -47,6 +47,7 @@ const args = {
   kind: 'primary',
   disabled: false,
   standalone: false,
+  iconLeft: false,
   'on-click': fn(),
 };
 
@@ -85,6 +86,7 @@ export const LinkWithIcon = {
     <kd-link
       id="test"
       ?standalone=${args.standalone}
+      ?iconLeft=${args.iconLeft}
       href=${args.href}
       target=${args.target}
       kind=${args.kind}

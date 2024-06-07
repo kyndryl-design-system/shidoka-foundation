@@ -20,6 +20,12 @@
     }
   }
 
+  &.icon-left:hover {
+    ::slotted(kd-icon) {
+      transform: translate(-4px, 0);
+    }
+  }
+
   // Primary (app)
   &-primary {
     color: var(--kd-color-text-link);
@@ -91,15 +97,22 @@
   &-inline {
     text-decoration: underline;
   }
+
   &-standalone {
     text-decoration: none;
     &:hover {
       text-decoration: underline;
     }
   }
+
   &-span-flex {
     display: flex;
     align-items: center;
+
+    .icon-left & slot[name='icon']::slotted(*) {
+      order: -1;
+      margin-right: 8px;
+    }
 
     slot[name='icon']::slotted(*) {
       display: inline-flex;
