@@ -1,3 +1,10 @@
+## [1.6.9](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.6.8...v1.6.9) (2024-06-11)
+
+
+### Bug Fixes
+
+* **link:** add link part ([c14950f](https://github.com/kyndryl-design-system/shidoka-foundation/commit/c14950fde659abe89ab4f3113cd80b7b05659170))
+
 ## [1.6.8](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.6.7...v1.6.8) (2024-06-07)
 
 
