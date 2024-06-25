@@ -71,17 +71,13 @@ export const Default = {
         description=${args.description}
         name=${args.name}
         label=${args.label}
-        @on-change=${(e) => action(e.type)(e)}
+        @on-click=${(e) => action(e.type)(e)}
       >
-        <kd-splitbutton-option value="1" @on-click=${(e) => action(e.type)(e)}
-          >Option 1</kd-splitbutton-option
-        >
+        <kd-splitbutton-option value="1">Option 1</kd-splitbutton-option>
         <kd-splitbutton-option value="2" disabled
           >Option 2</kd-splitbutton-option
         >
-        <kd-splitbutton-option value="3" @on-click=${(e) => action(e.type)(e)}
-          >Option 3</kd-splitbutton-option
-        >
+        <kd-splitbutton-option value="3">Option 3</kd-splitbutton-option>
       </kd-split-btn>
     `;
   },
@@ -100,13 +96,10 @@ export const WithIcon = {
         name=${args.name}
         label=${args.label}
         iconPosition=${args.iconPosition}
+        @on-click=${(e) => action(e.type)(e)}
       >
-        <kd-splitbutton-option value="1" @on-click=${(e) => action(e.type)(e)}
-          >Option 1</kd-splitbutton-option
-        >
-        <kd-splitbutton-option value="2" @on-click=${(e) => action(e.type)(e)}
-          >Option 2</kd-splitbutton-option
-        >
+        <kd-splitbutton-option value="1">Option 1</kd-splitbutton-option>
+        <kd-splitbutton-option value="2">Option 2</kd-splitbutton-option>
         <kd-splitbutton-option value="3" disabled
           >Option 3</kd-splitbutton-option
         >

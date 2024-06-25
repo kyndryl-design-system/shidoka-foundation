@@ -1783,7 +1783,7 @@
           "events": [
             {
               "description": "Captures the event and emits the selected value and original event details.",
-              "name": "on-change"
+              "name": "on-click"
             }
           ],
           "attributes": [
@@ -1991,7 +1991,7 @@
           "events": [
             {
               "description": "Emits the option details to the parent split button.",
-              "name": "on-click"
+              "name": "on-action-click"
             }
           ],
           "attributes": [

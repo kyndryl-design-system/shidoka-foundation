@@ -24,7 +24,7 @@ import { ifDefined } from 'lit/directives/if-defined.js';
  * Split Button
  * @slot unnamed - Slot for split button options.
  * @slot icon - Slot for an icon (optional).
- * @fires on-change - Captures the event and emits the selected value and original event details.
+ * @fires on-click - Captures the event and emits the selected value and original event details.
  */
 
 @customElement('kd-split-btn')
@@ -140,7 +140,6 @@ export class SplitButton extends LitElement {
           })}
           type="button"
           ?disabled=${this.disabled}
-          aria-label=${ifDefined(this.description)}
           title=${ifDefined(this.description)}
           name=${ifDefined(this.name)}
         >
@@ -377,7 +376,7 @@ export class SplitButton extends LitElement {
   }
 
   private emitValue(e: any) {
-    const event = new CustomEvent('on-change', {
+    const event = new CustomEvent('on-click', {
       detail: {
         value: e.detail.value,
         text: e.detail.text,
@@ -390,14 +389,14 @@ export class SplitButton extends LitElement {
     super.connectedCallback();
     document.addEventListener('click', (e) => this._handleClickOut(e));
     // capture split button options click event
-    this.addEventListener('on-click', (e: any) => this._handleClick(e));
+    this.addEventListener('on-action-click', (e: any) => this._handleClick(e));
     // capture split button options blur event
     this.addEventListener('on-blur', (e: any) => this._handleBlur(e));
   }
 
   override disconnectedCallback(): void {
     document.removeEventListener('click', (e) => this._handleClickOut(e));
-    this.addEventListener('on-click', (e: any) => this._handleClick(e));
+    this.addEventListener('on-action-click', (e: any) => this._handleClick(e));
     this.addEventListener('on-blur', (e: any) => this._handleBlur(e));
     super.disconnectedCallback();
   }

@@ -5,7 +5,7 @@ import SplitButtonOptionScss from './splitButtonOption.scss';
 
 /**
  * Split button option.
- * @fires on-click - Emits the option details to the parent split button.
+ * @fires on-action-click - Emits the option details to the parent split button.
  * @slot unnamed - Slot for option text.
  */
 
@@ -76,7 +76,7 @@ export class SplitButtonOption extends LitElement {
       return;
     }
     // emit selected value, bubble so it can be captured by the parent element
-    const event = new CustomEvent('on-click', {
+    const event = new CustomEvent('on-action-click', {
       bubbles: true,
       composed: true,
       detail: {
