@@ -374,6 +374,7 @@ export class SplitButton extends LitElement {
     const event = new CustomEvent('on-click', {
       detail: {
         origEvent: e,
+        value: 1,
       },
     });
     this.dispatchEvent(event);
