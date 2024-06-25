@@ -12,7 +12,7 @@ import {
 const createSelectOptions = (defs) => [null, ...createOptionsArray(defs)];
 
 export default {
-  title: 'Components/SplitButton',
+  title: 'Components/Split Button',
   component: 'kd-split-btn',
   subcomponents: {
     SplitButtonOption: 'kd-splitbutton-option',
@@ -44,6 +44,12 @@ export default {
       table: {
         defaultValue: { summary: SPLIIT_BTN_ICON_POSITION.LEFT },
       },
+    },
+  },
+  parameters: {
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/design/ssZ3MSPHNv0qhIvdiY3rXi/Dubrovnik-Release?node-id=279-55369&m=dev',
     },
   },
 };
