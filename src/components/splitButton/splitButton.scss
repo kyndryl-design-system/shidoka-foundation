@@ -7,11 +7,10 @@
 
 /* ----------------- Split btn -------------------- */
 .split-btn-wrapper {
+  width: 100%;
   display: inline-flex;
   position: relative;
-  column-gap: 0.0625rem;
-  -webkit-column-gap: 0.0625rem; // separation between dropdown and button
-  -moz-column-gap: 0.0625rem;
+  gap: 2px;
 }
 .kd-split-btn {
   transition: outline-color 0.2s ease-in-out, color 0.2s ease-in-out,
@@ -38,7 +37,7 @@
   }
 
   &-margin-overlapped {
-    margin-left: -2px;
+    margin-left: -3px;
   }
 
   &--small {
@@ -199,7 +198,13 @@ span {
   @extend .kd-split-btn;
   background-color: var(--kd-color-transparent);
   color: var(--kd-color-text-primary);
-  border: 1px solid var(--kd-color-border-primary);
+  border: solid var(--kd-color-border-primary);
+  &-icon {
+    border-width: 1px 1px 1px 0.5px;
+  }
+  &-label {
+    border-width: 1px 0.5px 1px 1px;
+  }
 
   &:hover {
     background-color: var(--kd-color-background-secondary-hover);

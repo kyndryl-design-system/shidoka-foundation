@@ -9,7 +9,7 @@ import {
 import '../icon';
 
 import { classMap } from 'lit/directives/class-map.js';
-import downIcon from '@carbon/icons/es/chevron--down/24';
+import downIcon from '@carbon/icons/es/chevron--down/20';
 
 import {
   SPLIT_BTN_KINDS,
@@ -126,10 +126,18 @@ export class SplitButton extends LitElement {
     };
 
     return html`
-      <div class="split-btn-wrapper ${this.open ? 'open' : ''}">
+      <div
+        class="split-btn-wrapper ${this.open ? 'open' : ''}"
+        id="label-${this.name}"
+      >
         <!-- label button UI -->
         <button
-          class=${classMap({ ...classes, 'kd-split-btn-label': true })}
+          class=${classMap({
+            ...classes,
+            'kd-split-btn-label': true,
+            'kd-split-btn--secondary-label':
+              this.kind === SPLIT_BTN_KINDS.SECONDARY,
+          })}
           type="button"
           ?disabled=${this.disabled}
           aria-label=${ifDefined(this.description)}
@@ -148,6 +156,8 @@ export class SplitButton extends LitElement {
             select: true,
             [`kd-split-btn--${this.size}-arrow-btn`]: true,
             'kd-split-btn-icon': true,
+            ['kd-split-btn--secondary-icon']:
+              this.kind === SPLIT_BTN_KINDS.SECONDARY,
             'kd-split-btn-margin-overlapped':
               this.kind === SPLIT_BTN_KINDS.SECONDARY,
           })}
@@ -172,8 +182,8 @@ export class SplitButton extends LitElement {
             upwards: this._openUpwards,
           })}
           style="min-width: ${this.menuMinWidth};"
-          aria-labelledby="label-${this.name}"
           name=${this.name}
+          aria-labelledby="label-${this.name}"
           role="listbox"
           tabindex="0"
           aria-expanded=${this.open}
