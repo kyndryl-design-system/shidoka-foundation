@@ -140,7 +140,6 @@ export class SplitButton extends LitElement {
           })}
           type="button"
           ?disabled=${this.disabled}
-          title=${ifDefined(this.description)}
           name=${ifDefined(this.name)}
         >
           <span>
