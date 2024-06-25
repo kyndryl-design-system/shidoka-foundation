@@ -141,6 +141,7 @@ export class SplitButton extends LitElement {
           type="button"
           ?disabled=${this.disabled}
           name=${ifDefined(this.name)}
+          @click=${(e: any) => this._handlePrimaryClick(e)}
         >
           <span>
             ${this.label}
@@ -366,6 +367,16 @@ export class SplitButton extends LitElement {
     ) {
       this.open = false;
     }
+  }
+
+  private _handlePrimaryClick(e: any) {
+    this.open = false;
+    const event = new CustomEvent('on-click', {
+      detail: {
+        origEvent: e,
+      },
+    });
+    this.dispatchEvent(event);
   }
 
   private _handleClick(e: any) {
