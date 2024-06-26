@@ -86,6 +86,22 @@
             "name": "Card",
             "module": "./components/card"
           }
+        },
+        {
+          "kind": "js",
+          "name": "SplitButton",
+          "declaration": {
+            "name": "SplitButton",
+            "module": "./components/splitButton"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "SplitButtonOption",
+          "declaration": {
+            "name": "SplitButtonOption",
+            "module": "./components/splitButton"
+          }
         }
       ]
     },
@@ -99,8 +115,8 @@
           "type": {
             "text": "object"
           },
-          "default": "{\r\n  SM: 'sm',\r\n  MD: 'md',\r\n  LG: 'lg',\r\n  XL: 'xl',\r\n  MAX: 'max',\r\n}",
-          "description": "Breakpoint values defined in variable: --kd-current-breakpoint\r\nUsed for conditional logic and/or rendering in component JS\r\nby matching the current breakpoint to one of these values."
+          "default": "{\n  SM: 'sm',\n  MD: 'md',\n  LG: 'lg',\n  XL: 'xl',\n  MAX: 'max',\n}",
+          "description": "Breakpoint values defined in variable: --kd-current-breakpoint\nUsed for conditional logic and/or rendering in component JS\nby matching the current breakpoint to one of these values."
         }
       ],
       "exports": [
@@ -121,7 +137,7 @@
         {
           "kind": "function",
           "name": "getCurrentBreakpoint",
-          "description": "Get the current breakpoint from CSS variable.\r\nUsed for conditional logic and/or rendering in component JS\r\nby matching the current breakpoint with values defined in common/defs/breakpoints."
+          "description": "Get the current breakpoint from CSS variable.\nUsed for conditional logic and/or rendering in component JS\nby matching the current breakpoint with values defined in common/defs/breakpoints."
         }
       ],
       "exports": [
@@ -196,7 +212,7 @@
               "description": " imported enums object"
             }
           ],
-          "description": "Convert an object to an array of only its values.\r\nUsed when importing enums in component stories for populating argType dropdowns."
+          "description": "Convert an object to an array of only its values.\nUsed when importing enums in component stories for populating argType dropdowns."
         }
       ],
       "exports": [
@@ -316,6 +332,24 @@
             {
               "kind": "method",
               "name": "_toggleExpandAll",
+              "privacy": "private"
+            },
+            {
+              "kind": "method",
+              "name": "_handleToggle",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "e",
+                  "type": {
+                    "text": "any"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "_checkOpenItems",
               "privacy": "private"
             }
           ],
@@ -920,121 +954,6 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/components/icon/icon.ts",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "Wrapper for vanilla Carbon icons to simplify usage.",
-          "name": "Icon",
-          "slots": [
-            {
-              "description": "The default slot for button content.",
-              "name": "unnamed"
-            }
-          ],
-          "members": [
-            {
-              "kind": "field",
-              "name": "icon",
-              "type": {
-                "text": "any"
-              },
-              "default": "{}",
-              "description": "The imported Carbon icon.",
-              "attribute": "icon"
-            },
-            {
-              "kind": "field",
-              "name": "fill",
-              "type": {
-                "text": "string"
-              },
-              "default": "'currentColor'",
-              "description": "Icon fill color.",
-              "attribute": "fill"
-            },
-            {
-              "kind": "field",
-              "name": "sizeOverride",
-              "type": {
-                "text": "number"
-              },
-              "description": "Specify a size in pixels to override the imported Carbon icon's original size.",
-              "attribute": "sizeOverride"
-            }
-          ],
-          "attributes": [
-            {
-              "name": "icon",
-              "type": {
-                "text": "any"
-              },
-              "default": "{}",
-              "description": "The imported Carbon icon.",
-              "fieldName": "icon"
-            },
-            {
-              "name": "fill",
-              "type": {
-                "text": "string"
-              },
-              "default": "'currentColor'",
-              "description": "Icon fill color.",
-              "fieldName": "fill"
-            },
-            {
-              "name": "sizeOverride",
-              "type": {
-                "text": "number"
-              },
-              "description": "Specify a size in pixels to override the imported Carbon icon's original size.",
-              "fieldName": "sizeOverride"
-            }
-          ],
-          "superclass": {
-            "name": "LitElement",
-            "package": "lit"
-          },
-          "tagName": "kd-icon",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "Icon",
-          "declaration": {
-            "name": "Icon",
-            "module": "src/components/icon/icon.ts"
-          }
-        },
-        {
-          "kind": "custom-element-definition",
-          "name": "kd-icon",
-          "declaration": {
-            "name": "Icon",
-            "module": "src/components/icon/icon.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/components/icon/index.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "Icon",
-          "declaration": {
-            "name": "Icon",
-            "module": "./icon"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
       "path": "src/components/card/card.sample.ts",
       "declarations": [
         {
@@ -1245,6 +1164,121 @@
     },
     {
       "kind": "javascript-module",
+      "path": "src/components/icon/icon.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "Wrapper for vanilla Carbon icons to simplify usage.",
+          "name": "Icon",
+          "slots": [
+            {
+              "description": "The default slot for button content.",
+              "name": "unnamed"
+            }
+          ],
+          "members": [
+            {
+              "kind": "field",
+              "name": "icon",
+              "type": {
+                "text": "any"
+              },
+              "default": "{}",
+              "description": "The imported Carbon icon.",
+              "attribute": "icon"
+            },
+            {
+              "kind": "field",
+              "name": "fill",
+              "type": {
+                "text": "string"
+              },
+              "default": "'currentColor'",
+              "description": "Icon fill color.",
+              "attribute": "fill"
+            },
+            {
+              "kind": "field",
+              "name": "sizeOverride",
+              "type": {
+                "text": "number"
+              },
+              "description": "Specify a size in pixels to override the imported Carbon icon's original size.",
+              "attribute": "sizeOverride"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "icon",
+              "type": {
+                "text": "any"
+              },
+              "default": "{}",
+              "description": "The imported Carbon icon.",
+              "fieldName": "icon"
+            },
+            {
+              "name": "fill",
+              "type": {
+                "text": "string"
+              },
+              "default": "'currentColor'",
+              "description": "Icon fill color.",
+              "fieldName": "fill"
+            },
+            {
+              "name": "sizeOverride",
+              "type": {
+                "text": "number"
+              },
+              "description": "Specify a size in pixels to override the imported Carbon icon's original size.",
+              "fieldName": "sizeOverride"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "kd-icon",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Icon",
+          "declaration": {
+            "name": "Icon",
+            "module": "src/components/icon/icon.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "kd-icon",
+          "declaration": {
+            "name": "Icon",
+            "module": "src/components/icon/icon.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/icon/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Icon",
+          "declaration": {
+            "name": "Icon",
+            "module": "./icon"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/components/link/defs.ts",
       "declarations": [],
       "exports": []
@@ -1299,7 +1333,7 @@
               "type": {
                 "text": "LINK_TARGETS"
               },
-              "description": "Defines a target attribute for where to load the URL. Possible options include \"_self\" (deafult), \"_blank\", \"_parent\", \"_top\"",
+              "description": "Defines a target attribute for where to load the URL. Possible options include \"_self\" (default), \"_blank\", \"_parent\", \"_top\"",
               "attribute": "target"
             },
             {
@@ -1339,8 +1373,18 @@
                 "text": "boolean"
               },
               "default": "false",
-              "description": "Whether you want the standalone Link. Bydefault false. Use this prop. (true) with icon with link variant.",
+              "description": "Whether you want the standalone Link. By default false. Use this prop. (true) with icon with link variant.",
               "attribute": "standalone"
+            },
+            {
+              "kind": "field",
+              "name": "iconLeft",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Positions icon on the left.",
+              "attribute": "iconLeft"
             },
             {
               "kind": "method",
@@ -1382,7 +1426,7 @@
               "type": {
                 "text": "LINK_TARGETS"
               },
-              "description": "Defines a target attribute for where to load the URL. Possible options include \"_self\" (deafult), \"_blank\", \"_parent\", \"_top\"",
+              "description": "Defines a target attribute for where to load the URL. Possible options include \"_self\" (default), \"_blank\", \"_parent\", \"_top\"",
               "fieldName": "target"
             },
             {
@@ -1417,8 +1461,17 @@
                 "text": "boolean"
               },
               "default": "false",
-              "description": "Whether you want the standalone Link. Bydefault false. Use this prop. (true) with icon with link variant.",
+              "description": "Whether you want the standalone Link. By default false. Use this prop. (true) with icon with link variant.",
               "fieldName": "standalone"
+            },
+            {
+              "name": "iconLeft",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Positions icon on the left.",
+              "fieldName": "iconLeft"
             }
           ],
           "superclass": {
@@ -1444,6 +1497,555 @@
           "declaration": {
             "name": "Link",
             "module": "src/components/link/link.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/splitButton/defs.ts",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/splitButton/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "SplitButton",
+          "declaration": {
+            "name": "SplitButton",
+            "module": "./splitButton"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "SplitButtonOption",
+          "declaration": {
+            "name": "SplitButtonOption",
+            "module": "./splitButtonOption"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/splitButton/splitButton.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "Split Button",
+          "name": "SplitButton",
+          "slots": [
+            {
+              "description": "Slot for split button options.",
+              "name": "unnamed"
+            },
+            {
+              "description": "Slot for an icon (optional).",
+              "name": "icon"
+            }
+          ],
+          "members": [
+            {
+              "kind": "field",
+              "name": "description",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "description": "ARIA label for the buttons for accessibility.",
+              "attribute": "description"
+            },
+            {
+              "kind": "field",
+              "name": "name",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "description": "Split button name.",
+              "attribute": "name"
+            },
+            {
+              "kind": "field",
+              "name": "kind",
+              "type": {
+                "text": "SPLIT_BTN_KINDS"
+              },
+              "description": "Specifies the visual appearance/kind of the split button.",
+              "attribute": "kind"
+            },
+            {
+              "kind": "field",
+              "name": "size",
+              "type": {
+                "text": "SPLIT_BTN_SIZES"
+              },
+              "description": "Specifies the size of the split button.",
+              "attribute": "size"
+            },
+            {
+              "kind": "field",
+              "name": "iconPosition",
+              "type": {
+                "text": "SPLIIT_BTN_ICON_POSITION"
+              },
+              "description": "Specifies the position of the icon relative to any split button text. Default `'left'`. This is optional and work with icon slot.",
+              "attribute": "iconPosition"
+            },
+            {
+              "kind": "field",
+              "name": "label",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "description": "Split button text (required)",
+              "attribute": "label"
+            },
+            {
+              "kind": "field",
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Determines if the split button is disabled.",
+              "attribute": "disabled",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "destructive",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Determines if the split button indicates a destructive action.",
+              "attribute": "destructive",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "menuMinWidth",
+              "type": {
+                "text": "string"
+              },
+              "default": "'initial'",
+              "description": "Menu CSS min-width value.",
+              "attribute": "menuMinWidth"
+            },
+            {
+              "kind": "field",
+              "name": "open",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Listbox/menu open state.",
+              "attribute": "open"
+            },
+            {
+              "kind": "method",
+              "name": "handleListBlur",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "e",
+                  "type": {
+                    "text": "any"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "handleButtonKeydown",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "e",
+                  "type": {
+                    "text": "any"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "handleListKeydown",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "e",
+                  "type": {
+                    "text": "any"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "handleKeyboard",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "e",
+                  "type": {
+                    "text": "any"
+                  }
+                },
+                {
+                  "name": "keyCode",
+                  "type": {
+                    "text": "number"
+                  }
+                },
+                {
+                  "name": "target",
+                  "type": {
+                    "text": "string"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "field",
+              "name": "toggleDropdown",
+              "privacy": "private"
+            },
+            {
+              "kind": "method",
+              "name": "_handleClickOut",
+              "privacy": "private",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "e",
+                  "type": {
+                    "text": "Event"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "_handleBlur",
+              "privacy": "private",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "e",
+                  "type": {
+                    "text": "any"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "_handleClick",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "e",
+                  "type": {
+                    "text": "any"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "emitValue",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "e",
+                  "type": {
+                    "text": "any"
+                  }
+                }
+              ]
+            }
+          ],
+          "events": [
+            {
+              "description": "Captures the event and emits the selected value and original event details.",
+              "name": "on-click"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "description",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "description": "ARIA label for the buttons for accessibility.",
+              "fieldName": "description"
+            },
+            {
+              "name": "name",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "description": "Split button name.",
+              "fieldName": "name"
+            },
+            {
+              "name": "kind",
+              "type": {
+                "text": "SPLIT_BTN_KINDS"
+              },
+              "description": "Specifies the visual appearance/kind of the split button.",
+              "fieldName": "kind"
+            },
+            {
+              "name": "size",
+              "type": {
+                "text": "SPLIT_BTN_SIZES"
+              },
+              "description": "Specifies the size of the split button.",
+              "fieldName": "size"
+            },
+            {
+              "name": "iconPosition",
+              "type": {
+                "text": "SPLIIT_BTN_ICON_POSITION"
+              },
+              "description": "Specifies the position of the icon relative to any split button text. Default `'left'`. This is optional and work with icon slot.",
+              "fieldName": "iconPosition"
+            },
+            {
+              "name": "label",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "description": "Split button text (required)",
+              "fieldName": "label"
+            },
+            {
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Determines if the split button is disabled.",
+              "fieldName": "disabled"
+            },
+            {
+              "name": "destructive",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Determines if the split button indicates a destructive action.",
+              "fieldName": "destructive"
+            },
+            {
+              "name": "menuMinWidth",
+              "type": {
+                "text": "string"
+              },
+              "default": "'initial'",
+              "description": "Menu CSS min-width value.",
+              "fieldName": "menuMinWidth"
+            },
+            {
+              "name": "open",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Listbox/menu open state.",
+              "fieldName": "open"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "kd-split-btn",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "SplitButton",
+          "declaration": {
+            "name": "SplitButton",
+            "module": "src/components/splitButton/splitButton.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "kd-split-btn",
+          "declaration": {
+            "name": "SplitButton",
+            "module": "src/components/splitButton/splitButton.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/splitButton/splitButtonOption.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "Split button option.",
+          "name": "SplitButtonOption",
+          "slots": [
+            {
+              "description": "Slot for option text.",
+              "name": "unnamed"
+            }
+          ],
+          "members": [
+            {
+              "kind": "field",
+              "name": "value",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "description": "Split button option value.",
+              "attribute": "value"
+            },
+            {
+              "kind": "field",
+              "name": "selected",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Split button option selected state.",
+              "attribute": "selected",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Split button menu option disabled state.",
+              "attribute": "disabled"
+            },
+            {
+              "kind": "method",
+              "name": "handleSlotChange",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "e",
+                  "type": {
+                    "text": "any"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "handleClick",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "e",
+                  "type": {
+                    "text": "Event"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "handleBlur",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "e",
+                  "type": {
+                    "text": "any"
+                  }
+                }
+              ]
+            }
+          ],
+          "events": [
+            {
+              "description": "Emits the option details to the parent split button.",
+              "name": "on-action-click"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "value",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "description": "Split button option value.",
+              "fieldName": "value"
+            },
+            {
+              "name": "selected",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Split button option selected state.",
+              "fieldName": "selected"
+            },
+            {
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Split button menu option disabled state.",
+              "fieldName": "disabled"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "kd-splitbutton-option",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "SplitButtonOption",
+          "declaration": {
+            "name": "SplitButtonOption",
+            "module": "src/components/splitButton/splitButtonOption.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "kd-splitbutton-option",
+          "declaration": {
+            "name": "SplitButtonOption",
+            "module": "src/components/splitButton/splitButtonOption.ts"
           }
         }
       ]
