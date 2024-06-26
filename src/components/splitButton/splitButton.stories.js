@@ -63,6 +63,7 @@ const args = {
   label: 'Primary Action',
   name: '',
   iconPosition: 'left',
+  menuMinWidth: 'initial',
 };
 
 export const Default = {
@@ -77,6 +78,7 @@ export const Default = {
         description=${args.description}
         name=${args.name}
         label=${args.label}
+        menuMinWidth=${args.menuMinWidth}
         @on-click=${(e) => action(e.type)(e)}
       >
         <kd-splitbutton-option value="1">Option 1</kd-splitbutton-option>
@@ -102,6 +104,7 @@ export const WithIcon = {
         name=${args.name}
         label=${args.label}
         iconPosition=${args.iconPosition}
+        menuMinWidth=${args.menuMinWidth}
         @on-click=${(e) => action(e.type)(e)}
       >
         <kd-splitbutton-option value="1">Option 1</kd-splitbutton-option>
