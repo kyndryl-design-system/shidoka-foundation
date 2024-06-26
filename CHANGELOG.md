@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.6.9...v1.7.0) (2024-06-26)
+
+
+### Features
+
+* **Split-Button:** Added split button component ([#42](https://github.com/kyndryl-design-system/shidoka-foundation/issues/42)) ([c838372](https://github.com/kyndryl-design-system/shidoka-foundation/commit/c838372e4d02b37d64a58262c3e5e0bceba8f9b5))
+
 ## [1.6.9](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.6.8...v1.6.9) (2024-06-11)
 
 
