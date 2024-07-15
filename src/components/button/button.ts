@@ -213,9 +213,11 @@ export class Button extends LitElement {
     const TextNodes = this._slottedEls?.filter((node: any) => {
       return node.textContent.trim() !== '';
     });
+
     const VisibleTextNodes = TextNodes.filter((node: any) => {
       if (node.tagName) {
-        return node.offsetParent;
+        const Styles = getComputedStyle(node);
+        return Styles.display !== 'none' && Styles.visibility !== 'hidden';
       } else {
         return true;
       }
