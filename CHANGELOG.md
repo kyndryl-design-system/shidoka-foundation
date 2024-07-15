@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.7.0...v1.7.1) (2024-07-15)
+
+
+### Bug Fixes
+
+* **button:** visible text detection ([8d07eb7](https://github.com/kyndryl-design-system/shidoka-foundation/commit/8d07eb7bca76df7f817036801aca2aa2f90facf1))
+
 # [1.7.0](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.6.9...v1.7.0) (2024-06-26)
 
 
