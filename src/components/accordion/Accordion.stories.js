@@ -93,6 +93,8 @@ export const AccordionWithIcons = {
           <kd-icon
             slot="icon"
             .icon=${circleDashIcon}
+            role="img"
+            aria-label="in progress"
             fill="var(--kd-color-text-placeholder)"
           ></kd-icon>
           <span slot="title">Accordion Title 1</span>
@@ -107,6 +109,8 @@ export const AccordionWithIcons = {
           <kd-icon
             slot="icon"
             .icon=${checkmarkOutlineIcon}
+            role="img"
+            aria-label="complete"
             fill="var(--kd-color-text-success)"
           ></kd-icon>
           <span slot="title">Accordion Title 2</span>
@@ -121,6 +125,8 @@ export const AccordionWithIcons = {
           <kd-icon
             slot="icon"
             .icon=${errorFilledIcon}
+            role="img"
+            aria-label="error"
             fill="var(--kd-color-text-destructive)"
           ></kd-icon>
           <span slot="title">Accordion Title 3</span>
