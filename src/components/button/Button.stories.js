@@ -124,6 +124,7 @@ export const ButtonWithIcon = {
         <kd-icon
           slot="icon"
           .icon=${chevronRightIcon}
+          role="img"
           aria-label="Chevron right icon"
           title="Chevron right icon"
         ></kd-icon>
@@ -155,6 +156,7 @@ export const IconOnly = {
         <kd-icon
           slot="icon"
           .icon=${chevronRightIcon}
+          role="img"
           aria-label="Chevron right icon"
           title="Chevron right icon"
         ></kd-icon>
