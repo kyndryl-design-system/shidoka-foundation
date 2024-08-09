@@ -111,7 +111,13 @@ export class Accordion extends LitElement {
     return html`
       <div class="kd-accordion">
         <div class="toggle-container">
-          <a href="javascript:void(0)" @click="${this._toggleExpandAll}">
+          <a
+            href="javascript:void(0)"
+            @click="${this._toggleExpandAll}"
+            aria-label=${this._allOpenState
+              ? this.collapseLabel
+              : this.expandLabel}
+          >
             ${this._allOpenState ? this.collapseLabel : this.expandLabel}
           </a>
         </div>

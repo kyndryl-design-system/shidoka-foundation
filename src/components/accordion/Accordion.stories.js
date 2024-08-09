@@ -40,8 +40,12 @@ export const Accordion = {
         collapseLabel="${args.collapseLabel}"
       >
         <kd-accordion-item opened @on-toggle=${(e) => action(e.type)(e)}>
-          <span slot="title">Accordion Title 1</span>
-          <span slot="subtitle">Accordion subtitle 1</span>
+          <span slot="title" aria-label="Accordion Title 1"
+            >Accordion Title 1</span
+          >
+          <span slot="subtitle" aria-label="Accordion subtitle 1"
+            >Accordion subtitle 1</span
+          >
           <div slot="body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -49,8 +53,12 @@ export const Accordion = {
         </kd-accordion-item>
 
         <kd-accordion-item @on-toggle=${(e) => action(e.type)(e)}>
-          <span slot="title">Accordion Title 2</span>
-          <span slot="subtitle">Accordion subtitle 2</span>
+          <span slot="title" aria-label="Accordion Title 1"
+            >Accordion Title 2</span
+          >
+          <span slot="subtitle" aria-label="Accordion subtitle 2"
+            >Accordion subtitle 2</span
+          >
           <div slot="body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -58,8 +66,12 @@ export const Accordion = {
         </kd-accordion-item>
 
         <kd-accordion-item disabled @on-toggle=${(e) => action(e.type)(e)}>
-          <span slot="title">Accordion Title 3</span>
-          <span slot="subtitle">Accordion subtitle 3</span>
+          <span slot="title" aria-label="Accordion Title 1"
+            >Accordion Title 3</span
+          >
+          <span slot="subtitle" aria-label="Accordion subtitle 3"
+            >Accordion subtitle 3</span
+          >
           <div slot="body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -97,8 +109,12 @@ export const AccordionWithIcons = {
             aria-label="in progress"
             fill="var(--kd-color-text-placeholder)"
           ></kd-icon>
-          <span slot="title">Accordion Title 1</span>
-          <span slot="subtitle">Accordion subtitle 1</span>
+          <span slot="title" aria-label="Accordion Title 1"
+            >Accordion Title 1</span
+          >
+          <span slot="subtitle" aria-label="Accordion subtitle 1"
+            >Accordion subtitle 1</span
+          >
           <div slot="body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -113,8 +129,12 @@ export const AccordionWithIcons = {
             aria-label="complete"
             fill="var(--kd-color-text-success)"
           ></kd-icon>
-          <span slot="title">Accordion Title 2</span>
-          <span slot="subtitle">Accordion subtitle 2</span>
+          <span slot="title" aria-label="Accordion Title 2"
+            >Accordion Title 2</span
+          >
+          <span slot="subtitle" aria-label="Accordion subtitle 2"
+            >Accordion subtitle 2</span
+          >
           <div slot="body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -129,8 +149,12 @@ export const AccordionWithIcons = {
             aria-label="error"
             fill="var(--kd-color-text-destructive)"
           ></kd-icon>
-          <span slot="title">Accordion Title 3</span>
-          <span slot="subtitle">Accordion subtitle 3</span>
+          <span slot="title" aria-label="Accordion Title 3"
+            >Accordion Title 3</span
+          >
+          <span slot="subtitle" aria-label="Accordion subtitle 3"
+            >Accordion subtitle 3</span
+          >
           <div slot="body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
