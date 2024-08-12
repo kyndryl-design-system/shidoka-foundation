@@ -84,7 +84,9 @@ export const Button = {
         ?disabled=${args.disabled}
         size=${args.size}
         iconPosition=${args.iconPosition}
-        description=${args.description}
+        description=${args.destructive
+          ? 'This is a desctructive action'
+          : args.description}
         href=${args.href}
         name=${args.name}
         value=${args.value}
@@ -114,7 +116,9 @@ export const ButtonWithIcon = {
         ?disabled=${args.disabled}
         size=${args.size}
         iconPosition=${args.iconPosition}
-        description=${args.description}
+        description=${args.destructive
+          ? 'This is a desctructive action'
+          : args.description}
         href=${args.href}
         name=${args.name}
         value=${args.value}
