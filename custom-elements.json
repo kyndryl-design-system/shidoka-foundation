@@ -115,8 +115,8 @@
           "type": {
             "text": "object"
           },
-          "default": "{\n  SM: 'sm',\n  MD: 'md',\n  LG: 'lg',\n  XL: 'xl',\n  MAX: 'max',\n}",
-          "description": "Breakpoint values defined in variable: --kd-current-breakpoint\nUsed for conditional logic and/or rendering in component JS\nby matching the current breakpoint to one of these values."
+          "default": "{\r\n  SM: 'sm',\r\n  MD: 'md',\r\n  LG: 'lg',\r\n  XL: 'xl',\r\n  MAX: 'max',\r\n}",
+          "description": "Breakpoint values defined in variable: --kd-current-breakpoint\r\nUsed for conditional logic and/or rendering in component JS\r\nby matching the current breakpoint to one of these values."
         }
       ],
       "exports": [
@@ -137,7 +137,7 @@
         {
           "kind": "function",
           "name": "getCurrentBreakpoint",
-          "description": "Get the current breakpoint from CSS variable.\nUsed for conditional logic and/or rendering in component JS\nby matching the current breakpoint with values defined in common/defs/breakpoints."
+          "description": "Get the current breakpoint from CSS variable.\r\nUsed for conditional logic and/or rendering in component JS\r\nby matching the current breakpoint with values defined in common/defs/breakpoints."
         }
       ],
       "exports": [
@@ -212,7 +212,7 @@
               "description": " imported enums object"
             }
           ],
-          "description": "Convert an object to an array of only its values.\nUsed when importing enums in component stories for populating argType dropdowns."
+          "description": "Convert an object to an array of only its values.\r\nUsed when importing enums in component stories for populating argType dropdowns."
         }
       ],
       "exports": [
@@ -484,6 +484,16 @@
               "attribute": "disabled"
             },
             {
+              "kind": "field",
+              "name": "textStrings",
+              "type": {
+                "text": "object"
+              },
+              "default": "{\r\n    title: 'Title',\r\n    subtitle: 'Subtitle',\r\n  }",
+              "description": "Customizable text strings.",
+              "attribute": "textStrings"
+            },
+            {
               "kind": "method",
               "name": "setIndex",
               "parameters": [
@@ -600,6 +610,15 @@
               "default": "false",
               "description": "Accordion item disabled state.",
               "fieldName": "disabled"
+            },
+            {
+              "name": "textStrings",
+              "type": {
+                "text": "object"
+              },
+              "default": "{\r\n    title: 'Title',\r\n    subtitle: 'Subtitle',\r\n  }",
+              "description": "Customizable text strings.",
+              "fieldName": "textStrings"
             }
           ],
           "superclass": {
@@ -1744,6 +1763,19 @@
                   "text": "void"
                 }
               },
+              "parameters": [
+                {
+                  "name": "e",
+                  "type": {
+                    "text": "any"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "_handlePrimaryClick",
+              "privacy": "private",
               "parameters": [
                 {
                   "name": "e",

@@ -30,6 +30,13 @@ export class AccordionItem extends LitElement {
   @property({ type: Boolean })
   disabled = false;
 
+  /** Customizable text strings. */
+  @property({ type: Boolean })
+  textStrings = {
+    title: 'Title',
+    subtitle: 'Subtitle',
+  };
+
   /**
    * The index of this item. Passed from the Accordion.
    * @ignore
@@ -136,7 +143,10 @@ export class AccordionItem extends LitElement {
   get subtitleTemplate() {
     if (this.querySelector('[slot="subtitle"]')) {
       return html`
-        <div class="kd-accordion-item-subtitle">
+        <div
+          class="kd-accordion-item-subtitle"
+          aria-label=${this.textStrings.subtitle}
+        >
           <slot name="subtitle"></slot>
         </div>
       `;
@@ -169,8 +179,10 @@ export class AccordionItem extends LitElement {
         >
           ${this.iconTemplate} ${this.numberTemplate}
 
-          <div class="title">
-            <slot name="title"></slot>
+          <div>
+            <div class="title" aria-label=${this.textStrings.title}>
+              <slot name="title"></slot>
+            </div>
 
             ${this.subtitleTemplate}
           </div>
