@@ -31,7 +31,7 @@ export class AccordionItem extends LitElement {
   disabled = false;
 
   /** Customizable text strings. */
-  @property({ type: Boolean })
+  @property({ type: Object })
   textStrings = {
     title: 'Title',
     subtitle: 'Subtitle',
