@@ -95,6 +95,9 @@ export const LinkWithIcon = {
     >
       ${args.unnamed}
       <kd-icon
+        role="img"
+        aria-label="Arrow right icon"
+        title="Arrow right icon"
         slot="icon"
         .icon=${arrowRightIcon}
         sizeOverride=${args.sizeOverride}

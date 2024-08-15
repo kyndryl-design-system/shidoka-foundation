@@ -169,8 +169,10 @@ export class AccordionItem extends LitElement {
         >
           ${this.iconTemplate} ${this.numberTemplate}
 
-          <div class="title">
-            <slot name="title"></slot>
+          <div>
+            <div class="title">
+              <slot name="title"></slot>
+            </div>
 
             ${this.subtitleTemplate}
           </div>
