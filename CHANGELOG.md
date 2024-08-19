@@ -1,3 +1,10 @@
+## [1.7.2](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.7.1...v1.7.2) (2024-08-19)
+
+
+### Bug Fixes
+
+* **typography:** correct ui-02 line-height ([3b25b85](https://github.com/kyndryl-design-system/shidoka-foundation/commit/3b25b854c21e25329c0a88fd994992dc77be7c33))
+
 ## [1.7.1](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.7.0...v1.7.1) (2024-07-15)
 
 
