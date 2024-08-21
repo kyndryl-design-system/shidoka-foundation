@@ -1,3 +1,10 @@
+## [1.7.3](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.7.2...v1.7.3) (2024-08-21)
+
+
+### Bug Fixes
+
+* **accordion-item:** reduce body right padding ([1ce488a](https://github.com/kyndryl-design-system/shidoka-foundation/commit/1ce488a0c073ded52b6e372bd30abd14702fb791))
+
 ## [1.7.2](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.7.1...v1.7.2) (2024-08-19)
 
 
