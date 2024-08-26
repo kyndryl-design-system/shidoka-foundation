@@ -10,11 +10,11 @@
 
 .kd-accordion {
   .accordion-item-container {
-    border-top: 1px solid var(--kd-color-border-light);
-    border-bottom: 1px solid var(--kd-color-border-light);
+    border-top: 1px solid var(--kd-color-border-default);
+    border-bottom: 1px solid var(--kd-color-border-default);
 
     ::slotted(kd-accordion-item) {
-      border-top: 1px solid var(--kd-color-border-light);
+      border-top: 1px solid var(--kd-color-border-default);
     }
 
     ::slotted(kd-accordion-item:first-child) {
@@ -22,7 +22,7 @@
     }
 
     &.filled-headers {
-      border: 1px solid var(--kd-color-border-light);
+      border: 1px solid var(--kd-color-border-default);
       border-radius: 4px;
 
       ::slotted(kd-accordion-item:first-child) {

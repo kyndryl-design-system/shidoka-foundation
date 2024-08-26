@@ -9,9 +9,7 @@
   display: flex;
   position: relative;
   text-decoration: none;
-  -webkit-transition: color 300ms ease-in-out;
-  -moz-transition: color 300ms ease-in-out;
-  -o-transition: color 300ms ease-in-out;
+  font-weight: 500;
   transition: color 300ms ease-in-out;
 
   &:hover {
