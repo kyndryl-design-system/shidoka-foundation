@@ -1,3 +1,10 @@
+## [1.7.4](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.7.3...v1.7.4) (2024-08-26)
+
+
+### Bug Fixes
+
+* **wcag:** accordion, button, link color contrast ([72e175c](https://github.com/kyndryl-design-system/shidoka-foundation/commit/72e175c404ac9f75657ec8d352a58ab5fc9959dd))
+
 ## [1.7.3](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.7.2...v1.7.3) (2024-08-21)
 
 
