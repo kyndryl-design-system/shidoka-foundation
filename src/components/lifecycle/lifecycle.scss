@@ -1,0 +1,13 @@
+@use '../../scss/global';
+
+:host {
+  /* web components are display: inline; by default */
+  display: block;
+}
+
+div {
+  padding: 16px;
+  border: 1px solid var(--kd-color-cloud-20);
+  border-radius: 4px;
+  background-color: var(--kd-color-darkstone-10);
+}

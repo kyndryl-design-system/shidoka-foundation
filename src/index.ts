@@ -8,3 +8,6 @@ export { Link } from './components/link';
 export { Accordion, AccordionItem } from './components/accordion';
 export { Card } from './components/card';
 export { SplitButton, SplitButtonOption } from './components/splitButton';
+export { Sample } from './components/sample';
+export { LitLifecycle } from './components/lifecycle';
+export { ExpandableTile } from './components/expandableTile';

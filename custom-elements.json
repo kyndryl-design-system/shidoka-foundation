@@ -2062,6 +2062,203 @@
           }
         }
       ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/sample/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Sample",
+          "declaration": {
+            "name": "Sample",
+            "module": "./sample"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/sample/sample.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "Component for sample message.",
+          "name": "Sample",
+          "events": [
+            {
+              "description": "Captures the click event and emits the original event details.",
+              "name": "on-click"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "message",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "description": "message string",
+              "fieldName": "message"
+            },
+            {
+              "kind": "field",
+              "name": "submessage",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "description": "submessage string",
+              "attribute": "submessage"
+            },
+            {
+              "name": "option",
+              "type": {
+                "text": "LINK_TARGETS"
+              },
+              "description": "Defines a target attribute for where to load the URL. Possible options include \"_self\" (default), \"_blank\", \"_parent\", \"_top\"",
+              "fieldName": "target"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "kd-sample",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Sample",
+          "declaration": {
+            "name": "Sample",
+            "module": "src/components/sample/sample.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "kd-sample",
+          "declaration": {
+            "name": "Sample",
+            "module": "src/components/sample/sample.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/lifecycle/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Lifecycle",
+          "declaration": {
+            "name": "Lifecycle",
+            "module": "./lifecycle"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/lifecycle/lifecycle.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "Component for lifecycle events.",
+          "name": "Lifecycle",
+          "events": [
+            {
+              "description": "Captures the click event and emits the original event details.",
+              "name": "on-click"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "kd-lifecycle",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Lifecycle",
+          "declaration": {
+            "name": "Lifecycle",
+            "module": "src/components/lifecycle/lifecycle.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "kd-lifecycle",
+          "declaration": {
+            "name": "Lifecycle",
+            "module": "src/components/lifecycle/lifecycle.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/expandableTile/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "ExpandableTile",
+          "declaration": {
+            "name": "ExpandableTile",
+            "module": "./expandableTile"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/expandableTile/expandableTile.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "Component for expandable tile.",
+          "name": "ExpandableTile",
+          "slots": [
+            {
+              "description": "Slot for expandable tile content.",
+              "name": "unnamed"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "kd-expandable-tile",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "ExpandableTile",
+          "declaration": {
+            "name": "ExpandableTile",
+            "module": "src/components/expandableTile/expandableTile.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "kd-expandable-tile",
+          "declaration": {
+            "name": "ExpandableTile",
+            "module": "src/components/expandableTile/expandableTile.ts"
+          }
+        }
+      ]
     }
   ]
 }
