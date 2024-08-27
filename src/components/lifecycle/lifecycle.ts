@@ -2,10 +2,21 @@ import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import Styles from './lifecycle.scss';
 import '../button/button';
+import { BUTTON_SIZES } from '../button/defs';
 
 @customElement('kd-lifecycle')
 export class LitLifecycle extends LitElement {
   @property({ type: Number }) counter = 0;
+
+  /** Specifies the size of the button. */
+  @property({ type: String })
+  size: BUTTON_SIZES = BUTTON_SIZES.SMALL;
+
+  @property({ type: String })
+  primaryBtnText = '';
+
+  @property({ type: String })
+  secondaryBtnText = '';
 
   static override styles = Styles;
   constructor() {
@@ -55,14 +66,15 @@ export class LitLifecycle extends LitElement {
       <div>
         <h2>Lifecycle Component</h2>
         <p>Counter: ${this.counter}</p>
-        <kd-button @click="${this.incrementCounter}"
-          >Increment Counter</kd-button
+        <kd-button size=${this.size} @click="${this.incrementCounter}"
+          >${this.primaryBtnText}</kd-button
         >
         <kd-button
           ?disabled=${this.counter === 0}
           destructive
+          size=${this.size}
           @click="${this.decrementCounter}"
-          >Decrement Counter</kd-button
+          >${this.secondaryBtnText}</kd-button
         >
       </div>
     `;

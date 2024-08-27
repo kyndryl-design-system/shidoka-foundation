@@ -10,7 +10,7 @@ import { LINK_TARGETS } from '../link/defs';
 const createSelectOptions = (defs) => [null, ...createOptionsArray(defs)];
 
 export default {
-  title: 'Components/Sample Practise',
+  title: 'Components/Practise/Sample',
   component: 'kd-sample',
   parameters: {
     design: {

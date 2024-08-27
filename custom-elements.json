@@ -2177,6 +2177,34 @@
               "name": "on-click"
             }
           ],
+          "attributes": [
+            {
+              "name": "primaryBtnText",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "description": "primaryBtnText string",
+              "fieldName": "primaryBtnText"
+            },
+            {
+              "name": "secondaryBtnText",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "description": "secondaryBtnText string",
+              "fieldName": "secondaryBtnText"
+            },
+            {
+              "name": "size",
+              "type": {
+                "text": "BUTTON_SIZES"
+              },
+              "description": "Specifies the size of the button.",
+              "fieldName": "size"
+            }
+          ],
           "superclass": {
             "name": "LitElement",
             "package": "lit"
