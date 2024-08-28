@@ -11,6 +11,7 @@ button {
   text-align: start;
   border: none;
   border-radius: 5px;
+  padding: 0;
   background-color: var(--kd-color-background-accent-subtle);
 }
 
@@ -22,20 +23,31 @@ button {
   &:hover {
     background: var(--kd-color-background-accent-ui);
   }
-  &_icon {
-    transform: rotate(-180deg);
+  &_container {
+    display: flex;
   }
+  &_svgIcon {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+    transition: transform 150ms ease-out;
+    color: var(--kd-color-text-link);
+  }
+
   &_tile {
     @include typography.type-body-02;
     border-radius: 5px;
     padding: 10px;
-    margin-bottom: 10px;
+    margin: 10px;
     background-color: var(--kd-color-background-accent-ui-light);
+  }
+  &_icon {
+    transform: rotate(-180deg);
   }
   &_content {
     display: none;
     padding: 10px;
-    height: 330px;
   }
 }
 

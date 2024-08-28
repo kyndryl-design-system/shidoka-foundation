@@ -75,12 +75,18 @@ export class ExpandableTile extends LitElement {
         @click="${(e: Event) => this._handleClick(e)}"
         @keypress="${(e: KeyboardEvent) => this._handleKeypress(e)}"
       >
-        <kd-icon
-          class="${this.expanded ? 'expanded--tile_icon' : ''}"
-          .icon="${ChevronDown16}"
-        ></kd-icon>
         <div class="expanded--tile_tile ${this.expanded ? 'expanded' : ''}">
-          <div>${this.primaryText}</div>
+          <div class="expanded--tile_container">
+            <div>
+              <slot name="title"></slot>
+            </div>
+            <div class="expanded--tile_svgIcon">
+              <kd-icon
+                class="${this.expanded ? 'expanded--tile_icon' : ''}"
+                .icon="${ChevronDown16}"
+              ></kd-icon>
+            </div>
+          </div>
           <div class="expanded--tile_content">
             <slot></slot>
           </div>

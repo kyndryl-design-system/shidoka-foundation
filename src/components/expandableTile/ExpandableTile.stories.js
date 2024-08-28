@@ -15,7 +15,7 @@ export default {
 
 const args = {
   expanded: false,
-  primaryText: 'Hello!! I am main content',
+  primaryText: 'Title text goes here...',
 };
 
 export const ExpandableTile = {
@@ -24,9 +24,9 @@ export const ExpandableTile = {
     html`
       <kd-expandable-tile
         .expanded=${args.expanded}
-        primaryText=${args.primaryText}
         @on-toggle=${(e) => action(e.type)(e)}
       >
+        <span slot="title"> ${args.primaryText}</span>
         Hello!! I am an expandable content
       </kd-expandable-tile>
     `,
