@@ -48,6 +48,8 @@ button {
   &_content {
     display: none;
     padding: 10px;
+    height: 70px;
+    overflow-y: auto;
   }
 }
 
