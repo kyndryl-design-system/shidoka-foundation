@@ -8,7 +8,6 @@ import { BUTTON_SIZES } from '../button/defs';
 export class LitLifecycle extends LitElement {
   @property({ type: Number }) counter = 0;
 
-  /** Specifies the size of the button. */
   @property({ type: String })
   size: BUTTON_SIZES = BUTTON_SIZES.SMALL;
 
@@ -22,7 +21,6 @@ export class LitLifecycle extends LitElement {
   constructor() {
     super();
     console.log('Constructor: Component is being created');
-    this.counter = 0; // Initial property value
   }
 
   override connectedCallback() {
@@ -64,7 +62,6 @@ export class LitLifecycle extends LitElement {
     console.log('Render: Rendering the component');
     return html`
       <div>
-        <h2>Lifecycle Component</h2>
         <p>Counter: ${this.counter}</p>
         <kd-button size=${this.size} @click="${this.incrementCounter}"
           >${this.primaryBtnText}</kd-button
@@ -83,22 +80,17 @@ export class LitLifecycle extends LitElement {
   override updated(changedProperties: Map<string | number | symbol, unknown>) {
     console.log('Updated: After the component has updated');
     super.updated(changedProperties);
-    // Implement logic to run after the update
   }
 
   incrementCounter() {
     console.log('IncrementCounter: Incrementing counter');
     this.counter += 1;
-    // Request an update explicitly (optional)
-    this.requestUpdate('counter', this.counter - 1);
   }
 
   decrementCounter() {
     console.log('DecrementCounter: Decrementing counter');
     if (this.counter > 0) {
       this.counter -= 1;
-      // Request an update explicitly (optional)
-      this.requestUpdate('counter', this.counter + 1);
     }
   }
 }

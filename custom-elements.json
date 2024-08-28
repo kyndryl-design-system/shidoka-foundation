@@ -2261,6 +2261,32 @@
               "name": "unnamed"
             }
           ],
+          "events": [
+            {
+              "description": "Emits the expanded state when the tile opens/closes.",
+              "name": "on-toggle"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "expanded",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Expanded to view more content",
+              "fieldName": "expanded"
+            },
+            {
+              "name": "primaryText",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "description": "primaryText string",
+              "fieldName": "primaryText"
+            }
+          ],
           "superclass": {
             "name": "LitElement",
             "package": "lit"

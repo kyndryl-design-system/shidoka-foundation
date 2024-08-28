@@ -1,3 +1,4 @@
+@use '../../scss/global';
 @use '../../scss/mixins/typography';
 
 :host {
@@ -10,16 +11,16 @@ button {
   text-align: start;
   border: none;
   border-radius: 5px;
-  background-color: var(--kd-color-darkstone-10);
+  background-color: var(--kd-color-background-accent-subtle);
 }
 
 .expanded--tile {
   &:focus {
-    outline: 2px solid #0f62fe;
+    outline: 2px solid var(--kd-color-background-focus);
     outline-offset: -2px;
   }
   &:hover {
-    background: #e8e8e8;
+    background: var(--kd-color-background-accent-ui);
   }
   &_icon {
     transform: rotate(-180deg);
@@ -29,7 +30,7 @@ button {
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 10px;
-    background-color: aliceblue;
+    background-color: var(--kd-color-background-accent-ui-light);
   }
   &_content {
     display: none;

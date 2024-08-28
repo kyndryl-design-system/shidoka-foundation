@@ -1,4 +1,5 @@
 import { html } from 'lit';
+import { action } from '@storybook/addon-actions';
 import './index';
 
 export default {
@@ -12,11 +13,21 @@ export default {
   },
 };
 
+const args = {
+  expanded: false,
+  primaryText: 'Hello!! I am main content',
+};
+
 export const ExpandableTile = {
-  render: () =>
+  args,
+  render: (args) =>
     html`
       <kd-expandable-tile
-        >Hello!! I am an expandable content
+        .expanded=${args.expanded}
+        primaryText=${args.primaryText}
+        @on-toggle=${(e) => action(e.type)(e)}
+      >
+        Hello!! I am an expandable content
       </kd-expandable-tile>
     `,
 };
