@@ -1,3 +1,10 @@
+## [1.7.5](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.7.4...v1.7.5) (2024-08-27)
+
+
+### Bug Fixes
+
+* **colors:** update warning color ([58f5b24](https://github.com/kyndryl-design-system/shidoka-foundation/commit/58f5b2437c216e49e150ff02add0477d8346f0dd))
+
 ## [1.7.4](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.7.3...v1.7.4) (2024-08-26)
 
 
