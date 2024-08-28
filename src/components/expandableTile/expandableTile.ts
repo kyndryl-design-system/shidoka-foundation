@@ -1,11 +1,11 @@
 import { html, LitElement } from 'lit';
 import Styles from './expandableTile.scss';
 import { customElement, property } from 'lit/decorators.js';
-import ChevronDown16 from '@carbon/icons/es/chevron--down/16';
+import ChevronDown from '@carbon/icons/es/chevron--down/24';
 import '../icon';
 
 /**
- * Description placeholder
+ * ExpandableTile component
  *
  * @export
  * @class ExpandableTile
@@ -15,7 +15,7 @@ import '../icon';
 @customElement('kd-expandable-tile')
 export class ExpandableTile extends LitElement {
   /**
-   * Description placeholder
+   * ExpandableTile expanded state
    *
    * @type {boolean}
    */
@@ -23,7 +23,7 @@ export class ExpandableTile extends LitElement {
   expanded = false;
 
   /**
-   * Description placeholder
+   * ExpandableTile primary text
    *
    * @type {string}
    */
@@ -83,7 +83,7 @@ export class ExpandableTile extends LitElement {
             <div class="expanded--tile_svgIcon">
               <kd-icon
                 class="${this.expanded ? 'expanded--tile_icon' : ''}"
-                .icon="${ChevronDown16}"
+                .icon="${ChevronDown}"
               ></kd-icon>
             </div>
           </div>
