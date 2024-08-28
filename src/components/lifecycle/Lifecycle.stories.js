@@ -28,6 +28,7 @@ export default {
 
 const args = {
   size: 'medium',
+  counter: 0,
   primaryBtnText: 'Increment Counter',
   secondaryBtnText: 'Decrement Counter',
 };
@@ -37,6 +38,7 @@ export const Lifecycle = {
   render: (args) => html`
     <kd-lifecycle
       size=${args.size}
+      counter=${args.counter}
       primaryBtnText=${args.primaryBtnText}
       secondaryBtnText=${args.secondaryBtnText}
     ></kd-lifecycle>

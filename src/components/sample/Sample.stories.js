@@ -31,7 +31,7 @@ export default {
 
 const args = {
   message: 'Hello, Storybook!',
-  submessage: '',
+  submessage: 'Hello, Subtitle!',
   option: '_self',
   'on-click': fn(),
 };
@@ -62,7 +62,7 @@ export const SampleWithSubtitle = {
     html`
       <kd-sample
         message=${args.message}
-        submessage="Hello, Subtitle!"
+        submessage=${args.submessage}
       ></kd-sample>
     `,
 };

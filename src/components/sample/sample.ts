@@ -3,14 +3,21 @@ import { customElement, property } from 'lit/decorators.js';
 import Styles from './sample.scss';
 import { LINK_TARGETS } from '../link/defs';
 
+/**
+ * Sample component
+ * @fires on-click - Captures the click event and emits the original event details.
+ */
 @customElement('kd-sample')
 export class Sample extends LitElement {
+  /** message. */
   @property({ type: String })
   message = 'Hi there!';
 
+  /** submessage. */
   @property({ type: String })
   submessage = 'Hi there!';
 
+  /** Possible options include "_self" (default), "_blank", "_parent", "_top" */
   @property({ type: String })
   option: LINK_TARGETS = LINK_TARGETS.SELF;
 

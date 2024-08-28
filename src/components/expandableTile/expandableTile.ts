@@ -5,37 +5,19 @@ import ChevronDown from '@carbon/icons/es/chevron--down/24';
 import '../icon';
 
 /**
- * ExpandableTile component
- *
- * @export
- * @class ExpandableTile
- * @typedef {ExpandableTile}
- * @extends {LitElement}
+ * Expandable Tile component
+ * @fires on-toggle - Emits the `expanded` state when tile component open and closes.
+ * @slot title - The string that displays as title on Tile
+ * @slot unnamed - The string that displays on the toggle
  */
 @customElement('kd-expandable-tile')
 export class ExpandableTile extends LitElement {
   /**
-   * ExpandableTile expanded state
-   *
-   * @type {boolean}
+   * expanded state
    */
   @property({ type: Boolean, reflect: true })
   expanded = false;
 
-  /**
-   * ExpandableTile primary text
-   *
-   * @type {string}
-   */
-  @property({ type: String })
-  primaryText = '';
-
-  /**
-   * @inheritdoc
-   *
-   * @static
-   * @type {*}
-   */
   static override styles = Styles;
 
   private _handleClick(e: Event) {
@@ -63,11 +45,6 @@ export class ExpandableTile extends LitElement {
     this.dispatchEvent(event);
   }
 
-  /**
-   * @inheritdoc
-   *
-   * @returns {*}
-   */
   override render() {
     return html`
       <button
