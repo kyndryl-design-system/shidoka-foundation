@@ -7,8 +7,8 @@ import '../icon';
 /**
  * Expandable Tile component
  * @fires on-toggle - Emits the `expanded` state when tile component open and closes.
- * @slot title - The string that displays as title on Tile
- * @slot unnamed - The string that displays on the toggle
+ * @slot title - Slot for expandable tile title.
+ * @slot unnamed - Slot for expandable tile contents.
  */
 @customElement('kd-expandable-tile')
 export class ExpandableTile extends LitElement {

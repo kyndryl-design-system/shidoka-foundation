@@ -131,6 +131,306 @@
     },
     {
       "kind": "javascript-module",
+      "path": "src/components/button/button.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "Button component.",
+          "name": "Button",
+          "slots": [
+            {
+              "description": "Slot for button text.",
+              "name": "unnamed"
+            },
+            {
+              "description": "Slot for an icon.",
+              "name": "icon"
+            }
+          ],
+          "members": [
+            {
+              "kind": "field",
+              "name": "description",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "description": "ARIA label for the button for accessibility.",
+              "attribute": "description"
+            },
+            {
+              "kind": "field",
+              "name": "type",
+              "type": {
+                "text": "BUTTON_TYPES"
+              },
+              "description": "Type for the &lt;button&gt; element.",
+              "attribute": "type"
+            },
+            {
+              "kind": "field",
+              "name": "kind",
+              "type": {
+                "text": "BUTTON_KINDS"
+              },
+              "description": "Specifies the visual appearance/kind of the button.",
+              "attribute": "kind"
+            },
+            {
+              "kind": "field",
+              "name": "href",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "description": "Converts the button to an &lt;a&gt; tag if specified.",
+              "attribute": "href"
+            },
+            {
+              "kind": "field",
+              "name": "size",
+              "type": {
+                "text": "BUTTON_SIZES"
+              },
+              "description": "Specifies the size of the button.",
+              "attribute": "size"
+            },
+            {
+              "kind": "field",
+              "name": "iconPosition",
+              "type": {
+                "text": "BUTTON_ICON_POSITION"
+              },
+              "description": "Specifies the position of the icon relative to any button text.",
+              "attribute": "iconPosition"
+            },
+            {
+              "kind": "field",
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Determines if the button is disabled.",
+              "attribute": "disabled",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "destructive",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Determines if the button indicates a destructive action.",
+              "attribute": "destructive",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "value",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "description": "Button value.",
+              "attribute": "value"
+            },
+            {
+              "kind": "field",
+              "name": "name",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "description": "Button name.",
+              "attribute": "name"
+            },
+            {
+              "kind": "field",
+              "name": "formmethod",
+              "type": {
+                "text": "any"
+              },
+              "description": "Button formmethod.",
+              "attribute": "formmethod"
+            },
+            {
+              "kind": "method",
+              "name": "handleClick",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "e",
+                  "type": {
+                    "text": "Event"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "_testIconOnly",
+              "privacy": "private"
+            },
+            {
+              "kind": "method",
+              "name": "_handleSlotChange",
+              "privacy": "private"
+            }
+          ],
+          "events": [
+            {
+              "description": "Emits the original click event.",
+              "name": "on-click"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "description",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "description": "ARIA label for the button for accessibility.",
+              "fieldName": "description"
+            },
+            {
+              "name": "type",
+              "type": {
+                "text": "BUTTON_TYPES"
+              },
+              "description": "Type for the &lt;button&gt; element.",
+              "fieldName": "type"
+            },
+            {
+              "name": "kind",
+              "type": {
+                "text": "BUTTON_KINDS"
+              },
+              "description": "Specifies the visual appearance/kind of the button.",
+              "fieldName": "kind"
+            },
+            {
+              "name": "href",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "description": "Converts the button to an &lt;a&gt; tag if specified.",
+              "fieldName": "href"
+            },
+            {
+              "name": "size",
+              "type": {
+                "text": "BUTTON_SIZES"
+              },
+              "description": "Specifies the size of the button.",
+              "fieldName": "size"
+            },
+            {
+              "name": "iconPosition",
+              "type": {
+                "text": "BUTTON_ICON_POSITION"
+              },
+              "description": "Specifies the position of the icon relative to any button text.",
+              "fieldName": "iconPosition"
+            },
+            {
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Determines if the button is disabled.",
+              "fieldName": "disabled"
+            },
+            {
+              "name": "destructive",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Determines if the button indicates a destructive action.",
+              "fieldName": "destructive"
+            },
+            {
+              "name": "value",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "description": "Button value.",
+              "fieldName": "value"
+            },
+            {
+              "name": "name",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "description": "Button name.",
+              "fieldName": "name"
+            },
+            {
+              "name": "formmethod",
+              "type": {
+                "text": "any"
+              },
+              "description": "Button formmethod.",
+              "fieldName": "formmethod"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "kd-button",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Button",
+          "declaration": {
+            "name": "Button",
+            "module": "src/components/button/button.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "kd-button",
+          "declaration": {
+            "name": "Button",
+            "module": "src/components/button/button.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/button/defs.ts",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/button/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Button",
+          "declaration": {
+            "name": "Button",
+            "module": "./button"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/components/accordion/accordion.ts",
       "declarations": [
         {
@@ -549,133 +849,37 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/components/button/button.ts",
+      "path": "src/components/expandableTile/expandableTile.ts",
       "declarations": [
         {
           "kind": "class",
-          "description": "Button component.",
-          "name": "Button",
+          "description": "Expandable Tile component",
+          "name": "ExpandableTile",
           "slots": [
             {
-              "description": "Slot for button text.",
-              "name": "unnamed"
+              "description": "Slot for expandable tile title.",
+              "name": "title"
             },
             {
-              "description": "Slot for an icon.",
-              "name": "icon"
+              "description": "Slot for expandable tile contents.",
+              "name": "unnamed"
             }
           ],
           "members": [
             {
               "kind": "field",
-              "name": "description",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "description": "ARIA label for the button for accessibility.",
-              "attribute": "description"
-            },
-            {
-              "kind": "field",
-              "name": "type",
-              "type": {
-                "text": "BUTTON_TYPES"
-              },
-              "description": "Type for the &lt;button&gt; element.",
-              "attribute": "type"
-            },
-            {
-              "kind": "field",
-              "name": "kind",
-              "type": {
-                "text": "BUTTON_KINDS"
-              },
-              "description": "Specifies the visual appearance/kind of the button.",
-              "attribute": "kind"
-            },
-            {
-              "kind": "field",
-              "name": "href",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "description": "Converts the button to an &lt;a&gt; tag if specified.",
-              "attribute": "href"
-            },
-            {
-              "kind": "field",
-              "name": "size",
-              "type": {
-                "text": "BUTTON_SIZES"
-              },
-              "description": "Specifies the size of the button.",
-              "attribute": "size"
-            },
-            {
-              "kind": "field",
-              "name": "iconPosition",
-              "type": {
-                "text": "BUTTON_ICON_POSITION"
-              },
-              "description": "Specifies the position of the icon relative to any button text.",
-              "attribute": "iconPosition"
-            },
-            {
-              "kind": "field",
-              "name": "disabled",
+              "name": "expanded",
               "type": {
                 "text": "boolean"
               },
               "default": "false",
-              "description": "Determines if the button is disabled.",
-              "attribute": "disabled",
+              "description": "expanded state",
+              "attribute": "expanded",
               "reflects": true
-            },
-            {
-              "kind": "field",
-              "name": "destructive",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "description": "Determines if the button indicates a destructive action.",
-              "attribute": "destructive",
-              "reflects": true
-            },
-            {
-              "kind": "field",
-              "name": "value",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "description": "Button value.",
-              "attribute": "value"
-            },
-            {
-              "kind": "field",
-              "name": "name",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "description": "Button name.",
-              "attribute": "name"
-            },
-            {
-              "kind": "field",
-              "name": "formmethod",
-              "type": {
-                "text": "any"
-              },
-              "description": "Button formmethod.",
-              "attribute": "formmethod"
             },
             {
               "kind": "method",
-              "name": "handleClick",
+              "name": "_handleClick",
               "privacy": "private",
               "parameters": [
                 {
@@ -688,161 +892,83 @@
             },
             {
               "kind": "method",
-              "name": "_testIconOnly",
+              "name": "_handleKeypress",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "e",
+                  "type": {
+                    "text": "KeyboardEvent"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "_toggleExpanded",
               "privacy": "private"
             },
             {
               "kind": "method",
-              "name": "_handleSlotChange",
+              "name": "_emitToggleEvent",
               "privacy": "private"
             }
           ],
           "events": [
             {
-              "description": "Emits the original click event.",
-              "name": "on-click"
+              "description": "Emits the `expanded` state when tile component open and closes.",
+              "name": "on-toggle"
             }
           ],
           "attributes": [
             {
-              "name": "description",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "description": "ARIA label for the button for accessibility.",
-              "fieldName": "description"
-            },
-            {
-              "name": "type",
-              "type": {
-                "text": "BUTTON_TYPES"
-              },
-              "description": "Type for the &lt;button&gt; element.",
-              "fieldName": "type"
-            },
-            {
-              "name": "kind",
-              "type": {
-                "text": "BUTTON_KINDS"
-              },
-              "description": "Specifies the visual appearance/kind of the button.",
-              "fieldName": "kind"
-            },
-            {
-              "name": "href",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "description": "Converts the button to an &lt;a&gt; tag if specified.",
-              "fieldName": "href"
-            },
-            {
-              "name": "size",
-              "type": {
-                "text": "BUTTON_SIZES"
-              },
-              "description": "Specifies the size of the button.",
-              "fieldName": "size"
-            },
-            {
-              "name": "iconPosition",
-              "type": {
-                "text": "BUTTON_ICON_POSITION"
-              },
-              "description": "Specifies the position of the icon relative to any button text.",
-              "fieldName": "iconPosition"
-            },
-            {
-              "name": "disabled",
+              "name": "expanded",
               "type": {
                 "text": "boolean"
               },
               "default": "false",
-              "description": "Determines if the button is disabled.",
-              "fieldName": "disabled"
-            },
-            {
-              "name": "destructive",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "description": "Determines if the button indicates a destructive action.",
-              "fieldName": "destructive"
-            },
-            {
-              "name": "value",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "description": "Button value.",
-              "fieldName": "value"
-            },
-            {
-              "name": "name",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "description": "Button name.",
-              "fieldName": "name"
-            },
-            {
-              "name": "formmethod",
-              "type": {
-                "text": "any"
-              },
-              "description": "Button formmethod.",
-              "fieldName": "formmethod"
+              "description": "expanded state",
+              "fieldName": "expanded"
             }
           ],
           "superclass": {
             "name": "LitElement",
             "package": "lit"
           },
-          "tagName": "kd-button",
+          "tagName": "kd-expandable-tile",
           "customElement": true
         }
       ],
       "exports": [
         {
           "kind": "js",
-          "name": "Button",
+          "name": "ExpandableTile",
           "declaration": {
-            "name": "Button",
-            "module": "src/components/button/button.ts"
+            "name": "ExpandableTile",
+            "module": "src/components/expandableTile/expandableTile.ts"
           }
         },
         {
           "kind": "custom-element-definition",
-          "name": "kd-button",
+          "name": "kd-expandable-tile",
           "declaration": {
-            "name": "Button",
-            "module": "src/components/button/button.ts"
+            "name": "ExpandableTile",
+            "module": "src/components/expandableTile/expandableTile.ts"
           }
         }
       ]
     },
     {
       "kind": "javascript-module",
-      "path": "src/components/button/defs.ts",
-      "declarations": [],
-      "exports": []
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/components/button/index.ts",
+      "path": "src/components/expandableTile/index.ts",
       "declarations": [],
       "exports": [
         {
           "kind": "js",
-          "name": "Button",
+          "name": "ExpandableTile",
           "declaration": {
-            "name": "Button",
-            "module": "./button"
+            "name": "ExpandableTile",
+            "module": "./expandableTile"
           }
         }
       ]
@@ -1053,132 +1179,6 @@
           "declaration": {
             "name": "Card",
             "module": "./card"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/components/expandableTile/expandableTile.ts",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "Expandable Tile component",
-          "name": "ExpandableTile",
-          "slots": [
-            {
-              "description": "The string that displays as title on Tile",
-              "name": "title"
-            },
-            {
-              "description": "The string that displays on the toggle",
-              "name": "unnamed"
-            }
-          ],
-          "members": [
-            {
-              "kind": "field",
-              "name": "expanded",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "description": "expanded state",
-              "attribute": "expanded",
-              "reflects": true
-            },
-            {
-              "kind": "method",
-              "name": "_handleClick",
-              "privacy": "private",
-              "parameters": [
-                {
-                  "name": "e",
-                  "type": {
-                    "text": "Event"
-                  }
-                }
-              ]
-            },
-            {
-              "kind": "method",
-              "name": "_handleKeypress",
-              "privacy": "private",
-              "parameters": [
-                {
-                  "name": "e",
-                  "type": {
-                    "text": "KeyboardEvent"
-                  }
-                }
-              ]
-            },
-            {
-              "kind": "method",
-              "name": "_toggleExpanded",
-              "privacy": "private"
-            },
-            {
-              "kind": "method",
-              "name": "_emitToggleEvent",
-              "privacy": "private"
-            }
-          ],
-          "events": [
-            {
-              "description": "Emits the `expanded` state when tile component open and closes.",
-              "name": "on-toggle"
-            }
-          ],
-          "attributes": [
-            {
-              "name": "expanded",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "description": "expanded state",
-              "fieldName": "expanded"
-            }
-          ],
-          "superclass": {
-            "name": "LitElement",
-            "package": "lit"
-          },
-          "tagName": "kd-expandable-tile",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "ExpandableTile",
-          "declaration": {
-            "name": "ExpandableTile",
-            "module": "src/components/expandableTile/expandableTile.ts"
-          }
-        },
-        {
-          "kind": "custom-element-definition",
-          "name": "kd-expandable-tile",
-          "declaration": {
-            "name": "ExpandableTile",
-            "module": "src/components/expandableTile/expandableTile.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/components/expandableTile/index.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "ExpandableTile",
-          "declaration": {
-            "name": "ExpandableTile",
-            "module": "./expandableTile"
           }
         }
       ]
@@ -1788,6 +1788,31 @@
     },
     {
       "kind": "javascript-module",
+      "path": "src/common/defs/breakpoints.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "BREAKPOINTS",
+          "type": {
+            "text": "object"
+          },
+          "default": "{\n  SM: 'sm',\n  MD: 'md',\n  LG: 'lg',\n  XL: 'xl',\n  MAX: 'max',\n}",
+          "description": "Breakpoint values defined in variable: --kd-current-breakpoint\nUsed for conditional logic and/or rendering in component JS\nby matching the current breakpoint to one of these values."
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "BREAKPOINTS",
+          "declaration": {
+            "name": "BREAKPOINTS",
+            "module": "src/common/defs/breakpoints.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/components/splitButton/defs.ts",
       "declarations": [],
       "exports": []
@@ -2344,31 +2369,6 @@
           "declaration": {
             "name": "SplitButtonOption",
             "module": "src/components/splitButton/splitButtonOption.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/common/defs/breakpoints.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "BREAKPOINTS",
-          "type": {
-            "text": "object"
-          },
-          "default": "{\n  SM: 'sm',\n  MD: 'md',\n  LG: 'lg',\n  XL: 'xl',\n  MAX: 'max',\n}",
-          "description": "Breakpoint values defined in variable: --kd-current-breakpoint\nUsed for conditional logic and/or rendering in component JS\nby matching the current breakpoint to one of these values."
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "BREAKPOINTS",
-          "declaration": {
-            "name": "BREAKPOINTS",
-            "module": "src/common/defs/breakpoints.ts"
           }
         }
       ]
