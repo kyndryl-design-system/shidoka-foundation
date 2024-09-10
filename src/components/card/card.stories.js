@@ -50,6 +50,7 @@ export const Simple = {
     rel: '',
     target: '_self',
     hideBorder: false,
+    cardRole: 'alertdialog',
   },
   render: (args) => {
     return html`
@@ -59,6 +60,7 @@ export const Simple = {
         target=${args.target}
         rel=${args.rel}
         ?hideBorder=${args.hideBorder}
+        cardRole=${args.cardRole}
       >
         <sample-card-component>
           <div slot="title">This is a card title</div>
@@ -80,6 +82,7 @@ export const Clickable = {
     rel: 'noopener',
     target: '_blank',
     hideBorder: false,
+    cardRole: 'alertdialog',
   },
   render: (args) => {
     return html`
@@ -89,6 +92,7 @@ export const Clickable = {
         target=${args.target}
         rel=${args.rel}
         ?hideBorder=${args.hideBorder}
+        cardRole=${args.cardRole}
         @on-card-click=${(e) => action(e.type)(e)}
       >
         <sample-card-component>
