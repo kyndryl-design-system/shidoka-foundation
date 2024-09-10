@@ -43,7 +43,7 @@ export class Icon extends LitElement {
         attrs: getAttributes(attributes),
       });
 
-      return html` <div aria-label=${this.iconDescription}>
+      return html` <div role="img" aria-label=${this.iconDescription}>
         ${unsafeHTML(iconString)}
       </div>`;
     } else {

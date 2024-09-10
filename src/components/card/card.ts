@@ -1,6 +1,7 @@
 import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';
+import { ifDefined } from 'lit/directives/if-defined.js';
 
 import CardScss from './card.scss';
 
@@ -34,7 +35,11 @@ export class Card extends LitElement {
   @property({ type: Boolean })
   hideBorder = false;
 
-  /** Provide a specific `HTML` role for the card based on the usecase (Required to support accessibility). */
+  /**
+   * Provide a specific `HTML` role for the card based on the usecase (Required to support accessibility).
+   *
+   * **NOTE**: Use the roles which are compatible with the `<a>` tag for `'clickable'` card `'type'`.
+   * */
   @property({ type: String })
   cardRole: any = '';
 
@@ -59,8 +64,10 @@ export class Card extends LitElement {
           href=${this.href}
           target=${this.target}
           rel=${this.rel}
-          role=${this.cardRole}
-          aria-label=${this.cardDescription}
+          role=${ifDefined(this.cardRole)}
+          aria-label="${ifDefined(
+            this.cardRole ? this.cardDescription : undefined
+          )}"
           @click=${(e: Event) => this.handleClick(e)}
         >
           <slot></slot>
@@ -68,8 +75,10 @@ export class Card extends LitElement {
       : html`<div
           part="card-wrapper"
           class="card-wrapper"
-          role=${this.cardRole}
-          aria-label=${this.cardDescription}
+          role="${ifDefined(this.cardRole)}"
+          aria-label=${ifDefined(
+            this.cardRole ? this.cardDescription : undefined
+          )}
         >
           <slot></slot>
         </div>`} `;

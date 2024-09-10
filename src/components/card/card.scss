@@ -34,7 +34,7 @@
     }
 
     &:focus {
-      outline-color: var(--kd-color-border-ui-hover);
+      outline-color: var(--kd-color-border-focus);
       @include elevation.shadow(2);
     }
   }

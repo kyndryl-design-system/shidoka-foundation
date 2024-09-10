@@ -32,6 +32,7 @@ export const BlankCard = {
     rel: '',
     target: '_self',
     hideBorder: false,
+    cardRole: 'article',
     cardDescription: 'Blank card',
   },
   render: (args) => {
@@ -40,6 +41,7 @@ export const BlankCard = {
       href=${args.href}
       target=${args.target}
       rel=${args.rel}
+      cardRole=${args.cardRole}
       cardDescription=${args.cardDescription}
     ></kd-card>`;
   },
@@ -52,7 +54,7 @@ export const Simple = {
     rel: '',
     target: '_self',
     hideBorder: false,
-    cardRole: 'alertdialog',
+    cardRole: 'article',
     cardDescription: 'Simple card',
   },
   render: (args) => {
@@ -86,7 +88,8 @@ export const Clickable = {
     rel: 'noopener',
     target: '_blank',
     hideBorder: false,
-    cardRole: 'alertdialog',
+    cardRole: 'link',
+    cardDescription: 'Clickable card',
   },
   render: (args) => {
     return html`
@@ -97,6 +100,7 @@ export const Clickable = {
         rel=${args.rel}
         ?hideBorder=${args.hideBorder}
         cardRole=${args.cardRole}
+        cardDescription=${args.cardDescription}
         @on-card-click=${(e) => action(e.type)(e)}
       >
         <sample-card-component>
