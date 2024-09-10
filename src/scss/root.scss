@@ -110,6 +110,15 @@
     U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+/* include roboto mono fonts locally for displayed code snippets */
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('../assets/fonts/RobotoMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  unicode-range: U+0000-00FF, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215;
+}
+
 /* define any inheritable styles that we want to pierce the shadow dom */
 html {
   height: 100%;
