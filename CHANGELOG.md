@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.7.5...v1.8.0) (2024-09-10)
+
+
+### Features
+
+* add Roboto Mono font ([#47](https://github.com/kyndryl-design-system/shidoka-foundation/issues/47)) ([ba1767f](https://github.com/kyndryl-design-system/shidoka-foundation/commit/ba1767f9dd343e3e719f6a36c641cb44133ae32f))
+
 ## [1.7.5](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.7.4...v1.7.5) (2024-08-27)
 
 
