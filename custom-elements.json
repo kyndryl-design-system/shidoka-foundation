@@ -935,6 +935,16 @@
               "attribute": "cardRole"
             },
             {
+              "kind": "field",
+              "name": "cardDescription",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "description": "Provides a description for the card (Required to support accessibility).\nExample:\nFor an information card, it can be `'Information card'`.\nFor an error notification, it can be `'Error notification'`.",
+              "attribute": "cardDescription"
+            },
+            {
               "kind": "method",
               "name": "handleClick",
               "privacy": "private",
@@ -1008,6 +1018,15 @@
               "default": "''",
               "description": "Provide a specific `HTML` role for the card based on the usecase (Required to support accessibility).",
               "fieldName": "cardRole"
+            },
+            {
+              "name": "cardDescription",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "description": "Provides a description for the card (Required to support accessibility).\nExample:\nFor an information card, it can be `'Information card'`.\nFor an error notification, it can be `'Error notification'`.",
+              "fieldName": "cardDescription"
             }
           ],
           "superclass": {

@@ -38,6 +38,14 @@ export class Card extends LitElement {
   @property({ type: String })
   cardRole: any = '';
 
+  /** Provides a description for the card (Required to support accessibility).
+   * Example:
+   * For an information card, it can be `'Information card'`.
+   * For an error notification, it can be `'Error notification'`.
+   */
+  @property({ type: String })
+  cardDescription = '';
+
   override render() {
     const cardWrapperClasses = {
       'card-wrapper-clickable': true,
@@ -52,6 +60,7 @@ export class Card extends LitElement {
           target=${this.target}
           rel=${this.rel}
           role=${this.cardRole}
+          aria-label=${this.cardDescription}
           @click=${(e: Event) => this.handleClick(e)}
         >
           <slot></slot>
@@ -60,6 +69,7 @@ export class Card extends LitElement {
           part="card-wrapper"
           class="card-wrapper"
           role=${this.cardRole}
+          aria-label=${this.cardDescription}
         >
           <slot></slot>
         </div>`} `;

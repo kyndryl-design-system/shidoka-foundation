@@ -32,6 +32,7 @@ export const BlankCard = {
     rel: '',
     target: '_self',
     hideBorder: false,
+    cardDescription: 'Blank card',
   },
   render: (args) => {
     return html` <kd-card
@@ -39,6 +40,7 @@ export const BlankCard = {
       href=${args.href}
       target=${args.target}
       rel=${args.rel}
+      cardDescription=${args.cardDescription}
     ></kd-card>`;
   },
 };
@@ -51,6 +53,7 @@ export const Simple = {
     target: '_self',
     hideBorder: false,
     cardRole: 'alertdialog',
+    cardDescription: 'Simple card',
   },
   render: (args) => {
     return html`
@@ -61,6 +64,7 @@ export const Simple = {
         rel=${args.rel}
         ?hideBorder=${args.hideBorder}
         cardRole=${args.cardRole}
+        cardDescription=${args.cardDescription}
       >
         <sample-card-component>
           <div slot="title">This is a card title</div>
