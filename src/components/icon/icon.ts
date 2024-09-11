@@ -39,7 +39,7 @@ export class Icon extends LitElement {
         attrs: getAttributes(attributes),
       });
 
-      return html` <div>${unsafeHTML(iconString)}</div>`;
+      return html` ${unsafeHTML(iconString)} `;
     } else {
       return null;
     }

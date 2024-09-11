@@ -20,14 +20,12 @@ export const Icon = {
     icon: sampleIcon,
     fill: 'currentColor',
     sizeOverride: undefined,
-    iconDescription: 'Sample icon',
   },
   render: (args) => html`
     <kd-icon
       .icon=${args.icon}
       fill=${args.fill}
       sizeOverride=${args.sizeOverride}
-      iconDescription=${args.iconDescription}
     ></kd-icon>
   `,
 };
