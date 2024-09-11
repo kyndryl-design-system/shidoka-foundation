@@ -24,10 +24,6 @@ export class Icon extends LitElement {
   @property({ type: Number })
   sizeOverride!: number;
 
-  /** Provide a description for the icon (Required to support accessibility). */
-  @property({ type: String })
-  iconDescription = 'Icon description';
-
   override render() {
     if (Object.keys(this.icon).length > 0) {
       const attributes = JSON.parse(JSON.stringify(this.icon.attrs));
@@ -43,9 +39,7 @@ export class Icon extends LitElement {
         attrs: getAttributes(attributes),
       });
 
-      return html` <div role="img" aria-label=${this.iconDescription}>
-        ${unsafeHTML(iconString)}
-      </div>`;
+      return html` <div>${unsafeHTML(iconString)}</div>`;
     } else {
       return null;
     }
