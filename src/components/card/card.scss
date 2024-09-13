@@ -32,6 +32,11 @@
       outline-color: var(--kd-color-border-ui-hover);
       @include elevation.shadow(2);
     }
+
+    &:focus {
+      outline-color: var(--kd-color-border-focus);
+      @include elevation.shadow(2);
+    }
   }
 
   &-border {

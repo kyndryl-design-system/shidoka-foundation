@@ -39,6 +39,8 @@ export const BlankCard = {
       href=${args.href}
       target=${args.target}
       rel=${args.rel}
+      role="article"
+      aria-label="Blank card"
     ></kd-card>`;
   },
 };
@@ -59,6 +61,8 @@ export const Simple = {
         target=${args.target}
         rel=${args.rel}
         ?hideBorder=${args.hideBorder}
+        role="article"
+        aria-label="Simple card"
       >
         <sample-card-component>
           <div slot="title">This is a card title</div>
@@ -89,6 +93,8 @@ export const Clickable = {
         target=${args.target}
         rel=${args.rel}
         ?hideBorder=${args.hideBorder}
+        role="link"
+        aria-label="Clickable card"
         @on-card-click=${(e) => action(e.type)(e)}
       >
         <sample-card-component>
