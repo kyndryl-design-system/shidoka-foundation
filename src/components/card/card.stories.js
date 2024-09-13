@@ -32,8 +32,6 @@ export const BlankCard = {
     rel: '',
     target: '_self',
     hideBorder: false,
-    cardRole: 'article',
-    cardDescription: 'Blank card',
   },
   render: (args) => {
     return html` <kd-card
@@ -41,8 +39,8 @@ export const BlankCard = {
       href=${args.href}
       target=${args.target}
       rel=${args.rel}
-      cardRole=${args.cardRole}
-      cardDescription=${args.cardDescription}
+      role="article"
+      aria-label="Blank card"
     ></kd-card>`;
   },
 };
@@ -54,8 +52,6 @@ export const Simple = {
     rel: '',
     target: '_self',
     hideBorder: false,
-    cardRole: 'article',
-    cardDescription: 'Simple card',
   },
   render: (args) => {
     return html`
@@ -65,8 +61,8 @@ export const Simple = {
         target=${args.target}
         rel=${args.rel}
         ?hideBorder=${args.hideBorder}
-        cardRole=${args.cardRole}
-        cardDescription=${args.cardDescription}
+        role="article"
+        aria-label="Simple card"
       >
         <sample-card-component>
           <div slot="title">This is a card title</div>
@@ -88,8 +84,6 @@ export const Clickable = {
     rel: 'noopener',
     target: '_blank',
     hideBorder: false,
-    cardRole: 'link',
-    cardDescription: 'Clickable card',
   },
   render: (args) => {
     return html`
@@ -99,8 +93,8 @@ export const Clickable = {
         target=${args.target}
         rel=${args.rel}
         ?hideBorder=${args.hideBorder}
-        cardRole=${args.cardRole}
-        cardDescription=${args.cardDescription}
+        role="link"
+        aria-label="Clickable card"
         @on-card-click=${(e) => action(e.type)(e)}
       >
         <sample-card-component>

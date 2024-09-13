@@ -925,24 +925,6 @@
               "attribute": "hideBorder"
             },
             {
-              "kind": "field",
-              "name": "cardRole",
-              "type": {
-                "text": "any"
-              },
-              "description": "Provide a specific `HTML` role for the card based on the usecase (Required to support accessibility).\n\n**NOTE**: Use the roles which are compatible with the `<a>` tag for `'clickable'` card `'type'`.",
-              "attribute": "cardRole"
-            },
-            {
-              "kind": "field",
-              "name": "cardDescription",
-              "type": {
-                "text": "string"
-              },
-              "description": "Provides a description for the card (Required to support accessibility).\nExample:\nFor an information card, it can be `'Information card'`.\nFor an error notification, it can be `'Error notification'`.",
-              "attribute": "cardDescription"
-            },
-            {
               "kind": "method",
               "name": "handleClick",
               "privacy": "private",
@@ -1007,22 +989,6 @@
               "default": "false",
               "description": "Hide card border. Useful when clickable card use inside `<kyn-notification>` component.",
               "fieldName": "hideBorder"
-            },
-            {
-              "name": "cardRole",
-              "type": {
-                "text": "any"
-              },
-              "description": "Provide a specific `HTML` role for the card based on the usecase (Required to support accessibility).\n\n**NOTE**: Use the roles which are compatible with the `<a>` tag for `'clickable'` card `'type'`.",
-              "fieldName": "cardRole"
-            },
-            {
-              "name": "cardDescription",
-              "type": {
-                "text": "string"
-              },
-              "description": "Provides a description for the card (Required to support accessibility).\nExample:\nFor an information card, it can be `'Information card'`.\nFor an error notification, it can be `'Error notification'`.",
-              "fieldName": "cardDescription"
             }
           ],
           "superclass": {

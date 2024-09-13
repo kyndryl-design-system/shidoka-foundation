@@ -35,22 +35,6 @@ export class Card extends LitElement {
   @property({ type: Boolean })
   hideBorder = false;
 
-  /**
-   * Provide a specific `HTML` role for the card based on the usecase (Required to support accessibility).
-   *
-   * **NOTE**: Use the roles which are compatible with the `<a>` tag for `'clickable'` card `'type'`.
-   * */
-  @property({ type: String })
-  cardRole!: any;
-
-  /** Provides a description for the card (Required to support accessibility).
-   * Example:
-   * For an information card, it can be `'Information card'`.
-   * For an error notification, it can be `'Error notification'`.
-   */
-  @property({ type: String })
-  cardDescription!: string;
-
   override render() {
     const cardWrapperClasses = {
       'card-wrapper-clickable': true,
@@ -64,18 +48,11 @@ export class Card extends LitElement {
           href=${this.href}
           target=${this.target}
           rel=${this.rel}
-          role=${ifDefined(this.cardRole)}
-          aria-label=${ifDefined(this.cardDescription)}
           @click=${(e: Event) => this.handleClick(e)}
         >
           <slot></slot>
         </a>`
-      : html`<div
-          part="card-wrapper"
-          class="card-wrapper"
-          role=${ifDefined(this.cardRole)}
-          aria-label=${ifDefined(this.cardDescription)}
-        >
+      : html`<div part="card-wrapper" class="card-wrapper">
           <slot></slot>
         </div>`} `;
   }
