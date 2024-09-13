@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.8.0...v1.8.1) (2024-09-13)
+
+
+### Bug Fixes
+
+* **card:** accessibility enhancements ([#46](https://github.com/kyndryl-design-system/shidoka-foundation/issues/46)) ([23d940e](https://github.com/kyndryl-design-system/shidoka-foundation/commit/23d940ecaeeece91ba125de1544400f7802430a7))
+
 # [1.8.0](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.7.5...v1.8.0) (2024-09-10)
 
 
