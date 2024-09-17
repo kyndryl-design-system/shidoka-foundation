@@ -1,3 +1,10 @@
+## [1.8.2](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.8.1...v1.8.2) (2024-09-17)
+
+
+### Bug Fixes
+
+* **link:** support slotted svgs ([197426f](https://github.com/kyndryl-design-system/shidoka-foundation/commit/197426f85da057c1fdadad3c5f45498820b3229f))
+
 ## [1.8.1](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.8.0...v1.8.1) (2024-09-13)
 
 
