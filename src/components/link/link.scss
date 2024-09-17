@@ -13,13 +13,13 @@
   transition: color 300ms ease-in-out;
 
   &:hover {
-    ::slotted(kd-icon) {
+    slot[name='icon']::slotted(*) {
       transform: translate(4px, 0);
     }
   }
 
   &.icon-left:hover {
-    ::slotted(kd-icon) {
+    slot[name='icon']::slotted(*) {
       transform: translate(-4px, 0);
     }
   }
@@ -106,6 +106,7 @@
   &-span-flex {
     display: flex;
     align-items: center;
+    gap: 8px;
 
     .icon-left & slot[name='icon']::slotted(*) {
       order: -1;
