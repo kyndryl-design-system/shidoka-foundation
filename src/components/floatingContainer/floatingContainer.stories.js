@@ -29,7 +29,7 @@ export const Default = {
         ?isFloating=${true}
         @on-click=${(e) => action(e.type)(e)}
         >Button 1
-        <kd-icon slot="icon" .icon=${chevronUpIcon} role="img"></kd-icon>
+        <kd-icon slot="icon" .icon=${chevronUpIcon}></kd-icon>
       </kd-button>
     </kd-float-container>
   `,
@@ -48,7 +48,7 @@ export const WithSecondaryButton = {
         @on-click=${(e) => action(e.type)(e)}
       >
         <span class="test">Button 1</span>
-        <kd-icon slot="icon" .icon=${chevronUpIcon} role="img"></kd-icon>
+        <kd-icon slot="icon" .icon=${chevronUpIcon}></kd-icon>
       </kd-button>
       <kd-button
         kind="primary-app"
@@ -60,7 +60,7 @@ export const WithSecondaryButton = {
         @on-click=${(e) => action(e.type)(e)}
       >
         <span class="test">Button 2</span>
-        <kd-icon slot="icon" .icon=${chatIcon} role="img"></kd-icon>
+        <kd-icon slot="icon" .icon=${chatIcon}></kd-icon>
       </kd-button>
     </kd-float-container>
     <style>
@@ -142,16 +142,10 @@ export const WithScroll = {
         iconposition="left"
         ?isFloating=${true}
         ?showOnScroll=${true}
-        description="Button description"
+        description="Button 1"
       >
-        Button Text
-        <kd-icon
-          slot="icon"
-          .icon=${chevronUpIcon}
-          role="img"
-          aria-label="Chevron Up Icon"
-          title="Chevron Up Icon"
-        ></kd-icon>
+        Button 1
+        <kd-icon slot="icon" .icon=${chevronUpIcon}></kd-icon>
       </kd-button>
     </kd-float-container>
   `,
