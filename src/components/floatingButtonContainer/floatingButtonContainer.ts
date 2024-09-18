@@ -1,15 +1,15 @@
 import { LitElement, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
-import FloatingButtonScss from './floatingButton.scss';
+import FloatingButtoContainerScss from './floatingButtonContainer.scss';
 
 /**
- * Float Button
+ * Float Container component.
  * @slot unnamed - Slot for kd-button options.
  */
 
-@customElement('kd-float-btn')
-export class FloatingButton extends LitElement {
-  static override styles = FloatingButtonScss;
+@customElement('kd-float-container')
+export class FloatingContainer extends LitElement {
+  static override styles = FloatingButtoContainerScss;
   override render() {
     return html`
       <div part="floating-btn-wrapper" class="floating-btn-wrapper">
@@ -21,6 +21,6 @@ export class FloatingButton extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'kd-float-btn': FloatingButton;
+    'kd-float-container': FloatingContainer;
   }
 }

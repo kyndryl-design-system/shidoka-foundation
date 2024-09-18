@@ -6,8 +6,8 @@ import '../button';
 import '../icon';
 
 export default {
-  title: 'Components/Button/FloatingButton',
-  component: 'kd-float-btn',
+  title: 'Components/Button/With Floating Container',
+  component: 'kd-float-container',
   parameters: {
     design: {
       type: 'figma',
@@ -16,9 +16,9 @@ export default {
   },
 };
 
-export const Simple = {
+export const Default = {
   render: () => html`
-    <kd-float-btn>
+    <kd-float-container>
       <kd-button
         kind="primary-web"
         type="button"
@@ -37,7 +37,7 @@ export const Simple = {
           title="Chevron Up Icon"
         ></kd-icon>
       </kd-button>
-    </kd-float-btn>
+    </kd-float-container>
   `,
 };
 
@@ -98,7 +98,7 @@ export const WithScroll = {
         know about Lit is that every Lit component is a standard web component.
       </p>
     </div>
-    <kd-float-btn>
+    <kd-float-container>
       <kd-button
         kind="primary-web"
         type="button"
@@ -117,6 +117,6 @@ export const WithScroll = {
           title="Chevron Up Icon"
         ></kd-icon>
       </kd-button>
-    </kd-float-btn>
+    </kd-float-container>
   `,
 };
