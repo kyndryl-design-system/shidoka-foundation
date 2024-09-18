@@ -20,7 +20,7 @@ export const Simple = {
   render: () => html`
     <kd-float-btn>
       <kd-button
-        kind="primary-app"
+        kind="primary-web"
         type="button"
         size="small"
         iconposition="left"
