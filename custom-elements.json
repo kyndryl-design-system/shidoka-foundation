@@ -108,7 +108,7 @@
           "name": "FloatingContainer",
           "declaration": {
             "name": "FloatingContainer",
-            "module": "./components/floatingButtonContainer"
+            "module": "./components/floatingContainer"
           }
         }
       ]
@@ -1081,11 +1081,11 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/components/floatingButtonContainer/floatingButtonContainer.ts",
+      "path": "src/components/floatingContainer/floatingContainer.ts",
       "declarations": [
         {
           "kind": "class",
-          "description": "Float Container component.",
+          "description": "Floating Container.",
           "name": "FloatingContainer",
           "slots": [
             {
@@ -1108,7 +1108,7 @@
           "name": "FloatingContainer",
           "declaration": {
             "name": "FloatingContainer",
-            "module": "src/components/floatingButtonContainer/floatingButtonContainer.ts"
+            "module": "src/components/floatingContainer/floatingContainer.ts"
           }
         },
         {
@@ -1116,14 +1116,14 @@
           "name": "kd-float-container",
           "declaration": {
             "name": "FloatingContainer",
-            "module": "src/components/floatingButtonContainer/floatingButtonContainer.ts"
+            "module": "src/components/floatingContainer/floatingContainer.ts"
           }
         }
       ]
     },
     {
       "kind": "javascript-module",
-      "path": "src/components/floatingButtonContainer/index.ts",
+      "path": "src/components/floatingContainer/index.ts",
       "declarations": [],
       "exports": [
         {
@@ -1131,7 +1131,7 @@
           "name": "FloatingContainer",
           "declaration": {
             "name": "FloatingContainer",
-            "module": "./floatingButtonContainer"
+            "module": "./floatingContainer"
           }
         }
       ]
