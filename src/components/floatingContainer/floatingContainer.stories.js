@@ -1,6 +1,7 @@
 import { html } from 'lit';
 import { action } from '@storybook/addon-actions';
 import chevronUpIcon from '@carbon/icons/es/chevron--up/20';
+import chatIcon from '@carbon/icons/es/chat/20';
 import './index';
 import '../button';
 import '../icon';
@@ -24,20 +25,55 @@ export const Default = {
         type="button"
         size="small"
         iconposition="left"
-        description="Button description"
+        description="Button 1"
+        ?isFloating=${true}
+        @on-click=${(e) => action(e.type)(e)}
+        >Button 1
+        <kd-icon slot="icon" .icon=${chevronUpIcon} role="img"></kd-icon>
+      </kd-button>
+    </kd-float-container>
+  `,
+};
+
+export const WithSecondaryButton = {
+  render: () => html`
+    <kd-float-container>
+      <kd-button
+        kind="primary-web"
+        type="button"
+        size="small"
+        iconposition="left"
+        description="Button 1"
         ?isFloating=${true}
         @on-click=${(e) => action(e.type)(e)}
       >
-        Button Text
-        <kd-icon
-          slot="icon"
-          .icon=${chevronUpIcon}
-          role="img"
-          aria-label="Chevron Up Icon"
-          title="Chevron Up Icon"
-        ></kd-icon>
+        <span class="test">Button 1</span>
+        <kd-icon slot="icon" .icon=${chevronUpIcon} role="img"></kd-icon>
+      </kd-button>
+      <kd-button
+        kind="primary-app"
+        type="button"
+        size="small"
+        iconposition="left"
+        description="Button 2"
+        ?isFloating=${true}
+        @on-click=${(e) => action(e.type)(e)}
+      >
+        <span class="test">Button 2</span>
+        <kd-icon slot="icon" .icon=${chatIcon} role="img"></kd-icon>
       </kd-button>
     </kd-float-container>
+    <style>
+      .test {
+        display: none;
+      }
+
+      @media (min-width: 42rem) {
+        .test {
+          display: inline;
+        }
+      }
+    </style>
   `,
 };
 
