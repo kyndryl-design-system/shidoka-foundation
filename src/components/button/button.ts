@@ -100,6 +100,26 @@ export class Button extends LitElement {
   @property({ type: String })
   name = '';
 
+  /** Determines if the button is Floatable */
+  @property({ type: Boolean })
+  isFloating = false;
+
+  /** Show button after scrolling to 50% of the page*/
+  @property({ type: Boolean })
+  showOnScroll = false;
+
+  /** Determines showButton state .
+   * @internal
+   */
+  @state()
+  showButton = false;
+
+  /** re-size button to 'medium' at mobile breakpoint.
+   * @internal
+   */
+  @state()
+  reSizeBtn = false;
+
   /** Button formmethod.  */
   @property({ type: String })
   formmethod!: any;
@@ -123,6 +143,7 @@ export class Button extends LitElement {
   _btnEl!: any;
 
   override render() {
+    this.reSizeButton();
     const typeClassMap = {
       [BUTTON_KINDS.PRIMARY_APP]: 'primary-app',
       [BUTTON_KINDS.PRIMARY_WEB]: 'primary-web',
@@ -139,13 +160,15 @@ export class Button extends LitElement {
       [`kd-btn--${baseTypeClass}`]: !this.destructive,
       'kd-btn--large': this.size === BUTTON_SIZES.LARGE,
       'kd-btn--small': this.size === BUTTON_SIZES.SMALL,
-      'kd-btn--medium': this.size === BUTTON_SIZES.MEDIUM,
+      'kd-btn--medium': this.reSizeBtn || this.size === BUTTON_SIZES.MEDIUM,
       [`kd-btn--icon-${this.iconPosition}`]:
         !!this.iconPosition && !this.iconOnly,
       [`kd-btn--icon-center`]: this._iconEls?.length && this.iconOnly,
       'icon-only': this._iconEls?.length && this.iconOnly,
+      'btn-float': this.isFloating,
+      'btn-hidden': this.showOnScroll && !this.showButton,
+      'btn-visible': !this.showOnScroll || this.showButton,
     };
-
     return html`
       ${this.href && this.href !== ''
         ? html`
@@ -233,18 +256,42 @@ export class Button extends LitElement {
 
   /** @internal */
   private _debounceResize = debounce(() => {
+    this._handleScroll();
     this.iconOnly = this._testIconOnly();
   });
 
+  /** @internal */
+  private reSizeButton() {
+    // Resize button to medium at mobile breakpoint
+    this.reSizeBtn = this.isFloating && window.innerWidth <= 470 ? true : false;
+  }
+
+  /** @internal */
+  private _handleScroll() {
+    if (this.showOnScroll) {
+      const scrollPosition = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const pageHeight = document.documentElement.scrollHeight;
+      // Show the button if scrolled past halfway
+      this.showButton = scrollPosition > (pageHeight - windowHeight) / 2;
+    } else {
+      this.showButton = true; // Always visible
+    }
+  }
+
   override connectedCallback() {
     super.connectedCallback();
-
     window.addEventListener('resize', this._debounceResize);
+    if (this.showOnScroll) {
+      window.addEventListener('scroll', this._handleScroll.bind(this));
+    }
   }
 
   override disconnectedCallback() {
     window.removeEventListener('resize', this._debounceResize);
-
+    if (this.showOnScroll) {
+      window.removeEventListener('scroll', this._handleScroll.bind(this));
+    }
     super.disconnectedCallback();
   }
 }

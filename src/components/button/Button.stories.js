@@ -71,6 +71,8 @@ const args = {
   href: '',
   name: '',
   value: '',
+  isFloating: false,
+  showOnScroll: false,
 };
 
 export const Button = {
@@ -82,6 +84,8 @@ export const Button = {
         type=${args.type}
         ?destructive=${args.destructive}
         ?disabled=${args.disabled}
+        ?isFloating=${args.isFloating}
+        ?showOnScroll=${args.showOnScroll}
         size=${args.size}
         iconPosition=${args.iconPosition}
         description=${args.description}
@@ -112,6 +116,8 @@ export const ButtonWithIcon = {
         type=${args.type}
         ?destructive=${args.destructive}
         ?disabled=${args.disabled}
+        ?isFloating=${args.isFloating}
+        ?showOnScroll=${args.showOnScroll}
         size=${args.size}
         iconPosition=${args.iconPosition}
         description=${args.description}
@@ -145,6 +151,8 @@ export const IconOnly = {
         type=${args.type}
         ?destructive=${args.destructive}
         ?disabled=${args.disabled}
+        ?isFloating=${args.isFloating}
+        ?showOnScroll=${args.showOnScroll}
         size=${args.size}
         iconPosition="center"
         description=${args.description}

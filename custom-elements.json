@@ -102,6 +102,14 @@
             "name": "SplitButtonOption",
             "module": "./components/splitButton"
           }
+        },
+        {
+          "kind": "js",
+          "name": "FloatingButton",
+          "declaration": {
+            "name": "FloatingButton",
+            "module": "./components/floatingButton"
+          }
         }
       ]
     },
@@ -642,6 +650,26 @@
             },
             {
               "kind": "field",
+              "name": "isFloating",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Determines if the button is Floatable",
+              "attribute": "isFloating"
+            },
+            {
+              "kind": "field",
+              "name": "showOnScroll",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Show button after scrolling to 50% of the page",
+              "attribute": "showOnScroll"
+            },
+            {
+              "kind": "field",
               "name": "formmethod",
               "type": {
                 "text": "any"
@@ -765,6 +793,24 @@
               "default": "''",
               "description": "Button name.",
               "fieldName": "name"
+            },
+            {
+              "name": "isFloating",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Determines if the button is Floatable",
+              "fieldName": "isFloating"
+            },
+            {
+              "name": "showOnScroll",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Show button after scrolling to 50% of the page",
+              "fieldName": "showOnScroll"
             },
             {
               "name": "formmethod",
@@ -1029,6 +1075,63 @@
           "declaration": {
             "name": "Card",
             "module": "./card"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/floatingButton/floatingButton.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "Float Button",
+          "name": "FloatingButton",
+          "slots": [
+            {
+              "description": "Slot for kd-button options.",
+              "name": "unnamed"
+            }
+          ],
+          "members": [],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "kd-float-btn",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "FloatingButton",
+          "declaration": {
+            "name": "FloatingButton",
+            "module": "src/components/floatingButton/floatingButton.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "kd-float-btn",
+          "declaration": {
+            "name": "FloatingButton",
+            "module": "src/components/floatingButton/floatingButton.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/floatingButton/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "FloatingButton",
+          "declaration": {
+            "name": "FloatingButton",
+            "module": "./floatingButton"
           }
         }
       ]

@@ -1,0 +1,11 @@
+:host {
+  display: inline-block;
+}
+
+.floating-btn-wrapper {
+  display: flex;
+  position: fixed;
+  right: 16px;
+  bottom: 24px;
+  gap: 8px;
+}
