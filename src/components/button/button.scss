@@ -37,7 +37,7 @@
   &.btn-hidden {
     opacity: 0;
     visibility: hidden;
-    transition: opacity 300ms ease-in-out, visibility 0ms 300ms;
+    transition: opacity 300ms ease-in-out, visibility 0ms ease-in-out 300ms;
   }
 
   &--small {

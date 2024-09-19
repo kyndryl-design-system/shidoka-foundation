@@ -143,7 +143,6 @@ export class Button extends LitElement {
   _btnEl!: any;
 
   override render() {
-    this._reSizeButton();
     const typeClassMap = {
       [BUTTON_KINDS.PRIMARY_APP]: 'primary-app',
       [BUTTON_KINDS.PRIMARY_WEB]: 'primary-web',
@@ -255,6 +254,7 @@ export class Button extends LitElement {
 
   /** @internal */
   private _debounceResize = debounce(() => {
+    this._reSizeButton();
     this.iconOnly = this._testIconOnly();
   });
 
