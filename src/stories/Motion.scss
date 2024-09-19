@@ -4,15 +4,47 @@ $transitionPropsVar: border, background-color;
 $duration: var(--kd-anim-duration-long);
 $easing: var(--kd-anim-easing-in);
 
-.transition {
-  background-color: var(--kd-color-background-ui-soft);
+.transition-1 {
   @include motion.transition($transitionPropsVar, $duration, $easing);
-  transform: scaleX(0);
-  transform-origin: left;
 
   &:hover {
-    transform: scaleX(1);
-    border: 1px solid var(--kd-color-border-default);
+    border: 2px solid var(--kd-color-border-default);
     background-color: var(--kd-color-background-ui-subtle);
+  }
+}
+
+.transition-2 {
+  @include motion.transition(color, 600ms);
+
+  &:hover {
+    color: red;
+  }
+}
+
+.transition-3 {
+  @include motion.transition(transform);
+
+  &:hover {
+    transform: scaleY(1.2);
+  }
+}
+
+.transition-4 {
+  @include motion.transition(opacity, $easing: var(--kd-anim-easing-in-out));
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.transition-examples {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  & > div {
+    background-color: var(--kd-color-background-ui-soft);
+    padding: 16px;
+    border-radius: 8px;
   }
 }

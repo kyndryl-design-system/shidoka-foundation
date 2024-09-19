@@ -9,7 +9,9 @@ import * as MotionStories from './Motion.stories.js';
 
 ## Example
 
-<Stories />
+<Canvas>
+  <Story of={MotionStories.Transition} />
+</Canvas>
 
 ### Controls
 
@@ -22,18 +24,55 @@ import * as MotionStories from './Motion.stories.js';
 ```css
 @use '@kyndryl-design-system/shidoka-foundation/scss/mixins/motion.scss';
 $transitionPropsVar: background-color, border;
-$duration: var(--kd-anim-duration-med);
-$easing: var(--kd-anim-easing-in);
+
+.your-css-selector {
+  @include motion.transition(
+    $transitionPropsVar,
+    var(--kd-anim-duration-med),
+    var(--kd-anim-easing-in)
+  );
+}
+
+.your-css-selector {
+  @include motion.transition($transitionPropsVar, var(--kd-anim-duration-med));
+}
 
 .your-css-selector {
   @include motion.transition($transitionPropsVar);
 }
 
 .your-css-selector {
-  @include motion.transition($transitionPropsVar, $duration);
-}
-
-.your-css-selector {
-  @include motion.transition($transitionPropsVar, $duration, $easing);
+  @include motion.transition(
+    $transitionPropsVar,
+    150ms,
+    cubic-bezier(0.1, 0.7, 1, 0.1)
+  );
 }
 ```
+
+### CSS Variables
+
+```css
+@use '@kyndryl-design-system/shidoka-foundation/dist/scss/variables/motion.scss';
+
+.your-css-selector {
+  transition: background var(--kd-anim-duration-med) var(--kd-anim-easing-in), border
+      var(--kd-anim-duration-short) var(--kd-anim-easing-linear);
+}
+```
+
+## Variables/Tokens
+
+| Duration                  | Value |
+| ------------------------- | ----- |
+| --kd-anim-duration-short  | 150ms |
+| --kd-anim-duration-med    | 300ms |
+| --kd-anim-duration-long   | 400ms |
+| --kd-anim-duration-x-long | 400ms |
+
+| Easing                  | Value       |
+| ----------------------- | ----------- |
+| --kd-anim-easing-linear | linear      |
+| --kd-anim-easing-in     | ease-in     |
+| --kd-anim-easing-out    | ease-out    |
+| --kd-anim-easing-in-out | ease-in-out |

@@ -15,7 +15,8 @@ $all-props-transition: null;
       $all-props-transition,
       $each-prop-transition,
       $separator: comma
-    );
-    transition: $all-props-transition;
+    ) !global;
   }
+  transition: $all-props-transition;
+  @warn 'AAAA transition : #{$all-props-transition}';
 }
