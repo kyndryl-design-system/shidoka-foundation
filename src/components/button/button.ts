@@ -112,13 +112,13 @@ export class Button extends LitElement {
    * @internal
    */
   @state()
-  showButton = false;
+  _showButton = false;
 
   /** re-size button to 'medium' at mobile breakpoint.
    * @internal
    */
   @state()
-  reSizeBtn = false;
+  _reSizeBtn = false;
 
   /** Button formmethod.  */
   @property({ type: String })
@@ -143,7 +143,7 @@ export class Button extends LitElement {
   _btnEl!: any;
 
   override render() {
-    this.reSizeButton();
+    this._reSizeButton();
     const typeClassMap = {
       [BUTTON_KINDS.PRIMARY_APP]: 'primary-app',
       [BUTTON_KINDS.PRIMARY_WEB]: 'primary-web',
@@ -160,14 +160,13 @@ export class Button extends LitElement {
       [`kd-btn--${baseTypeClass}`]: !this.destructive,
       'kd-btn--large': this.size === BUTTON_SIZES.LARGE,
       'kd-btn--small': this.size === BUTTON_SIZES.SMALL,
-      'kd-btn--medium': this.reSizeBtn || this.size === BUTTON_SIZES.MEDIUM,
+      'kd-btn--medium': this._reSizeBtn || this.size === BUTTON_SIZES.MEDIUM,
       [`kd-btn--icon-${this.iconPosition}`]:
         !!this.iconPosition && !this.iconOnly,
       [`kd-btn--icon-center`]: this._iconEls?.length && this.iconOnly,
       'icon-only': this._iconEls?.length && this.iconOnly,
       'btn-float': this.isFloating,
-      'btn-hidden': this.showOnScroll && !this.showButton,
-      'btn-visible': !this.showOnScroll || this.showButton,
+      'btn-hidden': this.showOnScroll && !this._showButton,
     };
     return html`
       ${this.href && this.href !== ''
@@ -261,9 +260,9 @@ export class Button extends LitElement {
   });
 
   /** @internal */
-  private reSizeButton() {
+  private _reSizeButton() {
     // Resize button to medium at mobile breakpoint
-    this.reSizeBtn =
+    this._reSizeBtn =
       (this.isFloating || this.showOnScroll) && window.innerWidth <= 672
         ? true
         : false;
@@ -275,10 +274,8 @@ export class Button extends LitElement {
       const scrollPosition = window.scrollY;
       const windowHeight = window.innerHeight;
       const pageHeight = document.documentElement.scrollHeight;
-      // Show the button if scrolled past halfway
-      this.showButton = scrollPosition > (pageHeight - windowHeight) / 2;
-    } else {
-      this.showButton = true; // Always visible
+      // Show the button if scrolled 50% of the page
+      this._showButton = scrollPosition > (pageHeight - windowHeight) / 2;
     }
   }
 

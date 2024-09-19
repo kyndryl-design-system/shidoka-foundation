@@ -1227,7 +1227,7 @@
             "name": "LitElement",
             "package": "lit"
           },
-          "tagName": "kd-float-container",
+          "tagName": "kd-button-float-container",
           "customElement": true
         }
       ],
@@ -1242,7 +1242,7 @@
         },
         {
           "kind": "custom-element-definition",
-          "name": "kd-float-container",
+          "name": "kd-button-float-container",
           "declaration": {
             "name": "FloatingContainer",
             "module": "src/components/floatingContainer/floatingContainer.ts"

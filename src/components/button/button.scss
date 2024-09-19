@@ -31,6 +31,15 @@
     min-width: initial;
   }
 
+  &.btn-float {
+    box-shadow: var(--kd-elevation-level-3);
+  }
+  &.btn-hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0s 0.5s;
+  }
+
   &--small {
     padding: 4px 16px;
     height: 32px;
@@ -38,16 +47,6 @@
     &.icon-only {
       width: 32px;
       padding: 6px;
-    }
-    &.show-on-scroll {
-      display: none;
-    }
-    &.btn-float {
-      box-shadow: var(--kd-elevation-level-3);
-    }
-
-    &.btn-hidden {
-      display: none;
     }
   }
 
@@ -59,15 +58,6 @@
       width: 48px;
       padding: 14px;
     }
-    &.show-on-scroll {
-      display: none;
-    }
-    &.btn-float {
-      box-shadow: var(--kd-elevation-level-3);
-    }
-    &.btn-hidden {
-      display: none;
-    }
   }
 
   &--large {
@@ -77,15 +67,6 @@
     &.icon-only {
       width: 56px;
       padding: 18px;
-    }
-    &.show-on-scroll {
-      display: none;
-    }
-    &.btn-float {
-      box-shadow: var(--kd-elevation-level-3);
-    }
-    &.btn-hidden {
-      display: none;
     }
   }
 }

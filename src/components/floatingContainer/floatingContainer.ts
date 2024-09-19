@@ -7,7 +7,7 @@ import FloatingContainerScss from './floatingContainer.scss';
  * @slot unnamed - Slot for kd-button options.
  */
 
-@customElement('kd-float-container')
+@customElement('kd-button-float-container')
 export class FloatingContainer extends LitElement {
   static override styles = FloatingContainerScss;
   override render() {
@@ -21,6 +21,6 @@ export class FloatingContainer extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'kd-float-container': FloatingContainer;
+    'kd-button-float-container': FloatingContainer;
   }
 }
