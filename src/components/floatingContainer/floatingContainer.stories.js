@@ -37,6 +37,23 @@ export const Default = {
 
 export const WithSecondaryButton = {
   render: () => html`
+    <div style="padding-bottom:50px;">
+      <!-- Add some space in bottom so FAB doesn't obstruct any essestial UI element -->
+      <div style="height:700px">
+        <!-- Add some long content here to see the floating button in action -->
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+          Storybook is a powerful tool for developing and testing UI components
+          in isolation, improving collaboration and component reuse. Lorem ipsum
+          dolor sit amet, consectetur adipiscing elit. Nullam Storybook is a
+          powerful tool for developing and testing UI components in isolation,
+          improving collaboration and component reuse. Lorem ipsum dolor sit
+          amet, consectetur adipiscing elit. Nullam Storybook is a powerful tool
+          for developing and testing UI components in isolation, improving
+          collaboration and component reuse.
+        </p>
+      </div>
+    </div>
     <kd-button-float-container>
       <kd-button
         kind="primary-web"
@@ -81,10 +98,18 @@ export const WithScroll = {
   render: () => html`
     <div style="padding-bottom:50px;">
       <!-- Add some space in bottom so FAB doesn't obstruct any essestial UI element -->
-      <div style="height:1000px">
+      <div style="height:700px">
         <!-- Add some long content here to see the floating button in action -->
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+          Storybook is a powerful tool for developing and testing UI components
+          in isolation, improving collaboration and component reuse. Lorem ipsum
+          dolor sit amet, consectetur adipiscing elit. Nullam Storybook is a
+          powerful tool for developing and testing UI components in isolation,
+          improving collaboration and component reuse. Lorem ipsum dolor sit
+          amet, consectetur adipiscing elit. Nullam Storybook is a powerful tool
+          for developing and testing UI components in isolation, improving
+          collaboration and component reuse.
         </p>
       </div>
     </div>

@@ -255,7 +255,6 @@ export class Button extends LitElement {
 
   /** @internal */
   private _debounceResize = debounce(() => {
-    this._handleScroll();
     this.iconOnly = this._testIconOnly();
   });
 
@@ -269,28 +268,33 @@ export class Button extends LitElement {
   }
 
   /** @internal */
-  private _handleScroll() {
+  private _debounceScroll = debounce(() => {
     if (this.showOnScroll) {
-      const scrollPosition = window.scrollY;
-      const windowHeight = window.innerHeight;
-      const pageHeight = document.documentElement.scrollHeight;
-      // Show the button if scrolled 50% of the page
-      this._showButton = scrollPosition > (pageHeight - windowHeight) / 2;
+      this._handleScroll();
     }
+  });
+
+  /** @internal */
+  private _handleScroll() {
+    const scrollPosition = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const pageHeight = document.documentElement.scrollHeight;
+    // Show the button if scrolled 50% of the page
+    this._showButton = scrollPosition > (pageHeight - windowHeight) / 2;
   }
 
   override connectedCallback() {
     super.connectedCallback();
     window.addEventListener('resize', this._debounceResize);
     if (this.showOnScroll) {
-      window.addEventListener('scroll', this._handleScroll.bind(this));
+      window.addEventListener('scroll', this._debounceScroll);
     }
   }
 
   override disconnectedCallback() {
     window.removeEventListener('resize', this._debounceResize);
     if (this.showOnScroll) {
-      window.removeEventListener('scroll', this._handleScroll.bind(this));
+      window.removeEventListener('scroll', this._debounceScroll);
     }
     super.disconnectedCallback();
   }
