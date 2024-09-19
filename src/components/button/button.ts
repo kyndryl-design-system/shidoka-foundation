@@ -261,10 +261,11 @@ export class Button extends LitElement {
   /** @internal */
   private _reSizeButton() {
     // Resize button to medium at mobile breakpoint
-    this._reSizeBtn =
-      (this.isFloating || this.showOnScroll) && window.innerWidth <= 672
-        ? true
-        : false;
+    if ((this.isFloating || this.showOnScroll) && window.innerWidth <= 672) {
+      this._reSizeBtn = true;
+    } else {
+      this._reSizeBtn = false;
+    }
   }
 
   /** @internal */
