@@ -1,0 +1,21 @@
+// WORKING
+@use '../variables/breakpoints.scss';
+
+$all-props-transition: null;
+
+@mixin transition(
+  $properties,
+  $duration: var(--kd-anim-duration-short),
+  $easing: var(--kd-anim-easing-in)
+) {
+  /* loops through props array and outputs the transition property */
+  @each $prop in $properties {
+    $each-prop-transition: $prop $duration $easing;
+    $all-props-transition: append(
+      $all-props-transition,
+      $each-prop-transition,
+      $separator: comma
+    );
+    transition: $all-props-transition;
+  }
+}

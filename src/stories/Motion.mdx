@@ -1,0 +1,39 @@
+import { Meta, Story, Canvas, Controls, Stories } from '@storybook/blocks';
+import * as MotionStories from './Motion.stories.js';
+
+<Meta of={MotionStories} />
+
+# Motion
+
+[Figma Design Source](https://www.figma.com/file/5TqtPa7KWfhJbQv6ELnbqf/Foundation?node-id=72%3A17784&mode=dev)
+
+## Example
+
+<Stories />
+
+### Controls
+
+<Controls of={MotionStories.Transition} />
+
+## Usage
+
+### SCSS Mixins
+
+```css
+@use '@kyndryl-design-system/shidoka-foundation/scss/mixins/motion.scss';
+$transitionPropsVar: background-color, border;
+$duration: var(--kd-anim-duration-med);
+$easing: var(--kd-anim-easing-in);
+
+.your-css-selector {
+  @include motion.transition($transitionPropsVar);
+}
+
+.your-css-selector {
+  @include motion.transition($transitionPropsVar, $duration);
+}
+
+.your-css-selector {
+  @include motion.transition($transitionPropsVar, $duration, $easing);
+}
+```

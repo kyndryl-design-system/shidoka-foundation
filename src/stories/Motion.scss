@@ -1,0 +1,18 @@
+@use '../scss/mixins/motion.scss';
+
+$transitionPropsVar: border, background-color;
+$duration: var(--kd-anim-duration-long);
+$easing: var(--kd-anim-easing-in);
+
+.transition {
+  background-color: var(--kd-color-background-ui-soft);
+  @include motion.transition($transitionPropsVar, $duration, $easing);
+  transform: scaleX(0);
+  transform-origin: left;
+
+  &:hover {
+    transform: scaleX(1);
+    border: 1px solid var(--kd-color-border-default);
+    background-color: var(--kd-color-background-ui-subtle);
+  }
+}
