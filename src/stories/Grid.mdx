@@ -25,6 +25,14 @@ import * as GridStories from './Grid.stories.js';
 
 <Controls of={GridStories.Grid} />
 
+## Page Gutter
+
+A page gutter should be applied once globally in the application on the `<body>` tag or similar, or by using the shidoka-applications [UI Shell component](https://shidoka-applications.netlify.app/?path=/docs/global-components-ui-shell--docs).
+
+| Utility Class           | CSS Variable     |
+| ----------------------- | ---------------- |
+| kd-spacing--page-gutter | --kd-page-gutter |
+
 ## Usage
 
 ### SCSS Mixins
@@ -40,14 +48,6 @@ import * as GridStories from './Grid.stories.js';
   @include grid.grid-col(num_cols);
 }
 ```
-
-### Page Gutter
-
-A page gutter should be applied once globally in the application on the `<body>` tag or similar, or by using the shidoka-applications [UI Shell component](https://shidoka-applications.netlify.app/?path=/docs/global-components-ui-shell--docs).
-
-| Utility Class           | CSS Variable     |
-| ----------------------- | ---------------- |
-| kd-spacing--page-gutter | --kd-page-gutter |
 
 ### Utility Classes
 
