@@ -41,24 +41,15 @@ export const WithSecondaryButton = {
       <!-- Add some space in bottom so FAB doesn't obstruct any essestial UI element -->
       <!-- Add some long content here to see the floating button in action -->
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-        Storybook is a powerful tool for developing and testing UI components in
-        isolation, improving collaboration and component reuse. Lorem ipsum
-        dolor sit amet, consectetur adipiscing elit. Nullam Storybook is a
-        powerful tool for developing and testing UI components in isolation,
-        improving collaboration and component reuse. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam Storybook is a powerful tool for
-        developing and testing UI components in isolation, improving
-        collaboration and component reuse. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam Storybook is a powerful tool for
-        developing and testing UI components in isolation, improving
-        collaboration and component reuse. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam Storybook is a powerful tool for
-        developing and testing UI components in isolation, improving
-        collaboration and component reuse. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam Storybook is a powerful tool for
-        developing and testing UI components in isolation, improving
-        collaboration and component reuse.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+        ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum
       </p>
     </div>
     <kd-button-float-container>
@@ -107,78 +98,47 @@ export const WithScroll = {
       <!-- Add some space in bottom so FAB doesn't obstruct any essestial UI element -->
       <!-- Add some long content here to see the floating button in action -->
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-        Storybook is a powerful tool for developing and testing UI components in
-        isolation, improving collaboration and component reuse. Lorem ipsum
-        dolor sit amet, consectetur adipiscing elit. Nullam Storybook is a
-        powerful tool for developing and testing UI components in isolation,
-        improving collaboration and component reuse. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam Storybook is a powerful tool for
-        developing and testing UI components in isolation, improving
-        collaboration and component reuse. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam Storybook is a powerful tool for
-        developing and testing UI components in isolation, improving
-        collaboration and component reuse. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam Storybook is a powerful tool for
-        developing and testing UI components in isolation, improving
-        collaboration and component reuse. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam Storybook is a powerful tool for
-        developing and testing UI components in isolation, improving
-        collaboration and component reuse. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam Storybook is a powerful tool for
-        developing and testing UI components in isolation, improving
-        collaboration and component reuse. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam Storybook is a powerful tool for
-        developing and testing UI components in isolation, improving
-        collaboration and component reuse. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam Storybook is a powerful tool for
-        developing and testing UI components in isolation, improving
-        collaboration and component reuse. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam Storybook is a powerful tool for
-        developing and testing UI components in isolation, improving
-        collaboration and component reuse. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam Storybook is a powerful tool for
-        developing and testing UI components in isolation, improving
-        collaboration and component reuse. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam Storybook is a powerful tool for
-        developing and testing UI components in isolation, improving
-        collaboration and component reuse. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam Storybook is a powerful tool for
-        developing and testing UI components in isolation, improving
-        collaboration and component reuse. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam Storybook is a powerful tool for
-        developing and testing UI components in isolation, improving
-        collaboration and component reuse. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam Storybook is a powerful tool for
-        developing and testing UI components in isolation, improving
-        collaboration and component reuse. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam Storybook is a powerful tool for
-        developing and testing UI components in isolation, improving
-        collaboration and component reuse. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam Storybook is a powerful tool for
-        developing and testing UI components in isolation, improving
-        collaboration and component reuse. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam Storybook is a powerful tool for
-        developing and testing UI components in isolation, improving
-        collaboration and component reuse. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam Storybook is a powerful tool for
-        developing and testing UI components in isolation, improving
-        collaboration and component reuse. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam Storybook is a powerful tool for
-        developing and testing UI components in isolation, improving
-        collaboration and component reuse. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam Storybook is a powerful tool for
-        developing and testing UI components in isolation, improving
-        collaboration and component reuse. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam Storybook is a powerful tool for
-        developing and testing UI components in isolation, improving
-        collaboration and component reuse. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam Storybook is a powerful tool for
-        developing and testing UI components in isolation, improving
-        collaboration and component reuse. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam Storybook is a powerful tool for
-        developing and testing UI components in isolation, improving
-        collaboration and component reuse.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+        in voluptate velit esse cillum Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum Lorem ipsum dolor sit
+        amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum
+        dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+        esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
       </p>
     </div>
     <kd-button-float-container>
@@ -190,6 +150,7 @@ export const WithScroll = {
         ?isFloating=${true}
         ?showOnScroll=${true}
         description="Button 1"
+        @on-click=${(e) => action(e.type)(e)}
       >
         Button 1
         <kd-icon slot="icon" .icon=${chevronUpIcon}></kd-icon>
