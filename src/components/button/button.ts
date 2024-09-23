@@ -100,6 +100,26 @@ export class Button extends LitElement {
   @property({ type: String })
   name = '';
 
+  /** Determines if the button is Floatable */
+  @property({ type: Boolean })
+  isFloating = false;
+
+  /** Show button after scrolling to 50% of the page*/
+  @property({ type: Boolean })
+  showOnScroll = false;
+
+  /** Determines showButton state .
+   * @internal
+   */
+  @state()
+  _showButton = false;
+
+  /** re-size button to 'medium' at mobile breakpoint.
+   * @internal
+   */
+  @state()
+  _reSizeBtn = false;
+
   /** Button formmethod.  */
   @property({ type: String })
   formmethod!: any;
@@ -139,13 +159,14 @@ export class Button extends LitElement {
       [`kd-btn--${baseTypeClass}`]: !this.destructive,
       'kd-btn--large': this.size === BUTTON_SIZES.LARGE,
       'kd-btn--small': this.size === BUTTON_SIZES.SMALL,
-      'kd-btn--medium': this.size === BUTTON_SIZES.MEDIUM,
+      'kd-btn--medium': this._reSizeBtn || this.size === BUTTON_SIZES.MEDIUM,
       [`kd-btn--icon-${this.iconPosition}`]:
         !!this.iconPosition && !this.iconOnly,
       [`kd-btn--icon-center`]: this._iconEls?.length && this.iconOnly,
       'icon-only': this._iconEls?.length && this.iconOnly,
+      'btn-float': this.isFloating,
+      'btn-hidden': this.showOnScroll && !this._showButton,
     };
-
     return html`
       ${this.href && this.href !== ''
         ? html`
@@ -233,18 +254,49 @@ export class Button extends LitElement {
 
   /** @internal */
   private _debounceResize = debounce(() => {
+    this._reSizeButton();
     this.iconOnly = this._testIconOnly();
   });
 
+  /** @internal */
+  private _reSizeButton() {
+    // Resize button to medium at mobile breakpoint
+    if ((this.isFloating || this.showOnScroll) && window.innerWidth <= 672) {
+      this._reSizeBtn = true;
+    } else {
+      this._reSizeBtn = false;
+    }
+  }
+
+  /** @internal */
+  private _debounceScroll = debounce(() => {
+    if (this.showOnScroll) {
+      this._handleScroll();
+    }
+  });
+
+  /** @internal */
+  private _handleScroll() {
+    const scrollPosition = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const pageHeight = document.documentElement.scrollHeight;
+    // Show the button if scrolled 50% of the page
+    this._showButton = scrollPosition > (pageHeight - windowHeight) / 2;
+  }
+
   override connectedCallback() {
     super.connectedCallback();
-
     window.addEventListener('resize', this._debounceResize);
+    if (this.showOnScroll) {
+      window.addEventListener('scroll', this._debounceScroll);
+    }
   }
 
   override disconnectedCallback() {
     window.removeEventListener('resize', this._debounceResize);
-
+    if (this.showOnScroll) {
+      window.removeEventListener('scroll', this._debounceScroll);
+    }
     super.disconnectedCallback();
   }
 }

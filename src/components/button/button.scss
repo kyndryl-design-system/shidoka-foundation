@@ -31,6 +31,15 @@
     min-width: initial;
   }
 
+  &.btn-float {
+    box-shadow: var(--kd-elevation-level-3);
+  }
+  &.btn-hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
+  }
+
   &--small {
     padding: 4px 16px;
     height: 32px;
@@ -293,4 +302,8 @@ span {
       margin-left: 8px;
     }
   }
+}
+
+.hidden {
+  display: none; /* Class to hide elements */
 }
