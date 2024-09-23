@@ -55,10 +55,10 @@ $easing: var(--kd-anim-easing-in);
 
 @keyframes animation1 {
   from {
-    border: 1px solid var(--kd-color-border-default);
+    border: none;
   }
   to {
-    border: 2px solid var(--kd-color-border-primary);
+    border: 1px solid var(--kd-color-border-primary);
   }
 }
 
@@ -74,20 +74,24 @@ $easing: var(--kd-anim-easing-in);
 }
 
 @keyframes animation3 {
-  from {
-    opacity: 0.1;
+  0% {
+    width: 100%;
   }
-  to {
-    opacity: 0.9;
+  50% {
+    width: 75%;
+  }
+  100% {
+    width: 100%;
   }
 }
 
 .animation-1 {
   @include motion.animation(
     animation1,
-    var(--kd-anim-duration-med),
+    var(--kd-anim-duration-x-long),
     var(--kd-anim-easing-in)
   );
+  animation-iteration-count: 2;
 }
 
 .animation-2 {
@@ -95,7 +99,8 @@ $easing: var(--kd-anim-easing-in);
 }
 
 .animation-3 {
-  @include motion.animation(animation3, 5s, infinite);
+  @include motion.animation(animation3, 3s, ease-in);
+  animation-iteration-count: 3;
 }
 
 .animation-examples {

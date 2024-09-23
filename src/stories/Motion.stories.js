@@ -144,28 +144,30 @@ export const Animation = {
         .animation-1 {
           @include motion.animation(
             animation1,
-            var(--kd-anim-duration-med),
+            var(--kd-anim-duration-x-long),
             var(--kd-anim-easing-in)
           );
+          animation-iteration-count: 2;
         }
 
         .animation-2 {
-          @include motion.animation(animation2, 600ms);
-        }
-
-        .animation-3 {
           @include motion.animation(
-            animation3,
+            animation2,
             $easing: var(--kd-anim-easing-in-out)
           );
         }
 
+        .animation-3 {
+          @include motion.animation(animation3, 3s, ease-in);
+          animation-iteration-count: 3;
+        }
+
         @keyframes animation1 {
           from {
-            border: 1px solid var(--kd-color-border-default);
+            border: none;
           }
           to {
-            border: 2px solid var(--kd-color-border-primary);
+            border: 1px solid var(--kd-color-border-primary);
           }
         }
 
@@ -181,11 +183,14 @@ export const Animation = {
         }
 
         @keyframes animation3 {
-          from {
-            opacity: 0.1;
+          0% {
+            width: 100%;
           }
-          to {
-            opacity: 0.9;
+          50% {
+            width: 75%;
+          }
+          100% {
+            width: 100%;
           }
         }
       </style>
@@ -197,8 +202,9 @@ export const Animation = {
           </div>
           <br />
           <p>
-            @include motion.animation( animation1, var(--kd-anim-duration-med),
-            var(--kd-anim-easing-in) );
+            @include motion.animation(animation1,
+            var(--kd-anim-duration-x-long), var(--kd-anim-easing-in) );
+            animation-iteration-count: 2;
           </p>
         </div>
         <div class="animation-2">
@@ -210,7 +216,8 @@ export const Animation = {
         <div class="animation-3">
           <div class="kd-type--headline-07">keyframeName, duration, easing</div>
           <br />
-          @include motion.animation(animation3, 5s, infinite);
+          @include motion.animation(animation3, 3s, ease-in);
+          animation-iteration-count: 3;
         </div>
       </div>
     `;

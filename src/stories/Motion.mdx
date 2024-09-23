@@ -96,7 +96,7 @@ $transitionPropsVar: background-color, border;
 
 @keyframes animation1 {
   from {
-    border: 1px solid var(--kd-color-border-default);
+    border: none;
   }
   to {
     border: 2px solid var(--kd-color-border-primary);
@@ -127,7 +127,16 @@ $transitionPropsVar: background-color, border;
 ### CSS Variables
 
 ```css
+@keyframes animation2 {
+  from {
+    color: var(--kd-color-text-primary);
+  }
+  to {
+    color: var(--kd-color-text-success);
+  }
+}
+
 .your-css-selector {
-  animation: animation1 var(--kd-anim-duration-med) var(--kd-anim-easing-in);
+  animation: animation2 var(--kd-anim-duration-med) var(--kd-anim-easing-in);
 }
 ```
