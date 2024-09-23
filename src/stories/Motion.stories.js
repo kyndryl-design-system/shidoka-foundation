@@ -108,3 +108,111 @@ export const Transition = {
     `;
   },
 };
+
+export const Animation = {
+  argTypes: {
+    keyframeName: {
+      options: {},
+      description: 'Name of the keyframe to bind to the selector',
+      table: {
+        type: { summary: 'text' },
+      },
+    },
+    duration: {
+      options: {},
+      description:
+        'How long a transition should take to complete one cycle. Use CSS variables from design guidelines for uniformity or customize as needed.',
+      table: {
+        type: { summary: 'css variable / custom duration' },
+        defaultValue: { summary: 'var(--kd-anim-duration-short)' },
+      },
+    },
+    easing: {
+      options: {},
+      description:
+        'Specifies the speed curve of a motion. Use CSS variables from design guidelines for uniformity or customize as needed.',
+      table: {
+        type: { summary: 'css variable / custom easing' },
+        defaultValue: { summary: 'var(--kd-anim-easing-in)' },
+      },
+    },
+  },
+
+  render: (args) => {
+    return html`
+      <style>
+        .animation-1 {
+          @include motion.animation(
+            animation1,
+            var(--kd-anim-duration-med),
+            var(--kd-anim-easing-in)
+          );
+        }
+
+        .animation-2 {
+          @include motion.animation(animation2, 600ms);
+        }
+
+        .animation-3 {
+          @include motion.animation(
+            animation3,
+            $easing: var(--kd-anim-easing-in-out)
+          );
+        }
+
+        @keyframes animation1 {
+          from {
+            border: 1px solid var(--kd-color-border-default);
+          }
+          to {
+            border: 2px solid var(--kd-color-border-primary);
+          }
+        }
+
+        @keyframes animation2 {
+          from {
+            background: var(--kd-color-background-ui-default);
+            color: var(--kd-color-text-primary);
+          }
+          to {
+            background: var(--kd-color-background-primary);
+            color: var(--kd-color-text-inversed);
+          }
+        }
+
+        @keyframes animation3 {
+          from {
+            opacity: 0.1;
+          }
+          to {
+            opacity: 0.9;
+          }
+        }
+      </style>
+
+      <div class="animation-examples">
+        <div class="animation-1">
+          <div class="kd-type--headline-07">
+            keyframeName, duration , easing
+          </div>
+          <br />
+          <p>
+            @include motion.animation( animation1, var(--kd-anim-duration-med),
+            var(--kd-anim-easing-in) );
+          </p>
+        </div>
+        <div class="animation-2">
+          <div class="kd-type--headline-07">keyframeName, easing</div>
+          <br />
+          @include motion.animation(animation2, $easing:
+          var(--kd-anim-easing-in-out));
+        </div>
+        <div class="animation-3">
+          <div class="kd-type--headline-07">keyframeName, duration, easing</div>
+          <br />
+          @include motion.animation(animation3, 5s, infinite);
+        </div>
+      </div>
+    `;
+  },
+};

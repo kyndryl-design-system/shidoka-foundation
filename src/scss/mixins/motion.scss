@@ -1,4 +1,3 @@
-// WORKING
 @use '../variables/breakpoints.scss';
 
 $all-props-transition: null;
@@ -18,5 +17,12 @@ $all-props-transition: null;
     ) !global;
   }
   transition: $all-props-transition;
-  @warn 'AAAA transition : #{$all-props-transition}';
+}
+
+@mixin animation(
+  $name,
+  $duration: var(--kd-anim-duration-short),
+  $easing: var(--kd-anim-easing-in)
+) {
+  animation: $name $duration $easing;
 }

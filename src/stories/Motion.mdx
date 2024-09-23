@@ -7,17 +7,17 @@ import * as MotionStories from './Motion.stories.js';
 
 [Figma Design Source](https://www.figma.com/file/5TqtPa7KWfhJbQv6ELnbqf/Foundation?node-id=72%3A17784&mode=dev)
 
-## Example
+## Tarnsition Example
 
 <Canvas>
   <Story of={MotionStories.Transition} />
 </Canvas>
 
-### Controls
+### Tarnsition Controls
 
 <Controls of={MotionStories.Transition} />
 
-## Usage
+# Usage
 
 ### SCSS Mixins
 
@@ -59,6 +59,8 @@ $transitionPropsVar: background-color, border;
 }
 ```
 
+#
+
 ## Variables/Tokens
 
 | Duration                  | Value |
@@ -74,3 +76,58 @@ $transitionPropsVar: background-color, border;
 | --kd-anim-easing-in     | ease-in     |
 | --kd-anim-easing-out    | ease-out    |
 | --kd-anim-easing-in-out | ease-in-out |
+
+##
+
+## Other Stories
+
+<Stories />
+
+### Animation Controls
+
+<Controls of={MotionStories.Animation} />
+
+# Usage
+
+### SCSS Mixins
+
+```css
+@use '@kyndryl-design-system/shidoka-foundation/scss/mixins/motion.scss';
+
+@keyframes animation1 {
+  from {
+    border: 1px solid var(--kd-color-border-default);
+  }
+  to {
+    border: 2px solid var(--kd-color-border-primary);
+  }
+}
+
+.animation-1 {
+  @include motion.animation(
+    animation1,
+    var(--kd-anim-duration-med),
+    var(--kd-anim-easing-in)
+  );
+}
+
+.your-css-selector {
+  @include motion.animation(animation1, var(--kd-anim-duration-med));
+}
+
+.your-css-selector {
+  @include motion.animation(animation1);
+}
+
+.your-css-selector {
+  @include motion.animation(animation1, 150ms, cubic-bezier(0.1, 0.7, 1, 0.1));
+}
+```
+
+### CSS Variables
+
+```css
+.your-css-selector {
+  animation: animation1 var(--kd-anim-duration-med) var(--kd-anim-easing-in);
+}
+```

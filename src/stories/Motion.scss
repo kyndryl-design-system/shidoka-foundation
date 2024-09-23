@@ -4,6 +4,8 @@ $transitionPropsVar: border, background-color;
 $duration: var(--kd-anim-duration-long);
 $easing: var(--kd-anim-easing-in);
 
+//////// Transition ////////
+
 .transition-1 {
   @include motion.transition($transitionPropsVar, $duration, $easing);
 
@@ -38,6 +40,65 @@ $easing: var(--kd-anim-easing-in);
 }
 
 .transition-examples {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  & > div {
+    background-color: var(--kd-color-background-ui-soft);
+    padding: 16px;
+    border-radius: 8px;
+  }
+}
+
+//////// Animation ////////
+
+@keyframes animation1 {
+  from {
+    border: 1px solid var(--kd-color-border-default);
+  }
+  to {
+    border: 2px solid var(--kd-color-border-primary);
+  }
+}
+
+@keyframes animation2 {
+  from {
+    background: var(--kd-color-background-ui-default);
+    color: var(--kd-color-text-primary);
+  }
+  to {
+    background: var(--kd-color-background-primary);
+    color: var(--kd-color-text-inversed);
+  }
+}
+
+@keyframes animation3 {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 0.9;
+  }
+}
+
+.animation-1 {
+  @include motion.animation(
+    animation1,
+    var(--kd-anim-duration-med),
+    var(--kd-anim-easing-in)
+  );
+}
+
+.animation-2 {
+  @include motion.animation(animation2, $easing: var(--kd-anim-easing-in-out));
+}
+
+.animation-3 {
+  @include motion.animation(animation3, 5s, infinite);
+}
+
+.animation-examples {
   display: flex;
   flex-direction: column;
   gap: 32px;
