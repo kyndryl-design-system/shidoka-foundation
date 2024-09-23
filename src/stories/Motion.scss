@@ -1,0 +1,116 @@
+@use '../scss/mixins/motion.scss';
+
+$transitionPropsVar: border, background-color;
+$duration: var(--kd-anim-duration-long);
+$easing: var(--kd-anim-easing-in);
+
+//////// Transition ////////
+
+.transition-1 {
+  @include motion.transition($transitionPropsVar, $duration, $easing);
+
+  &:hover {
+    border: 2px solid var(--kd-color-border-default);
+    background-color: var(--kd-color-background-ui-subtle);
+  }
+}
+
+.transition-2 {
+  @include motion.transition(color, 600ms);
+
+  &:hover {
+    color: red;
+  }
+}
+
+.transition-3 {
+  @include motion.transition(transform);
+
+  &:hover {
+    transform: scaleY(1.2);
+  }
+}
+
+.transition-4 {
+  @include motion.transition(opacity, $easing: var(--kd-anim-easing-in-out));
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.transition-examples {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  & > div {
+    background-color: var(--kd-color-background-ui-soft);
+    padding: 16px;
+    border-radius: 8px;
+  }
+}
+
+//////// Animation ////////
+
+@keyframes animation1 {
+  from {
+    border: none;
+  }
+  to {
+    border: 1px solid var(--kd-color-border-primary);
+  }
+}
+
+@keyframes animation2 {
+  from {
+    background: var(--kd-color-background-ui-default);
+    color: var(--kd-color-text-primary);
+  }
+  to {
+    background: var(--kd-color-background-primary);
+    color: var(--kd-color-text-inversed);
+  }
+}
+
+@keyframes animation3 {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 75%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.animation-1 {
+  @include motion.animation(
+    animation1,
+    var(--kd-anim-duration-x-long),
+    var(--kd-anim-easing-in)
+  );
+  animation-iteration-count: 2;
+}
+
+.animation-2 {
+  @include motion.animation(animation2, $easing: var(--kd-anim-easing-in-out));
+}
+
+.animation-3 {
+  @include motion.animation(animation3, 3s, ease-in);
+  animation-iteration-count: 3;
+}
+
+.animation-examples {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  & > div {
+    background-color: var(--kd-color-background-ui-soft);
+    padding: 16px;
+    border-radius: 8px;
+  }
+}
