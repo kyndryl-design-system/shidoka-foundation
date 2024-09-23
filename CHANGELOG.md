@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.8.2...v1.9.0) (2024-09-23)
+
+
+### Features
+
+* **floatingButton:** added floating button component ([#48](https://github.com/kyndryl-design-system/shidoka-foundation/issues/48)) ([244ba48](https://github.com/kyndryl-design-system/shidoka-foundation/commit/244ba48911ef0b7db1a839080d7547e32a2d925c))
+
 ## [1.8.2](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.8.1...v1.8.2) (2024-09-17)
 
 
