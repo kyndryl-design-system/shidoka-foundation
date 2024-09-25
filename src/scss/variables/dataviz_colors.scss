@@ -1,0 +1,247 @@
+/* BEGIN DATA VIZ PALETTE COLORS */
+:root {
+  $colors: (
+    sea: (
+      100: #004765,
+      90: #155b7f,
+      80: #236f96,
+      70: #3082af,
+      60: #3a94c6,
+      50: #48a5da,
+      40: #64b5e1,
+      30: #7ec4e9,
+      20: #95d3f0,
+      10: #ace1f8,
+    ),
+    jade: (
+      100: #004a4f,
+      90: #00615f,
+      80: #00776b,
+      70: #008d72,
+      60: #00a275,
+      50: #25b574,
+      40: #49c588,
+      30: #66d39f,
+      20: #81e1b5,
+      10: #9beeca,
+    ),
+    amber: (
+      100: #643000,
+      90: #813f01,
+      80: #9e4d02,
+      70: #bc5802,
+      60: #d86301,
+      50: #f26e01,
+      40: #ff850a,
+      30: #ffa329,
+      20: #ffbc48,
+      10: #ffd46a,
+    ),
+    blush: (
+      100: #781256,
+      90: #922365,
+      80: #ab3272,
+      70: #c4407e,
+      60: #dc4b89,
+      50: #ee5d97,
+      40: #f378b1,
+      30: #f493c5,
+      20: #f3acd6,
+      10: #f2c4e2,
+    ),
+    lilac: (
+      100: #641195,
+      90: #7431a4,
+      80: #8548b4,
+      70: #945cc2,
+      60: #a36fd0,
+      50: #b181db,
+      40: #bd93e5,
+      30: #c9a5ed,
+      20: #d5b5f6,
+      10: #e2c6ff,
+    ),
+  );
+
+  /* Generating tokens based on the values defined in colors */
+  @each $colorname, $color in $colors {
+    @each $key, $value in $color {
+      $keyname: '--kd-color-data-' + $colorname + '-' + $key;
+      #{$keyname}: #{$value};
+    }
+  }
+
+  /* Neutral Color (Light Mode )*/
+
+  --kd-color-data-text: var(--kd-color-darkstone-80);
+  --kd-color-data-background: var(--kd-color-neutral-white);
+
+  --kd-color-data-gray-10: var(--kd-color-warmgray-10);
+  --kd-color-data-gray-20: var(--kd-color-warmgray-20);
+  --kd-color-data-gray-30: var(--kd-color-warmgray-30);
+  --kd-color-data-gray-40: var(--kd-color-warmgray-40);
+  --kd-color-data-gray-50: var(--kd-color-warmgray-50);
+  --kd-color-data-gray-60: var(--kd-color-warmgray-60);
+  --kd-color-data-gray-70: var(--kd-color-warmgray-70);
+  --kd-color-data-gray-80: var(--kd-color-warmgray-80);
+  --kd-color-data-gray-90: var(--kd-color-warmgray-90);
+  --kd-color-data-gray-100: var(--kd-color-warmgray-100);
+
+  /* Categorical Color (Light Mode )*/
+
+  --kd-color-data-cat-01-01: var(--kd-color-data-sea-40);
+  --kd-color-data-cat-01-02: var(--kd-color-data-jade-20);
+  --kd-color-data-cat-01-03: var(--kd-color-data-amber-40);
+  --kd-color-data-cat-01-04: var(--kd-color-data-blush-20);
+  --kd-color-data-cat-01-05: var(--kd-color-data-lilac-40);
+  --kd-color-data-cat-01-06: var(--kd-color-data-sea-20);
+  --kd-color-data-cat-01-07: var(--kd-color-data-jade-40);
+  --kd-color-data-cat-01-08: var(--kd-color-data-amber-20);
+  --kd-color-data-cat-01-09: var(--kd-color-data-blush-40);
+  --kd-color-data-cat-01-10: var(--kd-color-data-lilac-20);
+
+  /* Single Color (Light Mode )*/
+
+  --kd-color-data-single: var(--kd-color-data-sea-40);
+
+  /* Highight Color (Light Mode )*/
+
+  --kd-color-data-primary: var(--kd-color-data-sea-40);
+  --kd-color-data-secondary: var(--kd-color-warmgray-30);
+
+  /* Sequential 01 - Sea Color (Light Mode )*/
+
+  --kd-color-data-seq-01-10: var(--kd-color-data-sea-10);
+  --kd-color-data-seq-01-20: var(--kd-color-data-sea-20);
+  --kd-color-data-seq-01-30: var(--kd-color-data-sea-30);
+  --kd-color-data-seq-01-40: var(--kd-color-data-sea-40);
+  --kd-color-data-seq-01-50: var(--kd-color-data-sea-50);
+  --kd-color-data-seq-01-60: var(--kd-color-data-sea-60);
+  --kd-color-data-seq-01-70: var(--kd-color-data-sea-70);
+  --kd-color-data-seq-01-80: var(--kd-color-data-sea-80);
+  --kd-color-data-seq-01-90: var(--kd-color-data-sea-90);
+  --kd-color-data-seq-01-100: var(--kd-color-data-sea-100);
+
+  /* Sequential 02 - Jade Color (Light Mode )*/
+
+  --kd-color-data-seq-02-10: var(--kd-color-data-jade-10);
+  --kd-color-data-seq-02-20: var(--kd-color-data-jade-20);
+  --kd-color-data-seq-02-30: var(--kd-color-data-jade-30);
+  --kd-color-data-seq-02-40: var(--kd-color-data-jade-40);
+  --kd-color-data-seq-02-50: var(--kd-color-data-jade-50);
+  --kd-color-data-seq-02-60: var(--kd-color-data-jade-60);
+  --kd-color-data-seq-02-70: var(--kd-color-data-jade-70);
+  --kd-color-data-seq-02-80: var(--kd-color-data-jade-80);
+  --kd-color-data-seq-02-90: var(--kd-color-data-jade-90);
+  --kd-color-data-seq-02-100: var(--kd-color-data-jade-100);
+
+  /* Sequential 03 - Amber Color (Light Mode )*/
+
+  --kd-color-data-seq-03-10: var(--kd-color-data-amber-10);
+  --kd-color-data-seq-03-20: var(--kd-color-data-amber-20);
+  --kd-color-data-seq-03-30: var(--kd-color-data-amber-30);
+  --kd-color-data-seq-03-40: var(--kd-color-data-amber-40);
+  --kd-color-data-seq-03-50: var(--kd-color-data-amber-50);
+  --kd-color-data-seq-03-60: var(--kd-color-data-amber-60);
+  --kd-color-data-seq-03-70: var(--kd-color-data-amber-70);
+  --kd-color-data-seq-03-80: var(--kd-color-data-amber-80);
+  --kd-color-data-seq-03-90: var(--kd-color-data-amber-90);
+  --kd-color-data-seq-03-100: var(--kd-color-data-amber-100);
+
+  /* Sequential 04-Blush Color (Light Mode )*/
+
+  --kd-color-data-seq-04-10: var(--kd-color-data-blush-10);
+  --kd-color-data-seq-04-20: var(--kd-color-data-blush-20);
+  --kd-color-data-seq-04-30: var(--kd-color-data-blush-30);
+  --kd-color-data-seq-04-40: var(--kd-color-data-blush-40);
+  --kd-color-data-seq-04-50: var(--kd-color-data-blush-50);
+  --kd-color-data-seq-04-60: var(--kd-color-data-blush-60);
+  --kd-color-data-seq-04-70: var(--kd-color-data-blush-70);
+  --kd-color-data-seq-04-80: var(--kd-color-data-blush-80);
+  --kd-color-data-seq-04-90: var(--kd-color-data-blush-90);
+  --kd-color-data-seq-04-100: var(--kd-color-data-blush-100);
+
+  /* Sequential 05-Lilac Color (Light Mode )*/
+
+  --kd-color-data-seq-05-10: var(--kd-color-data-lilac-10);
+  --kd-color-data-seq-05-20: var(--kd-color-data-lilac-20);
+  --kd-color-data-seq-05-30: var(--kd-color-data-lilac-30);
+  --kd-color-data-seq-05-40: var(--kd-color-data-lilac-40);
+  --kd-color-data-seq-05-50: var(--kd-color-data-lilac-50);
+  --kd-color-data-seq-05-60: var(--kd-color-data-lilac-60);
+  --kd-color-data-seq-05-70: var(--kd-color-data-lilac-70);
+  --kd-color-data-seq-05-80: var(--kd-color-data-lilac-80);
+  --kd-color-data-seq-05-90: var(--kd-color-data-lilac-90);
+  --kd-color-data-seq-05-100: var(--kd-color-data-lilac-100);
+
+  /* Divergent 01 Color (Light Mode )*/
+
+  --kd-color-data-div-01-pos-100: var(--kd-color-data-sea-100);
+  --kd-color-data-div-01-pos-90: var(--kd-color-data-sea-90);
+  --kd-color-data-div-01-pos-80: var(--kd-color-data-sea-80);
+  --kd-color-data-div-01-pos-70: var(--kd-color-data-sea-70);
+  --kd-color-data-div-01-pos-60: var(--kd-color-data-sea-60);
+  --kd-color-data-div-01-pos-50: var(--kd-color-data-sea-50);
+  --kd-color-data-div-01-pos-40: var(--kd-color-data-sea-40);
+  --kd-color-data-div-01-pos-30: var(--kd-color-data-sea-30);
+  --kd-color-data-div-01-pos-20: var(--kd-color-data-sea-20);
+  --kd-color-data-div-01-pos-10: var(--kd-color-data-sea-10);
+
+  --kd-color-data-div-01-neutral: #deffef; //HEX value as there is no color pallete for Data Viz yet
+
+  --kd-color-data-div-01-neg-10: var(--kd-color-data-amber-10);
+  --kd-color-data-div-01-neg-20: var(--kd-color-data-amber-20);
+  --kd-color-data-div-01-neg-30: var(--kd-color-data-amber-30);
+  --kd-color-data-div-01-neg-40: var(--kd-color-data-amber-40);
+  --kd-color-data-div-01-neg-50: var(--kd-color-data-amber-50);
+  --kd-color-data-div-01-neg-60: var(--kd-color-data-amber-60);
+  --kd-color-data-div-01-neg-70: var(--kd-color-data-amber-70);
+  --kd-color-data-div-01-neg-80: var(--kd-color-data-amber-80);
+  --kd-color-data-div-01-neg-90: var(--kd-color-data-amber-90);
+  --kd-color-data-div-01-neg-100: var(--kd-color-data-amber-100);
+
+  /* Divergent 02 Color (Light Mode )*/
+
+  --kd-color-data-div-02-pos-100: var(--kd-color-data-jade-100);
+  --kd-color-data-div-02-pos-90: var(--kd-color-data-jade-90);
+  --kd-color-data-div-02-pos-80: var(--kd-color-data-jade-80);
+  --kd-color-data-div-02-pos-70: var(--kd-color-data-jade-70);
+  --kd-color-data-div-02-pos-60: var(--kd-color-data-jade-60);
+  --kd-color-data-div-02-pos-50: var(--kd-color-data-jade-50);
+  --kd-color-data-div-02-pos-40: var(--kd-color-data-jade-40);
+  --kd-color-data-div-02-pos-30: var(--kd-color-data-jade-30);
+  --kd-color-data-div-02-pos-20: var(--kd-color-data-jade-20);
+  --kd-color-data-div-02-pos-10: var(--kd-color-data-jade-10);
+
+  --kd-color-data-div-02-neutral: #ebf8fe; //HEX value as there is no color pallete for Data Viz yet
+
+  --kd-color-data-div-02-neg-10: var(--kd-color-data-blush-10);
+  --kd-color-data-div-02-neg-20: var(--kd-color-data-blush-20);
+  --kd-color-data-div-02-neg-30: var(--kd-color-data-blush-30);
+  --kd-color-data-div-02-neg-40: var(--kd-color-data-blush-40);
+  --kd-color-data-div-02-neg-50: var(--kd-color-data-blush-50);
+  --kd-color-data-div-02-neg-60: var(--kd-color-data-blush-60);
+  --kd-color-data-div-02-neg-70: var(--kd-color-data-blush-70);
+  --kd-color-data-div-02-neg-80: var(--kd-color-data-blush-80);
+  --kd-color-data-div-02-neg-90: var(--kd-color-data-blush-90);
+  --kd-color-data-div-02-neg-100: var(--kd-color-data-blush-100);
+
+  /* RAG 8 Color (Light Mode )*/
+
+  --kd-color-data-status-success: var(--kd-color-success);
+  --kd-color-data-status-success-light: var(--kd-color-success-light);
+  --kd-color-data-status-error: var(--kd-color-error);
+  --kd-color-data-status-error-light: var(--kd-color-error-light);
+  --kd-color-data-status-warning: var(--kd-color-warning);
+  --kd-color-data-status-warning-light: var(--kd-color-warning-light);
+  --kd-color-data-status-informational: var(--kd-color-informational);
+  --kd-color-data-status-informational-light: var(
+    --kd-color-informational-light
+  );
+
+  /* RAG 3 Color (Light Mode )*/
+
+  --kd-color-data-status-success: var(--kd-color-success);
+  --kd-color-data-status-warning: var(--kd-color-warning);
+  --kd-color-data-status-error: var(--kd-color-error);
+}
