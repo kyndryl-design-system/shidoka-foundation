@@ -115,6 +115,31 @@
     },
     {
       "kind": "javascript-module",
+      "path": "src/common/defs/breakpoints.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "BREAKPOINTS",
+          "type": {
+            "text": "object"
+          },
+          "default": "{\n  SM: 'sm',\n  MD: 'md',\n  LG: 'lg',\n  XL: 'xl',\n  MAX: 'max',\n}",
+          "description": "Breakpoint values defined in variable: --kd-current-breakpoint\nUsed for conditional logic and/or rendering in component JS\nby matching the current breakpoint to one of these values."
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "BREAKPOINTS",
+          "declaration": {
+            "name": "BREAKPOINTS",
+            "module": "src/common/defs/breakpoints.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/common/helpers/breakpoints.ts",
       "declarations": [
         {
@@ -213,31 +238,6 @@
           "declaration": {
             "name": "createOptionsArray",
             "module": "src/common/helpers/storybook.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/common/defs/breakpoints.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "BREAKPOINTS",
-          "type": {
-            "text": "object"
-          },
-          "default": "{\n  SM: 'sm',\n  MD: 'md',\n  LG: 'lg',\n  XL: 'xl',\n  MAX: 'max',\n}",
-          "description": "Breakpoint values defined in variable: --kd-current-breakpoint\nUsed for conditional logic and/or rendering in component JS\nby matching the current breakpoint to one of these values."
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "BREAKPOINTS",
-          "declaration": {
-            "name": "BREAKPOINTS",
-            "module": "src/common/defs/breakpoints.ts"
           }
         }
       ]
