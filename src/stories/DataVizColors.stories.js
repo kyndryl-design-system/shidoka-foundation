@@ -686,24 +686,6 @@ export const Palette = {
               style="background-color: var(--kd-color-data-lilac-10)"
             ></td>
           </tr>
-        </tbody>
-      </table>
-    `;
-  },
-};
-
-export const Neutral = {
-  render: () => {
-    return html`
-      <table>
-        <thead>
-          <tr>
-            <th>Variable Name</th>
-            <th>Hex value</th>
-            <th>Preview</th>
-          </tr>
-        </thead>
-        <tbody>
           <tr>
             <td>--kd-color-data-text</td>
             <td>
