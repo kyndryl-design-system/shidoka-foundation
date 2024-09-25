@@ -1,7 +1,7 @@
 import { html } from 'lit';
 
 export default {
-  title: 'Foundation/Colors',
+  title: 'Foundation/Colors/Data Viz',
   decorators: [
     (story) =>
       html`
@@ -43,1500 +43,647 @@ export const Palette = {
         </thead>
         <tbody>
           <tr>
-            <td>--kd-color-spruce-100</td>
+            <td>--kd-color-data-sea-100</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-spruce-100'
+                '--kd-color-data-sea-100'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-spruce-100)"
+              style="background-color: var(--kd-color-data-sea-100)"
             ></td>
           </tr>
           <tr>
-            <td>--kd-color-spruce-90</td>
+            <td>--kd-color-data-sea-90</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-spruce-90'
+                '--kd-color-data-sea-90'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-spruce-90)"
+              style="background-color: var(--kd-color-data-sea-90)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-spruce-80</td>
+            <td>--kd-color-data-sea-80</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-spruce-80'
+                '--kd-color-data-sea-80'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-spruce-80)"
+              style="background-color: var(--kd-color-data-sea-80)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-spruce-70</td>
+            <td>--kd-color-data-sea-70</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-spruce-70'
+                '--kd-color-data-sea-70'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-spruce-70)"
+              style="background-color: var(--kd-color-data-sea-70)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-spruce-60</td>
+            <td>--kd-color-data-sea-60</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-spruce-60'
+                '--kd-color-data-sea-60'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-spruce-60)"
+              style="background-color: var(--kd-color-data-sea-60)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-spruce-50</td>
+            <td>--kd-color-data-sea-50</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-spruce-50'
+                '--kd-color-data-sea-50'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-spruce-50)"
+              style="background-color: var(--kd-color-data-sea-50)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-spruce-40</td>
+            <td>--kd-color-data-sea-40</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-spruce-40'
+                '--kd-color-data-sea-40'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-spruce-40)"
+              style="background-color: var(--kd-color-data-sea-40)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-spruce-30</td>
+            <td>--kd-color-data-sea-30</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-spruce-30'
+                '--kd-color-data-sea-30'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-spruce-30)"
+              style="background-color: var(--kd-color-data-sea-30)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-spruce-20</td>
+            <td>--kd-color-data-sea-20</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-spruce-20'
+                '--kd-color-data-sea-20'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-spruce-20)"
+              style="background-color: var(--kd-color-data-sea-20)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-spruce-10</td>
+            <td>--kd-color-data-sea-10</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-spruce-10'
+                '--kd-color-data-sea-10'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-spruce-10)"
+              style="background-color: var(--kd-color-data-sea-10)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-skye-100</td>
+            <td>--kd-color-data-jade-100</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-skye-100'
+                '--kd-color-data-jade-100'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-skye-100)"
+              style="background-color: var(--kd-color-data-jade-100)"
             ></td>
           </tr>
-
-          <tr>
-            <td>--kd-color-skye-90</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-skye-90'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-skye-90)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-skye-80</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-skye-80'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-skye-80)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-skye-70</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-skye-70'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-skye-70)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-skye-60</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-skye-60'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-skye-60)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-skye-50</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-skye-50'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-skye-50)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-skye-40</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-skye-40'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-skye-40)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-skye-30</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-skye-30'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-skye-30)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-skye-20</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-skye-20'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-skye-20)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-skye-10</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-skye-10'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-skye-10)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-deepforest-100</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-deepforest-100'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-deepforest-100)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-deepforest-90</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-deepforest-90'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-deepforest-90)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-deepforest-80</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-deepforest-80'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-deepforest-80)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-deepforest-70</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-deepforest-70'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-deepforest-70)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-deepforest-60</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-deepforest-60'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-deepforest-60)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-deepforest-50</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-deepforest-50'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-deepforest-50)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-deepforest-40</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-deepforest-40'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-deepforest-40)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-deepforest-30</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-deepforest-30'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-deepforest-30)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-deepforest-20</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-deepforest-20'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-deepforest-20)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-deepforest-10</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-deepforest-10'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-deepforest-10)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-springgreen-100</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-springgreen-100'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-springgreen-100)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-springgreen-90</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-springgreen-90'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-springgreen-90)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-springgreen-80</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-springgreen-80'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-springgreen-80)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-springgreen-70</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-springgreen-70'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-springgreen-70)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-springgreen-60</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-springgreen-60'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-springgreen-60)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-springgreen-50</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-springgreen-50'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-springgreen-50)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-springgreen-40</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-springgreen-40'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-springgreen-40)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-springgreen-30</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-springgreen-30'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-springgreen-30)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-springgreen-20</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-springgreen-20'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-springgreen-20)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-springgreen-10</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-springgreen-10'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-springgreen-10)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-warmred-100</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-warmred-100'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-warmred-100)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-warmred-90</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-warmred-90'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-warmred-90)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-warmred-80</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-warmred-80'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-warmred-80)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-warmred-70</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-warmred-70'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-warmred-70)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-warmred-60</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-warmred-60'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-warmred-60)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-warmred-50</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-warmred-50'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-warmred-50)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-warmred-40</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-warmred-40'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-warmred-40)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-warmred-30</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-warmred-30'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-warmred-30)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-warmred-20</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-warmred-20'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-warmred-20)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-warmred-10</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-warmred-10'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-warmred-10)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-earth-100</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-earth-100'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-earth-100)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-earth-90</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-earth-90'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-earth-90)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-earth-80</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-earth-80'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-earth-80)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-earth-70</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-earth-70'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-earth-70)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-earth-60</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-earth-60'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-earth-60)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-earth-50</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-earth-50'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-earth-50)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-earth-40</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-earth-40'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-earth-40)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-earth-30</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-earth-30'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-earth-30)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-earth-20</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-earth-20'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-earth-20)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-earth-10</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-earth-10'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-earth-10)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-cloud-100</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-cloud-100'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-cloud-100)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-cloud-90</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-cloud-90'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-cloud-90)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-cloud-80</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-cloud-80'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-cloud-80)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-cloud-70</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-cloud-70'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-cloud-70)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-cloud-60</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-cloud-60'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-cloud-60)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-cloud-50</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-cloud-50'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-cloud-50)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-cloud-40</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-cloud-40'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-cloud-40)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-cloud-30</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-cloud-30'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-cloud-30)"
-            ></td>
-          </tr>
-
           <tr>
-            <td>--kd-color-cloud-20</td>
+            <td>--kd-color-data-jade-90</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-cloud-20'
+                '--kd-color-data-jade-90'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-cloud-20)"
+              style="background-color: var(--kd-color-data-jade-90)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-cloud-10</td>
+            <td>--kd-color-data-jade-80</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-cloud-10'
+                '--kd-color-data-jade-80'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-cloud-10)"
+              style="background-color: var(--kd-color-data-jade-80)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-darkstone-100</td>
+            <td>--kd-color-data-jade-70</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-darkstone-100'
+                '--kd-color-data-jade-70'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-darkstone-100)"
+              style="background-color: var(--kd-color-data-jade-70)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-darkstone-90</td>
+            <td>--kd-color-data-jade-60</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-darkstone-90'
+                '--kd-color-data-jade-60'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-darkstone-90)"
+              style="background-color: var(--kd-color-data-jade-60)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-darkstone-80</td>
+            <td>--kd-color-data-jade-50</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-darkstone-80'
+                '--kd-color-data-jade-50'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-darkstone-80)"
+              style="background-color: var(--kd-color-data-jade-50)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-darkstone-70</td>
+            <td>--kd-color-data-jade-40</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-darkstone-70'
+                '--kd-color-data-jade-40'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-darkstone-70)"
+              style="background-color: var(--kd-color-data-jade-40)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-darkstone-60</td>
+            <td>--kd-color-data-jade-30</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-darkstone-60'
+                '--kd-color-data-jade-30'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-darkstone-60)"
+              style="background-color: var(--kd-color-data-jade-30)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-darkstone-50</td>
+            <td>--kd-color-data-jade-20</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-darkstone-50'
+                '--kd-color-data-jade-20'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-darkstone-50)"
+              style="background-color: var(--kd-color-data-jade-20)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-darkstone-40</td>
+            <td>--kd-color-data-jade-10</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-darkstone-40'
+                '--kd-color-data-jade-10'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-darkstone-40)"
+              style="background-color: var(--kd-color-data-jade-10)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-darkstone-30</td>
+            <td>--kd-color-data-amber-100</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-darkstone-30'
+                '--kd-color-data-amber-100'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-darkstone-30)"
+              style="background-color: var(--kd-color-data-amber-100)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-darkstone-20</td>
+            <td>--kd-color-data-amber-90</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-darkstone-20'
+                '--kd-color-data-amber-90'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-darkstone-20)"
+              style="background-color: var(--kd-color-data-amber-90)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-darkstone-10</td>
+            <td>--kd-color-data-amber-80</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-darkstone-10'
+                '--kd-color-data-amber-80'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-darkstone-10)"
+              style="background-color: var(--kd-color-data-amber-80)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-warmgray-100</td>
+            <td>--kd-color-data-amber-70</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-warmgray-100'
+                '--kd-color-data-amber-70'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-warmgray-100)"
+              style="background-color: var(--kd-color-data-amber-70)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-warmgray-90</td>
+            <td>--kd-color-data-amber-60</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-warmgray-90'
+                '--kd-color-data-amber-60'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-warmgray-90)"
+              style="background-color: var(--kd-color-data-amber-60)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-warmgray-80</td>
+            <td>--kd-color-data-amber-50</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-warmgray-80'
+                '--kd-color-data-amber-50'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-warmgray-80)"
+              style="background-color: var(--kd-color-data-amber-50)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-warmgray-70</td>
+            <td>--kd-color-data-amber-40</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-warmgray-70'
+                '--kd-color-data-amber-40'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-warmgray-70)"
+              style="background-color: var(--kd-color-data-amber-40)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-warmgray-60</td>
+            <td>--kd-color-data-amber-30</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-warmgray-60'
+                '--kd-color-data-amber-30'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-warmgray-60)"
+              style="background-color: var(--kd-color-data-amber-30)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-warmgray-50</td>
+            <td>--kd-color-data-amber-20</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-warmgray-50'
+                '--kd-color-data-amber-20'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-warmgray-50)"
+              style="background-color: var(--kd-color-data-amber-20)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-warmgray-40</td>
+            <td>--kd-color-data-amber-10</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-warmgray-40'
+                '--kd-color-data-amber-10'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-warmgray-40)"
+              style="background-color: var(--kd-color-data-amber-10)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-warmgray-30</td>
+            <td>--kd-color-data-blush-100</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-warmgray-30'
+                '--kd-color-data-blush-100'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-warmgray-30)"
+              style="background-color: var(--kd-color-data-blush-100)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-warmgray-20</td>
+            <td>--kd-color-data-blush-90</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-warmgray-20'
+                '--kd-color-data-blush-90'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-warmgray-20)"
+              style="background-color: var(--kd-color-data-blush-90)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-warmgray-10</td>
+            <td>--kd-color-data-blush-80</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-warmgray-10'
+                '--kd-color-data-blush-80'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-warmgray-10)"
+              style="background-color: var(--kd-color-data-blush-80)"
             ></td>
           </tr>
 
-          <tr>
-            <td>--kd-color-coolgray-100</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-coolgray-100'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-coolgray-100)"
-            ></td>
-          </tr>
-          <tr>
-            <td>--kd-color-coolgray-90</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-coolgray-90'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-coolgray-90)"
-            ></td>
-          </tr>
-          <tr>
-            <td>--kd-color-coolgray-80</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-coolgray-80'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-coolgray-80)"
-            ></td>
-          </tr>
-          <tr>
-            <td>--kd-color-coolgray-70</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-coolgray-70'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-coolgray-70)"
-            ></td>
-          </tr>
-          <tr>
-            <td>--kd-color-coolgray-60</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-coolgray-60'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-coolgray-60)"
-            ></td>
-          </tr>
-          <tr>
-            <td>--kd-color-coolgray-50</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-coolgray-50'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-coolgray-50)"
-            ></td>
-          </tr>
-          <tr>
-            <td>--kd-color-coolgray-40</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-coolgray-40'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-coolgray-40)"
-            ></td>
-          </tr>
-          <tr>
-            <td>--kd-color-coolgray-30</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-coolgray-30'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-coolgray-30)"
-            ></td>
-          </tr>
           <tr>
-            <td>--kd-color-coolgray-20</td>
+            <td>--kd-color-data-blush-70</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-coolgray-20'
+                '--kd-color-data-blush-70'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-coolgray-20)"
+              style="background-color: var(--kd-color-data-blush-70)"
             ></td>
           </tr>
 
-          <tr>
-            <td>--kd-color-coolgray-10</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-coolgray-10'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-coolgray-10)"
-            ></td>
-          </tr>
           <tr>
-            <td>--kd-color-neutral-white</td>
+            <td>--kd-color-data-blush-60</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-neutral-white'
+                '--kd-color-data-blush-60'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-neutral-white)"
+              style="background-color: var(--kd-color-data-blush-60)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-success</td>
+            <td>--kd-color-data-blush-50</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-success'
+                '--kd-color-data-blush-50'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-success)"
+              style="background-color: var(--kd-color-data-blush-50)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-success-light</td>
+            <td>--kd-color-data-blush-40</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-success-light'
+                '--kd-color-data-blush-40'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-success-light)"
+              style="background-color: var(--kd-color-data-blush-40)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-error</td>
+            <td>--kd-color-data-blush-30</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-error'
+                '--kd-color-data-blush-30'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-error)"
+              style="background-color: var(--kd-color-data-blush-30)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-error-light</td>
+            <td>--kd-color-data-blush-20</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-error-light'
+                '--kd-color-data-blush-20'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-error-light)"
+              style="background-color: var(--kd-color-data-blush-20)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-warning</td>
+            <td>--kd-color-data-blush-10</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-warning'
+                '--kd-color-data-blush-10'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-warning)"
+              style="background-color: var(--kd-color-data-blush-10)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-warning-light</td>
+            <td>--kd-color-data-lilac-100</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-warning-light'
+                '--kd-color-data-lilac-100'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-warning-light)"
+              style="background-color: var(--kd-color-data-lilac-100)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-informational</td>
+            <td>--kd-color-data-lilac-90</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-informational'
+                '--kd-color-data-lilac-90'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-informational)"
+              style="background-color: var(--kd-color-data-lilac-90)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-informational-light</td>
+            <td>--kd-color-data-lilac-80</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-informational-light'
+                '--kd-color-data-lilac-80'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-informational-light)"
+              style="background-color: var(--kd-color-data-lilac-80)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-neutral-white</td>
+            <td>--kd-color-data-lilac-70</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-neutral-white'
+                '--kd-color-data-lilac-70'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-neutral-white)"
+              style="background-color: var(--kd-color-data-lilac-70)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-neutral-black</td>
+            <td>--kd-color-data-lilac-60</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-neutral-black'
+                '--kd-color-data-lilac-60'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-neutral-black)"
+              style="background-color: var(--kd-color-data-lilac-60)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-neutral-webgray</td>
+            <td>--kd-color-data-lilac-50</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-neutral-webgray'
+                '--kd-color-data-lilac-50'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-neutral-webgray)"
+              style="background-color: var(--kd-color-data-lilac-50)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-transparent</td>
+            <td>--kd-color-data-lilac-40</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-transparent'
+                '--kd-color-data-lilac-40'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-transparent)"
+              style="background-color: var(--kd-color-data-lilac-40)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-light-opacity-50</td>
+            <td>--kd-color-data-lilac-30</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-light-opacity-50'
+                '--kd-color-data-lilac-30'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-light-opacity-50)"
+              style="background-color: var(--kd-color-data-lilac-30)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-dark-opacity-50</td>
+            <td>--kd-color-data-lilac-20</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-dark-opacity-50'
+                '--kd-color-data-lilac-20'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-dark-opacity-50)"
+              style="background-color: var(--kd-color-data-lilac-20)"
             ></td>
           </tr>
 
           <tr>
-            <td>--kd-color-dark-opacity-40</td>
+            <td>--kd-color-data-lilac-10</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-dark-opacity-40'
+                '--kd-color-data-lilac-10'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-dark-opacity-40)"
+              style="background-color: var(--kd-color-data-lilac-10)"
             ></td>
           </tr>
         </tbody>
@@ -1545,7 +692,7 @@ export const Palette = {
   },
 };
 
-export const Text = {
+export const Neutral = {
   render: () => {
     return html`
       <table>
@@ -1558,249 +705,147 @@ export const Text = {
         </thead>
         <tbody>
           <tr>
-            <td>--kd-color-text-primary</td>
+            <td>--kd-color-data-text</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-text-primary'
+                '--kd-color-data-text'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-text-primary)"
+              style="background-color: var(--kd-color-data-text)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-text-primary-hover</td>
+            <td>--kd-color-data-background</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-text-primary-hover'
+                '--kd-color-data-background'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-text-primary-hover)"
+              style="background-color: var(--kd-color-data-background)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-text-primary-pressed</td>
+            <td>--kd-color-data-gray-10</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-text-primary-pressed'
+                '--kd-color-data-gray-10'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-text-primary-pressed)"
+              style="background-color: var(--kd-color-data-gray-10)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-text-secondary</td>
+            <td>--kd-color-data-gray-20</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-text-secondary'
+                '--kd-color-data-gray-20'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-text-secondary)"
+              style="background-color: var(--kd-color-data-gray-20)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-text-tertiary</td>
+            <td>--kd-color-data-gray-30</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-text-tertiary'
+                '--kd-color-data-gray-30'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-text-tertiary)"
+              style="background-color: var(--kd-color-data-gray-30)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-text-tertiary-bold</td>
+            <td>--kd-color-data-gray-40</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-text-tertiary-bold'
+                '--kd-color-data-gray-40'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-text-tertiary-bold)"
+              style="background-color: var(--kd-color-data-gray-40)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-text-eyebrow</td>
+            <td>--kd-color-data-gray-50</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-text-eyebrow'
+                '--kd-color-data-gray-50'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-text-eyebrow)"
+              style="background-color: var(--kd-color-data-gray-50)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-text-brand</td>
+            <td>--kd-color-data-gray-60</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-text-brand'
+                '--kd-color-data-gray-60'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-text-brand)"
+              style="background-color: var(--kd-color-data-gray-60)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-text-inversed</td>
+            <td>--kd-color-data-gray-70</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-text-inversed'
+                '--kd-color-data-gray-70'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-text-inversed)"
+              style="background-color: var(--kd-color-data-gray-70)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-text-destructive</td>
+            <td>--kd-color-data-gray-80</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-text-destructive'
+                '--kd-color-data-gray-80'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-text-destructive)"
+              style="background-color: var(--kd-color-data-gray-80)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-text-disabled</td>
+            <td>--kd-color-data-gray-90</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-text-disabled'
+                '--kd-color-data-gray-90'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-text-disabled)"
+              style="background-color: var(--kd-color-data-gray-90)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-text-link</td>
+            <td>--kd-color-data-gray-100</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-text-link'
+                '--kd-color-data-gray-100'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-text-link)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-text-link-hover</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-text-link-hover'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-text-link-hover)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-text-pressed</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-text-pressed'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-text-pressed)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-text-placeholder</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-text-placeholder'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-text-placeholder)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-text-success</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-text-success'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-text-success)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-text-error</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-text-error'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-text-error)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-text-warning</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-text-warning'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-text-warning)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-text-informational</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-text-informational'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-text-informational)"
+              style="background-color: var(--kd-color-data-gray-100)"
             ></td>
           </tr>
         </tbody>
@@ -1809,7 +854,7 @@ export const Text = {
   },
 };
 
-export const Background = {
+export const Categorical = {
   render: () => {
     return html`
       <table>
@@ -1822,470 +867,123 @@ export const Background = {
         </thead>
         <tbody>
           <tr>
-            <td>--kd-color-background-ui-default</td>
+            <td>--kd-color-data-cat-01-01</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-ui-default'
+                '--kd-color-data-cat-01-01'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-background-ui-default)"
+              style="background-color: var(--kd-color-data-cat-01-01)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-background-ui-soft</td>
+            <td>--kd-color-data-cat-01-02</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-ui-soft'
+                '--kd-color-data-cat-01-02'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-background-ui-soft)"
+              style="background-color: var(--kd-color-data-cat-01-02)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-background-ui-subtle</td>
+            <td>--kd-color-data-cat-01-03</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-ui-subtle'
+                '--kd-color-data-cat-01-03'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-background-ui-subtle)"
+              style="background-color: var(--kd-color-data-cat-01-03)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-background-ui-bold</td>
+            <td>--kd-color-data-cat-01-04</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-ui-bold'
+                '--kd-color-data-cat-01-04'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-background-ui-bold)"
+              style="background-color: var(--kd-color-data-cat-01-04)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-background-ui-strong</td>
+            <td>--kd-color-data-cat-01-05</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-ui-strong'
+                '--kd-color-data-cat-01-05'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-background-ui-strong)"
+              style="background-color: var(--kd-color-data-cat-01-05)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-background-brand</td>
+            <td>--kd-color-data-cat-01-06</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-brand'
+                '--kd-color-data-cat-01-06'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-background-brand)"
+              style="background-color: var(--kd-color-data-cat-01-06)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-background-ui</td>
+            <td>--kd-color-data-cat-01-07</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-ui'
+                '--kd-color-data-cat-01-07'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-background-ui)"
+              style="background-color: var(--kd-color-data-cat-01-07)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-background-ui-hover</td>
+            <td>--kd-color-data-cat-01-08</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-ui-hover'
+                '--kd-color-data-cat-01-08'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-background-ui-hover)"
+              style="background-color: var(--kd-color-data-cat-01-08)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-background-ui-pressed</td>
+            <td>--kd-color-data-cat-01-09</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-ui-pressed'
+                '--kd-color-data-cat-01-09'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-background-ui-pressed)"
+              style="background-color: var(--kd-color-data-cat-01-09)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-background-primary</td>
+            <td>--kd-color-data-cat-01-10</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-primary'
+                '--kd-color-data-cat-01-10'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-background-primary)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-background-primary-hover</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-primary-hover'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-background-primary-hover)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-background-primary-pressed</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-primary-pressed'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-background-primary-pressed)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-background-secondary</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-secondary'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-background-secondary)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-background-secondary-hover</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-secondary-hover'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-background-secondary-hover)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-background-secondary-pressed</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-secondary-pressed'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-background-secondary-pressed)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-background-destructive</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-destructive'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-background-destructive)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-background-destructive-hover</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-destructive-hover'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-background-destructive-hover)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-background-destructive-pressed</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-destructive-pressed'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-background-destructive-pressed)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-background-focus</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-focus'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-background-focus)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-background-inverse</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-inverse'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-background-inverse)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-background-inverse-hover</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-inverse-hover'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-background-inverse-hover)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-background-accent-subtle</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-accent-subtle'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-background-accent-subtle)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-background-accent-ui</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-accent-ui'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-background-accent-ui)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-background-accent-ui-light</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-accent-ui-light'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-background-accent-ui-light)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-background-accent-primary</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-accent-primary'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-background-accent-primary)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-background-accent-secondary</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-accent-secondary'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-background-accent-secondary)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-background-accent-tertiary</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-accent-tertiary'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-background-accent-tertiary)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-background-success</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-success'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-background-success)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-background-success-light</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-success-light'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-background-success-light)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-background-error</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-error'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-background-error)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-background-error-light</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-error-light'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-background-error-light)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-background-warning</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-warning'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-background-warning)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-background-warning-light</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-warning-light'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-background-warning-light)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-background-informational</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-informational'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-background-informational)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-background-informational-light</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-informational-light'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-background-informational-light)"
-            ></td>
-          </tr>
-
-          <tr>
-            <td>--kd-color-background-disabled</td>
-            <td>
-              ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-background-disabled'
-              )}
-            </td>
-            <td
-              class="preview"
-              style="background-color: var(--kd-color-background-disabled)"
+              style="background-color: var(--kd-color-data-cat-01-10)"
             ></td>
           </tr>
         </tbody>
@@ -2294,7 +992,7 @@ export const Background = {
   },
 };
 
-export const Borders = {
+export const Single = {
   render: () => {
     return html`
       <table>
@@ -2307,288 +1005,1443 @@ export const Borders = {
         </thead>
         <tbody>
           <tr>
-            <td>--kd-color-border-default</td>
+            <td>--kd-color-data-single</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-border-default'
+                '--kd-color-data-single'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-border-default)"
+              style="background-color: var(--kd-color-data-single)"
             ></td>
           </tr>
+        </tbody>
+      </table>
+    `;
+  },
+};
 
+export const Highlight = {
+  render: () => {
+    return html`
+      <table>
+        <thead>
           <tr>
-            <td>--kd-color-border-light</td>
+            <th>Variable Name</th>
+            <th>Hex value</th>
+            <th>Preview</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>--kd-color-data-primary</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-border-light'
+                '--kd-color-data-primary'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-border-light)"
+              style="background-color: var(--kd-color-data-primary)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-border-primary</td>
+            <td>--kd-color-data-secondary</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-border-primary'
+                '--kd-color-data-secondary'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-border-primary)"
+              style="background-color: var(--kd-color-data-secondary)"
             ></td>
           </tr>
+        </tbody>
+      </table>
+    `;
+  },
+};
 
+export const Sequential01 = {
+  render: () => {
+    return html`
+      <table>
+        <thead>
           <tr>
-            <td>--kd-color-border-secondary</td>
+            <th>Variable Name</th>
+            <th>Hex value</th>
+            <th>Preview</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>--kd-color-data-seq-01-01</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-border-secondary'
+                '--kd-color-data-seq-01-01'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-border-secondary)"
+              style="background-color: var(--kd-color-data-seq-01-01)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-border-ui</td>
+            <td>--kd-color-data-seq-01-02</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-border-ui'
+                '--kd-color-data-seq-01-02'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-border-ui)"
+              style="background-color: var(--kd-color-data-seq-01-02)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-border-ui-hover</td>
+            <td>--kd-color-data-seq-01-03</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-border-ui-hover'
+                '--kd-color-data-seq-01-03'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-border-ui-hover)"
+              style="background-color: var(--kd-color-data-seq-01-03)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-border-ui-disabled</td>
+            <td>--kd-color-data-seq-01-04</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-border-ui-disabled'
+                '--kd-color-data-seq-01-04'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-border-ui-disabled)"
+              style="background-color: var(--kd-color-data-seq-01-04)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-border-tertiary</td>
+            <td>--kd-color-data-seq-01-05</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-border-tertiary'
+                '--kd-color-data-seq-01-05'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-border-tertiary)"
+              style="background-color: var(--kd-color-data-seq-01-05)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-border-tertiary-bold</td>
+            <td>--kd-color-data-seq-01-06</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-border-tertiary-bold'
+                '--kd-color-data-seq-01-06'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-border-tertiary-bold)"
+              style="background-color: var(--kd-color-data-seq-01-06)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-border-brand</td>
+            <td>--kd-color-data-seq-01-07</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-border-brand'
+                '--kd-color-data-seq-01-07'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-border-brand)"
+              style="background-color: var(--kd-color-data-seq-01-07)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-border-focus</td>
+            <td>--kd-color-data-seq-01-08</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-border-focus'
+                '--kd-color-data-seq-01-08'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-border-focus)"
+              style="background-color: var(--kd-color-data-seq-01-08)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-border-destructive</td>
+            <td>--kd-color-data-seq-01-09</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-border-destructive'
+                '--kd-color-data-seq-01-09'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-border-destructive)"
+              style="background-color: var(--kd-color-data-seq-01-09)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-border-inverse</td>
+            <td>--kd-color-data-seq-01-10</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-border-inverse'
+                '--kd-color-data-seq-01-10'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-border-inverse)"
+              style="background-color: var(--kd-color-data-seq-01-10)"
             ></td>
           </tr>
+        </tbody>
+      </table>
+    `;
+  },
+};
 
+export const Sequential02 = {
+  render: () => {
+    return html`
+      <table>
+        <thead>
           <tr>
-            <td>--kd-color-border-hover</td>
+            <th>Variable Name</th>
+            <th>Hex value</th>
+            <th>Preview</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>--kd-color-data-seq-02-01</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-border-hover'
+                '--kd-color-data-seq-02-01'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-border-hover)"
+              style="background-color: var(--kd-color-data-seq-02-01)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-border-pressed</td>
+            <td>--kd-color-data-seq-02-02</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-border-pressed'
+                '--kd-color-data-seq-02-02'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-border-pressed)"
+              style="background-color: var(--kd-color-data-seq-02-02)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-border-disabled</td>
+            <td>--kd-color-data-seq-02-03</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-border-disabled'
+                '--kd-color-data-seq-02-03'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-border-disabled)"
+              style="background-color: var(--kd-color-data-seq-02-03)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-border-accent-springgreen</td>
+            <td>--kd-color-data-seq-02-04</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-border-accent-springgreen'
+                '--kd-color-data-seq-02-04'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-border-accent-springgreen)"
+              style="background-color: var(--kd-color-data-seq-02-04)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-border-accent-spruce-light</td>
+            <td>--kd-color-data-seq-02-05</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-border-accent-spruce-light'
+                '--kd-color-data-seq-02-05'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-border-accent-spruce-light)"
+              style="background-color: var(--kd-color-data-seq-02-05)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-border-success</td>
+            <td>--kd-color-data-seq-02-06</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-border-success'
+                '--kd-color-data-seq-02-06'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-border-success)"
+              style="background-color: var(--kd-color-data-seq-02-06)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-border-error</td>
+            <td>--kd-color-data-seq-02-07</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-border-error'
+                '--kd-color-data-seq-02-07'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-border-error)"
+              style="background-color: var(--kd-color-data-seq-02-07)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-border-warning</td>
+            <td>--kd-color-data-seq-02-08</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-border-warning'
+                '--kd-color-data-seq-02-08'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-border-warning)"
+              style="background-color: var(--kd-color-data-seq-02-08)"
             ></td>
           </tr>
-
           <tr>
-            <td>--kd-color-border-informational</td>
+            <td>--kd-color-data-seq-02-09</td>
             <td>
               ${getComputedStyle(document.documentElement).getPropertyValue(
-                '--kd-color-border-informational'
+                '--kd-color-data-seq-02-09'
               )}
             </td>
             <td
               class="preview"
-              style="background-color: var(--kd-color-border-informational)"
+              style="background-color: var(--kd-color-data-seq-02-09)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-seq-02-10</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-seq-02-10'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-seq-02-10)"
+            ></td>
+          </tr>
+        </tbody>
+      </table>
+    `;
+  },
+};
+
+export const Sequential03 = {
+  render: () => {
+    return html`
+      <table>
+        <thead>
+          <tr>
+            <th>Variable Name</th>
+            <th>Hex value</th>
+            <th>Preview</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>--kd-color-data-seq-03-01</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-seq-03-01'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-seq-03-01)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-seq-03-02</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-seq-03-02'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-seq-03-02)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-seq-03-03</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-seq-03-03'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-seq-03-03)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-seq-03-04</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-seq-03-04'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-seq-03-04)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-seq-03-05</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-seq-03-05'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-seq-03-05)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-seq-03-06</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-seq-03-06'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-seq-03-06)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-seq-03-07</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-seq-03-07'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-seq-03-07)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-seq-03-08</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-seq-03-08'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-seq-03-08)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-seq-03-09</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-seq-03-09'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-seq-03-09)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-seq-03-10</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-seq-03-10'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-seq-03-10)"
+            ></td>
+          </tr>
+        </tbody>
+      </table>
+    `;
+  },
+};
+
+export const Sequential04 = {
+  render: () => {
+    return html`
+      <table>
+        <thead>
+          <tr>
+            <th>Variable Name</th>
+            <th>Hex value</th>
+            <th>Preview</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>--kd-color-data-seq-04-01</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-seq-04-01'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-seq-04-01)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-seq-04-02</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-seq-04-02'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-seq-04-02)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-seq-04-03</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-seq-04-03'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-seq-04-03)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-seq-04-04</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-seq-04-04'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-seq-04-04)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-seq-04-05</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-seq-04-05'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-seq-04-05)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-seq-04-06</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-seq-04-06'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-seq-04-06)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-seq-04-07</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-seq-04-07'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-seq-04-07)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-seq-04-08</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-seq-04-08'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-seq-04-08)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-seq-04-09</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-seq-04-09'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-seq-04-09)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-seq-04-10</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-seq-04-10'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-seq-04-10)"
+            ></td>
+          </tr>
+        </tbody>
+      </table>
+    `;
+  },
+};
+
+export const Sequential05 = {
+  render: () => {
+    return html`
+      <table>
+        <thead>
+          <tr>
+            <th>Variable Name</th>
+            <th>Hex value</th>
+            <th>Preview</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>--kd-color-data-seq-05-01</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-seq-05-01'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-seq-05-01)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-seq-05-02</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-seq-05-02'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-seq-05-02)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-seq-05-03</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-seq-05-03'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-seq-05-03)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-seq-05-04</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-seq-05-04'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-seq-05-04)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-seq-05-05</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-seq-05-05'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-seq-05-05)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-seq-05-06</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-seq-05-06'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-seq-05-06)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-seq-05-07</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-seq-05-07'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-seq-05-07)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-seq-05-08</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-seq-05-08'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-seq-05-08)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-seq-05-09</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-seq-05-09'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-seq-05-09)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-seq-05-10</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-seq-05-10'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-seq-05-10)"
+            ></td>
+          </tr>
+        </tbody>
+      </table>
+    `;
+  },
+};
+
+export const Divergent01 = {
+  render: () => {
+    return html`
+      <table>
+        <thead>
+          <tr>
+            <th>Variable Name</th>
+            <th>Hex value</th>
+            <th>Preview</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>--kd-color-data-div-01-pos-100</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-01-pos-100'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-01-pos-100)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-01-pos-90</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-01-pos-90'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-01-pos-90)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-01-pos-80</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-01-pos-80'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-01-pos-80)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-01-pos-70</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-01-pos-70'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-01-pos-70)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-01-pos-60</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-01-pos-60'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-01-pos-60)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-01-pos-50</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-01-pos-50'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-01-pos-50)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-01-pos-40</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-01-pos-40'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-01-pos-40)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-01-pos-30</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-01-pos-30'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-01-pos-30)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-01-pos-20</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-01-pos-20'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-01-pos-20)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-01-pos-10</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-01-pos-10'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-01-pos-10)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-01-neutral</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-01-neutral'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-01-neutral)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-01-neg-10</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-01-neg-10'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-01-neg-10)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-01-neg-20</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-01-neg-20'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-01-neg-20)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-01-neg-30</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-01-neg-30'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-01-neg-30)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-01-neg-40</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-01-neg-40'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-01-neg-40)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-01-neg-50</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-01-neg-50'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-01-neg-50)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-01-neg-60</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-01-neg-60'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-01-neg-60)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-01-neg-70</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-01-neg-70'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-01-neg-70)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-01-neg-80</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-01-neg-80'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-01-neg-80)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-01-neg-90</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-01-neg-90'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-01-neg-90)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-01-neg-100</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-01-neg-100'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-01-neg-100)"
+            ></td>
+          </tr>
+        </tbody>
+      </table>
+    `;
+  },
+};
+
+export const Divergent02 = {
+  render: () => {
+    return html`
+      <table>
+        <thead>
+          <tr>
+            <th>Variable Name</th>
+            <th>Hex value</th>
+            <th>Preview</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>--kd-color-data-div-02-pos-100</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-02-pos-100'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-02-pos-100)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-02-pos-90</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-02-pos-90'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-02-pos-90)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-02-pos-80</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-02-pos-80'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-02-pos-80)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-02-pos-70</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-02-pos-70'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-02-pos-70)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-02-pos-60</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-02-pos-60'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-02-pos-60)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-02-pos-50</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-02-pos-50'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-02-pos-50)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-02-pos-40</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-02-pos-40'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-02-pos-40)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-02-pos-30</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-02-pos-30'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-02-pos-30)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-02-pos-20</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-02-pos-20'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-02-pos-20)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-02-pos-10</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-02-pos-10'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-02-pos-10)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-02-neutral</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-02-neutral'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-02-neutral)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-02-neg-10</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-02-neg-10'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-02-neg-10)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-02-neg-20</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-02-neg-20'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-02-neg-20)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-02-neg-30</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-02-neg-30'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-02-neg-30)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-02-neg-40</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-02-neg-40'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-02-neg-40)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-02-neg-50</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-02-neg-50'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-02-neg-50)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-02-neg-60</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-02-neg-60'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-02-neg-60)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-02-neg-70</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-02-neg-70'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-02-neg-70)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-02-neg-80</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-02-neg-80'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-02-neg-80)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-02-neg-90</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-02-neg-90'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-02-neg-90)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-div-02-neg-100</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-div-02-neg-100'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-div-02-neg-100)"
+            ></td>
+          </tr>
+        </tbody>
+      </table>
+    `;
+  },
+};
+
+export const RAG8 = {
+  render: () => {
+    return html`
+      <table>
+        <thead>
+          <tr>
+            <th>Variable Name</th>
+            <th>Hex value</th>
+            <th>Preview</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>--kd-color-data-status-success</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-status-success'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-status-success)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-status-success-light</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-status-success-light'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-status-success-light)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-status-error</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-status-error'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-status-error)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-status-error-light</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-status-error-light'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-status-error-light)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-status-warning</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-status-warning'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-status-warning)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-status-warning-light</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-status-warning-light'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-status-warning-light)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-status-informational</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-status-informational'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-status-informational)"
+            ></td>
+          </tr>
+        </tbody>
+      </table>
+    `;
+  },
+};
+
+export const RAG3 = {
+  render: () => {
+    return html`
+      <table>
+        <thead>
+          <tr>
+            <th>Variable Name</th>
+            <th>Hex value</th>
+            <th>Preview</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>--kd-color-data-status-success</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-status-success'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-status-success)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-status-warning</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-status-warning'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-status-warning)"
+            ></td>
+          </tr>
+          <tr>
+            <td>--kd-color-data-status-error</td>
+            <td>
+              ${getComputedStyle(document.documentElement).getPropertyValue(
+                '--kd-color-data-status-error'
+              )}
+            </td>
+            <td
+              class="preview"
+              style="background-color: var(--kd-color-data-status-error)"
             ></td>
           </tr>
         </tbody>
