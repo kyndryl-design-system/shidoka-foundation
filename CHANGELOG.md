@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.9.0...v1.10.0) (2024-09-25)
+
+
+### Features
+
+* **color:** add data viz color palette ([#50](https://github.com/kyndryl-design-system/shidoka-foundation/issues/50)) ([f66fd34](https://github.com/kyndryl-design-system/shidoka-foundation/commit/f66fd34c950142428f7d097f0c05567df4a896f0))
+
 # [1.9.0](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.8.2...v1.9.0) (2024-09-23)
 
 
