@@ -1332,6 +1332,7 @@ export const Palette = {
               style="background-color: var(--kd-color-coolgray-10)"
             ></td>
           </tr>
+
           <tr>
             <td>--kd-color-neutral-white</td>
             <td>
