@@ -1,3 +1,10 @@
+## [1.10.1-beta.1](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.10.0...v1.10.1-beta.1) (2024-09-26)
+
+
+### Reverts
+
+* Revert "fix: testing" ([2bc6051](https://github.com/kyndryl-design-system/shidoka-foundation/commit/2bc6051d27912aa7c70b3eeca00e74638b7a517d))
+
 # [1.10.0](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.9.0...v1.10.0) (2024-09-25)
 
 ### Features
