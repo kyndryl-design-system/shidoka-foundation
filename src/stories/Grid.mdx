@@ -25,6 +25,14 @@ import * as GridStories from './Grid.stories.js';
 
 <Controls of={GridStories.Grid} />
 
+## Page Gutter
+
+A page gutter should be applied once globally in the application on the `<body>` tag or similar, or by using the shidoka-applications [UI Shell component](https://shidoka-applications.netlify.app/?path=/docs/global-components-ui-shell--docs).
+
+| Utility Class           | CSS Variable     |
+| ----------------------- | ---------------- |
+| kd-spacing--page-gutter | --kd-page-gutter |
+
 ## Usage
 
 ### SCSS Mixins
@@ -64,11 +72,9 @@ import '@kyndryl-design-system/shidoka-foundation/css/grid.css';
 #### Example HTML
 
 ```html
-<div class="kd-spacing--page-gutter">
-  <div class="kd-grid">
-    <div class="kd-grid__col--sm-4 kd-grid__col--md-8 kd-grid__col--lg-12">
-      12 cols @ max, xl, lg, 8 cols @ md, and 4 cols @ sm
-    </div>
+<div class="kd-grid">
+  <div class="kd-grid__col--sm-4 kd-grid__col--md-8 kd-grid__col--lg-12">
+    12 cols @ max, xl, lg, 8 cols @ md, and 4 cols @ sm
   </div>
 </div>
 ```
@@ -98,11 +104,3 @@ kd-grid__col--${breakpoint}-${num_cols}
 | Left align grid container       | kd-grid--align-left |
 | Remove grid container max-width | kd-grid--no-max     |
 | Remove column gap               | kd-grid--no-gap     |
-
-### Page Gutter
-
-Add spacing around the grid to prevent it from going full width by using a utility class or css variable on a container element.
-
-```
-kd-spacing--page-gutter || --kd-page-gutter
-```

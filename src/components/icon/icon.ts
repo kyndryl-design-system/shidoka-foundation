@@ -1,6 +1,6 @@
 import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import { unsafeHTML } from 'lit/directives/unsafe-html.js';
+import { unsafeHTML } from 'lit-html/directives/unsafe-html.js';
 import { getAttributes, toString } from '@carbon/icon-helpers';
 import IconScss from './icon.scss';
 
@@ -14,15 +14,15 @@ export class Icon extends LitElement {
 
   /** The imported Carbon icon. */
   @property({ type: Object })
-  accessor icon: any = {};
+  icon: any = {};
 
   /** Icon fill color. */
   @property({ type: String })
-  accessor fill = 'currentColor';
+  fill = 'currentColor';
 
   /** Specify a size in pixels to override the imported Carbon icon's original size. */
   @property({ type: Number })
-  accessor sizeOverride!: number;
+  sizeOverride!: number;
 
   override render() {
     if (Object.keys(this.icon).length > 0) {

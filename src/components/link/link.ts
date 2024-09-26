@@ -1,6 +1,6 @@
 import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import { classMap } from 'lit/directives/class-map.js';
+import { classMap } from 'lit-html/directives/class-map.js';
 import { LINK_TYPES, LINK_TARGETS } from './defs';
 
 import LinkStyles from './link.scss';
@@ -18,47 +18,54 @@ export class Link extends LitElement {
 
   /** Link url. */
   @property({ type: String })
-  accessor href = '';
+  href = '';
 
-  /** Defines a target attribute for where to load the URL. Possible options include "_self" (deafult), "_blank", "_parent", "_top" */
+  /** Defines a target attribute for where to load the URL. Possible options include "_self" (default), "_blank", "_parent", "_top" */
   @property({ type: String })
-  accessor target: LINK_TARGETS = LINK_TARGETS.SELF;
+  target: LINK_TARGETS = LINK_TARGETS.SELF;
 
   /** The Link type. Primary(App) or Secondary(Web).*/
   @property({ type: String })
-  accessor kind: LINK_TYPES = LINK_TYPES.PRIMARY;
+  kind: LINK_TYPES = LINK_TYPES.PRIMARY;
 
   /** Defines a relationship between a linked resource and the document. An empty string (default) means no particular relationship */
   @property({ type: String })
-  accessor rel = '';
+  rel = '';
 
   /** Determines if the link is disabled.*/
   // Reference for disabled links:
   // https://www.scottohara.me/blog/2021/05/28/disabled-links.html
   @property({ type: Boolean, reflect: true })
-  accessor disabled = false;
+  disabled = false;
 
-  /** Whether you want the standalone Link. Bydefault false. Use this prop. (true) with icon with link variant. */
+  /** Whether you want the standalone Link. By default false. Use this prop. (true) with icon with link variant. */
   @property({ type: Boolean })
-  accessor standalone = false;
+  standalone = false;
+
+  /** Positions icon on the left. */
+  @property({ type: Boolean })
+  iconLeft = false;
 
   override render() {
     const classes = this.returnClassMap();
 
-    return html`<a
-      class="kd-link-text ${classes}"
-      target=${this.target}
-      role="link"
-      rel=${this.rel}
-      href=${this.href ? this.href : 'javascript:void(0)'}
-      ?disabled=${this.disabled}
-      @click=${(e: Event) => this.handleClick(e)}
-    >
-      <span class="kd-link-text-span-flex">
-        <slot></slot>
-        <slot name="icon"></slot>
-      </span>
-    </a>`;
+    return html`
+      <a
+        class="kd-link-text ${classes}"
+        target=${this.target}
+        role="link"
+        part="link"
+        rel=${this.rel}
+        href=${this.href ? this.href : 'javascript:void(0)'}
+        ?disabled=${this.disabled}
+        @click=${(e: Event) => this.handleClick(e)}
+      >
+        <span class="kd-link-text-span-flex">
+          <slot></slot>
+          <slot name="icon"></slot>
+        </span>
+      </a>
+    `;
   }
   // -- Apply classes according to states, kind etc. -- //
   private returnClassMap() {
@@ -73,6 +80,7 @@ export class Link extends LitElement {
         ['kd-link-text-secondary']: this.kind === LINK_TYPES.SECONDARY,
         ['kd-link-text-inline']: !this.standalone,
         ['kd-link-text-standalone']: this.standalone,
+        'icon-left': this.iconLeft,
       });
     }
   }
@@ -82,8 +90,9 @@ export class Link extends LitElement {
       e.preventDefault();
       return;
     }
+
     const event = new CustomEvent('on-click', {
-      detail: { origEvent: e },
+      detail: { href: this.href, origEvent: e },
     });
     this.dispatchEvent(event);
   }

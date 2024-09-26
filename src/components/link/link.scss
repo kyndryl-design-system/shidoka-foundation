@@ -9,14 +9,18 @@
   display: flex;
   position: relative;
   text-decoration: none;
-  -webkit-transition: color 300ms ease-in-out;
-  -moz-transition: color 300ms ease-in-out;
-  -o-transition: color 300ms ease-in-out;
+  font-weight: 500;
   transition: color 300ms ease-in-out;
 
   &:hover {
-    ::slotted(kd-icon) {
+    slot[name='icon']::slotted(*) {
       transform: translate(4px, 0);
+    }
+  }
+
+  &.icon-left:hover {
+    slot[name='icon']::slotted(*) {
+      transform: translate(-4px, 0);
     }
   }
 
@@ -91,15 +95,23 @@
   &-inline {
     text-decoration: underline;
   }
+
   &-standalone {
     text-decoration: none;
     &:hover {
       text-decoration: underline;
     }
   }
+
   &-span-flex {
     display: flex;
     align-items: center;
+    gap: 8px;
+
+    .icon-left & slot[name='icon']::slotted(*) {
+      order: -1;
+      margin-right: 8px;
+    }
 
     slot[name='icon']::slotted(*) {
       display: inline-flex;

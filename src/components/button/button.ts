@@ -12,7 +12,7 @@ import {
   queryAssignedElements,
 } from 'lit/decorators.js';
 import { ifDefined } from 'lit/directives/if-defined.js';
-import { classMap } from 'lit/directives/class-map.js';
+import { classMap } from 'lit-html/directives/class-map.js';
 import { debounce } from '../../common/helpers/events';
 
 import {
@@ -52,75 +52,95 @@ export class Button extends LitElement {
    * @ignore
    */
   @state()
-  accessor internals = this.attachInternals();
+  internals = this.attachInternals();
 
   /** ARIA label for the button for accessibility. */
   @property({ type: String })
-  accessor description = '';
+  description = '';
 
   /** Type for the &lt;button&gt; element. */
   @property({ type: String })
-  accessor type: BUTTON_TYPES = BUTTON_TYPES.BUTTON;
+  type: BUTTON_TYPES = BUTTON_TYPES.BUTTON;
 
   /** Specifies the visual appearance/kind of the button. */
   @property({ type: String })
-  accessor kind: BUTTON_KINDS = BUTTON_KINDS.PRIMARY_APP;
+  kind: BUTTON_KINDS = BUTTON_KINDS.PRIMARY_APP;
 
   /** Converts the button to an &lt;a&gt; tag if specified. */
   @property({ type: String })
-  accessor href = '';
+  href = '';
 
   /** Specifies the size of the button. */
   @property({ type: String })
-  accessor size: BUTTON_SIZES = BUTTON_SIZES.MEDIUM;
+  size: BUTTON_SIZES = BUTTON_SIZES.MEDIUM;
 
   /** Specifies the position of the icon relative to any button text. */
   @property({ type: String })
-  accessor iconPosition: BUTTON_ICON_POSITION = BUTTON_ICON_POSITION.CENTER;
+  iconPosition: BUTTON_ICON_POSITION = BUTTON_ICON_POSITION.CENTER;
 
   /** Determines if the button is disabled.
    * @internal
    */
   @state()
-  accessor iconOnly = false;
+  iconOnly = false;
 
   /** Determines if the button is disabled. */
   @property({ type: Boolean, reflect: true })
-  accessor disabled = false;
+  disabled = false;
 
   /** Determines if the button indicates a destructive action. */
   @property({ type: Boolean, reflect: true })
-  accessor destructive = false;
+  destructive = false;
 
   /** Button value.  */
   @property({ type: String })
-  accessor value = '';
+  value = '';
 
   /** Button name. */
   @property({ type: String })
-  accessor name = '';
+  name = '';
+
+  /** Determines if the button is Floatable */
+  @property({ type: Boolean })
+  isFloating = false;
+
+  /** Show button after scrolling to 50% of the page*/
+  @property({ type: Boolean })
+  showOnScroll = false;
+
+  /** Determines showButton state .
+   * @internal
+   */
+  @state()
+  _showButton = false;
+
+  /** re-size button to 'medium' at mobile breakpoint.
+   * @internal
+   */
+  @state()
+  _reSizeBtn = false;
 
   /** Button formmethod.  */
   @property({ type: String })
-  accessor formmethod!: any;
+  formmethod!: any;
 
   /** Queries default slot nodes.
    * @internal
    */
   @queryAssignedNodes()
-  accessor _slottedEls!: Array<Node>;
+  _slottedEls!: Array<any>;
 
   /** Queries icon slot nodes.
    * @internal
    */
   @queryAssignedElements({ slot: 'icon' })
-  accessor _iconEls!: Array<any>;
+  _iconEls!: Array<any>;
 
   /** Queries the .button element.
    * @internal
    */
   @query('.button')
-  accessor _btnEl!: any;
+  _btnEl!: any;
 
   override render() {
     const typeClassMap = {
@@ -139,13 +159,14 @@ export class Button extends LitElement {
       [`kd-btn--${baseTypeClass}`]: !this.destructive,
       'kd-btn--large': this.size === BUTTON_SIZES.LARGE,
       'kd-btn--small': this.size === BUTTON_SIZES.SMALL,
-      'kd-btn--medium': this.size === BUTTON_SIZES.MEDIUM,
+      'kd-btn--medium': this._reSizeBtn || this.size === BUTTON_SIZES.MEDIUM,
       [`kd-btn--icon-${this.iconPosition}`]:
         !!this.iconPosition && !this.iconOnly,
       [`kd-btn--icon-center`]: this._iconEls?.length && this.iconOnly,
       'icon-only': this._iconEls?.length && this.iconOnly,
+      'btn-float': this.isFloating,
+      'btn-hidden': this.showOnScroll && !this._showButton,
     };
-
     return html`
       ${this.href && this.href !== ''
         ? html`
@@ -213,9 +234,11 @@ export class Button extends LitElement {
     const TextNodes = this._slottedEls?.filter((node: any) => {
       return node.textContent.trim() !== '';
     });
+
     const VisibleTextNodes = TextNodes.filter((node: any) => {
       if (node.tagName) {
-        return node.offsetParent;
+        const Styles = getComputedStyle(node);
+        return Styles.display !== 'none' && Styles.visibility !== 'hidden';
       } else {
         return true;
       }
@@ -229,25 +252,51 @@ export class Button extends LitElement {
     this.requestUpdate();
   }
 
+  /** @internal */
+  private _debounceResize = debounce(() => {
+    this._reSizeButton();
+    this.iconOnly = this._testIconOnly();
+  });
+
+  /** @internal */
+  private _reSizeButton() {
+    // Resize button to medium at mobile breakpoint
+    if ((this.isFloating || this.showOnScroll) && window.innerWidth <= 672) {
+      this._reSizeBtn = true;
+    } else {
+      this._reSizeBtn = false;
+    }
+  }
+
+  /** @internal */
+  private _debounceScroll = debounce(() => {
+    if (this.showOnScroll) {
+      this._handleScroll();
+    }
+  });
+
+  /** @internal */
+  private _handleScroll() {
+    const scrollPosition = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const pageHeight = document.documentElement.scrollHeight;
+    // Show the button if scrolled 50% of the page
+    this._showButton = scrollPosition > (pageHeight - windowHeight) / 2;
+  }
+
   override connectedCallback() {
     super.connectedCallback();
-
-    window.addEventListener(
-      'resize',
-      debounce(() => {
-        this.iconOnly = this._testIconOnly();
-      })
-    );
+    window.addEventListener('resize', this._debounceResize);
+    if (this.showOnScroll) {
+      window.addEventListener('scroll', this._debounceScroll);
+    }
   }
 
   override disconnectedCallback() {
-    window.removeEventListener(
-      'resize',
-      debounce(() => {
-        this.iconOnly = this._testIconOnly();
-      })
-    );
-
+    window.removeEventListener('resize', this._debounceResize);
+    if (this.showOnScroll) {
+      window.removeEventListener('scroll', this._debounceScroll);
+    }
     super.disconnectedCallback();
   }
 }

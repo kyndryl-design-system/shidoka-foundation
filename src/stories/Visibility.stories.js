@@ -1,5 +1,4 @@
 import { html } from 'lit';
-import { classMap } from 'lit/directives/class-map.js';
 
 export default {
   title: 'Foundation/Visibility',
@@ -25,7 +24,7 @@ const args = {};
 
 export const Visibility = {
   args: args,
-  render: (args) => {
+  render: () => {
     return html`
       <div class="storybook-visibility-example">
         This block includes text for screen readers only.

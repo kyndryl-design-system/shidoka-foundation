@@ -67,10 +67,12 @@ const args = {
   destructive: false,
   disabled: false,
   iconPosition: 'right',
-  description: '',
+  description: 'Button description',
   href: '',
   name: '',
   value: '',
+  isFloating: false,
+  showOnScroll: false,
 };
 
 export const Button = {
@@ -82,6 +84,8 @@ export const Button = {
         type=${args.type}
         ?destructive=${args.destructive}
         ?disabled=${args.disabled}
+        ?isFloating=${args.isFloating}
+        ?showOnScroll=${args.showOnScroll}
         size=${args.size}
         iconPosition=${args.iconPosition}
         description=${args.description}
@@ -112,6 +116,8 @@ export const ButtonWithIcon = {
         type=${args.type}
         ?destructive=${args.destructive}
         ?disabled=${args.disabled}
+        ?isFloating=${args.isFloating}
+        ?showOnScroll=${args.showOnScroll}
         size=${args.size}
         iconPosition=${args.iconPosition}
         description=${args.description}
@@ -121,14 +127,23 @@ export const ButtonWithIcon = {
         @on-click=${(e) => action(e.type)(e)}
       >
         ${args.unnamed}
-        <kd-icon slot="icon" .icon=${chevronRightIcon}></kd-icon>
+        <kd-icon
+          slot="icon"
+          .icon=${chevronRightIcon}
+          role="img"
+          aria-label="Chevron right icon"
+          title="Chevron right icon"
+        ></kd-icon>
       </kd-button>
     `;
   },
 };
 
 export const IconOnly = {
-  args,
+  args: {
+    ...args,
+    description: 'Button Description',
+  },
   render: (args) => {
     return html`
       <kd-button
@@ -136,6 +151,8 @@ export const IconOnly = {
         type=${args.type}
         ?destructive=${args.destructive}
         ?disabled=${args.disabled}
+        ?isFloating=${args.isFloating}
+        ?showOnScroll=${args.showOnScroll}
         size=${args.size}
         iconPosition="center"
         description=${args.description}
@@ -144,7 +161,13 @@ export const IconOnly = {
         value=${args.value}
         @on-click=${(e) => action(e.type)(e)}
       >
-        <kd-icon slot="icon" .icon=${chevronRightIcon}></kd-icon>
+        <kd-icon
+          slot="icon"
+          .icon=${chevronRightIcon}
+          role="img"
+          aria-label="Chevron right icon"
+          title="Chevron right icon"
+        ></kd-icon>
       </kd-button>
     `;
   },

@@ -1,6 +1,6 @@
 import { html } from 'lit';
 import './icon';
-import userIcon from '@carbon/icons/es/user--avatar/24';
+import sampleIcon from '@carbon/icons/es/machine-learning/24';
 
 export default {
   title: 'Components/Icon',
@@ -17,7 +17,7 @@ export default {
 
 export const Icon = {
   args: {
-    icon: userIcon,
+    icon: sampleIcon,
     fill: 'currentColor',
     sizeOverride: undefined,
   },

@@ -4,14 +4,14 @@
 
 import { html, LitElement } from 'lit';
 import { state, property, customElement } from 'lit/decorators.js';
-import { classMap } from 'lit/directives/class-map.js';
+import { classMap } from 'lit-html/directives/class-map.js';
 import stylesheet from './accordionItem.scss';
-import addIcon from '@carbon/icons/es/add/32';
-import subtractIcon from '@carbon/icons/es/subtract/32';
+import chevronIcon from '@carbon/icons/es/chevron--down/24';
+import '../icon';
 
 /**
- * AccordionItem component.
- *
+ * AccordionItem component. *
+ * @fires on-toggle - Emits the `opened` state when the accordion item opens/closes.
  * @slot icon - Optional leading icon
  * @slot body - Body of the accordion item
  * @slot title - Title of the accordion item
@@ -24,42 +24,35 @@ export class AccordionItem extends LitElement {
 
   /** Accordion item opened state. */
   @property({ type: Boolean })
-  accessor opened = false;
+  opened = false;
+
+  /** Accordion item disabled state. */
+  @property({ type: Boolean })
+  disabled = false;
 
   /**
    * The index of this item. Passed from the Accordion.
    * @ignore
    */
-  @state()
-  accessor _index = 1;
+  @state() private _index = 1;
 
   /**
    * Whether the number should be shown. Passed from the Accordion.
    * @ignore
    */
-  @state()
-  accessor _showNumber = false;
+  @state() private _showNumber = false;
 
   /**
    * Whether this item displays a filled header. Passed from the Accordion.
    * @ignore
    */
-  @state()
-  accessor _filledHeader = false;
+  @state() private _filledHeader = false;
 
   /**
    * Whether this item is compact. Passed from the Accordion.
    * @ignore
    */
-  @state()
-  accessor _compact = false;
-
-  /**
-   * A generated unique id
-   * @ignore
-   */
-  @state()
-  accessor _id = crypto.randomUUID();
+  @state() private _compact = false;
 
   setIndex(index: number) {
     this._index = index;
@@ -96,11 +89,20 @@ export class AccordionItem extends LitElement {
   }
 
   private _toggleOpenState() {
-    if (this.opened) {
-      this.opened = false;
-    } else {
-      this.opened = true;
+    if (!this.disabled) {
+      this.opened = !this.opened;
+
+      this._emitToggleEvent();
     }
+  }
+
+  private _emitToggleEvent() {
+    const event = new CustomEvent('on-toggle', {
+      bubbles: true,
+      composed: true,
+      detail: { opened: this.opened },
+    });
+    this.dispatchEvent(event);
   }
 
   /**
@@ -143,28 +145,11 @@ export class AccordionItem extends LitElement {
     }
   }
 
-  /**
-   * Generates the item level expand/collapse template
-   * @ignore
-   */
-  get expandIconTemplate() {
-    if (this.opened)
-      return html`
-        <div class="expand-icon">
-          <kd-icon .icon="${subtractIcon}"></kd-icon>
-        </div>
-      `;
-    else {
-      return html`
-        <div class="expand-icon"><kd-icon .icon="${addIcon}"></kd-icon></div>
-      `;
-    }
-  }
-
   override render() {
     const classes: any = classMap({
       'kd-accordion-item': true,
       opened: this.opened,
+      disabled: this.disabled,
       'filled-header': this._filledHeader,
       compact: this._compact,
     });
@@ -173,29 +158,35 @@ export class AccordionItem extends LitElement {
       <div class="${classes}">
         <div
           class="kd-accordion-item-title"
-          aria-controls="kd-accordion-item-body-${this._index}-${this._id}"
+          aria-controls="kd-accordion-item-body-${this._index}"
           aria-expanded=${this.opened}
-          tabindex="${this._index}"
+          aria-disabled=${this.disabled}
+          tabindex="0"
           role="button"
           @click="${(e: Event) => this._handleClick(e)}"
           @keypress="${(e: KeyboardEvent) => this._handleKeypress(e)}"
-          id="kd-accordion-item-title-${this._index}-${this._id}"
+          id="kd-accordion-item-title-${this._index}"
         >
           ${this.iconTemplate} ${this.numberTemplate}
 
-          <div class="title">
-            <slot name="title"></slot>
+          <div>
+            <div class="title">
+              <slot name="title"></slot>
+            </div>
 
             ${this.subtitleTemplate}
           </div>
 
-          ${this.expandIconTemplate}
+          <div class="expand-icon">
+            <kd-icon .icon="${chevronIcon}"></kd-icon>
+          </div>
         </div>
 
         <div
           class="kd-accordion-item-body"
-          id="kd-accordion-item-body-${this._index}-${this._id}"
-          aria-labelledby="kd-accordion-item-title-${this._index}-${this._id}"
+          id="kd-accordion-item-body-${this._index}"
+          role="region"
+          aria-labelledby="kd-accordion-item-title-${this._index}"
         >
           <div class="kd-accordion-item-detail">
             <slot name="body"></slot>

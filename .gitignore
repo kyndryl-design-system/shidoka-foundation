@@ -10,6 +10,7 @@ coverage
 
 # logs
 .eslintcache
+build-storybook.log
 
 # IDE
 .idea

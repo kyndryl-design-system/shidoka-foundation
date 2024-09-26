@@ -3,6 +3,7 @@
  */
 
 import { html } from 'lit';
+import { action } from '@storybook/addon-actions';
 
 import './accordion';
 import './accordionItem';
@@ -38,27 +39,27 @@ export const Accordion = {
         expandLabel="${args.expandLabel}"
         collapseLabel="${args.collapseLabel}"
       >
-        <kd-accordion-item opened>
-          <span slot="title">Accordion Title 1</span>
-          <span slot="subtitle">Accordion subtitle 1</span>
+        <kd-accordion-item opened @on-toggle=${(e) => action(e.type)(e)}>
+          <span slot="title"> Accordion Title 1 </span>
+          <span slot="subtitle"> Accordion subtitle 1 </span>
           <div slot="body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </div>
         </kd-accordion-item>
 
-        <kd-accordion-item>
-          <span slot="title">Accordion Title 2</span>
-          <span slot="subtitle">Accordion subtitle 2</span>
+        <kd-accordion-item @on-toggle=${(e) => action(e.type)(e)}>
+          <span slot="title"> Accordion Title 2 </span>
+          <span slot="subtitle"> Accordion subtitle 2 </span>
           <div slot="body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </div>
         </kd-accordion-item>
 
-        <kd-accordion-item>
-          <span slot="title">Accordion Title 3</span>
-          <span slot="subtitle">Accordion subtitle 3</span>
+        <kd-accordion-item disabled @on-toggle=${(e) => action(e.type)(e)}>
+          <span slot="title"> Accordion Title 3 </span>
+          <span slot="subtitle"> Accordion subtitle 3 </span>
           <div slot="body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -88,42 +89,48 @@ export const AccordionWithIcons = {
         expandLabel="${args.expandLabel}"
         collapseLabel="${args.collapseLabel}"
       >
-        <kd-accordion-item>
+        <kd-accordion-item opened @on-toggle=${(e) => action(e.type)(e)}>
           <kd-icon
             slot="icon"
             .icon=${circleDashIcon}
+            role="img"
+            aria-label="in progress"
             fill="var(--kd-color-text-placeholder)"
           ></kd-icon>
-          <span slot="title">Accordion Title 1</span>
-          <span slot="subtitle">Accordion subtitle 1</span>
+          <span slot="title"> Accordion Title 1 </span>
+          <span slot="subtitle"> Accordion subtitle 1 </span>
           <div slot="body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </div>
         </kd-accordion-item>
 
-        <kd-accordion-item>
+        <kd-accordion-item @on-toggle=${(e) => action(e.type)(e)}>
           <kd-icon
             slot="icon"
             .icon=${checkmarkOutlineIcon}
+            role="img"
+            aria-label="complete"
             fill="var(--kd-color-text-success)"
           ></kd-icon>
-          <span slot="title">Accordion Title 2</span>
-          <span slot="subtitle">Accordion subtitle 2</span>
+          <span slot="title"> Accordion Title 2 </span>
+          <span slot="subtitle"> Accordion subtitle 2 </span>
           <div slot="body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </div>
         </kd-accordion-item>
 
-        <kd-accordion-item>
+        <kd-accordion-item @on-toggle=${(e) => action(e.type)(e)}>
           <kd-icon
             slot="icon"
             .icon=${errorFilledIcon}
+            role="img"
+            aria-label="error"
             fill="var(--kd-color-text-destructive)"
           ></kd-icon>
-          <span slot="title">Accordion Title 3</span>
-          <span slot="subtitle">Accordion subtitle 3</span>
+          <span slot="title"> Accordion Title 3 </span>
+          <span slot="subtitle"> Accordion subtitle 3 </span>
           <div slot="body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.

@@ -3,6 +3,7 @@
 :root {
   --kd-font-family-primary: 'TWK Everett', 'Helvetica', 'Arial', sans-serif;
   --kd-font-family-secondary: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  --kd-font-family-code-view: 'Roboto Mono', monospace;
 
   --kd-font-weight-ultralight: 200;
   --kd-font-weight-light: 300;
@@ -238,11 +239,11 @@
   --kd-font-size-utility-2-md: 0.875rem;
   --kd-font-size-utility-2-sm: 0.875rem;
 
-  --kd-line-height-utility-2-max: 1.25rem;
-  --kd-line-height-utility-2-xlg: 1.25rem;
-  --kd-line-height-utility-2-lg: 1.25rem;
-  --kd-line-height-utility-2-md: 1.25rem;
-  --kd-line-height-utility-2-sm: 1.25rem;
+  --kd-line-height-utility-2-max: 1.125rem;
+  --kd-line-height-utility-2-xlg: 1.125rem;
+  --kd-line-height-utility-2-lg: 1.125rem;
+  --kd-line-height-utility-2-md: 1.125rem;
+  --kd-line-height-utility-2-sm: 1.125rem;
 
   --kd-font-size-utility-3-max: 0.75rem;
   --kd-font-size-utility-3-xlg: 0.75rem;
