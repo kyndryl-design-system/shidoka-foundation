@@ -6,10 +6,10 @@ import { userEvent, expect, waitFor, fn } from '@storybook/test';
 import { within } from 'shadow-dom-testing-library';
 
 import './link';
-import '../icon';
-import arrowRightIcon from '@carbon/icons/es/chevron--right/16';
+import arrowRightIcon from '@kyndryl-design-system/shidoka-icons/svg/monochrome/16/chevron-right.svg';
 import { LINK_TYPES, LINK_TARGETS } from './defs';
 import { createOptionsArray } from '../../common/helpers/storybook';
+import { unsafeSVG } from 'lit/directives/unsafe-svg.js';
 
 const createSelectOptions = (defs) => [null, ...createOptionsArray(defs)];
 
@@ -94,14 +94,13 @@ export const LinkWithIcon = {
       @on-click=${args['on-click']}
     >
       ${args.unnamed}
-      <kd-icon
+      <span
+        slot="icon"
         role="img"
         aria-label="Arrow right icon"
         title="Arrow right icon"
-        slot="icon"
-        .icon=${arrowRightIcon}
-        sizeOverride=${args.sizeOverride}
-      ></kd-icon>
+        >${unsafeSVG(arrowRightIcon)}</span
+      >
     </kd-link>
   `,
 };

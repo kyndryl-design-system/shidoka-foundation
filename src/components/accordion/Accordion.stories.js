@@ -7,10 +7,10 @@ import { action } from '@storybook/addon-actions';
 
 import './accordion';
 import './accordionItem';
-import '../icon';
-import circleDashIcon from '@carbon/icons/es/circle-dash/24';
-import checkmarkOutlineIcon from '@carbon/icons/es/checkmark--outline/24';
-import errorFilledIcon from '@carbon/icons/es/error--filled/24';
+import circleDashIcon from '@kyndryl-design-system/shidoka-icons/svg/monochrome/24/circle-stroke.svg';
+import checkmarkOutlineIcon from '@kyndryl-design-system/shidoka-icons/svg/monochrome/24/checkmark.svg';
+import errorFilledIcon from '@kyndryl-design-system/shidoka-icons/svg/monochrome/24/close-filled.svg';
+import { unsafeSVG } from 'lit/directives/unsafe-svg.js';
 
 export default {
   title: 'Components/Accordion',
@@ -90,13 +90,20 @@ export const AccordionWithIcons = {
         collapseLabel="${args.collapseLabel}"
       >
         <kd-accordion-item opened @on-toggle=${(e) => action(e.type)(e)}>
-          <kd-icon
+          <!-- <kd-icon
             slot="icon"
             .icon=${circleDashIcon}
             role="img"
             aria-label="in progress"
             fill="var(--kd-color-text-placeholder)"
-          ></kd-icon>
+          ></kd-icon> -->
+          <span
+            class="inProgress"
+            slot="icon"
+            role="img"
+            aria-label="in progress"
+            >${unsafeSVG(circleDashIcon)}</span
+          >
           <span slot="title"> Accordion Title 1 </span>
           <span slot="subtitle"> Accordion subtitle 1 </span>
           <div slot="body">
@@ -106,13 +113,17 @@ export const AccordionWithIcons = {
         </kd-accordion-item>
 
         <kd-accordion-item @on-toggle=${(e) => action(e.type)(e)}>
-          <kd-icon
+          <!-- <kd-icon
             slot="icon"
             .icon=${checkmarkOutlineIcon}
             role="img"
             aria-label="complete"
             fill="var(--kd-color-text-success)"
-          ></kd-icon>
+          >
+          </kd-icon> -->
+          <span class="complete" slot="icon" role="img" aria-label="complete"
+            >${unsafeSVG(checkmarkOutlineIcon)}</span
+          >
           <span slot="title"> Accordion Title 2 </span>
           <span slot="subtitle"> Accordion subtitle 2 </span>
           <div slot="body">
@@ -122,13 +133,16 @@ export const AccordionWithIcons = {
         </kd-accordion-item>
 
         <kd-accordion-item @on-toggle=${(e) => action(e.type)(e)}>
-          <kd-icon
+          <!-- <kd-icon
             slot="icon"
             .icon=${errorFilledIcon}
             role="img"
             aria-label="error"
             fill="var(--kd-color-text-destructive)"
-          ></kd-icon>
+          ></kd-icon> -->
+          <span class="error" slot="icon" role="img" aria-label="error"
+            >${unsafeSVG(errorFilledIcon)}</span
+          >
           <span slot="title"> Accordion Title 3 </span>
           <span slot="subtitle"> Accordion subtitle 3 </span>
           <div slot="body">
@@ -137,6 +151,23 @@ export const AccordionWithIcons = {
           </div>
         </kd-accordion-item>
       </kd-accordion>
+      <style>
+        .inProgress {
+          svg {
+            fill: var(--kd-color-text-placeholder);
+          }
+        }
+        .complete {
+          svg {
+            fill: var(--kd-color-text-success);
+          }
+        }
+        .error {
+          svg {
+            fill: var(--kd-color-text-destructive);
+          }
+        }
+      </style>
     `;
   },
 };

@@ -291,6 +291,7 @@ span {
     slot[name='icon']::slotted(*) {
       // Add margin to the right to space the icon from the text
       margin-right: 8px;
+      display: flex;
     }
   }
 
@@ -300,6 +301,7 @@ span {
     slot[name='icon']::slotted(*) {
       // Add margin to the left to space the icon from the text
       margin-left: 8px;
+      display: flex;
     }
   }
 }
