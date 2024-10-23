@@ -127,9 +127,7 @@ export const ButtonWithIcon = {
         @on-click=${(e) => action(e.type)(e)}
       >
         ${args.unnamed}
-        <span slot="icon" aria-label="Chevron right icon"
-          >${unsafeSVG(chevronRightIcon)}</span
-        >
+        <span slot="icon">${unsafeSVG(chevronRightIcon)}</span>
       </kd-button>
     `;
   },
@@ -157,7 +155,7 @@ export const IconOnly = {
         value=${args.value}
         @on-click=${(e) => action(e.type)(e)}
       >
-        <span style="display:flex;" slot="icon" aria-label="Chevron right icon"
+        <span style="display:flex;" slot="icon"
           >${unsafeSVG(chevronRightIcon)}</span
         >
       </kd-button>
