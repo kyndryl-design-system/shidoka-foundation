@@ -29,8 +29,6 @@
     "prepare": "npx husky install"
   },
   "dependencies": {
-    "@carbon/icon-helpers": "^10.37.0",
-    "@carbon/icons": "^11.14.0",
     "@kyndryl-design-system/shidoka-icons": "^1.5.0",
     "lit": "^2.5.0",
     "query-selector-shadow-dom": "^1.0.1"
