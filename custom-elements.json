@@ -107,6 +107,135 @@
     },
     {
       "kind": "javascript-module",
+      "path": "src/common/defs/breakpoints.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "BREAKPOINTS",
+          "type": {
+            "text": "object"
+          },
+          "default": "{\n  SM: 'sm',\n  MD: 'md',\n  LG: 'lg',\n  XL: 'xl',\n  MAX: 'max',\n}",
+          "description": "Breakpoint values defined in variable: --kd-current-breakpoint\nUsed for conditional logic and/or rendering in component JS\nby matching the current breakpoint to one of these values."
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "BREAKPOINTS",
+          "declaration": {
+            "name": "BREAKPOINTS",
+            "module": "src/common/defs/breakpoints.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/common/helpers/breakpoints.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "getCurrentBreakpoint",
+          "description": "Get the current breakpoint from CSS variable.\nUsed for conditional logic and/or rendering in component JS\nby matching the current breakpoint with values defined in common/defs/breakpoints."
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "getCurrentBreakpoint",
+          "declaration": {
+            "name": "getCurrentBreakpoint",
+            "module": "src/common/helpers/breakpoints.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/common/helpers/events.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "debounce",
+          "parameters": [
+            {
+              "name": "fn",
+              "type": {
+                "text": "Function"
+              }
+            },
+            {
+              "name": "ms",
+              "default": "100"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "debounce",
+          "declaration": {
+            "name": "debounce",
+            "module": "src/common/helpers/events.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/common/helpers/storybook.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "stringToReactHtml",
+          "parameters": [
+            {
+              "name": "string",
+              "type": {
+                "text": "String"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "createOptionsArray",
+          "parameters": [
+            {
+              "name": "options",
+              "default": "{}",
+              "type": {
+                "text": "*"
+              },
+              "description": " imported enums object"
+            }
+          ],
+          "description": "Convert an object to an array of only its values.\nUsed when importing enums in component stories for populating argType dropdowns."
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "stringToReactHtml",
+          "declaration": {
+            "name": "stringToReactHtml",
+            "module": "src/common/helpers/storybook.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "createOptionsArray",
+          "declaration": {
+            "name": "createOptionsArray",
+            "module": "src/common/helpers/storybook.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/components/accordion/accordion.ts",
       "declarations": [
         {
@@ -1354,31 +1483,6 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/common/defs/breakpoints.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "BREAKPOINTS",
-          "type": {
-            "text": "object"
-          },
-          "default": "{\n  SM: 'sm',\n  MD: 'md',\n  LG: 'lg',\n  XL: 'xl',\n  MAX: 'max',\n}",
-          "description": "Breakpoint values defined in variable: --kd-current-breakpoint\nUsed for conditional logic and/or rendering in component JS\nby matching the current breakpoint to one of these values."
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "BREAKPOINTS",
-          "declaration": {
-            "name": "BREAKPOINTS",
-            "module": "src/common/defs/breakpoints.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
       "path": "src/components/splitButton/defs.ts",
       "declarations": [],
       "exports": []
@@ -1935,110 +2039,6 @@
           "declaration": {
             "name": "SplitButtonOption",
             "module": "src/components/splitButton/splitButtonOption.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/common/helpers/breakpoints.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "getCurrentBreakpoint",
-          "description": "Get the current breakpoint from CSS variable.\nUsed for conditional logic and/or rendering in component JS\nby matching the current breakpoint with values defined in common/defs/breakpoints."
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "getCurrentBreakpoint",
-          "declaration": {
-            "name": "getCurrentBreakpoint",
-            "module": "src/common/helpers/breakpoints.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/common/helpers/events.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "debounce",
-          "parameters": [
-            {
-              "name": "fn",
-              "type": {
-                "text": "Function"
-              }
-            },
-            {
-              "name": "ms",
-              "default": "100"
-            }
-          ]
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "debounce",
-          "declaration": {
-            "name": "debounce",
-            "module": "src/common/helpers/events.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/common/helpers/storybook.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "stringToReactHtml",
-          "parameters": [
-            {
-              "name": "string",
-              "type": {
-                "text": "String"
-              }
-            }
-          ]
-        },
-        {
-          "kind": "function",
-          "name": "createOptionsArray",
-          "parameters": [
-            {
-              "name": "options",
-              "default": "{}",
-              "type": {
-                "text": "*"
-              },
-              "description": " imported enums object"
-            }
-          ],
-          "description": "Convert an object to an array of only its values.\nUsed when importing enums in component stories for populating argType dropdowns."
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "stringToReactHtml",
-          "declaration": {
-            "name": "stringToReactHtml",
-            "module": "src/common/helpers/storybook.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "createOptionsArray",
-          "declaration": {
-            "name": "createOptionsArray",
-            "module": "src/common/helpers/storybook.ts"
           }
         }
       ]
