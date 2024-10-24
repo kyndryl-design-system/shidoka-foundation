@@ -6,10 +6,9 @@ import {
   query,
   queryAssignedElements,
 } from 'lit/decorators.js';
-import '../icon';
 
 import { classMap } from 'lit/directives/class-map.js';
-import downIcon from '@carbon/icons/es/chevron--down/20';
+import downIcon from '@kyndryl-design-system/shidoka-icons/svg/monochrome/16/chevron-down.svg';
 
 import {
   SPLIT_BTN_KINDS,
@@ -19,6 +18,7 @@ import {
 import './splitButtonOption';
 import SplitButtonScss from './splitButton.scss';
 import { ifDefined } from 'lit/directives/if-defined.js';
+import { unsafeSVG } from 'lit/directives/unsafe-svg.js';
 
 /**
  * Split Button
@@ -169,9 +169,7 @@ export class SplitButton extends LitElement {
           @click=${this.toggleDropdown}
           @keydown=${(e: any) => this.handleButtonKeydown(e)}
         >
-          <span>
-            <kd-icon class="arrow-icon" .icon=${downIcon}></kd-icon>
-          </span>
+          <span class="arrow-icon">${unsafeSVG(downIcon)}</span>
         </button>
         <!-- Split Button Menu UI -->
         <ul

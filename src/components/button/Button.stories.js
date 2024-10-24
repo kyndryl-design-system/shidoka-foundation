@@ -5,11 +5,11 @@
 // External library imports
 import { html } from 'lit';
 import { action } from '@storybook/addon-actions';
-import chevronRightIcon from '@carbon/icons/es/chevron--right/20';
+import chevronRightIcon from '@kyndryl-design-system/shidoka-icons/svg/monochrome/16/chevron-right.svg';
 
+import { unsafeSVG } from 'lit/directives/unsafe-svg.js';
 // Relative component and helper imports
 import './button';
-import '../icon';
 import {
   BUTTON_KINDS,
   BUTTON_SIZES,
@@ -127,13 +127,7 @@ export const ButtonWithIcon = {
         @on-click=${(e) => action(e.type)(e)}
       >
         ${args.unnamed}
-        <kd-icon
-          slot="icon"
-          .icon=${chevronRightIcon}
-          role="img"
-          aria-label="Chevron right icon"
-          title="Chevron right icon"
-        ></kd-icon>
+        <span slot="icon">${unsafeSVG(chevronRightIcon)}</span>
       </kd-button>
     `;
   },
@@ -161,95 +155,10 @@ export const IconOnly = {
         value=${args.value}
         @on-click=${(e) => action(e.type)(e)}
       >
-        <kd-icon
-          slot="icon"
-          .icon=${chevronRightIcon}
-          role="img"
-          aria-label="Chevron right icon"
-          title="Chevron right icon"
-        ></kd-icon>
+        <span style="display:flex;" slot="icon"
+          >${unsafeSVG(chevronRightIcon)}</span
+        >
       </kd-button>
     `;
   },
 };
-
-// Component Variants
-// export const Primary_App = Template.bind({});
-// Primary_App.args = {
-//   kind: BUTTON_TYPES.PRIMARY_APP,
-// };
-
-// export const Primary_Web = Template.bind({});
-// Primary_Web.args = {
-//   type: BUTTON_TYPES.PRIMARY_WEB,
-// };
-
-// export const Primary_Destructive = Template.bind({});
-// Primary_Destructive.args = {
-//   type: BUTTON_TYPES.PRIMARY_APP,
-//   destructive: true,
-//   size: BUTTON_SIZES.MEDIUM,
-// };
-
-// export const Secondary = Template.bind({});
-// Secondary.args = {
-//   type: BUTTON_TYPES.SECONDARY,
-// };
-
-// export const Secondary_Destructive = Template.bind({});
-// Secondary_Destructive.args = {
-//   type: BUTTON_TYPES.SECONDARY,
-//   destructive: true,
-// };
-
-// export const Tertiary = Template.bind({});
-// Tertiary.args = {
-//   type: BUTTON_TYPES.TERTIARY,
-// };
-
-// export const Tertiary_Destructive = Template.bind({});
-// Tertiary_Destructive.args = {
-//   type: BUTTON_TYPES.TERTIARY,
-//   destructive: true,
-// };
-
-// export const Button_Disabled = Template.bind({});
-// Button_Disabled.args = {
-//   type: BUTTON_TYPES.PRIMARY_APP,
-//   disabled: true,
-// };
-
-// export const ButtonWithIcon = {
-//   args: {
-//     type: BUTTON_TYPES.PRIMARY_APP,
-//     iconPosition: 'right',
-//   },
-//   render: ({ kind, type, size, iconPosition }) => html`
-//     <kd-button
-//       kind=${kind}
-//       type=${type}
-//       size=${size}
-//       iconPosition=${iconPosition}
-//     >
-//       Button Text
-//       <kd-icon .icon=${chevronRightIcon}></kd-icon>
-//     </kd-button>
-//   `,
-// };
-
-// export const IconOnly = {
-//   args: {
-//     type: BUTTON_TYPES.PRIMARY_APP,
-//     iconPosition: 'center',
-//   },
-//   render: ({ kind, type, size, iconPosition }) => html`
-//     <kd-button
-//       kind=${kind}
-//       type=${type}
-//       size=${size}
-//       iconPosition=${iconPosition}
-//     >
-//       <kd-icon .icon=${chevronRightIcon}></kd-icon>
-//     </kd-button>
-//   `,
-// };

@@ -1,7 +1,6 @@
 import { html } from 'lit';
 import { action } from '@storybook/addon-actions';
-import '../icon';
-import chevronRightIcon from '@carbon/icons/es/checkmark--outline/20';
+import chevronRightIcon from '@kyndryl-design-system/shidoka-icons/svg/monochrome/20/checkmark.svg';
 import './index';
 import { createOptionsArray } from '../../common/helpers/storybook';
 import {
@@ -9,6 +8,7 @@ import {
   SPLIT_BTN_SIZES,
   SPLIIT_BTN_ICON_POSITION,
 } from './defs';
+import { unsafeSVG } from 'lit/directives/unsafe-svg.js';
 const createSelectOptions = (defs) => [null, ...createOptionsArray(defs)];
 
 export default {
@@ -112,7 +112,9 @@ export const WithIcon = {
         <kd-splitbutton-option value="3" disabled
           >Option 3</kd-splitbutton-option
         >
-        <kd-icon slot="icon" .icon=${chevronRightIcon}></kd-icon>
+        <span style="display: flex;" slot="icon"
+          >${unsafeSVG(chevronRightIcon)}</span
+        >
       </kd-split-btn>
     `;
   },
