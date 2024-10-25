@@ -1,0 +1,70 @@
+import { Meta, Story, Canvas, Controls } from '@storybook/blocks';
+import { stringToReactHtml } from '../common/helpers/storybook';
+
+import logoutIcon from '../assets/svg/logout.svg';
+import kyndrylIcon from '../assets/svg/kyndryl-logo.svg';
+import bridgeSmallIcon from '../assets/svg/bridge-logo-small.svg';
+import bridgeLargeIcon from '../assets/svg/bridge-logo-large.svg';
+
+<Meta title="Foundation/Icons" />
+
+# Icons
+
+<br />
+
+## Kyndryl Icons
+
+[Kyndryl icons](https://github.com/kyndryl-design-system/shidoka-icons) are custom SVG files that you can import directly from this library.
+
+### Example Usage
+
+It is recommended to use an SVG loader to inject the SVG as inline HTML into your app.
+
+- Example Loaders:
+  - [Rollup](https://www.npmjs.com/package/rollup-plugin-svg)
+  - [Webpack](https://www.npmjs.com/package/svg-inline-loader)
+
+SVG files can then be imported like this:
+
+```js
+import iconName from '@kyndryl-design-system/shidoka-foundation/assets/svg/<filename>';
+```
+
+The method for placing them in your app at this point will vary based on the framework/loader.
+
+<br />
+
+### Gallery
+
+<table>
+  <thead>
+    <tr>
+      <th>Icon</th>
+      <th>filename</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <span dangerouslySetInnerHTML={stringToReactHtml(kyndrylIcon)}></span>
+      </td>
+      <td>kyndryl-logo.svg</td>
+    </tr>
+    <tr>
+      <td>
+        <span
+          dangerouslySetInnerHTML={stringToReactHtml(bridgeSmallIcon)}
+        ></span>
+      </td>
+      <td>bridge-logo-small.svg</td>
+    </tr>
+    <tr>
+      <td>
+        <span
+          dangerouslySetInnerHTML={stringToReactHtml(bridgeLargeIcon)}
+        ></span>
+      </td>
+      <td>bridge-logo-large.svg</td>
+    </tr>
+  </tbody>
+</table>

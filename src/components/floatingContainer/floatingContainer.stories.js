@@ -1,10 +1,10 @@
 import { html } from 'lit';
 import { action } from '@storybook/addon-actions';
-import chevronUpIcon from '@carbon/icons/es/chevron--up/20';
-import chatIcon from '@carbon/icons/es/chat/20';
+import chevronUpIcon from '@kyndryl-design-system/shidoka-icons/svg/monochrome/16/chevron-up.svg';
+import chatIcon from '@kyndryl-design-system/shidoka-icons/svg/monochrome/20/chat.svg';
+import { unsafeSVG } from 'lit/directives/unsafe-svg.js';
 import './index';
 import '../button';
-import '../icon';
 
 export default {
   title: 'Components/Button/With Floating Container',
@@ -29,7 +29,7 @@ export const Default = {
         ?isFloating=${true}
         @on-click=${(e) => action(e.type)(e)}
         >Button 1
-        <kd-icon slot="icon" .icon=${chevronUpIcon}></kd-icon>
+        <span slot="icon">${unsafeSVG(chevronUpIcon)}</span>
       </kd-button>
     </kd-button-float-container>
   `,
@@ -63,7 +63,7 @@ export const WithSecondaryButton = {
         @on-click=${(e) => action(e.type)(e)}
       >
         <span class="test">Button 1</span>
-        <kd-icon slot="icon" .icon=${chevronUpIcon}></kd-icon>
+        <span class="_icon" slot="icon">${unsafeSVG(chevronUpIcon)}</span>
       </kd-button>
       <kd-button
         kind="primary-app"
@@ -75,12 +75,15 @@ export const WithSecondaryButton = {
         @on-click=${(e) => action(e.type)(e)}
       >
         <span class="test">Button 2</span>
-        <kd-icon slot="icon" .icon=${chatIcon}></kd-icon>
+        <span class="_icon" slot="icon">${unsafeSVG(chatIcon)}</span>
       </kd-button>
     </kd-button-float-container>
     <style>
       .test {
         display: none;
+      }
+      ._icon {
+        display: flex;
       }
 
       @media (min-width: 42rem) {
@@ -153,7 +156,7 @@ export const WithScroll = {
         @on-click=${(e) => action(e.type)(e)}
       >
         Button 1
-        <kd-icon slot="icon" .icon=${chevronUpIcon}></kd-icon>
+        <span slot="icon">${unsafeSVG(chevronUpIcon)}</span>
       </kd-button>
     </kd-button-float-container>
   `,

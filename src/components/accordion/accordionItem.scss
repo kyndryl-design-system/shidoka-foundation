@@ -131,7 +131,3 @@
 .disabled .kd-accordion-item-body {
   color: var(--kd-color-text-disabled);
 }
-
-::slotted(kd-icon) {
-  display: block;
-}
