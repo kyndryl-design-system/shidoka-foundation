@@ -1,3 +1,15 @@
+# [2.0.0-next.1](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.10.0...v2.0.0-next.1) (2024-10-25)
+
+
+### Features
+
+* replaced carbon icons with shidoka icons ([#51](https://github.com/kyndryl-design-system/shidoka-foundation/issues/51)) ([ca23754](https://github.com/kyndryl-design-system/shidoka-foundation/commit/ca23754c3c4879f8414f76c5a2a11a2bbba80239))
+
+
+### BREAKING CHANGES
+
+* removed kd-icon component, removed carbon-icons dependency
+
 # [1.10.0](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.9.0...v1.10.0) (2024-09-25)
 
 
