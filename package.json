@@ -17,6 +17,7 @@
     "build-storybook": "storybook build",
     "test": "test-storybook",
     "build": "rollup -c && npm run sass-build",
+    "build:tokens": "node build-tokens.js",
     "sass-dev": "sass --watch --update --style=expanded src/scss/utility:dist/css",
     "sass-prod": "sass --no-source-map --style=compressed src/scss/utility:dist/css",
     "sass-root": "sass --no-source-map --style=compressed src/scss/root.scss:dist/css/root.css",

@@ -1,690 +1,174 @@
 :root {
-  --kd-color-main-palette-primary: light-dark(
-    var(--kd-color-palette-lavender-70),
-    var(--kd-color-palette-lavender-70)
-  );
-  --kd-color-main-palette-secondary: light-dark(
-    var(--kd-color-palette-spruce-60-secondary),
-    var(--kd-color-palette-spruce-60-secondary)
-  );
-  --kd-color-main-palette-tertiary: light-dark(
-    var(--kd-color-palette-spring-green-20-tertiary),
-    var(--kd-color-palette-spring-green-20-tertiary)
-  );
-  --kd-color-main-palette-accent: light-dark(
-    var(--kd-color-palette-warm-red-50-accent),
-    var(--kd-color-palette-warm-red-50-accent)
-  );
-  --kd-color-buttons-primary-button: light-dark(
-    var(--kd-color-palette-lavender-80-primary),
-    var(--kd-color-palette-lavender-80-primary)
-  );
-  --kd-color-buttons-secondary-button: light-dark(
-    var(--kd-color-palette-lavender-60),
-    var(--kd-color-palette-lavender-90)
-  );
-  --kd-color-buttons-tertiary-button: light-dark(
-    var(--kd-color-palette-lavender-10),
-    var(--kd-color-palette-lavender-105)
-  );
-  --kd-color-buttons-button-dark-label: light-dark(
-    var(--kd-color-palette-cool-gray-3),
-    var(--kd-color-palette-dark-stone-20)
-  );
-  --kd-color-buttons-button-light-label: light-dark(
-    var(--kd-color-palette-dark-stone-10),
-    var(--kd-color-palette-dark-stone-20)
-  );
-  --kd-color-containers-container-bg: light-dark(
-    var(--kd-color-palette-cool-gray-5),
-    var(--kd-color-palette-light-opacity-3)
-  );
-  --kd-color-containers-container-child-bg: light-dark(
-    var(--kd-color-palette-cool-gray-10),
-    var(--kd-color-palette-light-opacity-3)
-  );
-  --kd-color-containers-interactive-container-active: light-dark(
-    var(--kd-color-palette-lavender-10),
-    var(--kd-color-palette-light-opacity-5)
-  );
-  --kd-color-containers-interactive-container-inactive: light-dark(
-    var(--kd-color-palette-lavender-5),
-    var(--kd-color-palette-light-opacity-3)
-  );
-  --kd-color-containers-utility-container: light-dark(
-    var(--kd-color-palette-lavender-10),
-    var(--kd-color-palette-lavender-105)
-  );
-  --kd-color-containers-interactive-flat-container: light-dark(
-    var(--kd-color-palette-lavender-5),
-    var(--kd-color-palette-lavender-107)
-  );
-  --kd-color-containers-container-footer: light-dark(
-    var(--kd-color-palette-lavender-15),
-    var(--kd-color-palette-lavender-105)
-  );
-  --kd-color-gradients-and-shadows-interactive-gradient-start: light-dark(
-    var(--kd-color-palette-cool-gray-5),
-    var(--kd-color-palette-lavender-107)
-  );
-  --kd-color-gradients-and-shadows-interactive-gradient-end: light-dark(
-    var(--kd-color-palette-cool-gray-10),
-    var(--kd-color-palette-lavender-100)
-  );
-  --kd-color-gradients-and-shadows-container-dropshadow-1: light-dark(
-    var(--kd-color-palette-dark-opacity-10),
-    var(--kd-color-palette-dark-opacity-10)
-  );
-  --kd-color-gradients-and-shadows-container-dropshadow-2: light-dark(
-    var(--kd-color-palette-dark-opacity-3),
-    var(--kd-color-palette-dark-opacity-10)
-  );
-  --kd-color-navigation-nav-bg: light-dark(
-    var(--kd-color-palette-cool-gray-10),
-    var(--kd-color-palette-lavender-110)
-  );
-  --kd-color-navigation-footer-bg: light-dark(
-    var(--kd-color-palette-cool-gray-10),
-    var(--kd-color-palette-lavender-110)
-  );
-  --kd-color-navigation-local-nav-bg: light-dark(
-    var(--kd-color-palette-cool-gray-5),
-    var(--kd-color-palette-lavender-105)
-  );
-  --kd-color-navigation-switcher-icon: light-dark(
-    var(--kd-color-palette-lavender-80-primary),
-    var(--kd-color-palette-lavender-60)
-  );
-  --kd-color-page-background: light-dark(
-    var(--kd-color-palette-cool-gray-3),
-    var(--kd-color-palette-cool-gray-cool-gray-93)
-  );
-  --kd-color-page-page-bg: light-dark(
-    var(--kd-color-palette-cool-gray-3),
-    var(--kd-color-palette-lavender-107)
-  );
-  --kd-color-page-logo-bridge-txt: light-dark(
-    var(--kd-color-palette-spruce-60-secondary),
-    var(--kd-color-palette-dark-stone-10)
-  );
-  --kd-color-page-overlay: light-dark(
-    var(--kd-color-palette-light-opacity-50),
-    var(--kd-color-palette-dark-opacity-85)
-  );
-  --kd-color-states-static: light-dark(
-    var(--kd-color-palette-cool-gray-cool-gray-95),
-    var(--kd-color-palette-cool-gray-5)
-  );
-  --kd-color-states-static-solid-label: light-dark(
-    var(--kd-color-palette-dark-stone-10),
-    var(--kd-color-palette-cool-gray-5)
-  );
-  --kd-color-states-disabled: light-dark(
-    var(--kd-color-palette-dark-stone-20),
-    var(--kd-color-palette-dark-stone-80-neutral-3)
-  );
-  --kd-color-states-disabled-label: light-dark(
-    var(--kd-color-palette-warm-gray-50-base),
-    var(--kd-color-palette-warm-gray-50-base)
-  );
-  --kd-color-table-header: light-dark(
-    var(--kd-color-palette-cool-gray-10),
-    var(--kd-color-palette-lavender-105)
-  );
-  --kd-color-table-row: light-dark(
-    var(--kd-color-palette-cool-gray-3),
-    var(--kd-color-palette-light-opacity-3)
-  );
-  --kd-color-table-alt-row: light-dark(
-    var(--kd-color-palette-cool-gray-7),
-    var(--kd-color-palette-light-opacity-5)
-  );
-  --kd-color-table-row-active: light-dark(
-    var(--kd-color-palette-lavender-10),
-    var(--kd-color-palette-lavender-100)
-  );
-  --kd-color-table-row-active-nested: light-dark(
-    var(--kd-color-palette-cool-gray-3),
-    var(--kd-color-palette-lavender-90)
-  );
-  --kd-color-table-footer: light-dark(
-    var(--kd-color-palette-cool-gray-10),
-    var(--kd-color-palette-lavender-105)
-  );
-  --kd-color-text-primary: light-dark(
-    var(--kd-color-palette-cool-gray-5),
-    var(--kd-color-palette-light-opacity-86)
-  );
-  --kd-color-text-light: light-dark(
-    var(--kd-color-palette-cool-gray-8),
-    var(--kd-color-palette-light-opacity-86)
-  );
-  --kd-color-text-medium: light-dark(
-    var(--kd-color-palette-cool-gray-cool-gray-85),
-    var(--kd-color-palette-dark-stone-20)
-  );
-  --kd-color-text-dark: light-dark(
-    var(--kd-color-palette-cool-gray-cool-gray-90),
-    var(--kd-color-palette-cool-gray-cool-gray-90)
-  );
-  --kd-color-text-link: light-dark(
-    var(--kd-color-palette-lavender-70),
-    var(--kd-color-palette-lavender-40)
-  );
-  --kd-color-text-link-active: light-dark(
-    var(--kd-color-palette-lavender-50),
-    var(--kd-color-palette-lavender-20)
-  );
-  --kd-color-titles-primary-title: light-dark(
-    var(--kd-color-palette-spruce-30),
-    var(--kd-color-palette-spruce-30)
-  );
-  --kd-color-titles-secondary-title: light-dark(
-    var(--kd-color-palette-spruce-40),
-    var(--kd-color-palette-spruce-20)
-  );
-  --kd-color-titles-tertiary-title: light-dark(
-    var(--kd-color-palette-spruce-50),
-    var(--kd-color-palette-spruce-30)
-  );
-  --kd-color-utility-border: light-dark(
-    var(--kd-color-palette-cool-gray-15),
-    var(--kd-color-palette-light-opacity-5)
-  );
-  --kd-color-utility-icon: light-dark(
-    var(--kd-color-palette-cool-gray-cool-gray-70),
-    var(--kd-color-palette-cool-gray-5)
-  );
-  --kd-color-utility-search-bg: light-dark(
-    var(--kd-color-palette-lavender-5),
-    var(--kd-color-palette-lavender-105)
-  );
-  --kd-color-utility-interactive-graphic: light-dark(
-    var(--kd-color-palette-cool-gray-cool-gray-20),
-    var(--kd-color-palette-cool-gray-cool-gray-80)
-  );
-  --kd-color-utility-interactive-graphic-alt: light-dark(
-    var(--kd-color-palette-cool-gray-cool-gray-30),
-    var(--kd-color-palette-cool-gray-cool-gray-60-neutral-1)
-  );
-  --kd-color-utility-neutral-tag: light-dark(
-    var(--kd-color-palette-cool-gray-10),
-    var(--kd-color-palette-cool-gray-cool-gray-85)
-  );
-  --kd-color-forms-label-primary: light-dark(
-    var(--kd-color-palette-dark-stone-80-neutral-3),
-    var(--kd-color-palette-dark-stone-20)
-  );
-  --kd-color-forms-label-secondary: light-dark(
-    var(--kd-color-palette-dark-stone-60),
-    var(--kd-color-palette-dark-stone-30)
-  );
-  --kd-color-forms-input-field-background: light-dark(
-    var(--kd-color-palette-cool-gray-5),
-    var(--kd-color-palette-dark-opacity-30)
-  );
-  --kd-color-forms-input-field-border: light-dark(
-    var(--kd-color-palette-dark-stone-50),
-    var(--kd-color-palette-cool-gray-cool-gray-70)
-  );
-  --kd-color-forms-input-field-text: light-dark(
-    var(--kd-color-palette-dark-stone-80-neutral-3),
-    var(--kd-color-palette-dark-stone-20)
-  );
-  --kd-color-card-card-background: light-dark(
-    var(--kd-color-palette-cool-gray-3),
-    var(--kd-color-palette-light-opacity-3)
-  );
-  --kd-color-card-card-border-color-clickable: light-dark(
-    var(--kd-color-palette-lavender-80-primary),
-    var(--kd-color-palette-lavender-30)
-  );
-  --kd-color-card-card-border-color-default: light-dark(
-    var(--kd-color-palette-cool-gray-5),
-    var(--kd-color-palette-light-opacity-5)
-  );
-  --kd-color-card-card-border-color-hover: light-dark(
-    var(--kd-color-palette-cool-gray-7),
-    var(--kd-color-palette-light-opacity-10)
-  );
-  --kd-color-data-viz-categorical-01-10: light-dark(
-    var(--kd-color-palette-lilac-lilac-20),
-    var(--kd-color-palette-lilac-lilac-30)
-  );
-  --kd-color-data-viz-categorical-01-01: light-dark(
-    var(--kd-color-palette-sea-sea-40),
-    var(--kd-color-palette-sea-sea-10)
-  );
-  --kd-color-data-viz-categorical-01-02: light-dark(
-    var(--kd-color-palette-jade-jade-20),
-    var(--kd-color-palette-jade-jade-30)
-  );
-  --kd-color-data-viz-categorical-01-03: light-dark(
-    var(--kd-color-palette-amber-amber-40),
-    var(--kd-color-palette-amber-amber-10)
-  );
-  --kd-color-data-viz-categorical-01-04: light-dark(
-    var(--kd-color-palette-blush-blush-20),
-    var(--kd-color-palette-blush-blush-30)
-  );
-  --kd-color-data-viz-categorical-01-05: light-dark(
-    var(--kd-color-palette-lilac-lilac-40),
-    var(--kd-color-palette-lilac-lilac-10)
-  );
-  --kd-color-data-viz-categorical-01-06: light-dark(
-    var(--kd-color-palette-sea-sea-20),
-    var(--kd-color-palette-sea-sea-30)
-  );
-  --kd-color-data-viz-categorical-01-07: light-dark(
-    var(--kd-color-palette-jade-jade-40),
-    var(--kd-color-palette-jade-jade-10)
-  );
-  --kd-color-data-viz-categorical-01-08: light-dark(
-    var(--kd-color-palette-amber-amber-20),
-    var(--kd-color-palette-amber-amber-30)
-  );
-  --kd-color-data-viz-categorical-01-09: light-dark(
-    var(--kd-color-palette-blush-blush-40),
-    var(--kd-color-palette-blush-blush-10)
-  );
-  --kd-color-data-viz-sequential-01-10: light-dark(
-    var(--kd-color-palette-sea-sea-10),
-    var(--kd-color-palette-sea-sea-100)
-  );
-  --kd-color-data-viz-sequential-01-20: light-dark(
-    var(--kd-color-palette-sea-sea-10),
-    var(--kd-color-palette-sea-sea-90)
-  );
-  --kd-color-data-viz-sequential-01-30: light-dark(
-    var(--kd-color-palette-sea-sea-40),
-    var(--kd-color-palette-sea-sea-70)
-  );
-  --kd-color-data-viz-sequential-01-40: light-dark(
-    var(--kd-color-palette-sea-sea-30),
-    var(--kd-color-palette-sea-sea-80)
-  );
-  --kd-color-data-viz-sequential-01-50: light-dark(
-    var(--kd-color-palette-sea-sea-50),
-    var(--kd-color-palette-sea-sea-60)
-  );
-  --kd-color-data-viz-sequential-01-60: light-dark(
-    var(--kd-color-palette-sea-sea-60),
-    var(--kd-color-palette-sea-sea-50)
-  );
-  --kd-color-data-viz-sequential-01-70: light-dark(
-    var(--kd-color-palette-sea-sea-70),
-    var(--kd-color-palette-sea-sea-40)
-  );
-  --kd-color-data-viz-sequential-01-80: light-dark(
-    var(--kd-color-palette-sea-sea-80),
-    var(--kd-color-palette-sea-sea-30)
-  );
-  --kd-color-data-viz-sequential-01-90: light-dark(
-    var(--kd-color-palette-sea-sea-90),
-    var(--kd-color-palette-sea-sea-20)
-  );
-  --kd-color-data-viz-sequential-01-100: light-dark(
-    var(--kd-color-palette-sea-sea-100),
-    var(--kd-color-palette-sea-sea-10)
-  );
-  --kd-color-data-viz-sequential-02-seq-02-10: light-dark(
-    var(--kd-color-palette-jade-jade-10),
-    var(--kd-color-palette-jade-jade-100)
-  );
-  --kd-color-data-viz-sequential-02-seq-02-100: light-dark(
-    var(--kd-color-palette-jade-jade-100),
-    var(--kd-color-palette-jade-jade-10)
-  );
-  --kd-color-data-viz-sequential-02-seq-02-20: light-dark(
-    var(--kd-color-palette-jade-jade-20),
-    var(--kd-color-palette-jade-jade-90)
-  );
-  --kd-color-data-viz-sequential-02-seq-02-30: light-dark(
-    var(--kd-color-palette-jade-jade-30),
-    var(--kd-color-palette-jade-jade-80)
-  );
-  --kd-color-data-viz-sequential-02-seq-02-40: light-dark(
-    var(--kd-color-palette-jade-jade-40),
-    var(--kd-color-palette-jade-jade-70)
-  );
-  --kd-color-data-viz-sequential-02-seq-02-50: light-dark(
-    var(--kd-color-palette-jade-jade-50),
-    var(--kd-color-palette-jade-jade-60)
-  );
-  --kd-color-data-viz-sequential-02-seq-02-60: light-dark(
-    var(--kd-color-palette-jade-jade-60),
-    var(--kd-color-palette-jade-jade-50)
-  );
-  --kd-color-data-viz-sequential-02-seq-02-70: light-dark(
-    var(--kd-color-palette-jade-jade-70),
-    var(--kd-color-palette-jade-jade-40)
-  );
-  --kd-color-data-viz-sequential-02-seq-02-80: light-dark(
-    var(--kd-color-palette-jade-jade-80),
-    var(--kd-color-palette-jade-jade-30)
-  );
-  --kd-color-data-viz-sequential-02-seq-02-90: light-dark(
-    var(--kd-color-palette-jade-jade-90),
-    var(--kd-color-palette-jade-jade-20)
-  );
-  --kd-color-data-viz-sequential-03-seq-03-10: light-dark(
-    var(--kd-color-palette-amber-amber-10),
-    var(--kd-color-palette-amber-amber-100)
-  );
-  --kd-color-data-viz-sequential-03-seq-03-100: light-dark(
-    var(--kd-color-palette-amber-amber-100),
-    var(--kd-color-palette-amber-amber-10)
-  );
-  --kd-color-data-viz-sequential-03-seq-03-20: light-dark(
-    var(--kd-color-palette-amber-amber-20),
-    var(--kd-color-palette-amber-amber-90)
-  );
-  --kd-color-data-viz-sequential-03-seq-03-30: light-dark(
-    var(--kd-color-palette-amber-amber-30),
-    var(--kd-color-palette-amber-amber-80)
-  );
-  --kd-color-data-viz-sequential-03-seq-03-40: light-dark(
-    var(--kd-color-palette-amber-amber-40),
-    var(--kd-color-palette-amber-amber-70)
-  );
-  --kd-color-data-viz-sequential-03-seq-03-50: light-dark(
-    var(--kd-color-palette-amber-amber-50),
-    var(--kd-color-palette-amber-amber-60)
-  );
-  --kd-color-data-viz-sequential-03-seq-03-60: light-dark(
-    var(--kd-color-palette-amber-amber-60),
-    var(--kd-color-palette-amber-amber-50)
-  );
-  --kd-color-data-viz-sequential-03-seq-03-70: light-dark(
-    var(--kd-color-palette-amber-amber-70),
-    var(--kd-color-palette-amber-amber-40)
-  );
-  --kd-color-data-viz-sequential-03-seq-03-80: light-dark(
-    var(--kd-color-palette-amber-amber-80),
-    var(--kd-color-palette-amber-amber-30)
-  );
-  --kd-color-data-viz-sequential-03-seq-03-90: light-dark(
-    var(--kd-color-palette-amber-amber-90),
-    var(--kd-color-palette-amber-amber-20)
-  );
-  --kd-color-data-viz-sequential-04-seq-04-10: light-dark(
-    var(--kd-color-palette-blush-blush-10),
-    var(--kd-color-palette-blush-blush-100)
-  );
-  --kd-color-data-viz-sequential-04-seq-04-100: light-dark(
-    var(--kd-color-palette-blush-blush-100),
-    var(--kd-color-palette-blush-blush-10)
-  );
-  --kd-color-data-viz-sequential-04-seq-04-20: light-dark(
-    var(--kd-color-palette-blush-blush-20),
-    var(--kd-color-palette-blush-blush-90)
-  );
-  --kd-color-data-viz-sequential-04-seq-04-30: light-dark(
-    var(--kd-color-palette-blush-blush-30),
-    var(--kd-color-palette-blush-blush-80)
-  );
-  --kd-color-data-viz-sequential-04-seq-04-40: light-dark(
-    var(--kd-color-palette-blush-blush-40),
-    var(--kd-color-palette-blush-blush-70)
-  );
-  --kd-color-data-viz-sequential-04-seq-04-50: light-dark(
-    var(--kd-color-palette-blush-blush-50),
-    var(--kd-color-palette-blush-blush-60)
-  );
-  --kd-color-data-viz-sequential-04-seq-04-60: light-dark(
-    var(--kd-color-palette-blush-blush-60),
-    var(--kd-color-palette-blush-blush-50)
-  );
-  --kd-color-data-viz-sequential-04-seq-04-70: light-dark(
-    var(--kd-color-palette-blush-blush-70),
-    var(--kd-color-palette-blush-blush-40)
-  );
-  --kd-color-data-viz-sequential-04-seq-04-80: light-dark(
-    var(--kd-color-palette-blush-blush-80),
-    var(--kd-color-palette-blush-blush-30)
-  );
-  --kd-color-data-viz-sequential-04-seq-04-90: light-dark(
-    var(--kd-color-palette-blush-blush-90),
-    var(--kd-color-palette-blush-blush-20)
-  );
-  --kd-color-data-viz-sequential-05-seq-05-10: light-dark(
-    var(--kd-color-palette-lilac-lilac-10),
-    var(--kd-color-palette-lilac-lilac-100)
-  );
-  --kd-color-data-viz-sequential-05-seq-05-100: light-dark(
-    var(--kd-color-palette-lilac-lilac-100),
-    var(--kd-color-palette-lilac-lilac-10)
-  );
-  --kd-color-data-viz-sequential-05-seq-05-20: light-dark(
-    var(--kd-color-palette-lilac-lilac-20),
-    var(--kd-color-palette-lilac-lilac-90)
-  );
-  --kd-color-data-viz-sequential-05-seq-05-30: light-dark(
-    var(--kd-color-palette-lilac-lilac-30),
-    var(--kd-color-palette-lilac-lilac-80)
-  );
-  --kd-color-data-viz-sequential-05-seq-05-40: light-dark(
-    var(--kd-color-palette-lilac-lilac-40),
-    var(--kd-color-palette-lilac-lilac-70)
-  );
-  --kd-color-data-viz-sequential-05-seq-05-50: light-dark(
-    var(--kd-color-palette-lilac-lilac-50),
-    var(--kd-color-palette-lilac-lilac-60)
-  );
-  --kd-color-data-viz-sequential-05-seq-05-60: light-dark(
-    var(--kd-color-palette-lilac-lilac-60),
-    var(--kd-color-palette-lilac-lilac-50)
-  );
-  --kd-color-data-viz-sequential-05-seq-05-70: light-dark(
-    var(--kd-color-palette-lilac-lilac-70),
-    var(--kd-color-palette-lilac-lilac-40)
-  );
-  --kd-color-data-viz-sequential-05-seq-05-80: light-dark(
-    var(--kd-color-palette-lilac-lilac-80),
-    var(--kd-color-palette-lilac-lilac-30)
-  );
-  --kd-color-data-viz-sequential-05-seq-05-90: light-dark(
-    var(--kd-color-palette-lilac-lilac-90),
-    var(--kd-color-palette-lilac-lilac-20)
-  );
-  --kd-color-data-viz-divergent-01-div-neg-10: light-dark(
-    var(--kd-color-palette-amber-amber-10),
-    var(--kd-color-palette-amber-amber-100)
-  );
-  --kd-color-data-viz-divergent-01-div-neg-100: light-dark(
-    var(--kd-color-palette-amber-amber-100),
-    var(--kd-color-palette-amber-amber-10)
-  );
-  --kd-color-data-viz-divergent-01-div-neg-20: light-dark(
-    var(--kd-color-palette-amber-amber-20),
-    var(--kd-color-palette-amber-amber-90)
-  );
-  --kd-color-data-viz-divergent-01-div-neg-30: light-dark(
-    var(--kd-color-palette-amber-amber-30),
-    var(--kd-color-palette-amber-amber-80)
-  );
-  --kd-color-data-viz-divergent-01-div-neg-40: light-dark(
-    var(--kd-color-palette-amber-amber-40),
-    var(--kd-color-palette-amber-amber-70)
-  );
-  --kd-color-data-viz-divergent-01-div-neg-50: light-dark(
-    var(--kd-color-palette-amber-amber-50),
-    var(--kd-color-palette-amber-amber-60)
-  );
-  --kd-color-data-viz-divergent-01-div-neg-60: light-dark(
-    var(--kd-color-palette-amber-amber-60),
-    var(--kd-color-palette-amber-amber-50)
-  );
-  --kd-color-data-viz-divergent-01-div-neg-70: light-dark(
-    var(--kd-color-palette-amber-amber-70),
-    var(--kd-color-palette-amber-amber-40)
-  );
-  --kd-color-data-viz-divergent-01-div-neg-80: light-dark(
-    var(--kd-color-palette-amber-amber-80),
-    var(--kd-color-palette-amber-amber-30)
-  );
-  --kd-color-data-viz-divergent-01-div-neg-90: light-dark(
-    var(--kd-color-palette-amber-amber-90),
-    var(--kd-color-palette-amber-amber-20)
-  );
-  --kd-color-data-viz-divergent-01-div-neu: light-dark(
-    var(--kd-color-palette-neutral-div-01-neutral),
-    var(--kd-color-palette-darkstone-dark-stone-80(base))
-  );
-  --kd-color-data-viz-divergent-01-div-pos-10: light-dark(
-    var(--kd-color-palette-sea-sea-10),
-    var(--kd-color-palette-sea-sea-100)
-  );
-  --kd-color-data-viz-divergent-01-div-pos-100: light-dark(
-    var(--kd-color-palette-sea-sea-100),
-    var(--kd-color-palette-sea-sea-10)
-  );
-  --kd-color-data-viz-divergent-01-div-pos-20: light-dark(
-    var(--kd-color-palette-sea-sea-20),
-    var(--kd-color-palette-sea-sea-90)
-  );
-  --kd-color-data-viz-divergent-01-div-pos-30: light-dark(
-    var(--kd-color-palette-sea-sea-30),
-    var(--kd-color-palette-sea-sea-80)
-  );
-  --kd-color-data-viz-divergent-01-div-pos-40: light-dark(
-    var(--kd-color-palette-sea-sea-40),
-    var(--kd-color-palette-sea-sea-70)
-  );
-  --kd-color-data-viz-divergent-01-div-pos-50: light-dark(
-    var(--kd-color-palette-sea-sea-50),
-    var(--kd-color-palette-sea-sea-60)
-  );
-  --kd-color-data-viz-divergent-01-div-pos-60: light-dark(
-    var(--kd-color-palette-sea-sea-60),
-    var(--kd-color-palette-sea-sea-50)
-  );
-  --kd-color-data-viz-divergent-01-div-pos-70: light-dark(
-    var(--kd-color-palette-sea-sea-70),
-    var(--kd-color-palette-sea-sea-40)
-  );
-  --kd-color-data-viz-divergent-01-div-pos-80: light-dark(
-    var(--kd-color-palette-sea-sea-80),
-    var(--kd-color-palette-sea-sea-30)
-  );
-  --kd-color-data-viz-divergent-01-div-pos-90: light-dark(
-    var(--kd-color-palette-sea-sea-90),
-    var(--kd-color-palette-sea-sea-20)
-  );
-  --kd-color-data-viz-divergent-02-div-neg-10: light-dark(
-    var(--kd-color-palette-blush-blush-10),
-    var(--kd-color-palette-blush-blush-100)
-  );
-  --kd-color-data-viz-divergent-02-div-neg-100: light-dark(
-    var(--kd-color-palette-blush-blush-100),
-    var(--kd-color-palette-blush-blush-10)
-  );
-  --kd-color-data-viz-divergent-02-div-neg-20: light-dark(
-    var(--kd-color-palette-blush-blush-20),
-    var(--kd-color-palette-blush-blush-90)
-  );
-  --kd-color-data-viz-divergent-02-div-neg-30: light-dark(
-    var(--kd-color-palette-blush-blush-30),
-    var(--kd-color-palette-blush-blush-80)
-  );
-  --kd-color-data-viz-divergent-02-div-neg-40: light-dark(
-    var(--kd-color-palette-blush-blush-40),
-    var(--kd-color-palette-blush-blush-70)
-  );
-  --kd-color-data-viz-divergent-02-div-neg-50: light-dark(
-    var(--kd-color-palette-blush-blush-50),
-    var(--kd-color-palette-blush-blush-60)
-  );
-  --kd-color-data-viz-divergent-02-div-neg-60: light-dark(
-    var(--kd-color-palette-blush-blush-60),
-    var(--kd-color-palette-blush-blush-50)
-  );
-  --kd-color-data-viz-divergent-02-div-neg-70: light-dark(
-    var(--kd-color-palette-blush-blush-70),
-    var(--kd-color-palette-blush-blush-40)
-  );
-  --kd-color-data-viz-divergent-02-div-neg-80: light-dark(
-    var(--kd-color-palette-blush-blush-80),
-    var(--kd-color-palette-blush-blush-30)
-  );
-  --kd-color-data-viz-divergent-02-div-neg-90: light-dark(
-    var(--kd-color-palette-blush-blush-90),
-    var(--kd-color-palette-blush-blush-20)
-  );
-  --kd-color-data-viz-divergent-02-div-neu: light-dark(
-    var(--kd-color-palette-neutral-div-02-neutral),
-    var(--kd-color-palette-darkstone-dark-stone-80(base))
-  );
-  --kd-color-data-viz-divergent-02-div-pos-10: light-dark(
-    var(--kd-color-palette-jade-jade-10),
-    var(--kd-color-palette-jade-jade-100)
-  );
-  --kd-color-data-viz-divergent-02-div-pos-100: light-dark(
-    var(--kd-color-palette-jade-jade-100),
-    var(--kd-color-palette-jade-jade-10)
-  );
-  --kd-color-data-viz-divergent-02-div-pos-20: light-dark(
-    var(--kd-color-palette-jade-jade-20),
-    var(--kd-color-palette-jade-jade-90)
-  );
-  --kd-color-data-viz-divergent-02-div-pos-30: light-dark(
-    var(--kd-color-palette-jade-jade-30),
-    var(--kd-color-palette-jade-jade-80)
-  );
-  --kd-color-data-viz-divergent-02-div-pos-40: light-dark(
-    var(--kd-color-palette-jade-jade-40),
-    var(--kd-color-palette-jade-jade-70)
-  );
-  --kd-color-data-viz-divergent-02-div-pos-50: light-dark(
-    var(--kd-color-palette-jade-jade-50),
-    var(--kd-color-palette-jade-jade-60)
-  );
-  --kd-color-data-viz-divergent-02-div-pos-60: light-dark(
-    var(--kd-color-palette-jade-jade-60),
-    var(--kd-color-palette-jade-jade-50)
-  );
-  --kd-color-data-viz-divergent-02-div-pos-70: light-dark(
-    var(--kd-color-palette-jade-jade-70),
-    var(--kd-color-palette-jade-jade-40)
-  );
-  --kd-color-data-viz-divergent-02-div-pos-80: light-dark(
-    var(--kd-color-palette-jade-jade-80),
-    var(--kd-color-palette-jade-jade-30)
-  );
-  --kd-color-data-viz-divergent-02-div-pos-90: light-dark(
-    var(--kd-color-palette-jade-jade-90),
-    var(--kd-color-palette-jade-jade-20)
-  );
-  --kd-color-status-error: light-dark(
-    var(--kd-color-palette-background-error),
-    var(--kd-color-palette-background-error)
-  );
-  --kd-color-status-error-light: light-dark(
-    var(--kd-color-palette-background-error-light),
-    var(--kd-color-palette-background-error-light)
-  );
-  --kd-color-status-informational: light-dark(
-    var(--kd-color-palette-background-informational),
-    var(--kd-color-palette-background-informational)
-  );
-  --kd-color-status-informational-light: light-dark(
-    var(--kd-color-palette-background-informational-light),
-    var(--kd-color-palette-background-informational-light)
-  );
-  --kd-color-status-success: light-dark(
-    var(--kd-color-palette-background-success),
-    var(--kd-color-palette-background-success)
-  );
-  --kd-color-status-success-light: light-dark(
-    var(--kd-color-palette-background-success-light),
-    var(--kd-color-palette-background-success-light)
-  );
-  --kd-color-status-warning: light-dark(
-    var(--kd-color-palette-background-warning),
-    var(--kd-color-palette-background-warning)
-  );
-  --kd-color-status-warning-light: light-dark(
-    var(--kd-color-palette-background-warning-light),
-    var(--kd-color-palette-background-warning-light)
-  );
+  --kd-color-main-palette-primary: light-dark(var(--kd-color-palette-lavender-70), var(--kd-color-palette-lavender-70));
+  --kd-color-main-palette-secondary: light-dark(var(--kd-color-palette-spruce-60-secondary), var(--kd-color-palette-spruce-60-secondary));
+  --kd-color-main-palette-tertiary: light-dark(var(--kd-color-palette-spring-green-20-tertiary), var(--kd-color-palette-spring-green-20-tertiary));
+  --kd-color-main-palette-accent: light-dark(var(--kd-color-palette-warm-red-50-accent), var(--kd-color-palette-warm-red-50-accent));
+  --kd-color-buttons-primary-button: light-dark(var(--kd-color-palette-lavender-80-primary), var(--kd-color-palette-lavender-80-primary));
+  --kd-color-buttons-secondary-button: light-dark(var(--kd-color-palette-lavender-60), var(--kd-color-palette-lavender-90));
+  --kd-color-buttons-tertiary-button: light-dark(var(--kd-color-palette-lavender-10), var(--kd-color-palette-lavender-105));
+  --kd-color-buttons-button-dark-label: light-dark(var(--kd-color-palette-cool-gray-3), var(--kd-color-palette-dark-stone-20));
+  --kd-color-buttons-button-light-label: light-dark(var(--kd-color-palette-dark-stone-10), var(--kd-color-palette-dark-stone-20));
+  --kd-color-containers-container-bg: light-dark(var(--kd-color-palette-cool-gray-5), var(--kd-color-palette-light-opacity-3));
+  --kd-color-containers-container-child-bg: light-dark(var(--kd-color-palette-cool-gray-10), var(--kd-color-palette-light-opacity-3));
+  --kd-color-containers-interactive-container-active: light-dark(var(--kd-color-palette-lavender-10), var(--kd-color-palette-light-opacity-5));
+  --kd-color-containers-interactive-container-inactive: light-dark(var(--kd-color-palette-lavender-5), var(--kd-color-palette-light-opacity-3));
+  --kd-color-containers-utility-container: light-dark(var(--kd-color-palette-lavender-10), var(--kd-color-palette-lavender-105));
+  --kd-color-containers-interactive-flat-container: light-dark(var(--kd-color-palette-lavender-5), var(--kd-color-palette-lavender-107));
+  --kd-color-containers-container-footer: light-dark(var(--kd-color-palette-lavender-15), var(--kd-color-palette-lavender-105));
+  --kd-color-gradients-and-shadows-interactive-gradient-start: light-dark(var(--kd-color-palette-cool-gray-5), var(--kd-color-palette-lavender-107));
+  --kd-color-gradients-and-shadows-interactive-gradient-end: light-dark(var(--kd-color-palette-cool-gray-10), var(--kd-color-palette-lavender-100));
+  --kd-color-gradients-and-shadows-container-dropshadow-1: light-dark(var(--kd-color-palette-dark-opacity-10), var(--kd-color-palette-dark-opacity-10));
+  --kd-color-gradients-and-shadows-container-dropshadow-2: light-dark(var(--kd-color-palette-dark-opacity-3), var(--kd-color-palette-dark-opacity-10));
+  --kd-color-navigation-nav-bg: light-dark(var(--kd-color-palette-cool-gray-10), var(--kd-color-palette-lavender-110));
+  --kd-color-navigation-footer-bg: light-dark(var(--kd-color-palette-cool-gray-10), var(--kd-color-palette-lavender-110));
+  --kd-color-navigation-local-nav-bg: light-dark(var(--kd-color-palette-cool-gray-5), var(--kd-color-palette-lavender-105));
+  --kd-color-navigation-switcher-icon: light-dark(var(--kd-color-palette-lavender-80-primary), var(--kd-color-palette-lavender-60));
+  --kd-color-page-background: light-dark(var(--kd-color-palette-cool-gray-3), var(--kd-color-palette-cool-gray-cool-gray-93));
+  --kd-color-page-page-bg: light-dark(var(--kd-color-palette-cool-gray-3), var(--kd-color-palette-lavender-107));
+  --kd-color-page-logo-bridge-txt: light-dark(var(--kd-color-palette-spruce-60-secondary), var(--kd-color-palette-dark-stone-10));
+  --kd-color-page-overlay: light-dark(var(--kd-color-palette-light-opacity-50), var(--kd-color-palette-dark-opacity-85));
+  --kd-color-states-static: light-dark(var(--kd-color-palette-cool-gray-cool-gray-95), var(--kd-color-palette-cool-gray-5));
+  --kd-color-states-static-solid-label: light-dark(var(--kd-color-palette-dark-stone-10), var(--kd-color-palette-cool-gray-5));
+  --kd-color-states-disabled: light-dark(var(--kd-color-palette-dark-stone-20), var(--kd-color-palette-dark-stone-80-neutral-3));
+  --kd-color-states-disabled-label: light-dark(var(--kd-color-palette-warm-gray-50-base), var(--kd-color-palette-warm-gray-50-base));
+  --kd-color-table-header: light-dark(var(--kd-color-palette-cool-gray-10), var(--kd-color-palette-lavender-105));
+  --kd-color-table-row: light-dark(var(--kd-color-palette-cool-gray-3), var(--kd-color-palette-light-opacity-3));
+  --kd-color-table-alt-row: light-dark(var(--kd-color-palette-cool-gray-7), var(--kd-color-palette-light-opacity-5));
+  --kd-color-table-row-active: light-dark(var(--kd-color-palette-lavender-10), var(--kd-color-palette-lavender-100));
+  --kd-color-table-row-active-nested: light-dark(var(--kd-color-palette-cool-gray-3), var(--kd-color-palette-lavender-90));
+  --kd-color-table-footer: light-dark(var(--kd-color-palette-cool-gray-10), var(--kd-color-palette-lavender-105));
+  --kd-color-text-primary: light-dark(var(--kd-color-palette-cool-gray-5), var(--kd-color-palette-light-opacity-86));
+  --kd-color-text-light: light-dark(var(--kd-color-palette-cool-gray-8), var(--kd-color-palette-light-opacity-86));
+  --kd-color-text-medium: light-dark(var(--kd-color-palette-cool-gray-cool-gray-85), var(--kd-color-palette-dark-stone-20));
+  --kd-color-text-dark: light-dark(var(--kd-color-palette-cool-gray-cool-gray-90), var(--kd-color-palette-cool-gray-cool-gray-90));
+  --kd-color-text-link: light-dark(var(--kd-color-palette-lavender-70), var(--kd-color-palette-lavender-40));
+  --kd-color-text-link-active: light-dark(var(--kd-color-palette-lavender-50), var(--kd-color-palette-lavender-20));
+  --kd-color-titles-primary-title: light-dark(var(--kd-color-palette-spruce-30), var(--kd-color-palette-spruce-30));
+  --kd-color-titles-secondary-title: light-dark(var(--kd-color-palette-spruce-40), var(--kd-color-palette-spruce-20));
+  --kd-color-titles-tertiary-title: light-dark(var(--kd-color-palette-spruce-50), var(--kd-color-palette-spruce-30));
+  --kd-color-utility-border: light-dark(var(--kd-color-palette-cool-gray-15), var(--kd-color-palette-light-opacity-5));
+  --kd-color-utility-icon: light-dark(var(--kd-color-palette-cool-gray-cool-gray-70), var(--kd-color-palette-cool-gray-5));
+  --kd-color-utility-search-bg: light-dark(var(--kd-color-palette-lavender-5), var(--kd-color-palette-lavender-105));
+  --kd-color-utility-interactive-graphic: light-dark(var(--kd-color-palette-cool-gray-cool-gray-20), var(--kd-color-palette-cool-gray-cool-gray-80));
+  --kd-color-utility-interactive-graphic-alt: light-dark(var(--kd-color-palette-cool-gray-cool-gray-30), var(--kd-color-palette-cool-gray-cool-gray-60-neutral-1));
+  --kd-color-utility-neutral-tag: light-dark(var(--kd-color-palette-cool-gray-10), var(--kd-color-palette-cool-gray-cool-gray-85));
+  --kd-color-forms-label-primary: light-dark(var(--kd-color-palette-dark-stone-80-neutral-3), var(--kd-color-palette-dark-stone-20));
+  --kd-color-forms-label-secondary: light-dark(var(--kd-color-palette-dark-stone-60), var(--kd-color-palette-dark-stone-30));
+  --kd-color-forms-input-field-background: light-dark(var(--kd-color-palette-cool-gray-5), var(--kd-color-palette-dark-opacity-30));
+  --kd-color-forms-input-field-border: light-dark(var(--kd-color-palette-dark-stone-50), var(--kd-color-palette-cool-gray-cool-gray-70));
+  --kd-color-forms-input-field-text: light-dark(var(--kd-color-palette-dark-stone-80-neutral-3), var(--kd-color-palette-dark-stone-20));
+  --kd-color-card-card-background: light-dark(var(--kd-color-palette-cool-gray-3), var(--kd-color-palette-light-opacity-3));
+  --kd-color-card-card-border-color-clickable: light-dark(var(--kd-color-palette-lavender-80-primary), var(--kd-color-palette-lavender-30));
+  --kd-color-card-card-border-color-default: light-dark(var(--kd-color-palette-cool-gray-5), var(--kd-color-palette-light-opacity-5));
+  --kd-color-card-card-border-color-hover: light-dark(var(--kd-color-palette-cool-gray-7), var(--kd-color-palette-light-opacity-10));
+  --kd-color-data-viz-categorical-01-10: light-dark(var(--kd-color-palette-lilac-lilac-20), var(--kd-color-palette-lilac-lilac-30));
+  --kd-color-data-viz-categorical-01-01: light-dark(var(--kd-color-palette-sea-sea-40), var(--kd-color-palette-sea-sea-10));
+  --kd-color-data-viz-categorical-01-02: light-dark(var(--kd-color-palette-jade-jade-20), var(--kd-color-palette-jade-jade-30));
+  --kd-color-data-viz-categorical-01-03: light-dark(var(--kd-color-palette-amber-amber-40), var(--kd-color-palette-amber-amber-10));
+  --kd-color-data-viz-categorical-01-04: light-dark(var(--kd-color-palette-blush-blush-20), var(--kd-color-palette-blush-blush-30));
+  --kd-color-data-viz-categorical-01-05: light-dark(var(--kd-color-palette-lilac-lilac-40), var(--kd-color-palette-lilac-lilac-10));
+  --kd-color-data-viz-categorical-01-06: light-dark(var(--kd-color-palette-sea-sea-20), var(--kd-color-palette-sea-sea-30));
+  --kd-color-data-viz-categorical-01-07: light-dark(var(--kd-color-palette-jade-jade-40), var(--kd-color-palette-jade-jade-10));
+  --kd-color-data-viz-categorical-01-08: light-dark(var(--kd-color-palette-amber-amber-20), var(--kd-color-palette-amber-amber-30));
+  --kd-color-data-viz-categorical-01-09: light-dark(var(--kd-color-palette-blush-blush-40), var(--kd-color-palette-blush-blush-10));
+  --kd-color-data-viz-sequential-01-10: light-dark(var(--kd-color-palette-sea-sea-10), var(--kd-color-palette-sea-sea-100));
+  --kd-color-data-viz-sequential-01-20: light-dark(var(--kd-color-palette-sea-sea-10), var(--kd-color-palette-sea-sea-90));
+  --kd-color-data-viz-sequential-01-30: light-dark(var(--kd-color-palette-sea-sea-40), var(--kd-color-palette-sea-sea-70));
+  --kd-color-data-viz-sequential-01-40: light-dark(var(--kd-color-palette-sea-sea-30), var(--kd-color-palette-sea-sea-80));
+  --kd-color-data-viz-sequential-01-50: light-dark(var(--kd-color-palette-sea-sea-50), var(--kd-color-palette-sea-sea-60));
+  --kd-color-data-viz-sequential-01-60: light-dark(var(--kd-color-palette-sea-sea-60), var(--kd-color-palette-sea-sea-50));
+  --kd-color-data-viz-sequential-01-70: light-dark(var(--kd-color-palette-sea-sea-70), var(--kd-color-palette-sea-sea-40));
+  --kd-color-data-viz-sequential-01-80: light-dark(var(--kd-color-palette-sea-sea-80), var(--kd-color-palette-sea-sea-30));
+  --kd-color-data-viz-sequential-01-90: light-dark(var(--kd-color-palette-sea-sea-90), var(--kd-color-palette-sea-sea-20));
+  --kd-color-data-viz-sequential-01-100: light-dark(var(--kd-color-palette-sea-sea-100), var(--kd-color-palette-sea-sea-10));
+  --kd-color-data-viz-sequential-02-seq-02-10: light-dark(var(--kd-color-palette-jade-jade-10), var(--kd-color-palette-jade-jade-100));
+  --kd-color-data-viz-sequential-02-seq-02-100: light-dark(var(--kd-color-palette-jade-jade-100), var(--kd-color-palette-jade-jade-10));
+  --kd-color-data-viz-sequential-02-seq-02-20: light-dark(var(--kd-color-palette-jade-jade-20), var(--kd-color-palette-jade-jade-90));
+  --kd-color-data-viz-sequential-02-seq-02-30: light-dark(var(--kd-color-palette-jade-jade-30), var(--kd-color-palette-jade-jade-80));
+  --kd-color-data-viz-sequential-02-seq-02-40: light-dark(var(--kd-color-palette-jade-jade-40), var(--kd-color-palette-jade-jade-70));
+  --kd-color-data-viz-sequential-02-seq-02-50: light-dark(var(--kd-color-palette-jade-jade-50), var(--kd-color-palette-jade-jade-60));
+  --kd-color-data-viz-sequential-02-seq-02-60: light-dark(var(--kd-color-palette-jade-jade-60), var(--kd-color-palette-jade-jade-50));
+  --kd-color-data-viz-sequential-02-seq-02-70: light-dark(var(--kd-color-palette-jade-jade-70), var(--kd-color-palette-jade-jade-40));
+  --kd-color-data-viz-sequential-02-seq-02-80: light-dark(var(--kd-color-palette-jade-jade-80), var(--kd-color-palette-jade-jade-30));
+  --kd-color-data-viz-sequential-02-seq-02-90: light-dark(var(--kd-color-palette-jade-jade-90), var(--kd-color-palette-jade-jade-20));
+  --kd-color-data-viz-sequential-03-seq-03-10: light-dark(var(--kd-color-palette-amber-amber-10), var(--kd-color-palette-amber-amber-100));
+  --kd-color-data-viz-sequential-03-seq-03-100: light-dark(var(--kd-color-palette-amber-amber-100), var(--kd-color-palette-amber-amber-10));
+  --kd-color-data-viz-sequential-03-seq-03-20: light-dark(var(--kd-color-palette-amber-amber-20), var(--kd-color-palette-amber-amber-90));
+  --kd-color-data-viz-sequential-03-seq-03-30: light-dark(var(--kd-color-palette-amber-amber-30), var(--kd-color-palette-amber-amber-80));
+  --kd-color-data-viz-sequential-03-seq-03-40: light-dark(var(--kd-color-palette-amber-amber-40), var(--kd-color-palette-amber-amber-70));
+  --kd-color-data-viz-sequential-03-seq-03-50: light-dark(var(--kd-color-palette-amber-amber-50), var(--kd-color-palette-amber-amber-60));
+  --kd-color-data-viz-sequential-03-seq-03-60: light-dark(var(--kd-color-palette-amber-amber-60), var(--kd-color-palette-amber-amber-50));
+  --kd-color-data-viz-sequential-03-seq-03-70: light-dark(var(--kd-color-palette-amber-amber-70), var(--kd-color-palette-amber-amber-40));
+  --kd-color-data-viz-sequential-03-seq-03-80: light-dark(var(--kd-color-palette-amber-amber-80), var(--kd-color-palette-amber-amber-30));
+  --kd-color-data-viz-sequential-03-seq-03-90: light-dark(var(--kd-color-palette-amber-amber-90), var(--kd-color-palette-amber-amber-20));
+  --kd-color-data-viz-sequential-04-seq-04-10: light-dark(var(--kd-color-palette-blush-blush-10), var(--kd-color-palette-blush-blush-100));
+  --kd-color-data-viz-sequential-04-seq-04-100: light-dark(var(--kd-color-palette-blush-blush-100), var(--kd-color-palette-blush-blush-10));
+  --kd-color-data-viz-sequential-04-seq-04-20: light-dark(var(--kd-color-palette-blush-blush-20), var(--kd-color-palette-blush-blush-90));
+  --kd-color-data-viz-sequential-04-seq-04-30: light-dark(var(--kd-color-palette-blush-blush-30), var(--kd-color-palette-blush-blush-80));
+  --kd-color-data-viz-sequential-04-seq-04-40: light-dark(var(--kd-color-palette-blush-blush-40), var(--kd-color-palette-blush-blush-70));
+  --kd-color-data-viz-sequential-04-seq-04-50: light-dark(var(--kd-color-palette-blush-blush-50), var(--kd-color-palette-blush-blush-60));
+  --kd-color-data-viz-sequential-04-seq-04-60: light-dark(var(--kd-color-palette-blush-blush-60), var(--kd-color-palette-blush-blush-50));
+  --kd-color-data-viz-sequential-04-seq-04-70: light-dark(var(--kd-color-palette-blush-blush-70), var(--kd-color-palette-blush-blush-40));
+  --kd-color-data-viz-sequential-04-seq-04-80: light-dark(var(--kd-color-palette-blush-blush-80), var(--kd-color-palette-blush-blush-30));
+  --kd-color-data-viz-sequential-04-seq-04-90: light-dark(var(--kd-color-palette-blush-blush-90), var(--kd-color-palette-blush-blush-20));
+  --kd-color-data-viz-sequential-05-seq-05-10: light-dark(var(--kd-color-palette-lilac-lilac-10), var(--kd-color-palette-lilac-lilac-100));
+  --kd-color-data-viz-sequential-05-seq-05-100: light-dark(var(--kd-color-palette-lilac-lilac-100), var(--kd-color-palette-lilac-lilac-10));
+  --kd-color-data-viz-sequential-05-seq-05-20: light-dark(var(--kd-color-palette-lilac-lilac-20), var(--kd-color-palette-lilac-lilac-90));
+  --kd-color-data-viz-sequential-05-seq-05-30: light-dark(var(--kd-color-palette-lilac-lilac-30), var(--kd-color-palette-lilac-lilac-80));
+  --kd-color-data-viz-sequential-05-seq-05-40: light-dark(var(--kd-color-palette-lilac-lilac-40), var(--kd-color-palette-lilac-lilac-70));
+  --kd-color-data-viz-sequential-05-seq-05-50: light-dark(var(--kd-color-palette-lilac-lilac-50), var(--kd-color-palette-lilac-lilac-60));
+  --kd-color-data-viz-sequential-05-seq-05-60: light-dark(var(--kd-color-palette-lilac-lilac-60), var(--kd-color-palette-lilac-lilac-50));
+  --kd-color-data-viz-sequential-05-seq-05-70: light-dark(var(--kd-color-palette-lilac-lilac-70), var(--kd-color-palette-lilac-lilac-40));
+  --kd-color-data-viz-sequential-05-seq-05-80: light-dark(var(--kd-color-palette-lilac-lilac-80), var(--kd-color-palette-lilac-lilac-30));
+  --kd-color-data-viz-sequential-05-seq-05-90: light-dark(var(--kd-color-palette-lilac-lilac-90), var(--kd-color-palette-lilac-lilac-20));
+  --kd-color-data-viz-divergent-01-div-neg-10: light-dark(var(--kd-color-palette-amber-amber-10), var(--kd-color-palette-amber-amber-100));
+  --kd-color-data-viz-divergent-01-div-neg-100: light-dark(var(--kd-color-palette-amber-amber-100), var(--kd-color-palette-amber-amber-10));
+  --kd-color-data-viz-divergent-01-div-neg-20: light-dark(var(--kd-color-palette-amber-amber-20), var(--kd-color-palette-amber-amber-90));
+  --kd-color-data-viz-divergent-01-div-neg-30: light-dark(var(--kd-color-palette-amber-amber-30), var(--kd-color-palette-amber-amber-80));
+  --kd-color-data-viz-divergent-01-div-neg-40: light-dark(var(--kd-color-palette-amber-amber-40), var(--kd-color-palette-amber-amber-70));
+  --kd-color-data-viz-divergent-01-div-neg-50: light-dark(var(--kd-color-palette-amber-amber-50), var(--kd-color-palette-amber-amber-60));
+  --kd-color-data-viz-divergent-01-div-neg-60: light-dark(var(--kd-color-palette-amber-amber-60), var(--kd-color-palette-amber-amber-50));
+  --kd-color-data-viz-divergent-01-div-neg-70: light-dark(var(--kd-color-palette-amber-amber-70), var(--kd-color-palette-amber-amber-40));
+  --kd-color-data-viz-divergent-01-div-neg-80: light-dark(var(--kd-color-palette-amber-amber-80), var(--kd-color-palette-amber-amber-30));
+  --kd-color-data-viz-divergent-01-div-neg-90: light-dark(var(--kd-color-palette-amber-amber-90), var(--kd-color-palette-amber-amber-20));
+  --kd-color-data-viz-divergent-01-div-neu: light-dark(var(--kd-color-palette-neutral-div-01-neutral), var(--kd-color-palette-darkstone-dark-stone-80(base)));
+  --kd-color-data-viz-divergent-01-div-pos-10: light-dark(var(--kd-color-palette-sea-sea-10), var(--kd-color-palette-sea-sea-100));
+  --kd-color-data-viz-divergent-01-div-pos-100: light-dark(var(--kd-color-palette-sea-sea-100), var(--kd-color-palette-sea-sea-10));
+  --kd-color-data-viz-divergent-01-div-pos-20: light-dark(var(--kd-color-palette-sea-sea-20), var(--kd-color-palette-sea-sea-90));
+  --kd-color-data-viz-divergent-01-div-pos-30: light-dark(var(--kd-color-palette-sea-sea-30), var(--kd-color-palette-sea-sea-80));
+  --kd-color-data-viz-divergent-01-div-pos-40: light-dark(var(--kd-color-palette-sea-sea-40), var(--kd-color-palette-sea-sea-70));
+  --kd-color-data-viz-divergent-01-div-pos-50: light-dark(var(--kd-color-palette-sea-sea-50), var(--kd-color-palette-sea-sea-60));
+  --kd-color-data-viz-divergent-01-div-pos-60: light-dark(var(--kd-color-palette-sea-sea-60), var(--kd-color-palette-sea-sea-50));
+  --kd-color-data-viz-divergent-01-div-pos-70: light-dark(var(--kd-color-palette-sea-sea-70), var(--kd-color-palette-sea-sea-40));
+  --kd-color-data-viz-divergent-01-div-pos-80: light-dark(var(--kd-color-palette-sea-sea-80), var(--kd-color-palette-sea-sea-30));
+  --kd-color-data-viz-divergent-01-div-pos-90: light-dark(var(--kd-color-palette-sea-sea-90), var(--kd-color-palette-sea-sea-20));
+  --kd-color-data-viz-divergent-02-div-neg-10: light-dark(var(--kd-color-palette-blush-blush-10), var(--kd-color-palette-blush-blush-100));
+  --kd-color-data-viz-divergent-02-div-neg-100: light-dark(var(--kd-color-palette-blush-blush-100), var(--kd-color-palette-blush-blush-10));
+  --kd-color-data-viz-divergent-02-div-neg-20: light-dark(var(--kd-color-palette-blush-blush-20), var(--kd-color-palette-blush-blush-90));
+  --kd-color-data-viz-divergent-02-div-neg-30: light-dark(var(--kd-color-palette-blush-blush-30), var(--kd-color-palette-blush-blush-80));
+  --kd-color-data-viz-divergent-02-div-neg-40: light-dark(var(--kd-color-palette-blush-blush-40), var(--kd-color-palette-blush-blush-70));
+  --kd-color-data-viz-divergent-02-div-neg-50: light-dark(var(--kd-color-palette-blush-blush-50), var(--kd-color-palette-blush-blush-60));
+  --kd-color-data-viz-divergent-02-div-neg-60: light-dark(var(--kd-color-palette-blush-blush-60), var(--kd-color-palette-blush-blush-50));
+  --kd-color-data-viz-divergent-02-div-neg-70: light-dark(var(--kd-color-palette-blush-blush-70), var(--kd-color-palette-blush-blush-40));
+  --kd-color-data-viz-divergent-02-div-neg-80: light-dark(var(--kd-color-palette-blush-blush-80), var(--kd-color-palette-blush-blush-30));
+  --kd-color-data-viz-divergent-02-div-neg-90: light-dark(var(--kd-color-palette-blush-blush-90), var(--kd-color-palette-blush-blush-20));
+  --kd-color-data-viz-divergent-02-div-neu: light-dark(var(--kd-color-palette-neutral-div-02-neutral), var(--kd-color-palette-darkstone-dark-stone-80(base)));
+  --kd-color-data-viz-divergent-02-div-pos-10: light-dark(var(--kd-color-palette-jade-jade-10), var(--kd-color-palette-jade-jade-100));
+  --kd-color-data-viz-divergent-02-div-pos-100: light-dark(var(--kd-color-palette-jade-jade-100), var(--kd-color-palette-jade-jade-10));
+  --kd-color-data-viz-divergent-02-div-pos-20: light-dark(var(--kd-color-palette-jade-jade-20), var(--kd-color-palette-jade-jade-90));
+  --kd-color-data-viz-divergent-02-div-pos-30: light-dark(var(--kd-color-palette-jade-jade-30), var(--kd-color-palette-jade-jade-80));
+  --kd-color-data-viz-divergent-02-div-pos-40: light-dark(var(--kd-color-palette-jade-jade-40), var(--kd-color-palette-jade-jade-70));
+  --kd-color-data-viz-divergent-02-div-pos-50: light-dark(var(--kd-color-palette-jade-jade-50), var(--kd-color-palette-jade-jade-60));
+  --kd-color-data-viz-divergent-02-div-pos-60: light-dark(var(--kd-color-palette-jade-jade-60), var(--kd-color-palette-jade-jade-50));
+  --kd-color-data-viz-divergent-02-div-pos-70: light-dark(var(--kd-color-palette-jade-jade-70), var(--kd-color-palette-jade-jade-40));
+  --kd-color-data-viz-divergent-02-div-pos-80: light-dark(var(--kd-color-palette-jade-jade-80), var(--kd-color-palette-jade-jade-30));
+  --kd-color-data-viz-divergent-02-div-pos-90: light-dark(var(--kd-color-palette-jade-jade-90), var(--kd-color-palette-jade-jade-20));
+  --kd-color-status-error: light-dark(var(--kd-color-palette-background-error), var(--kd-color-palette-background-error));
+  --kd-color-status-error-light: light-dark(var(--kd-color-palette-background-error-light), var(--kd-color-palette-background-error-light));
+  --kd-color-status-informational: light-dark(var(--kd-color-palette-background-informational), var(--kd-color-palette-background-informational));
+  --kd-color-status-informational-light: light-dark(var(--kd-color-palette-background-informational-light), var(--kd-color-palette-background-informational-light));
+  --kd-color-status-success: light-dark(var(--kd-color-palette-background-success), var(--kd-color-palette-background-success));
+  --kd-color-status-success-light: light-dark(var(--kd-color-palette-background-success-light), var(--kd-color-palette-background-success-light));
+  --kd-color-status-warning: light-dark(var(--kd-color-palette-background-warning), var(--kd-color-palette-background-warning));
+  --kd-color-status-warning-light: light-dark(var(--kd-color-palette-background-warning-light), var(--kd-color-palette-background-warning-light));
 }

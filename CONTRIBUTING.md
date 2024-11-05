@@ -21,6 +21,9 @@ npm run test
 # generate new custom-elements.json (updates storybook docs/args)
 npm run analyze
 
+# generate new tokens scss files
+npm run build:tokens
+
 # format all files with prettier
 npm run format
 ```
