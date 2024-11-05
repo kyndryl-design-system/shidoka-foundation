@@ -17,3 +17,27 @@ export function createOptionsArray(options: object = {}) {
 
   return optionsArray;
 }
+
+export function getTokens(json: object, palette: false, category = '') {
+  const attrPrefix = palette ? '--kd-color-palette' : '--kd-color';
+  let tokens: Array<any> = [];
+
+  for (const [key, value] of Object.entries(json)) {
+    if (value.$value) {
+      const token = cleanKey(key);
+      // set variable attribute
+      const variable = `${attrPrefix}${category}-${token}`;
+
+      tokens.push(variable);
+    } else {
+      const newCategory = category + `-${cleanKey(key)}`;
+      tokens = [...tokens, ...getTokens(value, palette, newCategory)];
+    }
+  }
+
+  return tokens;
+}
+
+function cleanKey(key: string) {
+  return key.toLowerCase().split(' ').join('-');
+}

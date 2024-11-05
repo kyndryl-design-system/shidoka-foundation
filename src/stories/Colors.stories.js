@@ -1,7 +1,7 @@
 import { html } from 'lit';
 
 export default {
-  title: 'Foundation/Colors',
+  title: 'Deprecated/Foundation/Colors',
   decorators: [
     (story) =>
       html`
