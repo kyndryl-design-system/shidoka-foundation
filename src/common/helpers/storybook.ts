@@ -18,7 +18,7 @@ export function createOptionsArray(options: object = {}) {
   return optionsArray;
 }
 
-export function getTokens(json: object, category = '') {
+export function getTokens(json: object, category = '', categoryTree = []) {
   let tokens: Array<any> = [];
 
   for (const [key, value] of Object.entries(json)) {
@@ -28,10 +28,19 @@ export function getTokens(json: object, category = '') {
       // set variable attribute
       const variable = `${prefix}${category}-${token}`;
 
-      tokens.push(variable);
+      const tokenObj = {
+        variable: variable,
+        categoryTree: categoryTree,
+        type: value.$type,
+      };
+
+      tokens.push(tokenObj);
     } else {
+      const newCategoryTree = JSON.parse(JSON.stringify(categoryTree));
+      newCategoryTree.push(key);
+
       const newCategory = category + `-${cleanKey(key)}`;
-      tokens = [...tokens, ...getTokens(value, newCategory)];
+      tokens = [...tokens, ...getTokens(value, newCategory, newCategoryTree)];
     }
   }
 
