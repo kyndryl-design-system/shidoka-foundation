@@ -17,7 +17,7 @@ async function run() {
     // build palette variables file
     let paletteContent = ':root {\n';
     // recurse through json token structure
-    paletteContent += loopTokens(palette, true);
+    paletteContent += loopTokens(palette);
     paletteContent += '}';
     // write palette css file
     promises.writeFile('src/scss/variables/colorPalette.scss', paletteContent);
@@ -25,7 +25,7 @@ async function run() {
     // build semantic variables file
     let semanticContent = ':root {\n';
     // recurse through json token structure
-    semanticContent += loopTokens(light);
+    semanticContent += loopTokens(light, true);
     semanticContent += '}';
     // write semantic css file
     promises.writeFile(
@@ -35,29 +35,30 @@ async function run() {
   }
 
   // recursively loop though json structure to generate css variable syntax
-  function loopTokens(json, palette = false, category = '', keys = []) {
-    const attrPrefix = palette ? '--kd-color-palette' : '--kd-color';
-    const valPrefix = '--kd-color-palette';
+  function loopTokens(json, theme = false, category = '', keys = []) {
     let content = '';
 
     for (const [key, value] of Object.entries(json)) {
       if (value.$value) {
+        const prefix = `--kd-${value.$type}`;
         // build css variables syntax
         const token = cleanKey(key);
         // set variable attribute
-        const attr = `${attrPrefix}${category}-${token}`;
+        const attr = `${prefix}${category}-${token}`;
         // palette token reference
-        const ref = cleanValue(value.$value);
-        let val;
+        let val = cleanValue(value.$value);
 
-        if (palette) {
-          // set palette variable value, unchanged
-          val = ref;
-        } else {
-          // set semantic variable value using css light-dark() syntax
-          const darkKey = getDarkValue(keys, key);
-          const darkRef = cleanValue(darkKey.$value);
-          val = `light-dark(var(${valPrefix}-${ref}), var(${valPrefix}-${darkRef}))`;
+        // if value is a reference to another variable
+        if (value.$value.startsWith('{')) {
+          if (theme) {
+            // set variable value using css light-dark() syntax
+            const darkRef = getDarkValue(keys, key);
+            const darkVal = cleanValue(darkRef.$value);
+            val = `light-dark(var(${prefix}-${val}), var(${prefix}-${darkVal}))`;
+          } else {
+            // set variable value
+            val = `var(${prefix}-${val})`;
+          }
         }
 
         // write variable
@@ -69,7 +70,7 @@ async function run() {
         let newCategory = category + `-${cleanKey(key)}`;
 
         // recurse through sub-level and write sub-level variables
-        content += loopTokens(value, palette, newCategory, newKeys);
+        content += loopTokens(value, theme, newCategory, newKeys);
       }
     }
 

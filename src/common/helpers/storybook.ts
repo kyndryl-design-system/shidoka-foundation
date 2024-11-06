@@ -18,20 +18,20 @@ export function createOptionsArray(options: object = {}) {
   return optionsArray;
 }
 
-export function getTokens(json: object, palette: false, category = '') {
-  const attrPrefix = palette ? '--kd-color-palette' : '--kd-color';
+export function getTokens(json: object, category = '') {
   let tokens: Array<any> = [];
 
   for (const [key, value] of Object.entries(json)) {
     if (value.$value) {
+      const prefix = `--kd-${value.$type}`;
       const token = cleanKey(key);
       // set variable attribute
-      const variable = `${attrPrefix}${category}-${token}`;
+      const variable = `${prefix}${category}-${token}`;
 
       tokens.push(variable);
     } else {
       const newCategory = category + `-${cleanKey(key)}`;
-      tokens = [...tokens, ...getTokens(value, palette, newCategory)];
+      tokens = [...tokens, ...getTokens(value, newCategory)];
     }
   }
 

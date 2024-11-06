@@ -3,7 +3,7 @@ import { getTokens } from '../common/helpers/storybook';
 import colorPalette from '../../tokens/Color Palette/Color.json';
 import colorSemantic from '../../tokens/Themes/Light.json';
 
-const paletteTokens = getTokens(colorPalette, true);
+const paletteTokens = getTokens(colorPalette);
 const semanticTokens = getTokens(colorSemantic);
 
 export default {

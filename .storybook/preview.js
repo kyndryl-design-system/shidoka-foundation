@@ -34,7 +34,7 @@ export default {
         dark: 'dark',
         auto: 'light dark',
       },
-      defaultTheme: 'light',
+      defaultTheme: 'auto',
       parentSelector: 'head meta[name="color-scheme"]',
       attributeName: 'content',
     }),
