@@ -32,6 +32,6 @@ jobs:
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: '$COMMIT_MSG'
+          commit_message: ${{ env.COMMIT_MSG }}
       - name: Create pull request
-        run: gh pr create --base next --head tokens --title '$COMMIT_MSG' --body 'Created by the update-tokens GitHub Actions workflow'
+        run: gh pr create --base next --head tokens --title ${{ env.COMMIT_MSG }} --body 'Created by the update-tokens GitHub Actions workflow'
