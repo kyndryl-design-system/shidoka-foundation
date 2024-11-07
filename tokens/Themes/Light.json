@@ -170,7 +170,7 @@
   "Text": {
     "Primary": {
       "$type": "color",
-      "$value": "{Cool Gray.5}"
+      "$value": "{Dark Stone.80}"
     },
     "light": {
       "$type": "color",

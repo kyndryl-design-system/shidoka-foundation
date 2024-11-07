@@ -31,14 +31,9 @@ export default {
   ],
 };
 
-export const Base = {
+export const Semantic = {
   render: () => {
     return html`
-      <p>
-        <strong>Note:</strong> Do <strong><em>not</em></strong> use Palette
-        tokens directly. Only use contextual tokens in designs and code.
-      </p>
-
       <table>
         <thead>
           <tr>
@@ -48,7 +43,7 @@ export const Base = {
           </tr>
         </thead>
         <tbody>
-          ${paletteTokens.map((token) => {
+          ${semanticTokens.map((token) => {
             return html`
               <tr>
                 <td>${token.variable}</td>
@@ -70,9 +65,14 @@ export const Base = {
   },
 };
 
-export const Semantic = {
+export const Palette = {
   render: () => {
     return html`
+      <p>
+        <strong>Note:</strong> Do <strong><em>not</em></strong> use Palette
+        tokens directly. Only use contextual tokens in designs and code.
+      </p>
+
       <table>
         <thead>
           <tr>
@@ -82,7 +82,7 @@ export const Semantic = {
           </tr>
         </thead>
         <tbody>
-          ${semanticTokens.map((token) => {
+          ${paletteTokens.map((token) => {
             return html`
               <tr>
                 <td>${token.variable}</td>
