@@ -15,15 +15,55 @@ export default {
           table {
             border-collapse: collapse;
           }
+
           td,
           th {
-            border: 1px solid #dddddd;
             text-align: left;
-            padding: 8px;
+            padding: 16px;
+            border-bottom: 1px solid var(--kd-color-utility-border);
           }
+
+          th {
+            background: var(--kd-color-table-header);
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+          }
+
+          th:first-child {
+            border-top-left-radius: 8px;
+          }
+
+          th:last-child {
+            border-top-right-radius: 8px;
+          }
+
+          td {
+            background: var(--kd-color-table-row);
+          }
+
+          tr:nth-child(odd) td {
+            background: var(--kd-color-table-alt-row);
+          }
+
+          tr:last-child td {
+            border-bottom: none;
+          }
+
+          tr:last-child td:first-child {
+            border-bottom-left-radius: 8px;
+          }
+
+          tr:last-child td:last-child {
+            border-bottom-right-radius: 8px;
+          }
+
           .preview {
-            width: 50px;
-            height: 50px;
+            display: block;
+            border-radius: 8px;
+            outline: 1px solid var(--kd-color-utility-border);
+            width: 100%;
+            height: 40px;
           }
         </style>
         ${story()}
@@ -52,10 +92,12 @@ export const Semantic = {
                     token.variable
                   )}
                 </td>
-                <td
-                  class="preview"
-                  style="background-color: var(${token.variable})"
-                ></td>
+                <td>
+                  <span
+                    class="preview"
+                    style="background-color: var(${token.variable})"
+                  ></span>
+                </td>
               </tr>
             `;
           })}
@@ -72,6 +114,7 @@ export const Palette = {
         <strong>Note:</strong> Do <strong><em>not</em></strong> use Palette
         tokens directly. Only use contextual tokens in designs and code.
       </p>
+      <br />
 
       <table>
         <thead>
@@ -91,10 +134,12 @@ export const Palette = {
                     token.variable
                   )}
                 </td>
-                <td
-                  class="preview"
-                  style="background-color: var(${token.variable})"
-                ></td>
+                <td>
+                  <span
+                    class="preview"
+                    style="background-color: var(${token.variable})"
+                  ></span>
+                </td>
               </tr>
             `;
           })}
@@ -127,10 +172,12 @@ export const Palette = {
 //                       document.documentElement
 //                     ).getPropertyValue(token.variable)}
 //                   </td>
-//                   <td
-//                     class="preview"
-//                     style="background-color: var(${token.variable})"
-//                   ></td>
+//                   <td>
+//                     <span
+//                       class="preview"
+//                       style="background-color: var(${token.variable})"
+//                     ></span>
+//                   </td>
 //                 </tr>
 //               `;
 //             })}
