@@ -8,11 +8,12 @@ on:
       - tokens
     paths:
       - 'tokens/**'
+env:
+  GH_TOKEN: '${{ secrets.GH_TOKEN }}'
+  COMMIT_MSG: 'fix(tokens): automated token update'
 jobs:
   Build:
     runs-on: ubuntu-latest
-    env:
-      COMMIT_MSG: 'fix(tokens): automated token update'
     permissions:
       contents: write
       pull-requests: write
