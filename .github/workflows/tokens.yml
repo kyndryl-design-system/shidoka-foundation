@@ -1,0 +1,32 @@
+name: update-tokens
+on:
+  push:
+    # branches:
+    #   - main
+    #   - beta
+    #   - next
+    paths:
+      - 'tokens/**'
+# env:
+#   GH_TOKEN: '${{ secrets.GH_TOKEN }}'
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Use Node.js 20.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci --legacy-peer-deps
+      - name: Build css variables
+        run: npm run build:tokens
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'fix(tokens): automated token update'
