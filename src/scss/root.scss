@@ -128,6 +128,6 @@ html {
 body {
   @include typography.type-body-02;
   min-height: 100vh;
-  background: var(--kd-color-page-background);
+  background: var(--kd-color-page-bg);
   color: var(--kd-color-text-primary);
 }
