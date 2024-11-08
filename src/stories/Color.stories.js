@@ -12,8 +12,17 @@ export default {
     (story) =>
       html`
         <style>
+          .heading {
+            margin-bottom: 8px;
+          }
+
+          p {
+            margin-bottom: 12px;
+          }
+
           table {
             border-collapse: collapse;
+            margin-bottom: 32px;
           }
 
           td,
@@ -74,35 +83,43 @@ export default {
 export const Semantic = {
   render: () => {
     return html`
-      <table>
-        <thead>
-          <tr>
-            <th>Variable Name</th>
-            <th>Value</th>
-            <th>Preview</th>
-          </tr>
-        </thead>
-        <tbody>
-          ${semanticTokens.map((token) => {
-            return html`
+      ${Object.entries(colorSemantic).map(([key]) => {
+        return html`
+          <div class="heading kd-type--headline-06">${key}</div>
+
+          <table>
+            <thead>
               <tr>
-                <td>${token.variable}</td>
-                <td>
-                  ${getComputedStyle(document.documentElement).getPropertyValue(
-                    token.variable
-                  )}
-                </td>
-                <td>
-                  <span
-                    class="preview"
-                    style="background-color: var(${token.variable})"
-                  ></span>
-                </td>
+                <th>Variable Name</th>
+                <th>Value</th>
+                <th>Preview</th>
               </tr>
-            `;
-          })}
-        </tbody>
-      </table>
+            </thead>
+            <tbody>
+              ${semanticTokens
+                .filter((token) => token.categoryTree.includes(key))
+                .map((token) => {
+                  return html`
+                    <tr>
+                      <td>${token.variable}</td>
+                      <td>
+                        ${getComputedStyle(
+                          document.documentElement
+                        ).getPropertyValue(token.variable)}
+                      </td>
+                      <td>
+                        <span
+                          class="preview"
+                          style="background-color: var(${token.variable})"
+                        ></span>
+                      </td>
+                    </tr>
+                  `;
+                })}
+            </tbody>
+          </table>
+        `;
+      })}
     `;
   },
 };
@@ -110,11 +127,12 @@ export const Semantic = {
 export const Palette = {
   render: () => {
     return html`
+      <div class="heading kd-type--headline-06">Color Palette</div>
+
       <p>
         <strong>Note:</strong> Do <strong><em>not</em></strong> use Palette
         tokens directly. Only use contextual tokens in designs and code.
       </p>
-      <br />
 
       <table>
         <thead>
@@ -148,41 +166,3 @@ export const Palette = {
     `;
   },
 };
-
-// export const Buttons = {
-//   render: () => {
-//     return html`
-//       <table>
-//         <thead>
-//           <tr>
-//             <th>Variable Name</th>
-//             <th>Value</th>
-//             <th>Preview</th>
-//           </tr>
-//         </thead>
-//         <tbody>
-//           ${semanticTokens
-//             .filter((token) => token.categoryTree.includes('Buttons'))
-//             .map((token) => {
-//               return html`
-//                 <tr>
-//                   <td>${token.variable}</td>
-//                   <td>
-//                     ${getComputedStyle(
-//                       document.documentElement
-//                     ).getPropertyValue(token.variable)}
-//                   </td>
-//                   <td>
-//                     <span
-//                       class="preview"
-//                       style="background-color: var(${token.variable})"
-//                     ></span>
-//                   </td>
-//                 </tr>
-//               `;
-//             })}
-//         </tbody>
-//       </table>
-//     `;
-//   },
-// };
