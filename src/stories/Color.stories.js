@@ -13,7 +13,8 @@ export default {
       html`
         <style>
           .heading {
-            margin-bottom: 8px;
+            margin-bottom: 16px;
+            color: var(--kd-color-titles-primary-title);
           }
 
           p {
@@ -83,6 +84,8 @@ export default {
 export const Semantic = {
   render: () => {
     return html`
+      <div class="heading kd-type--headline-04">Semantic Tokens</div>
+
       ${Object.entries(colorSemantic).map(([key]) => {
         return html`
           <div class="heading kd-type--headline-06">${key}</div>
@@ -127,11 +130,11 @@ export const Semantic = {
 export const Palette = {
   render: () => {
     return html`
-      <div class="heading kd-type--headline-06">Color Palette</div>
+      <div class="heading kd-type--headline-04">Palette Tokens</div>
 
       <p>
         <strong>Note:</strong> Do <strong><em>not</em></strong> use Palette
-        tokens directly. Only use contextual tokens in designs and code.
+        Tokens directly. Only use Semantic Tokens in designs and code.
       </p>
 
       <table>
