@@ -106,10 +106,6 @@
     }
   },
   "Page": {
-    "Background": {
-      "$type": "color",
-      "$value": "{Cool Gray.93}"
-    },
     "bg": {
       "$type": "color",
       "$value": "{Indigo.107}"
@@ -168,7 +164,7 @@
     }
   },
   "Text": {
-    "Primary": {
+    "primary": {
       "$type": "color",
       "$value": "{Opacity.Light.86}"
     },

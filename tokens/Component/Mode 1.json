@@ -1,0 +1,16 @@
+{
+  "Card": {
+    "Card Padding": {
+      "$type": "number",
+      "$value": "{Spacer.Spacer One}"
+    },
+    "Card Border-width": {
+      "$type": "number",
+      "$value": "{Border.Border M}"
+    },
+    "Card Corner": {
+      "$type": "number",
+      "$value": "{Corner.Corner L}"
+    }
+  }
+}
