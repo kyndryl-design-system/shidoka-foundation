@@ -1,0 +1,55 @@
+import { Meta, Story, Canvas, Controls, Stories } from '@storybook/blocks';
+import * as ColorStories from './Color.stories.js';
+
+<Meta of={ColorStories} />
+
+# Colors
+
+[Figma Design Source](https://www.figma.com/file/5TqtPa7KWfhJbQv6ELnbqf/Foundation?node-id=72%3A17784&mode=dev)
+
+## Themes
+
+We use [CSS light-dark() syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark) for our Semantic tokens so themes can be managed easily. It is recommended to use the automatic theme based on user preference unless you are migrating from 1.x and need time to manually update custom code to accomodate dark mode.
+
+### Setting a Theme
+
+#### Meta Tag Approach
+
+The most straightforward way to theme the entire application.
+
+```html
+<!-- automatic theme based on user preference, recommended -->
+<meta name="color-scheme" content="light dark" />
+<!-- use light theme -->
+<meta name="color-scheme" content="light" />
+<!-- use dark theme -->
+<meta name="color-scheme" content="dark" />
+```
+
+#### CSS Approach
+
+The CSS approach is a bit more flexible because you can apply it to any CSS selector.
+
+```css
+html {
+  color-scheme: light dark; /* auto theme */
+  color-scheme: light; /* light theme */
+  color-scheme: dark; /* dark theme */
+}
+```
+
+### Hot-Swapping Themes
+
+Applications can incorporate a theme switcher for users, which can operate simply by changing the values in the above examples. You'll notice we have one built-in to Storybook utilizing the Meta Tag approach.
+
+## Using Tokens
+
+```css
+.your-css-selector {
+  background-color: var(--kd-color-page-bg);
+}
+```
+
+## Tokens Reference
+
+<Stories />

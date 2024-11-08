@@ -1,0 +1,744 @@
+{
+  "Main Palette": {
+    "Primary": {
+      "$type": "color",
+      "$value": "{Indigo.70}"
+    },
+    "Secondary": {
+      "$type": "color",
+      "$value": "{Spruce.60-secondary}"
+    },
+    "Tertiary": {
+      "$type": "color",
+      "$value": "{Spring Green.20-tertiary}"
+    },
+    "Accent": {
+      "$type": "color",
+      "$value": "{Warm Red.50-accent}"
+    }
+  },
+  "Buttons": {
+    "Primary": {
+      "$type": "color",
+      "$value": "{Indigo.80-primary}"
+    },
+    "Secondary": {
+      "$type": "color",
+      "$value": "{Indigo.60}"
+    },
+    "Tertiary": {
+      "$type": "color",
+      "$value": "{Indigo.10}"
+    },
+    "Dark Label": {
+      "$type": "color",
+      "$value": "{Cool Gray.3}"
+    },
+    "Light Label": {
+      "$type": "color",
+      "$value": "{Dark Stone.10}"
+    }
+  },
+  "Containers": {
+    "container-bg": {
+      "$type": "color",
+      "$value": "{Cool Gray.5}"
+    },
+    "container-child-bg": {
+      "$type": "color",
+      "$value": "{Cool Gray.10}"
+    },
+    "interactive-container-active": {
+      "$type": "color",
+      "$value": "{Indigo.10}"
+    },
+    "interactive-container-inactive": {
+      "$type": "color",
+      "$value": "{Indigo.5}"
+    },
+    "utility-container": {
+      "$type": "color",
+      "$value": "{Indigo.10}"
+    },
+    "Interactive-flat-container": {
+      "$type": "color",
+      "$value": "{Indigo.5}"
+    },
+    "container-footer": {
+      "$type": "color",
+      "$value": "{Indigo.15}"
+    }
+  },
+  "Gradients and Shadows": {
+    "Interactive Gradient Start": {
+      "$type": "color",
+      "$value": "{Cool Gray.5}"
+    },
+    "Interactive Gradient End": {
+      "$type": "color",
+      "$value": "{Cool Gray.10}"
+    },
+    "Container Dropshadow 1": {
+      "$type": "color",
+      "$value": "{Opacity.Dark.10}"
+    },
+    "Container Dropshadow 2": {
+      "$type": "color",
+      "$value": "{Opacity.Dark.3}"
+    }
+  },
+  "Navigation": {
+    "nav-bg": {
+      "$type": "color",
+      "$value": "{Cool Gray.10}"
+    },
+    "footer-bg": {
+      "$type": "color",
+      "$value": "{Cool Gray.10}"
+    },
+    "local-nav-bg": {
+      "$type": "color",
+      "$value": "{Cool Gray.5}"
+    },
+    "switcher-icon": {
+      "$type": "color",
+      "$value": "{Indigo.80-primary}"
+    }
+  },
+  "Page": {
+    "Background": {
+      "$type": "color",
+      "$value": "{Cool Gray.3}"
+    },
+    "bg": {
+      "$type": "color",
+      "$value": "{Cool Gray.3}"
+    },
+    "logo-bridge-txt": {
+      "$type": "color",
+      "$value": "{Spruce.60-secondary}"
+    },
+    "Overlay": {
+      "$type": "color",
+      "$value": "{Opacity.Light.50}"
+    }
+  },
+  "States": {
+    "Static": {
+      "$type": "color",
+      "$value": "{Cool Gray.95}"
+    },
+    "Static Solid Label": {
+      "$type": "color",
+      "$value": "{Dark Stone.10}"
+    },
+    "Disabled": {
+      "$type": "color",
+      "$value": "{Dark Stone.20}"
+    },
+    "Disabled-label": {
+      "$type": "color",
+      "$value": "{Warm Gray.50}"
+    }
+  },
+  "Table": {
+    "header": {
+      "$type": "color",
+      "$value": "{Cool Gray.10}"
+    },
+    "row": {
+      "$type": "color",
+      "$value": "{Cool Gray.3}"
+    },
+    "alt-row": {
+      "$type": "color",
+      "$value": "{Cool Gray.7}"
+    },
+    "row-active": {
+      "$type": "color",
+      "$value": "{Indigo.10}"
+    },
+    "row-active-nested": {
+      "$type": "color",
+      "$value": "{Cool Gray.3}"
+    },
+    "footer": {
+      "$type": "color",
+      "$value": "{Cool Gray.10}"
+    }
+  },
+  "Text": {
+    "Primary": {
+      "$type": "color",
+      "$value": "{Dark Stone.80}"
+    },
+    "light": {
+      "$type": "color",
+      "$value": "{Cool Gray.8}"
+    },
+    "medium": {
+      "$type": "color",
+      "$value": "{Cool Gray.85}"
+    },
+    "dark": {
+      "$type": "color",
+      "$value": "{Cool Gray.90}"
+    },
+    "link": {
+      "$type": "color",
+      "$value": "{Indigo.50}"
+    },
+    "link-active": {
+      "$type": "color",
+      "$value": "{Indigo.50}"
+    }
+  },
+  "Titles": {
+    "Primary-title": {
+      "$type": "color",
+      "$value": "{Spruce.30}"
+    },
+    "Secondary-title": {
+      "$type": "color",
+      "$value": "{Spruce.40}"
+    },
+    "Tertiary-title": {
+      "$type": "color",
+      "$value": "{Spruce.50}"
+    }
+  },
+  "Utility": {
+    "border": {
+      "$type": "color",
+      "$value": "{Cool Gray.15}"
+    },
+    "icon": {
+      "$type": "color",
+      "$value": "{Cool Gray.70}"
+    },
+    "search-bg": {
+      "$type": "color",
+      "$value": "{Indigo.5}"
+    },
+    "interactive-graphic": {
+      "$type": "color",
+      "$value": "{Cool Gray.20}"
+    },
+    "interactive-graphic-alt": {
+      "$type": "color",
+      "$value": "{Cool Gray.30}"
+    },
+    "neutral-tag": {
+      "$type": "color",
+      "$value": "{Cool Gray.10}"
+    }
+  },
+  "Forms": {
+    "Label-Primary": {
+      "$type": "color",
+      "$value": "{Dark Stone.80}"
+    },
+    "Label-Secondary": {
+      "$type": "color",
+      "$value": "{Dark Stone.60}"
+    },
+    "Input field Background": {
+      "$type": "color",
+      "$value": "{Cool Gray.5}"
+    },
+    "Input Field Border": {
+      "$type": "color",
+      "$value": "{Dark Stone.50}"
+    },
+    "Input Field Text": {
+      "$type": "color",
+      "$value": "{Dark Stone.80}"
+    }
+  },
+  "Card": {
+    "Background": {
+      "$type": "color",
+      "$value": "{Cool Gray.3}"
+    },
+    "Border-color Clickable": {
+      "$type": "color",
+      "$value": "{Indigo.80-primary}"
+    },
+    "Border-color Default": {
+      "$type": "color",
+      "$value": "{Cool Gray.5}"
+    },
+    "Border-color Hover": {
+      "$type": "color",
+      "$value": "{Cool Gray.7}"
+    }
+  },
+  "Data Viz": {
+    "Categorical 01": {
+      "10": {
+        "$type": "color",
+        "$value": "{Lilac.20}"
+      },
+      "01": {
+        "$type": "color",
+        "$value": "{Sea.40}"
+      },
+      "02": {
+        "$type": "color",
+        "$value": "{Jade.20}"
+      },
+      "03": {
+        "$type": "color",
+        "$value": "{Amber.40}"
+      },
+      "04": {
+        "$type": "color",
+        "$value": "{Blush.20}"
+      },
+      "05": {
+        "$type": "color",
+        "$value": "{Lilac.40}"
+      },
+      "06": {
+        "$type": "color",
+        "$value": "{Sea.20}"
+      },
+      "07": {
+        "$type": "color",
+        "$value": "{Jade.40}"
+      },
+      "08": {
+        "$type": "color",
+        "$value": "{Amber.20}"
+      },
+      "09": {
+        "$type": "color",
+        "$value": "{Blush.40}"
+      }
+    },
+    "Sequential 01": {
+      "10": {
+        "$type": "color",
+        "$value": "{Sea.10}"
+      },
+      "20": {
+        "$type": "color",
+        "$value": "{Sea.10}"
+      },
+      "30": {
+        "$type": "color",
+        "$value": "{Sea.40}"
+      },
+      "40": {
+        "$type": "color",
+        "$value": "{Sea.30}"
+      },
+      "50": {
+        "$type": "color",
+        "$value": "{Sea.50}"
+      },
+      "60": {
+        "$type": "color",
+        "$value": "{Sea.60}"
+      },
+      "70": {
+        "$type": "color",
+        "$value": "{Sea.70}"
+      },
+      "80": {
+        "$type": "color",
+        "$value": "{Sea.80}"
+      },
+      "90": {
+        "$type": "color",
+        "$value": "{Sea.90}"
+      },
+      "100": {
+        "$type": "color",
+        "$value": "{Sea.100}"
+      }
+    },
+    "Sequential 02": {
+      "10": {
+        "$type": "color",
+        "$value": "{Jade.10}"
+      },
+      "20": {
+        "$type": "color",
+        "$value": "{Jade.20}"
+      },
+      "30": {
+        "$type": "color",
+        "$value": "{Jade.30}"
+      },
+      "40": {
+        "$type": "color",
+        "$value": "{Jade.40}"
+      },
+      "50": {
+        "$type": "color",
+        "$value": "{Jade.50}"
+      },
+      "60": {
+        "$type": "color",
+        "$value": "{Jade.60}"
+      },
+      "70": {
+        "$type": "color",
+        "$value": "{Jade.70}"
+      },
+      "80": {
+        "$type": "color",
+        "$value": "{Jade.80}"
+      },
+      "90": {
+        "$type": "color",
+        "$value": "{Jade.90}"
+      },
+      "100": {
+        "$type": "color",
+        "$value": "{Jade.100}"
+      }
+    },
+    "Sequential 03": {
+      "10": {
+        "$type": "color",
+        "$value": "{Amber.10}"
+      },
+      "20": {
+        "$type": "color",
+        "$value": "{Amber.20}"
+      },
+      "30": {
+        "$type": "color",
+        "$value": "{Amber.30}"
+      },
+      "40": {
+        "$type": "color",
+        "$value": "{Amber.40}"
+      },
+      "50": {
+        "$type": "color",
+        "$value": "{Amber.50}"
+      },
+      "60": {
+        "$type": "color",
+        "$value": "{Amber.60}"
+      },
+      "70": {
+        "$type": "color",
+        "$value": "{Amber.70}"
+      },
+      "80": {
+        "$type": "color",
+        "$value": "{Amber.80}"
+      },
+      "90": {
+        "$type": "color",
+        "$value": "{Amber.90}"
+      },
+      "100": {
+        "$type": "color",
+        "$value": "{Amber.100}"
+      }
+    },
+    "Sequential 04": {
+      "10": {
+        "$type": "color",
+        "$value": "{Blush.10}"
+      },
+      "20": {
+        "$type": "color",
+        "$value": "{Blush.20}"
+      },
+      "30": {
+        "$type": "color",
+        "$value": "{Blush.30}"
+      },
+      "40": {
+        "$type": "color",
+        "$value": "{Blush.40}"
+      },
+      "50": {
+        "$type": "color",
+        "$value": "{Blush.50}"
+      },
+      "60": {
+        "$type": "color",
+        "$value": "{Blush.60}"
+      },
+      "70": {
+        "$type": "color",
+        "$value": "{Blush.70}"
+      },
+      "80": {
+        "$type": "color",
+        "$value": "{Blush.80}"
+      },
+      "90": {
+        "$type": "color",
+        "$value": "{Blush.90}"
+      },
+      "100": {
+        "$type": "color",
+        "$value": "{Blush.100}"
+      }
+    },
+    "Sequential 05": {
+      "10": {
+        "$type": "color",
+        "$value": "{Lilac.10}"
+      },
+      "20": {
+        "$type": "color",
+        "$value": "{Lilac.20}"
+      },
+      "30": {
+        "$type": "color",
+        "$value": "{Lilac.40}"
+      },
+      "40": {
+        "$type": "color",
+        "$value": "{Lilac.40}"
+      },
+      "50": {
+        "$type": "color",
+        "$value": "{Lilac.50}"
+      },
+      "60": {
+        "$type": "color",
+        "$value": "{Lilac.60}"
+      },
+      "70": {
+        "$type": "color",
+        "$value": "{Lilac.70}"
+      },
+      "80": {
+        "$type": "color",
+        "$value": "{Lilac.80}"
+      },
+      "90": {
+        "$type": "color",
+        "$value": "{Lilac.90}"
+      },
+      "100": {
+        "$type": "color",
+        "$value": "{Lilac.100}"
+      }
+    },
+    "Divergent 01": {
+      "Negative": {
+        "10": {
+          "$type": "color",
+          "$value": "{Amber.10}"
+        },
+        "20": {
+          "$type": "color",
+          "$value": "{Amber.20}"
+        },
+        "30": {
+          "$type": "color",
+          "$value": "{Amber.30}"
+        },
+        "40": {
+          "$type": "color",
+          "$value": "{Amber.40}"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "{Amber.50}"
+        },
+        "60": {
+          "$type": "color",
+          "$value": "{Amber.60}"
+        },
+        "70": {
+          "$type": "color",
+          "$value": "{Amber.70}"
+        },
+        "80": {
+          "$type": "color",
+          "$value": "{Amber.80}"
+        },
+        "90": {
+          "$type": "color",
+          "$value": "{Amber.90}"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "{Amber.100}"
+        }
+      },
+      "div-neu": {
+        "$type": "color",
+        "$value": "{div-01-neutral}"
+      },
+      "Positive": {
+        "10": {
+          "$type": "color",
+          "$value": "{Sea.10}"
+        },
+        "20": {
+          "$type": "color",
+          "$value": "{Sea.20}"
+        },
+        "30": {
+          "$type": "color",
+          "$value": "{Sea.30}"
+        },
+        "40": {
+          "$type": "color",
+          "$value": "{Sea.40}"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "{Sea.50}"
+        },
+        "60": {
+          "$type": "color",
+          "$value": "{Sea.60}"
+        },
+        "70": {
+          "$type": "color",
+          "$value": "{Sea.70}"
+        },
+        "80": {
+          "$type": "color",
+          "$value": "{Sea.80}"
+        },
+        "90": {
+          "$type": "color",
+          "$value": "{Sea.90}"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "{Sea.100}"
+        }
+      }
+    },
+    "Divergent 02": {
+      "Negative": {
+        "10": {
+          "$type": "color",
+          "$value": "{Blush.10}"
+        },
+        "20": {
+          "$type": "color",
+          "$value": "{Blush.20}"
+        },
+        "30": {
+          "$type": "color",
+          "$value": "{Blush.30}"
+        },
+        "40": {
+          "$type": "color",
+          "$value": "{Blush.40}"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "{Blush.50}"
+        },
+        "60": {
+          "$type": "color",
+          "$value": "{Blush.60}"
+        },
+        "70": {
+          "$type": "color",
+          "$value": "{Blush.70}"
+        },
+        "80": {
+          "$type": "color",
+          "$value": "{Blush.80}"
+        },
+        "90": {
+          "$type": "color",
+          "$value": "{Blush.90}"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "{Blush.100}"
+        }
+      },
+      "div-neu": {
+        "$type": "color",
+        "$value": "{div-02-neutral}"
+      },
+      "Positive": {
+        "10": {
+          "$type": "color",
+          "$value": "{Jade.10}"
+        },
+        "20": {
+          "$type": "color",
+          "$value": "{Jade.20}"
+        },
+        "30": {
+          "$type": "color",
+          "$value": "{Jade.30}"
+        },
+        "40": {
+          "$type": "color",
+          "$value": "{Jade.40}"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "{Jade.50}"
+        },
+        "60": {
+          "$type": "color",
+          "$value": "{Jade.60}"
+        },
+        "70": {
+          "$type": "color",
+          "$value": "{Jade.70}"
+        },
+        "80": {
+          "$type": "color",
+          "$value": "{Jade.80}"
+        },
+        "90": {
+          "$type": "color",
+          "$value": "{Jade.90}"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "{Jade.100}"
+        }
+      }
+    }
+  },
+  "Status": {
+    "Error": {
+      "$type": "color",
+      "$value": "{Warm Red.70}"
+    },
+    "Error light": {
+      "$type": "color",
+      "$value": "{Warm Red.10}"
+    },
+    "Informational": {
+      "$type": "color",
+      "$value": "{Informational}"
+    },
+    "Informational light": {
+      "$type": "color",
+      "$value": "{Informational-light}"
+    },
+    "Success": {
+      "$type": "color",
+      "$value": "{Success}"
+    },
+    "Success light": {
+      "$type": "color",
+      "$value": "{Success-light}"
+    },
+    "Warning": {
+      "$type": "color",
+      "$value": "{Warning}"
+    },
+    "Warning light": {
+      "$type": "color",
+      "$value": "{Warning-light}"
+    }
+  }
+}
