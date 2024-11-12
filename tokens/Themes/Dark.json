@@ -18,55 +18,43 @@
     }
   },
   "Buttons": {
-    "Primary": {
-      "$type": "color",
-      "$value": "{Indigo.80-primary}"
+    "Levels": {
+      "Primary": {
+        "$type": "color",
+        "$value": "{Indigo.80-primary}"
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": "{Indigo.90}"
+      },
+      "Tertiary": {
+        "$type": "color",
+        "$value": "{Indigo.105}"
+      }
     },
-    "Secondary": {
-      "$type": "color",
-      "$value": "{Indigo.90}"
-    },
-    "Tertiary": {
-      "$type": "color",
-      "$value": "{Indigo.105}"
-    },
-    "Dark Label": {
-      "$type": "color",
-      "$value": "{Dark Stone.20}"
-    },
-    "Light Label": {
-      "$type": "color",
-      "$value": "{Dark Stone.20}"
+    "Labels": {
+      "Dark Label": {
+        "$type": "color",
+        "$value": "{Dark Stone.20}"
+      },
+      "Light Label": {
+        "$type": "color",
+        "$value": "{Dark Stone.20}"
+      }
     }
   },
-  "Containers": {
-    "container-bg": {
+  "Layer Backgrounds": {
+    "0": {
       "$type": "color",
       "$value": "{Opacity.Light.3}"
     },
-    "container-child-bg": {
+    "1": {
       "$type": "color",
       "$value": "{Opacity.Light.3}"
     },
-    "interactive-container-active": {
+    "2": {
       "$type": "color",
       "$value": "{Opacity.Light.5}"
-    },
-    "interactive-container-inactive": {
-      "$type": "color",
-      "$value": "{Opacity.Light.3}"
-    },
-    "utility-container": {
-      "$type": "color",
-      "$value": "{Indigo.107}"
-    },
-    "Interactive-flat-container": {
-      "$type": "color",
-      "$value": "{Indigo.107}"
-    },
-    "container-footer": {
-      "$type": "color",
-      "$value": "{Indigo.105}"
     }
   },
   "Gradients and Shadows": {
@@ -87,18 +75,32 @@
       "$value": "{Opacity.Dark.10}"
     }
   },
+  "Containers": {
+    "utility-container": {
+      "$type": "color",
+      "$value": "{Indigo.105}"
+    },
+    "Interactive-flat-container": {
+      "$type": "color",
+      "$value": "{Indigo.107}"
+    },
+    "container-footer": {
+      "$type": "color",
+      "$value": "{Indigo.105}"
+    }
+  },
   "Navigation": {
     "nav-bg": {
       "$type": "color",
-      "$value": "{Indigo.110}"
+      "$value": "{Opacity.Light.3}"
     },
     "footer-bg": {
       "$type": "color",
-      "$value": "{Indigo.110}"
+      "$value": "{Opacity.Light.3}"
     },
     "local-nav-bg": {
       "$type": "color",
-      "$value": "{Indigo.105}"
+      "$value": "{Opacity.Light.3}"
     },
     "switcher-icon": {
       "$type": "color",
@@ -108,7 +110,7 @@
   "Page": {
     "bg": {
       "$type": "color",
-      "$value": "{Indigo.107}"
+      "$value": "{Cool Gray.97}"
     },
     "logo-bridge-txt": {
       "$type": "color",
@@ -164,29 +166,39 @@
     }
   },
   "Text": {
-    "primary": {
-      "$type": "color",
-      "$value": "{Opacity.Light.86}"
+    "Levels": {
+      "primary": {
+        "$type": "color",
+        "$value": "{Opacity.Light.86}"
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{Opacity.Light.50}"
+      }
     },
-    "light": {
-      "$type": "color",
-      "$value": "{Opacity.Light.86}"
+    "Density": {
+      "light": {
+        "$type": "color",
+        "$value": "{Opacity.Light.86}"
+      },
+      "medium": {
+        "$type": "color",
+        "$value": "{Dark Stone.20}"
+      },
+      "dark": {
+        "$type": "color",
+        "$value": "{Cool Gray.90}"
+      }
     },
-    "medium": {
-      "$type": "color",
-      "$value": "{Dark Stone.20}"
-    },
-    "dark": {
-      "$type": "color",
-      "$value": "{Cool Gray.90}"
-    },
-    "link": {
-      "$type": "color",
-      "$value": "{Indigo.40}"
-    },
-    "link-active": {
-      "$type": "color",
-      "$value": "{Indigo.20}"
+    "Link": {
+      "link": {
+        "$type": "color",
+        "$value": "{Indigo.40}"
+      },
+      "link-active": {
+        "$type": "color",
+        "$value": "{Indigo.20}"
+      }
     }
   },
   "Titles": {
@@ -203,11 +215,13 @@
       "$value": "{Spruce.30}"
     }
   },
-  "Utility": {
-    "border": {
+  "Border": {
+    "level 1": {
       "$type": "color",
-      "$value": "{Opacity.Light.5}"
-    },
+      "$value": "{Opacity.Light.10}"
+    }
+  },
+  "Utility": {
     "icon": {
       "$type": "color",
       "$value": "{Cool Gray.5}"
@@ -323,11 +337,11 @@
       },
       "30": {
         "$type": "color",
-        "$value": "{Sea.70}"
+        "$value": "{Sea.80}"
       },
       "40": {
         "$type": "color",
-        "$value": "{Sea.80}"
+        "$value": "{Sea.70}"
       },
       "50": {
         "$type": "color",
@@ -520,6 +534,10 @@
       "100": {
         "$type": "color",
         "$value": "{Lilac.10}"
+      },
+      "Primary": {
+        "$type": "color",
+        "$value": "{DarkStone.dark-stone-80(base)}"
       }
     },
     "Divergent 01": {
@@ -701,6 +719,40 @@
           "$value": "{Jade.10}"
         }
       }
+    },
+    "RAG Colors": {
+      "success": {
+        "$type": "color",
+        "$value": "{Success}"
+      },
+      "warning": {
+        "$type": "color",
+        "$value": "{Warning}"
+      },
+      "error": {
+        "$type": "color",
+        "$value": "{Error}"
+      },
+      "success-light": {
+        "$type": "color",
+        "$value": "{Success-light}"
+      },
+      "warning-light": {
+        "$type": "color",
+        "$value": "{Warning-light}"
+      },
+      "error-light": {
+        "$type": "color",
+        "$value": "{Error-light}"
+      },
+      "informational": {
+        "$type": "color",
+        "$value": "{Informational}"
+      },
+      "information-light": {
+        "$type": "color",
+        "$value": "{Informational-light}"
+      }
     }
   },
   "Status": {
@@ -735,6 +787,12 @@
     "Warning light": {
       "$type": "color",
       "$value": "{Warning-light}"
+    }
+  },
+  "Icon": {
+    "Primary": {
+      "$type": "color",
+      "$value": "{Spruce.30}"
     }
   }
 }

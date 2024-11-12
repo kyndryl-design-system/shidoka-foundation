@@ -18,55 +18,43 @@
     }
   },
   "Buttons": {
-    "Primary": {
-      "$type": "color",
-      "$value": "{Indigo.80-primary}"
+    "Levels": {
+      "Primary": {
+        "$type": "color",
+        "$value": "{Indigo.80-primary}"
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": "{Indigo.60}"
+      },
+      "Tertiary": {
+        "$type": "color",
+        "$value": "{Indigo.10}"
+      }
     },
-    "Secondary": {
-      "$type": "color",
-      "$value": "{Indigo.60}"
-    },
-    "Tertiary": {
-      "$type": "color",
-      "$value": "{Indigo.10}"
-    },
-    "Dark Label": {
-      "$type": "color",
-      "$value": "{Cool Gray.3}"
-    },
-    "Light Label": {
-      "$type": "color",
-      "$value": "{Dark Stone.10}"
+    "Labels": {
+      "Dark Label": {
+        "$type": "color",
+        "$value": "{Cool Gray.85}"
+      },
+      "Light Label": {
+        "$type": "color",
+        "$value": "{Dark Stone.10}"
+      }
     }
   },
-  "Containers": {
-    "container-bg": {
+  "Layer Backgrounds": {
+    "0": {
       "$type": "color",
-      "$value": "{Cool Gray.5}"
+      "$value": "{Opacity.Dark.3}"
     },
-    "container-child-bg": {
+    "1": {
       "$type": "color",
-      "$value": "{Cool Gray.10}"
+      "$value": "{Opacity.Dark.2}"
     },
-    "interactive-container-active": {
+    "2": {
       "$type": "color",
-      "$value": "{Indigo.10}"
-    },
-    "interactive-container-inactive": {
-      "$type": "color",
-      "$value": "{Indigo.5}"
-    },
-    "utility-container": {
-      "$type": "color",
-      "$value": "{Indigo.10}"
-    },
-    "Interactive-flat-container": {
-      "$type": "color",
-      "$value": "{Indigo.5}"
-    },
-    "container-footer": {
-      "$type": "color",
-      "$value": "{Indigo.15}"
+      "$value": "{Opacity.Dark.5}"
     }
   },
   "Gradients and Shadows": {
@@ -85,6 +73,20 @@
     "Container Dropshadow 2": {
       "$type": "color",
       "$value": "{Opacity.Dark.3}"
+    }
+  },
+  "Containers": {
+    "utility-container": {
+      "$type": "color",
+      "$value": "{Indigo.10}"
+    },
+    "Interactive-flat-container": {
+      "$type": "color",
+      "$value": "{Indigo.5}"
+    },
+    "container-footer": {
+      "$type": "color",
+      "$value": "{Indigo.15}"
     }
   },
   "Navigation": {
@@ -164,29 +166,39 @@
     }
   },
   "Text": {
-    "primary": {
-      "$type": "color",
-      "$value": "{Cool Gray.85}"
+    "Levels": {
+      "primary": {
+        "$type": "color",
+        "$value": "{Cool Gray.85}"
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{Cool Gray.60}"
+      }
     },
-    "light": {
-      "$type": "color",
-      "$value": "{Cool Gray.8}"
+    "Density": {
+      "light": {
+        "$type": "color",
+        "$value": "{Cool Gray.8}"
+      },
+      "medium": {
+        "$type": "color",
+        "$value": "{Cool Gray.85}"
+      },
+      "dark": {
+        "$type": "color",
+        "$value": "{Cool Gray.90}"
+      }
     },
-    "medium": {
-      "$type": "color",
-      "$value": "{Cool Gray.85}"
-    },
-    "dark": {
-      "$type": "color",
-      "$value": "{Cool Gray.90}"
-    },
-    "link": {
-      "$type": "color",
-      "$value": "{Indigo.50}"
-    },
-    "link-active": {
-      "$type": "color",
-      "$value": "{Indigo.50}"
+    "Link": {
+      "link": {
+        "$type": "color",
+        "$value": "{Indigo.50}"
+      },
+      "link-active": {
+        "$type": "color",
+        "$value": "{Indigo.50}"
+      }
     }
   },
   "Titles": {
@@ -203,11 +215,13 @@
       "$value": "{Spruce.50}"
     }
   },
-  "Utility": {
-    "border": {
+  "Border": {
+    "level 1": {
       "$type": "color",
       "$value": "{Cool Gray.15}"
-    },
+    }
+  },
+  "Utility": {
     "icon": {
       "$type": "color",
       "$value": "{Cool Gray.70}"
@@ -323,11 +337,11 @@
       },
       "30": {
         "$type": "color",
-        "$value": "{Sea.40}"
+        "$value": "{Sea.30}"
       },
       "40": {
         "$type": "color",
-        "$value": "{Sea.30}"
+        "$value": "{Sea.40}"
       },
       "50": {
         "$type": "color",
@@ -520,6 +534,10 @@
       "100": {
         "$type": "color",
         "$value": "{Lilac.100}"
+      },
+      "Primary": {
+        "$type": "color",
+        "$value": "{DarkStone.dark-stone-80(base)}"
       }
     },
     "Divergent 01": {
@@ -701,6 +719,40 @@
           "$value": "{Jade.100}"
         }
       }
+    },
+    "RAG Colors": {
+      "success": {
+        "$type": "color",
+        "$value": "{Success}"
+      },
+      "warning": {
+        "$type": "color",
+        "$value": "{Warning}"
+      },
+      "error": {
+        "$type": "color",
+        "$value": "{Error}"
+      },
+      "success-light": {
+        "$type": "color",
+        "$value": "{Success-light}"
+      },
+      "warning-light": {
+        "$type": "color",
+        "$value": "{Warning-light}"
+      },
+      "error-light": {
+        "$type": "color",
+        "$value": "{Error-light}"
+      },
+      "informational": {
+        "$type": "color",
+        "$value": "{Informational}"
+      },
+      "information-light": {
+        "$type": "color",
+        "$value": "{Informational-light}"
+      }
     }
   },
   "Status": {
@@ -735,6 +787,12 @@
     "Warning light": {
       "$type": "color",
       "$value": "{Warning-light}"
+    }
+  },
+  "Icon": {
+    "Primary": {
+      "$type": "color",
+      "$value": "{Spruce.30}"
     }
   }
 }
