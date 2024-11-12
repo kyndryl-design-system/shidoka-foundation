@@ -716,7 +716,7 @@
         }
       }
     },
-    "RAG Colors": {
+    "RAG 6": {
       "success": {
         "$type": "color",
         "$value": "{Success}"
@@ -748,6 +748,20 @@
       "information-light": {
         "$type": "color",
         "$value": "{Informational-light}"
+      }
+    },
+    "RAG 3": {
+      "error": {
+        "$type": "color",
+        "$value": "{Error}"
+      },
+      "success": {
+        "$type": "color",
+        "$value": "{Success}"
+      },
+      "warning": {
+        "$type": "color",
+        "$value": "{Warning}"
       }
     }
   },
