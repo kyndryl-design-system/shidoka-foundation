@@ -534,10 +534,6 @@
       "100": {
         "$type": "color",
         "$value": "{Lilac.100}"
-      },
-      "Primary": {
-        "$type": "color",
-        "$value": "{DarkStone.dark-stone-80(base)}"
       }
     },
     "Divergent 01": {
