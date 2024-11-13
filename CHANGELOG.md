@@ -1,3 +1,10 @@
+## [1.10.1](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.10.0...v1.10.1) (2024-11-13)
+
+
+### Bug Fixes
+
+* expose breakpoint viewports object ([c9915e2](https://github.com/kyndryl-design-system/shidoka-foundation/commit/c9915e295cd99a02fb62624d9007d5734576183c))
+
 # [1.10.0](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.9.0...v1.10.0) (2024-09-25)
 
 
