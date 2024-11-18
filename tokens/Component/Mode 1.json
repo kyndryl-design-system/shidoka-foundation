@@ -1,5 +1,9 @@
 {
   "Card": {
+    "Card Border-color Clickable": {
+      "$type": "color",
+      "$value": "{Border.Secondary}"
+    },
     "Card Padding": {
       "$type": "number",
       "$value": "{Spacer.Spacer One}"
