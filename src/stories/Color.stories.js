@@ -14,7 +14,7 @@ export default {
         <style>
           .heading {
             margin-bottom: 16px;
-            color: var(--kd-color-titles-primary-title);
+            color: var(--kd-color-text-title-primary);
           }
 
           p {
