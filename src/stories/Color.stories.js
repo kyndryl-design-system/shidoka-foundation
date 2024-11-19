@@ -30,11 +30,11 @@ export default {
           th {
             text-align: left;
             padding: 16px;
-            /* border-bottom: 1px solid var(--kd-color-border-light); */
+            border-bottom: 1px solid var(--kd-color-border-variants-light);
           }
 
           th {
-            background: var(--kd-color-table-header);
+            background: var(--kd-color-background-table-header);
             font-size: 14px;
             font-weight: 500;
             text-transform: uppercase;
@@ -49,11 +49,11 @@ export default {
           }
 
           td {
-            background: var(--kd-color-table-row);
+            background: var(--kd-color-background-table-row);
           }
 
           tr:nth-child(odd) td {
-            background: var(--kd-color-table-alt-row);
+            background: var(--kd-color-background-table-alt-row);
           }
 
           tr:last-child td {
@@ -71,7 +71,7 @@ export default {
           .preview {
             display: block;
             border-radius: 8px;
-            outline: 1px solid var(--kd-color-border-light);
+            outline: 1px solid var(--kd-color-border-variants-light);
             width: 100%;
             height: 40px;
           }
