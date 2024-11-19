@@ -30,7 +30,7 @@ export default {
           th {
             text-align: left;
             padding: 16px;
-            border-bottom: 1px solid var(--kd-color-utility-border);
+            /* border-bottom: 1px solid var(--kd-color-border-light); */
           }
 
           th {
@@ -71,7 +71,7 @@ export default {
           .preview {
             display: block;
             border-radius: 8px;
-            outline: 1px solid var(--kd-color-utility-border);
+            outline: 1px solid var(--kd-color-border-light);
             width: 100%;
             height: 40px;
           }
@@ -137,35 +137,43 @@ export const Palette = {
         Tokens directly. Only use Semantic Tokens in designs and code.
       </p>
 
-      <table>
-        <thead>
-          <tr>
-            <th>Token</th>
-            <th>Value</th>
-            <th>Preview</th>
-          </tr>
-        </thead>
-        <tbody>
-          ${paletteTokens.map((token) => {
-            return html`
+      ${Object.entries(colorPalette).map(([key]) => {
+        return html`
+          <div class="heading kd-type--headline-06">${key}</div>
+
+          <table>
+            <thead>
               <tr>
-                <td>${token.variable}</td>
-                <td>
-                  ${getComputedStyle(document.documentElement).getPropertyValue(
-                    token.variable
-                  )}
-                </td>
-                <td>
-                  <span
-                    class="preview"
-                    style="background-color: var(${token.variable})"
-                  ></span>
-                </td>
+                <th>Token</th>
+                <th>Value</th>
+                <th>Preview</th>
               </tr>
-            `;
-          })}
-        </tbody>
-      </table>
+            </thead>
+            <tbody>
+              ${paletteTokens
+                .filter((token) => token.categoryTree.includes(key))
+                .map((token) => {
+                  return html`
+                    <tr>
+                      <td>${token.variable}</td>
+                      <td>
+                        ${getComputedStyle(
+                          document.documentElement
+                        ).getPropertyValue(token.variable)}
+                      </td>
+                      <td>
+                        <span
+                          class="preview"
+                          style="background-color: var(${token.variable})"
+                        ></span>
+                      </td>
+                    </tr>
+                  `;
+                })}
+            </tbody>
+          </table>
+        `;
+      })}
     `;
   },
 };
