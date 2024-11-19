@@ -67,6 +67,16 @@ npm run format
          1. Interaction Test writing strategy TBD
    1. [Visual Testing via Chromatic](https://www.chromatic.com/)
       1. Provides visual screenshot comparison testing and a review process which integrates with our CI.
+1. Updating Color Tokens
+   1. **TL;DR:** Everything is automagically updated and a PR is created when designers push token changes from Figma.
+   1. Designers will manage all of our tokens for the Color Palette and the Light/Dark Themes within [Figma's Tokens Studio plugin](https://tokens.studio/).
+   1. Designers will push token changes directly to the `tokens` branch in GitHub using Tokens Studio.
+   1. Tokens are stored in a standardized JSON format called [W3C DTCG](https://tr.designtokens.org/format/).
+   1. Typically, a library called [Style Dictionary](https://amzn.github.io/style-dictionary/) would be used to transform the JSON into code. In this case, I wanted a special format that library does not support, CSS `light-dark()` syntax, so I wrote a custom build script.
+   1. When files in the `tokens` folder are pushed, I wrote a GitHub Actions workflow called `update-tokens` which will then kick in and automatically run the `build:tokens` script to generate the new CSS variables files, which will then be committed back to the `tokens` branch.
+   1. A PR will be automatically generated so we can review & approve before merging from the `tokens` branch to the release branch.
+      1. Use the "Update Branch" button in GitHub to pull in the latest from the release branch.
+      1. After merge, the `tokens` branch may get deleted automatically. Restore it for future use.
 
 ## Third-Party Docs Reference
 
