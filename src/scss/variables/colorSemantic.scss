@@ -1,11 +1,4 @@
 :root {
-  --kd-color-background-success: light-dark(var(--kd-color-misc-green-dark), var(--kd-color-misc-green-dark));
-  --kd-color-background-success-light: light-dark(var(--kd-color-misc-green-light), var(--kd-color-misc-green-light));
-  --kd-color-background-error: light-dark(var(--kd-color-misc-red-dark), var(--kd-color-misc-red-dark));
-  --kd-color-background-error-light: light-dark(var(--kd-color-status-error-light), var(--kd-color-misc-red-light));
-  --kd-color-background-warning: light-dark(var(--kd-color-misc-yellow-dark), var(--kd-color-misc-yellow-dark));
-  --kd-color-background-warning-light: light-dark(var(--kd-color-misc-yellow-light), var(--kd-color-misc-yellow-light));
-  --kd-color-background-informational-light: light-dark(var(--kd-color-misc-blue-light), var(--kd-color-misc-blue-light));
   --kd-color-background-container-default: light-dark(var(--kd-color-neutral-white), var(--kd-color-cool-gray-85));
   --kd-color-background-container-subtle: light-dark(var(--kd-color-dark-stone-20), var(--kd-color-cool-gray-70));
   --kd-color-background-container-bold: light-dark(var(--kd-color-dark-stone-50), var(--kd-color-cool-gray-40));
@@ -43,7 +36,7 @@
   --kd-color-background-opacity-1: light-dark(var(--kd-color-opacity-dark-3), var(--kd-color-opacity-light-3));
   --kd-color-background-opacity-2: light-dark(var(--kd-color-opacity-dark-2), var(--kd-color-opacity-light-3));
   --kd-color-background-opacity-3: light-dark(var(--kd-color-opacity-dark-3), var(--kd-color-opacity-light-5));
-  --kd-color-background-opacity-disabled: light-dark(var(--kd-color-opacity-dark-3), var(--kd-color-#ffffff));
+  --kd-color-background-opacity-disabled: light-dark(var(--kd-color-opacity-dark-3), var(--kd-color-cool-gray-3));
   --kd-color-text-primary: light-dark(var(--kd-color-dark-stone-80), var(--kd-color-dark-stone-10));
   --kd-color-text-others-hover: light-dark(var(--kd-color-dark-stone-60), var(--kd-color-dark-stone-60));
   --kd-color-text-others-pressed: light-dark(var(--kd-color-dark-stone-100), var(--kd-color-dark-stone-100));
@@ -92,10 +85,6 @@
   --kd-color-border-inverse: light-dark(var(--kd-color-neutral-white), var(--kd-color-cool-gray-90));
   --kd-color-border-accent-primary: light-dark(var(--kd-color-spring-green-20), var(--kd-color-spring-green-80));
   --kd-color-border-accent-secondary: light-dark(var(--kd-color-spruce-30), var(--kd-color-spruce-50));
-  --kd-color-border-status-success: light-dark(var(--kd-color-text-status-success), var(--kd-color-status-success-dark));
-  --kd-color-border-status-error: light-dark(var(--kd-color-warm-red-70), var(--kd-color-warm-red-70));
-  --kd-color-border-status-warning: light-dark(var(--kd-color-status-warning-dark), var(--kd-color-status-warning-dark));
-  --kd-color-border-status-informational: light-dark(var(--kd-color-status-informational-dark), var(--kd-color-status-informational-dark));
   --kd-color-border-button-primary-default: light-dark(var(--kd-color-indigo-80-primary), var(--kd-color-indigo-80-primary));
   --kd-color-border-button-primary-hover: light-dark(var(--kd-color-indigo-60), var(--kd-color-indigo-90));
   --kd-color-border-button-primary-pressed: light-dark(var(--kd-color-indigo-90), var(--kd-color-indigo-105));
