@@ -175,89 +175,197 @@
         "$type": "color",
         "$value": "{Cool Gray.3}"
       }
+    },
+    "Tag": {
+      "Neutral": {
+        "$type": "color",
+        "$value": "{Cool Gray.85}"
+      }
+    },
+    "Forms": {
+      "search-bg": {
+        "$type": "color",
+        "$value": "{Indigo.105}"
+      },
+      "Default": {
+        "$type": "color",
+        "$value": "{Opacity.Dark.30}"
+      }
+    },
+    "Table": {
+      "row-active": {
+        "$type": "color",
+        "$value": "{Indigo.100}"
+      },
+      "alt-row": {
+        "$type": "color",
+        "$value": "{Opacity.Light.5}"
+      },
+      "footer": {
+        "$type": "color",
+        "$value": "{Indigo.105}"
+      },
+      "row": {
+        "$type": "color",
+        "$value": "{Opacity.Light.3}"
+      },
+      "row-active-nested": {
+        "$type": "color",
+        "$value": "{Indigo.90}"
+      },
+      "header": {
+        "$type": "color",
+        "$value": "{Indigo.105}"
+      }
+    },
+    "Page": {
+      "Overlay": {
+        "$type": "color",
+        "$value": "{Opacity.Dark.85}"
+      },
+      "Default": {
+        "$type": "color",
+        "$value": "{Cool Gray.97}"
+      }
+    },
+    "Logo": {
+      "logo-bridge-txt": {
+        "$type": "color",
+        "$value": "{Dark Stone.10}"
+      }
+    },
+    "Navigation": {
+      "local-nav": {
+        "$type": "color",
+        "$value": "{Opacity.Light.3}"
+      },
+      "footer": {
+        "$type": "color",
+        "$value": "{Opacity.Light.3}"
+      },
+      "default": {
+        "$type": "color",
+        "$value": "{Opacity.Light.3}"
+      }
+    },
+    "Gradients": {
+      "Interactive Gradient End": {
+        "$type": "color",
+        "$value": "{Indigo.100}"
+      },
+      "Interactive Gradient Start": {
+        "$type": "color",
+        "$value": "{Indigo.107}"
+      }
+    },
+    "Card": {
+      "Background": {
+        "$type": "color",
+        "$value": "{Opacity.Light.3}"
+      },
+      "Default": {
+        "$type": "color",
+        "$value": "{Opacity.Light.5}"
+      },
+      "Hover 2": {
+        "$type": "color",
+        "$value": "{Opacity.Light.10}"
+      }
     }
   },
   "Text": {
-    "Primary": {
-      "$type": "color",
-      "$value": "{Dark Stone.10}"
-    },
-    "Others": {
-      "Hover": {
+    "Level": {
+      "Primary": {
         "$type": "color",
-        "$value": "{Dark Stone.60}"
+        "$value": "{Dark Stone.10}"
       },
-      "Pressed": {
+      "Secondary": {
         "$type": "color",
-        "$value": "{Dark Stone.100}"
+        "$value": "{Dark Stone.40}"
+      },
+      "Tertiary": {
+        "$type": "color",
+        "$value": "{Spruce.30}"
+      },
+      "Tertiary-bold": {
+        "$type": "color",
+        "$value": "{Spruce.40}"
       }
     },
-    "Secondary": {
-      "$type": "color",
-      "$value": "{Dark Stone.40}"
-    },
-    "Tertiary": {
-      "$type": "color",
-      "$value": "{Spruce.30}"
-    },
-    "Tertiary-bold": {
-      "$type": "color",
-      "$value": "{Spruce.40}"
-    },
-    "Brand": {
-      "$type": "color",
-      "$value": "{Warm Red.50}"
-    },
-    "Inversed": {
-      "$type": "color",
-      "$value": "{Dark Stone.80}"
-    },
-    "Eyebrow": {
-      "$type": "color",
-      "$value": "{Spruce.30}"
+    "Variant": {
+      "Brand": {
+        "$type": "color",
+        "$value": "{Warm Red.50}"
+      },
+      "Inversed": {
+        "$type": "color",
+        "$value": "{Dark Stone.80}"
+      },
+      "Eyebrow": {
+        "$type": "color",
+        "$value": "{Spruce.30}"
+      },
+      "Destructive": {
+        "$type": "color",
+        "$value": "{Misc.Red.Dark}"
+      },
+      "Placeholder": {
+        "$type": "color",
+        "$value": "{Dark Stone.70}"
+      }
     },
     "Link": {
-      "Default": {
+      "Level": {
+        "Default": {
+          "$type": "color",
+          "$value": "{Indigo.50}"
+        },
+        "Hover": {
+          "$type": "color",
+          "$value": "{Indigo.30}"
+        },
+        "Pressed": {
+          "$type": "color",
+          "$value": "{Indigo.10}"
+        },
+        "Disabled": {
+          "$type": "color",
+          "$value": "{Cool Gray.50}"
+        }
+      }
+    },
+    "Icon": {
+      "Primary": {
         "$type": "color",
-        "$value": "{Indigo.50}"
+        "$value": "{Cool Gray.10}"
       },
-      "Hover": {
+      "Secondary": {
         "$type": "color",
-        "$value": "{Indigo.30}"
+        "$value": "{Cool Gray.30}"
       },
-      "Pressed": {
+      "Tertiary": {
         "$type": "color",
-        "$value": "{Indigo.10}"
+        "$value": "{Spruce.20}"
+      },
+      "Inverse": {
+        "$type": "color",
+        "$value": "{Cool Gray.90}"
+      },
+      "Brand": {
+        "$type": "color",
+        "$value": "{Warm Red.50}"
       },
       "Disabled": {
         "$type": "color",
         "$value": "{Cool Gray.50}"
-      }
-    },
-    "Destructive": {
-      "$type": "color",
-      "$value": "{Misc.Red.Dark}"
-    },
-    "Placeholder": {
-      "$type": "color",
-      "$value": "{Dark Stone.70}"
-    },
-    "Status": {
-      "Success": {
-        "$type": "color",
-        "$value": "{Misc.Green.Dark}"
       },
-      "Error": {
+      "Destructive": {
         "$type": "color",
-        "$value": "{Misc.Red.Dark}"
+        "$value": "{Warm Red.30}"
       },
-      "Warning": {
+      "switcher-icon": {
         "$type": "color",
-        "$value": "{Misc.Yellow.Dark}"
-      },
-      "Informational": {
-        "$type": "color",
-        "$value": "{Misc.Blue.Dark}"
+        "$value": "{Indigo.60}"
       }
     },
     "Label": {
@@ -270,81 +378,89 @@
         "$value": "{Dark Stone.20}"
       }
     },
-    "Density": {
-      "medium": {
+    "Title": {
+      "Tertiary": {
+        "$type": "color",
+        "$value": "{Spruce.30}"
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": "{Spruce.20}"
+      },
+      "Primary": {
+        "$type": "color",
+        "$value": "{Spruce.30}"
+      }
+    },
+    "Forms": {
+      "Input Field Text": {
         "$type": "color",
         "$value": "{Dark Stone.20}"
       },
-      "dark": {
+      "Label-Secondary": {
+        "$type": "color",
+        "$value": "{Dark Stone.30}"
+      },
+      "Label-Primary": {
+        "$type": "color",
+        "$value": "{Dark Stone.20}"
+      }
+    },
+    "Density": {
+      "Medium": {
+        "$type": "color",
+        "$value": "{Dark Stone.20}"
+      },
+      "Dark": {
         "$type": "color",
         "$value": "{Cool Gray.10}"
       },
-      "light": {
+      "Light": {
         "$type": "color",
         "$value": "{Opacity.Light.86}"
       }
-    },
-    "Levels": {
-      "secondary": {
-        "$type": "color",
-        "$value": "{Opacity.Light.50}"
-      },
-      "primary": {
-        "$type": "color",
-        "$value": "{Opacity.Light.86}"
-      }
-    }
-  },
-  "Icon": {
-    "Primary": {
-      "$type": "color",
-      "$value": "{Cool Gray.10}"
-    },
-    "Secondary": {
-      "$type": "color",
-      "$value": "{Cool Gray.30}"
-    },
-    "Tertiary": {
-      "$type": "color",
-      "$value": "{Spruce.20}"
-    },
-    "Inverse": {
-      "$type": "color",
-      "$value": "{Cool Gray.90}"
-    },
-    "Brand": {
-      "$type": "color",
-      "$value": "{Warm Red.50}"
-    },
-    "Disable": {
-      "$type": "color",
-      "$value": "{Cool Gray.50}"
-    },
-    "Destructive": {
-      "$type": "color",
-      "$value": "{Warm Red.30}"
     }
   },
   "Border": {
-    "Default": {
-      "$type": "color",
-      "$value": "{Cool Gray.40}"
+    "Level": {
+      "Default": {
+        "$type": "color",
+        "$value": "{Cool Gray.40}"
+      },
+      "Primary": {
+        "$type": "color",
+        "$value": "{Cool Gray.10}"
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": "{Cool Gray.40}"
+      },
+      "Tertiary": {
+        "$type": "color",
+        "$value": "{Spruce.30}"
+      }
     },
-    "Light": {
-      "$type": "color",
-      "$value": "{Cool Gray.70}"
-    },
-    "Primary": {
-      "$type": "color",
-      "$value": "{Cool Gray.10}"
-    },
-    "Secondary": {
-      "$type": "color",
-      "$value": "{Cool Gray.40}"
-    },
-    "Tertiary": {
-      "$type": "color",
-      "$value": "{Spruce.30}"
+    "Variants": {
+      "Light": {
+        "$type": "color",
+        "$value": "{Cool Gray.70}"
+      },
+      "Focus": {
+        "$type": "color",
+        "$value": "{Indigo.40}"
+      },
+      "Destructive": {
+        "$type": "color",
+        "$value": "{Warm Red.30}"
+      },
+      "Brand": {
+        "$type": "color",
+        "$value": "{Warm Red.50}"
+      },
+      "Inverse": {
+        "$type": "color",
+        "$value": "{Cool Gray.90}"
+      }
     },
     "UI": {
       "Pressed": {
@@ -364,22 +480,6 @@
         "$value": "{Cool Gray.50}"
       }
     },
-    "Focus": {
-      "$type": "color",
-      "$value": "{Indigo.40}"
-    },
-    "Destructive": {
-      "$type": "color",
-      "$value": "{Warm Red.30}"
-    },
-    "Brand": {
-      "$type": "color",
-      "$value": "{Warm Red.50}"
-    },
-    "Inverse": {
-      "$type": "color",
-      "$value": "{Cool Gray.90}"
-    },
     "Accent": {
       "Primary": {
         "$type": "color",
@@ -388,6 +488,26 @@
       "Secondary": {
         "$type": "color",
         "$value": "{Spruce.50}"
+      }
+    },
+    "Card": {
+      "Hover": {
+        "$type": "color",
+        "$value": "{Opacity.Light.10}"
+      },
+      "Default": {
+        "$type": "color",
+        "$value": "{Opacity.Light.5}"
+      },
+      "Clickable": {
+        "$type": "color",
+        "$value": "{Indigo.30}"
+      }
+    },
+    "Forms": {
+      "Default": {
+        "$type": "color",
+        "$value": "{Cool Gray.70}"
       }
     },
     "Button": {
@@ -431,6 +551,28 @@
         "Pressed": {
           "$type": "color",
           "$value": "{Indigo.70}"
+        },
+        "Hover 2": {
+          "$type": "color",
+          "$value": "{Opacity.Light.10}"
+        },
+        "Default 2": {
+          "$type": "color",
+          "$value": "{Opacity.Light.5}"
+        }
+      },
+      "Descrutive": {
+        "Default": {
+          "$type": "color",
+          "$value": "{Warm Red.20}"
+        },
+        "Hover": {
+          "$type": "color",
+          "$value": "{Warm Red.30}"
+        },
+        "Pressed": {
+          "$type": "color",
+          "$value": "{Warm Red.30}"
         }
       }
     }
@@ -475,24 +617,6 @@
         "$type": "color",
         "$value": "{Misc.Green.Dark}"
       }
-    }
-  },
-  "Card": {
-    "Border-color Hover": {
-      "$type": "color",
-      "$value": "{Opacity.Light.10}"
-    },
-    "Border-color Default": {
-      "$type": "color",
-      "$value": "{Opacity.Light.5}"
-    },
-    "Border-color Clickable": {
-      "$type": "color",
-      "$value": "{Indigo.30}"
-    },
-    "Background": {
-      "$type": "color",
-      "$value": "{Opacity.Light.3}"
     }
   },
   "Data Viz": {
@@ -972,65 +1096,25 @@
     }
   },
   "Utility": {
-    "interactive-graphic-alt": {
-      "$type": "color",
-      "$value": "{Cool Gray.60}"
+    "Interactive": {
+      "graphic-alt": {
+        "$type": "color",
+        "$value": "{Cool Gray.60}"
+      },
+      "graphic": {
+        "$type": "color",
+        "$value": "{Cool Gray.80}"
+      }
     },
-    "interactive-graphic": {
-      "$type": "color",
-      "$value": "{Cool Gray.80}"
-    },
-    "neutral-tag": {
-      "$type": "color",
-      "$value": "{Cool Gray.85}"
-    },
-    "search-bg": {
-      "$type": "color",
-      "$value": "{Indigo.105}"
-    },
-    "icon": {
-      "$type": "color",
-      "$value": "{Cool Gray.5}"
-    }
-  },
-  "Titles": {
-    "Tertiary-title": {
-      "$type": "color",
-      "$value": "{Spruce.30}"
-    },
-    "Secondary-title": {
-      "$type": "color",
-      "$value": "{Spruce.20}"
-    },
-    "Primary-title": {
-      "$type": "color",
-      "$value": "{Spruce.30}"
-    }
-  },
-  "Table": {
-    "row-active": {
-      "$type": "color",
-      "$value": "{Indigo.100}"
-    },
-    "alt-row": {
-      "$type": "color",
-      "$value": "{Opacity.Light.5}"
-    },
-    "footer": {
-      "$type": "color",
-      "$value": "{Indigo.105}"
-    },
-    "row": {
-      "$type": "color",
-      "$value": "{Opacity.Light.3}"
-    },
-    "row-active-nested": {
-      "$type": "color",
-      "$value": "{Indigo.90}"
-    },
-    "header": {
-      "$type": "color",
-      "$value": "{Indigo.105}"
+    "Dropshadow": {
+      "1": {
+        "$type": "color",
+        "$value": "{Opacity.Dark.10}"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "{Opacity.Dark.10}"
+      }
     }
   },
   "States": {
@@ -1051,38 +1135,6 @@
       "$value": "{Cool Gray.5}"
     }
   },
-  "Page": {
-    "Overlay": {
-      "$type": "color",
-      "$value": "{Opacity.Dark.85}"
-    },
-    "logo-bridge-txt": {
-      "$type": "color",
-      "$value": "{Dark Stone.10}"
-    },
-    "bg": {
-      "$type": "color",
-      "$value": "{Cool Gray.97}"
-    }
-  },
-  "Navigation": {
-    "switcher-icon": {
-      "$type": "color",
-      "$value": "{Indigo.60}"
-    },
-    "local-nav-bg": {
-      "$type": "color",
-      "$value": "{Opacity.Light.3}"
-    },
-    "footer-bg": {
-      "$type": "color",
-      "$value": "{Opacity.Light.3}"
-    },
-    "nav-bg": {
-      "$type": "color",
-      "$value": "{Opacity.Light.3}"
-    }
-  },
   "Main Palette": {
     "Accent": {
       "$type": "color",
@@ -1099,46 +1151,6 @@
     "Primary": {
       "$type": "color",
       "$value": "{Indigo.70}"
-    }
-  },
-  "Gradients and Shadows": {
-    "Interactive Gradient End": {
-      "$type": "color",
-      "$value": "{Indigo.100}"
-    },
-    "Container Dropshadow 2": {
-      "$type": "color",
-      "$value": "{Opacity.Dark.10}"
-    },
-    "Container Dropshadow 1": {
-      "$type": "color",
-      "$value": "{Opacity.Dark.10}"
-    },
-    "Interactive Gradient Start": {
-      "$type": "color",
-      "$value": "{Indigo.107}"
-    }
-  },
-  "Forms": {
-    "Input Field Border": {
-      "$type": "color",
-      "$value": "{Cool Gray.70}"
-    },
-    "Input Field Text": {
-      "$type": "color",
-      "$value": "{Dark Stone.20}"
-    },
-    "Input field Background": {
-      "$type": "color",
-      "$value": "{Opacity.Dark.30}"
-    },
-    "Label-Secondary": {
-      "$type": "color",
-      "$value": "{Dark Stone.30}"
-    },
-    "Label-Primary": {
-      "$type": "color",
-      "$value": "{Dark Stone.20}"
     }
   },
   "Containers": {
