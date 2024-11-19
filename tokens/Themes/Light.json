@@ -96,18 +96,18 @@
       "Primary": {
         "Default": {
           "$type": "color",
-          "$value": "{Spruce.60}"
+          "$value": "{Indigo.80-primary}"
         },
         "Hover": {
           "$type": "color",
-          "$value": "{Spruce.50}"
+          "$value": "{Indigo.60}"
         },
         "Pressed": {
           "$type": "color",
-          "$value": "{Spruce.80}"
+          "$value": "{Indigo.100}"
         }
       },
-      "Secondary": {
+      "Web": {
         "Default": {
           "$type": "color",
           "$value": "{Dark Stone.80}"
@@ -133,6 +133,34 @@
         "Pressed": {
           "$type": "color",
           "$value": "{Warm Red.90}"
+        }
+      },
+      "Secondary": {
+        "Default": {
+          "$type": "color",
+          "$value": "{Indigo.60}"
+        },
+        "Hover": {
+          "$type": "color",
+          "$value": "{Indigo.40}"
+        },
+        "Pressed": {
+          "$type": "color",
+          "$value": "{Indigo.100}"
+        }
+      },
+      "Tertiary": {
+        "Default": {
+          "$type": "color",
+          "$value": "{Indigo.10}"
+        },
+        "Hover": {
+          "$type": "color",
+          "$value": "{Indigo.20}"
+        },
+        "Pressed": {
+          "$type": "color",
+          "$value": "{Indigo.40}"
         }
       }
     },
@@ -170,6 +198,10 @@
       "3": {
         "$type": "color",
         "$value": "{Opacity.Dark.3}"
+      },
+      "Disabled": {
+        "$type": "color",
+        "$value": "{Opacity.Dark.3}"
       }
     }
   },
@@ -194,7 +226,7 @@
     },
     "Tertiary": {
       "$type": "color",
-      "$value": "{Spruce.60}"
+      "$value": "{Indigo.80-primary}"
     },
     "Tertiary-bold": {
       "$type": "color",
@@ -215,15 +247,15 @@
     "Link": {
       "Default": {
         "$type": "color",
-        "$value": "{Spruce.60}"
+        "$value": "{Indigo.80-primary}"
       },
       "Hover": {
         "$type": "color",
-        "$value": "{Spruce.50}"
+        "$value": "{Indigo.60}"
       },
       "Pressed": {
         "$type": "color",
-        "$value": "{Spruce.80}"
+        "$value": "{Indigo.95}"
       },
       "Disabled": {
         "$type": "color",
@@ -254,6 +286,16 @@
       "Informational": {
         "$type": "color",
         "$value": "{Misc.Blue.Dark}"
+      }
+    },
+    "Label": {
+      "Light Label": {
+        "$type": "color",
+        "$value": "{Dark Stone.10}"
+      },
+      "Dark Label": {
+        "$type": "color",
+        "$value": "{Cool Gray.85}"
       }
     },
     "Density": {
@@ -352,7 +394,7 @@
     },
     "Focus": {
       "$type": "color",
-      "$value": "{Spruce.60}"
+      "$value": "{Indigo.80-primary}"
     },
     "Destructive": {
       "$type": "color",
@@ -392,6 +434,50 @@
       "informational": {
         "$type": "color",
         "$value": "{Status.Informational.Dark}"
+      }
+    },
+    "Button": {
+      "Primary": {
+        "Default": {
+          "$type": "color",
+          "$value": "{Indigo.80-primary}"
+        },
+        "Hover": {
+          "$type": "color",
+          "$value": "{Indigo.60}"
+        },
+        "Pressed": {
+          "$type": "color",
+          "$value": "{Indigo.90}"
+        }
+      },
+      "Secondary": {
+        "Default": {
+          "$type": "color",
+          "$value": "{Indigo.60}"
+        },
+        "Hover": {
+          "$type": "color",
+          "$value": "{Indigo.40}"
+        },
+        "Pressed": {
+          "$type": "color",
+          "$value": "{Indigo.10}"
+        }
+      },
+      "Tertiary": {
+        "Default": {
+          "$type": "color",
+          "$value": "{Indigo.10}"
+        },
+        "Hover": {
+          "$type": "color",
+          "$value": "{Indigo.40}"
+        },
+        "Pressed": {
+          "$type": "color",
+          "$value": "{Indigo.60}"
+        }
       }
     }
   },
@@ -928,32 +1014,6 @@
       "Informational": {
         "$type": "color",
         "$value": "{Misc.Blue.Dark}"
-      }
-    }
-  },
-  "Buttons": {
-    "Level": {
-      "Tertiary": {
-        "$type": "color",
-        "$value": "{Indigo.10}"
-      },
-      "Secondary": {
-        "$type": "color",
-        "$value": "{Indigo.60}"
-      },
-      "Primary": {
-        "$type": "color",
-        "$value": "{Indigo.20}"
-      }
-    },
-    "Label": {
-      "Light Label": {
-        "$type": "color",
-        "$value": "{Dark Stone.10}"
-      },
-      "Dark Label": {
-        "$type": "color",
-        "$value": "{Cool Gray.85}"
       }
     }
   },
