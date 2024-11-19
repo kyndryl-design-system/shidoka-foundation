@@ -8,3 +8,41 @@ export function getCurrentBreakpoint() {
     '--kd-current-breakpoint'
   );
 }
+
+export const BREAKPOINT_VIEWPORTS = {
+  sm: {
+    name: 'Breakpoint: Small',
+    styles: {
+      width: '320px',
+      height: '100%',
+    },
+  },
+  md: {
+    name: 'Breakpoint: Medium',
+    styles: {
+      width: '672px',
+      height: '100%',
+    },
+  },
+  lg: {
+    name: 'Breakpoint: Large',
+    styles: {
+      width: '1184px',
+      height: '100%',
+    },
+  },
+  xl: {
+    name: 'Breakpoint: X-Large',
+    styles: {
+      width: '1312px',
+      height: '100%',
+    },
+  },
+  max: {
+    name: 'Breakpoint: Max',
+    styles: {
+      width: '1584px',
+      height: '100%',
+    },
+  },
+};

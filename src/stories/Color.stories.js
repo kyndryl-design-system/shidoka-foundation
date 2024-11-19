@@ -93,7 +93,7 @@ export const Semantic = {
           <table>
             <thead>
               <tr>
-                <th>Variable Name</th>
+                <th>Token</th>
                 <th>Value</th>
                 <th>Preview</th>
               </tr>
@@ -140,7 +140,7 @@ export const Palette = {
       <table>
         <thead>
           <tr>
-            <th>Variable Name</th>
+            <th>Token</th>
             <th>Value</th>
             <th>Preview</th>
           </tr>

@@ -13,9 +13,7 @@ We use [CSS light-dark() syntax](https://developer.mozilla.org/en-US/docs/Web/CS
 
 ### Setting a Theme
 
-#### Meta Tag Approach
-
-The most straightforward way to theme the entire application.
+Add the following tag to your application's `<head>`:
 
 ```html
 <!-- automatic theme based on user preference, recommended -->
@@ -26,21 +24,9 @@ The most straightforward way to theme the entire application.
 <meta name="color-scheme" content="dark" />
 ```
 
-#### CSS Approach
-
-The CSS approach is a bit more flexible because you can apply it to any CSS selector.
-
-```css
-html {
-  color-scheme: light dark; /* auto theme */
-  color-scheme: light; /* light theme */
-  color-scheme: dark; /* dark theme */
-}
-```
-
 ### Hot-Swapping Themes
 
-Applications can incorporate a theme switcher for users, which can operate simply by changing the values in the above examples. You'll notice we have one built-in to Storybook utilizing the Meta Tag approach.
+Applications can incorporate a theme switcher for users, which can operate simply by changing the value in the above example. You'll notice we have one built-in to Storybook.
 
 ## Using Tokens
 
