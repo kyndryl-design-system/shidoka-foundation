@@ -1,33 +1,5 @@
 {
   "Background": {
-    "Success": {
-      "$type": "color",
-      "$value": "{Misc.Green.Dark}"
-    },
-    "Success-Light": {
-      "$type": "color",
-      "$value": "{Misc.Green.Light}"
-    },
-    "Error": {
-      "$type": "color",
-      "$value": "{Misc.Red.Dark}"
-    },
-    "Error-light": {
-      "$type": "color",
-      "$value": "{Misc.Red.Light}"
-    },
-    "Warning": {
-      "$type": "color",
-      "$value": "{Misc.Yellow.Dark}"
-    },
-    "Warning-Light": {
-      "$type": "color",
-      "$value": "{Misc.Yellow.Light}"
-    },
-    "Informational-light": {
-      "$type": "color",
-      "$value": "{Misc.Blue.Light}"
-    },
     "Container": {
       "Default": {
         "$type": "color",
@@ -201,7 +173,7 @@
       },
       "Disabled": {
         "$type": "color",
-        "$value": "#ffffff"
+        "$value": "{Cool Gray.3}"
       }
     }
   },
@@ -416,24 +388,6 @@
       "Secondary": {
         "$type": "color",
         "$value": "{Spruce.50}"
-      }
-    },
-    "Status": {
-      "Success": {
-        "$type": "color",
-        "$value": "{Status.Success.Dark}"
-      },
-      "Error": {
-        "$type": "color",
-        "$value": "{Warm Red.70}"
-      },
-      "Warning": {
-        "$type": "color",
-        "$value": "{Status.Warning.Dark}"
-      },
-      "informational": {
-        "$type": "color",
-        "$value": "{Status.Informational.Dark}"
       }
     },
     "Button": {
