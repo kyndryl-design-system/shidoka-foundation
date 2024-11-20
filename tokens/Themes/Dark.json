@@ -1106,6 +1106,14 @@
       "data-primary": {
         "$type": "color",
         "$value": "{Warm Gray.30}"
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": "{Warm Gray.60}"
+      },
+      "Primary": {
+        "$type": "color",
+        "$value": "{Warm Gray.30}"
       }
     }
   },
