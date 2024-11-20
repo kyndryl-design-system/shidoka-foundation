@@ -267,7 +267,7 @@
         "$type": "color",
         "$value": "{Opacity.Light.5}"
       },
-      "Hover 2": {
+      "Hover": {
         "$type": "color",
         "$value": "{Opacity.Light.10}"
       }
@@ -311,7 +311,7 @@
       },
       "Placeholder": {
         "$type": "color",
-        "$value": "{Dark Stone.70}"
+        "$value": "{Dark Stone.50}"
       }
     },
     "Link": {
@@ -422,24 +422,6 @@
     }
   },
   "Border": {
-    "Level": {
-      "Default": {
-        "$type": "color",
-        "$value": "{Cool Gray.40}"
-      },
-      "Primary": {
-        "$type": "color",
-        "$value": "{Cool Gray.10}"
-      },
-      "Secondary": {
-        "$type": "color",
-        "$value": "{Cool Gray.40}"
-      },
-      "Tertiary": {
-        "$type": "color",
-        "$value": "{Spruce.30}"
-      }
-    },
     "Variants": {
       "Light": {
         "$type": "color",
@@ -460,6 +442,20 @@
       "Inverse": {
         "$type": "color",
         "$value": "{Cool Gray.90}"
+      }
+    },
+    "Level": {
+      "Primary": {
+        "$type": "color",
+        "$value": "{Opacity.Light.30}"
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": "{Opacity.Light.20}"
+      },
+      "Tertiary": {
+        "$type": "color",
+        "$value": "{Opacity.Light.10}"
       }
     },
     "UI": {
@@ -601,11 +597,11 @@
     "Error": {
       "Light": {
         "$type": "color",
-        "$value": "{Misc.Red.Light}"
+        "$value": "{Misc.Red.Dark}"
       },
       "Dark": {
         "$type": "color",
-        "$value": "{Misc.Red.Dark}"
+        "$value": "{Misc.Red.Light}"
       }
     },
     "Success": {
@@ -626,49 +622,49 @@
         "$value": "{Dark Stone.80}"
       },
       "Positive": {
-        "div-pos-10": {
+        "10": {
           "$type": "color",
           "$value": "{Jade.100}"
         },
-        "div-pos-30": {
-          "$type": "color",
-          "$value": "{Jade.80}"
-        },
-        "div-pos-40": {
-          "$type": "color",
-          "$value": "{Jade.70}"
-        },
-        "div-pos-20": {
+        "20": {
           "$type": "color",
           "$value": "{Jade.90}"
         },
-        "div-pos-50": {
+        "30": {
+          "$type": "color",
+          "$value": "{Jade.80}"
+        },
+        "40": {
+          "$type": "color",
+          "$value": "{Jade.70}"
+        },
+        "50": {
           "$type": "color",
           "$value": "{Jade.60}"
         },
-        "div-pos-90": {
-          "$type": "color",
-          "$value": "{Jade.20}"
-        },
-        "div-pos-70": {
-          "$type": "color",
-          "$value": "{Jade.40}"
-        },
-        "div-pos-80": {
-          "$type": "color",
-          "$value": "{Jade.30}"
-        },
-        "div-pos-60": {
+        "60": {
           "$type": "color",
           "$value": "{Jade.50}"
         },
-        "div-pos-100": {
+        "70": {
+          "$type": "color",
+          "$value": "{Jade.40}"
+        },
+        "80": {
+          "$type": "color",
+          "$value": "{Jade.30}"
+        },
+        "90": {
+          "$type": "color",
+          "$value": "{Jade.20}"
+        },
+        "100": {
           "$type": "color",
           "$value": "{Jade.10}"
         }
       },
       "Neutral": {
-        "div-neutral": {
+        "neutral": {
           "$type": "color",
           "$value": "{Dark Stone.80}"
         }
@@ -1061,37 +1057,53 @@
       }
     },
     "RAG": {
-      "Success-light": {
-        "$type": "color",
-        "$value": "{Misc.Green.Light}"
+      "3": {
+        "Warning": {
+          "$type": "color",
+          "$value": "{Misc.Yellow.Dark}"
+        },
+        "Error": {
+          "$type": "color",
+          "$value": "{Misc.Red.Dark}"
+        },
+        "Success": {
+          "$type": "color",
+          "$value": "{Misc.Green.Dark}"
+        }
       },
-      "Success": {
-        "$type": "color",
-        "$value": "{Misc.Green.Dark}"
-      },
-      "Error-light": {
-        "$type": "color",
-        "$value": "{Misc.Red.Light}"
-      },
-      "Warning-light": {
-        "$type": "color",
-        "$value": "{Misc.Yellow.Light}"
-      },
-      "Error": {
-        "$type": "color",
-        "$value": "{Misc.Red.Dark}"
-      },
-      "Warning": {
-        "$type": "color",
-        "$value": "{Misc.Yellow.Dark}"
-      },
-      "Informational-light": {
-        "$type": "color",
-        "$value": "{Misc.Blue.Light}"
-      },
-      "Informational": {
-        "$type": "color",
-        "$value": "{Misc.Blue.Dark}"
+      "8": {
+        "Success-light": {
+          "$type": "color",
+          "$value": "{Misc.Green.Light}"
+        },
+        "Success": {
+          "$type": "color",
+          "$value": "{Misc.Green.Dark}"
+        },
+        "Error-light": {
+          "$type": "color",
+          "$value": "{Misc.Red.Light}"
+        },
+        "Warning-light": {
+          "$type": "color",
+          "$value": "{Misc.Yellow.Light}"
+        },
+        "Error": {
+          "$type": "color",
+          "$value": "{Misc.Red.Dark}"
+        },
+        "Warning": {
+          "$type": "color",
+          "$value": "{Misc.Yellow.Dark}"
+        },
+        "Informational-light": {
+          "$type": "color",
+          "$value": "{Misc.Blue.Light}"
+        },
+        "Informational": {
+          "$type": "color",
+          "$value": "{Misc.Blue.Dark}"
+        }
       }
     }
   },
@@ -1153,16 +1165,16 @@
       "$value": "{Indigo.70}"
     }
   },
-  "Containers": {
-    "container-footer": {
+  "Container": {
+    "footer": {
       "$type": "color",
       "$value": "{Indigo.105}"
     },
-    "Interactive-flat-container": {
+    "Interactive-flat": {
       "$type": "color",
       "$value": "{Indigo.107}"
     },
-    "utility-container": {
+    "utility": {
       "$type": "color",
       "$value": "{Indigo.105}"
     }

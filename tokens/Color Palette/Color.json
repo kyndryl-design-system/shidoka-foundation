@@ -575,6 +575,18 @@
         "$type": "color",
         "$value": "#ffffff1a"
       },
+      "20": {
+        "$type": "color",
+        "$value": "#ffffff33"
+      },
+      "30": {
+        "$type": "color",
+        "$value": "#ffffff4d"
+      },
+      "40": {
+        "$type": "color",
+        "$value": "#ffffff66"
+      },
       "50": {
         "$type": "color",
         "$value": "#ffffff80"
@@ -699,6 +711,46 @@
   },
   "Misc": {
     "Red": {
+      "10": {
+        "$type": "color",
+        "$value": "#ffc5c5"
+      },
+      "20": {
+        "$type": "color",
+        "$value": "#ffb0af"
+      },
+      "30": {
+        "$type": "color",
+        "$value": "#ff9997"
+      },
+      "40": {
+        "$type": "color",
+        "$value": "#fe807a"
+      },
+      "50": {
+        "$type": "color",
+        "$value": "#f86860"
+      },
+      "60": {
+        "$type": "color",
+        "$value": "#f04f45"
+      },
+      "70": {
+        "$type": "color",
+        "$value": "#d84134"
+      },
+      "80": {
+        "$type": "color",
+        "$value": "#bf3223"
+      },
+      "90": {
+        "$type": "color",
+        "$value": "#a52211"
+      },
+      "100": {
+        "$type": "color",
+        "$value": "#891000"
+      },
       "Light": {
         "$type": "color",
         "$value": "#f7e6e6"
@@ -729,6 +781,46 @@
       }
     },
     "Yellow": {
+      "10": {
+        "$type": "color",
+        "$value": "#ffd46a"
+      },
+      "20": {
+        "$type": "color",
+        "$value": "#ffbc48"
+      },
+      "30": {
+        "$type": "color",
+        "$value": "#ffa329"
+      },
+      "40": {
+        "$type": "color",
+        "$value": "#ff850a"
+      },
+      "50": {
+        "$type": "color",
+        "$value": "#f26e01"
+      },
+      "60": {
+        "$type": "color",
+        "$value": "#d86301"
+      },
+      "70": {
+        "$type": "color",
+        "$value": "#bc5802"
+      },
+      "80": {
+        "$type": "color",
+        "$value": "#9e4d02"
+      },
+      "90": {
+        "$type": "color",
+        "$value": "#813f01"
+      },
+      "100": {
+        "$type": "color",
+        "$value": "#643000"
+      },
       "Dark": {
         "$type": "color",
         "$value": "#f0c000"
