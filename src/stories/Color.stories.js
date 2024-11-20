@@ -14,64 +14,64 @@ export default {
         <style>
           .heading {
             margin-bottom: 16px;
-            color: var(--kd-color-titles-primary-title);
+            color: var(--kd-color-text-title-primary);
           }
 
           p {
             margin-bottom: 12px;
           }
 
-          table {
+          table.tokens {
             border-collapse: collapse;
             margin-bottom: 32px;
           }
 
-          td,
-          th {
+          table.tokens td,
+          table.tokens th {
             text-align: left;
             padding: 16px;
-            /* border-bottom: 1px solid var(--kd-color-border-light); */
+            border-bottom: 1px solid var(--kd-color-border-variants-light);
           }
 
-          th {
-            background: var(--kd-color-table-header);
+          table.tokens th {
+            background: var(--kd-color-background-table-header);
             font-size: 14px;
             font-weight: 500;
             text-transform: uppercase;
           }
 
-          th:first-child {
+          table.tokens th:first-child {
             border-top-left-radius: 8px;
           }
 
-          th:last-child {
+          table.tokens th:last-child {
             border-top-right-radius: 8px;
           }
 
-          td {
-            background: var(--kd-color-table-row);
+          table.tokens td {
+            background: var(--kd-color-background-table-row);
           }
 
-          tr:nth-child(odd) td {
-            background: var(--kd-color-table-alt-row);
+          table.tokens tr:nth-child(odd) td {
+            background: var(--kd-color-background-table-alt-row);
           }
 
-          tr:last-child td {
+          table.tokens tr:last-child td {
             border-bottom: none;
           }
 
-          tr:last-child td:first-child {
+          table.tokens tr:last-child td:first-child {
             border-bottom-left-radius: 8px;
           }
 
-          tr:last-child td:last-child {
+          table.tokens tr:last-child td:last-child {
             border-bottom-right-radius: 8px;
           }
 
-          .preview {
+          .token-preview {
             display: block;
             border-radius: 8px;
-            outline: 1px solid var(--kd-color-border-light);
+            outline: 1px solid var(--kd-color-border-variants-light);
             width: 100%;
             height: 40px;
           }
@@ -90,7 +90,7 @@ export const Semantic = {
         return html`
           <div class="heading kd-type--headline-06">${key}</div>
 
-          <table>
+          <table class="tokens">
             <thead>
               <tr>
                 <th>Token</th>
@@ -112,7 +112,7 @@ export const Semantic = {
                       </td>
                       <td>
                         <span
-                          class="preview"
+                          class="token-preview"
                           style="background-color: var(${token.variable})"
                         ></span>
                       </td>
@@ -141,7 +141,7 @@ export const Palette = {
         return html`
           <div class="heading kd-type--headline-06">${key}</div>
 
-          <table>
+          <table class="tokens">
             <thead>
               <tr>
                 <th>Token</th>
@@ -163,7 +163,7 @@ export const Palette = {
                       </td>
                       <td>
                         <span
-                          class="preview"
+                          class="token-preview"
                           style="background-color: var(${token.variable})"
                         ></span>
                       </td>
