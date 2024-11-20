@@ -1,0 +1,84 @@
+{
+  "Border": {
+    "Border M": {
+      "$type": "number",
+      "$value": 1
+    },
+    "Border L": {
+      "$type": "number",
+      "$value": 2
+    }
+  },
+  "Spacer": {
+    "Spacer Eight": {
+      "$type": "number",
+      "$value": 2
+    },
+    "Spacer Quarter": {
+      "$type": "number",
+      "$value": 4
+    },
+    "Spacer Half": {
+      "$type": "number",
+      "$value": 8
+    },
+    "Spacer Three-Quarter": {
+      "$type": "number",
+      "$value": 12
+    },
+    "Spacer One": {
+      "$type": "number",
+      "$value": 16
+    },
+    "Spacer One-and-Half": {
+      "$type": "number",
+      "$value": 24
+    },
+    "Spacer Two": {
+      "$type": "number",
+      "$value": 32
+    },
+    "Spacer Two-and-Half": {
+      "$type": "number",
+      "$value": 40
+    },
+    "Spacer Three": {
+      "$type": "number",
+      "$value": 48
+    },
+    "Spacer Four": {
+      "$type": "number",
+      "$value": 64
+    },
+    "Spacer Four-and-Half": {
+      "$type": "number",
+      "$value": 72
+    },
+    "Spacer Five": {
+      "$type": "number",
+      "$value": 80
+    },
+    "Spacer Six": {
+      "$type": "number",
+      "$value": 96
+    },
+    "Spacer Seven-and-Half": {
+      "$type": "number",
+      "$value": 120
+    }
+  },
+  "Corner": {
+    "Corner S": {
+      "$type": "number",
+      "$value": 2
+    },
+    "Corner M": {
+      "$type": "number",
+      "$value": 4
+    },
+    "Corner L": {
+      "$type": "number",
+      "$value": 8
+    }
+  }
+}
