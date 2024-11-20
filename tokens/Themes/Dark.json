@@ -616,102 +616,6 @@
     }
   },
   "Data Viz": {
-    "Divergent 02": {
-      "Color 3": {
-        "$type": "color",
-        "$value": "{Dark Stone.80}"
-      },
-      "Positive": {
-        "10": {
-          "$type": "color",
-          "$value": "{Jade.100}"
-        },
-        "20": {
-          "$type": "color",
-          "$value": "{Jade.90}"
-        },
-        "30": {
-          "$type": "color",
-          "$value": "{Jade.80}"
-        },
-        "40": {
-          "$type": "color",
-          "$value": "{Jade.70}"
-        },
-        "50": {
-          "$type": "color",
-          "$value": "{Jade.60}"
-        },
-        "60": {
-          "$type": "color",
-          "$value": "{Jade.50}"
-        },
-        "70": {
-          "$type": "color",
-          "$value": "{Jade.40}"
-        },
-        "80": {
-          "$type": "color",
-          "$value": "{Jade.30}"
-        },
-        "90": {
-          "$type": "color",
-          "$value": "{Jade.20}"
-        },
-        "100": {
-          "$type": "color",
-          "$value": "{Jade.10}"
-        }
-      },
-      "Neutral": {
-        "neutral": {
-          "$type": "color",
-          "$value": "{Dark Stone.80}"
-        }
-      },
-      "Negative": {
-        "10": {
-          "$type": "color",
-          "$value": "{Blush.100}"
-        },
-        "20": {
-          "$type": "color",
-          "$value": "{Blush.90}"
-        },
-        "30": {
-          "$type": "color",
-          "$value": "{Blush.80}"
-        },
-        "40": {
-          "$type": "color",
-          "$value": "{Blush.70}"
-        },
-        "50": {
-          "$type": "color",
-          "$value": "{Blush.60}"
-        },
-        "60": {
-          "$type": "color",
-          "$value": "{Blush.50}"
-        },
-        "70": {
-          "$type": "color",
-          "$value": "{Blush.40}"
-        },
-        "80": {
-          "$type": "color",
-          "$value": "{Blush.30}"
-        },
-        "90": {
-          "$type": "color",
-          "$value": "{Blush.20}"
-        },
-        "100": {
-          "$type": "color",
-          "$value": "{Blush.10}"
-        }
-      }
-    },
     "Categorical 01": {
       "10": {
         "$type": "color",
@@ -840,9 +744,97 @@
         }
       },
       "Neutral": {
-        "Neutral": {
+        "$type": "color",
+        "$value": "{Dark Stone.80}"
+      }
+    },
+    "Divergent 02": {
+      "Positive": {
+        "10": {
           "$type": "color",
-          "$value": "{Dark Stone.80}"
+          "$value": "{Jade.100}"
+        },
+        "20": {
+          "$type": "color",
+          "$value": "{Jade.90}"
+        },
+        "30": {
+          "$type": "color",
+          "$value": "{Jade.80}"
+        },
+        "40": {
+          "$type": "color",
+          "$value": "{Jade.70}"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "{Jade.60}"
+        },
+        "60": {
+          "$type": "color",
+          "$value": "{Jade.50}"
+        },
+        "70": {
+          "$type": "color",
+          "$value": "{Jade.40}"
+        },
+        "80": {
+          "$type": "color",
+          "$value": "{Jade.30}"
+        },
+        "90": {
+          "$type": "color",
+          "$value": "{Jade.20}"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "{Jade.10}"
+        }
+      },
+      "Neutral": {
+        "$type": "color",
+        "$value": "{Dark Stone.80}"
+      },
+      "Negative": {
+        "10": {
+          "$type": "color",
+          "$value": "{Blush.100}"
+        },
+        "20": {
+          "$type": "color",
+          "$value": "{Blush.90}"
+        },
+        "30": {
+          "$type": "color",
+          "$value": "{Blush.80}"
+        },
+        "40": {
+          "$type": "color",
+          "$value": "{Blush.70}"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "{Blush.60}"
+        },
+        "60": {
+          "$type": "color",
+          "$value": "{Blush.50}"
+        },
+        "70": {
+          "$type": "color",
+          "$value": "{Blush.40}"
+        },
+        "80": {
+          "$type": "color",
+          "$value": "{Blush.30}"
+        },
+        "90": {
+          "$type": "color",
+          "$value": "{Blush.20}"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "{Blush.10}"
         }
       }
     },
@@ -1104,6 +1096,16 @@
           "$type": "color",
           "$value": "{Misc.Blue.Dark}"
         }
+      }
+    },
+    "Level": {
+      "data-secondary": {
+        "$type": "color",
+        "$value": "{Warm Gray.60}"
+      },
+      "data-primary": {
+        "$type": "color",
+        "$value": "{Warm Gray.30}"
       }
     }
   },

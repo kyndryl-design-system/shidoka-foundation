@@ -616,102 +616,6 @@
     }
   },
   "Data Viz": {
-    "Divergent 02": {
-      "Color 3": {
-        "$type": "color",
-        "$value": "{Neutral.div-02-neutral}"
-      },
-      "Positive": {
-        "10": {
-          "$type": "color",
-          "$value": "{Jade.10}"
-        },
-        "20": {
-          "$type": "color",
-          "$value": "{Jade.20}"
-        },
-        "30": {
-          "$type": "color",
-          "$value": "{Jade.30}"
-        },
-        "40": {
-          "$type": "color",
-          "$value": "{Jade.40}"
-        },
-        "50": {
-          "$type": "color",
-          "$value": "{Jade.50}"
-        },
-        "60": {
-          "$type": "color",
-          "$value": "{Jade.60}"
-        },
-        "70": {
-          "$type": "color",
-          "$value": "{Jade.70}"
-        },
-        "80": {
-          "$type": "color",
-          "$value": "{Jade.80}"
-        },
-        "90": {
-          "$type": "color",
-          "$value": "{Jade.90}"
-        },
-        "100": {
-          "$type": "color",
-          "$value": "{Jade.100}"
-        }
-      },
-      "Neutral": {
-        "neutral": {
-          "$type": "color",
-          "$value": "{Neutral.div-02-neutral}"
-        }
-      },
-      "Negative": {
-        "10": {
-          "$type": "color",
-          "$value": "{Blush.10}"
-        },
-        "20": {
-          "$type": "color",
-          "$value": "{Blush.20}"
-        },
-        "30": {
-          "$type": "color",
-          "$value": "{Blush.30}"
-        },
-        "40": {
-          "$type": "color",
-          "$value": "{Blush.40}"
-        },
-        "50": {
-          "$type": "color",
-          "$value": "{Blush.50}"
-        },
-        "60": {
-          "$type": "color",
-          "$value": "{Blush.60}"
-        },
-        "70": {
-          "$type": "color",
-          "$value": "{Blush.70}"
-        },
-        "80": {
-          "$type": "color",
-          "$value": "{Blush.80}"
-        },
-        "90": {
-          "$type": "color",
-          "$value": "{Blush.90}"
-        },
-        "100": {
-          "$type": "color",
-          "$value": "{Blush.100}"
-        }
-      }
-    },
     "Categorical 01": {
       "10": {
         "$type": "color",
@@ -840,9 +744,97 @@
         }
       },
       "Neutral": {
-        "Neutral": {
+        "$type": "color",
+        "$value": "{Neutral.div-01-neutral}"
+      }
+    },
+    "Divergent 02": {
+      "Positive": {
+        "10": {
           "$type": "color",
-          "$value": "{Neutral.div-01-neutral}"
+          "$value": "{Jade.10}"
+        },
+        "20": {
+          "$type": "color",
+          "$value": "{Jade.20}"
+        },
+        "30": {
+          "$type": "color",
+          "$value": "{Jade.30}"
+        },
+        "40": {
+          "$type": "color",
+          "$value": "{Jade.40}"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "{Jade.50}"
+        },
+        "60": {
+          "$type": "color",
+          "$value": "{Jade.60}"
+        },
+        "70": {
+          "$type": "color",
+          "$value": "{Jade.70}"
+        },
+        "80": {
+          "$type": "color",
+          "$value": "{Jade.80}"
+        },
+        "90": {
+          "$type": "color",
+          "$value": "{Jade.90}"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "{Jade.100}"
+        }
+      },
+      "Neutral": {
+        "$type": "color",
+        "$value": "{Neutral.div-02-neutral}"
+      },
+      "Negative": {
+        "10": {
+          "$type": "color",
+          "$value": "{Blush.10}"
+        },
+        "20": {
+          "$type": "color",
+          "$value": "{Blush.20}"
+        },
+        "30": {
+          "$type": "color",
+          "$value": "{Blush.30}"
+        },
+        "40": {
+          "$type": "color",
+          "$value": "{Blush.40}"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "{Blush.50}"
+        },
+        "60": {
+          "$type": "color",
+          "$value": "{Blush.60}"
+        },
+        "70": {
+          "$type": "color",
+          "$value": "{Blush.70}"
+        },
+        "80": {
+          "$type": "color",
+          "$value": "{Blush.80}"
+        },
+        "90": {
+          "$type": "color",
+          "$value": "{Blush.90}"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "{Blush.100}"
         }
       }
     },
@@ -1068,7 +1060,7 @@
         },
         "Success": {
           "$type": "color",
-          "$value": "#00af41"
+          "$value": "{Misc.Green.Dark}"
         }
       },
       "8": {
@@ -1078,7 +1070,7 @@
         },
         "Success": {
           "$type": "color",
-          "$value": "#00af41"
+          "$value": "{Misc.Green.Dark}"
         },
         "Error-light": {
           "$type": "color",
@@ -1104,6 +1096,16 @@
           "$type": "color",
           "$value": "{Misc.Blue.Dark}"
         }
+      }
+    },
+    "Level": {
+      "data-secondary": {
+        "$type": "color",
+        "$value": "{Warm Gray.30}"
+      },
+      "data-primary": {
+        "$type": "color",
+        "$value": "{Warm Gray.40}"
       }
     }
   },
