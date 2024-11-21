@@ -77,6 +77,34 @@
         "Pressed": {
           "$type": "color",
           "$value": "{Indigo.100}"
+        },
+        "State": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Indigo.80-primary}"
+          },
+          "Hover": {
+            "$type": "color",
+            "$value": "{Indigo.60}"
+          },
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Indigo.100}"
+          }
+        },
+        "Destructive": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Misc.Red.Dark}"
+          },
+          "Hover": {
+            "$type": "color",
+            "$value": "{Misc.Red.70}"
+          },
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Misc.Red.90}"
+          }
         }
       },
       "Web": {
@@ -119,6 +147,20 @@
         "Pressed": {
           "$type": "color",
           "$value": "{Indigo.100}"
+        },
+        "State": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Indigo.60}"
+          },
+          "Hover": {
+            "$type": "color",
+            "$value": "{Indigo.40}"
+          },
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Indigo.100}"
+          }
         }
       },
       "Tertiary": {
@@ -133,6 +175,34 @@
         "Pressed": {
           "$type": "color",
           "$value": "{Indigo.40}"
+        },
+        "State": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Indigo.10}"
+          },
+          "Hover": {
+            "$type": "color",
+            "$value": "{Indigo.20}"
+          },
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Indigo.40}"
+          }
+        },
+        "Destructive": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Misc.Red.Light}"
+          },
+          "Hover": {
+            "$type": "color",
+            "$value": "{Misc.Red.20}"
+          },
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Misc.Red.60}"
+          }
         }
       }
     },
@@ -366,6 +436,10 @@
       "switcher-icon": {
         "$type": "color",
         "$value": "{Indigo.80-primary}"
+      },
+      "Accent": {
+        "$type": "color",
+        "$value": "{Skye.30}"
       }
     },
     "Label": {
@@ -418,6 +492,28 @@
       "Light": {
         "$type": "color",
         "$value": "{Cool Gray.8}"
+      }
+    },
+    "Button": {
+      "Light": {
+        "Primary": {
+          "$type": "color",
+          "$value": "{Indigo.90}"
+        },
+        "Destructive": {
+          "$type": "color",
+          "$value": "{Misc.Red.Dark}"
+        }
+      },
+      "Dark": {
+        "Primary": {
+          "$type": "color",
+          "$value": "{Cool Gray.5}"
+        },
+        "Destructive": {
+          "$type": "color",
+          "$value": "{Misc.Red.Light}"
+        }
       }
     }
   },
@@ -474,6 +570,10 @@
       "Disabled": {
         "$type": "color",
         "$value": "{Dark Stone.40}"
+      },
+      "Error": {
+        "$type": "color",
+        "$value": "{Misc.Red.70}"
       }
     },
     "Accent": {
@@ -597,11 +697,11 @@
     "Error": {
       "Light": {
         "$type": "color",
-        "$value": "{Misc.Red.Light}"
+        "$value": "{Misc.Red.10}"
       },
       "Dark": {
         "$type": "color",
-        "$value": "{Misc.Red.Dark}"
+        "$value": "{Misc.Red.70}"
       }
     },
     "Success": {
