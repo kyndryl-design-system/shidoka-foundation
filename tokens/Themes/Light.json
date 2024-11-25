@@ -1,5 +1,5 @@
 {
-  "🆕 Background": {
+  "Background": {
     "Container": {
       "Default": {
         "$type": "color",
@@ -301,7 +301,7 @@
       }
     }
   },
-  "🆕 Text": {
+  "Text": {
     "Level": {
       "Primary": {
         "$type": "color",
@@ -437,7 +437,7 @@
       }
     }
   },
-  "🆕 Icon": {
+  "Icon": {
     "Primary": {
       "$type": "color",
       "$value": "{Dark Stone.80}"
@@ -495,7 +495,7 @@
       }
     }
   },
-  "🆕 Border": {
+  "Border": {
     "Variants": {
       "Light": {
         "$type": "color",
@@ -651,7 +651,7 @@
       }
     }
   },
-  "🆕 Status": {
+  "Status": {
     "Informational": {
       "Light": {
         "$type": "color",
@@ -693,7 +693,7 @@
       }
     }
   },
-  "🆕 Data Viz": {
+  "Data Viz": {
     "Categorical 01": {
       "10": {
         "$type": "color",
@@ -1183,7 +1183,7 @@
       }
     }
   },
-  "🆕 Utility": {
+  "Utility": {
     "Interactive": {
       "graphic-alt": {
         "$type": "color",
@@ -1205,7 +1205,7 @@
       }
     }
   },
-  "🆕 States": {
+  "States": {
     "Disabled-label": {
       "$type": "color",
       "$value": "{Warm Gray.50}"
@@ -1223,7 +1223,7 @@
       "$value": "{Cool Gray.95}"
     }
   },
-  "🆕 Main Palette": {
+  "Main Palette": {
     "Accent": {
       "$type": "color",
       "$value": "{Warm Red.50}"
@@ -1241,7 +1241,7 @@
       "$value": "{Indigo.70}"
     }
   },
-  "🆕 Container": {
+  "Container": {
     "footer": {
       "$type": "color",
       "$value": "{Indigo.15}"
