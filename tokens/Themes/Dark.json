@@ -3,7 +3,7 @@
     "Container": {
       "Default": {
         "$type": "color",
-        "$value": "{Cool Gray.85}"
+        "$value": "{Indigo.105}"
       },
       "Subtle": {
         "$type": "color",
@@ -16,6 +16,10 @@
       "Soft": {
         "$type": "color",
         "$value": "{Warm Gray.90}"
+      },
+      "Footer": {
+        "$type": "color",
+        "$value": "{Indigo.107}"
       }
     },
     "UI": {
@@ -30,23 +34,27 @@
         },
         "Default": {
           "$type": "color",
-          "$value": "{Cool Gray.40}"
+          "$value": "{Cool Gray.10}"
         },
         "Hover": {
           "$type": "color",
-          "$value": "{Spruce.20}"
+          "$value": "{Indigo.20}"
         },
         "Pressed": {
           "$type": "color",
-          "$value": "{Spruce.10}"
+          "$value": "{Indigo.20}"
         },
         "Focus": {
           "$type": "color",
-          "$value": "{Spruce.20}"
+          "$value": "{Indigo.20}"
         },
         "Disabled": {
           "$type": "color",
-          "$value": "{Cool Gray.70}"
+          "$value": "{Cool Gray.50}"
+        },
+        "Secondary": {
+          "$type": "color",
+          "$value": "{Indigo.40}"
         }
       },
       "Hollow": {
@@ -56,11 +64,11 @@
         },
         "Hover": {
           "$type": "color",
-          "$value": "{Spruce.70}"
+          "$value": "{Indigo.60}"
         },
         "Pressed": {
           "$type": "color",
-          "$value": "{Skye.20}"
+          "$value": "{Indigo.30}"
         }
       }
     },
@@ -113,7 +121,7 @@
         "State": {
           "Default": {
             "$type": "color",
-            "$value": "{Indigo.95}"
+            "$value": "{Indigo.30}"
           },
           "Hover": {
             "$type": "color",
@@ -163,11 +171,11 @@
       },
       "Subtle": {
         "$type": "color",
-        "$value": "{Cool Gray.80}"
+        "$value": "{Indigo.80-primary}"
       },
       "Secondary": {
         "$type": "color",
-        "$value": "{Spruce.20}"
+        "$value": "{Indigo.20}"
       },
       "Tertiary": {
         "$type": "color",
@@ -175,7 +183,7 @@
       },
       "Light": {
         "$type": "color",
-        "$value": "{Skye.90}"
+        "$value": "{Indigo.90}"
       }
     },
     "Opacity": {
@@ -354,44 +362,6 @@
         }
       }
     },
-    "Icon": {
-      "Primary": {
-        "$type": "color",
-        "$value": "{Cool Gray.10}"
-      },
-      "Secondary": {
-        "$type": "color",
-        "$value": "{Cool Gray.30}"
-      },
-      "Tertiary": {
-        "$type": "color",
-        "$value": "{Spruce.20}"
-      },
-      "Inverse": {
-        "$type": "color",
-        "$value": "{Cool Gray.90}"
-      },
-      "Brand": {
-        "$type": "color",
-        "$value": "{Warm Red.50}"
-      },
-      "Disabled": {
-        "$type": "color",
-        "$value": "{Cool Gray.50}"
-      },
-      "Destructive": {
-        "$type": "color",
-        "$value": "{Warm Red.30}"
-      },
-      "switcher-icon": {
-        "$type": "color",
-        "$value": "{Indigo.60}"
-      },
-      "Accent": {
-        "$type": "color",
-        "$value": "{Skye.50}"
-      }
-    },
     "Label": {
       "Light Label": {
         "$type": "color",
@@ -467,6 +437,64 @@
       }
     }
   },
+  "Icon": {
+    "Primary": {
+      "$type": "color",
+      "$value": "{Cool Gray.10}"
+    },
+    "Secondary": {
+      "$type": "color",
+      "$value": "{Cool Gray.30}"
+    },
+    "Tertiary": {
+      "$type": "color",
+      "$value": "{Spruce.20}"
+    },
+    "Inverse": {
+      "$type": "color",
+      "$value": "{Cool Gray.90}"
+    },
+    "Brand": {
+      "$type": "color",
+      "$value": "{Warm Red.50}"
+    },
+    "Disabled": {
+      "$type": "color",
+      "$value": "{Cool Gray.50}"
+    },
+    "Destructive": {
+      "$type": "color",
+      "$value": "{Warm Red.30}"
+    },
+    "switcher-icon": {
+      "$type": "color",
+      "$value": "{Indigo.60}"
+    },
+    "Accent": {
+      "$type": "color",
+      "$value": "{Skye.50}"
+    },
+    "Duotone": {
+      "Primary": {
+        "$type": "color",
+        "$value": "#ffffff"
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": "#ffffff"
+      },
+      "Inverse": {
+        "Primary": {
+          "$type": "color",
+          "$value": "#ffffff"
+        },
+        "Secondary": {
+          "$type": "color",
+          "$value": "#ffffff"
+        }
+      }
+    }
+  },
   "Border": {
     "Variants": {
       "Light": {
@@ -507,15 +535,15 @@
     "UI": {
       "Pressed": {
         "$type": "color",
-        "$value": "{Spruce.10}"
+        "$value": "{Indigo.10}"
       },
       "Default": {
         "$type": "color",
-        "$value": "{Cool Gray.40}"
+        "$value": "{Cool Gray.10}"
       },
       "Hover": {
         "$type": "color",
-        "$value": "{Spruce.30}"
+        "$value": "{Indigo.20}"
       },
       "Disabled": {
         "$type": "color",
@@ -533,7 +561,7 @@
       },
       "Secondary": {
         "$type": "color",
-        "$value": "{Spruce.50}"
+        "$value": "{Indigo.50}"
       }
     },
     "Card": {
