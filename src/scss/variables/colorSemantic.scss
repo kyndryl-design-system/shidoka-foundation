@@ -99,8 +99,8 @@
   --kd-color-icon-destructive: light-dark(var(--kd-color-warm-red-70), var(--kd-color-warm-red-30));
   --kd-color-icon-switcher-icon: light-dark(var(--kd-color-indigo-80-primary), var(--kd-color-indigo-60));
   --kd-color-icon-accent: light-dark(var(--kd-color-skye-30), var(--kd-color-skye-50));
-  --kd-color-icon-duotone-primary: #ffffff;
-  --kd-color-icon-duotone-secondary: #ffffff;
+  --kd-color-icon-duotone-primary: light-dark(var(--kd-color-spruce-60), var(--kd-color-spruce-20));
+  --kd-color-icon-duotone-secondary: light-dark(var(--kd-color-skye-30), var(--kd-color-skye-30));
   --kd-color-icon-duotone-inverse-primary: #ffffff;
   --kd-color-icon-duotone-inverse-secondary: #ffffff;
   --kd-color-border-variants-light: light-dark(var(--kd-color-dark-stone-20), var(--kd-color-cool-gray-70));
@@ -273,4 +273,16 @@
   --kd-color-container-footer: light-dark(var(--kd-color-indigo-15), var(--kd-color-indigo-105));
   --kd-color-container-interactive-flat: light-dark(var(--kd-color-indigo-5), var(--kd-color-indigo-107));
   --kd-color-container-utility: light-dark(var(--kd-color-indigo-10), var(--kd-color-indigo-105));
+  --kd-color-date-and-time-picker-text-placeholder: light-dark(var(--kd-color-dark-stone-60), var(--kd-color-dark-stone-20));
+  --kd-color-date-and-time-picker-text-default: light-dark(var(--kd-color-dark-stone-80), var(--kd-color-dark-stone-10));
+  --kd-color-date-and-time-picker-text-secondary: light-dark(var(--kd-color-dark-stone-40), var(--kd-color-dark-stone-40));
+  --kd-color-date-and-time-picker-text-title: light-dark(var(--kd-color-indigo-80-primary), var(--kd-color-cool-gray-10));
+  --kd-color-date-and-time-picker-text-inverse: light-dark(var(--kd-color-neutral-white), var(--kd-color-neutral-black));
+  --kd-color-date-and-time-picker-icon-default: light-dark(var(--kd-color-dark-stone-80), var(--kd-color-cool-gray-10));
+  --kd-color-date-and-time-picker-background-container: light-dark(var(--kd-color-indigo-5), var(--kd-color-indigo-100));
+  --kd-color-date-and-time-picker-background-hover: light-dark(var(--kd-color-indigo-10), var(--kd-color-indigo-60));
+  --kd-color-date-and-time-picker-background-default: light-dark(var(--kd-color-indigo-60), var(--kd-color-cool-gray-10));
+  --kd-color-date-and-time-picker-background-pressed: light-dark(var(--kd-color-indigo-20), var(--kd-color-indigo-30));
+  --kd-color-date-and-time-picker-background-container-2: light-dark(var(--kd-color-indigo-10), var(--kd-color-indigo-105));
+  --kd-color-date-and-time-picker-border-focus: light-dark(var(--kd-color-indigo-60), var(--kd-color-indigo-20));
 }
