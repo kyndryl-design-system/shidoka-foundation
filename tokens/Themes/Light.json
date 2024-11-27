@@ -477,11 +477,11 @@
     "Duotone": {
       "Primary": {
         "$type": "color",
-        "$value": "#ffffff"
+        "$value": "{Spruce.60}"
       },
       "Secondary": {
         "$type": "color",
-        "$value": "#ffffff"
+        "$value": "{Skye.30}"
       },
       "Inverse": {
         "Primary": {
@@ -1253,6 +1253,64 @@
     "utility": {
       "$type": "color",
       "$value": "{Indigo.10}"
+    }
+  },
+  "Date and Time Picker": {
+    "Text": {
+      "Placeholder": {
+        "$type": "color",
+        "$value": "{Dark Stone.60}"
+      },
+      "Default": {
+        "$type": "color",
+        "$value": "{Dark Stone.80}"
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": "{Dark Stone.40}"
+      },
+      "Title": {
+        "$type": "color",
+        "$value": "{Indigo.80-primary}"
+      },
+      "Inverse": {
+        "$type": "color",
+        "$value": "{Neutral.White}"
+      }
+    },
+    "Icon": {
+      "Default": {
+        "$type": "color",
+        "$value": "{Dark Stone.80}"
+      }
+    },
+    "Background": {
+      "Container": {
+        "$type": "color",
+        "$value": "{Indigo.5}"
+      },
+      "Hover": {
+        "$type": "color",
+        "$value": "{Indigo.10}"
+      },
+      "Default": {
+        "$type": "color",
+        "$value": "{Indigo.60}"
+      },
+      "Pressed": {
+        "$type": "color",
+        "$value": "{Indigo.20}"
+      },
+      "Container 2": {
+        "$type": "color",
+        "$value": "{Indigo.10}"
+      }
+    },
+    "Border": {
+      "Focus": {
+        "$type": "color",
+        "$value": "{Indigo.60}"
+      }
     }
   }
 }
