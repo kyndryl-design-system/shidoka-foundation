@@ -114,7 +114,7 @@
   }
 
   .disabled & {
-    color: var(--kd-color-text-disabled);
+    color: var(--kd-color-text-link-level-disabled);
   }
 }
 
@@ -124,10 +124,10 @@
   color: var(--kd-color-text-secondary);
 
   .disabled & {
-    color: var(--kd-color-text-disabled);
+    color: var(--kd-color-text-link-level-disabled);
   }
 }
 
 .disabled .kd-accordion-item-body {
-  color: var(--kd-color-text-disabled);
+  color: var(--kd-color-text-link-level-disabled);
 }
