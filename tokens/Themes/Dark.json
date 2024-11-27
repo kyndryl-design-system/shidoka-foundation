@@ -77,15 +77,15 @@
         "State": {
           "Default": {
             "$type": "color",
-            "$value": "{Indigo.80-primary}"
+            "$value": "{Spruce.50}"
           },
           "Hover": {
             "$type": "color",
-            "$value": "{Indigo.60}"
+            "$value": "{Spruce.60}"
           },
           "Pressed": {
             "$type": "color",
-            "$value": "{Indigo.100}"
+            "$value": "{Spruce.70}"
           }
         },
         "Destructive": {
@@ -121,15 +121,15 @@
         "State": {
           "Default": {
             "$type": "color",
-            "$value": "{Indigo.30}"
+            "$value": "{Spruce.80}"
           },
           "Hover": {
             "$type": "color",
-            "$value": "{Indigo.60}"
+            "$value": "{Spruce.90}"
           },
           "Pressed": {
             "$type": "color",
-            "$value": "{Indigo.100}"
+            "$value": "{Spruce.100}"
           }
         }
       },
@@ -137,15 +137,15 @@
         "State": {
           "Default": {
             "$type": "color",
-            "$value": "{Indigo.105}"
+            "$value": "{Spruce.90}"
           },
           "Hover": {
             "$type": "color",
-            "$value": "{Indigo.60}"
+            "$value": "{Spruce.100}"
           },
           "Pressed": {
             "$type": "color",
-            "$value": "{Indigo.60}"
+            "$value": "{Spruce.100}"
           }
         },
         "Destructive": {
