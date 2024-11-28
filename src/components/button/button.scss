@@ -236,6 +236,7 @@ span {
 // Secondary Destructive Button
 .kd-btn--secondary-destructive {
   @extend .kd-btn--secondary;
+  background-color: var(--kd-color-background-opacity-1);
   color: var(--kd-color-text-variant-destructive); // check with UX
   border-color: var(--kd-color-background-button-primary-destructive-default);
 
@@ -263,7 +264,7 @@ span {
   }
 
   &:active {
-    color: var(--kd-color-text-button-light-primary);
+    color: var(--kd-color-text-button-dark-primary);
   }
 
   &:focus {
@@ -280,11 +281,24 @@ span {
 // Tertiary Destructive Button
 .kd-btn--tertiary-destructive {
   @extend .kd-btn--tertiary;
+  background-color: var(
+    --kd-color-background-button-tertiary-destructive-default
+  );
   color: var(--kd-color-text-button-light-destructive);
 
   &:hover,
-  &:active,
+  &:active {
+    background-color: var(
+      --kd-color-background-button-tertiary-destructive-hover
+    );
+    color: var(--kd-color-text-button-light-destructive);
+  }
+
   &:focus {
+    background-color: var(
+      --kd-color-background-button-tertiary-destructive-default
+    );
+    border-color: var(--kd-color-border-button-descrutive-default);
     color: var(--kd-color-text-button-light-destructive);
   }
 }

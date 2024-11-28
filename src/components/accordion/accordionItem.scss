@@ -115,6 +115,7 @@
 
   .disabled & {
     color: var(--kd-color-text-link-level-disabled);
+    background-color: inherit; // check with UX
   }
 }
 
