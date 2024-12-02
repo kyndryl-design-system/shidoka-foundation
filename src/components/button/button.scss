@@ -73,7 +73,7 @@
 
 // Disabled Button Styles
 @mixin kd-btn-disabled {
-  background-color: var(--kd-color-background-disabled); // check with UX
+  background-color: var(--kd-color-background-ui-default-disabled);
   color: var(--kd-color-text-link-level-disabled);
   border: none;
   cursor: not-allowed;
@@ -81,7 +81,7 @@
 }
 
 @mixin kd-btn-focus {
-  outline-color: var(--kd-color-border-variants-focus); // check with UX
+  outline-color: var(--kd-color-border-variants-focus);
 }
 
 span {
@@ -207,18 +207,18 @@ span {
   @extend .kd-btn;
   background-color: var(--kd-color-background-button-secondary-state-default);
   color: var(--kd-color-text-button-dark-primary);
-  border: 1px solid var(--kd-color-border-primary); // check with UX for all border colors
+  border: 1px solid var(--kd-color-border-button-secondary-default);
 
   &:hover {
     background-color: var(--kd-color-background-button-secondary-state-hover);
     color: var(--kd-color-text-button-dark-primary);
-    border-color: var(--kd-color-background-secondary-hover); //
+    border-color: var(--kd-color-border-button-secondary-hover);
   }
 
   &:active {
     background-color: var(--kd-color-background-button-secondary-state-pressed);
     color: var(--kd-color-text-button-dark-primary);
-    border-color: var(--kd-color-border-primary); //
+    border-color: var(--kd-color-border-button-secondary-pressed);
   }
 
   &:focus {
@@ -229,7 +229,7 @@ span {
     @include kd-btn-disabled;
     background-color: var(--kd-color-background-opacity-1);
     color: var(--kd-color-text-link-level-disabled);
-    border: 1px solid var(--kd-color-border-disabled); //
+    border: 1px solid var(--kd-color-border-ui-disabled);
   }
 }
 
