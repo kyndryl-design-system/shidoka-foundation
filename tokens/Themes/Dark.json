@@ -3,7 +3,7 @@
     "Container": {
       "Default": {
         "$type": "color",
-        "$value": "{Indigo.105}"
+        "$value": "{Interactive.105}"
       },
       "Subtle": {
         "$type": "color",
@@ -19,7 +19,7 @@
       },
       "Footer": {
         "$type": "color",
-        "$value": "{Indigo.107}"
+        "$value": "{Interactive.107}"
       }
     },
     "UI": {
@@ -38,15 +38,15 @@
         },
         "Hover": {
           "$type": "color",
-          "$value": "{Indigo.20}"
+          "$value": "{Interactive.20}"
         },
         "Pressed": {
           "$type": "color",
-          "$value": "{Indigo.20}"
+          "$value": "{Interactive.20}"
         },
         "Focus": {
           "$type": "color",
-          "$value": "{Indigo.20}"
+          "$value": "{Interactive.20}"
         },
         "Disabled": {
           "$type": "color",
@@ -54,7 +54,7 @@
         },
         "Secondary": {
           "$type": "color",
-          "$value": "{Indigo.40}"
+          "$value": "{Interactive.40}"
         }
       },
       "Hollow": {
@@ -64,11 +64,11 @@
         },
         "Hover": {
           "$type": "color",
-          "$value": "{Indigo.60}"
+          "$value": "{Interactive.60}"
         },
         "Pressed": {
           "$type": "color",
-          "$value": "{Indigo.30}"
+          "$value": "{Interactive.30}"
         }
       }
     },
@@ -77,15 +77,15 @@
         "State": {
           "Default": {
             "$type": "color",
-            "$value": "{Indigo.80-primary}"
+            "$value": "{Spruce.50}"
           },
           "Hover": {
             "$type": "color",
-            "$value": "{Indigo.60}"
+            "$value": "{Spruce.60}"
           },
           "Pressed": {
             "$type": "color",
-            "$value": "{Indigo.100}"
+            "$value": "{Spruce.70}"
           }
         },
         "Destructive": {
@@ -121,15 +121,15 @@
         "State": {
           "Default": {
             "$type": "color",
-            "$value": "{Indigo.30}"
+            "$value": "{Spruce.80}"
           },
           "Hover": {
             "$type": "color",
-            "$value": "{Indigo.60}"
+            "$value": "{Spruce.90}"
           },
           "Pressed": {
             "$type": "color",
-            "$value": "{Indigo.100}"
+            "$value": "{Spruce.100}"
           }
         }
       },
@@ -137,15 +137,15 @@
         "State": {
           "Default": {
             "$type": "color",
-            "$value": "{Indigo.105}"
+            "$value": "{Spruce.90}"
           },
           "Hover": {
             "$type": "color",
-            "$value": "{Indigo.60}"
+            "$value": "{Spruce.100}"
           },
           "Pressed": {
             "$type": "color",
-            "$value": "{Indigo.60}"
+            "$value": "{Spruce.100}"
           }
         },
         "Destructive": {
@@ -171,11 +171,11 @@
       },
       "Subtle": {
         "$type": "color",
-        "$value": "{Indigo.80-primary}"
+        "$value": "{Interactive.80-primary}"
       },
       "Secondary": {
         "$type": "color",
-        "$value": "{Indigo.20}"
+        "$value": "{Interactive.20}"
       },
       "Tertiary": {
         "$type": "color",
@@ -183,7 +183,7 @@
       },
       "Light": {
         "$type": "color",
-        "$value": "{Indigo.90}"
+        "$value": "{Interactive.90}"
       }
     },
     "Opacity": {
@@ -213,7 +213,7 @@
     "Forms": {
       "search-bg": {
         "$type": "color",
-        "$value": "{Indigo.105}"
+        "$value": "{Interactive.105}"
       },
       "Default": {
         "$type": "color",
@@ -223,7 +223,7 @@
     "Table": {
       "row-active": {
         "$type": "color",
-        "$value": "{Indigo.100}"
+        "$value": "{Interactive.100}"
       },
       "alt-row": {
         "$type": "color",
@@ -231,7 +231,7 @@
       },
       "footer": {
         "$type": "color",
-        "$value": "{Indigo.105}"
+        "$value": "{Interactive.105}"
       },
       "row": {
         "$type": "color",
@@ -239,11 +239,11 @@
       },
       "row-active-nested": {
         "$type": "color",
-        "$value": "{Indigo.90}"
+        "$value": "{Interactive.90}"
       },
       "header": {
         "$type": "color",
-        "$value": "{Indigo.105}"
+        "$value": "{Interactive.105}"
       }
     },
     "Page": {
@@ -257,9 +257,17 @@
       }
     },
     "Logo": {
-      "logo-bridge-txt": {
+      "Bridge-txt": {
         "$type": "color",
         "$value": "{Dark Stone.10}"
+      },
+      "Kyndryl-txt": {
+        "$type": "color",
+        "$value": "{Neutral.White}"
+      },
+      "Kyndryl neutral-txt": {
+        "$type": "color",
+        "$value": "{Neutral.White}"
       }
     },
     "Navigation": {
@@ -279,11 +287,11 @@
     "Gradients": {
       "Interactive Gradient End": {
         "$type": "color",
-        "$value": "{Indigo.100}"
+        "$value": "{Interactive.100}"
       },
       "Interactive Gradient Start": {
         "$type": "color",
-        "$value": "{Indigo.107}"
+        "$value": "{Interactive.107}"
       }
     },
     "Card": {
@@ -318,6 +326,14 @@
       "Tertiary-bold": {
         "$type": "color",
         "$value": "{Spruce.40}"
+      },
+      "Dark": {
+        "$type": "color",
+        "$value": "{Dark Stone.80}"
+      },
+      "Light": {
+        "$type": "color",
+        "$value": "{Dark Stone.10}"
       }
     },
     "Variant": {
@@ -346,15 +362,15 @@
       "Level": {
         "Default": {
           "$type": "color",
-          "$value": "{Indigo.50}"
+          "$value": "{Interactive.50}"
         },
         "Hover": {
           "$type": "color",
-          "$value": "{Indigo.30}"
+          "$value": "{Interactive.30}"
         },
         "Pressed": {
           "$type": "color",
-          "$value": "{Indigo.10}"
+          "$value": "{Interactive.10}"
         },
         "Disabled": {
           "$type": "color",
@@ -468,7 +484,7 @@
     },
     "switcher-icon": {
       "$type": "color",
-      "$value": "{Indigo.60}"
+      "$value": "{Interactive.60}"
     },
     "Accent": {
       "$type": "color",
@@ -486,13 +502,21 @@
       "Inverse": {
         "Primary": {
           "$type": "color",
-          "$value": "#ffffff"
+          "$value": "{Dark Stone.10}"
         },
         "Secondary": {
           "$type": "color",
-          "$value": "#ffffff"
+          "$value": "{Dark Stone.10}"
         }
       }
+    },
+    "Dark": {
+      "$type": "color",
+      "$value": "{Dark Stone.80}"
+    },
+    "Light": {
+      "$type": "color",
+      "$value": "{Dark Stone.10}"
     }
   },
   "Border": {
@@ -503,7 +527,7 @@
       },
       "Focus": {
         "$type": "color",
-        "$value": "{Indigo.40}"
+        "$value": "{Interactive.40}"
       },
       "Destructive": {
         "$type": "color",
@@ -535,7 +559,7 @@
     "UI": {
       "Pressed": {
         "$type": "color",
-        "$value": "{Indigo.10}"
+        "$value": "{Interactive.10}"
       },
       "Default": {
         "$type": "color",
@@ -543,7 +567,7 @@
       },
       "Hover": {
         "$type": "color",
-        "$value": "{Indigo.20}"
+        "$value": "{Interactive.20}"
       },
       "Disabled": {
         "$type": "color",
@@ -561,7 +585,7 @@
       },
       "Secondary": {
         "$type": "color",
-        "$value": "{Indigo.50}"
+        "$value": "{Interactive.50}"
       }
     },
     "Card": {
@@ -575,7 +599,7 @@
       },
       "Clickable": {
         "$type": "color",
-        "$value": "{Indigo.30}"
+        "$value": "{Interactive.30}"
       }
     },
     "Forms": {
@@ -588,43 +612,43 @@
       "Primary": {
         "Default": {
           "$type": "color",
-          "$value": "{Indigo.80-primary}"
+          "$value": "{Interactive.80-primary}"
         },
         "Hover": {
           "$type": "color",
-          "$value": "{Indigo.90}"
+          "$value": "{Interactive.90}"
         },
         "Pressed": {
           "$type": "color",
-          "$value": "{Indigo.105}"
+          "$value": "{Interactive.105}"
         }
       },
       "Secondary": {
         "Default": {
           "$type": "color",
-          "$value": "{Indigo.60}"
+          "$value": "{Interactive.60}"
         },
         "Hover": {
           "$type": "color",
-          "$value": "{Indigo.50}"
+          "$value": "{Interactive.50}"
         },
         "Pressed": {
           "$type": "color",
-          "$value": "{Indigo.30}"
+          "$value": "{Interactive.30}"
         }
       },
       "Tertiary": {
         "Default": {
           "$type": "color",
-          "$value": "{Indigo.105}"
+          "$value": "{Interactive.105}"
         },
         "Hover": {
           "$type": "color",
-          "$value": "{Indigo.40}"
+          "$value": "{Interactive.40}"
         },
         "Pressed": {
           "$type": "color",
-          "$value": "{Indigo.70}"
+          "$value": "{Interactive.70}"
         },
         "Hover 2": {
           "$type": "color",
@@ -680,6 +704,10 @@
       "Dark": {
         "$type": "color",
         "$value": "{Misc.Red.40}"
+      },
+      "Accent": {
+        "$type": "color",
+        "$value": "{Misc.Red.Light}"
       }
     },
     "Success": {
@@ -1238,21 +1266,21 @@
     },
     "Primary": {
       "$type": "color",
-      "$value": "{Indigo.70}"
+      "$value": "{Interactive.70}"
     }
   },
   "Container": {
     "footer": {
       "$type": "color",
-      "$value": "{Indigo.105}"
+      "$value": "{Interactive.105}"
     },
     "Interactive-flat": {
       "$type": "color",
-      "$value": "{Indigo.107}"
+      "$value": "{Interactive.107}"
     },
     "utility": {
       "$type": "color",
-      "$value": "{Indigo.105}"
+      "$value": "{Interactive.105}"
     }
   },
   "Date and Time Picker": {
@@ -1287,11 +1315,11 @@
     "Background": {
       "Container": {
         "$type": "color",
-        "$value": "{Indigo.100}"
+        "$value": "{Interactive.100}"
       },
       "Hover": {
         "$type": "color",
-        "$value": "{Indigo.60}"
+        "$value": "{Interactive.60}"
       },
       "Default": {
         "$type": "color",
@@ -1299,17 +1327,259 @@
       },
       "Pressed": {
         "$type": "color",
-        "$value": "{Indigo.30}"
+        "$value": "{Interactive.30}"
       },
       "Container 2": {
         "$type": "color",
-        "$value": "{Indigo.105}"
+        "$value": "{Interactive.105}"
       }
     },
     "Border": {
       "Focus": {
         "$type": "color",
-        "$value": "{Indigo.20}"
+        "$value": "{Interactive.20}"
+      }
+    }
+  },
+  "Code View": {
+    "Core": {
+      "Set02": {
+        "10": {
+          "$type": "color",
+          "$value": "{Amber.30}"
+        },
+        "20": {
+          "$type": "color",
+          "$value": "{Amber.20}"
+        },
+        "30": {
+          "$type": "color",
+          "$value": "{Amber.10}"
+        }
+      },
+      "Set01": {
+        "10": {
+          "$type": "color",
+          "$value": "{Blush.20}"
+        },
+        "20": {
+          "$type": "color",
+          "$value": "{Warm Red.10}"
+        }
+      },
+      "Neutral": {
+        "10": {
+          "$type": "color",
+          "$value": "{Dark Stone.90}"
+        },
+        "20": {
+          "$type": "color",
+          "$value": "{Cool Gray.40}"
+        },
+        "30": {
+          "$type": "color",
+          "$value": "{Cool Gray.30}"
+        },
+        "40": {
+          "$type": "color",
+          "$value": "{Cool Gray.20}"
+        }
+      },
+      "Base": {
+        "Text Interactive": {
+          "$type": "color",
+          "$value": "{Text.Level.Tertiary}"
+        },
+        "Background": {
+          "$type": "color",
+          "$value": "{Cool Gray.90}"
+        },
+        "Foreground": {
+          "$type": "color",
+          "$value": "{Text.Level.Light}"
+        }
+      },
+      "Set04": {
+        "10": {
+          "$type": "color",
+          "$value": "{Sea.30}"
+        },
+        "20": {
+          "$type": "color",
+          "$value": "{Sea.10}"
+        }
+      },
+      "Set03": {
+        "10": {
+          "$type": "color",
+          "$value": "{Jade.30}"
+        },
+        "20": {
+          "$type": "color",
+          "$value": "{Jade.20}"
+        }
+      }
+    },
+    "Syntax Token": {
+      "builtin": {
+        "$type": "color",
+        "$value": "{Code View.Core.Set03.20}"
+      },
+      "boolean": {
+        "$type": "color",
+        "$value": "{Code View.Core.Set01.20}"
+      },
+      "background": {
+        "$type": "color",
+        "$value": "{Code View.Core.Base.Background}"
+      },
+      "languagestring": {
+        "$type": "color",
+        "$value": "{Code View.Core.Set02.30}"
+      },
+      "variable": {
+        "$type": "color",
+        "$value": "{Code View.Core.Set02.30}"
+      },
+      "unit": {
+        "$type": "color",
+        "$value": "{Code View.Core.Set01.20}"
+      },
+      "tag": {
+        "$type": "color",
+        "$value": "{Code View.Core.Set01.20}"
+      },
+      "symbol": {
+        "$type": "color",
+        "$value": "{Code View.Core.Set01.20}"
+      },
+      "string": {
+        "$type": "color",
+        "$value": "{Code View.Core.Set03.20}"
+      },
+      "punctuation": {
+        "$type": "color",
+        "$value": "{Code View.Core.Neutral.40}"
+      },
+      "attribute": {
+        "$type": "color",
+        "$value": "{Code View.Core.Set04.20}"
+      },
+      "pseudo-class": {
+        "$type": "color",
+        "$value": "{Code View.Core.Set04.20}"
+      },
+      "selector": {
+        "$type": "color",
+        "$value": "{Code View.Core.Set03.20}"
+      },
+      "number": {
+        "$type": "color",
+        "$value": "{Code View.Core.Set01.20}"
+      },
+      "inserted": {
+        "$type": "color",
+        "$value": "{Code View.Core.Set03.20}"
+      },
+      "important": {
+        "$type": "color",
+        "$value": "{Code View.Core.Set02.20}"
+      },
+      "property": {
+        "$type": "color",
+        "$value": "{Code View.Core.Set01.20}"
+      },
+      "prolog": {
+        "$type": "color",
+        "$value": "{Code View.Core.Neutral.30}"
+      },
+      "hexcode": {
+        "$type": "color",
+        "$value": "{Code View.Core.Set01.20}"
+      },
+      "operator": {
+        "$type": "color",
+        "$value": "{Code View.Core.Set02.30}"
+      },
+      "id": {
+        "$type": "color",
+        "$value": "{Code View.Core.Set01.20}"
+      },
+      "doctype": {
+        "$type": "color",
+        "$value": "{Code View.Core.Neutral.30}"
+      },
+      "parameter": {
+        "$type": "color",
+        "$value": "{Text.Level.Primary}"
+      },
+      "char": {
+        "$type": "color",
+        "$value": "{Code View.Core.Set03.20}"
+      },
+      "deleted": {
+        "$type": "color",
+        "$value": "{Code View.Core.Set01.20}"
+      },
+      "class": {
+        "$type": "color",
+        "$value": "{Code View.Core.Set03.20}"
+      },
+      "attr-value": {
+        "$type": "color",
+        "$value": "{Code View.Core.Set04.20}"
+      },
+      "entity": {
+        "$type": "color",
+        "$value": "{Code View.Core.Set02.30}"
+      },
+      "cdata": {
+        "$type": "color",
+        "$value": "{Code View.Core.Neutral.30}"
+      },
+      "default": {
+        "$type": "color",
+        "$value": "{Code View.Core.Base.Background}"
+      },
+      "function": {
+        "$type": "color",
+        "$value": "{Code View.Core.Set01.10}"
+      },
+      "constant": {
+        "$type": "color",
+        "$value": "{Code View.Core.Set01.20}"
+      },
+      "pseudo-element": {
+        "$type": "color",
+        "$value": "{Code View.Core.Set04.20}"
+      },
+      "class-name": {
+        "$type": "color",
+        "$value": "{Code View.Core.Set01.10}"
+      },
+      "comment": {
+        "$type": "color",
+        "$value": "{Code View.Core.Neutral.10}"
+      },
+      "attr-name": {
+        "$type": "color",
+        "$value": "{Code View.Core.Set03.20}"
+      },
+      "url": {
+        "$type": "color",
+        "$value": "{Code View.Core.Set02.30}"
+      },
+      "keyword": {
+        "$type": "color",
+        "$value": "{Code View.Core.Set04.20}"
+      },
+      "regex": {
+        "$type": "color",
+        "$value": "{Code View.Core.Set02.20}"
+      },
+      "atrule": {
+        "$type": "color",
+        "$value": "{Code View.Core.Set04.20}"
       }
     }
   }
