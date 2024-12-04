@@ -50,7 +50,7 @@
         },
         "Disabled": {
           "$type": "color",
-          "$value": "{Dark Stone.20}"
+          "$value": "{Opacity.Dark.5}"
         },
         "Secondary": {
           "$type": "color",
@@ -81,15 +81,15 @@
           },
           "Hover": {
             "$type": "color",
-            "$value": "{Spruce.60}"
+            "$value": "{Spruce.70}"
           },
           "Pressed": {
             "$type": "color",
-            "$value": "{Spruce.70}"
+            "$value": "{Spruce.80}"
           },
           "Focused": {
             "$type": "color",
-            "$value": "#ffffff"
+            "$value": "{Spruce.50}"
           }
         },
         "Destructive": {
@@ -102,6 +102,10 @@
             "$value": "{Misc.Red.70}"
           },
           "Pressed": {
+            "$type": "color",
+            "$value": "{Misc.Red.100}"
+          },
+          "Focused": {
             "$type": "color",
             "$value": "{Misc.Red.90}"
           }
@@ -133,16 +137,34 @@
           },
           "Pressed": {
             "$type": "color",
-            "$value": "{Spruce.50}"
+            "$value": "{Spruce.60}"
+          },
+          "Focused": {
+            "$type": "color",
+            "$value": "{Spruce.30}"
+          }
+        },
+        "Destructive": {
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Misc.Red.50}"
+          },
+          "Hover": {
+            "$type": "color",
+            "$value": "{Misc.Red.50}"
+          },
+          "Default": {
+            "$type": "color",
+            "$value": "{Misc.Red.30}"
+          },
+          "Focused": {
+            "$type": "color",
+            "$value": "{Misc.Red.60}"
           }
         }
       },
       "Tertiary": {
         "State": {
-          "Default": {
-            "$type": "color",
-            "$value": "{Spruce.10}"
-          },
           "Hover": {
             "$type": "color",
             "$value": "{Spruce.20}"
@@ -150,20 +172,32 @@
           "Pressed": {
             "$type": "color",
             "$value": "{Spruce.30}"
+          },
+          "Focused": {
+            "$type": "color",
+            "$value": "{Spruce.10}"
+          },
+          "Default": {
+            "$type": "color",
+            "$value": "{Spruce.10}"
           }
         },
         "Destructive": {
-          "Default": {
-            "$type": "color",
-            "$value": "{Misc.Red.Light}"
-          },
           "Hover": {
             "$type": "color",
-            "$value": "{Misc.Red.20}"
+            "$value": "{Misc.Red.30}"
           },
           "Pressed": {
             "$type": "color",
+            "$value": "{Misc.Red.40}"
+          },
+          "Focused": {
+            "$type": "color",
             "$value": "{Misc.Red.60}"
+          },
+          "Default": {
+            "$type": "color",
+            "$value": "{Misc.Red.10}"
           }
         }
       }
@@ -311,6 +345,16 @@
         "$type": "color",
         "$value": "{Cool Gray.7}"
       }
+    },
+    "Notification": {
+      "Unread-FIll": {
+        "$type": "color",
+        "$value": "{Skye.10}"
+      },
+      "Unread-Border": {
+        "$type": "color",
+        "$value": "{Skye.20}"
+      }
     }
   },
   "Text": {
@@ -378,7 +422,7 @@
         },
         "Disabled": {
           "$type": "color",
-          "$value": "{Dark Stone.40}"
+          "$value": "{Opacity.Dark.30}"
         }
       }
     },
@@ -575,7 +619,7 @@
       },
       "Disabled": {
         "$type": "color",
-        "$value": "{Dark Stone.40}"
+        "$value": "{Opacity.Dark.20}"
       },
       "Error": {
         "$type": "color",
@@ -613,57 +657,7 @@
       }
     },
     "Button": {
-      "Primary": {
-        "Default": {
-          "$type": "color",
-          "$value": "{Interactive.80-primary}"
-        },
-        "Hover": {
-          "$type": "color",
-          "$value": "{Interactive.60}"
-        },
-        "Pressed": {
-          "$type": "color",
-          "$value": "{Interactive.90}"
-        }
-      },
-      "Secondary": {
-        "Default": {
-          "$type": "color",
-          "$value": "{Interactive.60}"
-        },
-        "Hover": {
-          "$type": "color",
-          "$value": "{Interactive.40}"
-        },
-        "Pressed": {
-          "$type": "color",
-          "$value": "{Interactive.10}"
-        }
-      },
-      "Tertiary": {
-        "Default": {
-          "$type": "color",
-          "$value": "{Interactive.10}"
-        },
-        "Hover": {
-          "$type": "color",
-          "$value": "{Interactive.40}"
-        },
-        "Pressed": {
-          "$type": "color",
-          "$value": "{Interactive.60}"
-        },
-        "Hover 2": {
-          "$type": "color",
-          "$value": "{Cool Gray.7}"
-        },
-        "Default 2": {
-          "$type": "color",
-          "$value": "{Cool Gray.5}"
-        }
-      },
-      "Descrutive": {
+      "Destructive": {
         "Default": {
           "$type": "color",
           "$value": "{Warm Red.80}"
@@ -675,6 +669,60 @@
         "Pressed": {
           "$type": "color",
           "$value": "{Warm Red.90}"
+        }
+      },
+      "Primary": {
+        "Pressed": {
+          "$type": "color",
+          "$value": "{Spruce.70}"
+        },
+        "Hover": {
+          "$type": "color",
+          "$value": "{Spruce.60}"
+        },
+        "Focused": {
+          "$type": "color",
+          "$value": "{Spruce.70}"
+        },
+        "Default": {
+          "$type": "color",
+          "$value": "{Spruce.50}"
+        }
+      },
+      "Secondary": {
+        "Pressed": {
+          "$type": "color",
+          "$value": "{Spruce.50}"
+        },
+        "Hover": {
+          "$type": "color",
+          "$value": "{Spruce.40}"
+        },
+        "Focused": {
+          "$type": "color",
+          "$value": "{Spruce.50}"
+        },
+        "Default": {
+          "$type": "color",
+          "$value": "{Spruce.30}"
+        }
+      },
+      "Tertiary": {
+        "Hover": {
+          "$type": "color",
+          "$value": "{Spruce.30}"
+        },
+        "Focused": {
+          "$type": "color",
+          "$value": "{Spruce.30}"
+        },
+        "Pressed": {
+          "$type": "color",
+          "$value": "{Spruce.30}"
+        },
+        "Default": {
+          "$type": "color",
+          "$value": "{Spruce.20}"
         }
       }
     }
