@@ -43,7 +43,7 @@
     @include typography.type-body-02;
 
     a {
-      color: var(--kd-color-text-primary); // check with UX
+      color: var(--kd-color-text-level-primary);
       text-decoration: none;
       outline: 2px solid transparent;
       transition: outline-color 150ms ease-out;
@@ -53,7 +53,7 @@
       }
 
       &:focus {
-        outline-color: var(--kd-color-border-focus); // check with UX
+        outline-color: var(--kd-color-border-variants-focus);
       }
     }
   }
