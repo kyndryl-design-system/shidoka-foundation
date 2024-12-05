@@ -50,7 +50,7 @@
         },
         "Disabled": {
           "$type": "color",
-          "$value": "{Dark Stone.20}"
+          "$value": "{Opacity.Dark.5}"
         },
         "Secondary": {
           "$type": "color",
@@ -81,11 +81,15 @@
           },
           "Hover": {
             "$type": "color",
-            "$value": "{Spruce.60}"
+            "$value": "{Spruce.70}"
           },
           "Pressed": {
             "$type": "color",
-            "$value": "{Spruce.70}"
+            "$value": "{Spruce.80}"
+          },
+          "Focused": {
+            "$type": "color",
+            "$value": "{Spruce.50}"
           }
         },
         "Destructive": {
@@ -98,6 +102,10 @@
             "$value": "{Misc.Red.70}"
           },
           "Pressed": {
+            "$type": "color",
+            "$value": "{Misc.Red.100}"
+          },
+          "Focused": {
             "$type": "color",
             "$value": "{Misc.Red.90}"
           }
@@ -129,16 +137,34 @@
           },
           "Pressed": {
             "$type": "color",
-            "$value": "{Spruce.50}"
+            "$value": "{Spruce.60}"
+          },
+          "Focused": {
+            "$type": "color",
+            "$value": "{Spruce.30}"
+          }
+        },
+        "Destructive": {
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Misc.Red.50}"
+          },
+          "Hover": {
+            "$type": "color",
+            "$value": "{Misc.Red.50}"
+          },
+          "Default": {
+            "$type": "color",
+            "$value": "{Misc.Red.30}"
+          },
+          "Focused": {
+            "$type": "color",
+            "$value": "{Misc.Red.60}"
           }
         }
       },
       "Tertiary": {
         "State": {
-          "Default": {
-            "$type": "color",
-            "$value": "{Spruce.10}"
-          },
           "Hover": {
             "$type": "color",
             "$value": "{Spruce.20}"
@@ -146,20 +172,32 @@
           "Pressed": {
             "$type": "color",
             "$value": "{Spruce.30}"
+          },
+          "Focused": {
+            "$type": "color",
+            "$value": "{Spruce.10}"
+          },
+          "Default": {
+            "$type": "color",
+            "$value": "{Spruce.10}"
           }
         },
         "Destructive": {
-          "Default": {
-            "$type": "color",
-            "$value": "{Misc.Red.Light}"
-          },
           "Hover": {
             "$type": "color",
-            "$value": "{Misc.Red.20}"
+            "$value": "{Misc.Red.30}"
           },
           "Pressed": {
             "$type": "color",
+            "$value": "{Misc.Red.40}"
+          },
+          "Focused": {
+            "$type": "color",
             "$value": "{Misc.Red.60}"
+          },
+          "Default": {
+            "$type": "color",
+            "$value": "{Misc.Red.10}"
           }
         }
       }
@@ -307,6 +345,16 @@
         "$type": "color",
         "$value": "{Cool Gray.7}"
       }
+    },
+    "Notification": {
+      "Unread-FIll": {
+        "$type": "color",
+        "$value": "{Skye.10}"
+      },
+      "Unread-Border": {
+        "$type": "color",
+        "$value": "{Skye.20}"
+      }
     }
   },
   "Text": {
@@ -374,7 +422,7 @@
         },
         "Disabled": {
           "$type": "color",
-          "$value": "{Dark Stone.40}"
+          "$value": "{Opacity.Dark.30}"
         }
       }
     },
@@ -571,7 +619,7 @@
       },
       "Disabled": {
         "$type": "color",
-        "$value": "{Dark Stone.40}"
+        "$value": "{Opacity.Dark.20}"
       },
       "Error": {
         "$type": "color",
@@ -609,57 +657,7 @@
       }
     },
     "Button": {
-      "Primary": {
-        "Default": {
-          "$type": "color",
-          "$value": "{Interactive.80-primary}"
-        },
-        "Hover": {
-          "$type": "color",
-          "$value": "{Interactive.60}"
-        },
-        "Pressed": {
-          "$type": "color",
-          "$value": "{Interactive.90}"
-        }
-      },
-      "Secondary": {
-        "Default": {
-          "$type": "color",
-          "$value": "{Interactive.60}"
-        },
-        "Hover": {
-          "$type": "color",
-          "$value": "{Interactive.40}"
-        },
-        "Pressed": {
-          "$type": "color",
-          "$value": "{Interactive.10}"
-        }
-      },
-      "Tertiary": {
-        "Default": {
-          "$type": "color",
-          "$value": "{Interactive.10}"
-        },
-        "Hover": {
-          "$type": "color",
-          "$value": "{Interactive.40}"
-        },
-        "Pressed": {
-          "$type": "color",
-          "$value": "{Interactive.60}"
-        },
-        "Hover 2": {
-          "$type": "color",
-          "$value": "{Cool Gray.7}"
-        },
-        "Default 2": {
-          "$type": "color",
-          "$value": "{Cool Gray.5}"
-        }
-      },
-      "Descrutive": {
+      "Destructive": {
         "Default": {
           "$type": "color",
           "$value": "{Warm Red.80}"
@@ -671,6 +669,60 @@
         "Pressed": {
           "$type": "color",
           "$value": "{Warm Red.90}"
+        }
+      },
+      "Primary": {
+        "Pressed": {
+          "$type": "color",
+          "$value": "{Spruce.70}"
+        },
+        "Hover": {
+          "$type": "color",
+          "$value": "{Spruce.60}"
+        },
+        "Focused": {
+          "$type": "color",
+          "$value": "{Spruce.70}"
+        },
+        "Default": {
+          "$type": "color",
+          "$value": "{Spruce.50}"
+        }
+      },
+      "Secondary": {
+        "Pressed": {
+          "$type": "color",
+          "$value": "{Spruce.50}"
+        },
+        "Hover": {
+          "$type": "color",
+          "$value": "{Spruce.40}"
+        },
+        "Focused": {
+          "$type": "color",
+          "$value": "{Spruce.50}"
+        },
+        "Default": {
+          "$type": "color",
+          "$value": "{Spruce.30}"
+        }
+      },
+      "Tertiary": {
+        "Hover": {
+          "$type": "color",
+          "$value": "{Spruce.30}"
+        },
+        "Focused": {
+          "$type": "color",
+          "$value": "{Spruce.30}"
+        },
+        "Pressed": {
+          "$type": "color",
+          "$value": "{Spruce.30}"
+        },
+        "Default": {
+          "$type": "color",
+          "$value": "{Spruce.20}"
         }
       }
     }
@@ -1163,6 +1215,10 @@
         "Error": {
           "$type": "color",
           "$value": "{Misc.Red.Dark}"
+        },
+        "Success": {
+          "$type": "color",
+          "$value": "{Misc.Green.Dark}"
         }
       },
       "8": {
@@ -1342,245 +1398,165 @@
     }
   },
   "Code View": {
-    "Core": {
-      "Set02": {
-        "10": {
-          "$type": "color",
-          "$value": "{Amber.50}"
-        },
-        "20": {
-          "$type": "color",
-          "$value": "{Amber.70}"
-        },
-        "30": {
-          "$type": "color",
-          "$value": "{Amber.90}"
-        }
-      },
-      "Set01": {
-        "10": {
-          "$type": "color",
-          "$value": "{Blush.60}"
-        },
-        "20": {
-          "$type": "color",
-          "$value": "{Warm Red.80}"
-        }
-      },
-      "Neutral": {
-        "10": {
-          "$type": "color",
-          "$value": "{Cool Gray.10}"
-        },
-        "20": {
-          "$type": "color",
-          "$value": "{Cool Gray.30}"
-        },
-        "30": {
-          "$type": "color",
-          "$value": "{Cool Gray.40}"
-        },
-        "40": {
-          "$type": "color",
-          "$value": "{Cool Gray.60}"
-        }
-      },
-      "Base": {
-        "Text Interactive": {
-          "$type": "color",
-          "$value": "{Text.Level.Tertiary}"
-        },
-        "Background": {
-          "$type": "color",
-          "$value": "{Background.Page.Default}"
-        },
-        "Foreground": {
-          "$type": "color",
-          "$value": "{Text.Level.Primary}"
-        }
-      },
-      "Set04": {
-        "10": {
-          "$type": "color",
-          "$value": "{Sea.50}"
-        },
-        "20": {
-          "$type": "color",
-          "$value": "{Sea.80}"
-        }
-      },
-      "Set03": {
-        "10": {
-          "$type": "color",
-          "$value": "{Jade.50}"
-        },
-        "20": {
-          "$type": "color",
-          "$value": "{Jade.70}"
-        }
-      }
+    "builtin": {
+      "$type": "color",
+      "$value": "{Jade.70}"
     },
-    "Syntax Token": {
-      "builtin": {
-        "$type": "color",
-        "$value": "{Code View.Core.Set03.20}"
-      },
-      "boolean": {
-        "$type": "color",
-        "$value": "{Code View.Core.Set01.20}"
-      },
-      "background": {
-        "$type": "color",
-        "$value": "{Code View.Core.Base.Background}"
-      },
-      "languagestring": {
-        "$type": "color",
-        "$value": "{Code View.Core.Set02.30}"
-      },
-      "variable": {
-        "$type": "color",
-        "$value": "{Code View.Core.Set02.30}"
-      },
-      "unit": {
-        "$type": "color",
-        "$value": "{Code View.Core.Set01.20}"
-      },
-      "tag": {
-        "$type": "color",
-        "$value": "{Code View.Core.Set01.20}"
-      },
-      "symbol": {
-        "$type": "color",
-        "$value": "{Code View.Core.Set01.20}"
-      },
-      "string": {
-        "$type": "color",
-        "$value": "{Code View.Core.Set03.20}"
-      },
-      "punctuation": {
-        "$type": "color",
-        "$value": "{Code View.Core.Neutral.40}"
-      },
-      "attribute": {
-        "$type": "color",
-        "$value": "{Code View.Core.Set04.20}"
-      },
-      "pseudo-class": {
-        "$type": "color",
-        "$value": "{Code View.Core.Set04.20}"
-      },
-      "selector": {
-        "$type": "color",
-        "$value": "{Code View.Core.Set03.20}"
-      },
-      "number": {
-        "$type": "color",
-        "$value": "{Code View.Core.Set01.20}"
-      },
-      "inserted": {
-        "$type": "color",
-        "$value": "{Code View.Core.Set03.20}"
-      },
-      "important": {
-        "$type": "color",
-        "$value": "{Code View.Core.Set02.20}"
-      },
-      "property": {
-        "$type": "color",
-        "$value": "{Code View.Core.Set01.20}"
-      },
-      "prolog": {
-        "$type": "color",
-        "$value": "{Code View.Core.Neutral.30}"
-      },
-      "hexcode": {
-        "$type": "color",
-        "$value": "{Code View.Core.Set01.20}"
-      },
-      "operator": {
-        "$type": "color",
-        "$value": "{Code View.Core.Set02.30}"
-      },
-      "id": {
-        "$type": "color",
-        "$value": "{Code View.Core.Set01.20}"
-      },
-      "doctype": {
-        "$type": "color",
-        "$value": "{Code View.Core.Neutral.30}"
-      },
-      "parameter": {
-        "$type": "color",
-        "$value": "{Text.Level.Primary}"
-      },
-      "char": {
-        "$type": "color",
-        "$value": "{Code View.Core.Set03.20}"
-      },
-      "deleted": {
-        "$type": "color",
-        "$value": "{Code View.Core.Set01.20}"
-      },
-      "class": {
-        "$type": "color",
-        "$value": "{Code View.Core.Set03.20}"
-      },
-      "attr-value": {
-        "$type": "color",
-        "$value": "{Code View.Core.Set04.20}"
-      },
-      "entity": {
-        "$type": "color",
-        "$value": "{Code View.Core.Set02.30}"
-      },
-      "cdata": {
-        "$type": "color",
-        "$value": "{Code View.Core.Neutral.30}"
-      },
-      "default": {
-        "$type": "color",
-        "$value": "{Code View.Core.Base.Background}"
-      },
-      "function": {
-        "$type": "color",
-        "$value": "{Code View.Core.Set01.10}"
-      },
-      "constant": {
-        "$type": "color",
-        "$value": "{Code View.Core.Set01.20}"
-      },
-      "pseudo-element": {
-        "$type": "color",
-        "$value": "{Code View.Core.Set04.20}"
-      },
-      "class-name": {
-        "$type": "color",
-        "$value": "{Code View.Core.Set01.10}"
-      },
-      "comment": {
-        "$type": "color",
-        "$value": "{Code View.Core.Neutral.30}"
-      },
-      "attr-name": {
-        "$type": "color",
-        "$value": "{Code View.Core.Set03.20}"
-      },
-      "url": {
-        "$type": "color",
-        "$value": "{Code View.Core.Set02.30}"
-      },
-      "keyword": {
-        "$type": "color",
-        "$value": "{Code View.Core.Set04.20}"
-      },
-      "regex": {
-        "$type": "color",
-        "$value": "{Code View.Core.Set02.20}"
-      },
-      "atrule": {
-        "$type": "color",
-        "$value": "{Code View.Core.Set04.20}"
-      }
+    "boolean": {
+      "$type": "color",
+      "$value": "{Warm Red.90}"
+    },
+    "background": {
+      "$type": "color",
+      "$value": "{Neutral.White}"
+    },
+    "languagestring": {
+      "$type": "color",
+      "$value": "{Amber.90}"
+    },
+    "variable": {
+      "$type": "color",
+      "$value": "{Amber.90}"
+    },
+    "unit": {
+      "$type": "color",
+      "$value": "{Warm Red.80}"
+    },
+    "tag": {
+      "$type": "color",
+      "$value": "{Warm Red.80}"
+    },
+    "symbol": {
+      "$type": "color",
+      "$value": "{Warm Red.80}"
+    },
+    "string": {
+      "$type": "color",
+      "$value": "{Jade.70}"
+    },
+    "punctuation": {
+      "$type": "color",
+      "$value": "{Cool Gray.60}"
+    },
+    "attribute": {
+      "$type": "color",
+      "$value": "{Sea.80}"
+    },
+    "pseudo-class": {
+      "$type": "color",
+      "$value": "{Sea.80}"
+    },
+    "selector": {
+      "$type": "color",
+      "$value": "{Jade.70}"
+    },
+    "number": {
+      "$type": "color",
+      "$value": "{Warm Red.80}"
+    },
+    "inserted": {
+      "$type": "color",
+      "$value": "{Jade.70}"
+    },
+    "important": {
+      "$type": "color",
+      "$value": "{Amber.70}"
+    },
+    "property": {
+      "$type": "color",
+      "$value": "{Warm Red.80}"
+    },
+    "prolog": {
+      "$type": "color",
+      "$value": "{Cool Gray.40}"
+    },
+    "hexcode": {
+      "$type": "color",
+      "$value": "{Warm Red.80}"
+    },
+    "operator": {
+      "$type": "color",
+      "$value": "{Amber.90}"
+    },
+    "id": {
+      "$type": "color",
+      "$value": "{Warm Red.80}"
+    },
+    "doctype": {
+      "$type": "color",
+      "$value": "{Cool Gray.40}"
+    },
+    "parameter": {
+      "$type": "color",
+      "$value": "{Dark Stone.80}"
+    },
+    "char": {
+      "$type": "color",
+      "$value": "{Jade.70}"
+    },
+    "deleted": {
+      "$type": "color",
+      "$value": "{Warm Red.80}"
+    },
+    "class": {
+      "$type": "color",
+      "$value": "{Jade.70}"
+    },
+    "attr-value": {
+      "$type": "color",
+      "$value": "{Sea.80}"
+    },
+    "entity": {
+      "$type": "color",
+      "$value": "{Amber.90}"
+    },
+    "cdata": {
+      "$type": "color",
+      "$value": "{Cool Gray.40}"
+    },
+    "default": {
+      "$type": "color",
+      "$value": "{Neutral.White}"
+    },
+    "function": {
+      "$type": "color",
+      "$value": "{Blush.60}"
+    },
+    "constant": {
+      "$type": "color",
+      "$value": "{Warm Red.80}"
+    },
+    "pseudo-element": {
+      "$type": "color",
+      "$value": "{Sea.80}"
+    },
+    "class-name": {
+      "$type": "color",
+      "$value": "{Blush.60}"
+    },
+    "comment": {
+      "$type": "color",
+      "$value": "{Cool Gray.40}"
+    },
+    "attr-name": {
+      "$type": "color",
+      "$value": "{Jade.70}"
+    },
+    "url": {
+      "$type": "color",
+      "$value": "{Amber.90}"
+    },
+    "keyword": {
+      "$type": "color",
+      "$value": "{Sea.80}"
+    },
+    "regex": {
+      "$type": "color",
+      "$value": "{Amber.70}"
+    },
+    "atrule": {
+      "$type": "color",
+      "$value": "{Sea.80}"
     }
   }
 }

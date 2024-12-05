@@ -10,11 +10,11 @@
 
 .kd-accordion {
   .accordion-item-container {
-    border-top: 1px solid var(--kd-color-border-default);
-    border-bottom: 1px solid var(--kd-color-border-default);
+    border-top: 1px solid var(--kd-color-border-ui-default);
+    border-bottom: 1px solid var(--kd-color-border-ui-default);
 
     ::slotted(kd-accordion-item) {
-      border-top: 1px solid var(--kd-color-border-default);
+      border-top: 1px solid var(--kd-color-border-ui-default);
     }
 
     ::slotted(kd-accordion-item:first-child) {
@@ -22,7 +22,7 @@
     }
 
     &.filled-headers {
-      border: 1px solid var(--kd-color-border-default);
+      border: 1px solid var(--kd-color-border-ui-default);
       border-radius: 4px;
 
       ::slotted(kd-accordion-item:first-child) {
@@ -43,7 +43,7 @@
     @include typography.type-body-02;
 
     a {
-      color: var(--kd-color-text-primary);
+      color: var(--kd-color-text-level-primary);
       text-decoration: none;
       outline: 2px solid transparent;
       transition: outline-color 150ms ease-out;
@@ -53,7 +53,7 @@
       }
 
       &:focus {
-        outline-color: var(--kd-color-border-focus);
+        outline-color: var(--kd-color-border-variants-focus);
       }
     }
   }
