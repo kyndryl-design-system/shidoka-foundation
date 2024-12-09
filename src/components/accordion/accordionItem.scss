@@ -11,7 +11,7 @@
 .kd-accordion-item {
   padding: 0px 0px;
   display: block;
-  background-color: var(--kd-color-background-ui-default);
+  background-color: var(--kd-color-background-page-default);
   border-radius: inherit;
 
   &.filled-header {
@@ -20,12 +20,12 @@
 
       &:hover {
         outline-width: 1px;
-        outline-color: var(--kd-color-border-primary);
+        outline-color: var(--kd-color-border-ui-default);
       }
     }
 
     .kd-accordion-item-body {
-      border-top: 1px solid var(--kd-color-border-light);
+      border-top: 1px solid var(--kd-color-border-variants-light);
     }
   }
 
@@ -83,7 +83,7 @@
   }
 
   &:focus {
-    outline-color: var(--kd-color-border-focus);
+    outline-color: var(--kd-color-border-variants-focus);
   }
 
   .number,
@@ -102,7 +102,7 @@
   }
 
   .number {
-    color: var(--kd-color-text-placeholder);
+    color: var(--kd-color-text-variant-placeholder);
   }
 
   .title {
@@ -114,20 +114,22 @@
   }
 
   .disabled & {
-    color: var(--kd-color-text-disabled);
+    color: var(--kd-color-text-link-level-disabled);
+    background-color: var(--kd-color-background-page-default);
+    outline: none;
   }
 }
 
 .kd-accordion-item-subtitle {
   @include typography.type-ui-02;
   font-weight: var(--kd-font-weight-regular);
-  color: var(--kd-color-text-secondary);
+  color: var(--kd-color-text-level-secondary);
 
   .disabled & {
-    color: var(--kd-color-text-disabled);
+    color: var(--kd-color-text-link-level-disabled);
   }
 }
 
 .disabled .kd-accordion-item-body {
-  color: var(--kd-color-text-disabled);
+  color: var(--kd-color-text-link-level-disabled);
 }

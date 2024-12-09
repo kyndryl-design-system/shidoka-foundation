@@ -154,17 +154,17 @@ export const AccordionWithIcons = {
       <style>
         .inProgress {
           svg {
-            fill: var(--kd-color-text-placeholder);
+            fill: var(--kd-color-icon-disabled);
           }
         }
         .complete {
           svg {
-            fill: var(--kd-color-text-success);
+            fill: var(--kd-color-status-success-dark);
           }
         }
         .error {
           svg {
-            fill: var(--kd-color-text-destructive);
+            fill: var(--kd-color-status-error-dark);
           }
         }
       </style>
