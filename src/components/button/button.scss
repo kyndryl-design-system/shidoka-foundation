@@ -94,6 +94,16 @@
   pointer-events: none;
 }
 
+// Disabled Outline Button Styles
+@mixin kd-outline-btn-disabled {
+  background-color: transparent; // check with UX
+  color: var(--kd-color-text-link-level-disabled);
+  // border: 1px solid var(--kd-color-border-ui-disabled);
+  border: 1px solid #00000033;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 span {
   display: flex;
   align-items: center;
@@ -165,6 +175,35 @@ span {
   }
 }
 
+// Primary Outline Only Button
+.kd-btn--primary-app-outline,
+.kd-btn--primary-web-outline {
+  @extend .kd-btn;
+  background-color: transparent; // check with UX
+  color: var(--kd-color-text-button-light-primary);
+  // border: 1px solid var(--kd-color-border-button-primary-state-default);
+  border: 1px solid #2f808c;
+
+  &:hover {
+    // border-color: var(--kd-color-border-button-primary-state-hover);
+    border-color: #29707a;
+  }
+
+  &:active:before {
+    // border-color: var(--kd-color-border-button-primary-state-pressed);
+    border-color: #215763;
+  }
+
+  &:focus {
+    // border-color: var(--kd-color-border-button-primary-state-focused);
+    border-color: #215763;
+  }
+
+  &:disabled {
+    @include kd-outline-btn-disabled;
+  }
+}
+
 // Primary Destructive Button
 .kd-btn--primary-app-destructive,
 .kd-btn--primary-web-destructive {
@@ -215,6 +254,37 @@ span {
 
   &:disabled {
     @include primary-btn-disabled;
+  }
+}
+
+// Primary Destructive Outline Only Button
+.kd-btn--primary-app-destructive-outline,
+.kd-btn--primary-web-destructive-outline {
+  @extend .kd-btn;
+  background-color: transparent; // check with UX
+  color: var(--kd-color-text-button-light-destructive);
+  // border: 1px solid var(--kd-color-border-button-primary-destructive-default);
+  border: 1px solid #9b1200;
+
+  &:hover {
+    // border: 1px solid var(--kd-color-border-button-primary-destructive-hover);
+    border-color: #cc1800;
+  }
+
+  &:active:before {
+    // border-color: var(--kd-color-border-button-primary-destructive-pressed);
+    border-color: #6a0c00;
+  }
+
+  &:focus {
+    outline-color: var(
+      --kd-color-background-button-primary-destructive-focused
+    );
+  }
+
+  &:disabled {
+    @include kd-outline-btn-disabled;
+    color: var(--kd-color-text-button-dark-destructive);
   }
 }
 
