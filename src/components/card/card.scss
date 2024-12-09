@@ -10,9 +10,8 @@
   &-wrapper {
     position: relative;
     padding: 16px;
-    background-color: var(--kd-color-background-card-background);
-    //outline: 1px solid var(--kd-color-border-variants-light);// working token - check with UX team for this token
-    outline: 1px solid var(--kd-color-border-card-default);
+    background-color: var(--kd-color-background-container-default);
+    outline: 1px solid var(--kd-color-border-variants-light); // working token - check with UX team for this token
     border-radius: 8px;
     height: 100%;
   }
@@ -23,7 +22,7 @@
     color: unset;
     width: inherit;
     text-decoration: none;
-    background-color: var(--kd-color-background-card-background);
+    background-color: var(--kd-color-background-container-default);
     border-radius: 8px;
     padding: 16px;
     outline: 1px solid transparent;
@@ -41,7 +40,7 @@
   }
 
   &-border {
-    outline: 1px solid var(--kd-color-background-card-default);
+    outline: 1px solid var(--kd-color-border-variants-light);
     @include elevation.shadow(1);
   }
 }
