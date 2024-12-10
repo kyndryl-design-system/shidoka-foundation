@@ -237,6 +237,10 @@
         "$type": "color",
         "$value": "{Opacity.Light.5}"
       },
+      "4": {
+        "$type": "color",
+        "$value": "{Opacity.Light.40}"
+      },
       "Disabled": {
         "$type": "color",
         "$value": "{Cool Gray.3}"
@@ -354,6 +358,32 @@
       "Unread-Border": {
         "$type": "color",
         "$value": "{Skye.50}"
+      }
+    },
+    "Loader": {
+      "Skeleton": {
+        "Default": {
+          "$type": "color",
+          "$value": "{Dark Stone.70}"
+        },
+        "Secondary": {
+          "$type": "color",
+          "$value": "{Dark Stone.60}"
+        },
+        "Tertiary": {
+          "$type": "color",
+          "$value": "{Dark Stone.60}"
+        }
+      },
+      "Bar": {
+        "Primary": {
+          "$type": "color",
+          "$value": "{Cool Gray.10}"
+        },
+        "Secondary": {
+          "$type": "color",
+          "$value": "{Cool Gray.70}"
+        }
       }
     }
   },
@@ -482,11 +512,23 @@
       "Light": {
         "Primary": {
           "$type": "color",
-          "$value": "{Cool Gray.5}"
+          "$value": "{Spruce.30}"
         },
         "Destructive": {
           "$type": "color",
           "$value": "{Misc.Red.Light}"
+        },
+        "Secondary": {
+          "$type": "color",
+          "$value": "{Spruce.30}"
+        },
+        "Tertiary": {
+          "$type": "color",
+          "$value": "{Spruce.30}"
+        },
+        "Disabled": {
+          "$type": "color",
+          "$value": "{Cool Gray.5}"
         }
       },
       "Dark": {
@@ -495,6 +537,18 @@
           "$value": "{Cool Gray.5}"
         },
         "Destructive": {
+          "$type": "color",
+          "$value": "{Misc.Red.Light}"
+        },
+        "Secondary": {
+          "$type": "color",
+          "$value": "{Cool Gray.5}"
+        },
+        "Tertiary": {
+          "$type": "color",
+          "$value": "{Cool Gray.5}"
+        },
+        "Disabled": {
           "$type": "color",
           "$value": "{Misc.Red.Light}"
         }
@@ -643,7 +697,7 @@
       },
       "Default": {
         "$type": "color",
-        "$value": "{Opacity.Light.5}"
+        "$value": "{Dark Stone.70}"
       },
       "Clickable": {
         "$type": "color",
@@ -657,72 +711,118 @@
       }
     },
     "Button": {
-      "Destructive": {
-        "Default": {
-          "$type": "color",
-          "$value": "{Warm Red.20}"
-        },
-        "Hover": {
-          "$type": "color",
-          "$value": "{Warm Red.30}"
-        },
-        "Pressed": {
-          "$type": "color",
-          "$value": "{Warm Red.30}"
-        }
-      },
       "Primary": {
-        "Pressed": {
-          "$type": "color",
-          "$value": "{Spruce.50}"
+        "Destructive": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Warm Red.20}"
+          },
+          "Hover": {
+            "$type": "color",
+            "$value": "{Warm Red.30}"
+          },
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Warm Red.30}"
+          },
+          "Focused": {
+            "$type": "color",
+            "$value": "{Warm Red.20}"
+          }
         },
-        "Hover": {
-          "$type": "color",
-          "$value": "{Spruce.40}"
-        },
-        "Focused": {
-          "$type": "color",
-          "$value": "{Spruce.50}"
-        },
-        "Default": {
-          "$type": "color",
-          "$value": "{Spruce.30}"
+        "State": {
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Spruce.50}"
+          },
+          "Hover": {
+            "$type": "color",
+            "$value": "{Spruce.40}"
+          },
+          "Focused": {
+            "$type": "color",
+            "$value": "{Spruce.50}"
+          },
+          "Default": {
+            "$type": "color",
+            "$value": "{Spruce.30}"
+          }
         }
       },
       "Secondary": {
-        "Pressed": {
-          "$type": "color",
-          "$value": "{Spruce.60}"
+        "State": {
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Spruce.60}"
+          },
+          "Hover": {
+            "$type": "color",
+            "$value": "{Spruce.50}"
+          },
+          "Focused": {
+            "$type": "color",
+            "$value": "{Spruce.60}"
+          },
+          "Default": {
+            "$type": "color",
+            "$value": "{Spruce.40}"
+          }
         },
-        "Hover": {
-          "$type": "color",
-          "$value": "{Spruce.50}"
-        },
-        "Focused": {
-          "$type": "color",
-          "$value": "{Spruce.60}"
-        },
-        "Default": {
-          "$type": "color",
-          "$value": "{Spruce.40}"
+        "Destructive": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Warm Red.20}"
+          },
+          "Hover": {
+            "$type": "color",
+            "$value": "{Warm Red.30}"
+          },
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Warm Red.30}"
+          },
+          "Focused": {
+            "$type": "color",
+            "$value": "{Warm Red.20}"
+          }
         }
       },
       "Tertiary": {
-        "Hover": {
-          "$type": "color",
-          "$value": "{Spruce.70}"
+        "State": {
+          "Hover": {
+            "$type": "color",
+            "$value": "{Spruce.70}"
+          },
+          "Focused": {
+            "$type": "color",
+            "$value": "{Spruce.80}"
+          },
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Spruce.80}"
+          },
+          "Default": {
+            "$type": "color",
+            "$value": "{Spruce.60}"
+          }
         },
-        "Focused": {
-          "$type": "color",
-          "$value": "{Spruce.80}"
-        },
-        "Pressed": {
-          "$type": "color",
-          "$value": "{Spruce.80}"
-        },
-        "Default": {
-          "$type": "color",
-          "$value": "{Spruce.60}"
+        "Destructive": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Warm Red.20}"
+          },
+          "Hover": {
+            "$type": "color",
+            "$value": "{Warm Red.30}"
+          },
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Warm Red.30}"
+          },
+          "Focused": {
+            "$type": "color",
+            "$value": "{Warm Red.20}"
+          }
         }
       }
     }
@@ -1516,7 +1616,7 @@
     },
     "default": {
       "$type": "color",
-      "$value": "{Dark Stone.80}"
+      "$value": "{Neutral.White}"
     },
     "function": {
       "$type": "color",
