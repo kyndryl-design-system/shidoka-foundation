@@ -10,7 +10,7 @@
   &-wrapper {
     position: relative;
     padding: 16px;
-    background-color: var(--kd-color-background-card-background);
+    background-color: var(--kd-color-background-container-default);
     outline: 1px solid var(--kd-color-border-card-default);
     border-radius: 8px;
     height: 100%;
@@ -29,14 +29,12 @@
     transition: outline-color 150ms ease-out, box-shadow 150ms ease-out;
 
     &:hover {
-      outline-color: var(--kd-color-border-ui-hover); // need to check with UX
+      outline-color: var(--kd-color-border-ui-hover);
       @include elevation.shadow(2);
     }
 
     &:focus {
-      outline-color: var(
-        --kd-color-border-variants-focus
-      ); // need to check with UX
+      outline-color: var(--kd-color-border-variants-focus);
       @include elevation.shadow(2);
     }
   }
