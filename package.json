@@ -63,7 +63,7 @@
     "@storybook/theming": "8.0.4",
     "@storybook/web-components": "8.0.4",
     "@storybook/web-components-webpack5": "8.0.4",
-    "@types/carbon__icon-helpers": "^10.7.2",
+    "@types/carbon__icon-helpers": "10.7.2",
     "@types/query-selector-shadow-dom": "^1.0.1",
     "@types/sass": "^1.43.1",
     "@typescript-eslint/eslint-plugin": "^5.48.1",
