@@ -155,12 +155,9 @@ export class Button extends LitElement {
     };
 
     const baseTypeClass = typeClassMap[this.kind];
-    // const destructModifier = this.destructive ? '-destructive' : '';
 
     let classes = {
       button: true,
-      // [`kd-btn--${baseTypeClass}${destructModifier}`]: true,
-      // [`kd-btn--${baseTypeClass}`]: !this.destructive,
       'kd-btn--large': this.size === BUTTON_SIZES.LARGE,
       'kd-btn--small': this.size === BUTTON_SIZES.SMALL,
       'kd-btn--medium': this._reSizeBtn || this.size === BUTTON_SIZES.MEDIUM,
