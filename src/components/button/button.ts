@@ -164,6 +164,7 @@ export class Button extends LitElement {
       'kd-btn--large': this.size === BUTTON_SIZES.LARGE,
       'kd-btn--small': this.size === BUTTON_SIZES.SMALL,
       'kd-btn--medium': this._reSizeBtn || this.size === BUTTON_SIZES.MEDIUM,
+      'kd-btn--icon-align': !!this.iconPosition,
       [`kd-btn--icon-${this.iconPosition}`]:
         !!this.iconPosition && !this.iconOnly,
       [`kd-btn--icon-center`]: this._iconEls?.length && this.iconOnly,
