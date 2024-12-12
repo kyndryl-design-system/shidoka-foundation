@@ -18,14 +18,15 @@ li {
 
   &:hover,
   &[highlighted] {
-    background-color: var(--kd-color-background-inverse-hover);
+    background-color: var(--kd-color-background-accent-subtle);
   }
 
   &[disabled] {
-    color: var(--kd-color-text-disabled);
+    color: var(--kd-color-text-link-level-disabled);
 
     &:hover {
       background-color: transparent;
+      cursor: not-allowed;
     }
   }
 
