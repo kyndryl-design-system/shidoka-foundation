@@ -5,6 +5,7 @@ on:
       - tokens
     paths:
       - 'tokens/**'
+  workflow_dispatch:
 env:
   GH_TOKEN: '${{ secrets.GH_TOKEN }}'
   COMMIT_MSG: 'fix(tokens): automated token update'
