@@ -3,7 +3,7 @@
     "Container": {
       "Default": {
         "$type": "color",
-        "$value": "{Interactive.10}"
+        "$value": "{Interactive.5}"
       },
       "Subtle": {
         "$type": "color",
@@ -253,7 +253,7 @@
       }
     },
     "Forms": {
-      "search-bg": {
+      "Secondary": {
         "$type": "color",
         "$value": "{Interactive.5}"
       },
@@ -665,7 +665,7 @@
       },
       "Default": {
         "$type": "color",
-        "$value": "{Dark Stone.50}"
+        "$value": "{Opacity.Dark.10}"
       },
       "Hover": {
         "$type": "color",
@@ -1508,7 +1508,7 @@
     },
     "background": {
       "$type": "color",
-      "$value": "{Neutral.WebGray}"
+      "$value": "{Dark Stone.10}"
     },
     "languagestring": {
       "$type": "color",
