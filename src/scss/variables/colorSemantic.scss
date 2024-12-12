@@ -1,5 +1,5 @@
 :root {
-  --kd-color-background-container-default: light-dark(var(--kd-color-interactive-10), var(--kd-color-interactive-120));
+  --kd-color-background-container-default: light-dark(var(--kd-color-interactive-5), var(--kd-color-interactive-120));
   --kd-color-background-container-subtle: light-dark(var(--kd-color-dark-stone-20), var(--kd-color-cool-gray-70));
   --kd-color-background-container-bold: light-dark(var(--kd-color-dark-stone-50), var(--kd-color-cool-gray-40));
   --kd-color-background-container-soft: light-dark(var(--kd-color-warm-gray-10), var(--kd-color-warm-gray-90));
@@ -53,7 +53,7 @@
   --kd-color-background-opacity-4: light-dark(var(--kd-color-opacity-dark-40), var(--kd-color-opacity-light-40));
   --kd-color-background-opacity-disabled: light-dark(var(--kd-color-opacity-dark-3), var(--kd-color-cool-gray-3));
   --kd-color-background-tag-neutral: light-dark(var(--kd-color-cool-gray-10), var(--kd-color-cool-gray-85));
-  --kd-color-background-forms-search-bg: light-dark(var(--kd-color-interactive-5), var(--kd-color-interactive-105));
+  --kd-color-background-forms-secondary: light-dark(var(--kd-color-interactive-5), var(--kd-color-interactive-105));
   --kd-color-background-forms-default: light-dark(var(--kd-color-cool-gray-5), var(--kd-color-opacity-dark-30));
   --kd-color-background-table-row-active: light-dark(var(--kd-color-interactive-10), var(--kd-color-interactive-100));
   --kd-color-background-table-alt-row: light-dark(var(--kd-color-cool-gray-7), var(--kd-color-opacity-light-5));
@@ -62,7 +62,7 @@
   --kd-color-background-table-row-active-nested: light-dark(var(--kd-color-cool-gray-3), var(--kd-color-interactive-90));
   --kd-color-background-table-header: light-dark(var(--kd-color-cool-gray-10), var(--kd-color-interactive-105));
   --kd-color-background-page-overlay: light-dark(var(--kd-color-opacity-light-50), var(--kd-color-opacity-dark-85));
-  --kd-color-background-page-default: light-dark(var(--kd-color-cool-gray-3), var(--kd-color-cool-gray-97));
+  --kd-color-background-page-default: light-dark(var(--kd-color-cool-gray-3), var(--kd-color-cool-gray-95));
   --kd-color-background-logo-bridge-txt: light-dark(var(--kd-color-spruce-60), var(--kd-color-dark-stone-10));
   --kd-color-background-logo-kyndryl-txt: light-dark(var(--kd-color-warm-red-50), var(--kd-color-neutral-white));
   --kd-color-background-logo-kyndryl-neutral-txt: light-dark(var(--kd-color-dark-stone-80), var(--kd-color-neutral-white));
@@ -141,7 +141,7 @@
   --kd-color-border-level-secondary: light-dark(var(--kd-color-opacity-dark-20), var(--kd-color-opacity-light-20));
   --kd-color-border-level-tertiary: light-dark(var(--kd-color-opacity-dark-10), var(--kd-color-opacity-light-10));
   --kd-color-border-ui-pressed: light-dark(var(--kd-color-interactive-80-primary), var(--kd-color-interactive-10));
-  --kd-color-border-ui-default: light-dark(var(--kd-color-dark-stone-50), var(--kd-color-cool-gray-10));
+  --kd-color-border-ui-default: light-dark(var(--kd-color-opacity-dark-10), var(--kd-color-opacity-light-10));
   --kd-color-border-ui-hover: light-dark(var(--kd-color-interactive-60), var(--kd-color-interactive-20));
   --kd-color-border-ui-disabled: light-dark(var(--kd-color-opacity-dark-20), var(--kd-color-opacity-light-20));
   --kd-color-border-ui-error: light-dark(var(--kd-color-misc-red-70), var(--kd-color-misc-red-40));
@@ -328,7 +328,7 @@
   --kd-color-date-and-time-picker-border-focus: light-dark(var(--kd-color-interactive-60), var(--kd-color-interactive-20));
   --kd-color-code-view-builtin: light-dark(var(--kd-color-jade-70), var(--kd-color-jade-20));
   --kd-color-code-view-boolean: light-dark(var(--kd-color-warm-red-90), var(--kd-color-warm-red-10));
-  --kd-color-code-view-background: light-dark(var(--kd-color-neutral-webgray), var(--kd-color-cool-gray-90));
+  --kd-color-code-view-background: light-dark(var(--kd-color-dark-stone-10), var(--kd-color-cool-gray-90));
   --kd-color-code-view-languagestring: light-dark(var(--kd-color-amber-90), var(--kd-color-amber-10));
   --kd-color-code-view-variable: light-dark(var(--kd-color-amber-90), var(--kd-color-amber-10));
   --kd-color-code-view-unit: light-dark(var(--kd-color-warm-red-80), var(--kd-color-warm-red-10));
