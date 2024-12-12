@@ -72,6 +72,7 @@ export class Link extends LitElement {
     if (this.disabled) {
       return classMap({
         ['kd-link-text-disabled']: this.disabled,
+        'icon-left': this.iconLeft,
       });
     } else {
       return classMap({
