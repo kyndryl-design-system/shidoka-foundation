@@ -92,6 +92,10 @@ export class Button extends LitElement {
   @property({ type: Boolean, reflect: true })
   destructive = false;
 
+  /** Determines if only the button outline is to be shown */
+  @property({ type: Boolean, reflect: true })
+  outlineOnly = false;
+
   /** Button value.  */
   @property({ type: String })
   value = '';
@@ -151,15 +155,13 @@ export class Button extends LitElement {
     };
 
     const baseTypeClass = typeClassMap[this.kind];
-    const destructModifier = this.destructive ? '-destructive' : '';
 
-    const classes = {
+    let classes = {
       button: true,
-      [`kd-btn--${baseTypeClass}${destructModifier}`]: true,
-      [`kd-btn--${baseTypeClass}`]: !this.destructive,
       'kd-btn--large': this.size === BUTTON_SIZES.LARGE,
       'kd-btn--small': this.size === BUTTON_SIZES.SMALL,
       'kd-btn--medium': this._reSizeBtn || this.size === BUTTON_SIZES.MEDIUM,
+      'kd-btn--icon-align': !!this.iconPosition,
       [`kd-btn--icon-${this.iconPosition}`]:
         !!this.iconPosition && !this.iconOnly,
       [`kd-btn--icon-center`]: this._iconEls?.length && this.iconOnly,
@@ -167,11 +169,35 @@ export class Button extends LitElement {
       'btn-float': this.isFloating,
       'btn-hidden': this.showOnScroll && !this._showButton,
     };
+
+    const getButtonClasses = () => {
+      let cls = `kd-btn--${baseTypeClass}`;
+      if (this.destructive || this.outlineOnly) {
+        if (this.destructive) {
+          if (this.outlineOnly) {
+            cls = `kd-btn--${baseTypeClass}-destructive-outline`;
+          } else {
+            cls = `kd-btn--${baseTypeClass}-destructive`;
+          }
+        } else {
+          if (this.outlineOnly) {
+            cls = `kd-btn--${baseTypeClass}-outline`;
+          } else {
+            cls = `kd-btn--${baseTypeClass}`;
+          }
+        }
+      }
+      classes = { ...classes, [`${cls}`]: true };
+      return classes;
+    };
+
+    const baseClasses = getButtonClasses();
+
     return html`
       ${this.href && this.href !== ''
         ? html`
             <a
-              class=${classMap(classes)}
+              class=${classMap(baseClasses)}
               href=${this.href}
               ?disabled=${this.disabled}
               aria-label=${ifDefined(this.description)}
@@ -189,7 +215,7 @@ export class Button extends LitElement {
           `
         : html`
             <button
-              class=${classMap(classes)}
+              class=${classMap(baseClasses)}
               type=${this.type}
               ?disabled=${this.disabled}
               aria-label=${ifDefined(this.description)}
