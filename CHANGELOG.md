@@ -1,3 +1,10 @@
+## [1.10.2](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.10.1...v1.10.2) (2024-12-13)
+
+
+### Bug Fixes
+
+* link icon position fix ([edc059c](https://github.com/kyndryl-design-system/shidoka-foundation/commit/edc059cce53cde3f711c2e6e2a64039e5eae5ae7))
+
 ## [1.10.1](https://github.com/kyndryl-design-system/shidoka-foundation/compare/v1.10.0...v1.10.1) (2024-11-13)
 
 
