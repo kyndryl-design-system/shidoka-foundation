@@ -253,7 +253,7 @@
       }
     },
     "Forms": {
-      "search-bg": {
+      "Secondary": {
         "$type": "color",
         "$value": "{Interactive.105}"
       },
@@ -295,7 +295,7 @@
       },
       "Default": {
         "$type": "color",
-        "$value": "{Cool Gray.97}"
+        "$value": "{Cool Gray.95}"
       }
     },
     "Logo": {
@@ -665,7 +665,7 @@
       },
       "Default": {
         "$type": "color",
-        "$value": "{Cool Gray.10}"
+        "$value": "{Opacity.Light.10}"
       },
       "Hover": {
         "$type": "color",

@@ -70,15 +70,19 @@
 
 // Disabled Button Styles
 @mixin kd-split-btn-disabled {
-  background-color: var(--kd-color-background-disabled);
-  color: var(--kd-color-text-inversed);
+  color: var(--kd-color-text-link-level-disabled);
   border: none;
   cursor: not-allowed;
   pointer-events: none;
 }
 
-@mixin kd-split-btn-focus {
-  outline-color: var(--kd-color-border-focus);
+// Disabled Outline Button Styles
+@mixin kd-outline-btn-disabled {
+  background-color: transparent;
+  color: var(--kd-color-text-link-level-disabled);
+  border: 1px solid var(--kd-color-border-ui-disabled);
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 span {
@@ -91,8 +95,8 @@ span {
 .kd-split-btn--primary-web,
 .kd-split-btn--primary-app {
   @extend .kd-split-btn;
-  background-color: var(--kd-color-background-primary);
-  color: var(--kd-color-text-inversed);
+  background-color: var(--kd-color-background-button-primary-state-default);
+  color: var(--kd-color-text-button-dark-primary);
   border: none;
   position: relative;
   overflow: hidden;
@@ -104,7 +108,7 @@ span {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: var(--kd-color-background-primary-hover);
+    background-color: var(--kd-color-background-button-primary-state-hover);
     transition: transform 300ms ease-out, opacity 200ms ease-out,
       background-color 150ms ease-in-out;
     transform: scaleX(0);
@@ -123,28 +127,33 @@ span {
     border: none;
 
     &:before {
-      background-color: var(--kd-color-background-primary-pressed);
+      background-color: var(--kd-color-background-button-primary-state-pressed);
     }
   }
 
   &:focus {
-    @include kd-split-btn-focus;
+    outline-color: var(--kd-color-background-button-primary-state-focused);
   }
 
   &:disabled {
     @include kd-split-btn-disabled;
+    background-color: var(--kd-color-background-ui-default-disabled);
   }
 }
 
 .kd-split-btn--primary-web {
-  background-color: var(--kd-color-background-secondary);
+  background-color: var(--kd-color-background-button-web-default);
 
   &:before {
-    background-color: var(--kd-color-background-secondary-hover);
+    background-color: var(--kd-color-background-button-web-hover);
   }
 
   &:active:before {
-    background-color: var(--kd-color-background-secondary-pressed);
+    background-color: var(--kd-color-background-button-web-pressed);
+  }
+
+  &:focus {
+    outline-color: var(--kd-color-border-variants-focus);
   }
 }
 
@@ -152,8 +161,10 @@ span {
 .kd-split-btn--primary-app-destructive,
 .kd-split-btn--primary-web-destructive {
   @extend .kd-split-btn;
-  background-color: var(--kd-color-background-destructive);
-  color: var(--kd-color-text-inversed);
+  background-color: var(
+    --kd-color-background-button-primary-destructive-default
+  );
+  color: var(--kd-color-text-button-dark-destructive);
   border: none;
   position: relative;
   overflow: hidden;
@@ -165,7 +176,9 @@ span {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: var(--kd-color-background-destructive-hover);
+    background-color: var(
+      --kd-color-background-button-primary-destructive-hover
+    );
     transition: transform 300ms ease-out, opacity 200ms ease-out,
       background-color 150ms ease-in-out;
     transform: scaleX(0);
@@ -181,24 +194,29 @@ span {
   }
 
   &:active:before {
-    background-color: var(--kd-color-background-destructive-pressed);
+    background-color: var(
+      --kd-color-background-button-primary-destructive-pressed
+    );
   }
 
   &:focus {
-    @include kd-split-btn-focus;
+    outline-color: var(
+      --kd-color-background-button-primary-destructive-focused
+    );
   }
 
   &:disabled {
     @include kd-split-btn-disabled;
+    background-color: var(--kd-color-background-ui-default-disabled);
   }
 }
 
 // Secondary Button Styles
 .kd-split-btn--secondary {
   @extend .kd-split-btn;
-  background-color: var(--kd-color-transparent);
-  color: var(--kd-color-text-primary);
-  border: solid var(--kd-color-border-primary);
+  background-color: transparent;
+  color: var(--kd-color-text-button-light-secondary);
+  border: 1px solid var(--kd-color-border-button-secondary-state-default);
   &-icon {
     border-width: 1px 1px 1px 0.5px;
   }
@@ -207,39 +225,45 @@ span {
   }
 
   &:hover {
-    background-color: var(--kd-color-background-secondary-hover);
-    color: var(--kd-color-text-inversed);
-    border-color: var(--kd-color-background-secondary-hover);
+    border-color: var(--kd-color-border-button-secondary-state-hover);
   }
 
   &:active {
-    background-color: var(--kd-color-background-secondary-pressed);
-    color: var(--kd-color-text-inversed);
-    border-color: var(--kd-color-border-primary);
+    border-color: var(--kd-color-border-button-secondary-state-pressed);
   }
 
   &:focus {
-    @include kd-split-btn-focus;
+    border-width: 2px;
+    border-color: var(--kd-color-border-button-secondary-state-focused);
   }
 
   &:disabled {
-    @include kd-split-btn-disabled;
-    background-color: var(--kd-color-transparent);
-    color: var(--kd-color-text-disabled);
-    border: 1px solid var(--kd-color-border-disabled);
+    @include kd-outline-btn-disabled;
   }
 }
 // Secondary Destructive Button
 .kd-split-btn--secondary-destructive {
-  @extend .kd-split-btn--secondary;
-  color: var(--kd-color-text-destructive);
-  border-color: var(--kd-color-border-destructive);
+  @extend .kd-split-btn;
+  background-color: transparent;
+  color: var(--kd-color-text-button-light-destructive);
+  border: 1px solid var(--kd-color-border-button-secondary-destructive-default);
 
-  &:hover,
+  &:hover {
+    border-color: var(--kd-color-border-button-secondary-destructive-hover);
+  }
+
   &:active {
-    background-color: var(--kd-color-background-destructive-hover);
-    color: var(--kd-color-text-inversed);
-    border-color: transparent;
+    border-color: var(--kd-color-border-button-secondary-destructive-pressed);
+  }
+
+  &:focus {
+    border-color: var(--kd-color-border-button-secondary-destructive-focused);
+    outline-color: var(--kd-color-border-button-primary-destructive-default);
+  }
+
+  &:disabled {
+    @include kd-outline-btn-disabled;
+    color: var(--kd-color-text-button-dark-destructive);
   }
 }
 
@@ -279,7 +303,7 @@ span {
   max-height: 280px;
   overflow-y: auto;
   outline: none;
-  background: var(--kd-color-background-inverse);
+  background: var(--kd-color-background-container-default);
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.12),
     0px 4px 12px 0px rgba(0, 0, 0, 0.08);
   outline: 2px solid transparent;
