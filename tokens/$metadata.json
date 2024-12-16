@@ -10,8 +10,11 @@
     "Size Mapping/L - Lg",
     "Size Mapping/L - Md",
     "Size Mapping/L - Sm",
+    "Component/Mode 1",
     "Color Palette/Color",
     "Themes/Light",
-    "Themes/Dark"
+    "Themes/Dark",
+    "Breakpoint sizes/Values",
+    "Misc/Mode 1"
   ]
 }
