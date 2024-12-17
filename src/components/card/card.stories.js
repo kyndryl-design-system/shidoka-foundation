@@ -175,7 +175,7 @@ export const InsideGrid = {
               <div slot="title">This is a card title</div>
               <div slot="description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod temporr.
+                eiusmod tempor.
               </div>
             </sample-card-component>
           </kd-card>
