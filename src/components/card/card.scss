@@ -11,7 +11,7 @@
     position: relative;
     padding: 16px;
     background-color: var(--kd-color-background-container-default);
-    outline: 1px solid var(--kd-color-border-level-default);
+    outline: 1px solid var(--kd-color-border-variants-light);
     border-radius: 8px;
     height: 100%;
   }
@@ -40,7 +40,7 @@
   }
 
   &-border {
-    outline: 1px solid var(--kd-color-border-level-default);
+    outline: 1px solid var(--kd-color-border-card-clickable);
     @include elevation.shadow(1);
   }
 }
