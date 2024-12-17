@@ -40,6 +40,7 @@ export const BlankCard = {
       target=${args.target}
       rel=${args.rel}
       role="article"
+      ?hideBorder=${args.hideBorder}
       aria-label="Blank card"
     ></kd-card>`;
   },
