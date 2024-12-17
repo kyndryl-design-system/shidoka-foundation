@@ -16,6 +16,7 @@ const compat = new FlatCompat({
 
 export default [
   {
+    root: true,
     ignores: [
       'node_modules/*',
       '**/custom-elements.json',
@@ -26,28 +27,21 @@ export default [
       'coverage/*',
       'storybook-static/*',
     ],
-  },
-  ...compat.extends(
-    'eslint:recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:storybook/recommended'
-  ),
-  {
-    plugins: {
-      '@typescript-eslint': typescriptEslint,
-    },
-
-    languageOptions: {
-      globals: {
-        ...globals.browser,
-      },
-
-      parser: tsParser,
+    extends: [
+      'eslint:recommended',
+      'plugin:@typescript-eslint/eslint-recommended',
+      'plugin:@typescript-eslint/recommended',
+      'plugin:storybook/recommended',
+    ],
+    parser: '@typescript-eslint/parser',
+    parserOptions: {
       ecmaVersion: 2020,
       sourceType: 'module',
     },
-
+    plugins: ['@typescript-eslint'],
+    env: {
+      browser: true,
+    },
     rules: {
       'no-prototype-builtins': 'off',
       '@typescript-eslint/ban-types': 'off',
@@ -56,7 +50,6 @@ export default [
       '@typescript-eslint/no-explicit-any': 'off',
       '@typescript-eslint/no-empty-function': 'off',
       '@typescript-eslint/no-non-null-assertion': 'off',
-
       '@typescript-eslint/no-unused-vars': [
         'warn',
         {
@@ -64,21 +57,19 @@ export default [
         },
       ],
     },
-  },
-  {
-    files: ['**/web-test-runner.config.js'],
-
-    languageOptions: {
-      globals: {
-        ...globals.node,
+    overrides: [
+      {
+        files: ['web-test-runner.config.js'],
+        env: {
+          node: true,
+        },
       },
-    },
-  },
-  {
-    files: ['**/*_test.ts', '**/custom_typings/*.d.ts'],
-
-    rules: {
-      '@typescript-eslint/no-explicit-any': 'off',
-    },
+      {
+        files: ['*_test.ts', '**/custom_typings/*.d.ts'],
+        rules: {
+          '@typescript-eslint/no-explicit-any': 'off',
+        },
+      },
+    ],
   },
 ];
