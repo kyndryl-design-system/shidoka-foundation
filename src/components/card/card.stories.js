@@ -112,11 +112,25 @@ export const Clickable = {
 };
 
 export const InsideGrid = {
-  render: () => {
+  args: {
+    type: 'normal',
+    href: '',
+    rel: '',
+    target: '_self',
+    hideBorder: false,
+  },
+  render: (args) => {
     return html`
       <div class="kd-grid">
         <div class="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-3">
-          <kd-card style="width:100%;height:100%;">
+          <kd-card
+            style="width:100%;height:100%;"
+            type=${args.type}
+            href=${args.href}
+            target=${args.target}
+            rel=${args.rel}
+            ?hideBorder=${args.hideBorder}
+          >
             <sample-card-component>
               <div slot="title">This is a card title</div>
               <div slot="description">
@@ -128,7 +142,14 @@ export const InsideGrid = {
           </kd-card>
         </div>
         <div class="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-3">
-          <kd-card style="width:100%;height:100%;">
+          <kd-card
+            style="width:100%;height:100%;"
+            type=${args.type}
+            href=${args.href}
+            target=${args.target}
+            rel=${args.rel}
+            ?hideBorder=${args.hideBorder}
+          >
             <sample-card-component>
               <div slot="title">This is a card title</div>
               <div slot="description">
@@ -142,7 +163,14 @@ export const InsideGrid = {
           </kd-card>
         </div>
         <div class="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-3">
-          <kd-card style="width:100%;height:100%;">
+          <kd-card
+            style="width:100%;height:100%;"
+            type=${args.type}
+            href=${args.href}
+            target=${args.target}
+            rel=${args.rel}
+            ?hideBorder=${args.hideBorder}
+          >
             <sample-card-component>
               <div slot="title">This is a card title</div>
               <div slot="description">
@@ -153,7 +181,14 @@ export const InsideGrid = {
           </kd-card>
         </div>
         <div class="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-3">
-          <kd-card style="width:100%;height:100%;">
+          <kd-card
+            style="width:100%;height:100%;"
+            type=${args.type}
+            href=${args.href}
+            target=${args.target}
+            rel=${args.rel}
+            ?hideBorder=${args.hideBorder}
+          >
             <sample-card-component>
               <div slot="title">This is a card title</div>
               <div slot="description">
