@@ -11,7 +11,7 @@
     position: relative;
     padding: 16px;
     background-color: var(--kd-color-background-container-default);
-    outline: 1px solid var(--kd-color-border-variants-light);
+    outline: 1px solid var(--kd-color-border-card-default);
     border-radius: 8px;
     height: 100%;
   }
@@ -34,7 +34,7 @@
     }
 
     &:focus {
-      outline-color: var(--kd-color-border-variants-focus);
+      outline-color: var(--kd-color-border-ui-hover);
       @include elevation.shadow(2);
     }
   }
