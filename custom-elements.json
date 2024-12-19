@@ -1101,63 +1101,6 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/components/floatingContainer/floatingContainer.ts",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "Floating Container.",
-          "name": "FloatingContainer",
-          "slots": [
-            {
-              "description": "Slot for kd-button options.",
-              "name": "unnamed"
-            }
-          ],
-          "members": [],
-          "superclass": {
-            "name": "LitElement",
-            "package": "lit"
-          },
-          "tagName": "kd-button-float-container",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "FloatingContainer",
-          "declaration": {
-            "name": "FloatingContainer",
-            "module": "src/components/floatingContainer/floatingContainer.ts"
-          }
-        },
-        {
-          "kind": "custom-element-definition",
-          "name": "kd-button-float-container",
-          "declaration": {
-            "name": "FloatingContainer",
-            "module": "src/components/floatingContainer/floatingContainer.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/components/floatingContainer/index.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "FloatingContainer",
-          "declaration": {
-            "name": "FloatingContainer",
-            "module": "./floatingContainer"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
       "path": "src/components/link/defs.ts",
       "declarations": [],
       "exports": []
@@ -1376,6 +1319,63 @@
           "declaration": {
             "name": "Link",
             "module": "src/components/link/link.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/floatingContainer/floatingContainer.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "Floating Container.",
+          "name": "FloatingContainer",
+          "slots": [
+            {
+              "description": "Slot for kd-button options.",
+              "name": "unnamed"
+            }
+          ],
+          "members": [],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "kd-button-float-container",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "FloatingContainer",
+          "declaration": {
+            "name": "FloatingContainer",
+            "module": "src/components/floatingContainer/floatingContainer.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "kd-button-float-container",
+          "declaration": {
+            "name": "FloatingContainer",
+            "module": "src/components/floatingContainer/floatingContainer.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/floatingContainer/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "FloatingContainer",
+          "declaration": {
+            "name": "FloatingContainer",
+            "module": "./floatingContainer"
           }
         }
       ]

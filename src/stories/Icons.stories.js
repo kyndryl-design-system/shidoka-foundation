@@ -39,6 +39,9 @@ export default {
 
           table.icons td {
             background: var(--kd-color-background-table-row);
+            svg {
+              display: block;
+            }
           }
 
           table.icons tr:nth-child(odd) td {
@@ -55,11 +58,6 @@ export default {
 
           table.icons tr:last-child td:last-child {
             border-bottom-right-radius: 8px;
-          }
-          svg {
-            .kyndryl_text {
-              fill: var(--kd-color-background-logo-kyndryl-txt);
-            }
           }
         </style>
         ${story()}
