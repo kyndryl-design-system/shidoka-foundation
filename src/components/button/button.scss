@@ -279,13 +279,15 @@ span {
     background-color: var(--kd-color-background-button-secondary-state-hover);
   }
 
-  &:active {
-    background-color: var(--kd-color-background-button-secondary-state-pressed);
-  }
-
   &:focus {
     background-color: var(--kd-color-background-button-secondary-state-focused);
     outline-color: var(--kd-color-border-button-secondary-state-focused);
+
+    &:active {
+      background-color: var(
+        --kd-color-background-button-secondary-state-pressed
+      );
+    }
   }
 
   &:disabled {
@@ -305,13 +307,14 @@ span {
     border-color: var(--kd-color-border-button-secondary-state-hover);
   }
 
-  &:active {
-    border-color: var(--kd-color-border-button-secondary-state-pressed);
-  }
-
   &:focus {
     border-width: 2px;
     border-color: var(--kd-color-border-button-secondary-state-focused);
+
+    &:active {
+      border-width: 1.5px;
+      border-color: var(--kd-color-border-button-secondary-state-pressed);
+    }
   }
 
   &:disabled {
@@ -331,22 +334,19 @@ span {
     background-color: var(
       --kd-color-background-button-secondary-destructive-hover
     );
-    color: var(--kd-color-text-button-dark-destructive);
-  }
-
-  &:active {
-    background-color: var(
-      --kd-color-background-button-secondary-destructive-pressed
-    );
-    color: var(--kd-color-text-button-dark-destructive);
   }
 
   &:focus {
     background-color: var(
       --kd-color-background-button-secondary-destructive-focused
     );
-    color: var(--kd-color-text-button-dark-destructive);
     outline-color: var(--kd-color-border-button-primary-destructive-default);
+
+    &:active {
+      background-color: var(
+        --kd-color-background-button-secondary-destructive-pressed
+      );
+    }
   }
 }
 
@@ -361,13 +361,13 @@ span {
     border-color: var(--kd-color-border-button-secondary-destructive-hover);
   }
 
-  &:active {
-    border-color: var(--kd-color-border-button-secondary-destructive-pressed);
-  }
-
   &:focus {
     border-color: var(--kd-color-border-button-secondary-destructive-focused);
     outline-color: var(--kd-color-border-button-primary-destructive-default);
+
+    &:active {
+      border-color: var(--kd-color-border-button-secondary-destructive-pressed);
+    }
   }
 
   &:disabled {
@@ -382,15 +382,9 @@ span {
   background-color: var(--kd-color-background-button-tertiary-state-default);
   color: var(--kd-color-text-button-light-primary);
   border: none;
-  min-width: initial;
 
   &:hover {
     background-color: var(--kd-color-background-button-tertiary-state-hover);
-    color: var(--kd-color-text-button-dark-primary);
-  }
-
-  &:active {
-    background-color: var(--kd-color-background-button-tertiary-state-pressed);
     color: var(--kd-color-text-button-dark-primary);
   }
 
@@ -398,6 +392,13 @@ span {
     background-color: var(--kd-color-background-button-tertiary-state-focused);
     outline-color: var(--kd-color-border-button-tertiary-state-focused);
     color: var(--kd-color-text-button-light-primary);
+
+    &:active {
+      background-color: var(
+        --kd-color-background-button-tertiary-state-pressed
+      );
+      color: var(--kd-color-text-button-dark-primary);
+    }
   }
 
   &:disabled {
@@ -417,13 +418,13 @@ span {
     border-color: var(--kd-color-border-button-tertiary-state-hover);
   }
 
-  &:active {
-    border-color: var(--kd-color-border-button-tertiary-state-pressed);
-  }
-
   &:focus {
     border-width: 2px;
     border-color: var(--kd-color-border-button-tertiary-state-focused);
+
+    &:active {
+      border-color: var(--kd-color-border-button-tertiary-state-pressed);
+    }
   }
 
   &:disabled {
@@ -445,19 +446,19 @@ span {
     );
   }
 
-  &:active {
-    background-color: var(
-      --kd-color-background-button-tertiary-destructive-pressed
-    );
-    color: var(--kd-color-text-button-dark-destructive);
-  }
-
   &:focus {
     background-color: var(
       --kd-color-background-button-tertiary-destructive-focused
     );
     color: var(--kd-color-text-button-dark-destructive);
     outline-color: var(--kd-color-border-button-primary-destructive-default);
+
+    &:active {
+      background-color: var(
+        --kd-color-background-button-tertiary-destructive-pressed
+      );
+      color: var(--kd-color-text-button-dark-destructive);
+    }
   }
 
   &:disabled {
@@ -477,13 +478,13 @@ span {
     border-color: var(--kd-color-border-button-tertiary-destructive-hover);
   }
 
-  &:active {
-    border-color: var(--kd-color-border-button-tertiary-destructive-pressed);
-  }
-
   &:focus {
     border-color: var(--kd-color-border-button-tertiary-destructive-focused);
     outline-color: var(--kd-color-border-button-primary-destructive-focused);
+
+    &:active {
+      border-color: var(--kd-color-border-button-tertiary-destructive-pressed);
+    }
   }
 
   &:disabled {
