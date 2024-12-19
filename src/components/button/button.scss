@@ -397,6 +397,7 @@ span {
   &:focus {
     background-color: var(--kd-color-background-button-tertiary-state-focused);
     outline-color: var(--kd-color-border-button-tertiary-state-focused);
+    color: var(--kd-color-text-button-light-primary);
   }
 
   &:disabled {
