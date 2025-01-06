@@ -100,7 +100,7 @@ export const Semantic = {
             </thead>
             <tbody>
               ${semanticTokens
-                .filter((token) => token.categoryTree.includes(key))
+                .filter((token) => token.categoryTree[0] === key)
                 .map((token) => {
                   return html`
                     <tr>
@@ -151,7 +151,7 @@ export const Palette = {
             </thead>
             <tbody>
               ${paletteTokens
-                .filter((token) => token.categoryTree.includes(key))
+                .filter((token) => token.categoryTree[0] === key)
                 .map((token) => {
                   return html`
                     <tr>
