@@ -1661,15 +1661,15 @@
       },
       "Success": {
         "$type": "color",
-        "$value": "{Status.Success.Light}"
+        "$value": "{Misc.Green.Light}"
       },
       "Warning": {
         "$type": "color",
-        "$value": "{Status.Warning.Light}"
+        "$value": "{Misc.Yellow.Light}"
       },
       "Error": {
         "$type": "color",
-        "$value": "{Status.Error.Light}"
+        "$value": "{Warm Red.20}"
       },
       "Cat 1": {
         "$type": "color",
