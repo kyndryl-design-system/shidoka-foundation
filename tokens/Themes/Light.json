@@ -34,7 +34,7 @@
         },
         "Brand": {
           "$type": "color",
-          "$value": "{Warm Red.50}"
+          "$value": "{Warm Red.50 - Brand}"
         },
         "Default": {
           "$type": "color",
@@ -209,7 +209,7 @@
     "Accent": {
       "Primary": {
         "$type": "color",
-        "$value": "{Warm Red.50}"
+        "$value": "{Warm Red.50 - Brand}"
       },
       "Subtle": {
         "$type": "color",
@@ -411,7 +411,7 @@
     "Variant": {
       "Brand": {
         "$type": "color",
-        "$value": "{Warm Red.50}"
+        "$value": "{Warm Red.50 - Brand}"
       },
       "Inversed": {
         "$type": "color",
@@ -568,7 +568,7 @@
     },
     "Brand": {
       "$type": "color",
-      "$value": "{Warm Red.50}"
+      "$value": "{Warm Red.50 - Brand}"
     },
     "Disabled": {
       "$type": "color",
@@ -589,11 +589,11 @@
     "Duotone": {
       "Primary": {
         "$type": "color",
-        "$value": "{Warm Red.50}"
+        "$value": "{Cool Gray.80}"
       },
       "Secondary": {
         "$type": "color",
-        "$value": "{Dark Stone.80}"
+        "$value": "{Warm Red.50 - Brand}"
       },
       "Inverse": {
         "Primary": {
@@ -631,7 +631,7 @@
       },
       "Brand": {
         "$type": "color",
-        "$value": "{Warm Red.50}"
+        "$value": "{Warm Red.50 - Brand}"
       },
       "Inverse": {
         "$type": "color",
@@ -1404,7 +1404,7 @@
   "Main Palette": {
     "Accent": {
       "$type": "color",
-      "$value": "{Warm Red.50}"
+      "$value": "{Warm Red.50 - Brand}"
     },
     "Secondary": {
       "$type": "color",
