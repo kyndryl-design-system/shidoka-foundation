@@ -11,8 +11,10 @@ $spacingDirections: top, right, bottom, left;
   }
 
   --kd-page-gutter: 16px;
+  --kd-page-gutter-negative: -16px;
 
   @media screen and (min-width: breakpoints.$bp-md) {
     --kd-page-gutter: 32px;
+    --kd-page-gutter-negative: -32px;
   }
 }
