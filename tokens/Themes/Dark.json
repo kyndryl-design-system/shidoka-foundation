@@ -20,6 +20,10 @@
       "Footer": {
         "$type": "color",
         "$value": "{Interactive.110}"
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": "{Opacity.Dark.30}"
       }
     },
     "UI": {
@@ -246,12 +250,6 @@
         "$value": "{Cool Gray.3}"
       }
     },
-    "Tag": {
-      "Neutral": {
-        "$type": "color",
-        "$value": "{Cool Gray.85}"
-      }
-    },
     "Forms": {
       "Secondary": {
         "$type": "color",
@@ -302,14 +300,6 @@
       "Bridge-txt": {
         "$type": "color",
         "$value": "{Dark Stone.10}"
-      },
-      "Kyndryl-txt": {
-        "$type": "color",
-        "$value": "{Neutral.White}"
-      },
-      "Kyndryl neutral-txt": {
-        "$type": "color",
-        "$value": "{Neutral.White}"
       }
     },
     "Navigation": {
@@ -350,12 +340,12 @@
         "$value": "{Opacity.Light.10}"
       }
     },
-    "Notification": {
-      "Unread-FIll": {
+    "Highlight": {
+      "FIll": {
         "$type": "color",
         "$value": "{Skye.80}"
       },
-      "Unread-Border": {
+      "Border": {
         "$type": "color",
         "$value": "{Skye.50}"
       }
@@ -412,6 +402,10 @@
       "Light": {
         "$type": "color",
         "$value": "{Dark Stone.10}"
+      },
+      "Disabled": {
+        "$type": "color",
+        "$value": "{Dark Stone.40}"
       }
     },
     "Variant": {
@@ -429,7 +423,7 @@
       },
       "Destructive": {
         "$type": "color",
-        "$value": "{Misc.Red.Dark}"
+        "$value": "{Misc.Red.Light}"
       },
       "Placeholder": {
         "$type": "color",
@@ -578,7 +572,7 @@
     },
     "Disabled": {
       "$type": "color",
-      "$value": "{Cool Gray.50}"
+      "$value": "{Dark Stone.40}"
     },
     "Destructive": {
       "$type": "color",
@@ -595,11 +589,11 @@
     "Duotone": {
       "Primary": {
         "$type": "color",
-        "$value": "{Spruce.20}"
+        "$value": "{Warm Red.50}"
       },
       "Secondary": {
         "$type": "color",
-        "$value": "{Skye.30}"
+        "$value": "{Dark Stone.10}"
       },
       "Inverse": {
         "Primary": {
@@ -707,7 +701,7 @@
     "Forms": {
       "Default": {
         "$type": "color",
-        "$value": "{Cool Gray.70}"
+        "$value": "{Cool Gray.40}"
       }
     },
     "Button": {
@@ -1657,6 +1651,120 @@
     "atrule": {
       "$type": "color",
       "$value": "{Sea.10}"
+    }
+  },
+  "Tags": {
+    "Background": {
+      "Interactive": {
+        "$type": "color",
+        "$value": "{Interactive.50}"
+      },
+      "Success": {
+        "$type": "color",
+        "$value": "{Status.Success.Dark}"
+      },
+      "Warning": {
+        "$type": "color",
+        "$value": "{Status.Warning.Dark}"
+      },
+      "Error": {
+        "$type": "color",
+        "$value": "{Status.Error.Dark}"
+      },
+      "Cat 1": {
+        "$type": "color",
+        "$value": "{Sea.30}"
+      },
+      "Spruce": {
+        "$type": "color",
+        "$value": "{Spruce.30}"
+      },
+      "Cat 2": {
+        "$type": "color",
+        "$value": "{Jade.30}"
+      },
+      "Cat 3": {
+        "$type": "color",
+        "$value": "{Amber.30}"
+      },
+      "Cat 4": {
+        "$type": "color",
+        "$value": "{Blush.30}"
+      },
+      "Cat 5": {
+        "$type": "color",
+        "$value": "{Lilac.30}"
+      },
+      "Cat 6": {
+        "$type": "color",
+        "$value": "{Magenta.30}"
+      },
+      "Blue": {
+        "$type": "color",
+        "$value": "{Misc.Blue.Dark}"
+      },
+      "Gray": {
+        "$type": "color",
+        "$value": "{Cool Gray.80}"
+      },
+      "Disabled": {
+        "$type": "color",
+        "$value": "{Warm Gray.80}"
+      }
+    },
+    "Hover": {
+      "Cat 1": {
+        "$type": "color",
+        "$value": "{Sea.40}"
+      },
+      "Cat 2": {
+        "$type": "color",
+        "$value": "{Jade.40}"
+      },
+      "Cat 3": {
+        "$type": "color",
+        "$value": "{Amber.40}"
+      },
+      "Cat 4": {
+        "$type": "color",
+        "$value": "{Blush.40}"
+      },
+      "Cat 5": {
+        "$type": "color",
+        "$value": "{Lilac.40}"
+      },
+      "Cat 6": {
+        "$type": "color",
+        "$value": "{Magenta.35}"
+      },
+      "Interactive": {
+        "$type": "color",
+        "$value": "{Interactive.70}"
+      },
+      "Spruce": {
+        "$type": "color",
+        "$value": "{Spruce.40}"
+      },
+      "Blue": {
+        "$type": "color",
+        "$value": "{Misc.Blue.55}"
+      },
+      "Gray": {
+        "$type": "color",
+        "$value": "{Warm Gray.50}"
+      },
+      "Error": {
+        "$type": "color",
+        "$value": "{Misc.Red.40}"
+      },
+      "Warning": {
+        "$type": "color",
+        "$value": "{Misc.Yellow.25}"
+      },
+      "Success": {
+        "$type": "color",
+        "$value": "{Spring Green.50}"
+      }
     }
   }
 }
