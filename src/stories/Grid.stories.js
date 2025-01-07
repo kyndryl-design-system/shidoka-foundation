@@ -25,6 +25,13 @@ export default {
         defaultValue: { summary: false },
       },
     },
+    fullBleed: {
+      control: { type: 'boolean' },
+      description: 'Full bleed/override page gutter.',
+      table: {
+        defaultValue: { summary: false },
+      },
+    },
   },
   decorators: [
     (story) =>
@@ -54,6 +61,7 @@ const args = {
   alignLeft: false,
   noMax: false,
   noGap: false,
+  fullBleed: false,
 };
 
 export const Grid = {
@@ -64,6 +72,7 @@ export const Grid = {
       'kd-grid--no-max': args.noMax,
       'kd-grid--no-gap': args.noGap,
       'kd-grid--align-left': args.alignLeft,
+      'kd-grid--full-bleed': args.fullBleed,
     };
 
     return html`
