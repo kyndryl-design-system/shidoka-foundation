@@ -37,13 +37,6 @@ export default {
         defaultValue: { summary: LINK_TARGETS.SELF },
       },
     },
-    shade: {
-      options: createSelectOptions(LINK_SHADES),
-      control: { type: 'select', labels: { null: LINK_SHADES.AUTO } },
-      table: {
-        defaultValue: { summary: LINK_TYPES.AUTO },
-      },
-    },
   },
 };
 
@@ -52,7 +45,6 @@ const args = {
   href: '',
   target: '_self',
   kind: 'primary',
-  shade: 'auto',
   disabled: false,
   standalone: false,
   iconLeft: false,
@@ -72,7 +64,6 @@ export const Link = {
         href=${args.href}
         target=${args.target}
         kind=${args.kind}
-        shade=${args.shade}
         ?disabled=${args.disabled}
         @on-click=${args['on-click']}
       >
@@ -98,7 +89,6 @@ export const LinkWithIcon = {
       ?iconLeft=${args.iconLeft}
       href=${args.href}
       target=${args.target}
-      shade=${args.shade}
       kind=${args.kind}
       ?disabled=${args.disabled}
       @on-click=${args['on-click']}
