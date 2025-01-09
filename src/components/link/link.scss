@@ -48,19 +48,19 @@
   }
 
   &-primary-dark {
-    color: var();
+    color: var(--kd-color-background-link-level-default-light);
 
     &:hover {
-      color: var();
+      color: var(--kd-color-background-link-level-hover-light);
     }
     &:focus {
-      color: var();
+      color: var(--kd-color-background-link-level-default-light);
       outline: 1px solid var(--kd-color-border-variants-focus);
       transition: outline 100ms ease-in-out;
       text-decoration: none;
     }
     &:active {
-      color: var();
+      color: var(--kd-color-background-link-level-pressed-light);
       text-decoration: underline;
       outline: none;
     }
