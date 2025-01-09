@@ -1512,11 +1512,7 @@
             {
               "kind": "field",
               "name": "shade",
-              "type": {
-                "text": "string"
-              },
-              "default": "'auto'",
-              "description": "Determines the shade of the link. By default `auto`.\nSet this prop to `light` or `dark` manually when the link needs to have a better contrast for visibility, irrespective of the theme.",
+              "description": "Determines the shade of the link. By default `auto`.\nSet this prop to `dark` manually when the link needs to have a better contrast for visibility on light backgroud, irrespective of the theme.\n**NOTE**: Applicable only for **primary** link.",
               "attribute": "shade"
             },
             {
@@ -1608,11 +1604,7 @@
             },
             {
               "name": "shade",
-              "type": {
-                "text": "string"
-              },
-              "default": "'auto'",
-              "description": "Determines the shade of the link. By default `auto`.\nSet this prop to `light` or `dark` manually when the link needs to have a better contrast for visibility, irrespective of the theme.",
+              "description": "Determines the shade of the link. By default `auto`.\nSet this prop to `dark` manually when the link needs to have a better contrast for visibility on light backgroud, irrespective of the theme.\n**NOTE**: Applicable only for **primary** link.",
               "fieldName": "shade"
             }
           ],

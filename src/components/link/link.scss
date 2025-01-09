@@ -47,6 +47,25 @@
     }
   }
 
+  &-primary-dark {
+    color: var();
+
+    &:hover {
+      color: var();
+    }
+    &:focus {
+      color: var();
+      outline: 1px solid var(--kd-color-border-variants-focus);
+      transition: outline 100ms ease-in-out;
+      text-decoration: none;
+    }
+    &:active {
+      color: var();
+      text-decoration: underline;
+      outline: none;
+    }
+  }
+
   // Secondary (web)
   &-secondary {
     color: var(--kd-color-text-level-primary);
