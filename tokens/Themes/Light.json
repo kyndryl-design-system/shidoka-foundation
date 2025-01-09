@@ -375,6 +375,26 @@
           "$value": "{Dark Stone.20}"
         }
       }
+    },
+    "Link": {
+      "Level": {
+        "Default-Light": {
+          "$type": "color",
+          "$value": "{Interactive.70}"
+        },
+        "Hover-Light": {
+          "$type": "color",
+          "$value": "{Interactive.60}"
+        },
+        "Pressed-Light": {
+          "$type": "color",
+          "$value": "{Interactive.95}"
+        },
+        "Disabled-Light": {
+          "$type": "color",
+          "$value": "{Opacity.Dark.30}"
+        }
+      }
     }
   },
   "Text": {
@@ -445,22 +465,6 @@
           "$value": "{Interactive.95}"
         },
         "Disabled": {
-          "$type": "color",
-          "$value": "{Opacity.Dark.30}"
-        },
-        "Default - Light BG": {
-          "$type": "color",
-          "$value": "{Interactive.70}"
-        },
-        "Hover - Light BG": {
-          "$type": "color",
-          "$value": "{Interactive.60}"
-        },
-        "Pressed - Light BG": {
-          "$type": "color",
-          "$value": "{Interactive.95}"
-        },
-        "Disabled - Light BG": {
           "$type": "color",
           "$value": "{Opacity.Dark.30}"
         }
