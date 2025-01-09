@@ -79,6 +79,10 @@
   --kd-color-background-loader-skeleton-tertiary: light-dark(var(--kd-color-dark-stone-10), var(--kd-color-dark-stone-60));
   --kd-color-background-loader-bar-primary: light-dark(var(--kd-color-dark-stone-50), var(--kd-color-cool-gray-10));
   --kd-color-background-loader-bar-secondary: light-dark(var(--kd-color-dark-stone-20), var(--kd-color-cool-gray-70));
+  --kd-color-background-link-level-default-light: light-dark(var(--kd-color-interactive-70), var(--kd-color-interactive-70));
+  --kd-color-background-link-level-hover-light: light-dark(var(--kd-color-interactive-60), var(--kd-color-interactive-60));
+  --kd-color-background-link-level-pressed-light: light-dark(var(--kd-color-interactive-95), var(--kd-color-interactive-95));
+  --kd-color-background-link-level-disabled-light: light-dark(var(--kd-color-opacity-dark-30), var(--kd-color-opacity-dark-30));
   --kd-color-text-level-primary: light-dark(var(--kd-color-dark-stone-80), var(--kd-color-dark-stone-10));
   --kd-color-text-level-secondary: light-dark(var(--kd-color-dark-stone-60), var(--kd-color-dark-stone-20));
   --kd-color-text-level-tertiary: light-dark(var(--kd-color-interactive-80-primary), var(--kd-color-spruce-30));
@@ -95,10 +99,6 @@
   --kd-color-text-link-level-hover: light-dark(var(--kd-color-interactive-60), var(--kd-color-interactive-10));
   --kd-color-text-link-level-pressed: light-dark(var(--kd-color-interactive-95), var(--kd-color-interactive-5));
   --kd-color-text-link-level-disabled: light-dark(var(--kd-color-opacity-dark-30), var(--kd-color-opacity-light-40));
-  --kd-color-text-link-level-default---light-bg: light-dark(var(--kd-color-interactive-70), var(--kd-color-interactive-70));
-  --kd-color-text-link-level-hover---light-bg: light-dark(var(--kd-color-interactive-60), var(--kd-color-interactive-60));
-  --kd-color-text-link-level-pressed---light-bg: light-dark(var(--kd-color-interactive-95), var(--kd-color-interactive-95));
-  --kd-color-text-link-level-disabled---light-bg: light-dark(var(--kd-color-opacity-dark-30), var(--kd-color-opacity-dark-30));
   --kd-color-text-label-light-label: light-dark(var(--kd-color-dark-stone-10), var(--kd-color-dark-stone-20));
   --kd-color-text-label-dark-label: light-dark(var(--kd-color-cool-gray-85), var(--kd-color-dark-stone-20));
   --kd-color-text-title-tertiary: light-dark(var(--kd-color-spruce-50), var(--kd-color-spruce-30));
