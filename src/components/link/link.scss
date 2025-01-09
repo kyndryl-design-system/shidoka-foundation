@@ -47,52 +47,6 @@
     }
   }
 
-  // Primary - light (app)
-  &-primary-light {
-    color: #7a838b;
-
-    &:hover {
-      color: #88919a;
-    }
-    &:focus {
-      color: #7a838b;
-      outline: 1px solid #6c757d;
-      -webkit-transition: outline 100ms ease-in-out;
-      -moz-transition: outline 100ms ease-in-out;
-      -o-transition: outline 100ms ease-in-out;
-      transition: outline 100ms ease-in-out;
-      text-decoration: none;
-    }
-    &:active {
-      color: #596168;
-      text-decoration: underline;
-      outline: none;
-    }
-  }
-
-  // Primary - dark (app)
-  &-primary-dark {
-    color: #959fa8;
-
-    &:hover {
-      color: #b8bfc5;
-    }
-    &:focus {
-      color: #959fa8;
-      outline: 1px solid #a3adb7;
-      -webkit-transition: outline 100ms ease-in-out;
-      -moz-transition: outline 100ms ease-in-out;
-      -o-transition: outline 100ms ease-in-out;
-      transition: outline 100ms ease-in-out;
-      text-decoration: none;
-    }
-    &:active {
-      color: #e6ebf1;
-      text-decoration: underline;
-      outline: none;
-    }
-  }
-
   // Secondary (web)
   &-secondary {
     color: var(--kd-color-text-level-primary);
@@ -110,50 +64,6 @@
     }
     &:active {
       color: var(--kd-color-text-link-level-pressed);
-      text-decoration: underline;
-      outline: none;
-    }
-  }
-
-  // Secondary - light (web)
-  &-secondary-light {
-    color: #3d3c3c;
-
-    &:hover {
-      color: #88919a;
-    }
-    &:focus {
-      outline: 1px solid #3d3c3c;
-      -webkit-transition: outline 100ms ease-in-out;
-      -moz-transition: outline 100ms ease-in-out;
-      -o-transition: outline 100ms ease-in-out;
-      transition: outline 100ms ease-in-out;
-      text-decoration: none;
-    }
-    &:active {
-      color: #596168;
-      text-decoration: underline;
-      outline: none;
-    }
-  }
-
-  // Secondary - dark (web)
-  &-secondary-dark {
-    color: #f9f9f9;
-
-    &:hover {
-      color: #88919a;
-    }
-    &:focus {
-      outline: 1px solid #f9f9f9;
-      -webkit-transition: outline 100ms ease-in-out;
-      -moz-transition: outline 100ms ease-in-out;
-      -o-transition: outline 100ms ease-in-out;
-      transition: outline 100ms ease-in-out;
-      text-decoration: none;
-    }
-    &:active {
-      color: #e6ebf1;
       text-decoration: underline;
       outline: none;
     }

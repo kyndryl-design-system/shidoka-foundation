@@ -20,9 +20,3 @@ export enum LINK_VARIANTS {
   INLINE = 'inline',
   STANDALONE = 'standalone',
 }
-
-export enum LINK_SHADES {
-  AUTO = 'auto',
-  LIGHT = 'light',
-  DARK = 'dark',
-}
