@@ -23,3 +23,8 @@
   padding-left: var(--kd-page-gutter);
   padding-right: var(--kd-page-gutter);
 }
+
+.kd-spacing--page-gutter-negative {
+  margin-left: var(--kd-page-gutter-negative);
+  margin-right: var(--kd-page-gutter-negative);
+}
