@@ -375,6 +375,26 @@
           "$value": "{Cool Gray.70}"
         }
       }
+    },
+    "Link": {
+      "Level": {
+        "Default-Light": {
+          "$type": "color",
+          "$value": "{Interactive.70}"
+        },
+        "Hover-Light": {
+          "$type": "color",
+          "$value": "{Interactive.60}"
+        },
+        "Pressed-Light": {
+          "$type": "color",
+          "$value": "{Interactive.95}"
+        },
+        "Disabled-Light": {
+          "$type": "color",
+          "$value": "{Opacity.Dark.30}"
+        }
+      }
     }
   },
   "Text": {
@@ -434,19 +454,19 @@
       "Level": {
         "Default": {
           "$type": "color",
-          "$value": "{Interactive.50}"
+          "$value": "{Interactive.15}"
         },
         "Hover": {
           "$type": "color",
-          "$value": "{Interactive.30}"
+          "$value": "{Interactive.10}"
         },
         "Pressed": {
           "$type": "color",
-          "$value": "{Interactive.10}"
+          "$value": "{Interactive.5}"
         },
         "Disabled": {
           "$type": "color",
-          "$value": "{Opacity.Light.20}"
+          "$value": "{Opacity.Light.40}"
         }
       }
     },
@@ -572,7 +592,7 @@
     },
     "Disabled": {
       "$type": "color",
-      "$value": "{Dark Stone.40}"
+      "$value": "{Dark Stone.60}"
     },
     "Destructive": {
       "$type": "color",
@@ -619,7 +639,7 @@
     "Variants": {
       "Light": {
         "$type": "color",
-        "$value": "{Cool Gray.70}"
+        "$value": "{Cool Gray.60}"
       },
       "Focus": {
         "$type": "color",
@@ -659,7 +679,7 @@
       },
       "Default": {
         "$type": "color",
-        "$value": "{Opacity.Light.10}"
+        "$value": "{Opacity.Light.30}"
       },
       "Hover": {
         "$type": "color",
@@ -1651,6 +1671,18 @@
     "atrule": {
       "$type": "color",
       "$value": "{Sea.10}"
+    },
+    "console": {
+      "$type": "color",
+      "$value": "{Blush.20}"
+    },
+    "method": {
+      "$type": "color",
+      "$value": "{Blush.20}"
+    },
+    "language-javascript": {
+      "$type": "color",
+      "$value": "{Amber.10}"
     }
   },
   "Tags": {

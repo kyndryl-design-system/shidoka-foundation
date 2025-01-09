@@ -919,7 +919,7 @@
       },
       "Dark": {
         "$type": "color",
-        "$value": "#f0c000"
+        "$value": "#e8ba02"
       },
       "Light": {
         "$type": "color",
