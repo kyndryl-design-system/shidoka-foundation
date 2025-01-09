@@ -375,6 +375,26 @@
           "$value": "{Dark Stone.20}"
         }
       }
+    },
+    "Link": {
+      "Level": {
+        "Default-Light": {
+          "$type": "color",
+          "$value": "{Interactive.70}"
+        },
+        "Hover-Light": {
+          "$type": "color",
+          "$value": "{Interactive.60}"
+        },
+        "Pressed-Light": {
+          "$type": "color",
+          "$value": "{Interactive.95}"
+        },
+        "Disabled-Light": {
+          "$type": "color",
+          "$value": "{Opacity.Dark.30}"
+        }
+      }
     }
   },
   "Text": {
@@ -506,7 +526,7 @@
       "Light": {
         "Primary": {
           "$type": "color",
-          "$value": "{Spruce.50}"
+          "$value": "{Spruce.60}"
         },
         "Destructive": {
           "$type": "color",
@@ -528,7 +548,7 @@
       "Dark": {
         "Primary": {
           "$type": "color",
-          "$value": "{Cool Gray.5}"
+          "$value": "{Neutral.White}"
         },
         "Destructive": {
           "$type": "color",
@@ -659,7 +679,7 @@
       },
       "Default": {
         "$type": "color",
-        "$value": "{Opacity.Dark.10}"
+        "$value": "{Opacity.Dark.20}"
       },
       "Hover": {
         "$type": "color",
@@ -849,7 +869,7 @@
       },
       "Dark": {
         "$type": "color",
-        "$value": "{Misc.Red.70}"
+        "$value": "{Misc.Red.80}"
       },
       "Accent": {
         "$type": "color",
@@ -1494,7 +1514,7 @@
   "Code View": {
     "builtin": {
       "$type": "color",
-      "$value": "{Jade.70}"
+      "$value": "{Jade.80}"
     },
     "boolean": {
       "$type": "color",
@@ -1526,7 +1546,7 @@
     },
     "string": {
       "$type": "color",
-      "$value": "{Jade.70}"
+      "$value": "{Jade.80}"
     },
     "punctuation": {
       "$type": "color",
@@ -1542,7 +1562,7 @@
     },
     "selector": {
       "$type": "color",
-      "$value": "{Jade.70}"
+      "$value": "{Jade.80}"
     },
     "number": {
       "$type": "color",
@@ -1550,7 +1570,7 @@
     },
     "inserted": {
       "$type": "color",
-      "$value": "{Jade.70}"
+      "$value": "{Jade.80}"
     },
     "important": {
       "$type": "color",
@@ -1562,7 +1582,7 @@
     },
     "prolog": {
       "$type": "color",
-      "$value": "{Cool Gray.50}"
+      "$value": "{Cool Gray.60}"
     },
     "hexcode": {
       "$type": "color",
@@ -1578,7 +1598,7 @@
     },
     "doctype": {
       "$type": "color",
-      "$value": "{Cool Gray.50}"
+      "$value": "{Cool Gray.60}"
     },
     "parameter": {
       "$type": "color",
@@ -1586,7 +1606,7 @@
     },
     "char": {
       "$type": "color",
-      "$value": "{Jade.70}"
+      "$value": "{Jade.80}"
     },
     "deleted": {
       "$type": "color",
@@ -1594,7 +1614,7 @@
     },
     "class": {
       "$type": "color",
-      "$value": "{Jade.70}"
+      "$value": "{Jade.80}"
     },
     "attr-value": {
       "$type": "color",
@@ -1606,7 +1626,7 @@
     },
     "cdata": {
       "$type": "color",
-      "$value": "{Cool Gray.50}"
+      "$value": "{Cool Gray.60}"
     },
     "default": {
       "$type": "color",
@@ -1614,7 +1634,7 @@
     },
     "function": {
       "$type": "color",
-      "$value": "{Blush.60}"
+      "$value": "{Blush.70}"
     },
     "constant": {
       "$type": "color",
@@ -1626,7 +1646,7 @@
     },
     "class-name": {
       "$type": "color",
-      "$value": "{Blush.60}"
+      "$value": "{Blush.70}"
     },
     "comment": {
       "$type": "color",
@@ -1634,7 +1654,7 @@
     },
     "attr-name": {
       "$type": "color",
-      "$value": "{Jade.70}"
+      "$value": "{Jade.80}"
     },
     "url": {
       "$type": "color",
@@ -1651,6 +1671,18 @@
     "atrule": {
       "$type": "color",
       "$value": "{Sea.80}"
+    },
+    "console": {
+      "$type": "color",
+      "$value": "{Blush.70}"
+    },
+    "method": {
+      "$type": "color",
+      "$value": "{Blush.70}"
+    },
+    "language-javascript": {
+      "$type": "color",
+      "$value": "{Amber.90}"
     }
   },
   "Tags": {
