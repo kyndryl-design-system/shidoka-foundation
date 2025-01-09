@@ -1,7 +1,7 @@
 import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { classMap } from 'lit-html/directives/class-map.js';
-import { LINK_TYPES, LINK_TARGETS, LINK_SHADES } from './defs';
+import { LINK_TYPES, LINK_TARGETS } from './defs';
 
 import LinkStyles from './link.scss';
 
@@ -84,19 +84,8 @@ export class Link extends LitElement {
     } else {
       return classMap({
         ['kd-link-text-primary']:
-          (this.kind === LINK_TYPES.PRIMARY || !this.kind) &&
-          this.shade === LINK_SHADES.AUTO,
-        ['kd-link-text-secondary']:
-          this.kind === LINK_TYPES.SECONDARY && this.shade === LINK_SHADES.AUTO,
-        ['kd-link-text-primary-light']:
-          this.kind === LINK_TYPES.PRIMARY && this.shade === LINK_SHADES.LIGHT,
-        ['kd-link-text-secondary-light']:
-          this.kind === LINK_TYPES.SECONDARY &&
-          this.shade === LINK_SHADES.LIGHT,
-        ['kd-link-text-primary-dark']:
-          this.kind === LINK_TYPES.PRIMARY && this.shade === LINK_SHADES.DARK,
-        ['kd-link-text-secondary-dark']:
-          this.kind === LINK_TYPES.SECONDARY && this.shade === LINK_SHADES.DARK,
+          this.kind === LINK_TYPES.PRIMARY || !this.kind,
+        ['kd-link-text-secondary']: this.kind === LINK_TYPES.SECONDARY,
         ['kd-link-text-inline']: !this.standalone,
         ['kd-link-text-standalone']: this.standalone,
         'icon-left': this.iconLeft,
