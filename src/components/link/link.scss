@@ -47,6 +47,26 @@
     }
   }
 
+  // Used for link on a light background in dark mode
+  &-primary-dark {
+    color: var(--kd-color-background-link-level-default-light);
+
+    &:hover {
+      color: var(--kd-color-background-link-level-hover-light);
+    }
+    &:focus {
+      color: var(--kd-color-background-link-level-default-light);
+      outline: 1px solid var(--kd-color-border-variants-focus);
+      transition: outline 100ms ease-in-out;
+      text-decoration: none;
+    }
+    &:active {
+      color: var(--kd-color-background-link-level-pressed-light);
+      text-decoration: underline;
+      outline: none;
+    }
+  }
+
   // Secondary (web)
   &-secondary {
     color: var(--kd-color-text-level-primary);

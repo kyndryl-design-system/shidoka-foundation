@@ -1,7 +1,7 @@
 import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { classMap } from 'lit-html/directives/class-map.js';
-import { LINK_TYPES, LINK_TARGETS } from './defs';
+import { LINK_TYPES, LINK_TARGETS, LINK_SHADES } from './defs';
 
 import LinkStyles from './link.scss';
 
@@ -46,6 +46,14 @@ export class Link extends LitElement {
   @property({ type: Boolean })
   iconLeft = false;
 
+  /**
+   * Determines the shade of the link. By default `auto`.
+   * Set this prop to `dark` manually when the link needs to have a better contrast for visibility on light backgroud, irrespective of the theme.
+   * **NOTE**: Applicable only for **primary** link.
+   * */
+  @property({ type: String })
+  shade = LINK_SHADES.AUTO;
+
   override render() {
     const classes = this.returnClassMap();
 
@@ -77,7 +85,10 @@ export class Link extends LitElement {
     } else {
       return classMap({
         ['kd-link-text-primary']:
-          this.kind === LINK_TYPES.PRIMARY || !this.kind,
+          (this.kind === LINK_TYPES.PRIMARY || !this.kind) &&
+          this.shade === 'auto',
+        ['kd-link-text-primary-dark']:
+          this.kind === LINK_TYPES.PRIMARY && this.shade === 'dark',
         ['kd-link-text-secondary']: this.kind === LINK_TYPES.SECONDARY,
         ['kd-link-text-inline']: !this.standalone,
         ['kd-link-text-standalone']: this.standalone,
