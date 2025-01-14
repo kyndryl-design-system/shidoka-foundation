@@ -540,7 +540,7 @@
       "Light": {
         "Primary": {
           "$type": "color",
-          "$value": "{Spruce.30}"
+          "$value": "{Spruce.20}"
         },
         "Destructive": {
           "$type": "color",
@@ -680,6 +680,10 @@
       "Inverse": {
         "$type": "color",
         "$value": "{Cool Gray.90}"
+      },
+      "Transparent": {
+        "$type": "color",
+        "$value": "{Opacity.Dark.0}"
       }
     },
     "Level": {
