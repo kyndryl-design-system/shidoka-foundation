@@ -680,6 +680,10 @@
       "Inverse": {
         "$type": "color",
         "$value": "{Neutral.White}"
+      },
+      "Transparent": {
+        "$type": "color",
+        "$value": "{Opacity.Dark.0}"
       }
     },
     "Level": {
@@ -1478,7 +1482,7 @@
     },
     "utility": {
       "$type": "color",
-      "$value": "{Interactive.10}"
+      "$value": "{Interactive.5}"
     }
   },
   "Date and Time Picker": {
