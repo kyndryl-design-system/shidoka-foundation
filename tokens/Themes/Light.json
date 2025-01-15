@@ -245,6 +245,10 @@
         "$type": "color",
         "$value": "{Opacity.Dark.40}"
       },
+      "8": {
+        "$type": "color",
+        "$value": "{Opacity.Light.86}"
+      },
       "Disabled": {
         "$type": "color",
         "$value": "{Opacity.Dark.3}"
