@@ -468,11 +468,11 @@
       "Level": {
         "Default": {
           "$type": "color",
-          "$value": "{Interactive.70}"
+          "$value": "{Interactive.90}"
         },
         "Hover": {
           "$type": "color",
-          "$value": "{Interactive.60}"
+          "$value": "{Interactive.80-primary}"
         },
         "Pressed": {
           "$type": "color",

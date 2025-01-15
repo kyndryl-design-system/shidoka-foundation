@@ -3,7 +3,7 @@
     "Container": {
       "Default": {
         "$type": "color",
-        "$value": "{Interactive.120}"
+        "$value": "{Opacity.Light.3}"
       },
       "Subtle": {
         "$type": "color",
@@ -23,7 +23,7 @@
       },
       "Secondary": {
         "$type": "color",
-        "$value": "{Opacity.Dark.30}"
+        "$value": "{Opacity.Light.3}"
       }
     },
     "UI": {
@@ -213,7 +213,7 @@
       },
       "Subtle": {
         "$type": "color",
-        "$value": "{Interactive.80-primary}"
+        "$value": "{Interactive.95}"
       },
       "Secondary": {
         "$type": "color",
@@ -267,7 +267,7 @@
       },
       "alt-row": {
         "$type": "color",
-        "$value": "{Opacity.Light.5}"
+        "$value": "{Cool Gray.93}"
       },
       "footer": {
         "$type": "color",
@@ -275,7 +275,7 @@
       },
       "row": {
         "$type": "color",
-        "$value": "{Opacity.Light.3}"
+        "$value": "{Cool Gray.90}"
       },
       "row-active-nested": {
         "$type": "color",
@@ -427,7 +427,7 @@
       },
       "Tertiary-bold": {
         "$type": "color",
-        "$value": "{Spruce.40}"
+        "$value": "{Spruce.10}"
       },
       "Dark": {
         "$type": "color",
@@ -833,19 +833,19 @@
         "State": {
           "Hover": {
             "$type": "color",
-            "$value": "{Spruce.70}"
+            "$value": "{Spruce.10}"
           },
           "Focused": {
             "$type": "color",
-            "$value": "{Spruce.80}"
+            "$value": "{Spruce.50}"
           },
           "Pressed": {
             "$type": "color",
-            "$value": "{Spruce.80}"
+            "$value": "{Spruce.50}"
           },
           "Default": {
             "$type": "color",
-            "$value": "{Spruce.60}"
+            "$value": "{Spruce.30}"
           }
         },
         "Destructive": {
