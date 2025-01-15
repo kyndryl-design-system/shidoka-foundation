@@ -394,7 +394,7 @@ span {
   background-color: var(--kd-color-background-button-tertiary-state-default);
   color: var(--kd-color-text-button-light-primary);
   border: none;
-  min-width: initial;
+  width: 100%;
 
   &:hover {
     background-color: var(--kd-color-background-button-tertiary-state-hover);
