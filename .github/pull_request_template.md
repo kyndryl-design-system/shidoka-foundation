@@ -15,8 +15,6 @@ Link here (if applicable).
 
 - [ ] Used Conventional Commit messages as outlined in the contributing guide.
   - [ ] Noted breaking changes (if any).
-- [ ] Documented/updated all props, events, slots, parts, etc with JSDoc.
-  - [ ] Ran the `analyze` command to update Storybook docs.
 - [ ] Added/updated Stories with controls to cover all variants.
 - [ ] Ran `test` locally to address any failures.
 - [ ] Added/updated the Figma link for the Story's Design tab.

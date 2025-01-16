@@ -30,9 +30,7 @@
     "prepare": "npx husky install"
   },
   "dependencies": {
-    "@kyndryl-design-system/shidoka-icons": "^1.5.0",
-    "lit": "^2.5.0",
-    "query-selector-shadow-dom": "^1.0.1"
+    "@kyndryl-design-system/shidoka-icons": "^2.0.0-next.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
@@ -78,6 +76,7 @@
     "eslint-plugin-storybook": "^0.11.1",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",
+    "lit": "^2.5.0",
     "lit-analyzer": "^2.0.3",
     "lit-css-loader": "^3.0.0",
     "postcss": "^8.4.21",
