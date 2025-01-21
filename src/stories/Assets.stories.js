@@ -137,6 +137,10 @@ const mascotFiles = [
   'tech-issue-2',
   'text-bubble',
   'warning',
+  'kyn-simplified',
+  'kyn-simplified-notification',
+  'kyn-simplified-48px',
+  'kyn-chathead',
 ];
 
 export const Mascot = {
