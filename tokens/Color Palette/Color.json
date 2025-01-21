@@ -773,6 +773,10 @@
         "$type": "color",
         "$value": "#4cdd84"
       },
+      "25": {
+        "$type": "color",
+        "$value": "#00c64a"
+      },
       "30": {
         "$type": "color",
         "$value": "#24c060"
@@ -839,10 +843,6 @@
         "$type": "color",
         "$value": "#48a5da"
       },
-      "55": {
-        "$type": "color",
-        "$value": "#005fea"
-      },
       "60": {
         "$type": "color",
         "$value": "#3a94c6"
@@ -863,6 +863,14 @@
         "$type": "color",
         "$value": "#004765"
       },
+      "110": {
+        "$type": "color",
+        "$value": "#569aff"
+      },
+      "115": {
+        "$type": "color",
+        "$value": "#005fea"
+      },
       "Light": {
         "$type": "color",
         "$value": "#e9f2ff"
@@ -880,6 +888,10 @@
       "10": {
         "$type": "color",
         "$value": "#ffd46a"
+      },
+      "15": {
+        "$type": "color",
+        "$value": "#ffcd03"
       },
       "20": {
         "$type": "color",

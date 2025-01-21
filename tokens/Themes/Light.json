@@ -213,7 +213,7 @@
       },
       "Subtle": {
         "$type": "color",
-        "$value": "{Interactive.5}"
+        "$value": "{Interactive.10}"
       },
       "Secondary": {
         "$type": "color",
@@ -382,7 +382,7 @@
       "Progress": {
         "Complete": {
           "$type": "color",
-          "$value": "{Spruce.30}"
+          "$value": "{Spruce.50}"
         },
         "Active": {
           "$type": "color",
@@ -390,7 +390,7 @@
         },
         "Background": {
           "$type": "color",
-          "$value": "{Interactive.20}"
+          "$value": "{Interactive.70}"
         }
       }
     },
@@ -697,11 +697,11 @@
       },
       "Secondary": {
         "$type": "color",
-        "$value": "{Opacity.Dark.20}"
+        "$value": "{Opacity.Dark.10}"
       },
       "Tertiary": {
         "$type": "color",
-        "$value": "{Opacity.Dark.10}"
+        "$value": "{Opacity.Dark.50}"
       }
     },
     "UI": {
@@ -891,7 +891,7 @@
       },
       "Dark": {
         "$type": "color",
-        "$value": "{Misc.Yellow.Dark}"
+        "$value": "{Misc.Yellow.15}"
       }
     },
     "Error": {
@@ -915,7 +915,17 @@
       },
       "Dark": {
         "$type": "color",
-        "$value": "{Misc.Green.Dark}"
+        "$value": "{Misc.Green.60}"
+      }
+    },
+    "Neutral": {
+      "Light": {
+        "$type": "color",
+        "$value": "{Cool Gray.8}"
+      },
+      "Dark": {
+        "$type": "color",
+        "$value": "{Cool Gray.70}"
       }
     }
   },
@@ -1529,7 +1539,7 @@
       },
       "Default": {
         "$type": "color",
-        "$value": "{Interactive.60}"
+        "$value": "{Interactive.80-primary}"
       },
       "Pressed": {
         "$type": "color",
@@ -1819,7 +1829,7 @@
       },
       "Gray": {
         "$type": "color",
-        "$value": "{Warm Gray.30}"
+        "$value": "{Cool Gray.20}"
       },
       "Error": {
         "$type": "color",
@@ -1832,6 +1842,22 @@
       "Success": {
         "$type": "color",
         "$value": "{Spring Green.10}"
+      },
+      "Blue Dark": {
+        "$type": "color",
+        "$value": "{Misc.Blue.110}"
+      },
+      "Error Dark": {
+        "$type": "color",
+        "$value": "{Misc.Red.60}"
+      },
+      "Warning Dark": {
+        "$type": "color",
+        "$value": "{Misc.Yellow.15}"
+      },
+      "Success Dark": {
+        "$type": "color",
+        "$value": "{Misc.Green.25}"
       }
     }
   }
