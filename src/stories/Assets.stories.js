@@ -2,8 +2,8 @@ import { html } from 'lit-html';
 import { unsafeSVG } from 'lit-html/directives/unsafe-svg.js';
 import copyIcon from '@kyndryl-design-system/shidoka-icons/svg/monochrome/16/copy.svg';
 
-const copyCode = (fileName) => {
-  const code = `import assetName from '@kyndryl-design-system/shidoka-foundation/assets/svg/${fileName}.svg'`;
+const copyCode = (filePath) => {
+  const code = `import assetName from '@kyndryl-design-system/shidoka-foundation/assets/svg/${filePath}'`;
 
   navigator.clipboard.writeText(code);
 };
@@ -95,16 +95,18 @@ export const Logo = {
         </thead>
         <tbody>
           ${logoFiles.map((fileName) => {
+            const filePath = `${fileName}.svg`;
+
             return html`
               <tr>
-                <td>${unsafeSVG(require(`../assets/svg/${fileName}.svg`))}</td>
+                <td>${unsafeSVG(require(`../assets/svg/${filePath}`))}</td>
                 <td>
                   ${fileName}.svg
 
                   <button
                     class="copy-code"
                     title="Copy import path"
-                    @click=${() => copyCode(fileName)}
+                    @click=${() => copyCode(filePath)}
                   >
                     ${unsafeSVG(copyIcon)}
                   </button>
@@ -138,7 +140,16 @@ const mascotFiles = [
 ];
 
 export const Mascot = {
-  render: () => {
+  argTypes: {
+    color: {
+      options: ['default', 'spruce', 'purple'],
+      control: { type: 'select' },
+    },
+  },
+  args: {
+    color: 'default',
+  },
+  render: (args) => {
     return html`
       <table class="icons">
         <thead>
@@ -149,18 +160,22 @@ export const Mascot = {
         </thead>
         <tbody>
           ${mascotFiles.map((fileName) => {
+            let filePath = `mascot/${fileName}`;
+            if (args.color !== 'default') {
+              filePath += `-${args.color}`;
+            }
+            filePath += '.svg';
+
             return html`
               <tr>
+                <td>${unsafeSVG(require(`../assets/svg/${filePath}`))}</td>
                 <td>
-                  ${unsafeSVG(require(`../assets/svg/mascot/${fileName}.svg`))}
-                </td>
-                <td>
-                  mascot/${fileName}.svg
+                  ${filePath}
 
                   <button
                     class="copy-code"
                     title="Copy import path"
-                    @click=${() => copyCode(`mascot/${fileName}`)}
+                    @click=${() => copyCode(filePath)}
                   >
                     ${unsafeSVG(copyIcon)}
                   </button>
