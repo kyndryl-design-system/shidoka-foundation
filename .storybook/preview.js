@@ -1,7 +1,7 @@
 import DocumentationTemplate from './DocumentationTemplate.mdx';
 import { setCustomElementsManifest } from '@storybook/web-components';
 import { withThemeByDataAttribute } from '@storybook/addon-themes';
-import customElements from '../custom-elements.json';
+// import customElements from '../custom-elements.json';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import { BREAKPOINT_VIEWPORTS } from '../src/common/helpers/breakpoints';
 
@@ -51,4 +51,4 @@ export default {
   tags: ['autodocs'],
 };
 
-setCustomElementsManifest(customElements);
+// setCustomElementsManifest(customElements);
