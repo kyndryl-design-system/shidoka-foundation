@@ -89,7 +89,7 @@ export const Logo = {
       <table class="icons">
         <thead>
           <tr>
-            <th>Icon</th>
+            <th>Image</th>
             <th>filename</th>
           </tr>
         </thead>
@@ -158,7 +158,7 @@ export const Mascot = {
       <table class="icons">
         <thead>
           <tr>
-            <th>Icon</th>
+            <th>Image</th>
             <th>filename</th>
           </tr>
         </thead>
