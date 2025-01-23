@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48">
+  <g clip-path="url(#kyn-simplified-notification__a)">
+    <path fill="#FFD52C" fill-rule="evenodd" d="M12.284 12.116 9 7.095 10.674 6l3.284 5.022-1.674 1.094Z" clip-rule="evenodd"/>
+    <path fill="#29707A" fill-rule="evenodd" d="M14 10C8.477 10 4 14.477 4 20v12c0 5.523 4.477 10 10 10h13.429l2.714 3.8a1 1 0 0 0 1.655-.04l2.418-3.762C39.639 41.883 44 37.45 44 32V20c0-5.523-4.477-10-10-10H14Z" clip-rule="evenodd"/>
+    <circle cx="9" cy="5" r="3" fill="#FFD52C"/>
+    <rect width="3" height="3" x="13" y="37" fill="#FFD52C" rx="1"/>
+    <path fill="#fff" fill-rule="evenodd" d="M16 15a6 6 0 0 0-6 6v8a6 6 0 0 0 6 6h16a6 6 0 0 0 6-6v-8a6 6 0 0 0-6-6H16Zm1 10c1.657 0 3-1.567 3-3.5S18.657 18 17 18s-3 1.567-3 3.5 1.343 3.5 3 3.5Zm17-3.5c0 1.933-1.343 3.5-3 3.5s-3-1.567-3-3.5 1.343-3.5 3-3.5 3 1.567 3 3.5Zm-13.113 6.038a1 1 0 1 0-1.773.925c.71 1.36 2.165 2.957 4.015 3.412a4.107 4.107 0 0 0 3.041-.414c1.003-.558 1.91-1.54 2.705-2.976a1 1 0 1 0-1.75-.97c-.678 1.227-1.35 1.878-1.926 2.198a2.11 2.11 0 0 1-1.591.22c-1.098-.27-2.168-1.334-2.721-2.395Z" clip-rule="evenodd"/>
+    <rect width="3" height="3" x="17" y="37" fill="#FF8419" rx="1"/>
+    <g filter="url(#kyn-simplified-notification__b)">
+      <rect width="21" height="20" x="27" fill="#29707A" rx="10" shape-rendering="crispEdges"/>
+      <rect width="19" height="18" x="28" y="1" stroke="#fff" stroke-width="2" rx="9" shape-rendering="crispEdges"/>
+      <path fill="#fff" d="M36.285 9.084h.867c.438-.004.783-.117 1.038-.34.257-.223.386-.545.386-.967 0-.406-.107-.72-.322-.943-.211-.227-.535-.34-.973-.34-.383 0-.697.111-.943.334-.246.219-.37.506-.37.861h-1.423c0-.437.115-.835.346-1.195.234-.36.558-.639.972-.838a3.161 3.161 0 0 1 1.4-.304c.852 0 1.52.214 2.005.644.488.426.732 1.02.732 1.781 0 .383-.123.744-.37 1.084-.241.336-.556.59-.943.762.47.16.825.412 1.067.756.246.344.369.754.369 1.23 0 .766-.264 1.375-.791 1.829-.523.453-1.213.68-2.068.68-.82 0-1.492-.22-2.016-.657-.523-.438-.785-1.02-.785-1.746h1.424c0 .375.125.68.375.914.254.234.593.351 1.02.351.44 0 .788-.117 1.042-.351.254-.234.381-.574.381-1.02 0-.449-.133-.794-.398-1.037-.266-.242-.66-.363-1.184-.363h-.838V9.084Z"/>
+    </g>
+  </g>
+  <defs>
+    <clipPath id="kyn-simplified-notification__a">
+      <path fill="#fff" d="M0 0h48v48H0z"/>
+    </clipPath>
+    <filter id="kyn-simplified-notification__b" width="25" height="24" x="25" y="-1" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="1"/>
+      <feGaussianBlur stdDeviation="1"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix values="0 0 0 0 0.239216 0 0 0 0 0.235294 0 0 0 0 0.235294 0 0 0 0.25 0"/>
+      <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_5072_6879"/>
+      <feBlend in="SourceGraphic" in2="effect1_dropShadow_5072_6879" result="shape"/>
+    </filter>
+  </defs>
+</svg>
