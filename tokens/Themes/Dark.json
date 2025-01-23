@@ -413,6 +413,42 @@
           "$value": "{Opacity.Dark.30}"
         }
       }
+    },
+    "Menu": {
+      "State": {
+        "Default": {
+          "$type": "color",
+          "$value": "{Interactive.115}"
+        },
+        "Focused": {
+          "$type": "color",
+          "$value": "{Interactive.115}"
+        },
+        "Hover": {
+          "$type": "color",
+          "$value": "{Interactive.107}"
+        },
+        "Pressed": {
+          "$type": "color",
+          "$value": "{Interactive.120}"
+        },
+        "Open": {
+          "$type": "color",
+          "$value": "{Interactive.100}"
+        },
+        "Disabled": {
+          "$type": "color",
+          "$value": "{Interactive.115}"
+        },
+        "Category": {
+          "$type": "color",
+          "$value": "{Interactive.115}"
+        },
+        "Active": {
+          "$type": "color",
+          "$value": "{Interactive.110}"
+        }
+      }
     }
   },
   "Text": {
@@ -743,7 +779,7 @@
       },
       "Default": {
         "$type": "color",
-        "$value": "{Dark Stone.70}"
+        "$value": "{Dark Stone.60}"
       },
       "Clickable": {
         "$type": "color",
@@ -897,7 +933,7 @@
     "Error": {
       "Light": {
         "$type": "color",
-        "$value": "{Misc.Red.40}"
+        "$value": "{Misc.Red.30}"
       },
       "Dark": {
         "$type": "color",
@@ -915,7 +951,7 @@
       },
       "Dark": {
         "$type": "color",
-        "$value": "{Misc.Green.60}"
+        "$value": "{Misc.Green.30}"
       }
     },
     "Neutral": {
@@ -1739,7 +1775,7 @@
       },
       "Success": {
         "$type": "color",
-        "$value": "{Misc.Green.Dark}"
+        "$value": "{Misc.Green.10}"
       },
       "Warning": {
         "$type": "color",
@@ -1755,7 +1791,7 @@
       },
       "Spruce": {
         "$type": "color",
-        "$value": "{Spruce.30}"
+        "$value": "{Spruce.20}"
       },
       "Cat 2": {
         "$type": "color",
@@ -1775,19 +1811,23 @@
       },
       "Cat 6": {
         "$type": "color",
-        "$value": "{Magenta.30}"
+        "$value": "{Magenta.15}"
       },
       "Blue": {
         "$type": "color",
-        "$value": "{Misc.Blue.Dark}"
+        "$value": "{Misc.Blue.10}"
       },
       "Gray": {
         "$type": "color",
-        "$value": "{Cool Gray.80}"
+        "$value": "{Cool Gray.10}"
       },
       "Disabled": {
         "$type": "color",
         "$value": "{Warm Gray.80}"
+      },
+      "Error Dark": {
+        "$type": "color",
+        "$value": "{Status.Error.Dark}"
       }
     },
     "Hover": {
@@ -1821,11 +1861,11 @@
       },
       "Spruce": {
         "$type": "color",
-        "$value": "{Spruce.40}"
+        "$value": "{Spruce.30}"
       },
       "Blue": {
         "$type": "color",
-        "$value": "{Misc.Blue.115}"
+        "$value": "{Misc.Blue.20}"
       },
       "Gray": {
         "$type": "color",
@@ -1841,7 +1881,7 @@
       },
       "Success": {
         "$type": "color",
-        "$value": "{Spring Green.50}"
+        "$value": "{Spring Green.20}"
       },
       "Blue Dark": {
         "$type": "color",

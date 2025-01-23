@@ -413,6 +413,42 @@
           "$value": "{Opacity.Dark.30}"
         }
       }
+    },
+    "Menu": {
+      "State": {
+        "Default": {
+          "$type": "color",
+          "$value": "{Interactive.5}"
+        },
+        "Focused": {
+          "$type": "color",
+          "$value": "{Interactive.5}"
+        },
+        "Hover": {
+          "$type": "color",
+          "$value": "{Interactive.80-primary}"
+        },
+        "Pressed": {
+          "$type": "color",
+          "$value": "{Interactive.110}"
+        },
+        "Open": {
+          "$type": "color",
+          "$value": "{Interactive.100}"
+        },
+        "Disabled": {
+          "$type": "color",
+          "$value": "{Interactive.5}"
+        },
+        "Category": {
+          "$type": "color",
+          "$value": "{Interactive.5}"
+        },
+        "Active": {
+          "$type": "color",
+          "$value": "{Interactive.100}"
+        }
+      }
     }
   },
   "Text": {
@@ -743,7 +779,7 @@
       },
       "Default": {
         "$type": "color",
-        "$value": "{Dark Stone.20}"
+        "$value": "{Dark Stone.40}"
       },
       "Clickable": {
         "$type": "color",
@@ -1755,7 +1791,7 @@
       },
       "Spruce": {
         "$type": "color",
-        "$value": "{Spruce.20}"
+        "$value": "{Spruce.10}"
       },
       "Cat 2": {
         "$type": "color",
@@ -1788,6 +1824,10 @@
       "Disabled": {
         "$type": "color",
         "$value": "{Warm Gray.10}"
+      },
+      "Error Dark": {
+        "$type": "color",
+        "$value": "{Status.Error.Dark}"
       }
     },
     "Hover": {
@@ -1821,7 +1861,7 @@
       },
       "Spruce": {
         "$type": "color",
-        "$value": "{Spruce.30}"
+        "$value": "{Spruce.20}"
       },
       "Blue": {
         "$type": "color",
