@@ -9,7 +9,7 @@ export default {
         <style>
           .layout-examples .aspect-ratio-box {
             width: 500px;
-            background: var(--kd-color-background-ui-subtle);
+            background: var(--kd-color-background-container-subtle);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -17,7 +17,7 @@ export default {
 
           .layout-examples .object-fit-box {
             max-width: 500px;
-            border: 1px solid var(--kd-color-background-secondary);
+            border: 1px solid var(--kd-color-border-level-primary);
           }
         </style>
         ${story()}

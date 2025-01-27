@@ -8,7 +8,7 @@ export default {
         <style>
           .storybook-visibility-example {
             align-items: center;
-            background: var(--kd-color-cloud-10);
+            background: var(--kd-color-background-container-soft);
             display: flex;
             margin: 16px;
             min-height: 4em;
