@@ -135,7 +135,7 @@ export const Spacing = {
           background: #aaffaa;
         }
         .inner-container {
-          background: #fff;
+          background: var(--kd-color-background-container-soft);
         }
       </style>
       <div class="outer-container">
