@@ -48,7 +48,7 @@ export default {
 
           .storybook-grid-example .kd-grid > div {
             text-align: center;
-            border: 1px solid lightgray;
+            border: 1px solid var(--kd-color-border-variants-light);
             padding: 16px;
           }
         </style>
