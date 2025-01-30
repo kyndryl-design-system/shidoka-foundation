@@ -779,7 +779,7 @@
       },
       "Default": {
         "$type": "color",
-        "$value": "{Dark Stone.40}"
+        "$value": "{Dark Stone.50}"
       },
       "Clickable": {
         "$type": "color",
