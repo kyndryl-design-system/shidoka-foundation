@@ -1863,7 +1863,7 @@
       },
       "Error Dark": {
         "$type": "color",
-        "$value": "{Status.Error.Dark}"
+        "$value": "{Misc.Red.80}"
       }
     },
     "Hover": {
