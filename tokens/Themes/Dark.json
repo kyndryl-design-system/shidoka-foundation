@@ -98,10 +98,6 @@
           "Pressed": {
             "$type": "color",
             "$value": "{Spruce.70}"
-          },
-          "Focused": {
-            "$type": "color",
-            "$value": "{Spruce.50}"
           }
         },
         "Destructive": {
@@ -116,20 +112,12 @@
           "Pressed": {
             "$type": "color",
             "$value": "{Misc.Red.60}"
-          },
-          "Focused": {
-            "$type": "color",
-            "$value": "{Misc.Red.60}"
           }
         },
         "Ai": {
           "Default": {
             "$type": "color",
             "$value": "{Magenta.40}"
-          },
-          "Focused": {
-            "$type": "color",
-            "$value": "{Magenta.70}"
           },
           "Hover": {
             "$type": "color",
@@ -168,10 +156,6 @@
           "Pressed": {
             "$type": "color",
             "$value": "{Spruce.80}"
-          },
-          "Focused": {
-            "$type": "color",
-            "$value": "{Spruce.70}"
           }
         },
         "Destructive": {
@@ -181,15 +165,11 @@
           },
           "Hover": {
             "$type": "color",
-            "$value": "{Misc.Red.80}"
+            "$value": "{Misc.Red.60}"
           },
           "Default": {
             "$type": "color",
             "$value": "{Misc.Red.90}"
-          },
-          "Focused": {
-            "$type": "color",
-            "$value": "{Misc.Red.40}"
           }
         },
         "Ai": {
@@ -197,13 +177,9 @@
             "$type": "color",
             "$value": "{Magenta.80}"
           },
-          "Focused": {
-            "$type": "color",
-            "$value": "{Magenta.100}"
-          },
           "Hover": {
             "$type": "color",
-            "$value": "{Magenta.80}"
+            "$value": "{Magenta.90}"
           },
           "Pressed": {
             "$type": "color",
@@ -221,13 +197,21 @@
             "$type": "color",
             "$value": "{Spruce.100}"
           },
-          "Focused": {
-            "$type": "color",
-            "$value": "{Spruce.70}"
-          },
           "Default": {
             "$type": "color",
             "$value": "{Spruce.90}"
+          }
+        }
+      },
+      "Ghost": {
+        "State": {
+          "Hover": {
+            "$type": "color",
+            "$value": "{Interactive.80-primary}"
+          },
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Interactive.110}"
           }
         }
       }
@@ -614,7 +598,7 @@
       "Light": {
         "Primary": {
           "$type": "color",
-          "$value": "{Spruce.20}"
+          "$value": "{Interactive.10}"
         },
         "Destructive": {
           "$type": "color",
