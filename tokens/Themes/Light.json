@@ -117,7 +117,7 @@
         "Ai": {
           "Default": {
             "$type": "color",
-            "$value": "{Magenta.40}"
+            "$value": "{Magenta.45}"
           },
           "Hover": {
             "$type": "color",
@@ -147,15 +147,15 @@
         "State": {
           "Default": {
             "$type": "color",
-            "$value": "{Spruce.30}"
+            "$value": "{Interactive.95}"
           },
           "Hover": {
             "$type": "color",
-            "$value": "{Spruce.40}"
+            "$value": "{Interactive.110}"
           },
           "Pressed": {
             "$type": "color",
-            "$value": "{Spruce.60}"
+            "$value": "{Interactive.115}"
           }
         },
         "Destructive": {
