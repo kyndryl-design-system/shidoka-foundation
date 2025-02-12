@@ -16,6 +16,12 @@
     max-width: none;
   }
 
+  &--full-bleed {
+    max-width: none;
+    margin-left: var(--kd-page-gutter-negative);
+    margin-right: var(--kd-page-gutter-negative);
+  }
+
   // generate sm classes
   @for $i from 1 through 4 {
     &__col--sm-#{$i} {

@@ -1,6 +1,11 @@
 @use '../variables/breakpoints.scss';
 
-@mixin grid($align-left: false, $no-max: false, $no-gap: false) {
+@mixin grid(
+  $align-left: false,
+  $no-max: false,
+  $no-gap: false,
+  $full-bleed: false
+) {
   display: grid;
   grid-template-columns: repeat(4, 1fr); // 4 cols at sm
   gap: var(--kd-grid-gap);
@@ -18,6 +23,12 @@
 
   @if $align-left {
     margin: 0;
+  }
+
+  @if $full-bleed {
+    max-width: none;
+    margin-left: var(--kd-page-gutter-negative);
+    margin-right: var(--kd-page-gutter-negative);
   }
 
   @media (min-width: breakpoints.$bp-md) {

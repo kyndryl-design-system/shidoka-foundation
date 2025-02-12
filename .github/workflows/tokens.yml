@@ -1,0 +1,34 @@
+name: update-tokens
+on:
+  push:
+    branches:
+      - tokens
+    paths:
+      - 'tokens/**'
+  workflow_dispatch:
+env:
+  GH_TOKEN: '${{ secrets.GH_TOKEN }}'
+  COMMIT_MSG: 'fix(tokens): automated token update'
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Use Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+      - name: Build css variables
+        run: npm run build:tokens
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: ${{ env.COMMIT_MSG }}
+      - name: Create pull request
+        continue-on-error: true
+        run: gh pr create --base main --head tokens --title '${{ env.COMMIT_MSG }}' --body 'Created by the update-tokens GitHub Actions workflow'

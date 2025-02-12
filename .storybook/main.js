@@ -8,7 +8,7 @@ export default {
     '@storybook/addon-essentials',
     '@storybook/addon-designs',
     '@storybook/addon-storysource',
-    'storybook-addon-themes',
+    '@storybook/addon-themes',
     {
       name: '@storybook/addon-docs',
       options: {
@@ -75,9 +75,7 @@ export default {
   core: {
     disableTelemetry: true,
   },
-  docs: {
-    autodocs: true,
-  },
+  docs: {},
   staticDirs: ['./static'],
   async babel(options) {
     options.presets = ['@babel/preset-react'];

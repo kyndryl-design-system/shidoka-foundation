@@ -1,0 +1,26 @@
+import { Meta, Story, Canvas, Controls, Stories } from '@storybook/blocks';
+import * as AssetsStories from './Assets.stories.js';
+
+<Meta title="Foundation/Icons" of={AssetsStories} />
+
+# Image Assets
+
+<br />
+
+## Usage
+
+It is recommended to use an SVG loader to inject the SVG as inline HTML into your app. More info on SVG loaders can be found in the [Shidoka Icons repo](https://github.com/kyndryl-design-system/shidoka-icons?tab=readme-ov-file#set-up-an-svg-inline-loader).
+
+### Example Import
+
+```js
+import iconName from '@kyndryl-design-system/shidoka-foundation/assets/svg/<filename>';
+```
+
+The method for placing them in your app at this point will vary based on the framework/loader.
+
+<br />
+
+### Gallery
+
+<Stories />

@@ -1,6 +1,7 @@
 import DocumentationTemplate from './DocumentationTemplate.mdx';
 import { setCustomElementsManifest } from '@storybook/web-components';
-import customElements from '../custom-elements.json';
+import { withThemeByDataAttribute } from '@storybook/addon-themes';
+// import customElements from '../custom-elements.json';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import { BREAKPOINT_VIEWPORTS } from '../src/common/helpers/breakpoints';
 
@@ -33,6 +34,21 @@ export default {
       },
     },
   },
+
+  decorators: [
+    withThemeByDataAttribute({
+      themes: {
+        light: 'light',
+        dark: 'dark',
+        auto: 'light dark',
+      },
+      defaultTheme: 'auto',
+      parentSelector: 'head meta[name="color-scheme"]',
+      attributeName: 'content',
+    }),
+  ],
+
+  tags: ['autodocs'],
 };
 
-setCustomElementsManifest(customElements);
+// setCustomElementsManifest(customElements);
