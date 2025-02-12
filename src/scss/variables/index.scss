@@ -1,9 +1,9 @@
 @use 'typography.scss';
-@use 'colors.scss';
+@use 'colorPalette.scss';
+@use 'colorSemantic.scss';
 @use 'spacing.scss';
 @use 'layers.scss';
 @use 'breakpoints.scss';
 @use 'grid.scss';
 @use 'elevation.scss';
 @use 'misc.scss';
-@use 'dataviz_colors.scss';

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ad8bc00e9739297f43e9b6faad4d2231818a244b",
+    "name": "Dark Mode",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {},
+    "group": "Modes"
+  },
+  {
+    "id": "c8217a802c5f2e4e51069c6ea27d6ecfd625b9c9",
+    "name": "Light Mode",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {},
+    "group": "Modes"
+  }
+]

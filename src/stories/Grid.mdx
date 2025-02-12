@@ -25,14 +25,6 @@ import * as GridStories from './Grid.stories.js';
 
 <Controls of={GridStories.Grid} />
 
-## Page Gutter
-
-A page gutter should be applied once globally in the application on the `<body>` tag or similar, or by using the shidoka-applications [UI Shell component](https://shidoka-applications.netlify.app/?path=/docs/global-components-ui-shell--docs).
-
-| Utility Class           | CSS Variable     |
-| ----------------------- | ---------------- |
-| kd-spacing--page-gutter | --kd-page-gutter |
-
 ## Usage
 
 ### SCSS Mixins
@@ -41,7 +33,12 @@ A page gutter should be applied once globally in the application on the `<body>`
 @use '@kyndryl-design-system/shidoka-foundation/scss/mixins/grid.scss';
 
 .your-css-selector {
-  @include grid.grid($align-left: false, $no-max: false, $no-gap: false);
+  @include grid.grid(
+    $align-left: false,
+    $no-max: false,
+    $no-gap: false,
+    $full-bleed: false
+  );
 }
 
 .your-child-css-selector {
@@ -104,3 +101,13 @@ kd-grid__col--${breakpoint}-${num_cols}
 | Left align grid container       | kd-grid--align-left |
 | Remove grid container max-width | kd-grid--no-max     |
 | Remove column gap               | kd-grid--no-gap     |
+| Full bleed/override page gutter | kd-grid--full-bleed |
+
+## Page Gutter
+
+A page gutter should be applied once globally in the application on the `<body>` tag or similar, or by using the shidoka-applications [UI Shell component](https://shidoka-applications.netlify.app/?path=/docs/global-components-ui-shell--docs). There is also an option to negate the page gutter if you need to make an element "full bleed".
+
+| Utility Class                    | CSS Variable              | Value                                      |
+| -------------------------------- | ------------------------- | ------------------------------------------ |
+| kd-spacing--page-gutter          | --kd-page-gutter          | padding-left/right: 16px @ sm, 32px @ md+  |
+| kd-spacing--page-gutter-negative | --kd-page-gutter-negative | margin-left/right: -16px @ sm, -32px @ md+ |

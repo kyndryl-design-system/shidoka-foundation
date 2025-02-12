@@ -1,0 +1,1940 @@
+{
+  "Background": {
+    "Container": {
+      "Default": {
+        "$type": "color",
+        "$value": "{Interactive.5}"
+      },
+      "Subtle": {
+        "$type": "color",
+        "$value": "{Dark Stone.20}"
+      },
+      "Bold": {
+        "$type": "color",
+        "$value": "{Dark Stone.50}"
+      },
+      "Soft": {
+        "$type": "color",
+        "$value": "{Warm Gray.10}"
+      },
+      "Footer": {
+        "$type": "color",
+        "$value": "{Interactive.15}"
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": "{Cool Gray.5}"
+      },
+      "Ai Default": {
+        "$type": "color",
+        "$value": "{Magenta.01}"
+      },
+      "Ai Subtle": {
+        "$type": "color",
+        "$value": "{Neutral.White}"
+      }
+    },
+    "UI": {
+      "Default": {
+        "Dark": {
+          "$type": "color",
+          "$value": "{Dark Stone.80}"
+        },
+        "Brand": {
+          "$type": "color",
+          "$value": "{Warm Red.50-brand}"
+        },
+        "Default": {
+          "$type": "color",
+          "$value": "{Dark Stone.50}"
+        },
+        "Hover": {
+          "$type": "color",
+          "$value": "{Interactive.60}"
+        },
+        "Pressed": {
+          "$type": "color",
+          "$value": "{Interactive.70}"
+        },
+        "Focus": {
+          "$type": "color",
+          "$value": "{Interactive.60}"
+        },
+        "Disabled": {
+          "$type": "color",
+          "$value": "{Opacity.Dark.5}"
+        },
+        "Secondary": {
+          "$type": "color",
+          "$value": "{Interactive.60}"
+        }
+      },
+      "Hollow": {
+        "Default": {
+          "$type": "color",
+          "$value": "{Neutral.White}"
+        },
+        "Hover": {
+          "$type": "color",
+          "$value": "{Interactive.10}"
+        },
+        "Pressed": {
+          "$type": "color",
+          "$value": "{Interactive.20}"
+        }
+      }
+    },
+    "Button": {
+      "Primary": {
+        "State": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Spruce.50}"
+          },
+          "Hover": {
+            "$type": "color",
+            "$value": "{Spruce.70}"
+          },
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Spruce.80}"
+          }
+        },
+        "Destructive": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Misc.Red.Dark}"
+          },
+          "Hover": {
+            "$type": "color",
+            "$value": "{Misc.Red.70}"
+          },
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Misc.Red.100}"
+          }
+        },
+        "Ai": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Magenta.45}"
+          },
+          "Hover": {
+            "$type": "color",
+            "$value": "{Magenta.70}"
+          },
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Magenta.60}"
+          }
+        }
+      },
+      "Web": {
+        "Default": {
+          "$type": "color",
+          "$value": "{Dark Stone.80}"
+        },
+        "Hover": {
+          "$type": "color",
+          "$value": "{Dark Stone.60}"
+        },
+        "Pressed": {
+          "$type": "color",
+          "$value": "{Dark Stone.100}"
+        }
+      },
+      "Secondary": {
+        "State": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Interactive.95}"
+          },
+          "Hover": {
+            "$type": "color",
+            "$value": "{Interactive.110}"
+          },
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Interactive.115}"
+          }
+        },
+        "Destructive": {
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Misc.Red.40}"
+          },
+          "Hover": {
+            "$type": "color",
+            "$value": "{Misc.Red.60}"
+          },
+          "Default": {
+            "$type": "color",
+            "$value": "{Misc.Red.10}"
+          }
+        },
+        "Ai": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Magenta.01}"
+          },
+          "Hover": {
+            "$type": "color",
+            "$value": "{Magenta.10}"
+          },
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Magenta.30}"
+          }
+        }
+      },
+      "Tertiary": {
+        "State": {
+          "Hover": {
+            "$type": "color",
+            "$value": "{Spruce.20}"
+          },
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Spruce.30}"
+          },
+          "Default": {
+            "$type": "color",
+            "$value": "{Spruce.10}"
+          }
+        }
+      },
+      "Ghost": {
+        "State": {
+          "Hover": {
+            "$type": "color",
+            "$value": "{Interactive.20}"
+          },
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Interactive.80-primary}"
+          }
+        }
+      }
+    },
+    "Accent": {
+      "Subtle": {
+        "$type": "color",
+        "$value": "{Interactive.10}"
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": "{Interactive.60}"
+      },
+      "Tertiary": {
+        "$type": "color",
+        "$value": "{Dark Stone.20}"
+      },
+      "Light": {
+        "$type": "color",
+        "$value": "{Interactive.10}"
+      }
+    },
+    "Opacity": {
+      "1": {
+        "$type": "color",
+        "$value": "{Opacity.Dark.3}"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "{Opacity.Dark.2}"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "{Opacity.Dark.3}"
+      },
+      "4": {
+        "$type": "color",
+        "$value": "{Opacity.Dark.40}"
+      },
+      "8": {
+        "$type": "color",
+        "$value": "{Opacity.Light.86}"
+      },
+      "Disabled": {
+        "$type": "color",
+        "$value": "{Opacity.Dark.3}"
+      }
+    },
+    "Forms": {
+      "Secondary": {
+        "$type": "color",
+        "$value": "{Interactive.5}"
+      },
+      "Default": {
+        "$type": "color",
+        "$value": "{Cool Gray.5}"
+      }
+    },
+    "Table": {
+      "row-active": {
+        "$type": "color",
+        "$value": "{Interactive.10}"
+      },
+      "alt-row": {
+        "$type": "color",
+        "$value": "{Cool Gray.7}"
+      },
+      "footer": {
+        "$type": "color",
+        "$value": "{Cool Gray.10}"
+      },
+      "row": {
+        "$type": "color",
+        "$value": "{Cool Gray.3}"
+      },
+      "row-active-nested": {
+        "$type": "color",
+        "$value": "{Cool Gray.3}"
+      },
+      "header": {
+        "$type": "color",
+        "$value": "{Cool Gray.10}"
+      }
+    },
+    "Page": {
+      "Overlay": {
+        "$type": "color",
+        "$value": "{Opacity.Light.50}"
+      },
+      "Default": {
+        "$type": "color",
+        "$value": "{Cool Gray.3}"
+      }
+    },
+    "Logo": {
+      "Bridge-txt": {
+        "$type": "color",
+        "$value": "{Spruce.60}"
+      }
+    },
+    "Navigation": {
+      "local-nav": {
+        "$type": "color",
+        "$value": "{Cool Gray.5}"
+      },
+      "footer": {
+        "$type": "color",
+        "$value": "{Cool Gray.10}"
+      },
+      "default": {
+        "$type": "color",
+        "$value": "{Cool Gray.10}"
+      }
+    },
+    "Gradients": {
+      "Interactive Gradient End": {
+        "$type": "color",
+        "$value": "{Cool Gray.10}"
+      },
+      "Interactive Gradient Start": {
+        "$type": "color",
+        "$value": "{Cool Gray.5}"
+      }
+    },
+    "Card": {
+      "Background": {
+        "$type": "color",
+        "$value": "{Cool Gray.3}"
+      },
+      "Default": {
+        "$type": "color",
+        "$value": "{Cool Gray.5}"
+      },
+      "Hover": {
+        "$type": "color",
+        "$value": "{Cool Gray.7}"
+      }
+    },
+    "Highlight": {
+      "FIll": {
+        "$type": "color",
+        "$value": "{Skye.10}"
+      },
+      "Border": {
+        "$type": "color",
+        "$value": "{Skye.20}"
+      }
+    },
+    "Loader": {
+      "Skeleton": {
+        "Default": {
+          "$type": "color",
+          "$value": "{Dark Stone.20}"
+        },
+        "Secondary": {
+          "$type": "color",
+          "$value": "{Dark Stone.20}"
+        },
+        "Tertiary": {
+          "$type": "color",
+          "$value": "{Dark Stone.10}"
+        }
+      },
+      "Bar": {
+        "Primary": {
+          "$type": "color",
+          "$value": "{Dark Stone.50}"
+        },
+        "Secondary": {
+          "$type": "color",
+          "$value": "{Dark Stone.20}"
+        }
+      },
+      "Progress": {
+        "Complete": {
+          "$type": "color",
+          "$value": "{Spruce.50}"
+        },
+        "Active": {
+          "$type": "color",
+          "$value": "{Interactive.70}"
+        },
+        "Background": {
+          "$type": "color",
+          "$value": "{Interactive.70}"
+        }
+      }
+    },
+    "Link": {
+      "Level": {
+        "Default-Light": {
+          "$type": "color",
+          "$value": "{Interactive.70}"
+        },
+        "Hover-Light": {
+          "$type": "color",
+          "$value": "{Interactive.60}"
+        },
+        "Pressed-Light": {
+          "$type": "color",
+          "$value": "{Interactive.95}"
+        },
+        "Disabled-Light": {
+          "$type": "color",
+          "$value": "{Opacity.Dark.30}"
+        }
+      }
+    },
+    "Menu": {
+      "State": {
+        "Default": {
+          "$type": "color",
+          "$value": "{Interactive.5}"
+        },
+        "Focused": {
+          "$type": "color",
+          "$value": "{Interactive.5}"
+        },
+        "Hover": {
+          "$type": "color",
+          "$value": "{Interactive.80-primary}"
+        },
+        "Pressed": {
+          "$type": "color",
+          "$value": "{Interactive.110}"
+        },
+        "Open": {
+          "$type": "color",
+          "$value": "{Interactive.100}"
+        },
+        "Disabled": {
+          "$type": "color",
+          "$value": "{Interactive.5}"
+        },
+        "Category": {
+          "$type": "color",
+          "$value": "{Interactive.5}"
+        },
+        "Active": {
+          "$type": "color",
+          "$value": "{Interactive.100}"
+        }
+      }
+    }
+  },
+  "Text": {
+    "Level": {
+      "Primary": {
+        "$type": "color",
+        "$value": "{Dark Stone.80}"
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": "{Dark Stone.60}"
+      },
+      "Tertiary": {
+        "$type": "color",
+        "$value": "{Interactive.90}"
+      },
+      "Tertiary-bold": {
+        "$type": "color",
+        "$value": "{Spruce.80}"
+      },
+      "Dark": {
+        "$type": "color",
+        "$value": "{Dark Stone.80}"
+      },
+      "Light": {
+        "$type": "color",
+        "$value": "{Dark Stone.10}"
+      },
+      "Disabled": {
+        "$type": "color",
+        "$value": "{Dark Stone.40}"
+      }
+    },
+    "Variant": {
+      "Brand": {
+        "$type": "color",
+        "$value": "{Warm Red.50-brand}"
+      },
+      "Inversed": {
+        "$type": "color",
+        "$value": "{Neutral.White}"
+      },
+      "Eyebrow": {
+        "$type": "color",
+        "$value": "{Spruce.50}"
+      },
+      "Destructive": {
+        "$type": "color",
+        "$value": "{Misc.Red.Dark}"
+      },
+      "Placeholder": {
+        "$type": "color",
+        "$value": "{Dark Stone.50}"
+      }
+    },
+    "Link": {
+      "Level": {
+        "Default": {
+          "$type": "color",
+          "$value": "{Interactive.90}"
+        },
+        "Hover": {
+          "$type": "color",
+          "$value": "{Interactive.80-primary}"
+        },
+        "Pressed": {
+          "$type": "color",
+          "$value": "{Interactive.95}"
+        },
+        "Disabled": {
+          "$type": "color",
+          "$value": "{Opacity.Dark.30}"
+        }
+      }
+    },
+    "Label": {
+      "Light Label": {
+        "$type": "color",
+        "$value": "{Dark Stone.10}"
+      },
+      "Dark Label": {
+        "$type": "color",
+        "$value": "{Cool Gray.85}"
+      }
+    },
+    "Title": {
+      "Tertiary": {
+        "$type": "color",
+        "$value": "{Spruce.50}"
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": "{Spruce.40}"
+      },
+      "Primary": {
+        "$type": "color",
+        "$value": "{Spruce.40}"
+      },
+      "Ai Primary": {
+        "$type": "color",
+        "$value": "{Magenta.80}"
+      },
+      "Ai Secondary": {
+        "$type": "color",
+        "$value": "{Magenta.60}"
+      },
+      "Ai Tertiary": {
+        "$type": "color",
+        "$value": "{Magenta.40}"
+      }
+    },
+    "Forms": {
+      "Input Field Text": {
+        "$type": "color",
+        "$value": "{Dark Stone.80}"
+      },
+      "Label-Secondary": {
+        "$type": "color",
+        "$value": "{Dark Stone.60}"
+      },
+      "Label-Primary": {
+        "$type": "color",
+        "$value": "{Dark Stone.80}"
+      }
+    },
+    "Density": {
+      "Medium": {
+        "$type": "color",
+        "$value": "{Cool Gray.85}"
+      },
+      "Dark": {
+        "$type": "color",
+        "$value": "{Cool Gray.90}"
+      },
+      "Light": {
+        "$type": "color",
+        "$value": "{Cool Gray.8}"
+      }
+    },
+    "Button": {
+      "Light": {
+        "Primary": {
+          "$type": "color",
+          "$value": "{Interactive.110}"
+        },
+        "Destructive": {
+          "$type": "color",
+          "$value": "{Misc.Red.Dark}"
+        },
+        "Secondary": {
+          "$type": "color",
+          "$value": "{Spruce.50}"
+        },
+        "Tertiary": {
+          "$type": "color",
+          "$value": "{Spruce.50}"
+        },
+        "Disabled": {
+          "$type": "color",
+          "$value": "{Interactive.90}"
+        }
+      },
+      "Dark": {
+        "Primary": {
+          "$type": "color",
+          "$value": "{Neutral.White}"
+        },
+        "Destructive": {
+          "$type": "color",
+          "$value": "{Misc.Red.Light}"
+        },
+        "Secondary": {
+          "$type": "color",
+          "$value": "{Cool Gray.5}"
+        },
+        "Tertiary": {
+          "$type": "color",
+          "$value": "{Cool Gray.5}"
+        },
+        "Disabled": {
+          "$type": "color",
+          "$value": "{Misc.Red.Light}"
+        }
+      },
+      "Ai": {
+        "Default": {
+          "$type": "color",
+          "$value": "{Magenta.60}"
+        }
+      }
+    }
+  },
+  "Icon": {
+    "Primary": {
+      "$type": "color",
+      "$value": "{Dark Stone.80}"
+    },
+    "Secondary": {
+      "$type": "color",
+      "$value": "{Dark Stone.60}"
+    },
+    "Tertiary": {
+      "$type": "color",
+      "$value": "{Spruce.60}"
+    },
+    "Inverse": {
+      "$type": "color",
+      "$value": "{Neutral.White}"
+    },
+    "Brand": {
+      "$type": "color",
+      "$value": "{Warm Red.50-brand}"
+    },
+    "Disabled": {
+      "$type": "color",
+      "$value": "{Dark Stone.40}"
+    },
+    "Destructive": {
+      "$type": "color",
+      "$value": "{Warm Red.70}"
+    },
+    "switcher-icon": {
+      "$type": "color",
+      "$value": "{Interactive.80-primary}"
+    },
+    "Accent": {
+      "$type": "color",
+      "$value": "{Skye.30}"
+    },
+    "Duotone": {
+      "Primary": {
+        "$type": "color",
+        "$value": "{Cool Gray.80}"
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": "{Warm Red.50-brand}"
+      },
+      "Inverse": {
+        "Primary": {
+          "$type": "color",
+          "$value": "{Dark Stone.10}"
+        },
+        "Secondary": {
+          "$type": "color",
+          "$value": "{Dark Stone.10}"
+        }
+      }
+    },
+    "Dark": {
+      "$type": "color",
+      "$value": "{Dark Stone.80}"
+    },
+    "Light": {
+      "$type": "color",
+      "$value": "{Dark Stone.10}"
+    },
+    "Interactive": {
+      "Primary": {
+        "$type": "color",
+        "$value": "{Spruce.40}"
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": "{Spruce.20}"
+      }
+    }
+  },
+  "Border": {
+    "Variants": {
+      "Light": {
+        "$type": "color",
+        "$value": "{Dark Stone.20}"
+      },
+      "Focus": {
+        "$type": "color",
+        "$value": "{Interactive.80-primary}"
+      },
+      "Destructive": {
+        "$type": "color",
+        "$value": "{Warm Red.70}"
+      },
+      "Brand": {
+        "$type": "color",
+        "$value": "{Warm Red.50-brand}"
+      },
+      "Inverse": {
+        "$type": "color",
+        "$value": "{Neutral.White}"
+      },
+      "Transparent": {
+        "$type": "color",
+        "$value": "{Opacity.Dark.0}"
+      },
+      "Ai": {
+        "$type": "color",
+        "$value": "{Magenta.20}"
+      }
+    },
+    "Level": {
+      "Primary": {
+        "$type": "color",
+        "$value": "{Opacity.Dark.30}"
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": "{Opacity.Dark.10}"
+      },
+      "Tertiary": {
+        "$type": "color",
+        "$value": "{Opacity.Dark.50}"
+      }
+    },
+    "UI": {
+      "Pressed": {
+        "$type": "color",
+        "$value": "{Interactive.80-primary}"
+      },
+      "Default": {
+        "$type": "color",
+        "$value": "{Opacity.Dark.20}"
+      },
+      "Hover": {
+        "$type": "color",
+        "$value": "{Interactive.60}"
+      },
+      "Disabled": {
+        "$type": "color",
+        "$value": "{Opacity.Dark.20}"
+      },
+      "Error": {
+        "$type": "color",
+        "$value": "{Misc.Red.70}"
+      }
+    },
+    "Accent": {
+      "Primary": {
+        "$type": "color",
+        "$value": "{Spring Green.20}"
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": "{Interactive.30}"
+      }
+    },
+    "Card": {
+      "Hover": {
+        "$type": "color",
+        "$value": "{Cool Gray.7}"
+      },
+      "Default": {
+        "$type": "color",
+        "$value": "{Dark Stone.50}"
+      },
+      "Clickable": {
+        "$type": "color",
+        "$value": "{Interactive.80-primary}"
+      }
+    },
+    "Forms": {
+      "Default": {
+        "$type": "color",
+        "$value": "{Dark Stone.50}"
+      }
+    },
+    "Button": {
+      "Primary": {
+        "Destructive": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Warm Red.80}"
+          },
+          "Hover": {
+            "$type": "color",
+            "$value": "{Warm Red.70}"
+          },
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Warm Red.90}"
+          },
+          "Focused": {
+            "$type": "color",
+            "$value": "{Warm Red.80}"
+          }
+        },
+        "State": {
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Spruce.70}"
+          },
+          "Hover": {
+            "$type": "color",
+            "$value": "{Spruce.60}"
+          },
+          "Focused": {
+            "$type": "color",
+            "$value": "{Spruce.70}"
+          },
+          "Default": {
+            "$type": "color",
+            "$value": "{Spruce.50}"
+          }
+        }
+      },
+      "Secondary": {
+        "State": {
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Spruce.50}"
+          },
+          "Hover": {
+            "$type": "color",
+            "$value": "{Spruce.40}"
+          },
+          "Focused": {
+            "$type": "color",
+            "$value": "{Spruce.50}"
+          },
+          "Default": {
+            "$type": "color",
+            "$value": "{Spruce.30}"
+          }
+        },
+        "Destructive": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Warm Red.80}"
+          },
+          "Hover": {
+            "$type": "color",
+            "$value": "{Warm Red.70}"
+          },
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Warm Red.90}"
+          },
+          "Focused": {
+            "$type": "color",
+            "$value": "{Warm Red.80}"
+          }
+        }
+      },
+      "Tertiary": {
+        "State": {
+          "Hover": {
+            "$type": "color",
+            "$value": "{Spruce.30}"
+          },
+          "Focused": {
+            "$type": "color",
+            "$value": "{Spruce.30}"
+          },
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Spruce.30}"
+          },
+          "Default": {
+            "$type": "color",
+            "$value": "{Spruce.20}"
+          }
+        }
+      },
+      "Ai": {
+        "State": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Magenta.40}"
+          },
+          "Focused": {
+            "$type": "color",
+            "$value": "{Magenta.60}"
+          },
+          "Hover": {
+            "$type": "color",
+            "$value": "{Magenta.70}"
+          },
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Magenta.60}"
+          }
+        }
+      }
+    },
+    "Dropshadow": {
+      "Ai": {
+        "$type": "color",
+        "$value": "{Magenta.10}"
+      }
+    }
+  },
+  "Status": {
+    "Informational": {
+      "Light": {
+        "$type": "color",
+        "$value": "{Misc.Blue.Light}"
+      },
+      "Dark": {
+        "$type": "color",
+        "$value": "{Misc.Blue.Dark}"
+      }
+    },
+    "Warning": {
+      "Light": {
+        "$type": "color",
+        "$value": "{Misc.Yellow.Light}"
+      },
+      "Dark": {
+        "$type": "color",
+        "$value": "{Misc.Yellow.15}"
+      }
+    },
+    "Error": {
+      "Light": {
+        "$type": "color",
+        "$value": "{Misc.Red.10}"
+      },
+      "Dark": {
+        "$type": "color",
+        "$value": "{Misc.Red.80}"
+      },
+      "Accent": {
+        "$type": "color",
+        "$value": "{Misc.Red.Light}"
+      }
+    },
+    "Success": {
+      "Light": {
+        "$type": "color",
+        "$value": "{Misc.Green.Light}"
+      },
+      "Dark": {
+        "$type": "color",
+        "$value": "{Misc.Green.60}"
+      }
+    },
+    "Neutral": {
+      "Light": {
+        "$type": "color",
+        "$value": "{Cool Gray.8}"
+      },
+      "Dark": {
+        "$type": "color",
+        "$value": "{Cool Gray.70}"
+      }
+    }
+  },
+  "Data Viz": {
+    "Categorical 01": {
+      "10": {
+        "$type": "color",
+        "$value": "{Lilac.20}"
+      },
+      "09": {
+        "$type": "color",
+        "$value": "{Blush.40}"
+      },
+      "08": {
+        "$type": "color",
+        "$value": "{Amber.20}"
+      },
+      "07": {
+        "$type": "color",
+        "$value": "{Jade.40}"
+      },
+      "01": {
+        "$type": "color",
+        "$value": "{Sea.40}"
+      },
+      "05": {
+        "$type": "color",
+        "$value": "{Lilac.40}"
+      },
+      "06": {
+        "$type": "color",
+        "$value": "{Sea.20}"
+      },
+      "04": {
+        "$type": "color",
+        "$value": "{Blush.20}"
+      },
+      "03": {
+        "$type": "color",
+        "$value": "{Amber.40}"
+      },
+      "02": {
+        "$type": "color",
+        "$value": "{Jade.20}"
+      }
+    },
+    "Divergent 01": {
+      "Positive": {
+        "10": {
+          "$type": "color",
+          "$value": "{Sea.10}"
+        },
+        "20": {
+          "$type": "color",
+          "$value": "{Sea.20}"
+        },
+        "30": {
+          "$type": "color",
+          "$value": "{Sea.30}"
+        },
+        "40": {
+          "$type": "color",
+          "$value": "{Sea.40}"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "{Sea.50}"
+        },
+        "60": {
+          "$type": "color",
+          "$value": "{Sea.60}"
+        },
+        "70": {
+          "$type": "color",
+          "$value": "{Sea.70}"
+        },
+        "80": {
+          "$type": "color",
+          "$value": "{Sea.80}"
+        },
+        "90": {
+          "$type": "color",
+          "$value": "{Sea.90}"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "{Sea.100}"
+        }
+      },
+      "Negative": {
+        "10": {
+          "$type": "color",
+          "$value": "{Amber.10}"
+        },
+        "20": {
+          "$type": "color",
+          "$value": "{Amber.20}"
+        },
+        "30": {
+          "$type": "color",
+          "$value": "{Amber.30}"
+        },
+        "40": {
+          "$type": "color",
+          "$value": "{Amber.40}"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "{Amber.50}"
+        },
+        "60": {
+          "$type": "color",
+          "$value": "{Amber.60}"
+        },
+        "70": {
+          "$type": "color",
+          "$value": "{Amber.70}"
+        },
+        "80": {
+          "$type": "color",
+          "$value": "{Amber.80}"
+        },
+        "90": {
+          "$type": "color",
+          "$value": "{Amber.90}"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "{Amber.100}"
+        }
+      },
+      "Neutral": {
+        "$type": "color",
+        "$value": "{Neutral.div-01-neutral}"
+      }
+    },
+    "Divergent 02": {
+      "Positive": {
+        "10": {
+          "$type": "color",
+          "$value": "{Jade.10}"
+        },
+        "20": {
+          "$type": "color",
+          "$value": "{Jade.20}"
+        },
+        "30": {
+          "$type": "color",
+          "$value": "{Jade.30}"
+        },
+        "40": {
+          "$type": "color",
+          "$value": "{Jade.40}"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "{Jade.50}"
+        },
+        "60": {
+          "$type": "color",
+          "$value": "{Jade.60}"
+        },
+        "70": {
+          "$type": "color",
+          "$value": "{Jade.70}"
+        },
+        "80": {
+          "$type": "color",
+          "$value": "{Jade.80}"
+        },
+        "90": {
+          "$type": "color",
+          "$value": "{Jade.90}"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "{Jade.100}"
+        }
+      },
+      "Neutral": {
+        "$type": "color",
+        "$value": "{Neutral.div-02-neutral}"
+      },
+      "Negative": {
+        "10": {
+          "$type": "color",
+          "$value": "{Blush.10}"
+        },
+        "20": {
+          "$type": "color",
+          "$value": "{Blush.20}"
+        },
+        "30": {
+          "$type": "color",
+          "$value": "{Blush.30}"
+        },
+        "40": {
+          "$type": "color",
+          "$value": "{Blush.40}"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "{Blush.50}"
+        },
+        "60": {
+          "$type": "color",
+          "$value": "{Blush.60}"
+        },
+        "70": {
+          "$type": "color",
+          "$value": "{Blush.70}"
+        },
+        "80": {
+          "$type": "color",
+          "$value": "{Blush.80}"
+        },
+        "90": {
+          "$type": "color",
+          "$value": "{Blush.90}"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "{Blush.100}"
+        }
+      }
+    },
+    "Sequential 01": {
+      "10": {
+        "$type": "color",
+        "$value": "{Sea.10}"
+      },
+      "20": {
+        "$type": "color",
+        "$value": "{Sea.20}"
+      },
+      "30": {
+        "$type": "color",
+        "$value": "{Sea.30}"
+      },
+      "40": {
+        "$type": "color",
+        "$value": "{Sea.40}"
+      },
+      "50": {
+        "$type": "color",
+        "$value": "{Sea.50}"
+      },
+      "60": {
+        "$type": "color",
+        "$value": "{Sea.60}"
+      },
+      "70": {
+        "$type": "color",
+        "$value": "{Sea.70}"
+      },
+      "80": {
+        "$type": "color",
+        "$value": "{Sea.80}"
+      },
+      "90": {
+        "$type": "color",
+        "$value": "{Sea.90}"
+      },
+      "100": {
+        "$type": "color",
+        "$value": "{Sea.100}"
+      }
+    },
+    "Sequential 02": {
+      "10": {
+        "$type": "color",
+        "$value": "{Jade.10}"
+      },
+      "20": {
+        "$type": "color",
+        "$value": "{Jade.20}"
+      },
+      "30": {
+        "$type": "color",
+        "$value": "{Jade.30}"
+      },
+      "40": {
+        "$type": "color",
+        "$value": "{Jade.40}"
+      },
+      "50": {
+        "$type": "color",
+        "$value": "{Jade.50}"
+      },
+      "60": {
+        "$type": "color",
+        "$value": "{Jade.60}"
+      },
+      "70": {
+        "$type": "color",
+        "$value": "{Jade.70}"
+      },
+      "80": {
+        "$type": "color",
+        "$value": "{Jade.80}"
+      },
+      "90": {
+        "$type": "color",
+        "$value": "{Jade.90}"
+      },
+      "100": {
+        "$type": "color",
+        "$value": "{Jade.100}"
+      }
+    },
+    "Sequential 03": {
+      "10": {
+        "$type": "color",
+        "$value": "{Amber.10}"
+      },
+      "20": {
+        "$type": "color",
+        "$value": "{Amber.20}"
+      },
+      "30": {
+        "$type": "color",
+        "$value": "{Amber.30}"
+      },
+      "40": {
+        "$type": "color",
+        "$value": "{Amber.40}"
+      },
+      "50": {
+        "$type": "color",
+        "$value": "{Amber.50}"
+      },
+      "60": {
+        "$type": "color",
+        "$value": "{Amber.60}"
+      },
+      "70": {
+        "$type": "color",
+        "$value": "{Amber.70}"
+      },
+      "80": {
+        "$type": "color",
+        "$value": "{Amber.80}"
+      },
+      "90": {
+        "$type": "color",
+        "$value": "{Amber.90}"
+      },
+      "100": {
+        "$type": "color",
+        "$value": "{Amber.100}"
+      }
+    },
+    "Sequential 04": {
+      "10": {
+        "$type": "color",
+        "$value": "{Blush.10}"
+      },
+      "20": {
+        "$type": "color",
+        "$value": "{Blush.20}"
+      },
+      "30": {
+        "$type": "color",
+        "$value": "{Blush.30}"
+      },
+      "40": {
+        "$type": "color",
+        "$value": "{Blush.40}"
+      },
+      "50": {
+        "$type": "color",
+        "$value": "{Blush.50}"
+      },
+      "60": {
+        "$type": "color",
+        "$value": "{Blush.60}"
+      },
+      "70": {
+        "$type": "color",
+        "$value": "{Blush.70}"
+      },
+      "80": {
+        "$type": "color",
+        "$value": "{Blush.80}"
+      },
+      "90": {
+        "$type": "color",
+        "$value": "{Blush.90}"
+      },
+      "100": {
+        "$type": "color",
+        "$value": "{Blush.100}"
+      }
+    },
+    "Sequential 05": {
+      "10": {
+        "$type": "color",
+        "$value": "{Lilac.10}"
+      },
+      "20": {
+        "$type": "color",
+        "$value": "{Lilac.20}"
+      },
+      "30": {
+        "$type": "color",
+        "$value": "{Lilac.30}"
+      },
+      "40": {
+        "$type": "color",
+        "$value": "{Lilac.40}"
+      },
+      "50": {
+        "$type": "color",
+        "$value": "{Lilac.50}"
+      },
+      "60": {
+        "$type": "color",
+        "$value": "{Lilac.60}"
+      },
+      "70": {
+        "$type": "color",
+        "$value": "{Lilac.70}"
+      },
+      "80": {
+        "$type": "color",
+        "$value": "{Lilac.80}"
+      },
+      "90": {
+        "$type": "color",
+        "$value": "{Lilac.90}"
+      },
+      "100": {
+        "$type": "color",
+        "$value": "{Lilac.100}"
+      }
+    },
+    "RAG": {
+      "3": {
+        "Warning": {
+          "$type": "color",
+          "$value": "{Misc.Yellow.Dark}"
+        },
+        "Error": {
+          "$type": "color",
+          "$value": "{Misc.Red.Dark}"
+        },
+        "Success": {
+          "$type": "color",
+          "$value": "{Misc.Green.Dark}"
+        }
+      },
+      "8": {
+        "Success-light": {
+          "$type": "color",
+          "$value": "{Misc.Green.Light}"
+        },
+        "Success": {
+          "$type": "color",
+          "$value": "{Misc.Green.Dark}"
+        },
+        "Error-light": {
+          "$type": "color",
+          "$value": "{Misc.Red.Light}"
+        },
+        "Warning-light": {
+          "$type": "color",
+          "$value": "{Misc.Yellow.Light}"
+        },
+        "Error": {
+          "$type": "color",
+          "$value": "{Misc.Red.Dark}"
+        },
+        "Warning": {
+          "$type": "color",
+          "$value": "{Misc.Yellow.Dark}"
+        },
+        "Informational-light": {
+          "$type": "color",
+          "$value": "{Misc.Blue.Light}"
+        },
+        "Informational": {
+          "$type": "color",
+          "$value": "{Misc.Blue.Dark}"
+        }
+      }
+    },
+    "Level": {
+      "Secondary": {
+        "$type": "color",
+        "$value": "{Warm Gray.30}"
+      },
+      "Primary": {
+        "$type": "color",
+        "$value": "{Warm Gray.40}"
+      }
+    }
+  },
+  "Utility": {
+    "Interactive": {
+      "graphic-alt": {
+        "$type": "color",
+        "$value": "{Cool Gray.30}"
+      },
+      "graphic": {
+        "$type": "color",
+        "$value": "{Cool Gray.20}"
+      }
+    },
+    "Dropshadow": {
+      "1": {
+        "$type": "color",
+        "$value": "{Opacity.Dark.10}"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "{Opacity.Dark.3}"
+      }
+    },
+    "Variant Border": {
+      "$type": "color",
+      "$value": "{Spruce.30}"
+    }
+  },
+  "States": {
+    "Disabled-label": {
+      "$type": "color",
+      "$value": "{Warm Gray.50}"
+    },
+    "Static Solid Label": {
+      "$type": "color",
+      "$value": "{Dark Stone.10}"
+    },
+    "Disabled": {
+      "$type": "color",
+      "$value": "{Dark Stone.20}"
+    },
+    "Static": {
+      "$type": "color",
+      "$value": "{Cool Gray.95}"
+    }
+  },
+  "Main Palette": {
+    "Accent": {
+      "$type": "color",
+      "$value": "{Warm Red.50-brand}"
+    },
+    "Secondary": {
+      "$type": "color",
+      "$value": "{Spruce.60}"
+    },
+    "Tertiary": {
+      "$type": "color",
+      "$value": "{Spring Green.20}"
+    },
+    "Primary": {
+      "$type": "color",
+      "$value": "{Interactive.70}"
+    }
+  },
+  "Container": {
+    "footer": {
+      "$type": "color",
+      "$value": "{Interactive.10}"
+    },
+    "Interactive-flat": {
+      "$type": "color",
+      "$value": "{Interactive.5}"
+    },
+    "utility": {
+      "$type": "color",
+      "$value": "{Interactive.5}"
+    }
+  },
+  "Date and Time Picker": {
+    "Text": {
+      "Placeholder": {
+        "$type": "color",
+        "$value": "{Dark Stone.60}"
+      },
+      "Default": {
+        "$type": "color",
+        "$value": "{Dark Stone.80}"
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": "{Dark Stone.40}"
+      },
+      "Title": {
+        "$type": "color",
+        "$value": "{Dark Stone.80}"
+      },
+      "Inverse": {
+        "$type": "color",
+        "$value": "{Neutral.White}"
+      }
+    },
+    "Icon": {
+      "Default": {
+        "$type": "color",
+        "$value": "{Dark Stone.80}"
+      }
+    },
+    "Background": {
+      "Container": {
+        "$type": "color",
+        "$value": "{Interactive.5}"
+      },
+      "Hover": {
+        "$type": "color",
+        "$value": "{Interactive.10}"
+      },
+      "Default": {
+        "$type": "color",
+        "$value": "{Interactive.80-primary}"
+      },
+      "Pressed": {
+        "$type": "color",
+        "$value": "{Interactive.20}"
+      },
+      "Container 2": {
+        "$type": "color",
+        "$value": "{Interactive.10}"
+      }
+    },
+    "Border": {
+      "Focus": {
+        "$type": "color",
+        "$value": "{Interactive.60}"
+      }
+    }
+  },
+  "Code View": {
+    "builtin": {
+      "$type": "color",
+      "$value": "{Jade.80}"
+    },
+    "boolean": {
+      "$type": "color",
+      "$value": "{Warm Red.90}"
+    },
+    "background": {
+      "$type": "color",
+      "$value": "{Dark Stone.10}"
+    },
+    "languagestring": {
+      "$type": "color",
+      "$value": "{Amber.90}"
+    },
+    "variable": {
+      "$type": "color",
+      "$value": "{Amber.90}"
+    },
+    "unit": {
+      "$type": "color",
+      "$value": "{Warm Red.80}"
+    },
+    "tag": {
+      "$type": "color",
+      "$value": "{Warm Red.80}"
+    },
+    "symbol": {
+      "$type": "color",
+      "$value": "{Warm Red.80}"
+    },
+    "string": {
+      "$type": "color",
+      "$value": "{Jade.80}"
+    },
+    "punctuation": {
+      "$type": "color",
+      "$value": "{Cool Gray.60}"
+    },
+    "attribute": {
+      "$type": "color",
+      "$value": "{Sea.80}"
+    },
+    "pseudo-class": {
+      "$type": "color",
+      "$value": "{Sea.80}"
+    },
+    "selector": {
+      "$type": "color",
+      "$value": "{Jade.80}"
+    },
+    "number": {
+      "$type": "color",
+      "$value": "{Warm Red.80}"
+    },
+    "inserted": {
+      "$type": "color",
+      "$value": "{Jade.80}"
+    },
+    "important": {
+      "$type": "color",
+      "$value": "{Amber.70}"
+    },
+    "property": {
+      "$type": "color",
+      "$value": "{Warm Red.80}"
+    },
+    "prolog": {
+      "$type": "color",
+      "$value": "{Cool Gray.60}"
+    },
+    "hexcode": {
+      "$type": "color",
+      "$value": "{Warm Red.80}"
+    },
+    "operator": {
+      "$type": "color",
+      "$value": "{Amber.90}"
+    },
+    "id": {
+      "$type": "color",
+      "$value": "{Warm Red.80}"
+    },
+    "doctype": {
+      "$type": "color",
+      "$value": "{Cool Gray.60}"
+    },
+    "parameter": {
+      "$type": "color",
+      "$value": "{Dark Stone.80}"
+    },
+    "char": {
+      "$type": "color",
+      "$value": "{Jade.80}"
+    },
+    "deleted": {
+      "$type": "color",
+      "$value": "{Warm Red.80}"
+    },
+    "class": {
+      "$type": "color",
+      "$value": "{Jade.80}"
+    },
+    "attr-value": {
+      "$type": "color",
+      "$value": "{Sea.80}"
+    },
+    "entity": {
+      "$type": "color",
+      "$value": "{Amber.90}"
+    },
+    "cdata": {
+      "$type": "color",
+      "$value": "{Cool Gray.60}"
+    },
+    "default": {
+      "$type": "color",
+      "$value": "{Dark Stone.80}"
+    },
+    "function": {
+      "$type": "color",
+      "$value": "{Blush.70}"
+    },
+    "constant": {
+      "$type": "color",
+      "$value": "{Warm Red.80}"
+    },
+    "pseudo-element": {
+      "$type": "color",
+      "$value": "{Sea.80}"
+    },
+    "class-name": {
+      "$type": "color",
+      "$value": "{Blush.70}"
+    },
+    "comment": {
+      "$type": "color",
+      "$value": "{Cool Gray.60}"
+    },
+    "attr-name": {
+      "$type": "color",
+      "$value": "{Jade.80}"
+    },
+    "url": {
+      "$type": "color",
+      "$value": "{Amber.90}"
+    },
+    "keyword": {
+      "$type": "color",
+      "$value": "{Sea.80}"
+    },
+    "regex": {
+      "$type": "color",
+      "$value": "{Amber.70}"
+    },
+    "atrule": {
+      "$type": "color",
+      "$value": "{Sea.80}"
+    },
+    "console": {
+      "$type": "color",
+      "$value": "{Blush.70}"
+    },
+    "method": {
+      "$type": "color",
+      "$value": "{Blush.70}"
+    },
+    "language-javascript": {
+      "$type": "color",
+      "$value": "{Amber.90}"
+    }
+  },
+  "Tags": {
+    "Background": {
+      "Interactive": {
+        "$type": "color",
+        "$value": "{Interactive.15}"
+      },
+      "Success": {
+        "$type": "color",
+        "$value": "{Misc.Green.Light}"
+      },
+      "Warning": {
+        "$type": "color",
+        "$value": "{Misc.Yellow.Light}"
+      },
+      "Error": {
+        "$type": "color",
+        "$value": "{Warm Red.20}"
+      },
+      "Cat 1": {
+        "$type": "color",
+        "$value": "{Sea.10}"
+      },
+      "Spruce": {
+        "$type": "color",
+        "$value": "{Spruce.10}"
+      },
+      "Cat 2": {
+        "$type": "color",
+        "$value": "{Jade.10}"
+      },
+      "Cat 3": {
+        "$type": "color",
+        "$value": "{Amber.10}"
+      },
+      "Cat 4": {
+        "$type": "color",
+        "$value": "{Blush.10}"
+      },
+      "Cat 5": {
+        "$type": "color",
+        "$value": "{Lilac.10}"
+      },
+      "Cat 6": {
+        "$type": "color",
+        "$value": "{Magenta.10}"
+      },
+      "Blue": {
+        "$type": "color",
+        "$value": "{Misc.Blue.Light}"
+      },
+      "Gray": {
+        "$type": "color",
+        "$value": "{Cool Gray.10}"
+      },
+      "Disabled": {
+        "$type": "color",
+        "$value": "{Warm Gray.10}"
+      },
+      "Error Dark": {
+        "$type": "color",
+        "$value": "{Misc.Red.80}"
+      }
+    },
+    "Hover": {
+      "Cat 1": {
+        "$type": "color",
+        "$value": "{Sea.20}"
+      },
+      "Cat 2": {
+        "$type": "color",
+        "$value": "{Jade.20}"
+      },
+      "Cat 3": {
+        "$type": "color",
+        "$value": "{Amber.20}"
+      },
+      "Cat 4": {
+        "$type": "color",
+        "$value": "{Blush.20}"
+      },
+      "Cat 5": {
+        "$type": "color",
+        "$value": "{Lilac.20}"
+      },
+      "Cat 6": {
+        "$type": "color",
+        "$value": "{Magenta.15}"
+      },
+      "Interactive": {
+        "$type": "color",
+        "$value": "{Interactive.30}"
+      },
+      "Spruce": {
+        "$type": "color",
+        "$value": "{Spruce.10}"
+      },
+      "Blue": {
+        "$type": "color",
+        "$value": "{Misc.Blue.5}"
+      },
+      "Gray": {
+        "$type": "color",
+        "$value": "{Cool Gray.20}"
+      },
+      "Error": {
+        "$type": "color",
+        "$value": "{Misc.Red.30}"
+      },
+      "Warning": {
+        "$type": "color",
+        "$value": "{Misc.Yellow.5}"
+      },
+      "Success": {
+        "$type": "color",
+        "$value": "{Spring Green.10}"
+      },
+      "Blue Dark": {
+        "$type": "color",
+        "$value": "{Misc.Blue.90}"
+      },
+      "Error Dark": {
+        "$type": "color",
+        "$value": "{Misc.Red.90}"
+      },
+      "Warning Dark": {
+        "$type": "color",
+        "$value": "{Misc.Yellow.15}"
+      },
+      "Success Dark": {
+        "$type": "color",
+        "$value": "{Misc.Green.70}"
+      }
+    }
+  }
+}
