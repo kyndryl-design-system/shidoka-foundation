@@ -1,3 +1,7 @@
-@mixin shadow($level: '1') {
-  box-shadow: var(--kd-elevation-level-#{$level});
+@mixin shadow($level: '1', $ai: false) {
+  @if $ai {
+    box-shadow: var(--kd-elevation-level-#{$level}-ai);
+  } @else {
+    box-shadow: var(--kd-elevation-level-#{$level});
+  }
 }
