@@ -44,7 +44,7 @@ You can make use of tokens/variables included in root.css such as `--kd-header-h
 
 ## Start using components
 
-See [Storybook](https://kyndryl-design-system.github.io/shidoka-foundation/) for the full components documentation.
+See [Storybook](https://shidoka-foundation.netlify.app) for the full components documentation.
 
 ### Example: Component with Sub-components
 
