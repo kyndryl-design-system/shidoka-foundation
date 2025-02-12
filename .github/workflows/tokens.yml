@@ -31,4 +31,4 @@ jobs:
           commit_message: ${{ env.COMMIT_MSG }}
       - name: Create pull request
         continue-on-error: true
-        run: gh pr create --base next --head tokens --title '${{ env.COMMIT_MSG }}' --body 'Created by the update-tokens GitHub Actions workflow'
+        run: gh pr create --base main --head tokens --title '${{ env.COMMIT_MSG }}' --body 'Created by the update-tokens GitHub Actions workflow'
