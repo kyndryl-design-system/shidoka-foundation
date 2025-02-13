@@ -1,6 +1,7 @@
 import { html } from 'lit-html';
 import { unsafeSVG } from 'lit-html/directives/unsafe-svg.js';
 import copyIcon from '@kyndryl-design-system/shidoka-icons/svg/monochrome/16/copy.svg';
+import aiLaunchIcon from '@kyndryl-design-system/shidoka-foundation/assets/svg/ai-launch-icon.svg';
 
 const copyCode = (filePath) => {
   const code = `import assetName from '@kyndryl-design-system/shidoka-foundation/assets/svg/${filePath}'`;
@@ -187,6 +188,38 @@ export const Mascot = {
               </tr>
             `;
           })}
+        </tbody>
+      </table>
+    `;
+  },
+};
+
+export const AILaunchIcon = {
+  render: () => {
+    const filePath = 'ai-launch-icon.svg';
+
+    return html`
+      <table class="icons">
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Filename</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>${unsafeSVG(aiLaunchIcon)}</td>
+            <td>
+              ${filePath}
+              <button
+                class="copy-code"
+                title="Copy import path"
+                @click=${() => copyCode(filePath)}
+              >
+                ${unsafeSVG(copyIcon)}
+              </button>
+            </td>
+          </tr>
         </tbody>
       </table>
     `;
