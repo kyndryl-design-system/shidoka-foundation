@@ -1,8 +1,8 @@
 import { html } from 'lit-html';
 import { unsafeSVG } from 'lit-html/directives/unsafe-svg.js';
 import copyIcon from '@kyndryl-design-system/shidoka-icons/svg/monochrome/16/copy.svg';
-import aiLaunchIcon from '../assets/svg/ai-launch-icon.svg';
-import aiLaunchIconAnimated from '../assets/gif/ai-launch-icon-animated.gif';
+import ai from '../assets/svg/ai.svg';
+import aiAnimated from '../assets/gif/ai-animated.gif';
 
 const copyCode = (filePath) => {
   const code = `import assetName from '@kyndryl-design-system/shidoka-foundation/assets/svg/${filePath}'`;
@@ -195,10 +195,10 @@ export const Mascot = {
   },
 };
 
-export const AILaunchIcon = {
+export const AI = {
   render: () => {
-    const filePath = 'ai-launch-icon.svg';
-    const filePathAnimated = 'ai-launch-icon-animated.gif';
+    const filePath = 'ai.svg';
+    const filePathAnimated = 'ai-animated.gif';
 
     return html`
       <table class="icons">
@@ -210,7 +210,7 @@ export const AILaunchIcon = {
         </thead>
         <tbody>
           <tr>
-            <td>${unsafeSVG(aiLaunchIcon)}</td>
+            <td>${unsafeSVG(ai)}</td>
             <td>
               ${filePath}
               <button
@@ -224,13 +224,9 @@ export const AILaunchIcon = {
           </tr>
           <tr>
             <td>
-              <img
-                src="${aiLaunchIconAnimated}"
-                style="max-width: 50px;"
-                alt="AI Launch Icon"
-              />
+              <img src="${aiAnimated}" style="max-width: 50px;" alt="AI Icon" />
             </td>
-            <td>Example of animated AI Launch Icon</td>
+            <td>Example of animated AI Icon</td>
           </tr>
         </tbody>
       </table>
