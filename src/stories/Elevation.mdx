@@ -27,7 +27,7 @@ import * as ElevationStories from './Elevation.stories.js';
 @use '@kyndryl-design-system/shidoka-foundation/scss/mixins/elevation.scss';
 
 .your-css-selector {
-  @include elevation.shadow($level);
+  @include elevation.shadow($level: '1', $ai: false);
 }
 ```
 
@@ -59,10 +59,15 @@ import '@kyndryl-design-system/shidoka-foundation/css/elevation.css';
 
 #### Class & Variable Names
 
-| Level        | Class                          | Variable Name                   |
-| ------------ | ------------------------------ | ------------------------------- |
-| 1            | kd-elevation--level-1          | --kd-elevation-level-1          |
-| 2            | kd-elevation--level-2          | --kd-elevation-level-2          |
-| 2 - Overflow | kd-elevation--level-2-overflow | --kd-elevation-level-2-overflow |
-| 3            | kd-elevation--level-3          | --kd-elevation-level-3          |
-| 4            | kd-elevation--level-4          | --kd-elevation-level-4          |
+| Level             | Class                             | Variable Name                      |
+| ----------------- | --------------------------------- | ---------------------------------- |
+| 1                 | kd-elevation--level-1             | --kd-elevation-level-1             |
+| 1 - AI            | kd-elevation--level-1-ai          | --kd-elevation-level-1-ai          |
+| 2                 | kd-elevation--level-2             | --kd-elevation-level-2             |
+| 2 - AI            | kd-elevation--level-2-ai          | --kd-elevation-level-2-ai          |
+| 2 - Overflow      | kd-elevation--level-2-overflow    | --kd-elevation-level-2-overflow    |
+| 2 - Overflow - AI | kd-elevation--level-2-overflow-ai | --kd-elevation-level-2-overflow-ai |
+| 3                 | kd-elevation--level-3             | --kd-elevation-level-3             |
+| 3 - AI            | kd-elevation--level-3-ai          | --kd-elevation-level-3-ai          |
+| 4                 | kd-elevation--level-4             | --kd-elevation-level-4             |
+| 4 - AI            | kd-elevation--level-4-ai          | --kd-elevation-level-4-ai          |

@@ -114,10 +114,10 @@
             "$value": "{Misc.Red.60}"
           }
         },
-        "Ai": {
+        "AI": {
           "Default": {
             "$type": "color",
-            "$value": "{Magenta.40}"
+            "$value": "{Magenta.45}"
           },
           "Hover": {
             "$type": "color",
@@ -147,15 +147,15 @@
         "State": {
           "Default": {
             "$type": "color",
-            "$value": "{Spruce.70}"
+            "$value": "{Interactive.115}"
           },
           "Hover": {
             "$type": "color",
-            "$value": "{Spruce.50}"
+            "$value": "{Interactive.110}"
           },
           "Pressed": {
             "$type": "color",
-            "$value": "{Spruce.80}"
+            "$value": "{Interactive.95}"
           }
         },
         "Destructive": {
@@ -172,7 +172,7 @@
             "$value": "{Misc.Red.90}"
           }
         },
-        "Ai": {
+        "AI": {
           "Default": {
             "$type": "color",
             "$value": "{Magenta.80}"
@@ -418,6 +418,32 @@
           "$type": "color",
           "$value": "{Opacity.Dark.30}"
         }
+      },
+      "AI": {
+        "Default": {
+          "$type": "color",
+          "$value": "{Magenta.30}"
+        },
+        "Hover": {
+          "$type": "color",
+          "$value": "{Magenta.20}"
+        },
+        "Pressed": {
+          "$type": "color",
+          "$value": "{Magenta.30}"
+        },
+        "Focused": {
+          "$type": "color",
+          "$value": "{Magenta.35}"
+        },
+        "Disabled": {
+          "$type": "color",
+          "$value": "{Opacity.Light.30}"
+        },
+        "Secondary": {
+          "$type": "color",
+          "$value": "{Magenta.35}"
+        }
       }
     },
     "Menu": {
@@ -642,7 +668,7 @@
       "Ai": {
         "Default": {
           "$type": "color",
-          "$value": "{Magenta.40}"
+          "$value": "{Magenta.01}"
         }
       }
     }
@@ -721,6 +747,10 @@
         "$type": "color",
         "$value": "{Spruce.20}"
       }
+    },
+    "AI": {
+      "$type": "color",
+      "$value": "{Magenta.30}"
     }
   },
   "Border": {
@@ -1506,14 +1536,58 @@
         "$value": "{Cool Gray.80}"
       }
     },
-    "Dropshadow": {
-      "1": {
-        "$type": "color",
-        "$value": "{Opacity.Dark.10}"
+    "Elevation": {
+      "Default": {
+        "1": {
+          "$type": "color",
+          "$value": "{Opacity.Dark.10}"
+        },
+        "2": {
+          "$type": "color",
+          "$value": "{Opacity.Dark.10}"
+        },
+        "L1": {
+          "$type": "color",
+          "$value": "#51515133"
+        },
+        "L2": {
+          "$type": "color",
+          "$value": "#5151514d"
+        },
+        "L2 - Overflow": {
+          "$type": "color",
+          "$value": "#51515180"
+        },
+        "L3": {
+          "$type": "color",
+          "$value": "#51515140"
+        },
+        "L4": {
+          "$type": "color",
+          "$value": "#51515126"
+        }
       },
-      "2": {
-        "$type": "color",
-        "$value": "{Opacity.Dark.10}"
+      "AI": {
+        "L1": {
+          "$type": "color",
+          "$value": "#a800a833"
+        },
+        "L2": {
+          "$type": "color",
+          "$value": "#a800a84d"
+        },
+        "L2 - Overflow": {
+          "$type": "color",
+          "$value": "#a800a880"
+        },
+        "L3": {
+          "$type": "color",
+          "$value": "#a800a840"
+        },
+        "L4": {
+          "$type": "color",
+          "$value": "#a800a826"
+        }
       }
     },
     "Variant Border": {

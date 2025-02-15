@@ -19,3 +19,23 @@
 .kd-elevation--level-4 {
   @include elevation.shadow('4');
 }
+
+.kd-elevation--level-1-ai {
+  @include elevation.shadow('1', true);
+}
+
+.kd-elevation--level-2-ai {
+  @include elevation.shadow('2', true);
+}
+
+.kd-elevation--level-2-overflow-ai {
+  @include elevation.shadow('2-overflow', true);
+}
+
+.kd-elevation--level-3-ai {
+  @include elevation.shadow('3', true);
+}
+
+.kd-elevation--level-4-ai {
+  @include elevation.shadow('4', true);
+}
