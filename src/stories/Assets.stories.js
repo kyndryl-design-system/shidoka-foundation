@@ -193,7 +193,7 @@ export const Mascot = {
   },
 };
 
-const aiFiles = ['ai-response'];
+const aiFiles = ['response'];
 
 export const AI = {
   render: () => {
@@ -207,7 +207,7 @@ export const AI = {
         </thead>
         <tbody>
           ${aiFiles.map((fileName) => {
-            const filePath = `AI/${fileName}.svg`;
+            const filePath = `ai/${fileName}.svg`;
 
             return html`
               <tr>
