@@ -25,13 +25,15 @@
         "$type": "color",
         "$value": "{Interactive.107}"
       },
-      "Ai Default": {
-        "$type": "color",
-        "$value": "{Magenta.100}"
-      },
-      "Ai Subtle": {
-        "$type": "color",
-        "$value": "{Magenta.90}"
+      "Ai": {
+        "Default": {
+          "$type": "color",
+          "$value": "{Interactive.120}"
+        },
+        "Subtle": {
+          "$type": "color",
+          "$value": "{Ai Interactive.90}"
+        }
       }
     },
     "UI": {
@@ -89,11 +91,11 @@
         "State": {
           "Default": {
             "$type": "color",
-            "$value": "{Spruce.50}"
+            "$value": "{Spruce.60}"
           },
           "Hover": {
             "$type": "color",
-            "$value": "{Spruce.40}"
+            "$value": "{Spruce.50}"
           },
           "Pressed": {
             "$type": "color",
@@ -103,29 +105,29 @@
         "Destructive": {
           "Default": {
             "$type": "color",
-            "$value": "{Misc.Red.80}"
+            "$value": "{Misc.Red.90}"
           },
           "Hover": {
             "$type": "color",
-            "$value": "{Misc.Red.70}"
+            "$value": "{Misc.Red.80}"
           },
           "Pressed": {
             "$type": "color",
-            "$value": "{Misc.Red.60}"
+            "$value": "{Misc.Red.100}"
           }
         },
         "AI": {
           "Default": {
             "$type": "color",
-            "$value": "{Magenta.45}"
+            "$value": "{Ai Interactive.45}"
           },
           "Hover": {
             "$type": "color",
-            "$value": "{Magenta.70}"
+            "$value": "{Ai Interactive.70}"
           },
           "Pressed": {
             "$type": "color",
-            "$value": "{Magenta.70}"
+            "$value": "{Ai Interactive.70}"
           }
         }
       },
@@ -161,29 +163,29 @@
         "Destructive": {
           "Pressed": {
             "$type": "color",
-            "$value": "{Misc.Red.60}"
+            "$value": "{Misc.Red.90}"
           },
           "Hover": {
             "$type": "color",
-            "$value": "{Misc.Red.60}"
+            "$value": "{Misc.Red.80}"
           },
           "Default": {
             "$type": "color",
-            "$value": "{Misc.Red.90}"
+            "$value": "{Misc.Red.100}"
           }
         },
         "AI": {
           "Default": {
             "$type": "color",
-            "$value": "{Magenta.80}"
+            "$value": "{Ai Interactive.80}"
           },
           "Hover": {
             "$type": "color",
-            "$value": "{Magenta.90}"
+            "$value": "{Ai Interactive.90}"
           },
           "Pressed": {
             "$type": "color",
-            "$value": "{Magenta.100}"
+            "$value": "{Ai Interactive.100}"
           }
         }
       },
@@ -334,6 +336,16 @@
       "Interactive Gradient Start": {
         "$type": "color",
         "$value": "{Interactive.107}"
+      },
+      "Ai": {
+        "Linear Top Gradient 1": {
+          "$type": "color",
+          "$value": "{Ai Interactive.100}"
+        },
+        "Linear Bottom Gradient 1": {
+          "$type": "color",
+          "$value": "{Interactive.120}"
+        }
       }
     },
     "Card": {
@@ -422,19 +434,19 @@
       "AI": {
         "Default": {
           "$type": "color",
-          "$value": "{Magenta.30}"
+          "$value": "{Ai Interactive.30}"
         },
         "Hover": {
           "$type": "color",
-          "$value": "{Magenta.20}"
+          "$value": "{Ai Interactive.20}"
         },
         "Pressed": {
           "$type": "color",
-          "$value": "{Magenta.30}"
+          "$value": "{Ai Interactive.30}"
         },
         "Focused": {
           "$type": "color",
-          "$value": "{Magenta.35}"
+          "$value": "{Ai Interactive.35}"
         },
         "Disabled": {
           "$type": "color",
@@ -442,7 +454,7 @@
         },
         "Secondary": {
           "$type": "color",
-          "$value": "{Magenta.35}"
+          "$value": "{Ai Interactive.35}"
         }
       }
     },
@@ -581,15 +593,15 @@
       },
       "Ai Primary": {
         "$type": "color",
-        "$value": "{Magenta.05}"
+        "$value": "{Ai Interactive.05}"
       },
       "Ai Secondary": {
         "$type": "color",
-        "$value": "{Magenta.10}"
+        "$value": "{Ai Interactive.10}"
       },
       "Ai Tertiary": {
         "$type": "color",
-        "$value": "{Magenta.30}"
+        "$value": "{Ai Interactive.30}"
       }
     },
     "Forms": {
@@ -668,7 +680,7 @@
       "Ai": {
         "Default": {
           "$type": "color",
-          "$value": "{Magenta.01}"
+          "$value": "{Ai Interactive.01}"
         }
       }
     }
@@ -750,7 +762,7 @@
     },
     "AI": {
       "$type": "color",
-      "$value": "{Magenta.30}"
+      "$value": "{Ai Interactive.30}"
     }
   },
   "Border": {
@@ -781,7 +793,7 @@
       },
       "Ai": {
         "$type": "color",
-        "$value": "{Magenta.60}"
+        "$value": "{Ai Interactive.60}"
       }
     },
     "Level": {
@@ -951,19 +963,19 @@
         "State": {
           "Default": {
             "$type": "color",
-            "$value": "{Magenta.40}"
+            "$value": "{Ai Interactive.40}"
           },
           "Focused": {
             "$type": "color",
-            "$value": "{Magenta.70}"
+            "$value": "{Ai Interactive.70}"
           },
           "Hover": {
             "$type": "color",
-            "$value": "{Magenta.50}"
+            "$value": "{Ai Interactive.50}"
           },
           "Pressed": {
             "$type": "color",
-            "$value": "{Magenta.70}"
+            "$value": "{Ai Interactive.70}"
           }
         }
       }
@@ -971,7 +983,7 @@
     "Dropshadow": {
       "Ai": {
         "$type": "color",
-        "$value": "{Magenta.100}"
+        "$value": "{Ai Interactive.100}"
       }
     }
   },
@@ -1921,7 +1933,7 @@
       },
       "Cat 6": {
         "$type": "color",
-        "$value": "{Magenta.15}"
+        "$value": "{Ai Interactive.15}"
       },
       "Blue": {
         "$type": "color",
@@ -1963,7 +1975,7 @@
       },
       "Cat 6": {
         "$type": "color",
-        "$value": "{Magenta.25}"
+        "$value": "{Ai Interactive.25}"
       },
       "Interactive": {
         "$type": "color",
