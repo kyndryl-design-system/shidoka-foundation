@@ -1,6 +1,6 @@
 # Shidoka Foundation
 
-[![shidoka-foundation](https://github.com/kyndryl-design-system/shidoka-foundation/actions/workflows/build.yml/badge.svg)](https://github.com/kyndryl-design-system/shidoka-foundation/actions/workflows/build.yml)
+[![Release](https://github.com/kyndryl-design-system/shidoka-foundation/actions/workflows/release.yml/badge.svg)](https://github.com/kyndryl-design-system/shidoka-foundation/actions/workflows/release.yml)
 
 # Contributing to this project
 
