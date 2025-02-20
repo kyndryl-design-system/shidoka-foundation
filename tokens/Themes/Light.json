@@ -344,7 +344,7 @@
         },
         "Linear Bottom Gradient 1": {
           "$type": "color",
-          "$value": "{Neutral.Background}"
+          "$value": "{Neutral.White}"
         }
       }
     },
