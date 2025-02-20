@@ -192,3 +192,42 @@ export const Mascot = {
     `;
   },
 };
+
+const aiFiles = ['response'];
+
+export const AI = {
+  render: () => {
+    return html`
+      <table class="icons">
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>filename</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${aiFiles.map((fileName) => {
+            const filePath = `ai/${fileName}.svg`;
+
+            return html`
+              <tr>
+                <td>${unsafeSVG(require(`../assets/svg/${filePath}`))}</td>
+                <td>
+                  ${filePath}
+
+                  <button
+                    class="copy-code"
+                    title="Copy import path"
+                    @click=${() => copyCode(filePath)}
+                  >
+                    ${unsafeSVG(copyIcon)}
+                  </button>
+                </td>
+              </tr>
+            `;
+          })}
+        </tbody>
+      </table>
+    `;
+  },
+};
