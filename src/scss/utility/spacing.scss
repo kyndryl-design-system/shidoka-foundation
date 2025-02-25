@@ -28,3 +28,7 @@
   margin-left: var(--kd-page-gutter-negative);
   margin-right: var(--kd-page-gutter-negative);
 }
+
+.kd-spacing--list-item {
+  @include spacing.list-item-spacing();
+}

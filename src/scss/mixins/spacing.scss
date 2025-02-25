@@ -1,3 +1,16 @@
 @mixin spacer($property, $direction, $value) {
   #{$property}-#{$direction}: $value + px;
 }
+
+@mixin list-item-spacing() {
+  ul,
+  ol {
+    li {
+      @include spacer('margin', 'bottom', 16);
+    }
+
+    li:last-child {
+      @include spacer('margin', 'bottom', 0);
+    }
+  }
+}
