@@ -148,6 +148,46 @@ export const Spacing = {
   },
 };
 
+export const ListSpacing = {
+  render: () => {
+    return html`
+      <style>
+        .heading {
+          margin-bottom: 16px;
+          color: var(--kd-color-text-title-primary);
+        }
+      </style>
+      <div class="heading kd-type--headline-04">Unordered nested list</div>
+      <ul class="kd-spacing--list-item">
+        <li>Item 1</li>
+        <li>
+          Item 2
+          <ul>
+            <li>Item 2.1</li>
+            <li>Item 2.2</li>
+            <li>Item 2.3</li>
+          </ul>
+        </li>
+        <li>Item 3</li>
+      </ul>
+
+      <div class="heading kd-type--headline-04">Ordered nested list</div>
+      <ol class="kd-spacing--list-item">
+        <li>Item 1</li>
+        <li>
+          Item 2
+          <ol style="list-style-type: lower-alpha;">
+            <li>Item 2a</li>
+            <li>Item 2b</li>
+            <li>Item 2c</li>
+          </ol>
+        </li>
+        <li>Item 3</li>
+      </ol>
+    `;
+  },
+};
+
 export default {
   title: 'Foundation/Spacing',
 };
