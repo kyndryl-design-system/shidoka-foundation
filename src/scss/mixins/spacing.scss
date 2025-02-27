@@ -5,6 +5,11 @@
 @mixin list-item-spacing() {
   li {
     @include spacer('margin', 'bottom', 16);
+
+    ol,
+    ul {
+      @include spacer('margin', 'top', 16);
+    }
   }
 
   li:last-child {
