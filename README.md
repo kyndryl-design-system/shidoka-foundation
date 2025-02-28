@@ -1,6 +1,6 @@
 # Shidoka Foundation
 
-[![shidoka-foundation](https://github.com/kyndryl-design-system/shidoka-foundation/actions/workflows/actions.yml/badge.svg)](https://github.com/kyndryl-design-system/shidoka-foundation/actions/workflows/actions.yml)
+[![Release](https://github.com/kyndryl-design-system/shidoka-foundation/actions/workflows/release.yml/badge.svg)](https://github.com/kyndryl-design-system/shidoka-foundation/actions/workflows/release.yml)
 
 # Contributing to this project
 
@@ -38,52 +38,10 @@ The method used (SCSS @use, CSS @import, JS import, or &lt;style&gt; tag) will v
 import '@kyndryl-design-system/shidoka-foundation/css/root.css';
 ```
 
+### Set a color scheme
+
+More info on color schemes in the [Foundation Storybook](https://shidoka-foundation.netlify.app/?path=/docs/foundation-colors--docs#setting-a-theme).
+
 ### Use CSS tokens/variables
 
-You can make use of tokens/variables included in root.css such as `--kd-header-height` to pad the body for the fixed position header, `--kd-page-gutter` for the padding on your main container, or any of the color tokens.
-
-## Start using components
-
-See [Storybook](https://shidoka-foundation.netlify.app) for the full components documentation.
-
-### Example: Component with Sub-components
-
-This example imports a component AND all of it's subcomponents by targeting the index file.
-
-```js
-import '@kyndryl-design-system/shidoka-foundation/components/example';
-```
-
-```html
-<kd-example>
-  <kd-example-sub></kd-example-sub>
-</kd-example>
-```
-
-### Example: Single Component
-
-This example imports one specific component by targeting the component file directly.
-
-```js
-import '@kyndryl-design-system/shidoka-foundation/components/example/example-sub';
-```
-
-```html
-<kd-example-sub></kd-example-sub>
-```
-
-### React usage
-
-React does not yet support automatic interop with Web Components. This means that React treats all props passed to Web Components as string attributes. It sounds like they are [planning to release it eventually](https://github.com/facebook/react/issues/11347#issuecomment-988970952), and is now available behind an `@experimental` flag. Until you've upgraded to a version of React that has support, you will need to use a library like [@lit/react](https://www.npmjs.com/package/@lit/react) to use these components in React.
-
-Some options for React wrapper libraries:
-
-1. [@lit/react](https://www.npmjs.com/package/@lit/react)
-2. [reactify-wc](https://www.npmjs.com/package/reactify-wc)
-3. [wc-react](https://www.npmjs.com/package/wc-react)
-
-### Server-Side Rendering (SSR)
-
-When using with an SSR framework like Next.js, you will encounter errors with code that only runs client-side, like `window` references for example. This is because web components cannot render on the server. Here is an article that provides some methods to work around this: [Using Non-SSR Friendly Components with Next.js](https://blog.bitsrc.io/using-non-ssr-friendly-components-with-next-js-916f38e8992c) and [How to entirely disable server-side rendering in next.js v13?](https://stackoverflow.com/questions/75406728/how-to-entirely-disable-server-side-rendering-in-next-js-v13). Basically, they need their rendering deferred to only happen on the client-side.
-
-Here is some additional information about why SSR does not work for web components, and some potential polyfills/solutions to enable server rendering: https://lit.dev/docs/ssr/overview/
+You can make use of tokens/variables included in Foundation to style your non-Shidoka elements.
