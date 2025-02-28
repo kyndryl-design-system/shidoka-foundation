@@ -1079,10 +1079,6 @@
       }
     },
     "Neutral": {
-      "Light": {
-        "$type": "color",
-        "$value": "{Cool Gray.8}"
-      },
       "Dark": {
         "$type": "color",
         "$value": "{Cool Gray.70}"

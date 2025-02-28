@@ -1,0 +1,10 @@
+{
+  "Status": {
+    "Neutral": {
+      "Light": {
+        "$type": "color",
+        "$value": "{Cool Gray.8}"
+      }
+    }
+  }
+}

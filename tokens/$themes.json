@@ -14,6 +14,234 @@
     "group": "Modes"
   },
   {
+    "id": "size mapping-c - xlg",
+    "name": "C - Xlg",
+    "group": "Size Mapping",
+    "selectedTokenSets": {
+      "Size Mapping/C - Xlg": "enabled"
+    },
+    "$figmaStyleReferences": {},
+    "$figmaVariableReferences": {
+      "Full": "VariableID:422:1027",
+      "Two-Third": "VariableID:422:1028",
+      "One-Third": "VariableID:422:1029",
+      "Three-Fourth": "VariableID:422:1030",
+      "Half": "VariableID:422:1031",
+      "One-Fourth": "VariableID:422:1032",
+      "Canvas Size": "VariableID:455:1016"
+    },
+    "$figmaModeId": "422:3",
+    "$figmaCollectionId": "VariableCollectionId:422:1026"
+  },
+  {
+    "id": "size mapping-c - max",
+    "name": "C - Max",
+    "group": "Size Mapping",
+    "selectedTokenSets": {
+      "Size Mapping/C - Max": "enabled"
+    },
+    "$figmaStyleReferences": {},
+    "$figmaVariableReferences": {
+      "Full": "VariableID:422:1027",
+      "Two-Third": "VariableID:422:1028",
+      "One-Third": "VariableID:422:1029",
+      "Three-Fourth": "VariableID:422:1030",
+      "Half": "VariableID:422:1031",
+      "One-Fourth": "VariableID:422:1032",
+      "Canvas Size": "VariableID:455:1016"
+    },
+    "$figmaModeId": "422:4",
+    "$figmaCollectionId": "VariableCollectionId:422:1026"
+  },
+  {
+    "id": "size mapping-c - lg",
+    "name": "C - Lg",
+    "group": "Size Mapping",
+    "selectedTokenSets": {
+      "Size Mapping/C - Lg": "enabled"
+    },
+    "$figmaStyleReferences": {},
+    "$figmaVariableReferences": {
+      "Full": "VariableID:422:1027",
+      "Two-Third": "VariableID:422:1028",
+      "One-Third": "VariableID:422:1029",
+      "Three-Fourth": "VariableID:422:1030",
+      "Half": "VariableID:422:1031",
+      "One-Fourth": "VariableID:422:1032",
+      "Canvas Size": "VariableID:455:1016"
+    },
+    "$figmaModeId": "422:5",
+    "$figmaCollectionId": "VariableCollectionId:422:1026"
+  },
+  {
+    "id": "size mapping-c- md",
+    "name": "C- Md",
+    "group": "Size Mapping",
+    "selectedTokenSets": {
+      "Size Mapping/C- Md": "enabled"
+    },
+    "$figmaStyleReferences": {},
+    "$figmaVariableReferences": {
+      "Full": "VariableID:422:1027",
+      "Two-Third": "VariableID:422:1028",
+      "One-Third": "VariableID:422:1029",
+      "Three-Fourth": "VariableID:422:1030",
+      "Half": "VariableID:422:1031",
+      "One-Fourth": "VariableID:422:1032",
+      "Canvas Size": "VariableID:455:1016"
+    },
+    "$figmaModeId": "422:6",
+    "$figmaCollectionId": "VariableCollectionId:422:1026"
+  },
+  {
+    "id": "size mapping-c- sm",
+    "name": "C- Sm",
+    "group": "Size Mapping",
+    "selectedTokenSets": {
+      "Size Mapping/C- Sm": "enabled"
+    },
+    "$figmaStyleReferences": {},
+    "$figmaVariableReferences": {
+      "Full": "VariableID:422:1027",
+      "Two-Third": "VariableID:422:1028",
+      "One-Third": "VariableID:422:1029",
+      "Three-Fourth": "VariableID:422:1030",
+      "Half": "VariableID:422:1031",
+      "One-Fourth": "VariableID:422:1032",
+      "Canvas Size": "VariableID:455:1016"
+    },
+    "$figmaModeId": "422:7",
+    "$figmaCollectionId": "VariableCollectionId:422:1026"
+  },
+  {
+    "id": "size mapping-l - max",
+    "name": "L - Max",
+    "group": "Size Mapping",
+    "selectedTokenSets": {
+      "Size Mapping/L - Max": "enabled"
+    },
+    "$figmaStyleReferences": {},
+    "$figmaVariableReferences": {
+      "Full": "VariableID:422:1027",
+      "Two-Third": "VariableID:422:1028",
+      "One-Third": "VariableID:422:1029",
+      "Three-Fourth": "VariableID:422:1030",
+      "Half": "VariableID:422:1031",
+      "One-Fourth": "VariableID:422:1032",
+      "Canvas Size": "VariableID:455:1016"
+    },
+    "$figmaModeId": "465:1",
+    "$figmaCollectionId": "VariableCollectionId:422:1026"
+  },
+  {
+    "id": "size mapping-l - xlg",
+    "name": "L - Xlg",
+    "group": "Size Mapping",
+    "selectedTokenSets": {
+      "Size Mapping/L - Xlg": "enabled"
+    },
+    "$figmaStyleReferences": {},
+    "$figmaVariableReferences": {
+      "Full": "VariableID:422:1027",
+      "Two-Third": "VariableID:422:1028",
+      "One-Third": "VariableID:422:1029",
+      "Three-Fourth": "VariableID:422:1030",
+      "Half": "VariableID:422:1031",
+      "One-Fourth": "VariableID:422:1032",
+      "Canvas Size": "VariableID:455:1016"
+    },
+    "$figmaModeId": "465:2",
+    "$figmaCollectionId": "VariableCollectionId:422:1026"
+  },
+  {
+    "id": "size mapping-l - lg",
+    "name": "L - Lg",
+    "group": "Size Mapping",
+    "selectedTokenSets": {
+      "Size Mapping/L - Lg": "enabled"
+    },
+    "$figmaStyleReferences": {},
+    "$figmaVariableReferences": {
+      "Full": "VariableID:422:1027",
+      "Two-Third": "VariableID:422:1028",
+      "One-Third": "VariableID:422:1029",
+      "Three-Fourth": "VariableID:422:1030",
+      "Half": "VariableID:422:1031",
+      "One-Fourth": "VariableID:422:1032",
+      "Canvas Size": "VariableID:455:1016"
+    },
+    "$figmaModeId": "466:3",
+    "$figmaCollectionId": "VariableCollectionId:422:1026"
+  },
+  {
+    "id": "size mapping-l - md",
+    "name": "L - Md",
+    "group": "Size Mapping",
+    "selectedTokenSets": {
+      "Size Mapping/L - Md": "enabled"
+    },
+    "$figmaStyleReferences": {},
+    "$figmaVariableReferences": {
+      "Full": "VariableID:422:1027",
+      "Two-Third": "VariableID:422:1028",
+      "One-Third": "VariableID:422:1029",
+      "Three-Fourth": "VariableID:422:1030",
+      "Half": "VariableID:422:1031",
+      "One-Fourth": "VariableID:422:1032",
+      "Canvas Size": "VariableID:455:1016"
+    },
+    "$figmaModeId": "466:4",
+    "$figmaCollectionId": "VariableCollectionId:422:1026"
+  },
+  {
+    "id": "size mapping-l - sm",
+    "name": "L - Sm",
+    "group": "Size Mapping",
+    "selectedTokenSets": {
+      "Size Mapping/L - Sm": "enabled"
+    },
+    "$figmaStyleReferences": {},
+    "$figmaVariableReferences": {
+      "Full": "VariableID:422:1027",
+      "Two-Third": "VariableID:422:1028",
+      "One-Third": "VariableID:422:1029",
+      "Three-Fourth": "VariableID:422:1030",
+      "Half": "VariableID:422:1031",
+      "One-Fourth": "VariableID:422:1032",
+      "Canvas Size": "VariableID:455:1016"
+    },
+    "$figmaModeId": "466:6",
+    "$figmaCollectionId": "VariableCollectionId:422:1026"
+  },
+  {
+    "id": "deprecated-light",
+    "name": "Light",
+    "group": "Deprecated",
+    "selectedTokenSets": {
+      "Deprecated/Light": "enabled"
+    },
+    "$figmaStyleReferences": {},
+    "$figmaVariableReferences": {
+      "Status.Neutral.Light": "VariableID:16748:2793"
+    },
+    "$figmaModeId": "16748:0",
+    "$figmaCollectionId": "VariableCollectionId:16748:2785"
+  },
+  {
+    "id": "deprecated-dark",
+    "name": "Dark",
+    "group": "Deprecated",
+    "selectedTokenSets": {
+      "Deprecated/Dark": "enabled"
+    },
+    "$figmaStyleReferences": {},
+    "$figmaVariableReferences": {
+      "Status.Neutral.Light": "VariableID:16748:2793"
+    },
+    "$figmaModeId": "16748:1",
+    "$figmaCollectionId": "VariableCollectionId:16748:2785"
+  },
+  {
     "id": "component-mode 1",
     "name": "Mode 1",
     "group": "Component",
@@ -722,7 +950,6 @@
       "Tags.Hover.Error Dark": "VariableID:15592:330",
       "Tags.Hover.Warning Dark": "VariableID:15592:331",
       "Tags.Hover.Success Dark": "VariableID:15592:332",
-      "Status.Neutral.Light": "VariableID:15662:227",
       "Status.Neutral.Dark": "VariableID:15662:228",
       "Background.Menu.State.Default": "VariableID:15775:329",
       "Background.Menu.State.Focused": "VariableID:15775:330",
@@ -1190,7 +1417,6 @@
       "Tags.Hover.Error Dark": "VariableID:15592:330",
       "Tags.Hover.Warning Dark": "VariableID:15592:331",
       "Tags.Hover.Success Dark": "VariableID:15592:332",
-      "Status.Neutral.Light": "VariableID:15662:227",
       "Status.Neutral.Dark": "VariableID:15662:228",
       "Background.Menu.State.Default": "VariableID:15775:329",
       "Background.Menu.State.Focused": "VariableID:15775:330",
@@ -1335,206 +1561,6 @@
     },
     "$figmaModeId": "420:0",
     "$figmaCollectionId": "VariableCollectionId:420:8"
-  },
-  {
-    "id": "size mapping-c - xlg",
-    "name": "C - Xlg",
-    "group": "Size Mapping",
-    "selectedTokenSets": {
-      "Size Mapping/C - Xlg": "enabled"
-    },
-    "$figmaStyleReferences": {},
-    "$figmaVariableReferences": {
-      "Full": "VariableID:422:1027",
-      "Two-Third": "VariableID:422:1028",
-      "One-Third": "VariableID:422:1029",
-      "Three-Fourth": "VariableID:422:1030",
-      "Half": "VariableID:422:1031",
-      "One-Fourth": "VariableID:422:1032",
-      "Canvas Size": "VariableID:455:1016"
-    },
-    "$figmaModeId": "422:3",
-    "$figmaCollectionId": "VariableCollectionId:422:1026"
-  },
-  {
-    "id": "size mapping-c - max",
-    "name": "C - Max",
-    "group": "Size Mapping",
-    "selectedTokenSets": {
-      "Size Mapping/C - Max": "enabled"
-    },
-    "$figmaStyleReferences": {},
-    "$figmaVariableReferences": {
-      "Full": "VariableID:422:1027",
-      "Two-Third": "VariableID:422:1028",
-      "One-Third": "VariableID:422:1029",
-      "Three-Fourth": "VariableID:422:1030",
-      "Half": "VariableID:422:1031",
-      "One-Fourth": "VariableID:422:1032",
-      "Canvas Size": "VariableID:455:1016"
-    },
-    "$figmaModeId": "422:4",
-    "$figmaCollectionId": "VariableCollectionId:422:1026"
-  },
-  {
-    "id": "size mapping-c - lg",
-    "name": "C - Lg",
-    "group": "Size Mapping",
-    "selectedTokenSets": {
-      "Size Mapping/C - Lg": "enabled"
-    },
-    "$figmaStyleReferences": {},
-    "$figmaVariableReferences": {
-      "Full": "VariableID:422:1027",
-      "Two-Third": "VariableID:422:1028",
-      "One-Third": "VariableID:422:1029",
-      "Three-Fourth": "VariableID:422:1030",
-      "Half": "VariableID:422:1031",
-      "One-Fourth": "VariableID:422:1032",
-      "Canvas Size": "VariableID:455:1016"
-    },
-    "$figmaModeId": "422:5",
-    "$figmaCollectionId": "VariableCollectionId:422:1026"
-  },
-  {
-    "id": "size mapping-c- md",
-    "name": "C- Md",
-    "group": "Size Mapping",
-    "selectedTokenSets": {
-      "Size Mapping/C- Md": "enabled"
-    },
-    "$figmaStyleReferences": {},
-    "$figmaVariableReferences": {
-      "Full": "VariableID:422:1027",
-      "Two-Third": "VariableID:422:1028",
-      "One-Third": "VariableID:422:1029",
-      "Three-Fourth": "VariableID:422:1030",
-      "Half": "VariableID:422:1031",
-      "One-Fourth": "VariableID:422:1032",
-      "Canvas Size": "VariableID:455:1016"
-    },
-    "$figmaModeId": "422:6",
-    "$figmaCollectionId": "VariableCollectionId:422:1026"
-  },
-  {
-    "id": "size mapping-c- sm",
-    "name": "C- Sm",
-    "group": "Size Mapping",
-    "selectedTokenSets": {
-      "Size Mapping/C- Sm": "enabled"
-    },
-    "$figmaStyleReferences": {},
-    "$figmaVariableReferences": {
-      "Full": "VariableID:422:1027",
-      "Two-Third": "VariableID:422:1028",
-      "One-Third": "VariableID:422:1029",
-      "Three-Fourth": "VariableID:422:1030",
-      "Half": "VariableID:422:1031",
-      "One-Fourth": "VariableID:422:1032",
-      "Canvas Size": "VariableID:455:1016"
-    },
-    "$figmaModeId": "422:7",
-    "$figmaCollectionId": "VariableCollectionId:422:1026"
-  },
-  {
-    "id": "size mapping-l - max",
-    "name": "L - Max",
-    "group": "Size Mapping",
-    "selectedTokenSets": {
-      "Size Mapping/L - Max": "enabled"
-    },
-    "$figmaStyleReferences": {},
-    "$figmaVariableReferences": {
-      "Full": "VariableID:422:1027",
-      "Two-Third": "VariableID:422:1028",
-      "One-Third": "VariableID:422:1029",
-      "Three-Fourth": "VariableID:422:1030",
-      "Half": "VariableID:422:1031",
-      "One-Fourth": "VariableID:422:1032",
-      "Canvas Size": "VariableID:455:1016"
-    },
-    "$figmaModeId": "465:1",
-    "$figmaCollectionId": "VariableCollectionId:422:1026"
-  },
-  {
-    "id": "size mapping-l - xlg",
-    "name": "L - Xlg",
-    "group": "Size Mapping",
-    "selectedTokenSets": {
-      "Size Mapping/L - Xlg": "enabled"
-    },
-    "$figmaStyleReferences": {},
-    "$figmaVariableReferences": {
-      "Full": "VariableID:422:1027",
-      "Two-Third": "VariableID:422:1028",
-      "One-Third": "VariableID:422:1029",
-      "Three-Fourth": "VariableID:422:1030",
-      "Half": "VariableID:422:1031",
-      "One-Fourth": "VariableID:422:1032",
-      "Canvas Size": "VariableID:455:1016"
-    },
-    "$figmaModeId": "465:2",
-    "$figmaCollectionId": "VariableCollectionId:422:1026"
-  },
-  {
-    "id": "size mapping-l - lg",
-    "name": "L - Lg",
-    "group": "Size Mapping",
-    "selectedTokenSets": {
-      "Size Mapping/L - Lg": "enabled"
-    },
-    "$figmaStyleReferences": {},
-    "$figmaVariableReferences": {
-      "Full": "VariableID:422:1027",
-      "Two-Third": "VariableID:422:1028",
-      "One-Third": "VariableID:422:1029",
-      "Three-Fourth": "VariableID:422:1030",
-      "Half": "VariableID:422:1031",
-      "One-Fourth": "VariableID:422:1032",
-      "Canvas Size": "VariableID:455:1016"
-    },
-    "$figmaModeId": "466:3",
-    "$figmaCollectionId": "VariableCollectionId:422:1026"
-  },
-  {
-    "id": "size mapping-l - md",
-    "name": "L - Md",
-    "group": "Size Mapping",
-    "selectedTokenSets": {
-      "Size Mapping/L - Md": "enabled"
-    },
-    "$figmaStyleReferences": {},
-    "$figmaVariableReferences": {
-      "Full": "VariableID:422:1027",
-      "Two-Third": "VariableID:422:1028",
-      "One-Third": "VariableID:422:1029",
-      "Three-Fourth": "VariableID:422:1030",
-      "Half": "VariableID:422:1031",
-      "One-Fourth": "VariableID:422:1032",
-      "Canvas Size": "VariableID:455:1016"
-    },
-    "$figmaModeId": "466:4",
-    "$figmaCollectionId": "VariableCollectionId:422:1026"
-  },
-  {
-    "id": "size mapping-l - sm",
-    "name": "L - Sm",
-    "group": "Size Mapping",
-    "selectedTokenSets": {
-      "Size Mapping/L - Sm": "enabled"
-    },
-    "$figmaStyleReferences": {},
-    "$figmaVariableReferences": {
-      "Full": "VariableID:422:1027",
-      "Two-Third": "VariableID:422:1028",
-      "One-Third": "VariableID:422:1029",
-      "Three-Fourth": "VariableID:422:1030",
-      "Half": "VariableID:422:1031",
-      "One-Fourth": "VariableID:422:1032",
-      "Canvas Size": "VariableID:455:1016"
-    },
-    "$figmaModeId": "466:6",
-    "$figmaCollectionId": "VariableCollectionId:422:1026"
   },
   {
     "id": "misc-mode 1",
