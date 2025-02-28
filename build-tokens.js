@@ -11,6 +11,12 @@ async function run() {
   const dark = JSON.parse(
     await promises.readFile('tokens/Themes/Dark.json', 'utf8')
   );
+  const lightDeprecated = JSON.parse(
+    await promises.readFile('tokens/Deprecated/Light.json', 'utf8')
+  );
+  const darkDeprecated = JSON.parse(
+    await promises.readFile('tokens/Deprecated/Dark.json', 'utf8')
+  );
 
   // build and write css files
   async function buildCss() {
@@ -26,6 +32,7 @@ async function run() {
     let semanticContent = ':root {\n';
     // recurse through json token structure
     semanticContent += loopTokens(light, true);
+    semanticContent += loopTokens(lightDeprecated, true, true);
     semanticContent += '}';
     // write semantic css file
     promises.writeFile(
@@ -35,7 +42,13 @@ async function run() {
   }
 
   // recursively loop though json structure to generate css variable syntax
-  function loopTokens(json, theme = false, category = '', keys = []) {
+  function loopTokens(
+    json,
+    theme = false,
+    deprecated = false,
+    category = '',
+    keys = []
+  ) {
     let content = '';
 
     for (const [key, value] of Object.entries(json)) {
@@ -52,7 +65,7 @@ async function run() {
         if (value.$value.startsWith('{')) {
           if (theme) {
             // set variable value using css light-dark() syntax
-            const darkRef = getDarkValue(keys, key);
+            const darkRef = getDarkValue(keys, key, deprecated);
             const darkVal = cleanValue(darkRef.$value);
             val = `light-dark(var(${prefix}-${val}), var(${prefix}-${darkVal}))`;
           } else {
@@ -70,7 +83,7 @@ async function run() {
         let newCategory = category + `-${cleanKey(key)}`;
 
         // recurse through sub-level and write sub-level variables
-        content += loopTokens(value, theme, newCategory, newKeys);
+        content += loopTokens(value, theme, deprecated, newCategory, newKeys);
       }
     }
 
@@ -78,8 +91,8 @@ async function run() {
   }
 
   // get dark value by looping through keys
-  function getDarkValue(keys, curKey) {
-    let darkVal = dark;
+  function getDarkValue(keys, curKey, deprecated) {
+    let darkVal = deprecated ? darkDeprecated : dark;
     keys.forEach((key) => {
       darkVal = darkVal[key];
     });
@@ -109,7 +122,13 @@ async function run() {
     // .join('');
   }
 
-  await Promise.all([palette, light, dark]).then(buildCss());
+  await Promise.all([
+    palette,
+    light,
+    dark,
+    lightDeprecated,
+    darkDeprecated,
+  ]).then(buildCss());
 }
 
 run();
