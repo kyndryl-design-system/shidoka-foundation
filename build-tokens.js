@@ -77,7 +77,12 @@ async function run() {
             // set variable value using css light-dark() syntax
             const darkRef = getDarkValue(keys, key, deprecated);
             const darkVal = cleanValue(darkRef.$value);
-            val = `light-dark(var(${prefix}-${val}), var(${prefix}-${darkVal}))`;
+            if (darkVal.startsWith('#')) {
+              // handle if darkVal is hex instead of token
+              val = `light-dark(var(${prefix}-${val}), ${darkVal})`;
+            } else {
+              val = `light-dark(var(${prefix}-${val}), var(${prefix}-${darkVal}))`;
+            }
           } else {
             // set variable value
             val = `var(${prefix}-${val})`;
