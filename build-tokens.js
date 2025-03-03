@@ -12,10 +12,18 @@ async function run() {
     await promises.readFile('tokens/Themes/Dark.json', 'utf8')
   );
   const lightDeprecated = JSON.parse(
-    await promises.readFile('tokens/Deprecated/Light.json', 'utf8')
+    await promises
+      .readFile('tokens/Deprecated/Light.json', 'utf8')
+      .catch(function () {
+        return null;
+      })
   );
   const darkDeprecated = JSON.parse(
-    await promises.readFile('tokens/Deprecated/Dark.json', 'utf8')
+    await promises
+      .readFile('tokens/Deprecated/Dark.json', 'utf8')
+      .catch(function () {
+        return null;
+      })
   );
 
   // build and write css files
@@ -32,7 +40,9 @@ async function run() {
     let semanticContent = ':root {\n';
     // recurse through json token structure
     semanticContent += loopTokens(light, true);
-    semanticContent += loopTokens(lightDeprecated, true, true);
+    if (lightDeprecated && darkDeprecated) {
+      semanticContent += loopTokens(lightDeprecated, true, true);
+    }
     semanticContent += '}';
     // write semantic css file
     promises.writeFile(
