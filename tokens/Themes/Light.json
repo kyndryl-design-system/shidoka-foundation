@@ -185,7 +185,7 @@
           },
           "Hover": {
             "$type": "color",
-            "$value": "{Ai Interactive.10}"
+            "$value": "{Ai Interactive.05}"
           },
           "Pressed": {
             "$type": "color",
@@ -328,6 +328,22 @@
       "Bridge-txt": {
         "$type": "color",
         "$value": "{Spruce.60}"
+      },
+      "AI": {
+        "Indicator": {
+          "Head": {
+            "$type": "color",
+            "$value": "{Ai Interactive.40}"
+          },
+          "Halo": {
+            "$type": "color",
+            "$value": "{Ai Interactive.25}"
+          },
+          "Background": {
+            "$type": "color",
+            "$value": "{Ai Interactive.10}"
+          }
+        }
       }
     },
     "Navigation": {
@@ -991,7 +1007,7 @@
         "State": {
           "Default": {
             "$type": "color",
-            "$value": "{Ai Interactive.40}"
+            "$value": "{Ai Interactive.30}"
           },
           "Focused": {
             "$type": "color",
@@ -999,11 +1015,11 @@
           },
           "Hover": {
             "$type": "color",
-            "$value": "{Ai Interactive.70}"
+            "$value": "{Ai Interactive.50}"
           },
           "Pressed": {
             "$type": "color",
-            "$value": "{Ai Interactive.60}"
+            "$value": "{Ai Interactive.70}"
           },
           "Highlight": {
             "$type": "color",
@@ -1079,6 +1095,10 @@
       }
     },
     "Neutral": {
+      "Light": {
+        "$type": "color",
+        "$value": "{Cool Gray.8}"
+      },
       "Dark": {
         "$type": "color",
         "$value": "{Cool Gray.70}"
@@ -1624,23 +1644,23 @@
       "AI": {
         "L1": {
           "$type": "color",
-          "$value": "#dd80dd33"
+          "$value": "#8988c033"
         },
         "L2": {
           "$type": "color",
-          "$value": "#dd80dd4d"
+          "$value": "#8988c04d"
         },
         "L2 - Overflow": {
           "$type": "color",
-          "$value": "#dd80dd80"
+          "$value": "#8988c080"
         },
         "L3": {
           "$type": "color",
-          "$value": "#dd80dd80"
+          "$value": "#8988c080"
         },
         "L4": {
           "$type": "color",
-          "$value": "#dd80dd26"
+          "$value": "#8988c026"
         }
       }
     },
@@ -1972,6 +1992,46 @@
       "Disabled": {
         "$type": "color",
         "$value": "{Warm Gray.10}"
+      },
+      "Information Dark": {
+        "$type": "color",
+        "$value": "{Misc.Blue.Dark}"
+      },
+      "Error Dark": {
+        "$type": "color",
+        "$value": "{Misc.Red.60}"
+      },
+      "Error": {
+        "$type": "color",
+        "$value": "{Warm Red.20}"
+      },
+      "Success": {
+        "$type": "color",
+        "$value": "{Misc.Green.Light}"
+      },
+      "Warning": {
+        "$type": "color",
+        "$value": "{Misc.Yellow.Light}"
+      },
+      "Blue": {
+        "$type": "color",
+        "$value": "{Misc.Blue.Light}"
+      },
+      "Critical Dark": {
+        "$type": "color",
+        "$value": "{Misc.Red.100}"
+      },
+      "Critical Light": {
+        "$type": "color",
+        "$value": "{Misc.Red.05}"
+      },
+      "Success Dark": {
+        "$type": "color",
+        "$value": "{Misc.Green.Dark}"
+      },
+      "Warning Dark": {
+        "$type": "color",
+        "$value": "{Misc.Yellow.15}"
       }
     },
     "Hover": {
@@ -2007,7 +2067,7 @@
         "$type": "color",
         "$value": "{Spruce.10}"
       },
-      "Information Light": {
+      "Blue": {
         "$type": "color",
         "$value": "{Misc.Blue.5}"
       },
@@ -2027,29 +2087,29 @@
         "$type": "color",
         "$value": "{Spring Green.10}"
       },
-      "Information Dark": {
-        "$type": "color",
-        "$value": "{Misc.Blue.Dark}"
-      },
-      "Error Dark": {
-        "$type": "color",
-        "$value": "{Misc.Red.90}"
-      },
-      "Warning Dark": {
+      "Warning": {
         "$type": "color",
         "$value": "{Misc.Yellow.15}"
       },
-      "Success Dark": {
+      "Success": {
         "$type": "color",
-        "$value": "{Misc.Green.70}"
+        "$value": "{Misc.Green.50}"
       },
       "Critical Light": {
         "$type": "color",
         "$value": "{Misc.Red.25}"
       },
-      "Information": {
+      "Blue Dark": {
         "$type": "color",
         "$value": "{Misc.Blue.110}"
+      },
+      "Critical Dark": {
+        "$type": "color",
+        "$value": "{Misc.Red.60}"
+      },
+      "Error": {
+        "$type": "color",
+        "$value": "{Misc.Red.60}"
       }
     }
   }

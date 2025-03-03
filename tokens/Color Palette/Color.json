@@ -484,71 +484,71 @@
   "Ai Interactive": {
     "10": {
       "$type": "color",
-      "$value": "#f1ccf1"
+      "$value": "#d4d4e8"
     },
     "15": {
       "$type": "color",
-      "$value": "#ebb2eb"
+      "$value": "#bbbbdb"
     },
     "20": {
       "$type": "color",
-      "$value": "#e499e4"
+      "$value": "#a2a2ce"
     },
     "25": {
       "$type": "color",
-      "$value": "#dd80dd"
+      "$value": "#8988c0"
     },
     "30": {
       "$type": "color",
-      "$value": "#d666d6"
+      "$value": "#706fb3"
     },
     "35": {
       "$type": "color",
-      "$value": "#cf4ccf"
+      "$value": "#5756a6"
     },
     "40": {
       "$type": "color",
-      "$value": "#c933c9"
+      "$value": "#484786"
     },
     "45": {
       "$type": "color",
-      "$value": "#c219c2"
+      "$value": "#403f74"
     },
     "50": {
       "$type": "color",
-      "$value": "#bb00bb"
+      "$value": "#373662"
     },
     "60": {
       "$type": "color",
-      "$value": "#a800a8"
+      "$value": "#2f2e50"
     },
     "70": {
       "$type": "color",
-      "$value": "#8c008c"
+      "$value": "#26263f"
     },
     "75": {
       "$type": "color",
-      "$value": "#700070"
+      "$value": "#1a1924"
     },
     "80": {
       "$type": "color",
-      "$value": "#540054"
+      "$value": "#15151b"
     },
     "90": {
       "$type": "color",
-      "$value": "#380038"
+      "$value": "#121219"
     },
     "100": {
       "$type": "color",
-      "$value": "#1c001c"
+      "$value": "#0e0e17"
     },
     "05": {
       "$type": "color",
-      "$value": "#f8e5f8"
+      "$value": "#e1e1ef"
     },
     "01": {
       "$type": "color",
-      "$value": "#fcf4fc"
+      "$value": "#f5f5fa"
     }
   },
   "Accent": {
