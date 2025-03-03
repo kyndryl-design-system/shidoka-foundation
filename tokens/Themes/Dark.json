@@ -337,11 +337,11 @@
           },
           "Halo": {
             "$type": "color",
-            "$value": "{Ai Interactive.Opaque.30 - 80%}"
+            "$value": "{Ai Interactive.Opaque.30-80Pct}"
           },
           "Background": {
             "$type": "color",
-            "$value": "{Ai Interactive.Opaque.40 - 40%}"
+            "$value": "{Ai Interactive.Opaque.40-40Pct}"
           }
         }
       }
@@ -384,11 +384,11 @@
         },
         "Loader End Gradient": {
           "$type": "color",
-          "$value": "{Ai Interactive.Opaque.45 - 5%}"
+          "$value": "{Ai Interactive.Opaque.45-5Pct}"
         },
         "Loader Mid Gradient": {
           "$type": "color",
-          "$value": "{Ai Interactive.Opaque.45 - 50%}"
+          "$value": "{Ai Interactive.Opaque.45-50Pct}"
         }
       }
     },

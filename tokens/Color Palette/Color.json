@@ -551,23 +551,23 @@
       "$value": "#f5f5fa"
     },
     "Opaque": {
-      "45 - 75 %": {
+      "45-75Pct": {
         "$type": "color",
         "$value": "#403f74bf"
       },
-      "45 - 50%": {
+      "45-50Pct": {
         "$type": "color",
         "$value": "#403f7480"
       },
-      "45 - 5%": {
+      "45-5Pct": {
         "$type": "color",
         "$value": "#403f740d"
       },
-      "30 - 80%": {
+      "30-80Pct": {
         "$type": "color",
         "$value": "#706fb3cc"
       },
-      "40 - 40%": {
+      "40-40Pct": {
         "$type": "color",
         "$value": "#48478666"
       }
