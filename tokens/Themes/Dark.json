@@ -3,7 +3,7 @@
     "Container": {
       "Default": {
         "$type": "color",
-        "$value": "{Interactive.115}"
+        "$value": "{Interactive.110}"
       },
       "Subtle": {
         "$type": "color",
@@ -28,9 +28,13 @@
       "Ai": {
         "Default": {
           "$type": "color",
-          "$value": "{Interactive.120}"
+          "$value": "{Ai Interactive.100}"
         },
         "Subtle": {
+          "$type": "color",
+          "$value": "{Ai Interactive.100}"
+        },
+        "Level 2": {
           "$type": "color",
           "$value": "{Ai Interactive.90}"
         }
@@ -177,15 +181,15 @@
         "AI": {
           "Default": {
             "$type": "color",
-            "$value": "{Ai Interactive.80}"
+            "$value": "{Ai Interactive.50}"
           },
           "Hover": {
             "$type": "color",
-            "$value": "{Ai Interactive.90}"
+            "$value": "{Ai Interactive.30}"
           },
           "Pressed": {
             "$type": "color",
-            "$value": "{Ai Interactive.100}"
+            "$value": "{Ai Interactive.60}"
           }
         }
       },
@@ -270,6 +274,12 @@
       "Default": {
         "$type": "color",
         "$value": "{Opacity.Dark.30}"
+      },
+      "Ai": {
+        "Default": {
+          "$type": "color",
+          "$value": "{Opacity.Dark.30}"
+        }
       }
     },
     "Table": {
@@ -305,13 +315,35 @@
       },
       "Default": {
         "$type": "color",
-        "$value": "{Cool Gray.95}"
+        "$value": "{Interactive.115}"
+      },
+      "Dashboard": {
+        "Dashboard Default": {
+          "$type": "color",
+          "$value": "{Interactive.115}"
+        }
       }
     },
     "Logo": {
       "Bridge-txt": {
         "$type": "color",
         "$value": "{Dark Stone.10}"
+      },
+      "AI": {
+        "Indicator": {
+          "Head": {
+            "$type": "color",
+            "$value": "{Ai Interactive.20}"
+          },
+          "Halo": {
+            "$type": "color",
+            "$value": "{Ai Interactive.Opaque.30-80Pct}"
+          },
+          "Background": {
+            "$type": "color",
+            "$value": "{Ai Interactive.Opaque.40-40Pct}"
+          }
+        }
       }
     },
     "Navigation": {
@@ -340,11 +372,23 @@
       "Ai": {
         "Linear Top Gradient 1": {
           "$type": "color",
-          "$value": "{Ai Interactive.100}"
+          "$value": "{Ai Interactive.70}"
         },
         "Linear Bottom Gradient 1": {
           "$type": "color",
           "$value": "{Interactive.120}"
+        },
+        "Loader Start Gradient": {
+          "$type": "color",
+          "$value": "{Ai Interactive.75}"
+        },
+        "Loader End Gradient": {
+          "$type": "color",
+          "$value": "{Ai Interactive.Opaque.45-5Pct}"
+        },
+        "Loader Mid Gradient": {
+          "$type": "color",
+          "$value": "{Ai Interactive.Opaque.45-50Pct}"
         }
       }
     },
@@ -976,6 +1020,10 @@
           "Pressed": {
             "$type": "color",
             "$value": "{Ai Interactive.70}"
+          },
+          "Highlight": {
+            "$type": "color",
+            "$value": "{Ai Interactive.40}"
           }
         }
       }
@@ -984,6 +1032,12 @@
       "Ai": {
         "$type": "color",
         "$value": "{Ai Interactive.100}"
+      }
+    },
+    "Ai": {
+      "Subtle": {
+        "$type": "color",
+        "$value": "{Ai Interactive.80}"
       }
     }
   },
@@ -1015,11 +1069,19 @@
       },
       "Dark": {
         "$type": "color",
-        "$value": "{Misc.Red.80}"
+        "$value": "{Misc.Red.60}"
       },
       "Accent": {
         "$type": "color",
         "$value": "{Misc.Red.Light}"
+      },
+      "Critical Dark": {
+        "$type": "color",
+        "$value": "{Misc.Red.90}"
+      },
+      "Critical Light": {
+        "$type": "color",
+        "$value": "{Misc.Red.05}"
       }
     },
     "Success": {
@@ -1582,23 +1644,23 @@
       "AI": {
         "L1": {
           "$type": "color",
-          "$value": "#a800a833"
+          "$value": "#37366233"
         },
         "L2": {
           "$type": "color",
-          "$value": "#a800a84d"
+          "$value": "#3736624d"
         },
         "L2 - Overflow": {
           "$type": "color",
-          "$value": "#a800a880"
+          "$value": "#37366280"
         },
         "L3": {
           "$type": "color",
-          "$value": "#a800a840"
+          "$value": "#37366240"
         },
         "L4": {
           "$type": "color",
-          "$value": "#a800a826"
+          "$value": "#37366226"
         }
       }
     },
@@ -1895,18 +1957,6 @@
         "$type": "color",
         "$value": "{Interactive.15}"
       },
-      "Success": {
-        "$type": "color",
-        "$value": "{Misc.Green.10}"
-      },
-      "Warning": {
-        "$type": "color",
-        "$value": "{Misc.Yellow.Dark}"
-      },
-      "Error": {
-        "$type": "color",
-        "$value": "{Warm Red.30}"
-      },
       "Cat 1": {
         "$type": "color",
         "$value": "{Sea.10}"
@@ -1935,10 +1985,6 @@
         "$type": "color",
         "$value": "{Ai Interactive.15}"
       },
-      "Blue": {
-        "$type": "color",
-        "$value": "{Misc.Blue.10}"
-      },
       "Gray": {
         "$type": "color",
         "$value": "{Cool Gray.10}"
@@ -1947,9 +1993,45 @@
         "$type": "color",
         "$value": "{Warm Gray.80}"
       },
+      "Information Dark": {
+        "$type": "color",
+        "$value": "{Misc.Blue.Dark}"
+      },
       "Error Dark": {
         "$type": "color",
-        "$value": "{Misc.Red.80}"
+        "$value": "{Misc.Red.60}"
+      },
+      "Error": {
+        "$type": "color",
+        "$value": "{Warm Red.30}"
+      },
+      "Success": {
+        "$type": "color",
+        "$value": "{Misc.Green.10}"
+      },
+      "Warning": {
+        "$type": "color",
+        "$value": "{Misc.Yellow.10}"
+      },
+      "Blue": {
+        "$type": "color",
+        "$value": "{Misc.Blue.110}"
+      },
+      "Critical Dark": {
+        "$type": "color",
+        "$value": "{Misc.Red.90}"
+      },
+      "Critical Light": {
+        "$type": "color",
+        "$value": "{Misc.Red.05}"
+      },
+      "Success Dark": {
+        "$type": "color",
+        "$value": "{Misc.Green.60}"
+      },
+      "Warning Dark": {
+        "$type": "color",
+        "$value": "{Misc.Yellow.15}"
       }
     },
     "Hover": {
@@ -1993,33 +2075,41 @@
         "$type": "color",
         "$value": "{Cool Gray.30}"
       },
-      "Error": {
+      "Error Light": {
         "$type": "color",
         "$value": "{Misc.Red.40}"
       },
-      "Warning": {
+      "Warning Light": {
         "$type": "color",
-        "$value": "{Misc.Yellow.25}"
+        "$value": "{Misc.Yellow.20}"
       },
-      "Success": {
+      "Success Light": {
         "$type": "color",
         "$value": "{Spring Green.20}"
       },
+      "Warning": {
+        "$type": "color",
+        "$value": "{Misc.Yellow.20}"
+      },
+      "Success": {
+        "$type": "color",
+        "$value": "{Misc.Green.40}"
+      },
+      "Critical Light": {
+        "$type": "color",
+        "$value": "{Misc.Red.25}"
+      },
       "Blue Dark": {
         "$type": "color",
-        "$value": "{Misc.Blue.90}"
+        "$value": "{Misc.Blue.110}"
       },
-      "Error Dark": {
+      "Critical Dark": {
         "$type": "color",
-        "$value": "{Misc.Red.90}"
+        "$value": "{Misc.Red.70}"
       },
-      "Warning Dark": {
+      "Error": {
         "$type": "color",
-        "$value": "{Misc.Yellow.15}"
-      },
-      "Success Dark": {
-        "$type": "color",
-        "$value": "{Misc.Green.70}"
+        "$value": "{Misc.Red.60}"
       }
     }
   }
