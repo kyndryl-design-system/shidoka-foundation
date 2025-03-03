@@ -538,7 +538,12 @@
       "Misc.Yellow.15": "VariableID:15592:327",
       "Misc.Green.25": "VariableID:15592:328",
       "Misc.Red.05": "VariableID:16669:29117",
-      "Misc.Red.25": "VariableID:16679:29378"
+      "Misc.Red.25": "VariableID:16679:29378",
+      "Ai Interactive.Opaque.45 - 75 %": "VariableID:16807:2668",
+      "Ai Interactive.Opaque.45 - 50%": "VariableID:16807:2669",
+      "Ai Interactive.Opaque.45 - 5%": "VariableID:16807:2670",
+      "Ai Interactive.Opaque.30 - 80%": "VariableID:16807:2671",
+      "Ai Interactive.Opaque.40 - 40%": "VariableID:16807:2672"
     },
     "$figmaModeId": "114:3",
     "$figmaCollectionId": "VariableCollectionId:114:573"

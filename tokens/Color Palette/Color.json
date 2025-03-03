@@ -549,6 +549,28 @@
     "01": {
       "$type": "color",
       "$value": "#f5f5fa"
+    },
+    "Opaque": {
+      "45 - 75 %": {
+        "$type": "color",
+        "$value": "#403f74bf"
+      },
+      "45 - 50%": {
+        "$type": "color",
+        "$value": "#403f7480"
+      },
+      "45 - 5%": {
+        "$type": "color",
+        "$value": "#403f740d"
+      },
+      "30 - 80%": {
+        "$type": "color",
+        "$value": "#706fb3cc"
+      },
+      "40 - 40%": {
+        "$type": "color",
+        "$value": "#48478666"
+      }
     }
   },
   "Accent": {
@@ -635,7 +657,7 @@
       },
       "85": {
         "$type": "color",
-        "$value": "#121219cc"
+        "$value": "#000000cc"
       }
     }
   },
