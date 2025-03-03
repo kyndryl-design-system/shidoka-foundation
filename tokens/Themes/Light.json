@@ -2027,7 +2027,7 @@
       },
       "Success Dark": {
         "$type": "color",
-        "$value": "{Misc.Green.Dark}"
+        "$value": "{Misc.Green.60}"
       },
       "Warning Dark": {
         "$type": "color",
@@ -2089,11 +2089,11 @@
       },
       "Warning": {
         "$type": "color",
-        "$value": "{Misc.Yellow.15}"
+        "$value": "{Misc.Yellow.20}"
       },
       "Success": {
         "$type": "color",
-        "$value": "{Misc.Green.50}"
+        "$value": "{Misc.Green.40}"
       },
       "Critical Light": {
         "$type": "color",
@@ -2105,7 +2105,7 @@
       },
       "Critical Dark": {
         "$type": "color",
-        "$value": "{Misc.Red.60}"
+        "$value": "{Misc.Red.70}"
       },
       "Error": {
         "$type": "color",
