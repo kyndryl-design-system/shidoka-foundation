@@ -193,7 +193,7 @@ export const Mascot = {
   },
 };
 
-const aiFiles = ['response'];
+const aiFiles = ['indicator'];
 
 export const AI = {
   render: () => {
