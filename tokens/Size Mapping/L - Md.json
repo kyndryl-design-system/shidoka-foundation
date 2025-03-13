@@ -1,30 +1,30 @@
 {
   "Full": {
-    "$type": "number",
-    "$value": "{Left-Aligned - Md.Full Width}"
+    "value": "{Left-Aligned - Md.Full Width}",
+    "type": "number"
   },
   "Two-Third": {
-    "$type": "number",
-    "$value": "{Left-Aligned - Md.Half}"
+    "value": "{Left-Aligned - Md.Half}",
+    "type": "number"
   },
   "One-Third": {
-    "$type": "number",
-    "$value": "{Left-Aligned - Md.Full Width}"
+    "value": "{Left-Aligned - Md.Full Width}",
+    "type": "number"
   },
   "Three-Fourth": {
-    "$type": "number",
-    "$value": "{Left-Aligned - Md.Half}"
+    "value": "{Left-Aligned - Md.Half}",
+    "type": "number"
   },
   "Half": {
-    "$type": "number",
-    "$value": "{Left-Aligned - Md.Full Width}"
+    "value": "{Left-Aligned - Md.Full Width}",
+    "type": "number"
   },
   "One-Fourth": {
-    "$type": "number",
-    "$value": "{Left-Aligned - Md.Three-Fourth}"
+    "value": "{Left-Aligned - Md.Three-Fourth}",
+    "type": "number"
   },
   "Canvas Size": {
-    "$type": "number",
-    "$value": "{Left-Aligned - Md.Canvas}"
+    "value": "{Left-Aligned - Md.Canvas}",
+    "type": "number"
   }
 }

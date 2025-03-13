@@ -1,30 +1,30 @@
 {
   "Full": {
-    "$type": "number",
-    "$value": "{Left-Aligned - Xlg.Full Width}"
+    "value": "{Left-Aligned - Xlg.Full Width}",
+    "type": "number"
   },
   "Two-Third": {
-    "$type": "number",
-    "$value": "{Left-Aligned - Xlg.Two-Third}"
+    "value": "{Left-Aligned - Xlg.Two-Third}",
+    "type": "number"
   },
   "One-Third": {
-    "$type": "number",
-    "$value": "{Left-Aligned - Xlg.One-Third}"
+    "value": "{Left-Aligned - Xlg.One-Third}",
+    "type": "number"
   },
   "Three-Fourth": {
-    "$type": "number",
-    "$value": "{Left-Aligned - Xlg.Three-Fourth}"
+    "value": "{Left-Aligned - Xlg.Three-Fourth}",
+    "type": "number"
   },
   "Half": {
-    "$type": "number",
-    "$value": "{Left-Aligned - Xlg.Half}"
+    "value": "{Left-Aligned - Xlg.Half}",
+    "type": "number"
   },
   "One-Fourth": {
-    "$type": "number",
-    "$value": "{Left-Aligned - Xlg.One-Fourth}"
+    "value": "{Left-Aligned - Xlg.One-Fourth}",
+    "type": "number"
   },
   "Canvas Size": {
-    "$type": "number",
-    "$value": "{Left-Aligned - Xlg.Canvas}"
+    "value": "{Left-Aligned - Xlg.Canvas}",
+    "type": "number"
   }
 }
