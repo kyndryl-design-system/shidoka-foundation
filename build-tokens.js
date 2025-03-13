@@ -62,21 +62,21 @@ async function run() {
     let content = '';
 
     for (const [key, value] of Object.entries(json)) {
-      if (value.$value) {
-        const prefix = `--kd-${value.$type}`;
+      if (value.value) {
+        const prefix = `--kd-${value.type}`;
         // build css variables syntax
         const token = cleanKey(key);
         // set variable attribute
         const attr = `${prefix}${category}-${token}`;
         // palette token reference
-        let val = cleanValue(value.$value);
+        let val = cleanValue(value.value);
 
         // if value is a reference to another variable
-        if (value.$value.startsWith('{')) {
+        if (value.value.startsWith('{')) {
           if (theme) {
             // set variable value using css light-dark() syntax
             const darkRef = getDarkValue(keys, key, deprecated);
-            const darkVal = cleanValue(darkRef.$value);
+            const darkVal = cleanValue(darkRef.value);
             if (darkVal.startsWith('#')) {
               // handle if darkVal is hex instead of token
               val = `light-dark(var(${prefix}-${val}), ${darkVal})`;
