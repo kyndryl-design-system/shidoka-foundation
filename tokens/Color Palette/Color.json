@@ -1240,5 +1240,57 @@
       "value": "#004a4f",
       "type": "color"
     }
+  },
+  "RAG": {
+    "Critical": {
+      "20": {
+        "value": "#f493c5",
+        "type": "color"
+      },
+      "100": {
+        "value": "#c4407e",
+        "type": "color"
+      }
+    },
+    "Error": {
+      "20": {
+        "value": "#ff9688",
+        "type": "color"
+      },
+      "100": {
+        "value": "#cc1800",
+        "type": "color"
+      }
+    },
+    "Success": {
+      "20": {
+        "value": "#81e1b5",
+        "type": "color"
+      },
+      "100": {
+        "value": "#23c060",
+        "type": "color"
+      }
+    },
+    "Warning": {
+      "20": {
+        "value": "#ffe88e",
+        "type": "color"
+      },
+      "100": {
+        "value": "#ffbc48",
+        "type": "color"
+      }
+    },
+    "Information": {
+      "20": {
+        "value": "#95d3f0",
+        "type": "color"
+      },
+      "100": {
+        "value": "#246f96",
+        "type": "color"
+      }
+    }
   }
 }

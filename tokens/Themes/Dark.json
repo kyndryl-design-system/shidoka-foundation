@@ -268,6 +268,10 @@
       "Disabled": {
         "value": "{Cool Gray.3}",
         "type": "color"
+      },
+      "4 - Dark": {
+        "value": "{Opacity.Dark.40}",
+        "type": "color"
       }
     },
     "Forms": {
@@ -284,6 +288,10 @@
           "value": "{Opacity.Dark.30}",
           "type": "color"
         }
+      },
+      "Disabled": {
+        "value": "{Cool Gray.90}",
+        "type": "color"
       }
     },
     "Table": {
@@ -447,15 +455,15 @@
       },
       "Progress": {
         "Complete": {
-          "value": "{Spruce.40}",
+          "value": "{Spruce.30}",
           "type": "color"
         },
         "Active": {
-          "value": "{Interactive.60}",
+          "value": "{Interactive.80-primary}",
           "type": "color"
         },
         "Background": {
-          "value": "{Interactive.70}",
+          "value": "{Interactive.105}",
           "type": "color"
         }
       }
@@ -667,6 +675,10 @@
       },
       "Label-Primary": {
         "value": "{Dark Stone.20}",
+        "type": "color"
+      },
+      "Disabled": {
+        "value": "{Cool Gray.90}",
         "type": "color"
       }
     },
@@ -894,7 +906,7 @@
         "type": "color"
       },
       "Error": {
-        "value": "{Misc.Red.40}",
+        "value": "{RAG.Error.20}",
         "type": "color"
       },
       "Component Border": {
@@ -1084,31 +1096,31 @@
   "Status": {
     "Informational": {
       "Light": {
-        "value": "{Misc.Blue.Light}",
+        "value": "{RAG.Information.20}",
         "type": "color"
       },
       "Dark": {
-        "value": "{Misc.Blue.Dark}",
+        "value": "{RAG.Information.100}",
         "type": "color"
       }
     },
     "Warning": {
       "Light": {
-        "value": "{Misc.Yellow.10}",
+        "value": "{RAG.Warning.20}",
         "type": "color"
       },
       "Dark": {
-        "value": "{Misc.Yellow.Dark}",
+        "value": "{RAG.Warning.100}",
         "type": "color"
       }
     },
     "Error": {
       "Light": {
-        "value": "{Misc.Red.30}",
+        "value": "{RAG.Error.20}",
         "type": "color"
       },
       "Dark": {
-        "value": "{Misc.Red.60}",
+        "value": "{RAG.Error.100}",
         "type": "color"
       },
       "Accent": {
@@ -1116,21 +1128,21 @@
         "type": "color"
       },
       "Critical Dark": {
-        "value": "{Misc.Red.90}",
+        "value": "{RAG.Critical.100}",
         "type": "color"
       },
       "Critical Light": {
-        "value": "{Misc.Red.05}",
+        "value": "{RAG.Critical.20}",
         "type": "color"
       }
     },
     "Success": {
       "Light": {
-        "value": "{Misc.Green.Light}",
+        "value": "{RAG.Success.20}",
         "type": "color"
       },
       "Dark": {
-        "value": "{Misc.Green.60}",
+        "value": "{RAG.Success.100}",
         "type": "color"
       }
     },
@@ -1581,49 +1593,49 @@
     "RAG": {
       "3": {
         "Warning": {
-          "value": "{Misc.Yellow.Dark}",
+          "value": "{RAG.Warning.100}",
           "type": "color"
         },
         "Error": {
-          "value": "{Misc.Red.Dark}",
+          "value": "{RAG.Error.100}",
           "type": "color"
         },
         "Success": {
-          "value": "{Misc.Green.Dark}",
+          "value": "{RAG.Success.100}",
           "type": "color"
         }
       },
       "8": {
         "Success-light": {
-          "value": "{Misc.Green.Light}",
+          "value": "{RAG.Success.20}",
           "type": "color"
         },
         "Success": {
-          "value": "{Misc.Green.Dark}",
+          "value": "{RAG.Success.100}",
           "type": "color"
         },
         "Error-light": {
-          "value": "{Misc.Red.Light}",
+          "value": "{RAG.Error.20}",
           "type": "color"
         },
         "Warning-light": {
-          "value": "{Misc.Yellow.Light}",
+          "value": "{RAG.Warning.20}",
           "type": "color"
         },
         "Error": {
-          "value": "{Misc.Red.Dark}",
+          "value": "{RAG.Error.100}",
           "type": "color"
         },
         "Warning": {
-          "value": "{Misc.Yellow.Dark}",
+          "value": "{RAG.Warning.100}",
           "type": "color"
         },
         "Informational-light": {
-          "value": "{Misc.Blue.Light}",
+          "value": "{RAG.Information.20}",
           "type": "color"
         },
         "Informational": {
-          "value": "{Misc.Blue.Dark}",
+          "value": "{RAG.Information.100}",
           "type": "color"
         }
       }
@@ -2034,43 +2046,43 @@
         "type": "color"
       },
       "Information Dark": {
-        "value": "{Misc.Blue.Dark}",
+        "value": "{RAG.Information.100}",
         "type": "color"
       },
       "Error Dark": {
-        "value": "{Misc.Red.60}",
+        "value": "{RAG.Error.100}",
         "type": "color"
       },
       "Error": {
-        "value": "{Warm Red.30}",
+        "value": "{RAG.Error.20}",
         "type": "color"
       },
       "Success": {
-        "value": "{Misc.Green.10}",
+        "value": "{RAG.Success.20}",
         "type": "color"
       },
       "Warning": {
-        "value": "{Misc.Yellow.10}",
+        "value": "{RAG.Warning.20}",
         "type": "color"
       },
       "Blue": {
-        "value": "{Misc.Blue.110}",
+        "value": "{RAG.Information.20}",
         "type": "color"
       },
       "Critical Dark": {
-        "value": "{Misc.Red.90}",
+        "value": "{RAG.Critical.100}",
         "type": "color"
       },
       "Critical Light": {
-        "value": "{Misc.Red.05}",
+        "value": "{RAG.Critical.20}",
         "type": "color"
       },
       "Success Dark": {
-        "value": "{Misc.Green.60}",
+        "value": "{RAG.Success.100}",
         "type": "color"
       },
       "Warning Dark": {
-        "value": "{Misc.Yellow.15}",
+        "value": "{RAG.Warning.100}",
         "type": "color"
       }
     },
@@ -2108,7 +2120,7 @@
         "type": "color"
       },
       "Blue": {
-        "value": "{Misc.Blue.20}",
+        "value": "{RAG.Information.100}",
         "type": "color"
       },
       "Gray": {
@@ -2116,39 +2128,39 @@
         "type": "color"
       },
       "Error Light": {
-        "value": "{Misc.Red.40}",
+        "value": "{RAG.Error.100}",
         "type": "color"
       },
       "Warning Light": {
-        "value": "{Misc.Yellow.20}",
+        "value": "{RAG.Warning.100}",
         "type": "color"
       },
       "Success Light": {
-        "value": "{Spring Green.20}",
+        "value": "{RAG.Success.100}",
         "type": "color"
       },
       "Warning": {
-        "value": "{Misc.Yellow.20}",
+        "value": "{RAG.Warning.20}",
         "type": "color"
       },
       "Success": {
-        "value": "{Misc.Green.40}",
+        "value": "{RAG.Success.20}",
         "type": "color"
       },
       "Critical Light": {
-        "value": "{Misc.Red.25}",
+        "value": "{RAG.Critical.100}",
         "type": "color"
       },
       "Blue Dark": {
-        "value": "{Misc.Blue.110}",
+        "value": "{RAG.Information.20}",
         "type": "color"
       },
       "Critical Dark": {
-        "value": "{Misc.Red.70}",
+        "value": "{RAG.Critical.20}",
         "type": "color"
       },
       "Error": {
-        "value": "{Misc.Red.60}",
+        "value": "{RAG.Error.20}",
         "type": "color"
       }
     }

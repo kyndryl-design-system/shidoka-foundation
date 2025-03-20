@@ -518,7 +518,17 @@
       "Interactive.7": "a474b8d96890daef207f8a124057d5a2dcc99000",
       "Interactive.1": "b70d58f9b5f6e3f134967ea72e23afe95706c443",
       "Interactive.3": "1fa8cf0e3218bc04547f2d0052d98932619ce7e7",
-      "Opacity.Light.95": "2043a5d4e34baaf520d406332f7f60c0a98eab5e"
+      "Opacity.Light.95": "2043a5d4e34baaf520d406332f7f60c0a98eab5e",
+      "RAG.Critical.100": "4d7b4a24c50d79a4be7fe97d9e7a4ba45413b5ca",
+      "RAG.Critical.20": "0d5e0f91dc36de88e8ac84efce93c3d9a374b447",
+      "RAG.Error.100": "5e695467d15df567392c7bdbce07309379fc279e",
+      "RAG.Error.20": "ec14ce9a8f415ddad1f9cba2e677351b2e03d09c",
+      "RAG.Success.100": "fc7ca211ad041986693e227b48ac397d37654d10",
+      "RAG.Success.20": "96b7f3cc112698c130aa4631b45d16b3abb0b31d",
+      "RAG.Warning.100": "6d793eef1762b70460502d18c9d1270cd769fd2c",
+      "RAG.Warning.20": "aa7a779d4653542e0d71dd6a965f926335ec0512",
+      "RAG.Information.100": "507e95296651c4462a3a238e93ef08549a5affa6",
+      "RAG.Information.20": "156022bb6f1df95988e761248fc85af2d710c722"
     },
     "$figmaModeId": "114:3",
     "$figmaCollectionId": "VariableCollectionId:114:573"
@@ -1008,7 +1018,10 @@
       "Border.Container.Hover": "ee1ea669b2775b050ee75e750f217f44311be9e8",
       "Border.Container.Selected": "3f7b4b420139d75cf205e529d5ec115776081f63",
       "Border.Container.Default": "90099839198fe771166442584ed13fbb5337ea03",
-      "Background.Container.Surface Tint": "0302e345967ac1e2fb12a843101ebc8202357198"
+      "Background.Container.Surface Tint": "0302e345967ac1e2fb12a843101ebc8202357198",
+      "Background.Opacity.4 - Dark": "8d963ac7e759c4e98a40917d2e7f7b47b7f855b1",
+      "Text.Forms.Disabled": "3d2db6f4f477b2e2aebe693d1a0c7b18bd28072f",
+      "Background.Forms.Disabled": "85058ac188ae95945eacf4817272c33427969cfc"
     },
     "$figmaModeId": "114:4",
     "$figmaCollectionId": "VariableCollectionId:114:768"
@@ -1498,7 +1511,10 @@
       "Border.Container.Hover": "ee1ea669b2775b050ee75e750f217f44311be9e8",
       "Border.Container.Selected": "3f7b4b420139d75cf205e529d5ec115776081f63",
       "Border.Container.Default": "90099839198fe771166442584ed13fbb5337ea03",
-      "Background.Container.Surface Tint": "0302e345967ac1e2fb12a843101ebc8202357198"
+      "Background.Container.Surface Tint": "0302e345967ac1e2fb12a843101ebc8202357198",
+      "Background.Opacity.4 - Dark": "8d963ac7e759c4e98a40917d2e7f7b47b7f855b1",
+      "Text.Forms.Disabled": "3d2db6f4f477b2e2aebe693d1a0c7b18bd28072f",
+      "Background.Forms.Disabled": "85058ac188ae95945eacf4817272c33427969cfc"
     },
     "$figmaModeId": "13995:1",
     "$figmaCollectionId": "VariableCollectionId:114:768"
