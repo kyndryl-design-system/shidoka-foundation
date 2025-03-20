@@ -39,6 +39,7 @@
     "@commitlint/cli": "^17.4.4",
     "@commitlint/config-conventional": "^17.4.4",
     "@custom-elements-manifest/analyzer": "^0.9.4",
+    "@kyndryl-design-system/shidoka-applications": "^2.18.2",
     "@kyndryl-design-system/shidoka-icons": "^2.0.0",
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-typescript": "^11.0.0",

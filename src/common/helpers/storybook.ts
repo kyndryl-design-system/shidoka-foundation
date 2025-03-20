@@ -22,8 +22,8 @@ export function getTokens(json: object, category = '', categoryTree = []) {
   let tokens: Array<any> = [];
 
   for (const [key, value] of Object.entries(json)) {
-    if (value.$value) {
-      const prefix = `--kd-${value.$type}`;
+    if (value.value) {
+      const prefix = `--kd-${value.type}`;
       const token = cleanKey(key);
       // set variable attribute
       const variable = `${prefix}${category}-${token}`;
@@ -31,7 +31,7 @@ export function getTokens(json: object, category = '', categoryTree = []) {
       const tokenObj = {
         variable: variable,
         categoryTree: categoryTree,
-        type: value.$type,
+        type: value.type,
       };
 
       tokens.push(tokenObj);
