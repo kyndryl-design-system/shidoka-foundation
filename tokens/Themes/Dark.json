@@ -216,7 +216,7 @@
       "Ghost": {
         "State": {
           "Hover": {
-            "value": "{Interactive.80-primary}",
+            "value": "{Interactive.95}",
             "type": "color"
           },
           "Pressed": {
@@ -611,7 +611,7 @@
     "Link": {
       "Level": {
         "Default": {
-          "value": "{Spruce.60}",
+          "value": "{Spruce.40}",
           "type": "color"
         },
         "Hover": {
@@ -1048,7 +1048,7 @@
             "type": "color"
           },
           "Focused": {
-            "value": "{Ai Interactive.70}",
+            "value": "{Ai Interactive.20}",
             "type": "color"
           },
           "Hover": {

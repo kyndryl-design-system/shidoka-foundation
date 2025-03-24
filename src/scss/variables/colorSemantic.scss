@@ -44,7 +44,7 @@
   --kd-color-background-button-tertiary-state-hover: light-dark(var(--kd-color-spruce-20), var(--kd-color-spruce-80));
   --kd-color-background-button-tertiary-state-pressed: light-dark(var(--kd-color-spruce-30), var(--kd-color-spruce-100));
   --kd-color-background-button-tertiary-state-default: light-dark(var(--kd-color-spruce-10), var(--kd-color-spruce-90));
-  --kd-color-background-button-ghost-state-hover: light-dark(var(--kd-color-interactive-20), var(--kd-color-interactive-80-primary));
+  --kd-color-background-button-ghost-state-hover: light-dark(var(--kd-color-interactive-7), var(--kd-color-interactive-95));
   --kd-color-background-button-ghost-state-pressed: light-dark(var(--kd-color-interactive-80-primary), var(--kd-color-interactive-110));
   --kd-color-background-accent-subtle: light-dark(var(--kd-color-interactive-5), var(--kd-color-interactive-105));
   --kd-color-background-accent-secondary: light-dark(var(--kd-color-interactive-60), var(--kd-color-interactive-107));
@@ -128,7 +128,7 @@
   --kd-color-text-variant-eyebrow: light-dark(var(--kd-color-spruce-50), var(--kd-color-spruce-30));
   --kd-color-text-variant-destructive: light-dark(var(--kd-color-misc-red-dark), var(--kd-color-misc-red-light));
   --kd-color-text-variant-placeholder: light-dark(var(--kd-color-dark-stone-50), var(--kd-color-dark-stone-50));
-  --kd-color-text-link-level-default: light-dark(var(--kd-color-spruce-60), var(--kd-color-spruce-60));
+  --kd-color-text-link-level-default: light-dark(var(--kd-color-spruce-60), var(--kd-color-spruce-40));
   --kd-color-text-link-level-hover: light-dark(var(--kd-color-spruce-70), var(--kd-color-spruce-50));
   --kd-color-text-link-level-pressed: light-dark(var(--kd-color-spruce-80), var(--kd-color-spruce-70));
   --kd-color-text-link-level-disabled: light-dark(var(--kd-color-opacity-dark-30), var(--kd-color-opacity-light-40));
@@ -222,7 +222,7 @@
   --kd-color-border-button-tertiary-state-pressed: light-dark(var(--kd-color-spruce-30), var(--kd-color-spruce-50));
   --kd-color-border-button-tertiary-state-default: light-dark(var(--kd-color-spruce-20), var(--kd-color-spruce-30));
   --kd-color-border-button-ai-state-default: light-dark(var(--kd-color-ai-interactive-30), var(--kd-color-ai-interactive-40));
-  --kd-color-border-button-ai-state-focused: light-dark(var(--kd-color-ai-interactive-60), var(--kd-color-ai-interactive-70));
+  --kd-color-border-button-ai-state-focused: light-dark(var(--kd-color-ai-interactive-60), var(--kd-color-ai-interactive-20));
   --kd-color-border-button-ai-state-hover: light-dark(var(--kd-color-ai-interactive-50), var(--kd-color-ai-interactive-50));
   --kd-color-border-button-ai-state-pressed: light-dark(var(--kd-color-ai-interactive-70), var(--kd-color-ai-interactive-70));
   --kd-color-border-button-ai-state-highlight: light-dark(var(--kd-color-ai-interactive-40), var(--kd-color-ai-interactive-40));
