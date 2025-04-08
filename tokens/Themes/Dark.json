@@ -272,6 +272,10 @@
       "4 - Dark": {
         "value": "{Opacity.Dark.40}",
         "type": "color"
+      },
+      "8 - Dark": {
+        "value": "{Opacity.Dark.85}",
+        "type": "color"
       }
     },
     "Forms": {
@@ -1102,6 +1106,14 @@
       "Dark": {
         "value": "{RAG.Information.100}",
         "type": "color"
+      },
+      "Accent": {
+        "value": "{Spruce.70}",
+        "type": "color"
+      },
+      "Foreground": {
+        "value": "{Neutral.White}",
+        "type": "color"
       }
     },
     "Warning": {
@@ -1111,6 +1123,18 @@
       },
       "Dark": {
         "value": "{RAG.Warning.100}",
+        "type": "color"
+      },
+      "Accent": {
+        "value": "{Misc.Yellow.30}",
+        "type": "color"
+      },
+      "Foreground": {
+        "value": "{Neutral.White}",
+        "type": "color"
+      },
+      "Foreground - Dark": {
+        "value": "{Neutral.Black}",
         "type": "color"
       }
     },
@@ -1124,7 +1148,7 @@
         "type": "color"
       },
       "Accent": {
-        "value": "{Misc.Red.Light}",
+        "value": "{Misc.Red.80}",
         "type": "color"
       },
       "Critical Dark": {
@@ -1133,6 +1157,10 @@
       },
       "Critical Light": {
         "value": "{RAG.Critical.20}",
+        "type": "color"
+      },
+      "Foreground": {
+        "value": "{Neutral.White}",
         "type": "color"
       }
     },
@@ -1144,15 +1172,27 @@
       "Dark": {
         "value": "{RAG.Success.100}",
         "type": "color"
+      },
+      "Accent": {
+        "value": "{Misc.Green.60}",
+        "type": "color"
+      },
+      "Foreground": {
+        "value": "{Neutral.White}",
+        "type": "color"
       }
     },
     "Neutral": {
       "Light": {
-        "value": "{Cool Gray.8}",
+        "value": "{Cool Gray.85}",
         "type": "color"
       },
       "Dark": {
         "value": "{Cool Gray.70}",
+        "type": "color"
+      },
+      "Foreground": {
+        "value": "{Neutral.White}",
         "type": "color"
       }
     }
@@ -1791,6 +1831,14 @@
       },
       "Inverse": {
         "value": "{Neutral.Black}",
+        "type": "color"
+      },
+      "Dark": {
+        "value": "{Neutral.Black}",
+        "type": "color"
+      },
+      "Light": {
+        "value": "{Neutral.White}",
         "type": "color"
       }
     },

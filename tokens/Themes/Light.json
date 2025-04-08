@@ -216,7 +216,7 @@
       "Ghost": {
         "State": {
           "Hover": {
-            "value": "{Interactive.7}",
+            "value": "{Interactive.5}",
             "type": "color"
           },
           "Pressed": {
@@ -262,7 +262,7 @@
         "type": "color"
       },
       "8": {
-        "value": "{Opacity.Light.86}",
+        "value": "{Opacity.Dark.50}",
         "type": "color"
       },
       "Disabled": {
@@ -271,6 +271,10 @@
       },
       "4 - Dark": {
         "value": "{Opacity.Dark.40}",
+        "type": "color"
+      },
+      "8 - Dark": {
+        "value": "{Opacity.Dark.85}",
         "type": "color"
       }
     },
@@ -1048,7 +1052,7 @@
             "type": "color"
           },
           "Focused": {
-            "value": "{Ai Interactive.60}",
+            "value": "{Ai Interactive.40}",
             "type": "color"
           },
           "Hover": {
@@ -1102,6 +1106,14 @@
       "Dark": {
         "value": "{RAG.Information.100}",
         "type": "color"
+      },
+      "Accent": {
+        "value": "{RAG.Information.10}",
+        "type": "color"
+      },
+      "Foreground": {
+        "value": "{RAG.Information.100}",
+        "type": "color"
       }
     },
     "Warning": {
@@ -1110,6 +1122,18 @@
         "type": "color"
       },
       "Dark": {
+        "value": "{RAG.Warning.100}",
+        "type": "color"
+      },
+      "Accent": {
+        "value": "{RAG.Warning.10}",
+        "type": "color"
+      },
+      "Foreground": {
+        "value": "{RAG.Warning.100}",
+        "type": "color"
+      },
+      "Foreground - Dark": {
         "value": "{RAG.Warning.100}",
         "type": "color"
       }
@@ -1134,6 +1158,10 @@
       "Critical Light": {
         "value": "{RAG.Critical.20}",
         "type": "color"
+      },
+      "Foreground": {
+        "value": "{RAG.Error.100}",
+        "type": "color"
       }
     },
     "Success": {
@@ -1142,6 +1170,14 @@
         "type": "color"
       },
       "Dark": {
+        "value": "{RAG.Success.100}",
+        "type": "color"
+      },
+      "Accent": {
+        "value": "{RAG.Success.10}",
+        "type": "color"
+      },
+      "Foreground": {
         "value": "{RAG.Success.100}",
         "type": "color"
       }
@@ -1153,6 +1189,10 @@
       },
       "Dark": {
         "value": "{Cool Gray.70}",
+        "type": "color"
+      },
+      "Foreground": {
+        "value": "{Cool Gray.95}",
         "type": "color"
       }
     }
@@ -1790,6 +1830,14 @@
         "type": "color"
       },
       "Inverse": {
+        "value": "{Neutral.White}",
+        "type": "color"
+      },
+      "Dark": {
+        "value": "{Neutral.Black}",
+        "type": "color"
+      },
+      "Light": {
         "value": "{Neutral.White}",
         "type": "color"
       }

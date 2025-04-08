@@ -1243,6 +1243,10 @@
   },
   "RAG": {
     "Critical": {
+      "10": {
+        "value": "#ffd9ed",
+        "type": "color"
+      },
       "20": {
         "value": "#f493c5",
         "type": "color"
@@ -1253,6 +1257,10 @@
       }
     },
     "Error": {
+      "10": {
+        "value": "#fededa",
+        "type": "color"
+      },
       "20": {
         "value": "#ff9688",
         "type": "color"
@@ -1263,6 +1271,10 @@
       }
     },
     "Success": {
+      "10": {
+        "value": "#e5f7eb",
+        "type": "color"
+      },
       "20": {
         "value": "#81e1b5",
         "type": "color"
@@ -1273,6 +1285,10 @@
       }
     },
     "Warning": {
+      "10": {
+        "value": "#fff7da",
+        "type": "color"
+      },
       "20": {
         "value": "#ffe88e",
         "type": "color"
@@ -1283,6 +1299,10 @@
       }
     },
     "Information": {
+      "10": {
+        "value": "#e1f6ff",
+        "type": "color"
+      },
       "20": {
         "value": "#95d3f0",
         "type": "color"
