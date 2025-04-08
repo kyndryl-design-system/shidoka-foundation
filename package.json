@@ -2,6 +2,7 @@
   "name": "@kyndryl-design-system/shidoka-foundation",
   "version": "0.0.0-semantic-release",
   "description": "Shidoka Foundation",
+  "license": "MIT",
   "main": "index.js",
   "type": "module",
   "publishConfig": {
