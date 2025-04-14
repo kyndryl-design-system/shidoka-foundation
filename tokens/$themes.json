@@ -200,6 +200,22 @@
     "$figmaCollectionId": "VariableCollectionId:422:1026"
   },
   {
+    "id": "component-mode 1",
+    "name": "Mode 1",
+    "group": "Component",
+    "selectedTokenSets": {},
+    "$figmaStyleReferences": {},
+    "$figmaVariableReferences": {
+      "Card.Card Border-color Clickable": "a1ee345999166af2c2a6c338de02c6e09570f491",
+      "Card.Card Padding": "72f4c66f2a286c21e52800a530b40851c8598c60",
+      "Card.Card Border-width": "9397e3bea0e7657e7564cb634ac1a100514f4663",
+      "Card.Card Corner": "2f6fa388b927aefbfd25172bd90f5bda9dcdef7d",
+      "Show Date": "982bd22a970dd3912c7efbabe1d12d33f5b832dd"
+    },
+    "$figmaModeId": "5842:0",
+    "$figmaCollectionId": "VariableCollectionId:5842:5"
+  },
+  {
     "id": "color palette-color",
     "name": "Color",
     "group": "Color Palette",
@@ -521,8 +537,7 @@
       "Spruce.15": "4fd6f601a4b8c8460befd0168b4216c8a8224628",
       "Sea.15": "58851127a1cb488fd20fb01457583b8433b89ee9",
       "Blush.05": "8252c4aa5b8f7e857c31da3fb78c23ab650bc0b6",
-      "Lilac.05": "24a8f1dfeee9aac452646720167b607d47789a02",
-      "RAG.Success.Content Height": "36643c811299c3aed2ce0d0ecad72caf3ae7bad6"
+      "Lilac.05": "24a8f1dfeee9aac452646720167b607d47789a02"
     },
     "$figmaModeId": "114:3",
     "$figmaCollectionId": "VariableCollectionId:114:573"
@@ -1536,22 +1551,6 @@
     },
     "$figmaModeId": "13995:1",
     "$figmaCollectionId": "VariableCollectionId:114:768"
-  },
-  {
-    "id": "component-mode 1",
-    "name": "Mode 1",
-    "group": "Component",
-    "selectedTokenSets": {},
-    "$figmaStyleReferences": {},
-    "$figmaVariableReferences": {
-      "Card.Card Border-color Clickable": "a1ee345999166af2c2a6c338de02c6e09570f491",
-      "Card.Card Padding": "72f4c66f2a286c21e52800a530b40851c8598c60",
-      "Card.Card Border-width": "9397e3bea0e7657e7564cb634ac1a100514f4663",
-      "Card.Card Corner": "2f6fa388b927aefbfd25172bd90f5bda9dcdef7d",
-      "Show Date": "982bd22a970dd3912c7efbabe1d12d33f5b832dd"
-    },
-    "$figmaModeId": "5842:0",
-    "$figmaCollectionId": "VariableCollectionId:5842:5"
   },
   {
     "id": "breakpoint sizes-values",

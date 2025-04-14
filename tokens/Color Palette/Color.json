@@ -1298,10 +1298,6 @@
       "100": {
         "value": "#00af41",
         "type": "color"
-      },
-      "Content Height": {
-        "value": 24,
-        "type": "number"
       }
     },
     "Warning": {
