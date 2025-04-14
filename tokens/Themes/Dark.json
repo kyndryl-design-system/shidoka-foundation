@@ -615,7 +615,7 @@
     "Link": {
       "Level": {
         "Default": {
-          "value": "{Spruce.40}",
+          "value": "{Spruce.20}",
           "type": "color"
         },
         "Hover": {

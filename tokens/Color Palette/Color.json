@@ -30,6 +30,10 @@
       "value": "#ddf0f3",
       "type": "color"
     },
+    "15": {
+      "value": "#def7fa",
+      "type": "color"
+    },
     "20": {
       "value": "#8ecfd9",
       "type": "color"
@@ -1113,11 +1117,19 @@
     "100": {
       "value": "#781256",
       "type": "color"
+    },
+    "05": {
+      "value": "#fbeaf5",
+      "type": "color"
     }
   },
   "Sea": {
     "10": {
       "value": "#ace1f8",
+      "type": "color"
+    },
+    "15": {
+      "value": "#def5ff",
       "type": "color"
     },
     "20": {
@@ -1197,6 +1209,10 @@
     "100": {
       "value": "#641195",
       "type": "color"
+    },
+    "05": {
+      "value": "#f7eeff",
+      "type": "color"
     }
   },
   "Jade": {
@@ -1244,15 +1260,15 @@
   "RAG": {
     "Critical": {
       "10": {
-        "value": "#ffd9ed",
+        "value": "#ffecea",
         "type": "color"
       },
       "20": {
-        "value": "#f493c5",
+        "value": "#ff8272",
         "type": "color"
       },
       "100": {
-        "value": "#c4407e",
+        "value": "#891000",
         "type": "color"
       }
     },
@@ -1272,7 +1288,7 @@
     },
     "Success": {
       "10": {
-        "value": "#e5f7eb",
+        "value": "#e8fff1",
         "type": "color"
       },
       "20": {
@@ -1280,13 +1296,17 @@
         "type": "color"
       },
       "100": {
-        "value": "#23c060",
+        "value": "#00af41",
         "type": "color"
+      },
+      "Content Height": {
+        "value": 24,
+        "type": "number"
       }
     },
     "Warning": {
       "10": {
-        "value": "#fff7da",
+        "value": "#fff2d3",
         "type": "color"
       },
       "20": {
@@ -1294,21 +1314,21 @@
         "type": "color"
       },
       "100": {
-        "value": "#ffbc48",
+        "value": "#e8ba02",
         "type": "color"
       }
     },
     "Information": {
       "10": {
-        "value": "#e1f6ff",
+        "value": "#e9f2ff",
         "type": "color"
       },
       "20": {
-        "value": "#95d3f0",
+        "value": "#569aff",
         "type": "color"
       },
       "100": {
-        "value": "#246f96",
+        "value": "#1473ff",
         "type": "color"
       }
     }
