@@ -200,22 +200,6 @@
     "$figmaCollectionId": "VariableCollectionId:422:1026"
   },
   {
-    "id": "component-mode 1",
-    "name": "Mode 1",
-    "group": "Component",
-    "selectedTokenSets": {},
-    "$figmaStyleReferences": {},
-    "$figmaVariableReferences": {
-      "Card.Card Border-color Clickable": "a1ee345999166af2c2a6c338de02c6e09570f491",
-      "Card.Card Padding": "72f4c66f2a286c21e52800a530b40851c8598c60",
-      "Card.Card Border-width": "9397e3bea0e7657e7564cb634ac1a100514f4663",
-      "Card.Card Corner": "2f6fa388b927aefbfd25172bd90f5bda9dcdef7d",
-      "Show Date": "982bd22a970dd3912c7efbabe1d12d33f5b832dd"
-    },
-    "$figmaModeId": "5842:0",
-    "$figmaCollectionId": "VariableCollectionId:5842:5"
-  },
-  {
     "id": "color palette-color",
     "name": "Color",
     "group": "Color Palette",
@@ -1552,6 +1536,22 @@
     },
     "$figmaModeId": "13995:1",
     "$figmaCollectionId": "VariableCollectionId:114:768"
+  },
+  {
+    "id": "component-mode 1",
+    "name": "Mode 1",
+    "group": "Component",
+    "selectedTokenSets": {},
+    "$figmaStyleReferences": {},
+    "$figmaVariableReferences": {
+      "Card.Card Border-color Clickable": "a1ee345999166af2c2a6c338de02c6e09570f491",
+      "Card.Card Padding": "72f4c66f2a286c21e52800a530b40851c8598c60",
+      "Card.Card Border-width": "9397e3bea0e7657e7564cb634ac1a100514f4663",
+      "Card.Card Corner": "2f6fa388b927aefbfd25172bd90f5bda9dcdef7d",
+      "Show Date": "982bd22a970dd3912c7efbabe1d12d33f5b832dd"
+    },
+    "$figmaModeId": "5842:0",
+    "$figmaCollectionId": "VariableCollectionId:5842:5"
   },
   {
     "id": "breakpoint sizes-values",
