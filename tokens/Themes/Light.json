@@ -2054,7 +2054,7 @@
   "Tags": {
     "Background": {
       "Interactive": {
-        "value": "{Interactive.15}",
+        "value": "{Earth.10}",
         "type": "color"
       },
       "Cat 1": {
