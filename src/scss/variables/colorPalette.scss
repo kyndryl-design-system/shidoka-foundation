@@ -301,16 +301,21 @@
   --kd-color-rag-critical-10: #ffecea;
   --kd-color-rag-critical-20: #ff8272;
   --kd-color-rag-critical-100: #891000;
-  --kd-color-rag-error-10: #fededa;
+  --kd-color-rag-critical-110: #39010a;
+  --kd-color-rag-error-10: var(--kd-color-warm-red-10);
   --kd-color-rag-error-20: #ff9688;
   --kd-color-rag-error-100: #cc1800;
+  --kd-color-rag-error-110: var(--kd-color-misc-red-100);
   --kd-color-rag-success-10: #e8fff1;
   --kd-color-rag-success-20: #81e1b5;
   --kd-color-rag-success-100: #00af41;
+  --kd-color-rag-success-110: var(--kd-color-spring-green-90);
   --kd-color-rag-warning-10: #fff2d3;
   --kd-color-rag-warning-20: #ffe88e;
   --kd-color-rag-warning-100: #e8ba02;
+  --kd-color-rag-warning-110: #4d3d00;
   --kd-color-rag-information-10: #e9f2ff;
   --kd-color-rag-information-20: #569aff;
   --kd-color-rag-information-100: #1473ff;
+  --kd-color-rag-information-110: #00265c;
 }
