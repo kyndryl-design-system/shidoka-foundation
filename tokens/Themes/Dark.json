@@ -2051,7 +2051,7 @@
       "type": "color"
     }
   },
-  "Tags": {
+  "Tags (Depricated)": {
     "Background": {
       "Interactive": {
         "value": "{Interactive.15}",
@@ -2210,6 +2210,426 @@
       "Error": {
         "value": "{RAG.Error.20}",
         "type": "color"
+      }
+    }
+  },
+  "Tag": {
+    "Background": {
+      "Default": {
+        "value": "{Warm Gray.90}",
+        "type": "color"
+      },
+      "Spruce": {
+        "value": "{Warm Gray.90}",
+        "type": "color"
+      },
+      "Sea": {
+        "value": "{Warm Gray.90}",
+        "type": "color"
+      },
+      "Lilac": {
+        "value": "{Warm Gray.90}",
+        "type": "color"
+      },
+      "AI": {
+        "value": "{Ai Interactive.70}",
+        "type": "color"
+      },
+      "Disabled": {
+        "value": "{Warm Gray.90}",
+        "type": "color"
+      }
+    },
+    "Text": {
+      "Default": {
+        "value": "{Earth.20}",
+        "type": "color"
+      },
+      "Disabled": {
+        "value": "{Text.Level.Disabled}",
+        "type": "color"
+      },
+      "Sea": {
+        "value": "{Sea.20}",
+        "type": "color"
+      },
+      "AI": {
+        "value": "{Ai Interactive.05}",
+        "type": "color"
+      },
+      "Lilac": {
+        "value": "{Lilac.20}",
+        "type": "color"
+      },
+      "Spruce": {
+        "value": "{Spruce.20}",
+        "type": "color"
+      }
+    },
+    "Border": {
+      "Default": {
+        "value": "{Warm Gray.80}",
+        "type": "color"
+      },
+      "AI": {
+        "value": "{Warm Gray.80}",
+        "type": "color"
+      },
+      "Spruce": {
+        "value": "{Warm Gray.80}",
+        "type": "color"
+      },
+      "Sea": {
+        "value": "{Warm Gray.80}",
+        "type": "color"
+      },
+      "Lilac": {
+        "value": "{Warm Gray.80}",
+        "type": "color"
+      },
+      "Disabled": {
+        "value": "{Warm Gray.90}",
+        "type": "color"
+      }
+    },
+    "Icon": {
+      "Default": {
+        "value": "{Earth.20}",
+        "type": "color"
+      },
+      "Spruce": {
+        "value": "{Spruce.20}",
+        "type": "color"
+      },
+      "Sea": {
+        "value": "{Sea.20}",
+        "type": "color"
+      },
+      "Lilac": {
+        "value": "{Lilac.20}",
+        "type": "color"
+      },
+      "AI": {
+        "value": "{Ai Interactive.05}",
+        "type": "color"
+      },
+      "Disabled": {
+        "value": "{Icon.Disabled}",
+        "type": "color"
+      }
+    },
+    "Hover": {
+      "Default": {
+        "value": "{Warm Gray.70}",
+        "type": "color"
+      },
+      "Spruce": {
+        "value": "{Warm Gray.70}",
+        "type": "color"
+      },
+      "Sea": {
+        "value": "{Warm Gray.70}",
+        "type": "color"
+      },
+      "AI": {
+        "value": "{Warm Gray.70}",
+        "type": "color"
+      },
+      "Liliac": {
+        "value": "{Warm Gray.70}",
+        "type": "color"
+      }
+    }
+  },
+  "Badge": {
+    "Heavy": {
+      "Background": {
+        "Critical": {
+          "value": "{RAG.Critical.100}",
+          "type": "color"
+        },
+        "Error": {
+          "value": "{RAG.Error.100}",
+          "type": "color"
+        },
+        "Warning": {
+          "value": "{RAG.Warning.100}",
+          "type": "color"
+        },
+        "Success": {
+          "value": "{RAG.Success.100}",
+          "type": "color"
+        },
+        "Information": {
+          "value": "{RAG.Information.100}",
+          "type": "color"
+        },
+        "Others": {
+          "value": "{Earth.20}",
+          "type": "color"
+        }
+      },
+      "Text": {
+        "Critical": {
+          "value": "{Text.Level.Light}",
+          "type": "color"
+        },
+        "Error": {
+          "value": "{Text.Level.Light}",
+          "type": "color"
+        },
+        "Warning": {
+          "value": "{Text.Level.Dark}",
+          "type": "color"
+        },
+        "Success": {
+          "value": "{Text.Level.Light}",
+          "type": "color"
+        },
+        "Information": {
+          "value": "{Text.Level.Light}",
+          "type": "color"
+        },
+        "Others": {
+          "value": "{Text.Level.Dark}",
+          "type": "color"
+        }
+      },
+      "Icon": {
+        "Critical": {
+          "value": "{Icon.Light}",
+          "type": "color"
+        },
+        "Information": {
+          "value": "{Icon.Light}",
+          "type": "color"
+        },
+        "Success": {
+          "value": "{Icon.Light}",
+          "type": "color"
+        },
+        "Warning": {
+          "value": "{Icon.Dark}",
+          "type": "color"
+        },
+        "Others": {
+          "value": "{Icon.Dark}",
+          "type": "color"
+        },
+        "Error": {
+          "value": "{Icon.Light}",
+          "type": "color"
+        }
+      }
+    },
+    "Medium": {
+      "Text": {
+        "Critical": {
+          "value": "{Warm Red.10}",
+          "type": "color"
+        },
+        "Error": {
+          "value": "{Warm Red.10}",
+          "type": "color"
+        },
+        "Warning": {
+          "value": "{Amber.10}",
+          "type": "color"
+        },
+        "Success": {
+          "value": "{Spring Green.10}",
+          "type": "color"
+        },
+        "Information": {
+          "value": "{RAG.Information.10}",
+          "type": "color"
+        },
+        "Others": {
+          "value": "{Text.Level.Primary}",
+          "type": "color"
+        },
+        "Others 2": {
+          "value": "{Text.Level.Primary}",
+          "type": "color"
+        },
+        "Critical 2": {
+          "value": "{Warm Red.10}",
+          "type": "color"
+        },
+        "Success 2": {
+          "value": "{Spring Green.10}",
+          "type": "color"
+        },
+        "Error 2": {
+          "value": "{Warm Red.10}",
+          "type": "color"
+        },
+        "Information 2": {
+          "value": "{RAG.Information.10}",
+          "type": "color"
+        },
+        "Warning 2": {
+          "value": "{Amber.10}",
+          "type": "color"
+        }
+      },
+      "Background": {
+        "Critical": {
+          "value": "{RAG.Critical.110}",
+          "type": "color"
+        },
+        "Error": {
+          "value": "{RAG.Error.110}",
+          "type": "color"
+        },
+        "Warning": {
+          "value": "{RAG.Warning.110}",
+          "type": "color"
+        },
+        "Success": {
+          "value": "{RAG.Success.110}",
+          "type": "color"
+        },
+        "Information": {
+          "value": "{RAG.Information.110}",
+          "type": "color"
+        },
+        "Others": {
+          "value": "{Earth.80}",
+          "type": "color"
+        }
+      },
+      "Icon": {
+        "Others": {
+          "value": "{Icon.Primary}",
+          "type": "color"
+        },
+        "Critical": {
+          "value": "{Warm Red.10}",
+          "type": "color"
+        },
+        "Success": {
+          "value": "{Spring Green.10}",
+          "type": "color"
+        },
+        "Error": {
+          "value": "{Warm Red.10}",
+          "type": "color"
+        },
+        "Information": {
+          "value": "{RAG.Information.10}",
+          "type": "color"
+        },
+        "Warning": {
+          "value": "{Amber.10}",
+          "type": "color"
+        }
+      },
+      "Border": {
+        "Critical": {
+          "value": "{Blush.80}",
+          "type": "color"
+        },
+        "Error": {
+          "value": "{Warm Red.40}",
+          "type": "color"
+        },
+        "Warning": {
+          "value": "{Amber.20}",
+          "type": "color"
+        },
+        "Success": {
+          "value": "{Spring Green.40}",
+          "type": "color"
+        },
+        "Information": {
+          "value": "{RAG.Information.10}",
+          "type": "color"
+        },
+        "Others": {
+          "value": "{Dark Stone.10}",
+          "type": "color"
+        }
+      }
+    },
+    "Light": {
+      "Text": {
+        "Critical": {
+          "value": "{Misc.Red.40}",
+          "type": "color"
+        },
+        "Error": {
+          "value": "{Warm Red.20}",
+          "type": "color"
+        },
+        "Warning": {
+          "value": "{Amber.20}",
+          "type": "color"
+        },
+        "Success": {
+          "value": "{Spring Green.10}",
+          "type": "color"
+        },
+        "Information": {
+          "value": "{RAG.Information.20}",
+          "type": "color"
+        },
+        "Others": {
+          "value": "{Text.Level.Primary}",
+          "type": "color"
+        }
+      },
+      "Background": {
+        "Critical": {
+          "value": "{Warm Gray.90}",
+          "type": "color"
+        },
+        "Error": {
+          "value": "{Warm Gray.90}",
+          "type": "color"
+        },
+        "Warning": {
+          "value": "{Warm Gray.90}",
+          "type": "color"
+        },
+        "Success": {
+          "value": "{Warm Gray.90}",
+          "type": "color"
+        },
+        "Information": {
+          "value": "{Warm Gray.90}",
+          "type": "color"
+        },
+        "Others": {
+          "value": "{Warm Gray.90}",
+          "type": "color"
+        }
+      },
+      "Icon": {
+        "Critical": {
+          "value": "{Misc.Red.40}",
+          "type": "color"
+        },
+        "Error": {
+          "value": "{Warm Red.20}",
+          "type": "color"
+        },
+        "Warning": {
+          "value": "{Amber.20}",
+          "type": "color"
+        },
+        "Success": {
+          "value": "{Spring Green.10}",
+          "type": "color"
+        },
+        "Information": {
+          "value": "{RAG.Information.20}",
+          "type": "color"
+        },
+        "Others": {
+          "value": "{Text.Level.Primary}",
+          "type": "color"
+        }
       }
     }
   }
