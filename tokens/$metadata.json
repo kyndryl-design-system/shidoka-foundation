@@ -12,6 +12,8 @@
     "Size Mapping/L - Sm",
     "Color Palette/Color",
     "Themes/Light",
-    "Themes/Dark"
+    "Themes/Dark",
+    "Deprecated/Light",
+    "Deprecated/Dark"
   ]
 }

@@ -1,0 +1,164 @@
+{
+  "Tags": {
+    "Background": {
+      "Blue": {
+        "value": "{RAG.Information.20}",
+        "type": "color"
+      },
+      "Warning": {
+        "value": "{RAG.Warning.20}",
+        "type": "color"
+      },
+      "Success": {
+        "value": "{RAG.Success.20}",
+        "type": "color"
+      },
+      "Error": {
+        "value": "{RAG.Error.20}",
+        "type": "color"
+      },
+      "Disabled": {
+        "value": "{Warm Gray.10}",
+        "type": "color"
+      },
+      "Cat 6": {
+        "value": "{Ai Interactive.10}",
+        "type": "color"
+      },
+      "Spruce": {
+        "value": "{Spruce.10}",
+        "type": "color"
+      },
+      "Interactive": {
+        "value": "{Earth.10}",
+        "type": "color"
+      },
+      "Cat 4": {
+        "value": "{Blush.10}",
+        "type": "color"
+      },
+      "Cat 3": {
+        "value": "{Amber.10}",
+        "type": "color"
+      },
+      "Error Dark": {
+        "value": "{RAG.Error.100}",
+        "type": "color"
+      },
+      "Warning Dark": {
+        "value": "{RAG.Warning.100}",
+        "type": "color"
+      },
+      "Cat 2": {
+        "value": "{Jade.10}",
+        "type": "color"
+      },
+      "Success Dark": {
+        "value": "{RAG.Success.100}",
+        "type": "color"
+      },
+      "Cat 5": {
+        "value": "{Lilac.10}",
+        "type": "color"
+      },
+      "Critical Light": {
+        "value": "{RAG.Critical.20}",
+        "type": "color"
+      },
+      "Information Dark": {
+        "value": "{RAG.Information.100}",
+        "type": "color"
+      },
+      "Cat 1": {
+        "value": "{Sea.10}",
+        "type": "color"
+      },
+      "Gray": {
+        "value": "{Cool Gray.10}",
+        "type": "color"
+      },
+      "Critical Dark": {
+        "value": "{RAG.Critical.100}",
+        "type": "color"
+      }
+    },
+    "Hover": {
+      "Cat 6": {
+        "value": "{Ai Interactive.15}",
+        "type": "color"
+      },
+      "Cat 4": {
+        "value": "{Blush.20}",
+        "type": "color"
+      },
+      "Cat 3": {
+        "value": "{Amber.20}",
+        "type": "color"
+      },
+      "Cat 2": {
+        "value": "{Jade.20}",
+        "type": "color"
+      },
+      "Cat 1": {
+        "value": "{Sea.20}",
+        "type": "color"
+      },
+      "Cat 5": {
+        "value": "{Lilac.20}",
+        "type": "color"
+      },
+      "Blue Dark": {
+        "value": "{RAG.Information.20}",
+        "type": "color"
+      },
+      "Warning": {
+        "value": "{RAG.Warning.20}",
+        "type": "color"
+      },
+      "Warning Light": {
+        "value": "{RAG.Warning.100}",
+        "type": "color"
+      },
+      "Critical Dark": {
+        "value": "{RAG.Critical.20}",
+        "type": "color"
+      },
+      "Success": {
+        "value": "{RAG.Success.20}",
+        "type": "color"
+      },
+      "Critical Light": {
+        "value": "{RAG.Critical.100}",
+        "type": "color"
+      },
+      "Interactive": {
+        "value": "{Interactive.30}",
+        "type": "color"
+      },
+      "Blue": {
+        "value": "{RAG.Information.100}",
+        "type": "color"
+      },
+      "Error Light": {
+        "value": "{RAG.Error.100}",
+        "type": "color"
+      },
+      "Success Light": {
+        "value": "{RAG.Success.100}",
+        "type": "color"
+      },
+      "Gray": {
+        "value": "{Cool Gray.20}",
+        "type": "color"
+      },
+      "Spruce": {
+        "value": "{Spruce.20}",
+        "type": "color"
+      },
+      "Error": {
+        "value": "{RAG.Error.20}",
+        "type": "color"
+      }
+    }
+  }
+}
