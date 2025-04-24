@@ -2195,11 +2195,11 @@
           "type": "color"
         },
         "Success": {
-          "value": "{RAG.Success.100}",
+          "value": "{RAG.Success.110}",
           "type": "color"
         },
         "Information": {
-          "value": "{RAG.Information.100}",
+          "value": "{RAG.Information.110}",
           "type": "color"
         },
         "Others": {
@@ -2209,11 +2209,11 @@
       },
       "Text": {
         "Critical": {
-          "value": "{Text.Level.Light}",
+          "value": "{Neutral.White}",
           "type": "color"
         },
         "Error": {
-          "value": "{Text.Level.Light}",
+          "value": "{Neutral.White}",
           "type": "color"
         },
         "Warning": {
@@ -2221,11 +2221,11 @@
           "type": "color"
         },
         "Success": {
-          "value": "{Text.Level.Light}",
+          "value": "{Neutral.White}",
           "type": "color"
         },
         "Information": {
-          "value": "{Text.Level.Light}",
+          "value": "{Neutral.White}",
           "type": "color"
         },
         "Others": {
@@ -2271,15 +2271,15 @@
           "type": "color"
         },
         "Warning": {
-          "value": "{Amber.50}",
+          "value": "{Amber.80}",
           "type": "color"
         },
         "Success": {
-          "value": "{Spring Green.40}",
+          "value": "{Spring Green.70}",
           "type": "color"
         },
         "Information": {
-          "value": "{RAG.Information.100}",
+          "value": "{RAG.Information.110}",
           "type": "color"
         },
         "Others": {
@@ -2323,7 +2323,7 @@
           "type": "color"
         },
         "Success": {
-          "value": "{Spring Green.40}",
+          "value": "{Spring Green.70}",
           "type": "color"
         },
         "Error": {
@@ -2331,11 +2331,11 @@
           "type": "color"
         },
         "Information": {
-          "value": "{RAG.Information.100}",
+          "value": "{RAG.Information.110}",
           "type": "color"
         },
         "Warning": {
-          "value": "{Amber.50}",
+          "value": "{Amber.80}",
           "type": "color"
         }
       },
@@ -2381,7 +2381,7 @@
           "type": "color"
         },
         "Success": {
-          "value": "{Spring Green.40}",
+          "value": "{Spring Green.60}",
           "type": "color"
         },
         "Information": {
