@@ -1308,7 +1308,7 @@
         "type": "color"
       },
       "110": {
-        "value": "{Spring Green.90}",
+        "value": "{Spring Green.60}",
         "type": "color"
       }
     },
@@ -1344,7 +1344,7 @@
         "type": "color"
       },
       "110": {
-        "value": "#00265c",
+        "value": "#0255d0",
         "type": "color"
       }
     }
