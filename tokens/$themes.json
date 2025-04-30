@@ -200,6 +200,33 @@
     "$figmaCollectionId": "VariableCollectionId:422:1026"
   },
   {
+    "id": "component-mode 1",
+    "name": "Mode 1",
+    "group": "Component",
+    "selectedTokenSets": {},
+    "$figmaStyleReferences": {},
+    "$figmaVariableReferences": {
+      "Card.Card Border-color Clickable": "a1ee345999166af2c2a6c338de02c6e09570f491",
+      "Card.Card Padding": "72f4c66f2a286c21e52800a530b40851c8598c60",
+      "Card.Card Border-width": "9397e3bea0e7657e7564cb634ac1a100514f4663",
+      "Card.Card Corner": "2f6fa388b927aefbfd25172bd90f5bda9dcdef7d",
+      "Show Date": "982bd22a970dd3912c7efbabe1d12d33f5b832dd",
+      "Tag.Radius": "253f94903f4aa257fadc3cec63275333c7b248fa",
+      "Tag.Horizontal Padding": "ed627e048fd251a1091c296ea437f712b4b7a6e5",
+      "Tag.Icon Padding": "784d2faf7240c4671ffefa963005e62d0b8522f4",
+      "Tag.Vertical padding": "28a278555ff31f41c2a0359cf8ad1555954fadf6",
+      "Tag.Content Padding": "829493fbac1f08e15c47a833f97e733715cdabbd",
+      "Tag.Border": "65513b87d82a93988eaa2de0473116080c3a5a4c",
+      "Badge.Radius": "0dfc6d5617e256311182a5b2f390a9006a40c8b2",
+      "Badge.Border": "58eb0d0869e45fd16d81e6af932f25fee4b8e0a1",
+      "Badge.Horizontal Padding": "1f45ba16f9801891bd36c4b0deb7b8be8633dfd0",
+      "Badge.Vertical padding": "68f28af768602eeb374a5e624bf3b303c7ec9445",
+      "Badge.Content Padding": "e64adce00fd9f940f6a194a5d8d9dc020965346b"
+    },
+    "$figmaModeId": "5842:0",
+    "$figmaCollectionId": "VariableCollectionId:5842:5"
+  },
+  {
     "id": "color palette-color",
     "name": "Color",
     "group": "Color Palette",
@@ -526,37 +553,11 @@
       "RAG.Critical.110": "4d91858a405b429301145207232e303f3acd8b6f",
       "RAG.Warning.110": "c8385253ace9a2e8af615f1b8c4369a1b4ff6611",
       "RAG.Success.110": "9eb9cd50f471716a8e11d26baaa5ac698c42b7fd",
-      "RAG.Error.110": "8d92b908a8ee3b4d9585957211ddec6ddffba4b7"
+      "RAG.Error.110": "8d92b908a8ee3b4d9585957211ddec6ddffba4b7",
+      "RAG.Success.15": "d45f3840ca8469e80089947206195d30916590bc"
     },
     "$figmaModeId": "114:3",
     "$figmaCollectionId": "VariableCollectionId:114:573"
-  },
-  {
-    "id": "component-mode 1",
-    "name": "Mode 1",
-    "group": "Component",
-    "selectedTokenSets": {},
-    "$figmaStyleReferences": {},
-    "$figmaVariableReferences": {
-      "Card.Card Border-color Clickable": "a1ee345999166af2c2a6c338de02c6e09570f491",
-      "Card.Card Padding": "72f4c66f2a286c21e52800a530b40851c8598c60",
-      "Card.Card Border-width": "9397e3bea0e7657e7564cb634ac1a100514f4663",
-      "Card.Card Corner": "2f6fa388b927aefbfd25172bd90f5bda9dcdef7d",
-      "Show Date": "982bd22a970dd3912c7efbabe1d12d33f5b832dd",
-      "Tag.Radius": "253f94903f4aa257fadc3cec63275333c7b248fa",
-      "Tag.Horizontal Padding": "ed627e048fd251a1091c296ea437f712b4b7a6e5",
-      "Tag.Icon Padding": "784d2faf7240c4671ffefa963005e62d0b8522f4",
-      "Tag.Vertical padding": "28a278555ff31f41c2a0359cf8ad1555954fadf6",
-      "Tag.Content Padding": "829493fbac1f08e15c47a833f97e733715cdabbd",
-      "Tag.Border": "65513b87d82a93988eaa2de0473116080c3a5a4c",
-      "Badge.Radius": "0dfc6d5617e256311182a5b2f390a9006a40c8b2",
-      "Badge.Border": "58eb0d0869e45fd16d81e6af932f25fee4b8e0a1",
-      "Badge.Horizontal Padding": "1f45ba16f9801891bd36c4b0deb7b8be8633dfd0",
-      "Badge.Vertical padding": "68f28af768602eeb374a5e624bf3b303c7ec9445",
-      "Badge.Content Padding": "e64adce00fd9f940f6a194a5d8d9dc020965346b"
-    },
-    "$figmaModeId": "5842:0",
-    "$figmaCollectionId": "VariableCollectionId:5842:5"
   },
   {
     "id": "themes-light",
