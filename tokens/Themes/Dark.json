@@ -2275,7 +2275,7 @@
           "type": "color"
         },
         "Success": {
-          "value": "{Spring Green.10}",
+          "value": "{RAG.Success.15}",
           "type": "color"
         },
         "Information": {
@@ -2323,7 +2323,7 @@
           "type": "color"
         },
         "Success": {
-          "value": "{Spring Green.10}",
+          "value": "{RAG.Success.15}",
           "type": "color"
         },
         "Error": {
