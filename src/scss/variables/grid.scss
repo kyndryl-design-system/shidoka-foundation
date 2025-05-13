@@ -5,6 +5,6 @@
   --kd-grid-max-width: 100%;
 
   @media (min-width: breakpoints.$bp-max) {
-    --kd-grid-max-width: #{breakpoints.$bp-max};
+    --kd-grid-max-width: calc(1584px - 64px);
   }
 }
