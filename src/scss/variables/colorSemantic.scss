@@ -1,14 +1,15 @@
 :root {
-  --kd-color-background-container-default: light-dark(var(--kd-color-interactive-3), var(--kd-color-interactive-110));
+  --kd-color-background-container-default: light-dark(var(--kd-color-interactive-3), var(--kd-color-interactive-115));
   --kd-color-background-container-subtle: light-dark(var(--kd-color-opacity-dark-2), var(--kd-color-opacity-light-5));
   --kd-color-background-container-bold: light-dark(var(--kd-color-dark-stone-50), var(--kd-color-cool-gray-40));
   --kd-color-background-container-soft: light-dark(var(--kd-color-interactive-5), var(--kd-color-interactive-107));
-  --kd-color-background-container-footer: light-dark(var(--kd-color-interactive-15), var(--kd-color-interactive-110));
+  --kd-color-background-container-footer: light-dark(var(--kd-color-interactive-15), var(--kd-color-interactive-115));
   --kd-color-background-container-secondary: light-dark(var(--kd-color-interactive-5), var(--kd-color-interactive-107));
   --kd-color-background-container-ai-default: light-dark(var(--kd-color-ai-interactive-01), var(--kd-color-ai-interactive-100));
   --kd-color-background-container-ai-subtle: light-dark(var(--kd-color-neutral-white), var(--kd-color-ai-interactive-100));
   --kd-color-background-container-ai-level-2: light-dark(var(--kd-color-ai-interactive-05), var(--kd-color-ai-interactive-90));
   --kd-color-background-container-surface-tint: light-dark(var(--kd-color-opacity-light-86), var(--kd-color-opacity-dark-85));
+  --kd-color-background-container-tertiary: light-dark(var(--kd-color-opacity-dark-3), var(--kd-color-opacity-light-5));
   --kd-color-background-ui-default-dark: light-dark(var(--kd-color-dark-stone-80), var(--kd-color-cool-gray-10));
   --kd-color-background-ui-default-brand: light-dark(var(--kd-color-warm-red-50-brand), var(--kd-color-warm-red-50-brand));
   --kd-color-background-ui-default-default: light-dark(var(--kd-color-dark-stone-50), var(--kd-color-cool-gray-10));
@@ -69,8 +70,8 @@
   --kd-color-background-table-row-active-nested: light-dark(var(--kd-color-cool-gray-3), var(--kd-color-interactive-90));
   --kd-color-background-table-header: light-dark(var(--kd-color-cool-gray-10), var(--kd-color-interactive-105));
   --kd-color-background-page-overlay: light-dark(var(--kd-color-opacity-light-50), var(--kd-color-opacity-dark-85));
-  --kd-color-background-page-default: light-dark(var(--kd-color-cool-gray-3), var(--kd-color-interactive-115));
-  --kd-color-background-page-dashboard-dashboard-default: light-dark(var(--kd-color-warm-gray-10), var(--kd-color-interactive-115));
+  --kd-color-background-page-default: light-dark(var(--kd-color-cool-gray-3), var(--kd-color-interactive-110));
+  --kd-color-background-page-dashboard-dashboard-default: light-dark(var(--kd-color-neutral-white), var(--kd-color-interactive-115));
   --kd-color-background-logo-bridge-txt: light-dark(var(--kd-color-spruce-60), var(--kd-color-dark-stone-10));
   --kd-color-background-logo-ai-indicator-head: light-dark(var(--kd-color-ai-interactive-40), var(--kd-color-ai-interactive-20));
   --kd-color-background-logo-ai-indicator-halo: light-dark(var(--kd-color-ai-interactive-25), var(--kd-color-ai-interactive-opaque-30-80pct));
@@ -122,7 +123,7 @@
   --kd-color-text-level-tertiary: light-dark(var(--kd-color-interactive-90), var(--kd-color-spruce-30));
   --kd-color-text-level-tertiary-bold: light-dark(var(--kd-color-spruce-80), var(--kd-color-spruce-10));
   --kd-color-text-level-dark: light-dark(var(--kd-color-dark-stone-80), var(--kd-color-dark-stone-80));
-  --kd-color-text-level-light: light-dark(var(--kd-color-dark-stone-10), var(--kd-color-dark-stone-10));
+  --kd-color-text-level-light: light-dark(var(--kd-color-neutral-white), var(--kd-color-neutral-white));
   --kd-color-text-level-disabled: light-dark(var(--kd-color-dark-stone-40), var(--kd-color-dark-stone-40));
   --kd-color-text-variant-brand: light-dark(var(--kd-color-warm-red-50-brand), var(--kd-color-warm-red-50-brand));
   --kd-color-text-variant-inversed: light-dark(var(--kd-color-neutral-white), var(--kd-color-dark-stone-80));
@@ -369,6 +370,9 @@
   --kd-color-data-viz-rag-8-informational: light-dark(var(--kd-color-rag-information-100), var(--kd-color-rag-information-100));
   --kd-color-data-viz-level-secondary: light-dark(var(--kd-color-warm-gray-30), var(--kd-color-warm-gray-60));
   --kd-color-data-viz-level-primary: light-dark(var(--kd-color-warm-gray-40), var(--kd-color-warm-gray-30));
+  --kd-color-data-viz-neutral-border-primary: light-dark(var(--kd-color-opacity-dark-85), var(--kd-color-opacity-light-86));
+  --kd-color-data-viz-neutral-border-secondary: light-dark(var(--kd-color-opacity-dark-20), var(--kd-color-opacity-light-30));
+  --kd-color-data-viz-neutral-background-color: light-dark(var(--kd-color-cool-gray-3), var(--kd-color-cool-gray-80));
   --kd-color-utility-interactive-graphic-alt: light-dark(var(--kd-color-cool-gray-30), var(--kd-color-cool-gray-60));
   --kd-color-utility-interactive-graphic: light-dark(var(--kd-color-cool-gray-20), var(--kd-color-cool-gray-80));
   --kd-color-utility-elevation-default-1: light-dark(var(--kd-color-opacity-dark-10), var(--kd-color-opacity-dark-10));
@@ -383,7 +387,7 @@
   --kd-color-utility-elevation-ai-l2---overflow: light-dark(var(--kd-color-ai-interactive-shadow-light-50), var(--kd-color-ai-interactive-shadow-dark-50));
   --kd-color-utility-elevation-ai-l3: light-dark(var(--kd-color-ai-interactive-shadow-light-50), var(--kd-color-ai-interactive-shadow-dark-50));
   --kd-color-utility-elevation-ai-l4: light-dark(var(--kd-color-ai-interactive-shadow-light-15), var(--kd-color-ai-interactive-shadow-dark-15));
-  --kd-color-utility-variant-border: light-dark(var(--kd-color-spruce-30), var(--kd-color-spruce-30));
+  --kd-color-utility-variant-border: light-dark(var(--kd-color-border-accent-primary), var(--kd-color-border-accent-primary));
   --kd-color-states-disabled-label: light-dark(var(--kd-color-warm-gray-50), var(--kd-color-warm-gray-50));
   --kd-color-states-static-solid-label: light-dark(var(--kd-color-dark-stone-10), var(--kd-color-cool-gray-5));
   --kd-color-states-disabled: light-dark(var(--kd-color-dark-stone-20), var(--kd-color-dark-stone-80));
@@ -406,7 +410,7 @@
   --kd-color-date-and-time-picker-background-container: light-dark(var(--kd-color-interactive-5), var(--kd-color-interactive-105));
   --kd-color-date-and-time-picker-background-hover: light-dark(var(--kd-color-interactive-10), var(--kd-color-interactive-60));
   --kd-color-date-and-time-picker-background-default: light-dark(var(--kd-color-interactive-80-primary), var(--kd-color-cool-gray-10));
-  --kd-color-date-and-time-picker-background-pressed: light-dark(var(--kd-color-interactive-20), var(--kd-color-interactive-30));
+  --kd-color-date-and-time-picker-background-pressed: light-dark(var(--kd-color-interactive-20), var(--kd-color-interactive-60));
   --kd-color-date-and-time-picker-background-container-2: light-dark(var(--kd-color-interactive-10), var(--kd-color-interactive-107));
   --kd-color-date-and-time-picker-border-focus: light-dark(var(--kd-color-interactive-60), var(--kd-color-interactive-20));
   --kd-color-code-view-builtin: light-dark(var(--kd-color-jade-80), var(--kd-color-jade-20));
@@ -525,9 +529,9 @@
   --kd-color-badge-medium-border-others: light-dark(var(--kd-color-dark-stone-80), var(--kd-color-dark-stone-10));
   --kd-color-badge-light-text-critical: light-dark(var(--kd-color-warm-red-90), var(--kd-color-misc-red-40));
   --kd-color-badge-light-text-error: light-dark(var(--kd-color-warm-red-70), var(--kd-color-warm-red-20));
-  --kd-color-badge-light-text-warning: light-dark(var(--kd-color-amber-50), var(--kd-color-amber-20));
+  --kd-color-badge-light-text-warning: light-dark(var(--kd-color-amber-80), var(--kd-color-amber-20));
   --kd-color-badge-light-text-success: light-dark(var(--kd-color-spring-green-60), var(--kd-color-spring-green-10));
-  --kd-color-badge-light-text-information: light-dark(var(--kd-color-rag-information-100), var(--kd-color-rag-information-20));
+  --kd-color-badge-light-text-information: light-dark(var(--kd-color-rag-information-110), var(--kd-color-rag-information-20));
   --kd-color-badge-light-text-others: light-dark(var(--kd-color-text-level-primary), var(--kd-color-text-level-primary));
   --kd-color-badge-light-background-critical: light-dark(var(--kd-color-dark-stone-10), var(--kd-color-warm-gray-90));
   --kd-color-badge-light-background-error: light-dark(var(--kd-color-dark-stone-10), var(--kd-color-warm-gray-90));
