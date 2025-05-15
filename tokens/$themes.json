@@ -1109,7 +1109,11 @@
       "Badge.Light.Icon.Warning": "d04cb973f35d417014f45b11cfd757d6bc1a0e0a",
       "Badge.Light.Icon.Success": "12d01cfcd99d8cada72b9ae6319732c167641a2c",
       "Badge.Light.Icon.Information": "07af9480e0c671b97f2b1111ee8674ca1b9d6951",
-      "Badge.Light.Icon.Others": "338b461583fa3f338deaaeec5efebbc24a1b29cc"
+      "Badge.Light.Icon.Others": "338b461583fa3f338deaaeec5efebbc24a1b29cc",
+      "Background.Container.Tertiary": "a5b973f09239137847333086c88b3ad68a0ebd5c",
+      "Data Viz.Neutral.Border.Primary": "62dc54895e37b1687c1f84d8658f13b3e6cee869",
+      "Data Viz.Neutral.Border.Secondary": "71cf493a2e4c8f4e0509e52d808abf8abbe76d84",
+      "Data Viz.Neutral.Background.Color": "06c2b14edeaf0952c3d8ed8886510c7e901f2f6f"
     },
     "$figmaModeId": "114:4",
     "$figmaCollectionId": "VariableCollectionId:114:768"
@@ -1664,7 +1668,11 @@
       "Badge.Light.Icon.Warning": "d04cb973f35d417014f45b11cfd757d6bc1a0e0a",
       "Badge.Light.Icon.Success": "12d01cfcd99d8cada72b9ae6319732c167641a2c",
       "Badge.Light.Icon.Information": "07af9480e0c671b97f2b1111ee8674ca1b9d6951",
-      "Badge.Light.Icon.Others": "338b461583fa3f338deaaeec5efebbc24a1b29cc"
+      "Badge.Light.Icon.Others": "338b461583fa3f338deaaeec5efebbc24a1b29cc",
+      "Background.Container.Tertiary": "a5b973f09239137847333086c88b3ad68a0ebd5c",
+      "Data Viz.Neutral.Border.Primary": "62dc54895e37b1687c1f84d8658f13b3e6cee869",
+      "Data Viz.Neutral.Border.Secondary": "71cf493a2e4c8f4e0509e52d808abf8abbe76d84",
+      "Data Viz.Neutral.Background.Color": "06c2b14edeaf0952c3d8ed8886510c7e901f2f6f"
     },
     "$figmaModeId": "13995:1",
     "$figmaCollectionId": "VariableCollectionId:114:768"
