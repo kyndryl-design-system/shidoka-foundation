@@ -42,6 +42,10 @@
       "Surface Tint": {
         "value": "{Opacity.Light.86}",
         "type": "color"
+      },
+      "Tertiary": {
+        "value": "{Opacity.Dark.3}",
+        "type": "color"
       }
     },
     "UI": {
@@ -335,7 +339,7 @@
       },
       "Dashboard": {
         "Dashboard Default": {
-          "value": "{Warm Gray.10}",
+          "value": "{Neutral.White}",
           "type": "color"
         }
       }
@@ -582,7 +586,7 @@
         "type": "color"
       },
       "Light": {
-        "value": "{Dark Stone.10}",
+        "value": "{Neutral.White}",
         "type": "color"
       },
       "Disabled": {
@@ -1689,6 +1693,24 @@
         "value": "{Warm Gray.40}",
         "type": "color"
       }
+    },
+    "Neutral": {
+      "Border": {
+        "Primary": {
+          "value": "{Opacity.Dark.85}",
+          "type": "color"
+        },
+        "Secondary": {
+          "value": "{Opacity.Dark.20}",
+          "type": "color"
+        }
+      },
+      "Background": {
+        "Color": {
+          "value": "{Cool Gray.3}",
+          "type": "color"
+        }
+      }
     }
   },
   "Utility": {
@@ -1757,7 +1779,7 @@
       }
     },
     "Variant Border": {
-      "value": "{Spruce.30}",
+      "value": "{Border.Accent.Primary}",
       "type": "color"
     }
   },
@@ -2377,7 +2399,7 @@
           "type": "color"
         },
         "Warning": {
-          "value": "{Amber.50}",
+          "value": "{Amber.80}",
           "type": "color"
         },
         "Success": {
@@ -2385,7 +2407,7 @@
           "type": "color"
         },
         "Information": {
-          "value": "{RAG.Information.100}",
+          "value": "{RAG.Information.110}",
           "type": "color"
         },
         "Others": {
