@@ -145,7 +145,7 @@
       },
       "Web": {
         "Default": {
-          "value": "{Cool Gray.60}",
+          "value": "{Cool Gray.30}",
           "type": "color"
         },
         "Hover": {
@@ -497,7 +497,7 @@
       },
       "AI": {
         "Default": {
-          "value": "{Ai Interactive.30}",
+          "value": "{Ai Interactive.15}",
           "type": "color"
         },
         "Hover": {
@@ -505,11 +505,11 @@
           "type": "color"
         },
         "Pressed": {
-          "value": "{Ai Interactive.30}",
+          "value": "{Ai Interactive.25}",
           "type": "color"
         },
         "Focused": {
-          "value": "{Ai Interactive.35}",
+          "value": "{Ai Interactive.01}",
           "type": "color"
         },
         "Disabled": {
@@ -517,7 +517,7 @@
           "type": "color"
         },
         "Secondary": {
-          "value": "{Ai Interactive.35}",
+          "value": "{Ai Interactive.20}",
           "type": "color"
         }
       }
@@ -525,7 +525,7 @@
     "Menu": {
       "State": {
         "Default": {
-          "value": "{Interactive.110}",
+          "value": "{Interactive.115}",
           "type": "color"
         },
         "Focused": {

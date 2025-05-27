@@ -30,7 +30,7 @@
   --kd-color-background-button-primary-ai-default: light-dark(var(--kd-color-ai-interactive-45), var(--kd-color-ai-interactive-45));
   --kd-color-background-button-primary-ai-hover: light-dark(var(--kd-color-ai-interactive-70), var(--kd-color-ai-interactive-70));
   --kd-color-background-button-primary-ai-pressed: light-dark(var(--kd-color-ai-interactive-60), var(--kd-color-ai-interactive-70));
-  --kd-color-background-button-web-default: light-dark(var(--kd-color-dark-stone-80), var(--kd-color-cool-gray-60));
+  --kd-color-background-button-web-default: light-dark(var(--kd-color-dark-stone-80), var(--kd-color-cool-gray-30));
   --kd-color-background-button-web-hover: light-dark(var(--kd-color-dark-stone-60), var(--kd-color-cool-gray-80));
   --kd-color-background-button-web-pressed: light-dark(var(--kd-color-dark-stone-100), var(--kd-color-cool-gray-90));
   --kd-color-background-button-secondary-state-default: light-dark(var(--kd-color-interactive-95), var(--kd-color-interactive-105));
@@ -103,13 +103,13 @@
   --kd-color-background-link-level-hover-light: light-dark(var(--kd-color-interactive-60), var(--kd-color-interactive-60));
   --kd-color-background-link-level-pressed-light: light-dark(var(--kd-color-interactive-95), var(--kd-color-interactive-95));
   --kd-color-background-link-level-disabled-light: light-dark(var(--kd-color-opacity-dark-30), var(--kd-color-opacity-dark-30));
-  --kd-color-background-link-ai-default: light-dark(var(--kd-color-ai-interactive-45), var(--kd-color-ai-interactive-30));
+  --kd-color-background-link-ai-default: light-dark(var(--kd-color-ai-interactive-45), var(--kd-color-ai-interactive-15));
   --kd-color-background-link-ai-hover: light-dark(var(--kd-color-ai-interactive-50), var(--kd-color-ai-interactive-20));
-  --kd-color-background-link-ai-pressed: light-dark(var(--kd-color-ai-interactive-45), var(--kd-color-ai-interactive-30));
-  --kd-color-background-link-ai-focused: light-dark(var(--kd-color-ai-interactive-45), var(--kd-color-ai-interactive-35));
+  --kd-color-background-link-ai-pressed: light-dark(var(--kd-color-ai-interactive-45), var(--kd-color-ai-interactive-25));
+  --kd-color-background-link-ai-focused: light-dark(var(--kd-color-ai-interactive-45), var(--kd-color-ai-interactive-01));
   --kd-color-background-link-ai-disabled: light-dark(var(--kd-color-opacity-dark-30), var(--kd-color-opacity-light-30));
-  --kd-color-background-link-ai-secondary: light-dark(var(--kd-color-ai-interactive-35), var(--kd-color-ai-interactive-35));
-  --kd-color-background-menu-state-default: light-dark(var(--kd-color-interactive-3), var(--kd-color-interactive-110));
+  --kd-color-background-link-ai-secondary: light-dark(var(--kd-color-ai-interactive-35), var(--kd-color-ai-interactive-20));
+  --kd-color-background-menu-state-default: light-dark(var(--kd-color-interactive-3), var(--kd-color-interactive-115));
   --kd-color-background-menu-state-focused: light-dark(var(--kd-color-interactive-5), var(--kd-color-interactive-115));
   --kd-color-background-menu-state-hover: light-dark(var(--kd-color-spruce-50), var(--kd-color-spruce-70));
   --kd-color-background-menu-state-pressed: light-dark(var(--kd-color-spruce-90), var(--kd-color-spruce-90));
