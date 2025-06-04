@@ -29,6 +29,10 @@ export default {
     docs: {
       page: DocumentationTemplate,
       codePanel: true,
+      source: {
+        // excludeDecorators: true,
+        type: 'code',
+      },
     },
 
     backgrounds: { disable: true },
