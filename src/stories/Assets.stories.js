@@ -85,11 +85,14 @@ const logoFiles = ['kyndryl-logo', 'bridge-logo-small', 'bridge-logo-large'];
 
 async function getLogoFiles() {
   const svgs = {};
-  for (const fileName of logoFiles) {
-    await import(`../assets/svg/${fileName}.svg?raw`).then((svg) => {
+
+  await Promise.all(
+    logoFiles.map(async (fileName) => {
+      const svg = await import(`../assets/svg/${fileName}.svg?raw`);
       svgs[fileName] = svg.default;
-    });
-  }
+    })
+  );
+
   return svgs;
 }
 
@@ -158,11 +161,14 @@ const mascotFiles = [
 
 async function getMascotFiles() {
   const svgs = {};
-  for (const fileName of mascotFiles) {
-    await import(`../assets/svg/mascot/${fileName}.svg?raw`).then((svg) => {
+
+  await Promise.all(
+    mascotFiles.map(async (fileName) => {
+      const svg = await import(`../assets/svg/mascot/${fileName}.svg?raw`);
       svgs[fileName] = svg.default;
-    });
-  }
+    })
+  );
+
   return svgs;
 }
 
@@ -219,11 +225,14 @@ const aiFiles = ['indicator'];
 
 async function getAiFiles() {
   const svgs = {};
-  for (const fileName of aiFiles) {
-    await import(`../assets/svg/ai/${fileName}.svg?raw`).then((svg) => {
+
+  await Promise.all(
+    aiFiles.map(async (fileName) => {
+      const svg = await import(`../assets/svg/ai/${fileName}.svg?raw`);
       svgs[fileName] = svg.default;
-    });
-  }
+    })
+  );
+
   return svgs;
 }
 
