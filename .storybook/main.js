@@ -16,7 +16,6 @@ export default {
         },
       },
     },
-    '@storybook/addon-webpack5-compiler-babel',
     '@storybook/addon-a11y',
     '@storybook/addon-vitest',
   ],
