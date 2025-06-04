@@ -1,9 +1,9 @@
 import { html } from 'lit-html';
 import { unsafeSVG } from 'lit-html/directives/unsafe-svg.js';
-import copyIcon from '@kyndryl-design-system/shidoka-icons/svg/monochrome/16/copy.svg';
+import copyIcon from '@kyndryl-design-system/shidoka-icons/svg/monochrome/16/copy.svg?raw';
 
-const copyCode = (filePath) => {
-  const code = `import assetName from '@kyndryl-design-system/shidoka-foundation/assets/svg/${filePath}'`;
+const copyCode = (fileName) => {
+  const code = `import assetName from '@kyndryl-design-system/shidoka-foundation/assets/svg/${fileName}.svg'`;
 
   navigator.clipboard.writeText(code);
 };
@@ -83,8 +83,23 @@ export default {
 
 const logoFiles = ['kyndryl-logo', 'bridge-logo-small', 'bridge-logo-large'];
 
+async function getLogoFiles() {
+  const svgs = {};
+  for (const fileName of logoFiles) {
+    await import(`../assets/svg/${fileName}.svg?raw`).then((svg) => {
+      svgs[fileName] = svg.default;
+    });
+  }
+  return svgs;
+}
+
 export const Logo = {
-  render: () => {
+  loaders: [
+    async () => ({
+      svgs: await getLogoFiles(),
+    }),
+  ],
+  render: (args, { loaded: { svgs } }) => {
     return html`
       <table class="icons">
         <thead>
@@ -95,18 +110,16 @@ export const Logo = {
         </thead>
         <tbody>
           ${logoFiles.map((fileName) => {
-            const filePath = `${fileName}.svg`;
-
             return html`
               <tr>
-                <td>${unsafeSVG(require(`../assets/svg/${filePath}`))}</td>
+                <td>${unsafeSVG(svgs[fileName])}</td>
                 <td>
                   ${fileName}.svg
 
                   <button
                     class="copy-code"
                     title="Copy import path"
-                    @click=${() => copyCode(filePath)}
+                    @click=${() => copyCode(fileName)}
                   >
                     ${unsafeSVG(copyIcon)}
                   </button>
@@ -143,6 +156,16 @@ const mascotFiles = [
   'kyn-chathead',
 ];
 
+async function getMascotFiles() {
+  const svgs = {};
+  for (const fileName of mascotFiles) {
+    await import(`../assets/svg/mascot/${fileName}.svg?raw`).then((svg) => {
+      svgs[fileName] = svg.default;
+    });
+  }
+  return svgs;
+}
+
 export const Mascot = {
   argTypes: {
     color: {
@@ -153,7 +176,12 @@ export const Mascot = {
   args: {
     color: 'default',
   },
-  render: (args) => {
+  loaders: [
+    async () => ({
+      svgs: await getMascotFiles(),
+    }),
+  ],
+  render: (args, { loaded: { svgs } }) => {
     return html`
       <table class="icons">
         <thead>
@@ -164,22 +192,16 @@ export const Mascot = {
         </thead>
         <tbody>
           ${mascotFiles.map((fileName) => {
-            let filePath = `mascot/${fileName}`;
-            if (args.color !== 'default') {
-              filePath += `-${args.color}`;
-            }
-            filePath += '.svg';
-
             return html`
               <tr>
-                <td>${unsafeSVG(require(`../assets/svg/${filePath}`))}</td>
+                <td>${unsafeSVG(svgs[fileName])}</td>
                 <td>
-                  ${filePath}
+                  ${fileName}.svg
 
                   <button
                     class="copy-code"
                     title="Copy import path"
-                    @click=${() => copyCode(filePath)}
+                    @click=${() => copyCode(`mascot/${fileName}`)}
                   >
                     ${unsafeSVG(copyIcon)}
                   </button>
@@ -195,8 +217,23 @@ export const Mascot = {
 
 const aiFiles = ['indicator'];
 
+async function getAiFiles() {
+  const svgs = {};
+  for (const fileName of aiFiles) {
+    await import(`../assets/svg/ai/${fileName}.svg?raw`).then((svg) => {
+      svgs[fileName] = svg.default;
+    });
+  }
+  return svgs;
+}
+
 export const AI = {
-  render: () => {
+  loaders: [
+    async () => ({
+      svgs: await getAiFiles(),
+    }),
+  ],
+  render: (args, { loaded: { svgs } }) => {
     return html`
       <table class="icons">
         <thead>
@@ -207,18 +244,16 @@ export const AI = {
         </thead>
         <tbody>
           ${aiFiles.map((fileName) => {
-            const filePath = `ai/${fileName}.svg`;
-
             return html`
               <tr>
-                <td>${unsafeSVG(require(`../assets/svg/${filePath}`))}</td>
+                <td>${unsafeSVG(svgs[fileName])}</td>
                 <td>
-                  ${filePath}
+                  ${fileName}.svg
 
                   <button
                     class="copy-code"
                     title="Copy import path"
-                    @click=${() => copyCode(filePath)}
+                    @click=${() => copyCode(`ai/${fileName}`)}
                   >
                     ${unsafeSVG(copyIcon)}
                   </button>
