@@ -5,7 +5,6 @@ import del from 'rollup-plugin-delete';
 import typescript from 'rollup-plugin-typescript2';
 import renameNodeModules from 'rollup-plugin-rename-node-modules';
 import postcss from 'rollup-plugin-postcss';
-// import litcss from 'rollup-plugin-postcss-lit';
 import InlineSvg from 'rollup-plugin-inline-svg';
 import copy from 'rollup-plugin-copy';
 
@@ -38,7 +37,6 @@ export default {
     postcss({
       inject: false,
     }),
-    // litcss(),
     terser(),
   ],
 };
