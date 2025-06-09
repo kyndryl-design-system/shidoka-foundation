@@ -631,6 +631,10 @@
   },
   "Opacity": {
     "Light": {
+      "0": {
+        "value": "#ffffff00",
+        "type": "color"
+      },
       "3": {
         "value": "#ffffff08",
         "type": "color"
