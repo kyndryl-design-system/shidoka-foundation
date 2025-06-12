@@ -64,7 +64,7 @@
     "lint-staged": "^15.5.0",
     "lit": "^3.3.0",
     "lit-analyzer": "^2.0.3",
-    "playwright": "^1.52.0",
+    "playwright": "^1.53.0",
     "prettier": "^2.8.2",
     "remark-gfm": "^4.0.0",
     "resolve-url-loader": "^5.0.0",
