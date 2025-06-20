@@ -1016,7 +1016,7 @@
     },
     "Forms": {
       "Default": {
-        "value": "{Dark Stone.50}",
+        "value": "{Dark Stone.30}",
         "type": "color"
       }
     },
