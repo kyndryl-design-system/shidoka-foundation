@@ -36,7 +36,7 @@
   --kd-color-background-button-primary-ai-pressed: light-dark(var(--kd-color-ai-interactive-60), var(--kd-color-ai-interactive-70));
   --kd-color-background-button-primary-ai-selected: light-dark(var(--kd-color-ai-interactive-75), var(--kd-color-ai-interactive-60));
   --kd-color-background-button-primary-ai-focused: light-dark(var(--kd-color-ai-interactive-75), var(--kd-color-ai-interactive-60));
-  --kd-color-background-button-web-default: light-dark(var(--kd-color-dark-stone-80), var(--kd-color-dark-stone-30));
+  --kd-color-background-button-web-default: light-dark(var(--kd-color-dark-stone-80), var(--kd-color-dark-stone-60));
   --kd-color-background-button-web-hover: light-dark(var(--kd-color-dark-stone-60), var(--kd-color-dark-stone-80));
   --kd-color-background-button-web-pressed: light-dark(var(--kd-color-dark-stone-100), var(--kd-color-dark-stone-90));
   --kd-color-background-button-web-selected: light-dark(var(--kd-color-dark-stone-70), var(--kd-color-dark-stone-50));
@@ -79,7 +79,7 @@
   --kd-color-background-forms-secondary: light-dark(var(--kd-color-interactive-5), var(--kd-color-interactive-105));
   --kd-color-background-forms-default: light-dark(var(--kd-color-cool-gray-5), var(--kd-color-opacity-dark-30));
   --kd-color-background-forms-ai-default: light-dark(var(--kd-color-neutral-white), var(--kd-color-opacity-dark-30));
-  --kd-color-background-forms-disabled: light-dark(var(--kd-color-warm-gray-10), var(--kd-color-cool-gray-90));
+  --kd-color-background-forms-disabled: light-dark(var(--kd-color-warm-gray-10), var(--kd-color-cool-gray-80));
   --kd-color-background-table-row-active: light-dark(var(--kd-color-interactive-10), var(--kd-color-interactive-100));
   --kd-color-background-table-alt-row: light-dark(var(--kd-color-cool-gray-7), var(--kd-color-cool-gray-93));
   --kd-color-background-table-footer: light-dark(var(--kd-color-cool-gray-10), var(--kd-color-interactive-105));
@@ -219,7 +219,7 @@
   --kd-color-border-card-hover: light-dark(var(--kd-color-spruce-20), var(--kd-color-spruce-20));
   --kd-color-border-card-default: light-dark(var(--kd-color-opacity-dark-10), var(--kd-color-opacity-light-20));
   --kd-color-border-card-clickable: light-dark(var(--kd-color-spruce-40), var(--kd-color-spruce-40));
-  --kd-color-border-forms-default: light-dark(var(--kd-color-dark-stone-50), var(--kd-color-cool-gray-40));
+  --kd-color-border-forms-default: light-dark(var(--kd-color-dark-stone-30), var(--kd-color-cool-gray-70));
   --kd-color-border-button-primary-destructive-default: light-dark(var(--kd-color-warm-red-70), var(--kd-color-warm-red-80));
   --kd-color-border-button-primary-destructive-hover: light-dark(var(--kd-color-warm-red-60), var(--kd-color-warm-red-70));
   --kd-color-border-button-primary-destructive-pressed: light-dark(var(--kd-color-warm-red-80), var(--kd-color-warm-red-90));
