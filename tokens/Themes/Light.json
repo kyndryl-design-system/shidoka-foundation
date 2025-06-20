@@ -2,7 +2,7 @@
   "Background": {
     "Container": {
       "Default": {
-        "value": "{Interactive.3}",
+        "value": "{Interactive.1}",
         "type": "color"
       },
       "Subtle": {
@@ -112,19 +112,35 @@
           "Pressed": {
             "value": "{Spruce.80}",
             "type": "color"
+          },
+          "Selected": {
+            "value": "{Spruce.70}",
+            "type": "color"
+          },
+          "Focused": {
+            "value": "{Spruce.60}",
+            "type": "color"
           }
         },
         "Destructive": {
           "Default": {
-            "value": "{Misc.Red.Dark}",
+            "value": "{Misc.Red.70}",
             "type": "color"
           },
           "Hover": {
-            "value": "{Misc.Red.90}",
+            "value": "{Misc.Red.60}",
             "type": "color"
           },
           "Pressed": {
-            "value": "{Misc.Red.100}",
+            "value": "{Misc.Red.80}",
+            "type": "color"
+          },
+          "Selected": {
+            "value": "{Misc.Red.90}",
+            "type": "color"
+          },
+          "Focused": {
+            "value": "{Misc.Red.90}",
             "type": "color"
           }
         },
@@ -139,6 +155,14 @@
           },
           "Pressed": {
             "value": "{Ai Interactive.60}",
+            "type": "color"
+          },
+          "Selected": {
+            "value": "{Ai Interactive.75}",
+            "type": "color"
+          },
+          "Focused": {
+            "value": "{Ai Interactive.75}",
             "type": "color"
           }
         }
@@ -155,20 +179,36 @@
         "Pressed": {
           "value": "{Dark Stone.100}",
           "type": "color"
+        },
+        "Selected": {
+          "value": "{Dark Stone.70}",
+          "type": "color"
+        },
+        "Focused": {
+          "value": "{Dark Stone.70}",
+          "type": "color"
         }
       },
       "Secondary": {
         "State": {
           "Default": {
-            "value": "{Interactive.95}",
+            "value": "{Spruce.10}",
             "type": "color"
           },
           "Hover": {
-            "value": "{Interactive.105}",
+            "value": "{Spruce.20}",
             "type": "color"
           },
           "Pressed": {
-            "value": "{Interactive.115}",
+            "value": "{Spruce.40}",
+            "type": "color"
+          },
+          "Selected": {
+            "value": "{Spruce.30}",
+            "type": "color"
+          },
+          "Focused": {
+            "value": "{Spruce.50}",
             "type": "color"
           }
         },
@@ -184,6 +224,14 @@
           "Default": {
             "value": "{Misc.Red.10}",
             "type": "color"
+          },
+          "Selected": {
+            "value": "{Misc.Red.50}",
+            "type": "color"
+          },
+          "Focused": {
+            "value": "{Misc.Red.50}",
+            "type": "color"
           }
         },
         "AI": {
@@ -196,6 +244,14 @@
             "type": "color"
           },
           "Pressed": {
+            "value": "{Ai Interactive.60}",
+            "type": "color"
+          },
+          "Selected": {
+            "value": "{Ai Interactive.70}",
+            "type": "color"
+          },
+          "Focused": {
             "value": "{Ai Interactive.70}",
             "type": "color"
           }
@@ -204,15 +260,23 @@
       "Tertiary": {
         "State": {
           "Hover": {
-            "value": "{Spruce.20}",
+            "value": "{Interactive.105}",
             "type": "color"
           },
           "Pressed": {
-            "value": "{Spruce.30}",
+            "value": "{Interactive.115}",
             "type": "color"
           },
           "Default": {
-            "value": "{Spruce.10}",
+            "value": "{Interactive.95}",
+            "type": "color"
+          },
+          "Selected": {
+            "value": "{Interactive.110}",
+            "type": "color"
+          },
+          "Focused": {
+            "value": "{Interactive.110}",
             "type": "color"
           }
         }
@@ -225,6 +289,10 @@
           },
           "Pressed": {
             "value": "{Interactive.80-primary}",
+            "type": "color"
+          },
+          "Selected": {
+            "value": "{Interactive.95}",
             "type": "color"
           }
         }
@@ -948,7 +1016,7 @@
     },
     "Forms": {
       "Default": {
-        "value": "{Dark Stone.50}",
+        "value": "{Dark Stone.30}",
         "type": "color"
       }
     },
@@ -956,29 +1024,33 @@
       "Primary": {
         "Destructive": {
           "Default": {
-            "value": "{Warm Red.80}",
-            "type": "color"
-          },
-          "Hover": {
             "value": "{Warm Red.70}",
             "type": "color"
           },
+          "Hover": {
+            "value": "{Warm Red.60}",
+            "type": "color"
+          },
           "Pressed": {
-            "value": "{Warm Red.90}",
+            "value": "{Warm Red.80}",
             "type": "color"
           },
           "Focused": {
             "value": "{Warm Red.80}",
             "type": "color"
+          },
+          "Selected": {
+            "value": "{Warm Red.90}",
+            "type": "color"
           }
         },
         "State": {
           "Pressed": {
-            "value": "{Spruce.70}",
+            "value": "{Spruce.80}",
             "type": "color"
           },
           "Hover": {
-            "value": "{Spruce.60}",
+            "value": "{Spruce.70}",
             "type": "color"
           },
           "Focused": {
@@ -987,6 +1059,10 @@
           },
           "Default": {
             "value": "{Spruce.50}",
+            "type": "color"
+          },
+          "Selected": {
+            "value": "{Spruce.70}",
             "type": "color"
           }
         }
@@ -998,33 +1074,41 @@
             "type": "color"
           },
           "Hover": {
-            "value": "{Spruce.40}",
+            "value": "{Spruce.20}",
             "type": "color"
           },
           "Focused": {
-            "value": "{Spruce.50}",
+            "value": "{Spruce.40}",
             "type": "color"
           },
           "Default": {
+            "value": "{Spruce.10}",
+            "type": "color"
+          },
+          "Selected": {
             "value": "{Spruce.30}",
             "type": "color"
           }
         },
         "Destructive": {
           "Default": {
-            "value": "{Warm Red.80}",
+            "value": "{Misc.Red.10}",
             "type": "color"
           },
           "Hover": {
-            "value": "{Warm Red.70}",
+            "value": "{Misc.Red.20}",
             "type": "color"
           },
           "Pressed": {
-            "value": "{Warm Red.90}",
+            "value": "{Misc.Red.30}",
             "type": "color"
           },
           "Focused": {
-            "value": "{Warm Red.80}",
+            "value": "{Misc.Red.80}",
+            "type": "color"
+          },
+          "Selected": {
+            "value": "{Misc.Red.50}",
             "type": "color"
           }
         }
@@ -1032,19 +1116,23 @@
       "Tertiary": {
         "State": {
           "Hover": {
-            "value": "{Spruce.30}",
+            "value": "{Interactive.105}",
             "type": "color"
           },
           "Focused": {
-            "value": "{Spruce.30}",
+            "value": "{Interactive.110}",
             "type": "color"
           },
           "Pressed": {
-            "value": "{Spruce.30}",
+            "value": "{Interactive.115}",
             "type": "color"
           },
           "Default": {
-            "value": "{Spruce.20}",
+            "value": "{Interactive.95}",
+            "type": "color"
+          },
+          "Selected": {
+            "value": "{Interactive.110}",
             "type": "color"
           }
         }
@@ -1052,25 +1140,47 @@
       "Ai": {
         "State": {
           "Default": {
-            "value": "{Ai Interactive.30}",
+            "value": "{Ai Interactive.45}",
             "type": "color"
           },
           "Focused": {
-            "value": "{Ai Interactive.40}",
+            "value": "{Ai Interactive.75}",
             "type": "color"
           },
           "Hover": {
-            "value": "{Ai Interactive.50}",
-            "type": "color"
-          },
-          "Pressed": {
             "value": "{Ai Interactive.70}",
             "type": "color"
           },
-          "Highlight": {
-            "value": "{Ai Interactive.40}",
+          "Pressed": {
+            "value": "{Ai Interactive.60}",
+            "type": "color"
+          },
+          "Selected": {
+            "value": "{Ai Interactive.75}",
             "type": "color"
           }
+        }
+      },
+      "Web": {
+        "Default": {
+          "value": "{Dark Stone.80}",
+          "type": "color"
+        },
+        "Focused": {
+          "value": "{Dark Stone.70}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{Dark Stone.60}",
+          "type": "color"
+        },
+        "Pressed": {
+          "value": "{Dark Stone.100}",
+          "type": "color"
+        },
+        "Selected": {
+          "value": "{Dark Stone.70}",
+          "type": "color"
         }
       }
     },
