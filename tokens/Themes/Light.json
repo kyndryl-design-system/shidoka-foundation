@@ -801,15 +801,15 @@
           "type": "color"
         },
         "Destructive": {
-          "value": "{Misc.Red.Light}",
+          "value": "{Neutral.White}",
           "type": "color"
         },
         "Secondary": {
-          "value": "{Cool Gray.5}",
+          "value": "{Neutral.White}",
           "type": "color"
         },
         "Tertiary": {
-          "value": "{Cool Gray.5}",
+          "value": "{Neutral.White}",
           "type": "color"
         },
         "Disabled": {
@@ -2208,6 +2208,10 @@
       "Disabled": {
         "value": "{Warm Gray.10}",
         "type": "color"
+      },
+      "Red": {
+        "value": "{Warm Red.10}",
+        "type": "color"
       }
     },
     "Text": {
@@ -2233,6 +2237,10 @@
       },
       "Spruce": {
         "value": "{Spruce.70}",
+        "type": "color"
+      },
+      "Red": {
+        "value": "{Warm Red.70}",
         "type": "color"
       }
     },
@@ -2260,6 +2268,10 @@
       "Disabled": {
         "value": "{Warm Gray.10}",
         "type": "color"
+      },
+      "Red": {
+        "value": "{Warm Red.20}",
+        "type": "color"
       }
     },
     "Icon": {
@@ -2286,6 +2298,10 @@
       "Disabled": {
         "value": "{Icon.Disabled}",
         "type": "color"
+      },
+      "Red": {
+        "value": "{Warm Red.70}",
+        "type": "color"
       }
     },
     "Hover": {
@@ -2307,6 +2323,10 @@
       },
       "Liliac": {
         "value": "{Lilac.10}",
+        "type": "color"
+      },
+      "Red": {
+        "value": "{Warm Red.20}",
         "type": "color"
       }
     }
