@@ -1141,7 +1141,12 @@
       "Border.Button.Web.Focused": "86fb275f36c3e289fad4c23eb6788cf449af9489",
       "Border.Button.Web.Hover": "f329acfa9f90e937418d906c21e84b204a7a22f6",
       "Border.Button.Web.Pressed": "a60cd6b72b1ec77b87c3c2fb5dd15ad09d2f6689",
-      "Border.Button.Web.Selected": "ef1fc7a24434901f1228c9b64ca60a72fc74a494"
+      "Border.Button.Web.Selected": "ef1fc7a24434901f1228c9b64ca60a72fc74a494",
+      "Tag.Text.Red": "16d4581b1a4a6f9509699edbbf07b32a3b028db8",
+      "Tag.Border.Red": "bb4c18c05ce2f32275ecb250575ff8f03b4c8aac",
+      "Tag.Icon.Red": "89c70356a153c2b92c26a08150de5740f70d4103",
+      "Tag.Hover.Red": "c04cc40fdcd521b6ddfac737968b9986f25bace7",
+      "Tag.Background.Red": "862db3b42366665be12440f34d845295ddf10f28"
     },
     "$figmaModeId": "114:4",
     "$figmaCollectionId": "VariableCollectionId:114:768"
@@ -1727,7 +1732,12 @@
       "Border.Button.Web.Focused": "86fb275f36c3e289fad4c23eb6788cf449af9489",
       "Border.Button.Web.Hover": "f329acfa9f90e937418d906c21e84b204a7a22f6",
       "Border.Button.Web.Pressed": "a60cd6b72b1ec77b87c3c2fb5dd15ad09d2f6689",
-      "Border.Button.Web.Selected": "ef1fc7a24434901f1228c9b64ca60a72fc74a494"
+      "Border.Button.Web.Selected": "ef1fc7a24434901f1228c9b64ca60a72fc74a494",
+      "Tag.Text.Red": "16d4581b1a4a6f9509699edbbf07b32a3b028db8",
+      "Tag.Border.Red": "bb4c18c05ce2f32275ecb250575ff8f03b4c8aac",
+      "Tag.Icon.Red": "89c70356a153c2b92c26a08150de5740f70d4103",
+      "Tag.Hover.Red": "c04cc40fdcd521b6ddfac737968b9986f25bace7",
+      "Tag.Background.Red": "862db3b42366665be12440f34d845295ddf10f28"
     },
     "$figmaModeId": "13995:1",
     "$figmaCollectionId": "VariableCollectionId:114:768"
@@ -1736,9 +1746,7 @@
     "id": "themes-wireframe",
     "name": "Wireframe",
     "group": "Themes",
-    "selectedTokenSets": {
-      "Themes/Wireframe": "enabled"
-    },
+    "selectedTokenSets": {},
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
       "Background.Container.Default": "c6b4206abbb457e75476043b926040215e82f273",
@@ -2313,7 +2321,12 @@
       "Border.Button.Web.Focused": "86fb275f36c3e289fad4c23eb6788cf449af9489",
       "Border.Button.Web.Hover": "f329acfa9f90e937418d906c21e84b204a7a22f6",
       "Border.Button.Web.Pressed": "a60cd6b72b1ec77b87c3c2fb5dd15ad09d2f6689",
-      "Border.Button.Web.Selected": "ef1fc7a24434901f1228c9b64ca60a72fc74a494"
+      "Border.Button.Web.Selected": "ef1fc7a24434901f1228c9b64ca60a72fc74a494",
+      "Tag.Text.Red": "16d4581b1a4a6f9509699edbbf07b32a3b028db8",
+      "Tag.Border.Red": "bb4c18c05ce2f32275ecb250575ff8f03b4c8aac",
+      "Tag.Icon.Red": "89c70356a153c2b92c26a08150de5740f70d4103",
+      "Tag.Hover.Red": "c04cc40fdcd521b6ddfac737968b9986f25bace7",
+      "Tag.Background.Red": "862db3b42366665be12440f34d845295ddf10f28"
     },
     "$figmaModeId": "18419:1",
     "$figmaCollectionId": "VariableCollectionId:114:768"
