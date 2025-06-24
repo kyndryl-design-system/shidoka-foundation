@@ -1,5 +1,10 @@
 {
   "tokenSetOrder": [
+    "Color Palette/Color",
+    "Themes/Light",
+    "Themes/Dark",
+    "Deprecated/Light",
+    "Deprecated/Dark",
     "Size Mapping/C - Xlg",
     "Size Mapping/C - Max",
     "Size Mapping/C - Lg",
@@ -9,11 +14,6 @@
     "Size Mapping/L - Xlg",
     "Size Mapping/L - Lg",
     "Size Mapping/L - Md",
-    "Size Mapping/L - Sm",
-    "Color Palette/Color",
-    "Themes/Light",
-    "Themes/Dark",
-    "Deprecated/Light",
-    "Deprecated/Dark"
+    "Size Mapping/L - Sm"
   ]
 }
