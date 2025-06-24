@@ -124,19 +124,19 @@
         },
         "Destructive": {
           "Default": {
-            "value": "{Misc.Red.70}",
-            "type": "color"
-          },
-          "Hover": {
-            "value": "{Misc.Red.60}",
-            "type": "color"
-          },
-          "Pressed": {
             "value": "{Misc.Red.80}",
             "type": "color"
           },
-          "Selected": {
+          "Hover": {
             "value": "{Misc.Red.90}",
+            "type": "color"
+          },
+          "Pressed": {
+            "value": "{Misc.Red.100}",
+            "type": "color"
+          },
+          "Selected": {
+            "value": "{Misc.Red.100}",
             "type": "color"
           },
           "Focused": {
