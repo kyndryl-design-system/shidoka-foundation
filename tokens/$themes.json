@@ -2135,7 +2135,9 @@
     "id": "breakpoint sizes-values",
     "name": "Values",
     "group": "Breakpoint sizes",
-    "selectedTokenSets": {},
+    "selectedTokenSets": {
+      "Breakpoint sizes/Values": "enabled"
+    },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
       "Center-Aligned - Max.Full Width": "ed9179fe654f6950446941af2b60bc1c83ed22f7",
