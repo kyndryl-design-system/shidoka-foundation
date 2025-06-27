@@ -1,0 +1,302 @@
+{
+  "Center-Aligned - Max": {
+    "Full Width": {
+      "value": 1504,
+      "type": "number"
+    },
+    "Three-Fourth": {
+      "value": 1120,
+      "type": "number"
+    },
+    "Two-Third": {
+      "value": 992,
+      "type": "number"
+    },
+    "Half": {
+      "value": 736,
+      "type": "number"
+    },
+    "One-Third": {
+      "value": 480,
+      "type": "number"
+    },
+    "One-Fourth": {
+      "value": 352,
+      "type": "number"
+    },
+    "Canvas": {
+      "value": 1584,
+      "type": "number"
+    }
+  },
+  "Left-Aligned - Max": {
+    "Full Width": {
+      "value": 1312,
+      "type": "number"
+    },
+    "Three-Fourth": {
+      "value": 976,
+      "type": "number"
+    },
+    "Two-Third": {
+      "value": 864,
+      "type": "number"
+    },
+    "Half": {
+      "value": 640,
+      "type": "number"
+    },
+    "One-Third": {
+      "value": 416,
+      "type": "number"
+    },
+    "One-Fourth": {
+      "value": 304,
+      "type": "number"
+    },
+    "Canvas": {
+      "value": 1584,
+      "type": "number"
+    }
+  },
+  "Center-Aligned - Xlg": {
+    "Canvas": {
+      "value": 1440,
+      "type": "number"
+    },
+    "Full Width": {
+      "value": 1216,
+      "type": "number"
+    },
+    "Three-Fourth": {
+      "value": 904,
+      "type": "number"
+    },
+    "Two-Third": {
+      "value": 800,
+      "type": "number"
+    },
+    "Half": {
+      "value": 592,
+      "type": "number"
+    },
+    "One-Third": {
+      "value": 384,
+      "type": "number"
+    },
+    "One-Fourth": {
+      "value": 280,
+      "type": "number"
+    }
+  },
+  "Center-Aligned - Lg": {
+    "Canvas": {
+      "value": 1184,
+      "type": "number"
+    },
+    "Full Width": {
+      "value": 1120,
+      "type": "number"
+    },
+    "Three-Fourth": {
+      "value": 832,
+      "type": "number"
+    },
+    "Two-Third": {
+      "value": 736,
+      "type": "number"
+    },
+    "Half": {
+      "value": 544,
+      "type": "number"
+    },
+    "One-Third": {
+      "value": 352,
+      "type": "number"
+    },
+    "One-Fourth": {
+      "value": 256,
+      "type": "number"
+    }
+  },
+  "Center-Aligned - Md": {
+    "Canvas": {
+      "value": 672,
+      "type": "number"
+    },
+    "Full Width": {
+      "value": 608,
+      "type": "number"
+    },
+    "Three-Fourth": {
+      "value": 448,
+      "type": "number"
+    },
+    "Two-Third": {
+      "value": 0,
+      "type": "number"
+    },
+    "Half": {
+      "value": 368,
+      "type": "number"
+    },
+    "One-Third": {
+      "value": 0,
+      "type": "number"
+    },
+    "One-Fourth": {
+      "value": 128,
+      "type": "number"
+    }
+  },
+  "Center-Aligned - Sm": {
+    "Canvas": {
+      "value": 320,
+      "type": "number"
+    },
+    "Full Width": {
+      "value": 288,
+      "type": "number"
+    },
+    "Three-Fourth": {
+      "value": 208,
+      "type": "number"
+    },
+    "Two-Third": {
+      "value": 0,
+      "type": "number"
+    },
+    "Half": {
+      "value": 128,
+      "type": "number"
+    },
+    "One-Third": {
+      "value": 0,
+      "type": "number"
+    },
+    "One-Fourth": {
+      "value": 48,
+      "type": "number"
+    }
+  },
+  "Left-Aligned - Xlg": {
+    "Canvas": {
+      "value": 1440,
+      "type": "number"
+    },
+    "Full Width": {
+      "value": 1312,
+      "type": "number"
+    },
+    "Three-Fourth": {
+      "value": 976,
+      "type": "number"
+    },
+    "Two-Third": {
+      "value": 864,
+      "type": "number"
+    },
+    "Half": {
+      "value": 640,
+      "type": "number"
+    },
+    "One-Third": {
+      "value": 416,
+      "type": "number"
+    },
+    "One-Fourth": {
+      "value": 304,
+      "type": "number"
+    }
+  },
+  "Left-Aligned - Lg": {
+    "Canvas": {
+      "value": 1184,
+      "type": "number"
+    },
+    "Full Width": {
+      "value": 1024,
+      "type": "number"
+    },
+    "Three-Fourth": {
+      "value": 760,
+      "type": "number"
+    },
+    "Two-Third": {
+      "value": 672,
+      "type": "number"
+    },
+    "Half": {
+      "value": 496,
+      "type": "number"
+    },
+    "One-Third": {
+      "value": 320,
+      "type": "number"
+    },
+    "One-Fourth": {
+      "value": 232,
+      "type": "number"
+    }
+  },
+  "Left-Aligned - Md": {
+    "Canvas": {
+      "value": 672,
+      "type": "number"
+    },
+    "Full Width": {
+      "value": 544,
+      "type": "number"
+    },
+    "Three-Fourth": {
+      "value": 400,
+      "type": "number"
+    },
+    "Two-Third": {
+      "value": 0,
+      "type": "number"
+    },
+    "Half": {
+      "value": 256,
+      "type": "number"
+    },
+    "One-Third": {
+      "value": 0,
+      "type": "number"
+    },
+    "One-Fourth": {
+      "value": 112,
+      "type": "number"
+    }
+  },
+  "Left-Aligned - Sm": {
+    "Canvas": {
+      "value": 320,
+      "type": "number"
+    },
+    "Full Width": {
+      "value": 288,
+      "type": "number"
+    },
+    "Three-Fourth": {
+      "value": 160,
+      "type": "number"
+    },
+    "Two-Third": {
+      "value": 0,
+      "type": "number"
+    },
+    "Half": {
+      "value": 96,
+      "type": "number"
+    },
+    "One-Third": {
+      "value": 0,
+      "type": "number"
+    },
+    "One-Fourth": {
+      "value": 32,
+      "type": "number"
+    }
+  }
+}
