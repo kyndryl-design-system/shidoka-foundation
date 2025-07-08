@@ -51,6 +51,27 @@ export default {
             border: 1px solid var(--kd-color-border-variants-light);
             padding: 16px;
           }
+
+          .fake-local-nav {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: var(--kd-local-nav-width);
+            background: var(--kd-color-background-menu-state-default);
+            box-shadow: var(--kd-elevation-level-2);
+          }
+
+          @media (min-width: 42rem) {
+            .fake-local-nav {
+              display: block;
+            }
+
+            .with-local-nav {
+              margin-left: 56px;
+            }
+          }
         </style>
         ${story()}
       `,
@@ -62,6 +83,7 @@ const args = {
   noMax: false,
   noGap: false,
   fullBleed: false,
+  withLocalNav: false,
 };
 
 export const Grid = {
@@ -77,7 +99,12 @@ export const Grid = {
 
     return html`
       <div class="storybook-grid-example">
-        <div class="kd-spacing--page-gutter">
+        ${args.withLocalNav ? html`<div class="fake-local-nav"></div>` : ''}
+        <div
+          class="kd-spacing--page-gutter ${args.withLocalNav
+            ? 'with-local-nav'
+            : ''}"
+        >
           <div class="${classMap(gridClasses)}">
             <div
               class="kd-grid__col--sm-4 kd-grid__col--md-8 kd-grid__col--lg-12"
@@ -170,6 +197,69 @@ export const Grid = {
               class="kd-grid__col--sm-2 kd-grid__col--md-4 kd-grid__col--lg-2"
             >
               2 cols @ max, xl, lg, sm, 4 cols @ md
+            </div>
+          </div>
+
+          <div class="${classMap(gridClasses)}">
+            <div
+              class="kd-grid__col--sm-1 kd-grid__col--md-1 kd-grid__col--lg-1"
+            >
+              1
+            </div>
+            <div
+              class="kd-grid__col--sm-1 kd-grid__col--md-1 kd-grid__col--lg-1"
+            >
+              1
+            </div>
+            <div
+              class="kd-grid__col--sm-1 kd-grid__col--md-1 kd-grid__col--lg-1"
+            >
+              1
+            </div>
+            <div
+              class="kd-grid__col--sm-1 kd-grid__col--md-1 kd-grid__col--lg-1"
+            >
+              1
+            </div>
+            <div
+              class="kd-grid__col--sm-1 kd-grid__col--md-1 kd-grid__col--lg-1"
+            >
+              1
+            </div>
+            <div
+              class="kd-grid__col--sm-1 kd-grid__col--md-1 kd-grid__col--lg-1"
+            >
+              1
+            </div>
+            <div
+              class="kd-grid__col--sm-1 kd-grid__col--md-1 kd-grid__col--lg-1"
+            >
+              1
+            </div>
+            <div
+              class="kd-grid__col--sm-1 kd-grid__col--md-1 kd-grid__col--lg-1"
+            >
+              1
+            </div>
+            <div
+              class="kd-grid__col--sm-1 kd-grid__col--md-1 kd-grid__col--lg-1"
+            >
+              1
+            </div>
+            <div
+              class="kd-grid__col--sm-1 kd-grid__col--md-1 kd-grid__col--lg-1"
+            >
+              1
+            </div>
+            <div
+              class="kd-grid__col--sm-1 kd-grid__col--md-1 kd-grid__col--lg-1"
+            >
+              1
+            </div>
+            <div
+              class="kd-grid__col--sm-1 kd-grid__col--md-1 kd-grid__col--lg-1"
+            >
+              1
             </div>
           </div>
         </div>
