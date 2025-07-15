@@ -1,11 +1,11 @@
 import { html } from 'lit-html';
 import { unsafeSVG } from 'lit-html/directives/unsafe-svg.js';
+import copyToClipboard from 'copy-to-clipboard';
 import copyIcon from '@kyndryl-design-system/shidoka-icons/svg/monochrome/16/copy.svg?raw';
 
 const copyCode = (fileName) => {
   const code = `import assetName from '@kyndryl-design-system/shidoka-foundation/assets/svg/${fileName}.svg'`;
-
-  navigator.clipboard.writeText(code);
+  copyToClipboard(code);
 };
 
 export default {
