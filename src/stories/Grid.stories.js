@@ -32,6 +32,13 @@ export default {
         defaultValue: { summary: false },
       },
     },
+    withLocalNav: {
+      control: { type: 'boolean' },
+      description: 'Simulate Local Nav presence.',
+      table: {
+        defaultValue: { summary: false },
+      },
+    },
   },
   decorators: [
     (story) =>
@@ -42,8 +49,8 @@ export default {
           }
 
           .storybook-grid-example .kd-grid {
-            margin-top: 32px;
-            margin-bottom: 32px;
+            margin-top: var(--kd-grid-gap);
+            margin-bottom: var(--kd-grid-gap);
           }
 
           .storybook-grid-example .kd-grid > div {
