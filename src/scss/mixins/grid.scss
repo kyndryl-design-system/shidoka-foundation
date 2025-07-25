@@ -4,7 +4,8 @@
   $align-left: false,
   $no-max: false,
   $no-gap: false,
-  $full-bleed: false
+  $full-bleed: false,
+  $compact: false
 ) {
   display: grid;
   grid-template-columns: repeat(4, 1fr); // 4 cols at sm
@@ -12,6 +13,10 @@
   margin: 0 auto;
   max-width: var(--kd-grid-max-width);
   position: relative;
+
+  @if $compact {
+    gap: var(--kd-grid-gap-compact);
+  }
 
   @if $no-gap {
     gap: 0;

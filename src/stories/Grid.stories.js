@@ -25,6 +25,13 @@ export default {
         defaultValue: { summary: false },
       },
     },
+    compact: {
+      control: { type: 'boolean' },
+      description: 'Compact column gap.',
+      table: {
+        defaultValue: { summary: false },
+      },
+    },
     fullBleed: {
       control: { type: 'boolean' },
       description: 'Full bleed/override page gutter.',
@@ -90,6 +97,7 @@ const args = {
   noMax: false,
   noGap: false,
   fullBleed: false,
+  compact: false,
   withLocalNav: false,
 };
 
@@ -100,6 +108,7 @@ export const Grid = {
       'kd-grid': true,
       'kd-grid--no-max': args.noMax,
       'kd-grid--no-gap': args.noGap,
+      'kd-grid--compact': args.compact,
       'kd-grid--align-left': args.alignLeft,
       'kd-grid--full-bleed': args.fullBleed,
     };

@@ -2,6 +2,7 @@
 
 :root {
   --kd-grid-gap: 16px;
+  --kd-grid-gap-compact: 16px;
   --kd-grid-max-width: 100%;
 
   @media (min-width: breakpoints.$bp-md) {
