@@ -221,6 +221,74 @@ export const Mascot = {
   },
 };
 
+const emptyStateFiles = [
+  'empty-state-data-viz',
+  'empty-state-no-data',
+  'empty-state-no-search',
+];
+
+async function getEmptyStateFiles() {
+  const svgs = {};
+
+  await Promise.all(
+    emptyStateFiles.map(async (fileName) => {
+      const svg = await import(`../assets/svg/emptyState/${fileName}.svg?raw`);
+      svgs[fileName] = svg.default;
+    })
+  );
+
+  return svgs;
+}
+
+export const EmptyState = {
+  argTypes: {
+    color: {
+      options: ['default', 'spruce', 'purple'],
+      control: { type: 'select' },
+    },
+  },
+  args: {
+    color: 'default',
+  },
+  loaders: [
+    async () => ({
+      svgs: await getEmptyStateFiles(),
+    }),
+  ],
+  render: (args, { loaded: { svgs } }) => {
+    return html`
+      <table class="icons">
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>filename</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${emptyStateFiles.map((fileName) => {
+            return html`
+              <tr>
+                <td>${unsafeSVG(svgs[fileName])}</td>
+                <td>
+                  ${fileName}.svg
+
+                  <button
+                    class="copy-code"
+                    title="Copy import path"
+                    @click=${() => copyCode(`emptyState/${fileName}`)}
+                  >
+                    ${unsafeSVG(copyIcon)}
+                  </button>
+                </td>
+              </tr>
+            `;
+          })}
+        </tbody>
+      </table>
+    `;
+  },
+};
+
 const aiFiles = ['indicator'];
 
 async function getAiFiles() {
