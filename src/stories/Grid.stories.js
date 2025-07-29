@@ -39,8 +39,9 @@ export default {
         defaultValue: { summary: false },
       },
     },
-    withLocalNav: {
-      control: { type: 'boolean' },
+    localNav: {
+      control: { type: 'select' },
+      options: ['none', 'collapsed', 'pinned'],
       description: 'Simulate Local Nav presence.',
       table: {
         defaultValue: { summary: false },
@@ -75,6 +76,10 @@ export default {
             width: var(--kd-local-nav-width);
             background: var(--kd-color-background-menu-state-default);
             box-shadow: var(--kd-elevation-level-2);
+
+            &.pinned {
+              width: var(--kd-local-nav-width-expanded);
+            }
           }
 
           @media (min-width: 42rem) {
@@ -83,7 +88,11 @@ export default {
             }
 
             .with-local-nav {
-              margin-left: 56px;
+              margin-left: var(--kd-local-nav-width);
+
+              &.pinned {
+                margin-left: var(--kd-local-nav-width-expanded);
+              }
             }
           }
         </style>
@@ -98,7 +107,7 @@ const args = {
   noGap: false,
   fullBleed: false,
   compact: false,
-  withLocalNav: false,
+  localNav: 'none',
 };
 
 export const Grid = {
@@ -115,10 +124,12 @@ export const Grid = {
 
     return html`
       <div class="storybook-grid-example">
-        ${args.withLocalNav ? html`<div class="fake-local-nav"></div>` : ''}
+        ${args.localNav !== 'none'
+          ? html`<div class="fake-local-nav ${args.localNav}"></div>`
+          : ''}
         <div
-          class="kd-spacing--page-gutter ${args.withLocalNav
-            ? 'with-local-nav'
+          class="kd-spacing--page-gutter ${args.localNav !== 'none'
+            ? `with-local-nav ${args.localNav}`
             : ''}"
         >
           <div class="${classMap(gridClasses)}">
