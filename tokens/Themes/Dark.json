@@ -609,7 +609,7 @@
           "type": "color"
         },
         "Open": {
-          "value": "{Spruce.80}",
+          "value": "{Interactive.105}",
           "type": "color"
         },
         "Disabled": {
@@ -624,9 +624,39 @@
           "value": "{Spruce.50}",
           "type": "color"
         },
-        "Active 2": {
-          "value": "{Spruce.40}",
-          "type": "color"
+        "Ai": {
+          "Active": {
+            "value": "{Ai Interactive.50}",
+            "type": "color"
+          },
+          "Category": {
+            "value": "{Interactive.115}",
+            "type": "color"
+          },
+          "Default": {
+            "value": "{Ai Interactive.100}",
+            "type": "color"
+          },
+          "Disabled": {
+            "value": "{Interactive.115}",
+            "type": "color"
+          },
+          "Focused": {
+            "value": "{Ai Interactive.100}",
+            "type": "color"
+          },
+          "Hover": {
+            "value": "{Ai Interactive.30}",
+            "type": "color"
+          },
+          "Open": {
+            "value": "{Interactive.105}",
+            "type": "color"
+          },
+          "Pressed": {
+            "value": "{Ai Interactive.75}",
+            "type": "color"
+          }
         }
       }
     }
