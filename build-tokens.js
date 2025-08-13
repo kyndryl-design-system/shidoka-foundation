@@ -5,26 +5,16 @@ async function run() {
   const palette = JSON.parse(
     await promises.readFile('tokens/Color Palette/Color.json', 'utf8')
   );
-  const light = JSON.parse(
-    await promises.readFile('tokens/Themes/Light.json', 'utf8')
+  const light = await readJsonIfExists('tokens/Themes/Light.json');
+  const dark = await readJsonIfExists('tokens/Themes/Dark.json');
+  const unifiedTheme = await readJsonIfExists('tokens/Themes/Theme.json');
+  const unifiedDeprecated = await readJsonIfExists(
+    'tokens/Deprecated/Theme.json'
   );
-  const dark = JSON.parse(
-    await promises.readFile('tokens/Themes/Dark.json', 'utf8')
+  const lightDeprecated = await readJsonIfExists(
+    'tokens/Deprecated/Light.json'
   );
-  const lightDeprecated = JSON.parse(
-    await promises
-      .readFile('tokens/Deprecated/Light.json', 'utf8')
-      .catch(function () {
-        return null;
-      })
-  );
-  const darkDeprecated = JSON.parse(
-    await promises
-      .readFile('tokens/Deprecated/Dark.json', 'utf8')
-      .catch(function () {
-        return null;
-      })
-  );
+  const darkDeprecated = await readJsonIfExists('tokens/Deprecated/Dark.json');
 
   // build and write css files
   async function buildCss() {
@@ -34,18 +24,44 @@ async function run() {
     paletteContent += loopTokens(palette);
     paletteContent += '}';
     // write palette css file
-    promises.writeFile('src/scss/variables/colorPalette.scss', paletteContent);
+    await promises.writeFile(
+      'src/scss/variables/colorPalette.scss',
+      paletteContent
+    );
 
     // build semantic variables file
     let semanticContent = ':root {\n';
     // recurse through json token structure
-    semanticContent += loopTokens(light, true);
-    if (lightDeprecated && darkDeprecated) {
-      semanticContent += loopTokens(lightDeprecated, true, true);
+    if (unifiedTheme) {
+      semanticContent += loopTokens(
+        unifiedTheme,
+        true,
+        false,
+        '',
+        [],
+        'light',
+        unifiedTheme
+      );
+      if (unifiedDeprecated) {
+        semanticContent += loopTokens(
+          unifiedDeprecated,
+          true,
+          true,
+          '',
+          [],
+          'light',
+          unifiedDeprecated
+        );
+      }
+    } else {
+      semanticContent += loopTokens(light || {}, true);
+      if (lightDeprecated && darkDeprecated) {
+        semanticContent += loopTokens(lightDeprecated, true, true);
+      }
     }
     semanticContent += '}';
     // write semantic css file
-    promises.writeFile(
+    await promises.writeFile(
       'src/scss/variables/colorSemantic.scss',
       semanticContent
     );
@@ -57,48 +73,55 @@ async function run() {
     theme = false,
     deprecated = false,
     category = '',
-    keys = []
+    keys = [],
+    mode = 'light',
+    unifiedRoot = null
   ) {
     let content = '';
 
-    for (const [key, value] of Object.entries(json)) {
-      if (value.value) {
+    for (const [key, value] of Object.entries(json || {})) {
+      if (isTokenNode(value)) {
         const prefix = `--kd-${value.type}`;
-        // build css variables syntax
         const token = cleanKey(key);
-        // set variable attribute
         const attr = `${prefix}${category}-${token}`;
-        // palette token reference
-        let val = cleanValue(value.value);
 
-        // if value is a reference to another variable
-        if (value.value.startsWith('{')) {
+        let resolvedLight = resolveTokenValue(value, 'light');
+        let val = cleanValue(resolvedLight);
+
+        if (isReference(resolvedLight)) {
           if (theme) {
-            // set variable value using css light-dark() syntax
-            const darkRef = getDarkValue(keys, key, deprecated);
-            const darkVal = cleanValue(darkRef.value);
+            let darkCandidate;
+            if (unifiedRoot) {
+              darkCandidate = resolveUnifiedDark(unifiedRoot, keys, key);
+            } else {
+              const darkRef = getDarkValue(keys, key, deprecated);
+              darkCandidate = darkRef ? darkRef.value : resolvedLight;
+            }
+            const darkVal = cleanValue(darkCandidate);
             if (darkVal.startsWith('#')) {
-              // handle if darkVal is hex instead of token
               val = `light-dark(var(${prefix}-${val}), ${darkVal})`;
             } else {
               val = `light-dark(var(${prefix}-${val}), var(${prefix}-${darkVal}))`;
             }
           } else {
-            // set variable value
             val = `var(${prefix}-${val})`;
           }
         }
 
-        // write variable
-        content += `  ${attr}: ${val};\n`;
+        content += `  ${attr}: ${normalizeFinalValue(val)};\n`;
       } else {
-        // update category string and parent keys arr
         let newKeys = JSON.parse(JSON.stringify(keys));
         newKeys.push(key);
         let newCategory = category + `-${cleanKey(key)}`;
-
-        // recurse through sub-level and write sub-level variables
-        content += loopTokens(value, theme, deprecated, newCategory, newKeys);
+        content += loopTokens(
+          value,
+          theme,
+          deprecated,
+          newCategory,
+          newKeys,
+          mode,
+          unifiedRoot
+        );
       }
     }
 
@@ -109,19 +132,19 @@ async function run() {
   function getDarkValue(keys, curKey, deprecated) {
     let darkVal = deprecated ? darkDeprecated : dark;
     keys.forEach((key) => {
-      darkVal = darkVal[key];
+      darkVal = darkVal ? darkVal[key] : undefined;
     });
-    return darkVal[curKey];
+    return darkVal ? darkVal[curKey] : undefined;
   }
 
-  // clean json eys for use as css variable attributes
+  // clean json keys for use as css variable attributes
   function cleanKey(key) {
     return key.toLowerCase().split(' ').join('-');
   }
 
   // clean json values for use as css variable values
   function cleanValue(token) {
-    return token
+    return String(token || '')
       .toLowerCase()
       .split(' ')
       .join('-')
@@ -131,19 +154,83 @@ async function run() {
       .join('')
       .split('}')
       .join('');
-    // .split('(')
-    // .join('-')
-    // .split(')')
-    // .join('');
   }
 
-  await Promise.all([
-    palette,
-    light,
-    dark,
-    lightDeprecated,
-    darkDeprecated,
-  ]).then(buildCss());
+  await buildCss();
+
+  function isTokenNode(node) {
+    return (
+      node && typeof node === 'object' && 'value' in node && 'type' in node
+    );
+  }
+
+  function isReference(val) {
+    return typeof val === 'string' && val.trim().startsWith('{');
+  }
+
+  function resolveTokenValue(node, which) {
+    const v = node && node.value;
+    if (typeof v === 'string') return v;
+    if (v && typeof v === 'object') {
+      if ('modes' in v && v.modes && typeof v.modes === 'object') {
+        return v.modes[which] ?? v.modes.light ?? '';
+      }
+      if ('light' in v || 'dark' in v) {
+        return v[which] ?? v.light ?? '';
+      }
+    }
+    if ('modes' in node && node.modes && typeof node.modes === 'object') {
+      return node.modes[which] ?? node.modes.light ?? '';
+    }
+    if (which in node) return node[which];
+    return v || '';
+  }
+
+  function resolveUnifiedDark(root, keys, curKey) {
+    let node = getByPath(root, [...keys, curKey]);
+    const sameNodeDark = resolveTokenValue(node, 'dark');
+    if (sameNodeDark && String(sameNodeDark).trim() !== '') return sameNodeDark;
+
+    const idx = keys.indexOf('light');
+    if (idx !== -1) {
+      const altKeys = keys.slice();
+      altKeys[idx] = 'dark';
+      const darkNode = getByPath(root, [...altKeys, curKey]);
+      if (darkNode) {
+        const candidate =
+          resolveTokenValue(darkNode, 'light') ||
+          (darkNode && darkNode.value) ||
+          '';
+        if (candidate && String(candidate).trim() !== '') return candidate;
+      }
+    }
+
+    const fallbackLight =
+      resolveTokenValue(getByPath(root, [...keys, curKey]), 'light') || '';
+    return fallbackLight;
+  }
+
+  async function readJsonIfExists(path) {
+    try {
+      const s = await promises.readFile(path, 'utf8');
+      return JSON.parse(s);
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function normalizeFinalValue(v) {
+    return typeof v === 'string' ? v : String(v || '');
+  }
+
+  function getByPath(obj, path) {
+    let cur = obj;
+    for (const k of path) {
+      if (!cur) return undefined;
+      cur = cur[k];
+    }
+    return cur;
+  }
 }
 
 run();
