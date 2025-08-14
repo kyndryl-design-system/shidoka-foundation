@@ -6,7 +6,7 @@ const DRY_RUN = args.includes('--dry-run') || args.includes('-d');
 const VERBOSE = args.includes('--verbose') || args.includes('-v');
 
 async function run() {
-  const designersTokens = await readJsonIfExists('tokens.json');
+  const designersTokens = await readJsonIfExists('tokens/tokens.json');
 
   let palette,
     light,
@@ -394,7 +394,7 @@ Object.defineProperty(global, 'setLegacy', {
 });
 
 (async () => {
-  const designersTokens = await readJsonIfExists('tokens.json');
+  const designersTokens = await readJsonIfExists('tokens/tokens.json');
   let d = null;
   let dd = null;
   if (designersTokens) {
