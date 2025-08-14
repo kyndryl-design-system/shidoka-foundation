@@ -1,36 +1,94 @@
-import { promises } from 'fs';
+import { promises as fs } from 'fs';
+import { dirname } from 'path';
 
 const args = process.argv.slice(2);
 const DRY_RUN = args.includes('--dry-run') || args.includes('-d');
 const VERBOSE = args.includes('--verbose') || args.includes('-v');
 
 async function run() {
-  // fetch token files and convert to json
-  const palette = JSON.parse(
-    await promises.readFile('tokens/Color Palette/Color.json', 'utf8')
-  );
-  const light = await readJsonIfExists('tokens/Themes/Light.json');
-  const dark = await readJsonIfExists('tokens/Themes/Dark.json');
+  const designersTokens = await readJsonIfExists('tokens.json');
 
-  let unifiedTheme = await readJsonIfExists('tokens/Themes/Theme.json');
-  const sampleUnified = await readJsonIfExists(
-    'tokens/Themes/Theme.sample.json'
-  );
-  if (!unifiedTheme && DRY_RUN && sampleUnified) {
-    unifiedTheme = sampleUnified;
-    if (VERBOSE)
-      console.log('Using tokens/Themes/Theme.sample.json for dry-run');
+  let palette,
+    light,
+    dark,
+    unifiedTheme,
+    unifiedDeprecated,
+    lightDeprecated,
+    darkDeprecated;
+
+  if (designersTokens) {
+    if (designersTokens['Color Palette/Color']) {
+      palette = designersTokens['Color Palette/Color'];
+      if (VERBOSE) console.log('Using tokens.json → "Color Palette/Color"');
+    } else {
+      palette = await readJsonRequired('tokens/Color Palette/Color.json');
+    }
+
+    light =
+      designersTokens['Themes/Light'] ??
+      designersTokens['Themes/Light.json'] ??
+      null;
+    dark =
+      designersTokens['Themes/Dark'] ??
+      designersTokens['Themes/Dark.json'] ??
+      null;
+
+    unifiedTheme =
+      designersTokens['Themes/Theme'] ??
+      designersTokens['Themes/Theme.json'] ??
+      null;
+
+    let sampleUnified =
+      designersTokens['Themes/Theme.sample'] ??
+      designersTokens['Themes/Theme.sample.json'] ??
+      null;
+
+    if (!unifiedTheme && DRY_RUN && !sampleUnified) {
+      sampleUnified = await readJsonIfExists('tokens/Themes/Theme.sample.json');
+    }
+    if (!unifiedTheme && DRY_RUN && sampleUnified) {
+      unifiedTheme = sampleUnified;
+      if (VERBOSE)
+        console.log('Using tokens.json → Themes/Theme.sample for dry-run');
+    }
+
+    unifiedDeprecated =
+      designersTokens['Deprecated/Theme'] ??
+      designersTokens['Deprecated/Theme.json'] ??
+      null;
+
+    lightDeprecated =
+      designersTokens['Deprecated/Light'] ??
+      designersTokens['Deprecated/Light.json'] ??
+      null;
+
+    darkDeprecated =
+      designersTokens['Deprecated/Dark'] ??
+      designersTokens['Deprecated/Dark.json'] ??
+      null;
+
+    if (VERBOSE) console.log('Loaded tokens from designers tokens.json');
+  } else {
+    palette = await readJsonRequired('tokens/Color Palette/Color.json');
+    light = await readJsonIfExists('tokens/Themes/Light.json');
+    dark = await readJsonIfExists('tokens/Themes/Dark.json');
+
+    unifiedTheme = await readJsonIfExists('tokens/Themes/Theme.json');
+    const sampleUnified = await readJsonIfExists(
+      'tokens/Themes/Theme.sample.json'
+    );
+    if (!unifiedTheme && DRY_RUN && sampleUnified) {
+      unifiedTheme = sampleUnified;
+      if (VERBOSE)
+        console.log('Using tokens/Themes/Theme.sample.json for dry-run');
+    }
+
+    unifiedDeprecated = await readJsonIfExists('tokens/Deprecated/Theme.json');
+    lightDeprecated = await readJsonIfExists('tokens/Deprecated/Light.json');
+    darkDeprecated = await readJsonIfExists('tokens/Deprecated/Dark.json');
   }
 
-  const unifiedDeprecated = await readJsonIfExists(
-    'tokens/Deprecated/Theme.json'
-  );
-  const lightDeprecated = await readJsonIfExists(
-    'tokens/Deprecated/Light.json'
-  );
-  const darkDeprecated = await readJsonIfExists('tokens/Deprecated/Dark.json');
-
-  const toValidate = {
+  const validation = validateTokens({
     palette,
     unifiedTheme,
     unifiedDeprecated,
@@ -38,222 +96,233 @@ async function run() {
     dark,
     lightDeprecated,
     darkDeprecated,
-  };
+  });
 
-  const validation = validateTokens(toValidate);
-
-  if (validation.errors.length > 0) {
-    console.error('Token validation errors found:');
-    validation.errors.forEach((e) => console.error('  -', e));
+  if (validation.errors.length) {
+    console.error('Token validation errors:');
+    for (const e of validation.errors) console.error('  -', e);
     if (!DRY_RUN) {
       process.exitCode = 1;
       return;
-    } else {
-      console.warn(
-        'Continuing because this is a dry-run. Fix errors before writing files for production use.'
-      );
     }
+    console.warn('Continuing (dry-run). Fix before merging.');
   } else if (VERBOSE) {
-    console.log('Token validation passed (no errors).');
+    console.log('Token validation passed.');
+  }
+  if (VERBOSE && validation.warnings.length) {
+    console.warn('Validation warnings:');
+    for (const w of validation.warnings) console.warn('  -', w);
   }
 
-  async function buildCss() {
-    let paletteContent = ':root {\n';
-    paletteContent += loopTokens(palette);
-    paletteContent += '}';
-    if (DRY_RUN) {
-      console.log('\n--- DRY RUN: src/scss/variables/colorPalette.scss ---\n');
-      console.log(paletteContent);
-    } else {
-      await promises.writeFile(
-        'src/scss/variables/colorPalette.scss',
-        paletteContent
-      );
-    }
+  await ensureDir('src/scss/variables');
 
-    let semanticContent = ':root {\n';
+  let paletteContent = ':root {\n';
+  paletteContent += loopTokens({ json: palette, theme: false });
+  paletteContent += '}\n';
+  await writeMaybe('src/scss/variables/colorPalette.scss', paletteContent);
 
-    if (unifiedTheme) {
-      semanticContent += loopTokens(
-        unifiedTheme,
-        true,
-        false,
-        '',
-        [],
-        'light',
-        unifiedTheme
-      );
-      if (unifiedDeprecated) {
-        semanticContent += loopTokens(
-          unifiedDeprecated,
-          true,
-          true,
-          '',
-          [],
-          'light',
-          unifiedDeprecated
-        );
-      }
-    } else {
-      semanticContent += loopTokens(light || {}, true);
-      if (lightDeprecated && darkDeprecated) {
-        semanticContent += loopTokens(lightDeprecated, true, true);
-      }
+  let semanticContent = ':root {\n';
+
+  if (unifiedTheme) {
+    semanticContent += loopTokens({
+      json: unifiedTheme,
+      theme: true,
+      unifiedRoot: unifiedTheme,
+      resolveDarkFromUnified: true,
+    });
+    if (unifiedDeprecated) {
+      semanticContent += loopTokens({
+        json: unifiedDeprecated,
+        theme: true,
+        unifiedRoot: unifiedDeprecated,
+        deprecated: true,
+        resolveDarkFromUnified: true,
+      });
     }
-    semanticContent += '}';
-    if (DRY_RUN) {
-      console.log('\n--- DRY RUN: src/scss/variables/colorSemantic.scss ---\n');
-      console.log(semanticContent);
-    } else {
-      await promises.writeFile(
-        'src/scss/variables/colorSemantic.scss',
-        semanticContent
-      );
+  } else {
+    semanticContent += loopTokens({ json: light || {}, theme: true });
+    if (lightDeprecated && darkDeprecated) {
+      semanticContent += loopTokens({
+        json: lightDeprecated,
+        theme: true,
+        deprecated: true,
+      });
     }
   }
 
-  // recursively loop though json structure to generate css variable syntax
-  function loopTokens(
+  semanticContent += '}\n';
+  await writeMaybe('src/scss/variables/colorSemantic.scss', semanticContent);
+
+  if (VERBOSE) {
+    console.log('Done.');
+  }
+}
+
+function isTokenNode(n) {
+  return n && typeof n === 'object' && 'type' in n && 'value' in n;
+}
+function isRef(v) {
+  return typeof v === 'string' && v.trim().startsWith('{');
+}
+
+function cleanKey(key) {
+  return String(key).toLowerCase().split(' ').join('-');
+}
+
+function cleanRefValue(token) {
+  return String(token || '')
+    .toLowerCase()
+    .split(' ')
+    .join('-')
+    .split('.')
+    .join('-')
+    .replace(/[{}]/g, '');
+}
+
+function normalizeFinalValue(v) {
+  return typeof v === 'string' ? v : String(v ?? '');
+}
+
+function getFrom(obj, keys) {
+  let cur = obj;
+  for (const k of keys) cur = cur?.[k];
+  return cur;
+}
+
+function resolveTokenValue(node, which) {
+  const v = node?.value;
+  if (typeof v === 'string') return v;
+
+  if (v && typeof v === 'object') {
+    if (v.modes && typeof v.modes === 'object') {
+      return v.modes[which] ?? v.modes.light ?? '';
+    }
+    if ('light' in v || 'dark' in v) {
+      return v[which] ?? v.light ?? '';
+    }
+  }
+
+  if (node?.modes && typeof node.modes === 'object') {
+    return node.modes[which] ?? node.modes.light ?? '';
+  }
+  if (which in (node || {})) return node[which];
+
+  return v ?? '';
+}
+
+function formatForCss(val, prefix) {
+  if (isRef(val)) {
+    const ref = cleanRefValue(val);
+    return `var(${prefix}-${ref})`;
+  }
+  return String(val);
+}
+
+function valuesDiffer(lightVal, darkVal) {
+  return (
+    normalizeFinalValue(lightVal).trim() !== normalizeFinalValue(darkVal).trim()
+  );
+}
+
+function loopTokens(opts) {
+  const {
     json,
     theme = false,
     deprecated = false,
     category = '',
     keys = [],
-    mode = 'light',
-    unifiedRoot = null
-  ) {
-    let content = '';
+    unifiedRoot = null,
+    resolveDarkFromUnified = false,
+  } = opts;
 
-    for (const [key, value] of Object.entries(json || {})) {
-      if (isTokenNode(value)) {
-        const prefix = `--kd-${value.type}`;
-        const token = cleanKey(key);
-        const attr = `${prefix}${category}-${token}`;
+  let content = '';
 
-        let resolvedLight = resolveTokenValue(value, 'light');
-        let val = cleanValue(resolvedLight);
+  for (const [key, value] of Object.entries(json || {})) {
+    if (isTokenNode(value)) {
+      const token = cleanKey(key);
+      const prefix = `--kd-${value.type}`;
+      const attr = `${prefix}${category}-${token}`;
 
-        if (isReference(resolvedLight)) {
-          if (theme) {
-            let darkCandidate;
-            if (unifiedRoot) {
-              darkCandidate = resolveUnifiedDark(unifiedRoot, keys, key);
-            } else {
-              const darkRef = getDarkValue(keys, key, deprecated);
-              darkCandidate = darkRef ? darkRef.value : resolvedLight;
-            }
-            const darkVal = cleanValue(darkCandidate);
-            if (darkVal.startsWith('#')) {
-              val = `light-dark(var(${prefix}-${val}), ${darkVal})`;
-            } else {
-              val = `light-dark(var(${prefix}-${val}), var(${prefix}-${darkVal}))`;
-            }
-          } else {
-            val = `var(${prefix}-${val})`;
-          }
+      const lightRaw = resolveTokenValue(value, 'light');
+
+      let darkRaw = lightRaw;
+      if (theme) {
+        if (resolveDarkFromUnified && unifiedRoot) {
+          const node = getFrom(unifiedRoot, [...keys, key]);
+          darkRaw = resolveTokenValue(node ?? value, 'dark');
+          if (!darkRaw) darkRaw = lightRaw;
+        } else {
+          const darkNode = getFrom(
+            deprecated ? globalDarkDeprecated : globalDark,
+            keys
+          )?.[key];
+          darkRaw = (darkNode && darkNode.value) ?? lightRaw;
         }
+      }
 
-        content += `  ${attr}: ${normalizeFinalValue(val)};\n`;
+      let finalVal;
+
+      if (theme && valuesDiffer(lightRaw, darkRaw)) {
+        const lightCss = formatForCss(lightRaw, prefix);
+        const darkCss = formatForCss(darkRaw, prefix);
+        finalVal = `light-dark(${lightCss}, ${darkCss})`;
+      } else if (isRef(lightRaw)) {
+        finalVal = formatForCss(lightRaw, prefix);
       } else {
-        let newKeys = JSON.parse(JSON.stringify(keys));
-        newKeys.push(key);
-        let newCategory = category + `-${cleanKey(key)}`;
-        content += loopTokens(
-          value,
-          theme,
-          deprecated,
-          newCategory,
-          newKeys,
-          mode,
-          unifiedRoot
-        );
+        finalVal = String(lightRaw);
       }
-    }
 
-    return content;
-  }
-
-  function getDarkValue(keys, curKey, deprecated) {
-    let darkVal = deprecated ? darkDeprecated : dark;
-    keys.forEach((key) => {
-      darkVal = darkVal ? darkVal[key] : undefined;
-    });
-    return darkVal ? darkVal[curKey] : undefined;
-  }
-
-  function cleanKey(key) {
-    return key.toLowerCase().split(' ').join('-');
-  }
-
-  // clean json values for use as css variable values
-  function cleanValue(token) {
-    return String(token || '')
-      .toLowerCase()
-      .split(' ')
-      .join('-')
-      .split('.')
-      .join('-')
-      .split('{')
-      .join('')
-      .split('}')
-      .join('');
-  }
-
-  await buildCss();
-
-  function isTokenNode(node) {
-    return (
-      node && typeof node === 'object' && 'value' in node && 'type' in node
-    );
-  }
-
-  function isReference(val) {
-    return typeof val === 'string' && val.trim().startsWith('{');
-  }
-
-  function resolveTokenValue(node, which) {
-    const v = node && node.value;
-    if (typeof v === 'string') return v;
-    if (v && typeof v === 'object') {
-      if ('modes' in v && v.modes && typeof v.modes === 'object') {
-        return v.modes[which] ?? v.modes.light ?? '';
-      }
-      if ('light' in v || 'dark' in v) {
-        return v[which] ?? v.light ?? '';
-      }
-    }
-    if ('modes' in node && node.modes && typeof node.modes === 'object') {
-      return node.modes[which] ?? node.modes.light ?? '';
-    }
-    if (which in node) return node[which];
-    return v || '';
-  }
-
-  function resolveUnifiedDark(root, keys, curKey) {
-    let node = root;
-    for (const k of keys) {
-      node = node && node[k];
-    }
-    node = node && node[curKey];
-    if (!node) return '';
-    const dark = resolveTokenValue(node, 'dark');
-    if (dark && String(dark).trim() !== '') return dark;
-    const light = resolveTokenValue(node, 'light');
-    return light || '';
-  }
-
-  async function readJsonIfExists(path) {
-    try {
-      const s = await promises.readFile(path, 'utf8');
-      return JSON.parse(s);
-    } catch (e) {
-      return null;
+      content += `  ${attr}: ${normalizeFinalValue(finalVal)};\n`;
+    } else if (value && typeof value === 'object') {
+      const newKeys = [...keys, key];
+      const newCategory = `${category}-${cleanKey(key)}`;
+      content += loopTokens({
+        json: value,
+        theme,
+        deprecated,
+        category: newCategory,
+        keys: newKeys,
+        unifiedRoot,
+        resolveDarkFromUnified,
+      });
     }
   }
 
-  function normalizeFinalValue(v) {
-    return typeof v === 'string' ? v : String(v || '');
+  return content;
+}
+
+let globalDark = null;
+let globalDarkDeprecated = null;
+
+async function writeMaybe(path, text) {
+  if (DRY_RUN) {
+    console.log(`\n--- DRY RUN: ${path} ---\n`);
+    console.log(text);
+    return;
   }
+  await ensureDir(dirname(path));
+  await fs.writeFile(path, text);
+}
+
+async function ensureDir(dir) {
+  try {
+    await fs.mkdir(dir, { recursive: true });
+  } catch {
+    // ignore errors
+  }
+}
+
+async function readJsonIfExists(path) {
+  try {
+    const s = await fs.readFile(path, 'utf8');
+    return JSON.parse(s);
+  } catch {
+    return null;
+  }
+}
+async function readJsonRequired(path) {
+  const s = await fs.readFile(path, 'utf8');
+  return JSON.parse(s);
 }
 
 function validateTokens(files) {
@@ -262,36 +331,25 @@ function validateTokens(files) {
 
   function checkNode(pathStack, node) {
     if (!node || typeof node !== 'object') return;
-
     for (const [k, v] of Object.entries(node)) {
       const path = pathStack ? `${pathStack}.${k}` : k;
-      if (v && typeof v === 'object' && 'type' in v && 'value' in v) {
-        if (!v.type || typeof v.type !== 'string') {
-          errors.push(`${path}: token missing string 'type'`);
-        }
-        if (!('value' in v)) {
-          errors.push(`${path}: token missing 'value'`);
-        } else {
-          const val = v.value;
-          if (
-            typeof val !== 'string' &&
-            !(
-              val &&
-              typeof val === 'object' &&
-              ('modes' in val || 'light' in val || 'dark' in val)
-            )
-          ) {
-            warnings.push(
-              `${path}: token 'value' has unexpected shape (expected string or modes/light-dark object)`
-            );
-          }
+      if (isTokenNode(v)) {
+        if (!v.type || typeof v.type !== 'string')
+          errors.push(`${path}: missing string 'type'`);
+        if (!('value' in v)) errors.push(`${path}: missing 'value'`);
+        const val = v.value;
+        const isOkString = typeof val === 'string';
+        const isOkModes =
+          val &&
+          typeof val === 'object' &&
+          ('modes' in val || 'light' in val || 'dark' in val);
+        if (!isOkString && !isOkModes) {
+          warnings.push(
+            `${path}: unexpected 'value' shape (expected string or light/dark/modes object)`
+          );
         }
       } else if (v && typeof v === 'object') {
         checkNode(path, v);
-      } else {
-        if (v === null || v === undefined || v === '') {
-          warnings.push(`${path}: empty value`);
-        }
       }
     }
   }
@@ -299,59 +357,59 @@ function validateTokens(files) {
   try {
     checkNode('palette', files.palette);
   } catch (e) {
-    errors.push('palette: failed to validate - ' + e.message);
+    errors.push('palette: ' + (e?.message || 'validation failed'));
   }
 
-  if (files.unifiedTheme) {
+  for (const [name, obj] of [
+    ['unifiedTheme', files.unifiedTheme],
+    ['unifiedDeprecated', files.unifiedDeprecated],
+    ['light', files.light],
+    ['dark', files.dark],
+    ['lightDeprecated', files.lightDeprecated],
+    ['darkDeprecated', files.darkDeprecated],
+  ]) {
+    if (!obj) continue;
     try {
-      checkNode('unifiedTheme', files.unifiedTheme);
+      checkNode(name, obj);
     } catch (e) {
-      errors.push('unifiedTheme: failed to validate - ' + e.message);
-    }
-  }
-
-  if (files.unifiedDeprecated) {
-    try {
-      checkNode('unifiedDeprecated', files.unifiedDeprecated);
-    } catch (e) {
-      errors.push('unifiedDeprecated: failed to validate - ' + e.message);
-    }
-  }
-
-  if (files.light) {
-    try {
-      checkNode('light', files.light);
-    } catch (e) {
-      errors.push('light: failed to validate - ' + e.message);
-    }
-  }
-  if (files.dark) {
-    try {
-      checkNode('dark', files.dark);
-    } catch (e) {
-      errors.push('dark: failed to validate - ' + e.message);
-    }
-  }
-
-  if (files.lightDeprecated) {
-    try {
-      checkNode('lightDeprecated', files.lightDeprecated);
-    } catch (e) {
-      errors.push('lightDeprecated: failed to validate - ' + e.message);
-    }
-  }
-  if (files.darkDeprecated) {
-    try {
-      checkNode('darkDeprecated', files.darkDeprecated);
-    } catch (e) {
-      errors.push('darkDeprecated: failed to validate - ' + e.message);
+      errors.push(`${name}: ` + (e?.message || 'validation failed'));
     }
   }
 
   return { errors, warnings };
 }
 
-run().catch((err) => {
-  console.error('build-tokens.js failed:', err);
-  process.exit(1);
+run()
+  .then(() => {})
+  .catch((err) => {
+    console.error('build-tokens.js failed:', err);
+    process.exit(1);
+  });
+
+Object.defineProperty(global, 'setLegacy', {
+  value: (d, dd) => {
+    globalDark = d;
+    globalDarkDeprecated = dd;
+  },
 });
+
+(async () => {
+  const designersTokens = await readJsonIfExists('tokens.json');
+  let d = null;
+  let dd = null;
+  if (designersTokens) {
+    d =
+      designersTokens['Themes/Dark'] ??
+      designersTokens['Themes/Dark.json'] ??
+      null;
+    dd =
+      designersTokens['Deprecated/Dark'] ??
+      designersTokens['Deprecated/Dark.json'] ??
+      null;
+  } else {
+    d = await readJsonIfExists('tokens/Themes/Dark.json');
+    dd = await readJsonIfExists('tokens/Deprecated/Dark.json');
+  }
+  globalDark = d;
+  globalDarkDeprecated = dd;
+})();
