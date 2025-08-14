@@ -263,13 +263,9 @@ function loopTokens(opts) {
       let finalVal;
 
       if (theme) {
-        const lightCss = formatForCss(lightRaw, prefix);
-        const darkCss = formatForCss(darkRaw, prefix);
-        if (
-          isRef(lightRaw) ||
-          isRef(darkRaw) ||
-          valuesDiffer(lightRaw, darkRaw)
-        ) {
+        if (isRef(lightRaw)) {
+          const lightCss = formatForCss(lightRaw, prefix);
+          const darkCss = formatForCss(darkRaw, prefix);
           finalVal = `light-dark(${lightCss}, ${darkCss})`;
         } else {
           finalVal = String(lightRaw);
