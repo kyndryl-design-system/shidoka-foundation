@@ -1,7 +1,8 @@
 import { promises as fs } from 'fs';
 import { dirname } from 'path';
 
-const args = process.argv.slice(2);
+const args =
+  typeof process !== 'undefined' && process.argv ? process.argv.slice(2) : [];
 const DRY_RUN = args.includes('--dry-run') || args.includes('-d');
 const VERBOSE = args.includes('--verbose') || args.includes('-v');
 
