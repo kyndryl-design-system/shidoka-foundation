@@ -1,0 +1,14 @@
+{
+  "Gutter": {
+    "value": 32,
+    "type": "number"
+  },
+  "Offset": {
+    "value": 88,
+    "type": "number"
+  },
+  "Width": {
+    "value": 96,
+    "type": "number"
+  }
+}
