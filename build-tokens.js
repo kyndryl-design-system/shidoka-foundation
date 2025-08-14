@@ -58,9 +58,7 @@ async function run() {
   }
 
   async function buildCss() {
-    // build palette variables file
     let paletteContent = ':root {\n';
-    // recurse through json token structure
     paletteContent += loopTokens(palette);
     paletteContent += '}';
     if (DRY_RUN) {
@@ -74,7 +72,7 @@ async function run() {
     }
 
     let semanticContent = ':root {\n';
-    // recurse through json token structure
+
     if (unifiedTheme) {
       semanticContent += loopTokens(
         unifiedTheme,
