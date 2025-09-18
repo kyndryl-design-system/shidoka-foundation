@@ -1,10 +1,15 @@
 @use 'breakpoints.scss';
 
 :root {
-  --kd-grid-gap: 32px;
+  --kd-grid-gap: 16px;
+  --kd-grid-gap-compact: 16px;
   --kd-grid-max-width: 100%;
 
+  @media (min-width: breakpoints.$bp-md) {
+    --kd-grid-gap: 32px;
+  }
+
   @media (min-width: breakpoints.$bp-max) {
-    --kd-grid-max-width: #{breakpoints.$bp-max};
+    --kd-grid-max-width: calc(1584px - 64px);
   }
 }

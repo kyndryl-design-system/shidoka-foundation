@@ -1,10 +1,13 @@
 import { html } from 'lit';
+import { repeat } from 'lit/directives/repeat.js';
 import { getTokens } from '../common/helpers/storybook';
 import colorPalette from '../../tokens/Color Palette/Color.json';
 import colorSemantic from '../../tokens/Themes/Light.json';
 
 const paletteTokens = getTokens(colorPalette);
 const semanticTokens = getTokens(colorSemantic);
+
+import '@kyndryl-design-system/shidoka-applications/components/reusable/tabs';
 
 export default {
   title: 'Foundation/Colors',
@@ -86,43 +89,55 @@ export const Semantic = {
     return html`
       <div class="heading kd-type--headline-04">Semantic Tokens</div>
 
-      ${Object.entries(colorSemantic).map(([key]) => {
-        return html`
-          <div class="heading kd-type--headline-06">${key}</div>
+      <kyn-tabs vertical>
+        ${repeat(
+          Object.entries(colorSemantic).sort(),
+          ([key]) => key,
+          ([key], index) => html`
+            <kyn-tab slot="tabs" id="tab${key}" ?selected=${index === 0}>
+              ${key}
+            </kyn-tab>
 
-          <table class="tokens">
-            <thead>
-              <tr>
-                <th>Token</th>
-                <th>Value</th>
-                <th>Preview</th>
-              </tr>
-            </thead>
-            <tbody>
-              ${semanticTokens
-                .filter((token) => token.categoryTree[0] === key)
-                .map((token) => {
-                  return html`
-                    <tr>
-                      <td>${token.variable}</td>
-                      <td>
-                        ${getComputedStyle(
-                          document.documentElement
-                        ).getPropertyValue(token.variable)}
-                      </td>
-                      <td>
-                        <span
-                          class="token-preview"
-                          style="background-color: var(${token.variable})"
-                        ></span>
-                      </td>
-                    </tr>
-                  `;
-                })}
-            </tbody>
-          </table>
-        `;
-      })}
+            <kyn-tab-panel tabid="tab${key}" ?visible=${index === 0}>
+              <div class="heading kd-type--headline-06">${key}</div>
+
+              <table class="tokens">
+                <thead>
+                  <tr>
+                    <th>Token</th>
+                    <th>Value</th>
+                    <th>Preview</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${repeat(
+                    semanticTokens.filter(
+                      (token) => token.categoryTree[0] === key
+                    ),
+                    (token) => token.variable,
+                    (token) => html`
+                      <tr>
+                        <td>${token.variable}</td>
+                        <td>
+                          ${getComputedStyle(
+                            document.documentElement
+                          ).getPropertyValue(token.variable)}
+                        </td>
+                        <td>
+                          <span
+                            class="token-preview"
+                            style="background-color: var(${token.variable})"
+                          ></span>
+                        </td>
+                      </tr>
+                    `
+                  )}
+                </tbody>
+              </table>
+            </kyn-tab-panel>
+          `
+        )}
+      </kyn-tabs>
     `;
   },
 };
@@ -137,43 +152,55 @@ export const Palette = {
         Tokens directly. Only use Semantic Tokens in designs and code.
       </p>
 
-      ${Object.entries(colorPalette).map(([key]) => {
-        return html`
-          <div class="heading kd-type--headline-06">${key}</div>
+      <kyn-tabs vertical>
+        ${repeat(
+          Object.entries(colorPalette).sort(),
+          ([key]) => key,
+          ([key], index) => html`
+            <kyn-tab slot="tabs" id="tab${key}" ?selected=${index === 0}>
+              ${key}
+            </kyn-tab>
 
-          <table class="tokens">
-            <thead>
-              <tr>
-                <th>Token</th>
-                <th>Value</th>
-                <th>Preview</th>
-              </tr>
-            </thead>
-            <tbody>
-              ${paletteTokens
-                .filter((token) => token.categoryTree[0] === key)
-                .map((token) => {
-                  return html`
-                    <tr>
-                      <td>${token.variable}</td>
-                      <td>
-                        ${getComputedStyle(
-                          document.documentElement
-                        ).getPropertyValue(token.variable)}
-                      </td>
-                      <td>
-                        <span
-                          class="token-preview"
-                          style="background-color: var(${token.variable})"
-                        ></span>
-                      </td>
-                    </tr>
-                  `;
-                })}
-            </tbody>
-          </table>
-        `;
-      })}
+            <kyn-tab-panel tabid="tab${key}" ?visible=${index === 0}>
+              <div class="heading kd-type--headline-06">${key}</div>
+
+              <table class="tokens">
+                <thead>
+                  <tr>
+                    <th>Token</th>
+                    <th>Value</th>
+                    <th>Preview</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${repeat(
+                    paletteTokens.filter(
+                      (token) => token.categoryTree[0] === key
+                    ),
+                    (token) => token.variable,
+                    (token) => html`
+                      <tr>
+                        <td>${token.variable}</td>
+                        <td>
+                          ${getComputedStyle(
+                            document.documentElement
+                          ).getPropertyValue(token.variable)}
+                        </td>
+                        <td>
+                          <span
+                            class="token-preview"
+                            style="background-color: var(${token.variable})"
+                          ></span>
+                        </td>
+                      </tr>
+                    `
+                  )}
+                </tbody>
+              </table>
+            </kyn-tab-panel>
+          `
+        )}
+      </kyn-tabs>
     `;
   },
 };

@@ -6,3 +6,4 @@ tests/*
 dist/*
 coverage/*
 storybook-static/*
+vitest.config.js

@@ -1,4 +1,4 @@
-import { Meta } from '@storybook/blocks';
+import { Meta } from '@storybook/addon-docs/blocks';
 
 <Meta title="Migration Guide" />
 
@@ -11,6 +11,7 @@ Breaking Changes
 - Icon component removed
   - Use [Shidoka Icons](https://github.com/kyndryl-design-system/shidoka-icons) by importing the custom SVG files directly from this library.
 - Colors
+  - `<meta name="color-scheme">` tag must be added to the application `<head>`.
   - Removed the old color tokens which have been completely reworked and replaced with a new set of tokens.
 - All components moved to shidoka-applications.
   - Tag prefixes changed from `kd-` to `kyn-`.

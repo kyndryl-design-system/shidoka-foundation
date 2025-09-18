@@ -5,7 +5,6 @@ import del from 'rollup-plugin-delete';
 import typescript from 'rollup-plugin-typescript2';
 import renameNodeModules from 'rollup-plugin-rename-node-modules';
 import postcss from 'rollup-plugin-postcss';
-// import litcss from 'rollup-plugin-postcss-lit';
 import InlineSvg from 'rollup-plugin-inline-svg';
 import copy from 'rollup-plugin-copy';
 
@@ -27,6 +26,7 @@ export default {
       targets: [
         { src: 'package.json', dest: 'dist' },
         { src: 'README.md', dest: 'dist' },
+        { src: 'LICENSE', dest: 'dist' },
         { src: 'src/root.css', dest: 'dist' },
         { src: 'src/assets', dest: 'dist' },
         { src: 'src/scss', dest: 'dist' },
@@ -37,7 +37,6 @@ export default {
     postcss({
       inject: false,
     }),
-    // litcss(),
     terser(),
   ],
 };

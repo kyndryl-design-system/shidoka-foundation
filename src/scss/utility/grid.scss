@@ -4,6 +4,10 @@
 .kd-grid {
   @include grid.grid;
 
+  &--compact {
+    gap: var(--kd-grid-gap-compact);
+  }
+
   &--no-gap {
     gap: 0;
   }

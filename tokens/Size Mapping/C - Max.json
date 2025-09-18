@@ -1,30 +1,30 @@
 {
   "Full": {
-    "$type": "number",
-    "$value": "{Center-Aligned - Max.Full Width}"
+    "value": "{Center-Aligned - Max.Full Width}",
+    "type": "number"
   },
   "Two-Third": {
-    "$type": "number",
-    "$value": "{Center-Aligned - Max.Two-Third}"
+    "value": "{Center-Aligned - Max.Two-Third}",
+    "type": "number"
   },
   "One-Third": {
-    "$type": "number",
-    "$value": "{Center-Aligned - Max.One-Third}"
+    "value": "{Center-Aligned - Max.One-Third}",
+    "type": "number"
   },
   "Three-Fourth": {
-    "$type": "number",
-    "$value": "{Center-Aligned - Max.Three-Fourth}"
+    "value": "{Center-Aligned - Max.Three-Fourth}",
+    "type": "number"
   },
   "Half": {
-    "$type": "number",
-    "$value": "{Center-Aligned - Max.Half}"
+    "value": "{Center-Aligned - Max.Half}",
+    "type": "number"
   },
   "One-Fourth": {
-    "$type": "number",
-    "$value": "{Center-Aligned - Max.One-Fourth}"
+    "value": "{Center-Aligned - Max.One-Fourth}",
+    "type": "number"
   },
   "Canvas Size": {
-    "$type": "number",
-    "$value": "{Center-Aligned - Max.Canvas}"
+    "value": "{Center-Aligned - Max.Canvas}",
+    "type": "number"
   }
 }
