@@ -27,15 +27,15 @@
       },
       "Ai": {
         "Default": {
-          "value": "{Ai Interactive.100}",
+          "value": "{Interactive.120}",
           "type": "color"
         },
         "Subtle": {
-          "value": "{Ai Interactive.100}",
+          "value": "{Opacity.Light.5}",
           "type": "color"
         },
         "Level 2": {
-          "value": "{Ai Interactive.90}",
+          "value": "{Interactive.110}",
           "type": "color"
         }
       },
@@ -146,23 +146,23 @@
         },
         "AI": {
           "Default": {
-            "value": "{Ai Interactive.45}",
+            "value": "{Cool Gray.90}",
             "type": "color"
           },
           "Hover": {
-            "value": "{Ai Interactive.70}",
+            "value": "{Cool Gray.80}",
             "type": "color"
           },
           "Pressed": {
-            "value": "{Ai Interactive.70}",
+            "value": "{Cool Gray.60}",
             "type": "color"
           },
           "Selected": {
-            "value": "{Ai Interactive.60}",
+            "value": "{Cool Gray.95}",
             "type": "color"
           },
           "Focused": {
-            "value": "{Ai Interactive.60}",
+            "value": "{Cool Gray.90}",
             "type": "color"
           }
         }
@@ -236,23 +236,23 @@
         },
         "AI": {
           "Default": {
-            "value": "{Ai Interactive.70}",
+            "value": "{Spruce.90}",
             "type": "color"
           },
           "Hover": {
-            "value": "{Ai Interactive.30}",
+            "value": "{Spruce.80}",
             "type": "color"
           },
           "Pressed": {
-            "value": "{Ai Interactive.75}",
+            "value": "{Spruce.100}",
             "type": "color"
           },
           "Selected": {
-            "value": "{Ai Interactive.70}",
+            "value": "{Spruce.80}",
             "type": "color"
           },
           "Focused": {
-            "value": "{Ai Interactive.40}",
+            "value": "{Spruce.80}",
             "type": "color"
           }
         }
@@ -420,15 +420,15 @@
       "AI": {
         "Indicator": {
           "Head": {
-            "value": "{Ai Interactive.20}",
+            "value": "{Warm Red.20}",
             "type": "color"
           },
           "Halo": {
-            "value": "{Ai Interactive.Opaque.30-80Pct}",
+            "value": "{Warm Red.40}",
             "type": "color"
           },
           "Background": {
-            "value": "{Ai Interactive.Opaque.40-40Pct}",
+            "value": "{Warm Red.90}",
             "type": "color"
           }
         }
@@ -459,7 +459,7 @@
       },
       "Ai": {
         "Linear Top Gradient 1": {
-          "value": "{Ai Interactive.70}",
+          "value": "{Warm Red.70}",
           "type": "color"
         },
         "Linear Bottom Gradient 1": {
@@ -467,15 +467,15 @@
           "type": "color"
         },
         "Loader Start Gradient": {
-          "value": "{Ai Interactive.75}",
+          "value": "{Opacity.AI Warm Red.40}",
           "type": "color"
         },
         "Loader End Gradient": {
-          "value": "{Ai Interactive.Opaque.45-5Pct}",
+          "value": "{Opacity.AI Spruce.40}",
           "type": "color"
         },
         "Loader Mid Gradient": {
-          "value": "{Ai Interactive.Opaque.45-50Pct}",
+          "value": "{Opacity.Dark.0}",
           "type": "color"
         }
       }
@@ -565,19 +565,19 @@
       },
       "AI": {
         "Default": {
-          "value": "{Ai Interactive.15}",
+          "value": "{Spruce.20}",
           "type": "color"
         },
         "Hover": {
-          "value": "{Ai Interactive.20}",
+          "value": "{Spruce.50}",
           "type": "color"
         },
         "Pressed": {
-          "value": "{Ai Interactive.25}",
+          "value": "{Spruce.70}",
           "type": "color"
         },
         "Focused": {
-          "value": "{Ai Interactive.01}",
+          "value": "{Spruce.20}",
           "type": "color"
         },
         "Disabled": {
@@ -585,7 +585,7 @@
           "type": "color"
         },
         "Secondary": {
-          "value": "{Ai Interactive.20}",
+          "value": "{Dark Stone.10}",
           "type": "color"
         }
       }
@@ -626,7 +626,7 @@
         },
         "Ai": {
           "Active": {
-            "value": "{Ai Interactive.50}",
+            "value": "{Interactive.105}",
             "type": "color"
           },
           "Category": {
@@ -634,19 +634,19 @@
             "type": "color"
           },
           "Default": {
-            "value": "{Ai Interactive.100}",
-            "type": "color"
-          },
-          "Disabled": {
             "value": "{Interactive.115}",
             "type": "color"
           },
+          "Disabled": {
+            "value": "{Opacity.Light.5}",
+            "type": "color"
+          },
           "Focused": {
-            "value": "{Ai Interactive.100}",
+            "value": "{Interactive.110}",
             "type": "color"
           },
           "Hover": {
-            "value": "{Ai Interactive.30}",
+            "value": "{Cool Gray.80}",
             "type": "color"
           },
           "Open": {
@@ -654,7 +654,7 @@
             "type": "color"
           },
           "Pressed": {
-            "value": "{Ai Interactive.75}",
+            "value": "{Interactive.90}",
             "type": "color"
           }
         }
@@ -758,15 +758,15 @@
         "type": "color"
       },
       "Ai Primary": {
-        "value": "{Ai Interactive.05}",
+        "value": "{Interactive.5}",
         "type": "color"
       },
       "Ai Secondary": {
-        "value": "{Ai Interactive.10}",
+        "value": "{Interactive.15}",
         "type": "color"
       },
       "Ai Tertiary": {
-        "value": "{Ai Interactive.25}",
+        "value": "{Spruce.20}",
         "type": "color"
       }
     },
@@ -799,6 +799,10 @@
       },
       "Light": {
         "value": "{Opacity.Light.86}",
+        "type": "color"
+      },
+      "Darker": {
+        "value": "{Neutral.White}",
         "type": "color"
       }
     },
@@ -849,9 +853,27 @@
       },
       "Ai": {
         "Default": {
-          "value": "{Ai Interactive.01}",
+          "value": "{Dark Stone.20}",
           "type": "color"
         }
+      }
+    },
+    "Status": {
+      "Red": {
+        "value": "{Misc.Red.50}",
+        "type": "color"
+      },
+      "Amber": {
+        "value": "{Misc.Yellow.Dark}",
+        "type": "color"
+      },
+      "Green": {
+        "value": "{Misc.Green.30}",
+        "type": "color"
+      },
+      "Blue": {
+        "value": "{Misc.Blue.110}",
+        "type": "color"
       }
     }
   },
@@ -930,8 +952,12 @@
         "type": "color"
       }
     },
-    "AI": {
-      "value": "{Ai Interactive.35}",
+    "AI Spruce": {
+      "value": "{Spruce.20}",
+      "type": "color"
+    },
+    "AI Red": {
+      "value": "{Warm Red.40}",
       "type": "color"
     }
   },
@@ -962,7 +988,7 @@
         "type": "color"
       },
       "Ai": {
-        "value": "{Ai Interactive.60}",
+        "value": "{Warm Red.40}",
         "type": "color"
       }
     },
@@ -1170,23 +1196,45 @@
       "Ai": {
         "State": {
           "Default": {
-            "value": "{Ai Interactive.45}",
+            "value": "{Opacity.AI Warm Red.0}",
             "type": "color"
           },
           "Focused": {
-            "value": "{Ai Interactive.20}",
+            "value": "{Warm Red.40}",
             "type": "color"
           },
           "Hover": {
-            "value": "{Ai Interactive.70}",
+            "value": "{Opacity.AI Warm Red.0}",
             "type": "color"
           },
           "Pressed": {
-            "value": "{Ai Interactive.70}",
+            "value": "{Opacity.AI Warm Red.0}",
             "type": "color"
           },
           "Selected": {
-            "value": "{Ai Interactive.60}",
+            "value": "{Opacity.AI Warm Red.0}",
+            "type": "color"
+          }
+        },
+        "Secondary": {
+          "Default": {
+            "value": "{Spruce.60}",
+            "type": "color"
+          },
+          "Focused": {
+            "value": "{Spruce.80}",
+            "type": "color"
+          },
+          "Hover": {
+            "value": "{Spruce.50}",
+            "type": "color"
+          },
+          "Pressed": {
+            "value": "{Spruce.80}",
+            "type": "color"
+          },
+          "Selected": {
+            "value": "{Spruce.80}",
             "type": "color"
           }
         }
@@ -1216,13 +1264,7 @@
     },
     "Dropshadow": {
       "Ai": {
-        "value": "{Ai Interactive.100}",
-        "type": "color"
-      }
-    },
-    "Ai": {
-      "Subtle": {
-        "value": "{Ai Interactive.80}",
+        "value": "{Warm Red.100}",
         "type": "color"
       }
     },
@@ -1237,6 +1279,16 @@
       },
       "Default": {
         "value": "{Opacity.Light.20}",
+        "type": "color"
+      }
+    },
+    "Ai": {
+      "Default Gradient Start": {
+        "value": "{Warm Red.40}",
+        "type": "color"
+      },
+      "Default Gradient End": {
+        "value": "{Spruce.20}",
         "type": "color"
       }
     }
@@ -1871,49 +1923,49 @@
           "type": "color"
         },
         "2": {
-          "value": "{Opacity.Dark.10}",
+          "value": "{Opacity.Light.10}",
           "type": "color"
         },
         "L1": {
-          "value": "#51515133",
+          "value": "{Opacity.Light.20}",
           "type": "color"
         },
         "L2": {
-          "value": "#5151514d",
+          "value": "{Opacity.Light.30}",
           "type": "color"
         },
         "L2 - Overflow": {
-          "value": "#51515180",
+          "value": "{Opacity.Light.50}",
           "type": "color"
         },
         "L3": {
-          "value": "#51515140",
+          "value": "{Opacity.Light.25}",
           "type": "color"
         },
         "L4": {
-          "value": "#51515126",
+          "value": "{Opacity.Light.15}",
           "type": "color"
         }
       },
       "AI": {
         "L1": {
-          "value": "{Ai Interactive.Shadow.Dark.20}",
+          "value": "{Opacity.AI Warm Red.20}",
           "type": "color"
         },
         "L2": {
-          "value": "{Ai Interactive.Shadow.Dark.30}",
+          "value": "{Opacity.AI Warm Red.30}",
           "type": "color"
         },
         "L2 - Overflow": {
-          "value": "{Ai Interactive.Shadow.Dark.50}",
+          "value": "{Opacity.AI Warm Red.50}",
           "type": "color"
         },
         "L3": {
-          "value": "{Ai Interactive.Shadow.Dark.50}",
+          "value": "{Opacity.AI Warm Red.25}",
           "type": "color"
         },
         "L4": {
-          "value": "{Ai Interactive.Shadow.Dark.15}",
+          "value": "{Opacity.AI Warm Red.15}",
           "type": "color"
         }
       }
@@ -2232,7 +2284,7 @@
         "type": "color"
       },
       "AI": {
-        "value": "{Ai Interactive.70}",
+        "value": "{Spruce.80}",
         "type": "color"
       },
       "Disabled": {
@@ -2258,7 +2310,7 @@
         "type": "color"
       },
       "AI": {
-        "value": "{Ai Interactive.05}",
+        "value": "{Spruce.20}",
         "type": "color"
       },
       "Lilac": {
@@ -2280,7 +2332,7 @@
         "type": "color"
       },
       "AI": {
-        "value": "{Warm Gray.80}",
+        "value": "{Spruce.50}",
         "type": "color"
       },
       "Spruce": {
@@ -2322,7 +2374,7 @@
         "type": "color"
       },
       "AI": {
-        "value": "{Ai Interactive.05}",
+        "value": "{Spruce.20}",
         "type": "color"
       },
       "Disabled": {
@@ -2348,7 +2400,7 @@
         "type": "color"
       },
       "AI": {
-        "value": "{Warm Gray.70}",
+        "value": "{Spruce.90}",
         "type": "color"
       },
       "Liliac": {
