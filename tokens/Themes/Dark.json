@@ -14,7 +14,7 @@
         "type": "color"
       },
       "Soft": {
-        "value": "{Interactive.107}",
+        "value": "{Interactive.113}",
         "type": "color"
       },
       "Footer": {
@@ -146,23 +146,23 @@
         },
         "AI": {
           "Default": {
-            "value": "{Cool Gray.90}",
+            "value": "{Opacity.Light.0}",
             "type": "color"
           },
           "Hover": {
-            "value": "{Cool Gray.80}",
+            "value": "{Opacity.Light.5}",
             "type": "color"
           },
           "Pressed": {
-            "value": "{Cool Gray.60}",
+            "value": "{Interactive.120}",
             "type": "color"
           },
           "Selected": {
-            "value": "{Cool Gray.95}",
+            "value": "{Opacity.Light.10}",
             "type": "color"
           },
           "Focused": {
-            "value": "{Cool Gray.90}",
+            "value": "{Opacity.Light.5}",
             "type": "color"
           }
         }
@@ -295,6 +295,28 @@
             "value": "{Interactive.105}",
             "type": "color"
           }
+        },
+        "AI": {
+          "Default": {
+            "value": "{Opacity.Light.0}",
+            "type": "color"
+          },
+          "Hover": {
+            "value": "{Opacity.Light.5}",
+            "type": "color"
+          },
+          "Pressed": {
+            "value": "{Interactive.120}",
+            "type": "color"
+          },
+          "Selected": {
+            "value": "{Interactive.120}",
+            "type": "color"
+          },
+          "Focused": {
+            "value": "{Opacity.Light.5}",
+            "type": "color"
+          }
         }
       }
     },
@@ -326,7 +348,7 @@
         "type": "color"
       },
       "3": {
-        "value": "{Opacity.Light.5}",
+        "value": "{Opacity.Light.3}",
         "type": "color"
       },
       "4": {
@@ -634,7 +656,11 @@
             "type": "color"
           },
           "Default": {
-            "value": "{Interactive.115}",
+            "value": "{Interactive.110}",
+            "type": "color"
+          },
+          "Disabled": {
+            "value": "{Opacity.Light.5}",
             "type": "color"
           },
           "Disabled": {

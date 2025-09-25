@@ -360,7 +360,8 @@
       "Opacity.AI Warm Red.90": "32c0e1fd8ba374d7c3ef1299e70758478cda6d73",
       "Opacity.AI Warm Red.100": "0979669deff91a5119f6c0a2b2174c9054ba45e5",
       "Opacity.AI Spruce.90": "fcc862777e8ff4d450bbec5ddacd33edf70cf24a",
-      "Opacity.AI Spruce.100": "83156638a6068b795c04626e392038b6d327563e"
+      "Opacity.AI Spruce.100": "83156638a6068b795c04626e392038b6d327563e",
+      "Interactive.113": "dfefef5d02ec8933ac129ad29c98b9d549df2c54"
     },
     "$figmaModeId": "114:3",
     "$figmaCollectionId": "VariableCollectionId:114:573"
@@ -970,7 +971,12 @@
       "Text.Status.Green": "7d1d4d260897ebec9c860de741dd6e53b5a8248a",
       "Text.Status.Blue": "83d063ad6fc65e890b5eb619cce383216269bd51",
       "Icon.AI Red": "45884c91c685ad8c00b25a79509d545b86a5a08f",
-      "Text.Density.Darker": "32b6561357e605e6ceab62bfdcd7944d94106aac"
+      "Text.Density.Darker": "32b6561357e605e6ceab62bfdcd7944d94106aac",
+      "Background.Button.Ghost.AI.Default": "92a564b345861ec30dca6e260ea95e272150c227",
+      "Background.Button.Ghost.AI.Hover": "31e5fe80f78f6df594a81458a6865920038e9440",
+      "Background.Button.Ghost.AI.Pressed": "d1897f5b53a4da97610d480111a021cb9a747a27",
+      "Background.Button.Ghost.AI.Selected": "c85de20557c63bffc2e678f9d451560129396af0",
+      "Background.Button.Ghost.AI.Focused": "b6a7d3cfb19b9bfa8403546d27a57c88ccc2aef7"
     },
     "$figmaModeId": "114:4",
     "$figmaCollectionId": "VariableCollectionId:114:768"
@@ -1580,7 +1586,12 @@
       "Text.Status.Green": "7d1d4d260897ebec9c860de741dd6e53b5a8248a",
       "Text.Status.Blue": "83d063ad6fc65e890b5eb619cce383216269bd51",
       "Icon.AI Red": "45884c91c685ad8c00b25a79509d545b86a5a08f",
-      "Text.Density.Darker": "32b6561357e605e6ceab62bfdcd7944d94106aac"
+      "Text.Density.Darker": "32b6561357e605e6ceab62bfdcd7944d94106aac",
+      "Background.Button.Ghost.AI.Default": "92a564b345861ec30dca6e260ea95e272150c227",
+      "Background.Button.Ghost.AI.Hover": "31e5fe80f78f6df594a81458a6865920038e9440",
+      "Background.Button.Ghost.AI.Pressed": "d1897f5b53a4da97610d480111a021cb9a747a27",
+      "Background.Button.Ghost.AI.Selected": "c85de20557c63bffc2e678f9d451560129396af0",
+      "Background.Button.Ghost.AI.Focused": "b6a7d3cfb19b9bfa8403546d27a57c88ccc2aef7"
     },
     "$figmaModeId": "13995:1",
     "$figmaCollectionId": "VariableCollectionId:114:768"
@@ -2004,11 +2015,10 @@
       "Background.Link.AI.Pressed": "0e170836ed9ef4b538aa2ae193b56e2f083be0aa",
       "Background.Link.AI.Focused": "c0edb7ecfa3845b82f838aa72b8cd6cb18b324d3",
       "Background.Link.AI.Disabled": "a8f6675db792ec6157d3fa97825feb163f40171d",
-      "Icon.AI": "456ec5d41d8d0afd27dd4a0a4d129b260448706d",
+      "Icon.AI Spruce": "456ec5d41d8d0afd27dd4a0a4d129b260448706d",
       "Background.Link.AI.Secondary": "12533f64cb2606dfe0efd69eb299c4f787fa85af",
       "Background.Gradients.Ai.Linear Top Gradient 1": "75cd9e01d23eb6c4ac9e1fd0df7083077aaf2dca",
       "Background.Gradients.Ai.Linear Bottom Gradient 1": "8a0f8296419f369559cd5d617851c978b233735b",
-      "Border.Ai.Subtle": "44ce3e5572448e4808ce453a3eaeb13f18edb0f8",
       "Background.Container.Ai.Level 2": "7f1991012038f796dc7b6ae2c422b7c9a03abc84",
       "Background.Gradients.Ai.Loader Start Gradient": "c06a266d277ea524e24595a05f36167a2fdfbd80",
       "Background.Gradients.Ai.Loader End Gradient": "54d43696f4ee8a741b05d0383c5de2cce45a2eb0",
@@ -2176,7 +2186,25 @@
       "Background.Menu.State.Ai.Focused": "9a76cc75acd5c15bbd696e3a8d5aead4c70e9df3",
       "Background.Menu.State.Ai.Hover": "132cf7a7a40b8fe759081cf3b34ae92207556057",
       "Background.Menu.State.Ai.Open": "eda20c1150d285c4be9499bd9de27ba70c0239e2",
-      "Background.Menu.State.Ai.Pressed": "01d145e9dcd6689e4503b78df9b5acddf56b9518"
+      "Background.Menu.State.Ai.Pressed": "01d145e9dcd6689e4503b78df9b5acddf56b9518",
+      "Border.Ai.Default Gradient Start": "c90d3bba597a55ecb0820f343a6666d17a682701",
+      "Border.Ai.Default Gradient End": "97b9f629ad8510b5e79541c4375f84e4c22b57b4",
+      "Border.Button.Ai.Secondary.Default": "a22247799631a4313b7fafc7751adca615e13e02",
+      "Border.Button.Ai.Secondary.Focused": "019ac27be9321c0bf464712d0bffcada53504a32",
+      "Border.Button.Ai.Secondary.Hover": "40a5af24b904e86eea244e753d8acab122cb9372",
+      "Border.Button.Ai.Secondary.Pressed": "ccfaadc10a0bac16a607ed412a3f733605a30444",
+      "Border.Button.Ai.Secondary.Selected": "7cf46ba3b3ed22304ee436ffb423b8687f5707a8",
+      "Text.Status.Red": "fd1fd057eadc90ab78b3d5d59e69752aa3168d53",
+      "Text.Status.Amber": "7270b48b1e53623f5914d119736672b09bc16714",
+      "Text.Status.Green": "7d1d4d260897ebec9c860de741dd6e53b5a8248a",
+      "Text.Status.Blue": "83d063ad6fc65e890b5eb619cce383216269bd51",
+      "Icon.AI Red": "45884c91c685ad8c00b25a79509d545b86a5a08f",
+      "Text.Density.Darker": "32b6561357e605e6ceab62bfdcd7944d94106aac",
+      "Background.Button.Ghost.AI.Default": "92a564b345861ec30dca6e260ea95e272150c227",
+      "Background.Button.Ghost.AI.Hover": "31e5fe80f78f6df594a81458a6865920038e9440",
+      "Background.Button.Ghost.AI.Pressed": "d1897f5b53a4da97610d480111a021cb9a747a27",
+      "Background.Button.Ghost.AI.Selected": "c85de20557c63bffc2e678f9d451560129396af0",
+      "Background.Button.Ghost.AI.Focused": "b6a7d3cfb19b9bfa8403546d27a57c88ccc2aef7"
     },
     "$figmaModeId": "18419:1",
     "$figmaCollectionId": "VariableCollectionId:114:768"
