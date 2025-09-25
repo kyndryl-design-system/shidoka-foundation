@@ -1600,9 +1600,7 @@
     "id": "themes-wireframe",
     "name": "Wireframe",
     "group": "Themes",
-    "selectedTokenSets": {
-      "Themes/Wireframe": "enabled"
-    },
+    "selectedTokenSets": {},
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
       "Background.Container.Default": "c6b4206abbb457e75476043b926040215e82f273",

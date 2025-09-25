@@ -663,6 +663,10 @@
             "value": "{Opacity.Light.5}",
             "type": "color"
           },
+          "Disabled": {
+            "value": "{Opacity.Light.5}",
+            "type": "color"
+          },
           "Focused": {
             "value": "{Interactive.110}",
             "type": "color"
