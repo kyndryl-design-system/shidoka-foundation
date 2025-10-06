@@ -295,6 +295,28 @@
             "value": "#ffffff",
             "type": "color"
           }
+        },
+        "AI": {
+          "Default": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Hover": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Pressed": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Selected": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "Focused": {
+            "value": "#ffffff",
+            "type": "color"
+          }
         }
       }
     },
@@ -800,6 +822,10 @@
       "Light": {
         "value": "#000000",
         "type": "color"
+      },
+      "Darker": {
+        "value": "#ffffff",
+        "type": "color"
       }
     },
     "Button": {
@@ -852,6 +878,24 @@
           "value": "#000000",
           "type": "color"
         }
+      }
+    },
+    "Status": {
+      "Red": {
+        "value": "#000000",
+        "type": "color"
+      },
+      "Amber": {
+        "value": "#000000",
+        "type": "color"
+      },
+      "Green": {
+        "value": "#000000",
+        "type": "color"
+      },
+      "Blue": {
+        "value": "#000000",
+        "type": "color"
       }
     }
   },
@@ -930,7 +974,11 @@
         "type": "color"
       }
     },
-    "AI": {
+    "AI Spruce": {
+      "value": "#000000",
+      "type": "color"
+    },
+    "AI Red": {
       "value": "#000000",
       "type": "color"
     }
@@ -1189,6 +1237,28 @@
             "value": "#000000",
             "type": "color"
           }
+        },
+        "Secondary": {
+          "Default": {
+            "value": "#000000",
+            "type": "color"
+          },
+          "Focused": {
+            "value": "#000000",
+            "type": "color"
+          },
+          "Hover": {
+            "value": "#000000",
+            "type": "color"
+          },
+          "Pressed": {
+            "value": "#000000",
+            "type": "color"
+          },
+          "Selected": {
+            "value": "#000000",
+            "type": "color"
+          }
         }
       },
       "Web": {
@@ -1220,12 +1290,6 @@
         "type": "color"
       }
     },
-    "Ai": {
-      "Subtle": {
-        "value": "#ffffff",
-        "type": "color"
-      }
-    },
     "Container": {
       "Hover": {
         "value": "#000000",
@@ -1237,6 +1301,16 @@
       },
       "Default": {
         "value": "#15191d1a",
+        "type": "color"
+      }
+    },
+    "Ai": {
+      "Default Gradient Start": {
+        "value": "#000000",
+        "type": "color"
+      },
+      "Default Gradient End": {
+        "value": "#000000",
         "type": "color"
       }
     }
@@ -1875,7 +1949,7 @@
           "type": "color"
         },
         "L1": {
-          "value": "#3d3c3c33",
+          "value": "{Opacity.Dark.20}",
           "type": "color"
         },
         "L2": {

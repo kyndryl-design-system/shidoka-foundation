@@ -485,140 +485,6 @@
       "type": "color"
     }
   },
-  "Ai Interactive": {
-    "10": {
-      "value": "#d4d4e8",
-      "type": "color"
-    },
-    "15": {
-      "value": "#bbbbdb",
-      "type": "color"
-    },
-    "20": {
-      "value": "#a2a2ce",
-      "type": "color"
-    },
-    "25": {
-      "value": "#8988c0",
-      "type": "color"
-    },
-    "30": {
-      "value": "#706fb3",
-      "type": "color"
-    },
-    "35": {
-      "value": "#5756a6",
-      "type": "color"
-    },
-    "40": {
-      "value": "#484786",
-      "type": "color"
-    },
-    "45": {
-      "value": "#403f74",
-      "type": "color"
-    },
-    "50": {
-      "value": "#373662",
-      "type": "color"
-    },
-    "60": {
-      "value": "#2f2e50",
-      "type": "color"
-    },
-    "70": {
-      "value": "#26263f",
-      "type": "color"
-    },
-    "75": {
-      "value": "#1a1924",
-      "type": "color"
-    },
-    "80": {
-      "value": "#15151b",
-      "type": "color"
-    },
-    "90": {
-      "value": "#121219",
-      "type": "color"
-    },
-    "100": {
-      "value": "#0e0e17",
-      "type": "color"
-    },
-    "05": {
-      "value": "#e1e1ef",
-      "type": "color"
-    },
-    "01": {
-      "value": "#f5f5fa",
-      "type": "color"
-    },
-    "Opaque": {
-      "45-75Pct": {
-        "value": "#403f74bf",
-        "type": "color"
-      },
-      "45-50Pct": {
-        "value": "#403f7480",
-        "type": "color"
-      },
-      "45-5Pct": {
-        "value": "#403f741a",
-        "type": "color"
-      },
-      "30-80Pct": {
-        "value": "#706fb3cc",
-        "type": "color"
-      },
-      "40-40Pct": {
-        "value": "#48478666",
-        "type": "color"
-      }
-    },
-    "Shadow": {
-      "Light": {
-        "15": {
-          "value": "#8988c026",
-          "type": "color"
-        },
-        "20": {
-          "value": "#8988c033",
-          "type": "color"
-        },
-        "30": {
-          "value": "#8988c04d",
-          "type": "color"
-        },
-        "50": {
-          "value": "#8988c080",
-          "type": "color"
-        }
-      },
-      "Dark": {
-        "15": {
-          "value": "#37366226",
-          "type": "color"
-        },
-        "20": {
-          "value": "#37366233",
-          "type": "color"
-        },
-        "30": {
-          "value": "#3736624d",
-          "type": "color"
-        },
-        "50": {
-          "value": "#37366280",
-          "type": "color"
-        },
-        "15 2": {
-          "value": "#373662",
-          "type": "color"
-        }
-      }
-    }
-  },
   "Accent": {
     "01": {
       "value": "#ffd52c",
@@ -647,8 +513,16 @@
         "value": "#ffffff1a",
         "type": "color"
       },
+      "15": {
+        "value": "#ffffff26",
+        "type": "color"
+      },
       "20": {
         "value": "#ffffff33",
+        "type": "color"
+      },
+      "25": {
+        "value": "#ffffff40",
         "type": "color"
       },
       "30": {
@@ -693,8 +567,16 @@
         "value": "#15191d1a",
         "type": "color"
       },
+      "15": {
+        "value": "#15191d26",
+        "type": "color"
+      },
       "20": {
         "value": "#15191d33",
+        "type": "color"
+      },
+      "25": {
+        "value": "#15191d40",
         "type": "color"
       },
       "30": {
@@ -711,6 +593,138 @@
       },
       "85": {
         "value": "#15191dcc",
+        "type": "color"
+      }
+    },
+    "AI Warm Red": {
+      "0": {
+        "value": "#ff6b5700",
+        "type": "color"
+      },
+      "10": {
+        "value": "#ff6b571a",
+        "type": "color"
+      },
+      "15": {
+        "value": "#ff6b5726",
+        "type": "color"
+      },
+      "20": {
+        "value": "#ff6b5733",
+        "type": "color"
+      },
+      "25": {
+        "value": "#ff6b5740",
+        "type": "color"
+      },
+      "30": {
+        "value": "#ff6b574d",
+        "type": "color"
+      },
+      "35": {
+        "value": "#ff6b5759",
+        "type": "color"
+      },
+      "40": {
+        "value": "#ff6b5766",
+        "type": "color"
+      },
+      "45": {
+        "value": "#ff6b5773",
+        "type": "color"
+      },
+      "50": {
+        "value": "#ff6b5780",
+        "type": "color"
+      },
+      "55": {
+        "value": "#ff6b578c",
+        "type": "color"
+      },
+      "60": {
+        "value": "#ff6b5799",
+        "type": "color"
+      },
+      "70": {
+        "value": "#ff6b57b3",
+        "type": "color"
+      },
+      "80": {
+        "value": "#ff6b57cc",
+        "type": "color"
+      },
+      "90": {
+        "value": "#ff6b57e6",
+        "type": "color"
+      },
+      "100": {
+        "value": "#ff6b57",
+        "type": "color"
+      }
+    },
+    "AI Spruce": {
+      "0": {
+        "value": "#8ecfd900",
+        "type": "color"
+      },
+      "10": {
+        "value": "#8ecfd91a",
+        "type": "color"
+      },
+      "15": {
+        "value": "#8ecfd926",
+        "type": "color"
+      },
+      "20": {
+        "value": "#8ecfd933",
+        "type": "color"
+      },
+      "25": {
+        "value": "#8ecfd940",
+        "type": "color"
+      },
+      "30": {
+        "value": "#8ecfd94d",
+        "type": "color"
+      },
+      "35": {
+        "value": "#8ecfd959",
+        "type": "color"
+      },
+      "40": {
+        "value": "#8ecfd966",
+        "type": "color"
+      },
+      "45": {
+        "value": "#8ecfd973",
+        "type": "color"
+      },
+      "50": {
+        "value": "#8ecfd980",
+        "type": "color"
+      },
+      "55": {
+        "value": "#8ecfd98c",
+        "type": "color"
+      },
+      "60": {
+        "value": "#8ecfd999",
+        "type": "color"
+      },
+      "70": {
+        "value": "#8ecfd9b3",
+        "type": "color"
+      },
+      "80": {
+        "value": "#8ecfd9cc",
+        "type": "color"
+      },
+      "90": {
+        "value": "#8ecfd9e6",
+        "type": "color"
+      },
+      "100": {
+        "value": "#8ecfd9",
         "type": "color"
       }
     }
@@ -786,6 +800,10 @@
     },
     "110": {
       "value": "#1d2125",
+      "type": "color"
+    },
+    "113": {
+      "value": "#191d21",
       "type": "color"
     },
     "115": {

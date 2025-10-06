@@ -1,233 +1,5 @@
 [
   {
-    "id": "size mapping-c - xlg",
-    "name": "C - Xlg",
-    "group": "Size Mapping",
-    "selectedTokenSets": {
-      "Size Mapping/C - Xlg": "enabled"
-    },
-    "$figmaStyleReferences": {},
-    "$figmaVariableReferences": {
-      "Full": "d457100a6c2e4877150f50650528e3d1e20646ea",
-      "Two-Third": "a7e7b1750a1be836fad07a00018d3eb9b5ff9204",
-      "One-Third": "a64e06c0bd3eca04436b4430c3fba126ff176763",
-      "Three-Fourth": "828adc9d8165c07e822af68dbb06921f9df41d09",
-      "Half": "ecb70c215229fac93ff8dd8ee16ee268ad5b618e",
-      "One-Fourth": "3b747d9f9471dd1c6fddcd92d49256586aa990ce",
-      "Canvas Size": "d2c627a9fff37d57d94bcace265f201ebb1e7fe5"
-    },
-    "$figmaModeId": "422:3",
-    "$figmaCollectionId": "VariableCollectionId:422:1026"
-  },
-  {
-    "id": "size mapping-c - max",
-    "name": "C - Max",
-    "group": "Size Mapping",
-    "selectedTokenSets": {
-      "Size Mapping/C - Max": "enabled"
-    },
-    "$figmaStyleReferences": {},
-    "$figmaVariableReferences": {
-      "Full": "d457100a6c2e4877150f50650528e3d1e20646ea",
-      "Two-Third": "a7e7b1750a1be836fad07a00018d3eb9b5ff9204",
-      "One-Third": "a64e06c0bd3eca04436b4430c3fba126ff176763",
-      "Three-Fourth": "828adc9d8165c07e822af68dbb06921f9df41d09",
-      "Half": "ecb70c215229fac93ff8dd8ee16ee268ad5b618e",
-      "One-Fourth": "3b747d9f9471dd1c6fddcd92d49256586aa990ce",
-      "Canvas Size": "d2c627a9fff37d57d94bcace265f201ebb1e7fe5"
-    },
-    "$figmaModeId": "422:4",
-    "$figmaCollectionId": "VariableCollectionId:422:1026"
-  },
-  {
-    "id": "size mapping-c - lg",
-    "name": "C - Lg",
-    "group": "Size Mapping",
-    "selectedTokenSets": {
-      "Size Mapping/C - Lg": "enabled"
-    },
-    "$figmaStyleReferences": {},
-    "$figmaVariableReferences": {
-      "Full": "d457100a6c2e4877150f50650528e3d1e20646ea",
-      "Two-Third": "a7e7b1750a1be836fad07a00018d3eb9b5ff9204",
-      "One-Third": "a64e06c0bd3eca04436b4430c3fba126ff176763",
-      "Three-Fourth": "828adc9d8165c07e822af68dbb06921f9df41d09",
-      "Half": "ecb70c215229fac93ff8dd8ee16ee268ad5b618e",
-      "One-Fourth": "3b747d9f9471dd1c6fddcd92d49256586aa990ce",
-      "Canvas Size": "d2c627a9fff37d57d94bcace265f201ebb1e7fe5"
-    },
-    "$figmaModeId": "422:5",
-    "$figmaCollectionId": "VariableCollectionId:422:1026"
-  },
-  {
-    "id": "size mapping-c- md",
-    "name": "C- Md",
-    "group": "Size Mapping",
-    "selectedTokenSets": {
-      "Size Mapping/C- Md": "enabled"
-    },
-    "$figmaStyleReferences": {},
-    "$figmaVariableReferences": {
-      "Full": "d457100a6c2e4877150f50650528e3d1e20646ea",
-      "Two-Third": "a7e7b1750a1be836fad07a00018d3eb9b5ff9204",
-      "One-Third": "a64e06c0bd3eca04436b4430c3fba126ff176763",
-      "Three-Fourth": "828adc9d8165c07e822af68dbb06921f9df41d09",
-      "Half": "ecb70c215229fac93ff8dd8ee16ee268ad5b618e",
-      "One-Fourth": "3b747d9f9471dd1c6fddcd92d49256586aa990ce",
-      "Canvas Size": "d2c627a9fff37d57d94bcace265f201ebb1e7fe5"
-    },
-    "$figmaModeId": "422:6",
-    "$figmaCollectionId": "VariableCollectionId:422:1026"
-  },
-  {
-    "id": "size mapping-c- sm",
-    "name": "C- Sm",
-    "group": "Size Mapping",
-    "selectedTokenSets": {
-      "Size Mapping/C- Sm": "enabled"
-    },
-    "$figmaStyleReferences": {},
-    "$figmaVariableReferences": {
-      "Full": "d457100a6c2e4877150f50650528e3d1e20646ea",
-      "Two-Third": "a7e7b1750a1be836fad07a00018d3eb9b5ff9204",
-      "One-Third": "a64e06c0bd3eca04436b4430c3fba126ff176763",
-      "Three-Fourth": "828adc9d8165c07e822af68dbb06921f9df41d09",
-      "Half": "ecb70c215229fac93ff8dd8ee16ee268ad5b618e",
-      "One-Fourth": "3b747d9f9471dd1c6fddcd92d49256586aa990ce",
-      "Canvas Size": "d2c627a9fff37d57d94bcace265f201ebb1e7fe5"
-    },
-    "$figmaModeId": "422:7",
-    "$figmaCollectionId": "VariableCollectionId:422:1026"
-  },
-  {
-    "id": "size mapping-l - max",
-    "name": "L - Max",
-    "group": "Size Mapping",
-    "selectedTokenSets": {
-      "Size Mapping/L - Max": "enabled"
-    },
-    "$figmaStyleReferences": {},
-    "$figmaVariableReferences": {
-      "Full": "d457100a6c2e4877150f50650528e3d1e20646ea",
-      "Two-Third": "a7e7b1750a1be836fad07a00018d3eb9b5ff9204",
-      "One-Third": "a64e06c0bd3eca04436b4430c3fba126ff176763",
-      "Three-Fourth": "828adc9d8165c07e822af68dbb06921f9df41d09",
-      "Half": "ecb70c215229fac93ff8dd8ee16ee268ad5b618e",
-      "One-Fourth": "3b747d9f9471dd1c6fddcd92d49256586aa990ce",
-      "Canvas Size": "d2c627a9fff37d57d94bcace265f201ebb1e7fe5"
-    },
-    "$figmaModeId": "465:1",
-    "$figmaCollectionId": "VariableCollectionId:422:1026"
-  },
-  {
-    "id": "size mapping-l - xlg",
-    "name": "L - Xlg",
-    "group": "Size Mapping",
-    "selectedTokenSets": {
-      "Size Mapping/L - Xlg": "enabled"
-    },
-    "$figmaStyleReferences": {},
-    "$figmaVariableReferences": {
-      "Full": "d457100a6c2e4877150f50650528e3d1e20646ea",
-      "Two-Third": "a7e7b1750a1be836fad07a00018d3eb9b5ff9204",
-      "One-Third": "a64e06c0bd3eca04436b4430c3fba126ff176763",
-      "Three-Fourth": "828adc9d8165c07e822af68dbb06921f9df41d09",
-      "Half": "ecb70c215229fac93ff8dd8ee16ee268ad5b618e",
-      "One-Fourth": "3b747d9f9471dd1c6fddcd92d49256586aa990ce",
-      "Canvas Size": "d2c627a9fff37d57d94bcace265f201ebb1e7fe5"
-    },
-    "$figmaModeId": "465:2",
-    "$figmaCollectionId": "VariableCollectionId:422:1026"
-  },
-  {
-    "id": "size mapping-l - lg",
-    "name": "L - Lg",
-    "group": "Size Mapping",
-    "selectedTokenSets": {
-      "Size Mapping/L - Lg": "enabled"
-    },
-    "$figmaStyleReferences": {},
-    "$figmaVariableReferences": {
-      "Full": "d457100a6c2e4877150f50650528e3d1e20646ea",
-      "Two-Third": "a7e7b1750a1be836fad07a00018d3eb9b5ff9204",
-      "One-Third": "a64e06c0bd3eca04436b4430c3fba126ff176763",
-      "Three-Fourth": "828adc9d8165c07e822af68dbb06921f9df41d09",
-      "Half": "ecb70c215229fac93ff8dd8ee16ee268ad5b618e",
-      "One-Fourth": "3b747d9f9471dd1c6fddcd92d49256586aa990ce",
-      "Canvas Size": "d2c627a9fff37d57d94bcace265f201ebb1e7fe5"
-    },
-    "$figmaModeId": "466:3",
-    "$figmaCollectionId": "VariableCollectionId:422:1026"
-  },
-  {
-    "id": "size mapping-l - md",
-    "name": "L - Md",
-    "group": "Size Mapping",
-    "selectedTokenSets": {
-      "Size Mapping/L - Md": "enabled"
-    },
-    "$figmaStyleReferences": {},
-    "$figmaVariableReferences": {
-      "Full": "d457100a6c2e4877150f50650528e3d1e20646ea",
-      "Two-Third": "a7e7b1750a1be836fad07a00018d3eb9b5ff9204",
-      "One-Third": "a64e06c0bd3eca04436b4430c3fba126ff176763",
-      "Three-Fourth": "828adc9d8165c07e822af68dbb06921f9df41d09",
-      "Half": "ecb70c215229fac93ff8dd8ee16ee268ad5b618e",
-      "One-Fourth": "3b747d9f9471dd1c6fddcd92d49256586aa990ce",
-      "Canvas Size": "d2c627a9fff37d57d94bcace265f201ebb1e7fe5"
-    },
-    "$figmaModeId": "466:4",
-    "$figmaCollectionId": "VariableCollectionId:422:1026"
-  },
-  {
-    "id": "size mapping-l - sm",
-    "name": "L - Sm",
-    "group": "Size Mapping",
-    "selectedTokenSets": {
-      "Size Mapping/L - Sm": "enabled"
-    },
-    "$figmaStyleReferences": {},
-    "$figmaVariableReferences": {
-      "Full": "d457100a6c2e4877150f50650528e3d1e20646ea",
-      "Two-Third": "a7e7b1750a1be836fad07a00018d3eb9b5ff9204",
-      "One-Third": "a64e06c0bd3eca04436b4430c3fba126ff176763",
-      "Three-Fourth": "828adc9d8165c07e822af68dbb06921f9df41d09",
-      "Half": "ecb70c215229fac93ff8dd8ee16ee268ad5b618e",
-      "One-Fourth": "3b747d9f9471dd1c6fddcd92d49256586aa990ce",
-      "Canvas Size": "d2c627a9fff37d57d94bcace265f201ebb1e7fe5"
-    },
-    "$figmaModeId": "466:6",
-    "$figmaCollectionId": "VariableCollectionId:422:1026"
-  },
-  {
-    "id": "grid-comfort",
-    "name": "Comfort",
-    "group": "Grid",
-    "selectedTokenSets": {},
-    "$figmaStyleReferences": {},
-    "$figmaVariableReferences": {
-      "Gutter": "3ce90b1f5e5cd61dafb27c03be741220d2192d7b",
-      "Offset": "a0b20bb2f3c35b82fdf11908ec0dace921d5220d",
-      "Width": "54c91a1c4005348876b20d236d2c13fa06874911"
-    },
-    "$figmaModeId": "19155:0",
-    "$figmaCollectionId": "VariableCollectionId:19155:1081"
-  },
-  {
-    "id": "grid-compact",
-    "name": "Compact",
-    "group": "Grid",
-    "selectedTokenSets": {},
-    "$figmaStyleReferences": {},
-    "$figmaVariableReferences": {
-      "Gutter": "3ce90b1f5e5cd61dafb27c03be741220d2192d7b",
-      "Offset": "a0b20bb2f3c35b82fdf11908ec0dace921d5220d",
-      "Width": "54c91a1c4005348876b20d236d2c13fa06874911"
-    },
-    "$figmaModeId": "19155:1",
-    "$figmaCollectionId": "VariableCollectionId:19155:1081"
-  },
-  {
     "id": "component-mode 1",
     "name": "Mode 1",
     "group": "Component",
@@ -366,25 +138,8 @@
       "Cool Gray.90": "0679e5c0e512e7a2cccf67e602bef6c27b3cf735",
       "Cool Gray.100": "6bb2b79fddb24398488a9477b837cfa5801649d8",
       "Neutral.White": "14ff704aa47c2690661862cd3ce12d50836ab34f",
-      "Ai Interactive.100": "00237d429ea94fd2371992d79275541aa11e685b",
-      "Ai Interactive.90": "323b056c0a6cefd1f1dd6537f7d482cc810cfbaf",
-      "Ai Interactive.35": "5b311ee2a28dab86a929451550e34c22101ad13b",
-      "Ai Interactive.40": "47947795490411b29713cfd7f28de18be816acc4",
-      "Ai Interactive.45": "e69a1b12446d4b9264bd1a1a7eddedda0408706a",
-      "Ai Interactive.50": "2225d801857175041dab1c4df9ce6c1463085fcf",
-      "Ai Interactive.60": "388e16f0283a050b75169a885ebc22ef5eb46fad",
-      "Ai Interactive.70": "e4ed258633781be2739909af89d039765a276f26",
-      "Ai Interactive.75": "63aa1914053c88024d315a71182edecdf9d7fa89",
-      "Ai Interactive.80": "8a0ed0bebcae5d7f659ad4a28c09a20960028f89",
-      "Ai Interactive.25": "7e50fae540ec7f7968f027192b7622ae6cfcbe94",
-      "Ai Interactive.20": "4fef6623bdd0f666f695bcf1a4bafd450deacfab",
-      "Ai Interactive.15": "0d6ae33e54a49cf19ab6e82011e8e97f1022d03f",
-      "Ai Interactive.10": "a3d7b9e72b688a846df2f2d8973adeb02edaeaa3",
-      "Ai Interactive.05": "7cb1a16761904b64aaba9f197fdd63d68d4b4e0b",
-      "Ai Interactive.30": "d817a787744bd8bdf2942873614320a3bcef8e20",
       "Accent.01": "1f1fe24a06a64e3bb806117c6116ecda48c6ce12",
       "Accent.02": "655fbda674cc67ae4f12c757ab8ba51eb0a2a7b0",
-      "Ai Interactive.01": "894e1d088246696278efa72ed4a9c76848dcb2dc",
       "Opacity.Light.3": "1891276a2e00a97c1d5b7ee66b2a3061477bba06",
       "Opacity.Light.10": "d0ff68dfd079b2dfb2f71a5c35e8379cf3868a93",
       "Opacity.Light.86": "cf820ac144a654bbb24ccd238d7ff87170a6970f",
@@ -540,20 +295,6 @@
       "Misc.Green.25": "e22a4535e00ca2770acc9b412348bd9f39d82d6f",
       "Misc.Red.05": "0837a789a0bbc3288419c112863c24f23c70aa31",
       "Misc.Red.25": "2ae42ed5bd94300cffd36ad79c3e99920c7a4908",
-      "Ai Interactive.Opaque.45-75Pct": "522f0f690bac85bcc457123f2697763d6ce51088",
-      "Ai Interactive.Opaque.45-50Pct": "b783cd0869b9b839bf8a81578822c0e9dfe16dc4",
-      "Ai Interactive.Opaque.45-5Pct": "3ce8d6353e42a2bc1976a31e8d72ec701578a477",
-      "Ai Interactive.Opaque.30-80Pct": "d10e3551b311b16d38de00f476e6e5dfa492aeb9",
-      "Ai Interactive.Opaque.40-40Pct": "90a55d899546983e689ff68215941059f02349dd",
-      "Ai Interactive.Shadow.Light.15": "e1b05bf62a2b7f201e2c670a48aec34af441f73a",
-      "Ai Interactive.Shadow.Dark.15": "66478bf8317c5f0f5edd2758c455ce6b7e5c8a7a",
-      "Ai Interactive.Shadow.Light.20": "93f0d36d667aaf2df57a1e9678bdf4f113895e42",
-      "Ai Interactive.Shadow.Light.30": "a3e596063b918343206605ba8e897895b794944b",
-      "Ai Interactive.Shadow.Light.50": "d136aa55e58514eac039d185e6bef1496331fc6e",
-      "Ai Interactive.Shadow.Dark.20": "e48c5572b94ce6249b9204b9f26f342b81d36d83",
-      "Ai Interactive.Shadow.Dark.30": "c88648a4e5d775a58ef5eeef211c288fa994ba25",
-      "Ai Interactive.Shadow.Dark.50": "30987d1b5bb28246d9498046750218753a33ed11",
-      "Ai Interactive.Shadow.Dark.15 2": "3db80152a769b2a3caf8d64d5d9dd644a9b0385d",
       "Interactive.7": "a474b8d96890daef207f8a124057d5a2dcc99000",
       "Interactive.1": "b70d58f9b5f6e3f134967ea72e23afe95706c443",
       "Interactive.3": "1fa8cf0e3218bc04547f2d0052d98932619ce7e7",
@@ -583,7 +324,44 @@
       "RAG.Success.110": "9eb9cd50f471716a8e11d26baaa5ac698c42b7fd",
       "RAG.Error.110": "8d92b908a8ee3b4d9585957211ddec6ddffba4b7",
       "RAG.Success.15": "d45f3840ca8469e80089947206195d30916590bc",
-      "Opacity.Light.0": "3ccc411088da5b53c80c16cfcc3c7c0001ed220e"
+      "Opacity.Light.0": "3ccc411088da5b53c80c16cfcc3c7c0001ed220e",
+      "Opacity.Dark.15": "490d1be317dcbbec4c65d289b3faea4fa454ad82",
+      "Opacity.Dark.25": "917a972a7f4f3887599852172169c9fecb7c0302",
+      "Opacity.Light.15": "a25f02f59cc9657e8e7717ffff807a3c6b44c95a",
+      "Opacity.Light.25": "a1d325de9b0bbf69205126b079fd61712a2473e6",
+      "Opacity.AI Warm Red.0": "8d5654e8eb9c57365fee0f8135a6f5f3640b5d70",
+      "Opacity.AI Warm Red.20": "fc45b2449c3ebed88c25becf60a485723d4551cc",
+      "Opacity.AI Warm Red.10": "4f948ce1011842c630e2be9e5ae1c54747d9eea1",
+      "Opacity.AI Warm Red.25": "d510287d79a07980ba4f692adce3e55dbad64f94",
+      "Opacity.AI Warm Red.30": "9e70f6acaf3930eb88ed71f6af41df9a628a2efa",
+      "Opacity.AI Warm Red.35": "92d5321b73535f519f261e581df0f6432fb67513",
+      "Opacity.AI Warm Red.40": "2ab4991b4da939c72a445a47bedbf2c5873a7db2",
+      "Opacity.AI Warm Red.45": "ebde7a6ece464e1e6528ceeb4ef2ddad54d94523",
+      "Opacity.AI Warm Red.50": "a537912cb67c41319d1e73369fe2be43e6e3e0d1",
+      "Opacity.AI Warm Red.55": "3207b47e548c02128619194910f6cbc4c73177ed",
+      "Opacity.AI Warm Red.60": "337dbf2d2449a040265c85dd42953c0cdb8726d2",
+      "Opacity.AI Warm Red.70": "18a7010c85b4e1984eeb783cacf0356da6b4227c",
+      "Opacity.AI Warm Red.80": "812c55c2ac9279cb341c30dcb5d0685ecaa0a4d9",
+      "Opacity.AI Warm Red.15": "fba9c3c61818666a7c842a319eaf8f8450027311",
+      "Opacity.AI Spruce.0": "ed5ea65bc7752279557380a5da4b825175502e12",
+      "Opacity.AI Spruce.10": "4c3aa36510b4af881035e5657ec762492a94794a",
+      "Opacity.AI Spruce.15": "ab616a90ea5fe5ea1125bf98163e1a3e09bba9ac",
+      "Opacity.AI Spruce.20": "34a387a7ec115b60361f34a4e79da32fa4617515",
+      "Opacity.AI Spruce.25": "09b45c6e6fbc13b76d8145765b348d8fae727952",
+      "Opacity.AI Spruce.30": "045a040bfbebbfebde02ea66449b3c09a83b76fc",
+      "Opacity.AI Spruce.35": "9fb017cc2c74e0ee282586828e3d62e5c0d4886d",
+      "Opacity.AI Spruce.40": "75bb61de2393a71b8cd5b85159f99e1d83fcdaf1",
+      "Opacity.AI Spruce.45": "4ec4205e0c9581e40074535d26028cb05789f307",
+      "Opacity.AI Spruce.50": "435f54f833d5d6864f2b69ae75c69a65261bacdf",
+      "Opacity.AI Spruce.55": "4fb114aeb80efcb20f60a5c9c8c0d10180c88d90",
+      "Opacity.AI Spruce.60": "aab26fa693809179085bd3dd6aa5a0e7ca19a874",
+      "Opacity.AI Spruce.70": "baa113c547faa54c93feeb37f97fdc4b3eadd007",
+      "Opacity.AI Spruce.80": "b4ec995d8a09d3a59f6034a5d281d8dbe38f5b5b",
+      "Opacity.AI Warm Red.90": "32c0e1fd8ba374d7c3ef1299e70758478cda6d73",
+      "Opacity.AI Warm Red.100": "0979669deff91a5119f6c0a2b2174c9054ba45e5",
+      "Opacity.AI Spruce.90": "fcc862777e8ff4d450bbec5ddacd33edf70cf24a",
+      "Opacity.AI Spruce.100": "83156638a6068b795c04626e392038b6d327563e",
+      "Interactive.113": "dfefef5d02ec8933ac129ad29c98b9d549df2c54"
     },
     "$figmaModeId": "114:3",
     "$figmaCollectionId": "VariableCollectionId:114:573"
@@ -1009,11 +787,10 @@
       "Background.Link.AI.Pressed": "0e170836ed9ef4b538aa2ae193b56e2f083be0aa",
       "Background.Link.AI.Focused": "c0edb7ecfa3845b82f838aa72b8cd6cb18b324d3",
       "Background.Link.AI.Disabled": "a8f6675db792ec6157d3fa97825feb163f40171d",
-      "Icon.AI": "456ec5d41d8d0afd27dd4a0a4d129b260448706d",
+      "Icon.AI Spruce": "456ec5d41d8d0afd27dd4a0a4d129b260448706d",
       "Background.Link.AI.Secondary": "12533f64cb2606dfe0efd69eb299c4f787fa85af",
       "Background.Gradients.Ai.Linear Top Gradient 1": "75cd9e01d23eb6c4ac9e1fd0df7083077aaf2dca",
       "Background.Gradients.Ai.Linear Bottom Gradient 1": "8a0f8296419f369559cd5d617851c978b233735b",
-      "Border.Ai.Subtle": "44ce3e5572448e4808ce453a3eaeb13f18edb0f8",
       "Background.Container.Ai.Level 2": "7f1991012038f796dc7b6ae2c422b7c9a03abc84",
       "Background.Gradients.Ai.Loader Start Gradient": "c06a266d277ea524e24595a05f36167a2fdfbd80",
       "Background.Gradients.Ai.Loader End Gradient": "54d43696f4ee8a741b05d0383c5de2cce45a2eb0",
@@ -1181,7 +958,25 @@
       "Background.Menu.State.Ai.Focused": "9a76cc75acd5c15bbd696e3a8d5aead4c70e9df3",
       "Background.Menu.State.Ai.Hover": "132cf7a7a40b8fe759081cf3b34ae92207556057",
       "Background.Menu.State.Ai.Open": "eda20c1150d285c4be9499bd9de27ba70c0239e2",
-      "Background.Menu.State.Ai.Pressed": "01d145e9dcd6689e4503b78df9b5acddf56b9518"
+      "Background.Menu.State.Ai.Pressed": "01d145e9dcd6689e4503b78df9b5acddf56b9518",
+      "Border.Ai.Default Gradient Start": "c90d3bba597a55ecb0820f343a6666d17a682701",
+      "Border.Ai.Default Gradient End": "97b9f629ad8510b5e79541c4375f84e4c22b57b4",
+      "Border.Button.Ai.Secondary.Default": "a22247799631a4313b7fafc7751adca615e13e02",
+      "Border.Button.Ai.Secondary.Focused": "019ac27be9321c0bf464712d0bffcada53504a32",
+      "Border.Button.Ai.Secondary.Hover": "40a5af24b904e86eea244e753d8acab122cb9372",
+      "Border.Button.Ai.Secondary.Pressed": "ccfaadc10a0bac16a607ed412a3f733605a30444",
+      "Border.Button.Ai.Secondary.Selected": "7cf46ba3b3ed22304ee436ffb423b8687f5707a8",
+      "Text.Status.Red": "fd1fd057eadc90ab78b3d5d59e69752aa3168d53",
+      "Text.Status.Amber": "7270b48b1e53623f5914d119736672b09bc16714",
+      "Text.Status.Green": "7d1d4d260897ebec9c860de741dd6e53b5a8248a",
+      "Text.Status.Blue": "83d063ad6fc65e890b5eb619cce383216269bd51",
+      "Icon.AI Red": "45884c91c685ad8c00b25a79509d545b86a5a08f",
+      "Text.Density.Darker": "32b6561357e605e6ceab62bfdcd7944d94106aac",
+      "Background.Button.Ghost.AI.Default": "92a564b345861ec30dca6e260ea95e272150c227",
+      "Background.Button.Ghost.AI.Hover": "31e5fe80f78f6df594a81458a6865920038e9440",
+      "Background.Button.Ghost.AI.Pressed": "d1897f5b53a4da97610d480111a021cb9a747a27",
+      "Background.Button.Ghost.AI.Selected": "c85de20557c63bffc2e678f9d451560129396af0",
+      "Background.Button.Ghost.AI.Focused": "b6a7d3cfb19b9bfa8403546d27a57c88ccc2aef7"
     },
     "$figmaModeId": "114:4",
     "$figmaCollectionId": "VariableCollectionId:114:768"
@@ -1607,11 +1402,10 @@
       "Background.Link.AI.Pressed": "0e170836ed9ef4b538aa2ae193b56e2f083be0aa",
       "Background.Link.AI.Focused": "c0edb7ecfa3845b82f838aa72b8cd6cb18b324d3",
       "Background.Link.AI.Disabled": "a8f6675db792ec6157d3fa97825feb163f40171d",
-      "Icon.AI": "456ec5d41d8d0afd27dd4a0a4d129b260448706d",
+      "Icon.AI Spruce": "456ec5d41d8d0afd27dd4a0a4d129b260448706d",
       "Background.Link.AI.Secondary": "12533f64cb2606dfe0efd69eb299c4f787fa85af",
       "Background.Gradients.Ai.Linear Top Gradient 1": "75cd9e01d23eb6c4ac9e1fd0df7083077aaf2dca",
       "Background.Gradients.Ai.Linear Bottom Gradient 1": "8a0f8296419f369559cd5d617851c978b233735b",
-      "Border.Ai.Subtle": "44ce3e5572448e4808ce453a3eaeb13f18edb0f8",
       "Background.Container.Ai.Level 2": "7f1991012038f796dc7b6ae2c422b7c9a03abc84",
       "Background.Gradients.Ai.Loader Start Gradient": "c06a266d277ea524e24595a05f36167a2fdfbd80",
       "Background.Gradients.Ai.Loader End Gradient": "54d43696f4ee8a741b05d0383c5de2cce45a2eb0",
@@ -1779,7 +1573,25 @@
       "Background.Menu.State.Ai.Focused": "9a76cc75acd5c15bbd696e3a8d5aead4c70e9df3",
       "Background.Menu.State.Ai.Hover": "132cf7a7a40b8fe759081cf3b34ae92207556057",
       "Background.Menu.State.Ai.Open": "eda20c1150d285c4be9499bd9de27ba70c0239e2",
-      "Background.Menu.State.Ai.Pressed": "01d145e9dcd6689e4503b78df9b5acddf56b9518"
+      "Background.Menu.State.Ai.Pressed": "01d145e9dcd6689e4503b78df9b5acddf56b9518",
+      "Border.Ai.Default Gradient Start": "c90d3bba597a55ecb0820f343a6666d17a682701",
+      "Border.Ai.Default Gradient End": "97b9f629ad8510b5e79541c4375f84e4c22b57b4",
+      "Border.Button.Ai.Secondary.Default": "a22247799631a4313b7fafc7751adca615e13e02",
+      "Border.Button.Ai.Secondary.Focused": "019ac27be9321c0bf464712d0bffcada53504a32",
+      "Border.Button.Ai.Secondary.Hover": "40a5af24b904e86eea244e753d8acab122cb9372",
+      "Border.Button.Ai.Secondary.Pressed": "ccfaadc10a0bac16a607ed412a3f733605a30444",
+      "Border.Button.Ai.Secondary.Selected": "7cf46ba3b3ed22304ee436ffb423b8687f5707a8",
+      "Text.Status.Red": "fd1fd057eadc90ab78b3d5d59e69752aa3168d53",
+      "Text.Status.Amber": "7270b48b1e53623f5914d119736672b09bc16714",
+      "Text.Status.Green": "7d1d4d260897ebec9c860de741dd6e53b5a8248a",
+      "Text.Status.Blue": "83d063ad6fc65e890b5eb619cce383216269bd51",
+      "Icon.AI Red": "45884c91c685ad8c00b25a79509d545b86a5a08f",
+      "Text.Density.Darker": "32b6561357e605e6ceab62bfdcd7944d94106aac",
+      "Background.Button.Ghost.AI.Default": "92a564b345861ec30dca6e260ea95e272150c227",
+      "Background.Button.Ghost.AI.Hover": "31e5fe80f78f6df594a81458a6865920038e9440",
+      "Background.Button.Ghost.AI.Pressed": "d1897f5b53a4da97610d480111a021cb9a747a27",
+      "Background.Button.Ghost.AI.Selected": "c85de20557c63bffc2e678f9d451560129396af0",
+      "Background.Button.Ghost.AI.Focused": "b6a7d3cfb19b9bfa8403546d27a57c88ccc2aef7"
     },
     "$figmaModeId": "13995:1",
     "$figmaCollectionId": "VariableCollectionId:114:768"
@@ -1788,9 +1600,7 @@
     "id": "themes-wireframe",
     "name": "Wireframe",
     "group": "Themes",
-    "selectedTokenSets": {
-      "Themes/Wireframe": "enabled"
-    },
+    "selectedTokenSets": {},
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
       "Background.Container.Default": "c6b4206abbb457e75476043b926040215e82f273",
@@ -2205,11 +2015,10 @@
       "Background.Link.AI.Pressed": "0e170836ed9ef4b538aa2ae193b56e2f083be0aa",
       "Background.Link.AI.Focused": "c0edb7ecfa3845b82f838aa72b8cd6cb18b324d3",
       "Background.Link.AI.Disabled": "a8f6675db792ec6157d3fa97825feb163f40171d",
-      "Icon.AI": "456ec5d41d8d0afd27dd4a0a4d129b260448706d",
+      "Icon.AI Spruce": "456ec5d41d8d0afd27dd4a0a4d129b260448706d",
       "Background.Link.AI.Secondary": "12533f64cb2606dfe0efd69eb299c4f787fa85af",
       "Background.Gradients.Ai.Linear Top Gradient 1": "75cd9e01d23eb6c4ac9e1fd0df7083077aaf2dca",
       "Background.Gradients.Ai.Linear Bottom Gradient 1": "8a0f8296419f369559cd5d617851c978b233735b",
-      "Border.Ai.Subtle": "44ce3e5572448e4808ce453a3eaeb13f18edb0f8",
       "Background.Container.Ai.Level 2": "7f1991012038f796dc7b6ae2c422b7c9a03abc84",
       "Background.Gradients.Ai.Loader Start Gradient": "c06a266d277ea524e24595a05f36167a2fdfbd80",
       "Background.Gradients.Ai.Loader End Gradient": "54d43696f4ee8a741b05d0383c5de2cce45a2eb0",
@@ -2377,7 +2186,25 @@
       "Background.Menu.State.Ai.Focused": "9a76cc75acd5c15bbd696e3a8d5aead4c70e9df3",
       "Background.Menu.State.Ai.Hover": "132cf7a7a40b8fe759081cf3b34ae92207556057",
       "Background.Menu.State.Ai.Open": "eda20c1150d285c4be9499bd9de27ba70c0239e2",
-      "Background.Menu.State.Ai.Pressed": "01d145e9dcd6689e4503b78df9b5acddf56b9518"
+      "Background.Menu.State.Ai.Pressed": "01d145e9dcd6689e4503b78df9b5acddf56b9518",
+      "Border.Ai.Default Gradient Start": "c90d3bba597a55ecb0820f343a6666d17a682701",
+      "Border.Ai.Default Gradient End": "97b9f629ad8510b5e79541c4375f84e4c22b57b4",
+      "Border.Button.Ai.Secondary.Default": "a22247799631a4313b7fafc7751adca615e13e02",
+      "Border.Button.Ai.Secondary.Focused": "019ac27be9321c0bf464712d0bffcada53504a32",
+      "Border.Button.Ai.Secondary.Hover": "40a5af24b904e86eea244e753d8acab122cb9372",
+      "Border.Button.Ai.Secondary.Pressed": "ccfaadc10a0bac16a607ed412a3f733605a30444",
+      "Border.Button.Ai.Secondary.Selected": "7cf46ba3b3ed22304ee436ffb423b8687f5707a8",
+      "Text.Status.Red": "fd1fd057eadc90ab78b3d5d59e69752aa3168d53",
+      "Text.Status.Amber": "7270b48b1e53623f5914d119736672b09bc16714",
+      "Text.Status.Green": "7d1d4d260897ebec9c860de741dd6e53b5a8248a",
+      "Text.Status.Blue": "83d063ad6fc65e890b5eb619cce383216269bd51",
+      "Icon.AI Red": "45884c91c685ad8c00b25a79509d545b86a5a08f",
+      "Text.Density.Darker": "32b6561357e605e6ceab62bfdcd7944d94106aac",
+      "Background.Button.Ghost.AI.Default": "92a564b345861ec30dca6e260ea95e272150c227",
+      "Background.Button.Ghost.AI.Hover": "31e5fe80f78f6df594a81458a6865920038e9440",
+      "Background.Button.Ghost.AI.Pressed": "d1897f5b53a4da97610d480111a021cb9a747a27",
+      "Background.Button.Ghost.AI.Selected": "c85de20557c63bffc2e678f9d451560129396af0",
+      "Background.Button.Ghost.AI.Focused": "b6a7d3cfb19b9bfa8403546d27a57c88ccc2aef7"
     },
     "$figmaModeId": "18419:1",
     "$figmaCollectionId": "VariableCollectionId:114:768"
@@ -2464,6 +2291,186 @@
     "$figmaCollectionId": "VariableCollectionId:420:8"
   },
   {
+    "id": "size mapping-c - xlg",
+    "name": "C - Xlg",
+    "group": "Size Mapping",
+    "selectedTokenSets": {},
+    "$figmaStyleReferences": {},
+    "$figmaVariableReferences": {
+      "Full": "d457100a6c2e4877150f50650528e3d1e20646ea",
+      "Two-Third": "a7e7b1750a1be836fad07a00018d3eb9b5ff9204",
+      "One-Third": "a64e06c0bd3eca04436b4430c3fba126ff176763",
+      "Three-Fourth": "828adc9d8165c07e822af68dbb06921f9df41d09",
+      "Half": "ecb70c215229fac93ff8dd8ee16ee268ad5b618e",
+      "One-Fourth": "3b747d9f9471dd1c6fddcd92d49256586aa990ce",
+      "Canvas Size": "d2c627a9fff37d57d94bcace265f201ebb1e7fe5"
+    },
+    "$figmaModeId": "422:3",
+    "$figmaCollectionId": "VariableCollectionId:422:1026"
+  },
+  {
+    "id": "size mapping-c - max",
+    "name": "C - Max",
+    "group": "Size Mapping",
+    "selectedTokenSets": {},
+    "$figmaStyleReferences": {},
+    "$figmaVariableReferences": {
+      "Full": "d457100a6c2e4877150f50650528e3d1e20646ea",
+      "Two-Third": "a7e7b1750a1be836fad07a00018d3eb9b5ff9204",
+      "One-Third": "a64e06c0bd3eca04436b4430c3fba126ff176763",
+      "Three-Fourth": "828adc9d8165c07e822af68dbb06921f9df41d09",
+      "Half": "ecb70c215229fac93ff8dd8ee16ee268ad5b618e",
+      "One-Fourth": "3b747d9f9471dd1c6fddcd92d49256586aa990ce",
+      "Canvas Size": "d2c627a9fff37d57d94bcace265f201ebb1e7fe5"
+    },
+    "$figmaModeId": "422:4",
+    "$figmaCollectionId": "VariableCollectionId:422:1026"
+  },
+  {
+    "id": "size mapping-c - lg",
+    "name": "C - Lg",
+    "group": "Size Mapping",
+    "selectedTokenSets": {},
+    "$figmaStyleReferences": {},
+    "$figmaVariableReferences": {
+      "Full": "d457100a6c2e4877150f50650528e3d1e20646ea",
+      "Two-Third": "a7e7b1750a1be836fad07a00018d3eb9b5ff9204",
+      "One-Third": "a64e06c0bd3eca04436b4430c3fba126ff176763",
+      "Three-Fourth": "828adc9d8165c07e822af68dbb06921f9df41d09",
+      "Half": "ecb70c215229fac93ff8dd8ee16ee268ad5b618e",
+      "One-Fourth": "3b747d9f9471dd1c6fddcd92d49256586aa990ce",
+      "Canvas Size": "d2c627a9fff37d57d94bcace265f201ebb1e7fe5"
+    },
+    "$figmaModeId": "422:5",
+    "$figmaCollectionId": "VariableCollectionId:422:1026"
+  },
+  {
+    "id": "size mapping-c- md",
+    "name": "C- Md",
+    "group": "Size Mapping",
+    "selectedTokenSets": {},
+    "$figmaStyleReferences": {},
+    "$figmaVariableReferences": {
+      "Full": "d457100a6c2e4877150f50650528e3d1e20646ea",
+      "Two-Third": "a7e7b1750a1be836fad07a00018d3eb9b5ff9204",
+      "One-Third": "a64e06c0bd3eca04436b4430c3fba126ff176763",
+      "Three-Fourth": "828adc9d8165c07e822af68dbb06921f9df41d09",
+      "Half": "ecb70c215229fac93ff8dd8ee16ee268ad5b618e",
+      "One-Fourth": "3b747d9f9471dd1c6fddcd92d49256586aa990ce",
+      "Canvas Size": "d2c627a9fff37d57d94bcace265f201ebb1e7fe5"
+    },
+    "$figmaModeId": "422:6",
+    "$figmaCollectionId": "VariableCollectionId:422:1026"
+  },
+  {
+    "id": "size mapping-c- sm",
+    "name": "C- Sm",
+    "group": "Size Mapping",
+    "selectedTokenSets": {},
+    "$figmaStyleReferences": {},
+    "$figmaVariableReferences": {
+      "Full": "d457100a6c2e4877150f50650528e3d1e20646ea",
+      "Two-Third": "a7e7b1750a1be836fad07a00018d3eb9b5ff9204",
+      "One-Third": "a64e06c0bd3eca04436b4430c3fba126ff176763",
+      "Three-Fourth": "828adc9d8165c07e822af68dbb06921f9df41d09",
+      "Half": "ecb70c215229fac93ff8dd8ee16ee268ad5b618e",
+      "One-Fourth": "3b747d9f9471dd1c6fddcd92d49256586aa990ce",
+      "Canvas Size": "d2c627a9fff37d57d94bcace265f201ebb1e7fe5"
+    },
+    "$figmaModeId": "422:7",
+    "$figmaCollectionId": "VariableCollectionId:422:1026"
+  },
+  {
+    "id": "size mapping-l - max",
+    "name": "L - Max",
+    "group": "Size Mapping",
+    "selectedTokenSets": {},
+    "$figmaStyleReferences": {},
+    "$figmaVariableReferences": {
+      "Full": "d457100a6c2e4877150f50650528e3d1e20646ea",
+      "Two-Third": "a7e7b1750a1be836fad07a00018d3eb9b5ff9204",
+      "One-Third": "a64e06c0bd3eca04436b4430c3fba126ff176763",
+      "Three-Fourth": "828adc9d8165c07e822af68dbb06921f9df41d09",
+      "Half": "ecb70c215229fac93ff8dd8ee16ee268ad5b618e",
+      "One-Fourth": "3b747d9f9471dd1c6fddcd92d49256586aa990ce",
+      "Canvas Size": "d2c627a9fff37d57d94bcace265f201ebb1e7fe5"
+    },
+    "$figmaModeId": "465:1",
+    "$figmaCollectionId": "VariableCollectionId:422:1026"
+  },
+  {
+    "id": "size mapping-l - xlg",
+    "name": "L - Xlg",
+    "group": "Size Mapping",
+    "selectedTokenSets": {},
+    "$figmaStyleReferences": {},
+    "$figmaVariableReferences": {
+      "Full": "d457100a6c2e4877150f50650528e3d1e20646ea",
+      "Two-Third": "a7e7b1750a1be836fad07a00018d3eb9b5ff9204",
+      "One-Third": "a64e06c0bd3eca04436b4430c3fba126ff176763",
+      "Three-Fourth": "828adc9d8165c07e822af68dbb06921f9df41d09",
+      "Half": "ecb70c215229fac93ff8dd8ee16ee268ad5b618e",
+      "One-Fourth": "3b747d9f9471dd1c6fddcd92d49256586aa990ce",
+      "Canvas Size": "d2c627a9fff37d57d94bcace265f201ebb1e7fe5"
+    },
+    "$figmaModeId": "465:2",
+    "$figmaCollectionId": "VariableCollectionId:422:1026"
+  },
+  {
+    "id": "size mapping-l - lg",
+    "name": "L - Lg",
+    "group": "Size Mapping",
+    "selectedTokenSets": {},
+    "$figmaStyleReferences": {},
+    "$figmaVariableReferences": {
+      "Full": "d457100a6c2e4877150f50650528e3d1e20646ea",
+      "Two-Third": "a7e7b1750a1be836fad07a00018d3eb9b5ff9204",
+      "One-Third": "a64e06c0bd3eca04436b4430c3fba126ff176763",
+      "Three-Fourth": "828adc9d8165c07e822af68dbb06921f9df41d09",
+      "Half": "ecb70c215229fac93ff8dd8ee16ee268ad5b618e",
+      "One-Fourth": "3b747d9f9471dd1c6fddcd92d49256586aa990ce",
+      "Canvas Size": "d2c627a9fff37d57d94bcace265f201ebb1e7fe5"
+    },
+    "$figmaModeId": "466:3",
+    "$figmaCollectionId": "VariableCollectionId:422:1026"
+  },
+  {
+    "id": "size mapping-l - md",
+    "name": "L - Md",
+    "group": "Size Mapping",
+    "selectedTokenSets": {},
+    "$figmaStyleReferences": {},
+    "$figmaVariableReferences": {
+      "Full": "d457100a6c2e4877150f50650528e3d1e20646ea",
+      "Two-Third": "a7e7b1750a1be836fad07a00018d3eb9b5ff9204",
+      "One-Third": "a64e06c0bd3eca04436b4430c3fba126ff176763",
+      "Three-Fourth": "828adc9d8165c07e822af68dbb06921f9df41d09",
+      "Half": "ecb70c215229fac93ff8dd8ee16ee268ad5b618e",
+      "One-Fourth": "3b747d9f9471dd1c6fddcd92d49256586aa990ce",
+      "Canvas Size": "d2c627a9fff37d57d94bcace265f201ebb1e7fe5"
+    },
+    "$figmaModeId": "466:4",
+    "$figmaCollectionId": "VariableCollectionId:422:1026"
+  },
+  {
+    "id": "size mapping-l - sm",
+    "name": "L - Sm",
+    "group": "Size Mapping",
+    "selectedTokenSets": {},
+    "$figmaStyleReferences": {},
+    "$figmaVariableReferences": {
+      "Full": "d457100a6c2e4877150f50650528e3d1e20646ea",
+      "Two-Third": "a7e7b1750a1be836fad07a00018d3eb9b5ff9204",
+      "One-Third": "a64e06c0bd3eca04436b4430c3fba126ff176763",
+      "Three-Fourth": "828adc9d8165c07e822af68dbb06921f9df41d09",
+      "Half": "ecb70c215229fac93ff8dd8ee16ee268ad5b618e",
+      "One-Fourth": "3b747d9f9471dd1c6fddcd92d49256586aa990ce",
+      "Canvas Size": "d2c627a9fff37d57d94bcace265f201ebb1e7fe5"
+    },
+    "$figmaModeId": "466:6",
+    "$figmaCollectionId": "VariableCollectionId:422:1026"
+  },
+  {
     "id": "misc-mode 1",
     "name": "Mode 1",
     "group": "Misc",
@@ -2541,7 +2548,38 @@
       "Tags.Hover.Success Light": "956ed215e8b6a769e341b9c508adf9812a9562c4",
       "Tags.Hover.Gray": "8f19bd35ffbd6b57c095fd68f4808dae05d7a86d",
       "Tags.Hover.Spruce": "d3c316d82662a562341b9659903f0b9214b3cd36",
-      "Tags.Hover.Error": "de9b106a04046c2e871752376db5d259f1e7d1bc"
+      "Tags.Hover.Error": "de9b106a04046c2e871752376db5d259f1e7d1bc",
+      "Ai Interactive.45": "8eb91ceb24db7cdb6b158dd66176f34aab4ebed9",
+      "Ai Interactive.40": "1a831905c7ecc11b5cb69cce2ab15de60b2e367b",
+      "Ai Interactive.30": "fcb6242e7768c59cf05263cee852d09fa5b844a3",
+      "Ai Interactive.20": "c65b58a8554157979c335518fdae6d371405394b",
+      "Ai Interactive.Shadow.Light.20": "537045d042e09dd9975c3769227a688ac5c81e04",
+      "Ai Interactive.15": "b0f7c33400438b3b2ebfa8fe5e7fb8b3d7780edc",
+      "Ai Interactive.Opaque.45-75Pct": "3017e22ea11bd833d11f755a59b4dd54ff4f65ea",
+      "Ai Interactive.Shadow.Dark.15": "a6ea25bab91e5cc852bc46c7d49ffedd0e0714da",
+      "Ai Interactive.Shadow.Light.15": "47813fd5dd0a5316802a491b1dabcf9ba98765c9",
+      "Ai Interactive.Shadow.Dark.15 2": "144330b142d374504feaae3adf250b24a32dbd45",
+      "Ai Interactive.35": "46155ba310d489f785cd907db62850b4c1e654b4",
+      "Ai Interactive.10": "e49b0f87c3f3fd93086f0f74790cfdd71694da67",
+      "Ai Interactive.Shadow.Light.50": "9cc6033756e4f152f4e3ea4ac20611785cd5f15f",
+      "Ai Interactive.Opaque.40-40Pct": "2bdc91c6d4857fddf60e9949dbdf6d1849bbd6ea",
+      "Ai Interactive.Opaque.30-80Pct": "e3ab5ce614cc514587d9dec40cef1c95e3b29366",
+      "Ai Interactive.05": "cd5c3fcb9e56f85706c198daa309041cfd390b19",
+      "Ai Interactive.25": "80db47edfa541e4b45cee4f863cf4f0ed8dacfca",
+      "Ai Interactive.Opaque.45-5Pct": "8f54720922685d8eb876b6364d41174bdd9e2671",
+      "Ai Interactive.Shadow.Dark.20": "d20d58ec30a1c9977db2817eda6f0406ce792fe7",
+      "Ai Interactive.100": "ab5b7929e8e7320ccba3ca72d193bc865faec1ce",
+      "Ai Interactive.Shadow.Dark.50": "0d639e42ecf115460e1c0dd0ef9a6b5b31adc2e5",
+      "Ai Interactive.60": "9f5ec01876880e16f1a9d059e1d6ba9291a6ef76",
+      "Ai Interactive.80": "30c41021d1d99609d6620a5f720b3354b3ed0ae3",
+      "Ai Interactive.70": "b295e539493d66396cb794a8541d6556da963c38",
+      "Ai Interactive.75": "441e0de871ef40b2e28f3ab9997ff4ab9cc9681b",
+      "Ai Interactive.Opaque.45-50Pct": "cc84631ecb4393b963f859c31a1ebeac41d02a48",
+      "Ai Interactive.01": "8479e39567c194cb6b29fed693a1542f84e80a63",
+      "Ai Interactive.Shadow.Dark.30": "02de94fa79326955435a44106cc2f0cdbe7eafa4",
+      "Ai Interactive.Shadow.Light.30": "88870133c4587a59b0dd3e65beb789303ebb48bf",
+      "Ai Interactive.50": "9e0c7343c72a1c6d3c12fa355a257e25a66860d3",
+      "Ai Interactive.90": "11ce542eed8432c2f616196babf8c519874b498b"
     },
     "$figmaModeId": "16756:0",
     "$figmaCollectionId": "VariableCollectionId:16756:1306"
@@ -2593,9 +2631,68 @@
       "Tags.Hover.Success Light": "956ed215e8b6a769e341b9c508adf9812a9562c4",
       "Tags.Hover.Gray": "8f19bd35ffbd6b57c095fd68f4808dae05d7a86d",
       "Tags.Hover.Spruce": "d3c316d82662a562341b9659903f0b9214b3cd36",
-      "Tags.Hover.Error": "de9b106a04046c2e871752376db5d259f1e7d1bc"
+      "Tags.Hover.Error": "de9b106a04046c2e871752376db5d259f1e7d1bc",
+      "Ai Interactive.45": "8eb91ceb24db7cdb6b158dd66176f34aab4ebed9",
+      "Ai Interactive.40": "1a831905c7ecc11b5cb69cce2ab15de60b2e367b",
+      "Ai Interactive.30": "fcb6242e7768c59cf05263cee852d09fa5b844a3",
+      "Ai Interactive.20": "c65b58a8554157979c335518fdae6d371405394b",
+      "Ai Interactive.Shadow.Light.20": "537045d042e09dd9975c3769227a688ac5c81e04",
+      "Ai Interactive.15": "b0f7c33400438b3b2ebfa8fe5e7fb8b3d7780edc",
+      "Ai Interactive.Opaque.45-75Pct": "3017e22ea11bd833d11f755a59b4dd54ff4f65ea",
+      "Ai Interactive.Shadow.Dark.15": "a6ea25bab91e5cc852bc46c7d49ffedd0e0714da",
+      "Ai Interactive.Shadow.Light.15": "47813fd5dd0a5316802a491b1dabcf9ba98765c9",
+      "Ai Interactive.Shadow.Dark.15 2": "144330b142d374504feaae3adf250b24a32dbd45",
+      "Ai Interactive.35": "46155ba310d489f785cd907db62850b4c1e654b4",
+      "Ai Interactive.10": "e49b0f87c3f3fd93086f0f74790cfdd71694da67",
+      "Ai Interactive.Shadow.Light.50": "9cc6033756e4f152f4e3ea4ac20611785cd5f15f",
+      "Ai Interactive.Opaque.40-40Pct": "2bdc91c6d4857fddf60e9949dbdf6d1849bbd6ea",
+      "Ai Interactive.Opaque.30-80Pct": "e3ab5ce614cc514587d9dec40cef1c95e3b29366",
+      "Ai Interactive.05": "cd5c3fcb9e56f85706c198daa309041cfd390b19",
+      "Ai Interactive.25": "80db47edfa541e4b45cee4f863cf4f0ed8dacfca",
+      "Ai Interactive.Opaque.45-5Pct": "8f54720922685d8eb876b6364d41174bdd9e2671",
+      "Ai Interactive.Shadow.Dark.20": "d20d58ec30a1c9977db2817eda6f0406ce792fe7",
+      "Ai Interactive.100": "ab5b7929e8e7320ccba3ca72d193bc865faec1ce",
+      "Ai Interactive.Shadow.Dark.50": "0d639e42ecf115460e1c0dd0ef9a6b5b31adc2e5",
+      "Ai Interactive.60": "9f5ec01876880e16f1a9d059e1d6ba9291a6ef76",
+      "Ai Interactive.80": "30c41021d1d99609d6620a5f720b3354b3ed0ae3",
+      "Ai Interactive.70": "b295e539493d66396cb794a8541d6556da963c38",
+      "Ai Interactive.75": "441e0de871ef40b2e28f3ab9997ff4ab9cc9681b",
+      "Ai Interactive.Opaque.45-50Pct": "cc84631ecb4393b963f859c31a1ebeac41d02a48",
+      "Ai Interactive.01": "8479e39567c194cb6b29fed693a1542f84e80a63",
+      "Ai Interactive.Shadow.Dark.30": "02de94fa79326955435a44106cc2f0cdbe7eafa4",
+      "Ai Interactive.Shadow.Light.30": "88870133c4587a59b0dd3e65beb789303ebb48bf",
+      "Ai Interactive.50": "9e0c7343c72a1c6d3c12fa355a257e25a66860d3",
+      "Ai Interactive.90": "11ce542eed8432c2f616196babf8c519874b498b"
     },
     "$figmaModeId": "18011:1",
     "$figmaCollectionId": "VariableCollectionId:16756:1306"
+  },
+  {
+    "id": "grid-comfort",
+    "name": "Comfort",
+    "group": "Grid",
+    "selectedTokenSets": {},
+    "$figmaStyleReferences": {},
+    "$figmaVariableReferences": {
+      "Gutter": "3ce90b1f5e5cd61dafb27c03be741220d2192d7b",
+      "Offset": "a0b20bb2f3c35b82fdf11908ec0dace921d5220d",
+      "Width": "54c91a1c4005348876b20d236d2c13fa06874911"
+    },
+    "$figmaModeId": "19155:0",
+    "$figmaCollectionId": "VariableCollectionId:19155:1081"
+  },
+  {
+    "id": "grid-compact",
+    "name": "Compact",
+    "group": "Grid",
+    "selectedTokenSets": {},
+    "$figmaStyleReferences": {},
+    "$figmaVariableReferences": {
+      "Gutter": "3ce90b1f5e5cd61dafb27c03be741220d2192d7b",
+      "Offset": "a0b20bb2f3c35b82fdf11908ec0dace921d5220d",
+      "Width": "54c91a1c4005348876b20d236d2c13fa06874911"
+    },
+    "$figmaModeId": "19155:1",
+    "$figmaCollectionId": "VariableCollectionId:19155:1081"
   }
 ]
