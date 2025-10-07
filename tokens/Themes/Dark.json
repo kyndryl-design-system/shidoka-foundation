@@ -370,6 +370,12 @@
       "8 - Dark": {
         "value": "{Opacity.Dark.85}",
         "type": "color"
+      },
+      "Inverse": {
+        "1": {
+          "value": "{Interactive.115 Opaque}",
+          "type": "color"
+        }
       }
     },
     "Forms": {
@@ -500,6 +506,10 @@
           "value": "{Opacity.Dark.0}",
           "type": "color"
         }
+      },
+      "Interactive Gradient End 2": {
+        "value": "{Interactive.113 Opaque}",
+        "type": "color"
       }
     },
     "Card": {
@@ -656,11 +666,7 @@
             "type": "color"
           },
           "Default": {
-            "value": "{Interactive.110}",
-            "type": "color"
-          },
-          "Disabled": {
-            "value": "{Opacity.Light.5}",
+            "value": "{Interactive.115}",
             "type": "color"
           },
           "Disabled": {
@@ -724,7 +730,7 @@
         "type": "color"
       },
       "Inversed": {
-        "value": "{Dark Stone.80}",
+        "value": "{Dark Stone.90}",
         "type": "color"
       },
       "Eyebrow": {
@@ -925,7 +931,7 @@
       "type": "color"
     },
     "Disabled": {
-      "value": "{Dark Stone.60}",
+      "value": "{Dark Stone.40}",
       "type": "color"
     },
     "Destructive": {
@@ -1366,7 +1372,7 @@
         "type": "color"
       },
       "Dark": {
-        "value": "{RAG.Error.100}",
+        "value": "{RAG.Error.20}",
         "type": "color"
       },
       "Accent": {

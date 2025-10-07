@@ -22,7 +22,7 @@
         "type": "color"
       },
       "Secondary": {
-        "value": "{Interactive.7}",
+        "value": "{Interactive.3}",
         "type": "color"
       },
       "Ai": {
@@ -370,6 +370,12 @@
       "8 - Dark": {
         "value": "{Opacity.Dark.85}",
         "type": "color"
+      },
+      "Inverse": {
+        "1": {
+          "value": "{Cool Gray.5}",
+          "type": "color"
+        }
       }
     },
     "Forms": {
@@ -500,6 +506,10 @@
           "value": "{Opacity.Light.0}",
           "type": "color"
         }
+      },
+      "Interactive Gradient End 2": {
+        "value": "{Cool Gray.10}",
+        "type": "color"
       }
     },
     "Card": {
@@ -648,7 +658,7 @@
         },
         "Ai": {
           "Active": {
-            "value": "{Warm Gray.20}",
+            "value": "{Warm Gray.10}",
             "type": "color"
           },
           "Category": {
@@ -676,7 +686,7 @@
             "type": "color"
           },
           "Pressed": {
-            "value": "{Warm Gray.30}",
+            "value": "{Dark Stone.30}",
             "type": "color"
           }
         }
@@ -1358,7 +1368,7 @@
     },
     "Error": {
       "Light": {
-        "value": "{RAG.Error.20}",
+        "value": "{RAG.Error.100}",
         "type": "color"
       },
       "Dark": {
