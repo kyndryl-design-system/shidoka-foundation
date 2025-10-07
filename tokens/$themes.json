@@ -361,10 +361,7 @@
       "Opacity.AI Warm Red.100": "0979669deff91a5119f6c0a2b2174c9054ba45e5",
       "Opacity.AI Spruce.90": "fcc862777e8ff4d450bbec5ddacd33edf70cf24a",
       "Opacity.AI Spruce.100": "83156638a6068b795c04626e392038b6d327563e",
-      "Interactive.113": "dfefef5d02ec8933ac129ad29c98b9d549df2c54",
-      "Interactive.115 Opaque": "464e3d7cb400e3ca5018379ab783c142052c603a",
-      "Interactive.113 Opaque": "ca7a0bfea4d8a7830411755f70d348e7fbf1e622",
-      "Warm Red.45": "9917cd01995123d6f4bdc4d10dfb6c82769f907e"
+      "Interactive.113": "dfefef5d02ec8933ac129ad29c98b9d549df2c54"
     },
     "$figmaModeId": "114:3",
     "$figmaCollectionId": "VariableCollectionId:114:573"
@@ -979,9 +976,7 @@
       "Background.Button.Ghost.AI.Hover": "31e5fe80f78f6df594a81458a6865920038e9440",
       "Background.Button.Ghost.AI.Pressed": "d1897f5b53a4da97610d480111a021cb9a747a27",
       "Background.Button.Ghost.AI.Selected": "c85de20557c63bffc2e678f9d451560129396af0",
-      "Background.Button.Ghost.AI.Focused": "b6a7d3cfb19b9bfa8403546d27a57c88ccc2aef7",
-      "Background.Opacity.Inverse.1": "eb897e1b6f90f4371b9960392ac25498ce1f02b1",
-      "Background.Gradients.Interactive Gradient End 2": "e4bd8e32ae73d28593f43f12c4781158989204a1"
+      "Background.Button.Ghost.AI.Focused": "b6a7d3cfb19b9bfa8403546d27a57c88ccc2aef7"
     },
     "$figmaModeId": "114:4",
     "$figmaCollectionId": "VariableCollectionId:114:768"
@@ -1596,9 +1591,7 @@
       "Background.Button.Ghost.AI.Hover": "31e5fe80f78f6df594a81458a6865920038e9440",
       "Background.Button.Ghost.AI.Pressed": "d1897f5b53a4da97610d480111a021cb9a747a27",
       "Background.Button.Ghost.AI.Selected": "c85de20557c63bffc2e678f9d451560129396af0",
-      "Background.Button.Ghost.AI.Focused": "b6a7d3cfb19b9bfa8403546d27a57c88ccc2aef7",
-      "Background.Opacity.Inverse.1": "eb897e1b6f90f4371b9960392ac25498ce1f02b1",
-      "Background.Gradients.Interactive Gradient End 2": "e4bd8e32ae73d28593f43f12c4781158989204a1"
+      "Background.Button.Ghost.AI.Focused": "b6a7d3cfb19b9bfa8403546d27a57c88ccc2aef7"
     },
     "$figmaModeId": "13995:1",
     "$figmaCollectionId": "VariableCollectionId:114:768"
