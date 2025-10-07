@@ -214,6 +214,10 @@
       "value": "#ff6b57",
       "type": "color"
     },
+    "45": {
+      "value": "#ff5d47",
+      "type": "color"
+    },
     "60": {
       "value": "#ff2306",
       "type": "color"
@@ -816,6 +820,14 @@
     },
     "80-primary": {
       "value": "#5d6369",
+      "type": "color"
+    },
+    "115 Opaque": {
+      "value": "#15191df7",
+      "type": "color"
+    },
+    "113 Opaque": {
+      "value": "#191d21f7",
       "type": "color"
     }
   },

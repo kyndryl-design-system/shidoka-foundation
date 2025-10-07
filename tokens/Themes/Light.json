@@ -370,6 +370,12 @@
       "8 - Dark": {
         "value": "{Opacity.Dark.85}",
         "type": "color"
+      },
+      "Inverse": {
+        "1": {
+          "value": "{Cool Gray.5}",
+          "type": "color"
+        }
       }
     },
     "Forms": {
@@ -500,6 +506,10 @@
           "value": "{Opacity.Light.0}",
           "type": "color"
         }
+      },
+      "Interactive Gradient End 2": {
+        "value": "{Cool Gray.10}",
+        "type": "color"
       }
     },
     "Card": {
@@ -1358,7 +1368,7 @@
     },
     "Error": {
       "Light": {
-        "value": "{RAG.Error.20}",
+        "value": "{RAG.Error.100}",
         "type": "color"
       },
       "Dark": {
