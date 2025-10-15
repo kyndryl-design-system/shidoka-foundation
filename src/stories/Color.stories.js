@@ -104,6 +104,17 @@ export default {
   ],
 };
 
+const handleCopy = (token, event) => {
+  copyToClipboard(token);
+  const button = event.target.closest('button');
+  const originalTitle = button.title;
+  button.title = 'Copied!';
+
+  setTimeout(() => {
+    button.title = originalTitle;
+  }, 0);
+};
+
 export const Semantic = {
   render: () => {
     return html`
@@ -142,7 +153,7 @@ export const Semantic = {
                           <button
                             class="copy-code"
                             title="Copy token"
-                            @click=${() => copyToClipboard(token.variable)}
+                            @click=${(e) => handleCopy(token.variable, e)}
                           >
                             ${unsafeSVG(copyIcon)}
                           </button>
@@ -214,7 +225,7 @@ export const Palette = {
                           <button
                             class="copy-code"
                             title="Copy token"
-                            @click=${() => copyToClipboard(token.variable)}
+                            @click=${(e) => handleCopy(token.variable, e)}
                           >
                             ${unsafeSVG(copyIcon)}
                           </button>
