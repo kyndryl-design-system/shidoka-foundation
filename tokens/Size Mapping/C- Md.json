@@ -1,0 +1,30 @@
+{
+  "Full": {
+    "value": "{Center-Aligned - Md.Full Width}",
+    "type": "number"
+  },
+  "Two-Third": {
+    "value": "{Center-Aligned - Md.Half}",
+    "type": "number"
+  },
+  "One-Third": {
+    "value": "{Center-Aligned - Md.Full Width}",
+    "type": "number"
+  },
+  "Three-Fourth": {
+    "value": "{Center-Aligned - Md.Half}",
+    "type": "number"
+  },
+  "Half": {
+    "value": "{Center-Aligned - Md.Full Width}",
+    "type": "number"
+  },
+  "One-Fourth": {
+    "value": "{Center-Aligned - Md.Three-Fourth}",
+    "type": "number"
+  },
+  "Canvas Size": {
+    "value": "{Center-Aligned - Md.Canvas}",
+    "type": "number"
+  }
+}

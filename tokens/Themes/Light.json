@@ -22,7 +22,7 @@
         "type": "color"
       },
       "Secondary": {
-        "value": "{Interactive.7}",
+        "value": "{Interactive.3}",
         "type": "color"
       },
       "Ai": {
@@ -658,7 +658,7 @@
         },
         "Ai": {
           "Active": {
-            "value": "{Warm Gray.20}",
+            "value": "{Warm Gray.10}",
             "type": "color"
           },
           "Category": {
@@ -686,7 +686,7 @@
             "type": "color"
           },
           "Pressed": {
-            "value": "{Warm Gray.30}",
+            "value": "{Dark Stone.30}",
             "type": "color"
           }
         }

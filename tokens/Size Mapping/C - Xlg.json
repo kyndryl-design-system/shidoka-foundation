@@ -1,0 +1,30 @@
+{
+  "Full": {
+    "value": "{Center-Aligned - Xlg.Full Width}",
+    "type": "number"
+  },
+  "Two-Third": {
+    "value": "{Center-Aligned - Xlg.Two-Third}",
+    "type": "number"
+  },
+  "One-Third": {
+    "value": "{Center-Aligned - Xlg.One-Third}",
+    "type": "number"
+  },
+  "Three-Fourth": {
+    "value": "{Center-Aligned - Xlg.Three-Fourth}",
+    "type": "number"
+  },
+  "Half": {
+    "value": "{Center-Aligned - Xlg.Half}",
+    "type": "number"
+  },
+  "One-Fourth": {
+    "value": "{Center-Aligned - Xlg.One-Fourth}",
+    "type": "number"
+  },
+  "Canvas Size": {
+    "value": "{Center-Aligned - Xlg.Canvas}",
+    "type": "number"
+  }
+}

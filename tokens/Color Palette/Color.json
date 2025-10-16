@@ -1386,5 +1386,19 @@
         "type": "color"
       }
     }
+  },
+  "Wireframe": {
+    "Dark": {
+      "value": "#000000",
+      "type": "color"
+    },
+    "Light": {
+      "value": "#ffffff",
+      "type": "color"
+    },
+    "Gray": {
+      "value": "{Dark Stone.40}",
+      "type": "color"
+    }
   }
 }
