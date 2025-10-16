@@ -8,6 +8,9 @@ const paletteTokens = getTokens(colorPalette);
 const semanticTokens = getTokens(colorSemantic);
 
 import '@kyndryl-design-system/shidoka-applications/components/reusable/tabs';
+import { unsafeSVG } from 'lit-html/directives/unsafe-svg.js';
+import copyToClipboard from 'copy-to-clipboard';
+import copyIcon from '@kyndryl-design-system/shidoka-icons/svg/monochrome/16/copy.svg?raw';
 
 export default {
   title: 'Foundation/Colors',
@@ -78,10 +81,38 @@ export default {
             width: 100%;
             height: 40px;
           }
+
+          .copy-code {
+            background: none;
+            border: none;
+            margin: 0;
+            padding: 0;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            svg {
+              display: block;
+            }
+          }
+
+          table.tokens tr:hover .copy-code {
+            opacity: 1;
+          }
         </style>
         ${story()}
       `,
   ],
+};
+
+const handleCopy = (token, event) => {
+  copyToClipboard(token);
+  const button = event.target.closest('button');
+  const originalTitle = button.title;
+  button.title = 'Copied!';
+
+  setTimeout(() => {
+    button.title = originalTitle;
+  }, 0);
 };
 
 export const Semantic = {
@@ -117,7 +148,16 @@ export const Semantic = {
                     (token) => token.variable,
                     (token) => html`
                       <tr>
-                        <td>${token.variable}</td>
+                        <td>
+                          ${token.variable}
+                          <button
+                            class="copy-code"
+                            title="Copy token"
+                            @click=${(e) => handleCopy(token.variable, e)}
+                          >
+                            ${unsafeSVG(copyIcon)}
+                          </button>
+                        </td>
                         <td>
                           ${getComputedStyle(
                             document.documentElement
@@ -180,7 +220,16 @@ export const Palette = {
                     (token) => token.variable,
                     (token) => html`
                       <tr>
-                        <td>${token.variable}</td>
+                        <td>
+                          ${token.variable}
+                          <button
+                            class="copy-code"
+                            title="Copy token"
+                            @click=${(e) => handleCopy(token.variable, e)}
+                          >
+                            ${unsafeSVG(copyIcon)}
+                          </button>
+                        </td>
                         <td>
                           ${getComputedStyle(
                             document.documentElement
