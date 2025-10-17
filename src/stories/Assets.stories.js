@@ -3,9 +3,16 @@ import { unsafeSVG } from 'lit-html/directives/unsafe-svg.js';
 import copyToClipboard from 'copy-to-clipboard';
 import copyIcon from '@kyndryl-design-system/shidoka-icons/svg/monochrome/16/copy.svg?raw';
 
-const copyCode = (fileName) => {
+const copyCode = (fileName, event) => {
   const code = `import assetName from '@kyndryl-design-system/shidoka-foundation/assets/svg/${fileName}.svg'`;
   copyToClipboard(code);
+  const button = event.target.closest('button');
+  const originalTitle = button.title;
+  button.title = 'Copied!';
+
+  setTimeout(() => {
+    button.title = originalTitle;
+  }, 0);
 };
 
 export default {
@@ -122,7 +129,7 @@ export const Logo = {
                   <button
                     class="copy-code"
                     title="Copy import path"
-                    @click=${() => copyCode(fileName)}
+                    @click=${(event) => copyCode(fileName, event)}
                   >
                     ${unsafeSVG(copyIcon)}
                   </button>
@@ -207,7 +214,7 @@ export const Mascot = {
                   <button
                     class="copy-code"
                     title="Copy import path"
-                    @click=${() => copyCode(`mascot/${fileName}`)}
+                    @click=${(event) => copyCode(`mascot/${fileName}`, event)}
                   >
                     ${unsafeSVG(copyIcon)}
                   </button>
@@ -275,7 +282,8 @@ export const EmptyState = {
                   <button
                     class="copy-code"
                     title="Copy import path"
-                    @click=${() => copyCode(`emptyState/${fileName}`)}
+                    @click=${(event) =>
+                      copyCode(`emptyState/${fileName}`, event)}
                   >
                     ${unsafeSVG(copyIcon)}
                   </button>
@@ -330,7 +338,7 @@ export const AI = {
                   <button
                     class="copy-code"
                     title="Copy import path"
-                    @click=${() => copyCode(`ai/${fileName}`)}
+                    @click=${(event) => copyCode(`ai/${fileName}`, event)}
                   >
                     ${unsafeSVG(copyIcon)}
                   </button>
