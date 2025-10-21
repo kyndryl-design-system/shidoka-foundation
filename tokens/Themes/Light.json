@@ -503,7 +503,7 @@
           "type": "color"
         },
         "Loader Mid Gradient": {
-          "value": "{Opacity.Light.0}",
+          "value": "{Opacity.Dark.10}",
           "type": "color"
         }
       },
