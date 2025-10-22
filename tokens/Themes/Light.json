@@ -375,6 +375,10 @@
         "1": {
           "value": "{Cool Gray.5}",
           "type": "color"
+        },
+        "Backdrop": {
+          "value": "{Opacity.Dark.25}",
+          "type": "color"
         }
       }
     },

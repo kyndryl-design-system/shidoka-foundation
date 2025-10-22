@@ -984,7 +984,8 @@
       "Background.Button.Ghost.AI.Selected": "c85de20557c63bffc2e678f9d451560129396af0",
       "Background.Button.Ghost.AI.Focused": "b6a7d3cfb19b9bfa8403546d27a57c88ccc2aef7",
       "Background.Opacity.Inverse.1": "eb897e1b6f90f4371b9960392ac25498ce1f02b1",
-      "Background.Gradients.Interactive Gradient End 2": "e4bd8e32ae73d28593f43f12c4781158989204a1"
+      "Background.Gradients.Interactive Gradient End 2": "e4bd8e32ae73d28593f43f12c4781158989204a1",
+      "Background.Opacity.Inverse.Backdrop": "ebec6b36000495f93edddd277a86a9599ade5219"
     },
     "$figmaModeId": "114:4",
     "$figmaCollectionId": "VariableCollectionId:114:768"
@@ -1601,7 +1602,8 @@
       "Background.Button.Ghost.AI.Selected": "c85de20557c63bffc2e678f9d451560129396af0",
       "Background.Button.Ghost.AI.Focused": "b6a7d3cfb19b9bfa8403546d27a57c88ccc2aef7",
       "Background.Opacity.Inverse.1": "eb897e1b6f90f4371b9960392ac25498ce1f02b1",
-      "Background.Gradients.Interactive Gradient End 2": "e4bd8e32ae73d28593f43f12c4781158989204a1"
+      "Background.Gradients.Interactive Gradient End 2": "e4bd8e32ae73d28593f43f12c4781158989204a1",
+      "Background.Opacity.Inverse.Backdrop": "ebec6b36000495f93edddd277a86a9599ade5219"
     },
     "$figmaModeId": "13995:1",
     "$figmaCollectionId": "VariableCollectionId:114:768"
@@ -2218,7 +2220,8 @@
       "Background.Button.Ghost.AI.Selected": "c85de20557c63bffc2e678f9d451560129396af0",
       "Background.Button.Ghost.AI.Focused": "b6a7d3cfb19b9bfa8403546d27a57c88ccc2aef7",
       "Background.Opacity.Inverse.1": "eb897e1b6f90f4371b9960392ac25498ce1f02b1",
-      "Background.Gradients.Interactive Gradient End 2": "e4bd8e32ae73d28593f43f12c4781158989204a1"
+      "Background.Gradients.Interactive Gradient End 2": "e4bd8e32ae73d28593f43f12c4781158989204a1",
+      "Background.Opacity.Inverse.Backdrop": "ebec6b36000495f93edddd277a86a9599ade5219"
     },
     "$figmaModeId": "18419:1",
     "$figmaCollectionId": "VariableCollectionId:114:768"
