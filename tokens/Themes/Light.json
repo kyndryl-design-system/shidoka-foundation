@@ -2,7 +2,7 @@
   "Background": {
     "Container": {
       "Default": {
-        "value": "{Interactive.3}",
+        "value": "{Interactive.5}",
         "type": "color"
       },
       "Subtle": {
@@ -625,7 +625,7 @@
     "Menu": {
       "State": {
         "Default": {
-          "value": "{Interactive.3}",
+          "value": "{Interactive.5}",
           "type": "color"
         },
         "Focused": {
