@@ -375,6 +375,10 @@
         "1": {
           "value": "{Interactive.115 Opaque}",
           "type": "color"
+        },
+        "Backdrop": {
+          "value": "{Opacity.Light.10}",
+          "type": "color"
         }
       }
     },

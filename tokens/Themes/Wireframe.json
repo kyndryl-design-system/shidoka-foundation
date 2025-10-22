@@ -375,6 +375,10 @@
         "1": {
           "value": "{Wireframe.Light}",
           "type": "color"
+        },
+        "Backdrop": {
+          "value": "#ffffff",
+          "type": "color"
         }
       }
     },
