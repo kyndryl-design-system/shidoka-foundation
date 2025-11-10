@@ -35,10 +35,10 @@ export default {
       },
     },
 
-    backgrounds: { disable: true },
+    backgrounds: { disabled: true },
 
     viewport: {
-      viewports: {
+      options: {
         ...BREAKPOINT_VIEWPORTS,
         ...INITIAL_VIEWPORTS,
       },
