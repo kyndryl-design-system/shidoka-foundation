@@ -30,9 +30,7 @@
     "id": "color palette-color",
     "name": "Color",
     "group": "Color Palette",
-    "selectedTokenSets": {
-      "Color Palette/Color": "enabled"
-    },
+    "selectedTokenSets": {},
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
       "Neutral.Black": "a028db31e7c31d7c3ffdf93e13a1324f0f8c4751",
@@ -376,9 +374,7 @@
     "id": "themes-light",
     "name": "Light",
     "group": "Themes",
-    "selectedTokenSets": {
-      "Themes/Light": "enabled"
-    },
+    "selectedTokenSets": {},
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
       "Background.Container.Default": "c6b4206abbb457e75476043b926040215e82f273",
@@ -996,9 +992,7 @@
     "id": "themes-dark",
     "name": "Dark",
     "group": "Themes",
-    "selectedTokenSets": {
-      "Themes/Dark": "enabled"
-    },
+    "selectedTokenSets": {},
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
       "Background.Container.Default": "c6b4206abbb457e75476043b926040215e82f273",
@@ -1616,9 +1610,7 @@
     "id": "themes-wireframe",
     "name": "Wireframe",
     "group": "Themes",
-    "selectedTokenSets": {
-      "Themes/Wireframe": "enabled"
-    },
+    "selectedTokenSets": {},
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
       "Background.Container.Default": "c6b4206abbb457e75476043b926040215e82f273",
@@ -2528,9 +2520,7 @@
     "id": "deprecated-light",
     "name": "Light",
     "group": "Deprecated",
-    "selectedTokenSets": {
-      "Deprecated/Light": "enabled"
-    },
+    "selectedTokenSets": {},
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
       "Tags.Background.Blue": "b229bcee52a1ca1735f3b49d9dd7e2f424567f74",
@@ -2611,9 +2601,7 @@
     "id": "deprecated-dark",
     "name": "Dark",
     "group": "Deprecated",
-    "selectedTokenSets": {
-      "Deprecated/Dark": "enabled"
-    },
+    "selectedTokenSets": {},
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
       "Tags.Background.Blue": "b229bcee52a1ca1735f3b49d9dd7e2f424567f74",
