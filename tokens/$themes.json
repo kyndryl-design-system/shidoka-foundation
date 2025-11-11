@@ -985,7 +985,9 @@
       "Background.Button.Ghost.AI.Focused": "b6a7d3cfb19b9bfa8403546d27a57c88ccc2aef7",
       "Background.Opacity.Inverse.1": "eb897e1b6f90f4371b9960392ac25498ce1f02b1",
       "Background.Gradients.Interactive Gradient End 2": "e4bd8e32ae73d28593f43f12c4781158989204a1",
-      "Background.Opacity.Inverse.Backdrop": "ebec6b36000495f93edddd277a86a9599ade5219"
+      "Background.Opacity.Inverse.Backdrop": "ebec6b36000495f93edddd277a86a9599ade5219",
+      "Background.Container.Overlay.Background": "1c105d439025fd0304e49d7fa459c20d82aa90b6",
+      "Background.Container.Overlay.Footer": "05b3a6670fd706c2ef2bd156802dfd3b503bacc6"
     },
     "$figmaModeId": "114:4",
     "$figmaCollectionId": "VariableCollectionId:114:768"
@@ -1603,7 +1605,9 @@
       "Background.Button.Ghost.AI.Focused": "b6a7d3cfb19b9bfa8403546d27a57c88ccc2aef7",
       "Background.Opacity.Inverse.1": "eb897e1b6f90f4371b9960392ac25498ce1f02b1",
       "Background.Gradients.Interactive Gradient End 2": "e4bd8e32ae73d28593f43f12c4781158989204a1",
-      "Background.Opacity.Inverse.Backdrop": "ebec6b36000495f93edddd277a86a9599ade5219"
+      "Background.Opacity.Inverse.Backdrop": "ebec6b36000495f93edddd277a86a9599ade5219",
+      "Background.Container.Overlay.Background": "1c105d439025fd0304e49d7fa459c20d82aa90b6",
+      "Background.Container.Overlay.Footer": "05b3a6670fd706c2ef2bd156802dfd3b503bacc6"
     },
     "$figmaModeId": "13995:1",
     "$figmaCollectionId": "VariableCollectionId:114:768"
@@ -2221,7 +2225,9 @@
       "Background.Button.Ghost.AI.Focused": "b6a7d3cfb19b9bfa8403546d27a57c88ccc2aef7",
       "Background.Opacity.Inverse.1": "eb897e1b6f90f4371b9960392ac25498ce1f02b1",
       "Background.Gradients.Interactive Gradient End 2": "e4bd8e32ae73d28593f43f12c4781158989204a1",
-      "Background.Opacity.Inverse.Backdrop": "ebec6b36000495f93edddd277a86a9599ade5219"
+      "Background.Opacity.Inverse.Backdrop": "ebec6b36000495f93edddd277a86a9599ade5219",
+      "Background.Container.Overlay.Background": "1c105d439025fd0304e49d7fa459c20d82aa90b6",
+      "Background.Container.Overlay.Footer": "05b3a6670fd706c2ef2bd156802dfd3b503bacc6"
     },
     "$figmaModeId": "18419:1",
     "$figmaCollectionId": "VariableCollectionId:114:768"

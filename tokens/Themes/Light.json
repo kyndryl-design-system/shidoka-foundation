@@ -46,6 +46,16 @@
       "Tertiary": {
         "value": "{Opacity.Dark.3}",
         "type": "color"
+      },
+      "Overlay": {
+        "Background": {
+          "value": "{Neutral.White}",
+          "type": "color"
+        },
+        "Footer": {
+          "value": "{Interactive.5}",
+          "type": "color"
+        }
       }
     },
     "UI": {
@@ -543,7 +553,7 @@
     "Loader": {
       "Skeleton": {
         "Default": {
-          "value": "{Dark Stone.20}",
+          "value": "{Dark Stone.30}",
           "type": "color"
         },
         "Secondary": {

@@ -46,6 +46,16 @@
       "Tertiary": {
         "value": "{Opacity.Light.5}",
         "type": "color"
+      },
+      "Overlay": {
+        "Background": {
+          "value": "{Interactive.107}",
+          "type": "color"
+        },
+        "Footer": {
+          "value": "{Interactive.105}",
+          "type": "color"
+        }
       }
     },
     "UI": {

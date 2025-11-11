@@ -46,6 +46,16 @@
       "Tertiary": {
         "value": "#15191d08",
         "type": "color"
+      },
+      "Overlay": {
+        "Background": {
+          "value": "#ffffff",
+          "type": "color"
+        },
+        "Footer": {
+          "value": "#ffffff",
+          "type": "color"
+        }
       }
     },
     "UI": {
@@ -89,11 +99,11 @@
           "type": "color"
         },
         "Hover": {
-          "value": "#ffffff",
+          "value": "#afafaf",
           "type": "color"
         },
         "Pressed": {
-          "value": "#ffffff",
+          "value": "#616161",
           "type": "color"
         }
       }
@@ -557,11 +567,11 @@
       },
       "Bar": {
         "Primary": {
-          "value": "#ffffff",
+          "value": "{Wireframe.Dark}",
           "type": "color"
         },
         "Secondary": {
-          "value": "#ffffff",
+          "value": "{Wireframe.Dark}",
           "type": "color"
         }
       },
@@ -571,7 +581,7 @@
           "type": "color"
         },
         "Active": {
-          "value": "#ffffff",
+          "value": "{Wireframe.Dark}",
           "type": "color"
         },
         "Background": {
@@ -915,39 +925,39 @@
   },
   "Icon": {
     "Primary": {
-      "value": "#000000",
+      "value": "{Wireframe.Light}",
       "type": "color"
     },
     "Secondary": {
-      "value": "#000000",
+      "value": "{Wireframe.Light}",
       "type": "color"
     },
     "Tertiary": {
-      "value": "#000000",
+      "value": "{Wireframe.Light}",
       "type": "color"
     },
     "Inverse": {
-      "value": "#000000",
+      "value": "{Wireframe.Light}",
       "type": "color"
     },
     "Brand": {
-      "value": "#000000",
+      "value": "{Wireframe.Dark}",
       "type": "color"
     },
     "Disabled": {
-      "value": "#a8a5a6",
+      "value": "{Wireframe.Gray}",
       "type": "color"
     },
     "Destructive": {
-      "value": "#000000",
+      "value": "{Wireframe.Dark}",
       "type": "color"
     },
     "switcher-icon": {
-      "value": "#000000",
+      "value": "{Wireframe.Dark}",
       "type": "color"
     },
     "Accent": {
-      "value": "#000000",
+      "value": "{Wireframe.Dark}",
       "type": "color"
     },
     "Duotone": {
@@ -971,11 +981,11 @@
       }
     },
     "Dark": {
-      "value": "#000000",
+      "value": "{Wireframe.Dark}",
       "type": "color"
     },
     "Light": {
-      "value": "#000000",
+      "value": "{Wireframe.Light}",
       "type": "color"
     },
     "Interactive": {
@@ -989,11 +999,11 @@
       }
     },
     "AI Spruce": {
-      "value": "#000000",
+      "value": "{Wireframe.Dark}",
       "type": "color"
     },
     "AI Red": {
-      "value": "#000000",
+      "value": "{Wireframe.Dark}",
       "type": "color"
     }
   },
