@@ -10,6 +10,8 @@
   --kd-color-background-container-ai-level-2: light-dark(var(--kd-color-earth-10), var(--kd-color-interactive-110));
   --kd-color-background-container-surface-tint: light-dark(var(--kd-color-opacity-light-86), var(--kd-color-opacity-dark-85));
   --kd-color-background-container-tertiary: light-dark(var(--kd-color-opacity-dark-3), var(--kd-color-opacity-light-5));
+  --kd-color-background-container-overlay-background: light-dark(var(--kd-color-neutral-white), var(--kd-color-interactive-107));
+  --kd-color-background-container-overlay-footer: light-dark(var(--kd-color-interactive-5), var(--kd-color-interactive-105));
   --kd-color-background-ui-default-dark: light-dark(var(--kd-color-dark-stone-80), var(--kd-color-cool-gray-10));
   --kd-color-background-ui-default-brand: light-dark(var(--kd-color-warm-red-50-brand), var(--kd-color-warm-red-50-brand));
   --kd-color-background-ui-default-default: light-dark(var(--kd-color-dark-stone-50), var(--kd-color-cool-gray-10));
@@ -116,7 +118,7 @@
   --kd-color-background-card-hover: light-dark(var(--kd-color-cool-gray-7), var(--kd-color-opacity-light-10));
   --kd-color-background-highlight-fill: light-dark(var(--kd-color-skye-10), var(--kd-color-skye-80));
   --kd-color-background-highlight-border: light-dark(var(--kd-color-skye-20), var(--kd-color-skye-50));
-  --kd-color-background-loader-skeleton-default: light-dark(var(--kd-color-dark-stone-20), var(--kd-color-dark-stone-70));
+  --kd-color-background-loader-skeleton-default: light-dark(var(--kd-color-dark-stone-30), var(--kd-color-dark-stone-70));
   --kd-color-background-loader-skeleton-secondary: light-dark(var(--kd-color-dark-stone-20), var(--kd-color-dark-stone-60));
   --kd-color-background-loader-skeleton-tertiary: light-dark(var(--kd-color-dark-stone-10), var(--kd-color-dark-stone-60));
   --kd-color-background-loader-bar-primary: light-dark(var(--kd-color-dark-stone-50), var(--kd-color-cool-gray-10));
