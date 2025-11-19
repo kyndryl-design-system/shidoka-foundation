@@ -160,7 +160,7 @@ async function run() {
 }
 
 function isTokenNode(n) {
-  return n && typeof n === 'object' && 'type' in n && 'value' in n;
+  return n && typeof n === 'object' && '$type' in n && '$value' in n;
 }
 function isRef(v) {
   return typeof v === 'string' && v.trim().startsWith('{');
@@ -191,7 +191,7 @@ function getFrom(obj, keys) {
 }
 
 function resolveTokenValue(node, which) {
-  const v = node?.value;
+  const v = node?.$value;
   if (typeof v === 'string') return v;
 
   if (v && typeof v === 'object') {
@@ -241,7 +241,7 @@ function loopTokens(opts) {
   for (const [key, value] of Object.entries(json || {})) {
     if (isTokenNode(value)) {
       const token = cleanKey(key);
-      const prefix = `--kd-${value.type}`;
+      const prefix = `--kd-${value.$type}`;
       const attr = `${prefix}${category}-${token}`;
 
       const lightRaw = resolveTokenValue(value, 'light');
@@ -257,7 +257,7 @@ function loopTokens(opts) {
             deprecated ? globalDarkDeprecated : globalDark,
             keys
           )?.[key];
-          darkRaw = (darkNode && darkNode.value) ?? lightRaw;
+          darkRaw = (darkNode && darkNode.$value) ?? lightRaw;
         }
       }
 
@@ -339,10 +339,10 @@ function validateTokens(files) {
     for (const [k, v] of Object.entries(node)) {
       const path = pathStack ? `${pathStack}.${k}` : k;
       if (isTokenNode(v)) {
-        if (!v.type || typeof v.type !== 'string')
-          errors.push(`${path}: missing string 'type'`);
-        if (!('value' in v)) errors.push(`${path}: missing 'value'`);
-        const val = v.value;
+        if (!v.$type || typeof v.$type !== 'string')
+          errors.push(`${path}: missing string '$type'`);
+        if (!('$value' in v)) errors.push(`${path}: missing '$value'`);
+        const val = v.$value;
         const isOkString = typeof val === 'string';
         const isOkModes =
           val &&
@@ -350,7 +350,7 @@ function validateTokens(files) {
           ('modes' in val || 'light' in val || 'dark' in val);
         if (!isOkString && !isOkModes) {
           warnings.push(
-            `${path}: unexpected 'value' shape (expected string or light/dark/modes object)`
+            `${path}: unexpected '$value' shape (expected string or light/dark/modes object)`
           );
         }
       } else if (v && typeof v === 'object') {
