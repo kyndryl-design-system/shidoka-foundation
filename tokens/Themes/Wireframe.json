@@ -1437,6 +1437,32 @@
         "value": "#000000",
         "type": "color"
       }
+    },
+    "Critical": {
+      "Critical Dark": {
+        "value": "#000000",
+        "type": "color"
+      },
+      "Critical Light": {
+        "value": "#ffffff",
+        "type": "color"
+      },
+      "Dark": {
+        "value": "#000000",
+        "type": "color"
+      },
+      "Foreground": {
+        "value": "#000000",
+        "type": "color"
+      },
+      "Light": {
+        "value": "#ffffff",
+        "type": "color"
+      },
+      "Accent": {
+        "value": "#d3d3d3",
+        "type": "color"
+      }
     }
   },
   "Data Viz": {
@@ -1872,7 +1898,7 @@
         "type": "color"
       }
     },
-    "RAG": {
+    "RAG (Deprecated)": {
       "3": {
         "Warning": {
           "value": "#000000",
