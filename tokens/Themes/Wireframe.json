@@ -697,7 +697,7 @@
           },
           "Open": {
             "$type": "color",
-            "$value": "#000000"
+            "$value": "{Wireframe.Light}"
           },
           "Pressed": {
             "$type": "color",
@@ -1393,14 +1393,6 @@
         "$type": "color",
         "$value": "#d3d3d3"
       },
-      "Critical Dark": {
-        "$type": "color",
-        "$value": "#000000"
-      },
-      "Critical Light": {
-        "$type": "color",
-        "$value": "#ffffff"
-      },
       "Foreground": {
         "$type": "color",
         "$value": "#000000"
@@ -1439,25 +1431,17 @@
       }
     },
     "Critical": {
-      "Critical Dark": {
-        "$type": "color",
-        "$value": "#000000"
-      },
-      "Critical Light": {
-        "$type": "color",
-        "$value": "#ffffff"
-      },
       "Dark": {
-        "$type": "color",
-        "$value": "#000000"
-      },
-      "Foreground": {
         "$type": "color",
         "$value": "#000000"
       },
       "Light": {
         "$type": "color",
         "$value": "#ffffff"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "#000000"
       },
       "Accent": {
         "$type": "color",

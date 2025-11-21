@@ -1393,14 +1393,6 @@
         "$type": "color",
         "$value": "{Misc.Red.80}"
       },
-      "Critical Dark": {
-        "$type": "color",
-        "$value": "{RAG.Critical.100}"
-      },
-      "Critical Light": {
-        "$type": "color",
-        "$value": "{RAG.Critical.20}"
-      },
       "Foreground": {
         "$type": "color",
         "$value": "{Neutral.White}"
@@ -1427,11 +1419,11 @@
     "Neutral": {
       "Light": {
         "$type": "color",
-        "$value": "{Cool Gray.85}"
+        "$value": "{Warm Gray.20}"
       },
       "Dark": {
         "$type": "color",
-        "$value": "{Cool Gray.70}"
+        "$value": "{Warm Gray.60}"
       },
       "Foreground": {
         "$type": "color",
@@ -1439,25 +1431,17 @@
       }
     },
     "Critical": {
-      "Critical Dark": {
+      "Dark": {
         "$type": "color",
         "$value": "{RAG.Critical.100}"
       },
-      "Critical Light": {
+      "Light": {
         "$type": "color",
         "$value": "{RAG.Critical.20}"
-      },
-      "Dark": {
-        "$type": "color",
-        "$value": "{RAG.Error.20}"
       },
       "Foreground": {
         "$type": "color",
         "$value": "{Neutral.White}"
-      },
-      "Light": {
-        "$type": "color",
-        "$value": "{RAG.Error.20}"
       },
       "Accent": {
         "$type": "color",
