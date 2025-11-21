@@ -1882,56 +1882,6 @@
         "$value": "#000000"
       }
     },
-    "RAG (Deprecated)": {
-      "3": {
-        "Warning": {
-          "$type": "color",
-          "$value": "#000000"
-        },
-        "Error": {
-          "$type": "color",
-          "$value": "#000000"
-        },
-        "Success": {
-          "$type": "color",
-          "$value": "#000000"
-        }
-      },
-      "8": {
-        "Success-light": {
-          "$type": "color",
-          "$value": "#ffffff"
-        },
-        "Success": {
-          "$type": "color",
-          "$value": "#000000"
-        },
-        "Error-light": {
-          "$type": "color",
-          "$value": "#ffffff"
-        },
-        "Warning-light": {
-          "$type": "color",
-          "$value": "#ffffff"
-        },
-        "Error": {
-          "$type": "color",
-          "$value": "#000000"
-        },
-        "Warning": {
-          "$type": "color",
-          "$value": "#000000"
-        },
-        "Informational-light": {
-          "$type": "color",
-          "$value": "#ffffff"
-        },
-        "Informational": {
-          "$type": "color",
-          "$value": "#000000"
-        }
-      }
-    },
     "Level": {
       "Secondary": {
         "$type": "color",

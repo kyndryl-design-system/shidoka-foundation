@@ -294,5 +294,57 @@
       "$type": "color",
       "$value": "#f5f5fa"
     }
+  },
+  "Data Viz": {
+    "RAG": {
+      "3": {
+        "Error": {
+          "$type": "color",
+          "$value": "{RAG.Error.100}"
+        },
+        "Warning": {
+          "$type": "color",
+          "$value": "{RAG.Warning.100}"
+        },
+        "Success": {
+          "$type": "color",
+          "$value": "{RAG.Success.100}"
+        }
+      },
+      "8": {
+        "Informational": {
+          "$type": "color",
+          "$value": "{RAG.Information.100}"
+        },
+        "Informational-light": {
+          "$type": "color",
+          "$value": "{RAG.Information.20}"
+        },
+        "Warning": {
+          "$type": "color",
+          "$value": "{RAG.Warning.100}"
+        },
+        "Warning-light": {
+          "$type": "color",
+          "$value": "{RAG.Warning.20}"
+        },
+        "Error": {
+          "$type": "color",
+          "$value": "{RAG.Error.100}"
+        },
+        "Error-light": {
+          "$type": "color",
+          "$value": "{RAG.Error.20}"
+        },
+        "Success": {
+          "$type": "color",
+          "$value": "{RAG.Success.100}"
+        },
+        "Success-light": {
+          "$type": "color",
+          "$value": "{RAG.Success.20}"
+        }
+      }
+    }
   }
 }

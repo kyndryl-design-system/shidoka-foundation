@@ -670,10 +670,6 @@
           "$type": "color",
           "$value": "{Spruce.50}"
         },
-        "Active 2": {
-          "$type": "color",
-          "$value": "{Spruce.40}"
-        },
         "Ai": {
           "Active": {
             "$type": "color",
@@ -1002,10 +998,6 @@
         "$value": "{Spruce.20}"
       }
     },
-    "AI": {
-      "$type": "color",
-      "$value": "{Ai Interactive.35}"
-    },
     "AI Spruce": {
       "$type": "color",
       "$value": "{Spruce.20}"
@@ -1265,10 +1257,6 @@
             "$type": "color",
             "$value": "{Opacity.AI Warm Red.0}"
           },
-          "Highlight": {
-            "$type": "color",
-            "$value": "{Ai Interactive.40}"
-          },
           "Selected": {
             "$type": "color",
             "$value": "{Opacity.AI Warm Red.0}"
@@ -1326,20 +1314,6 @@
         "$value": "{Warm Red.100}"
       }
     },
-    "Ai": {
-      "Subtle": {
-        "$type": "color",
-        "$value": "{Ai Interactive.80}"
-      },
-      "Default Gradient Start": {
-        "$type": "color",
-        "$value": "{Warm Red.40}"
-      },
-      "Default Gradient End": {
-        "$type": "color",
-        "$value": "{Spruce.20}"
-      }
-    },
     "Container": {
       "Hover": {
         "$type": "color",
@@ -1352,6 +1326,16 @@
       "Default": {
         "$type": "color",
         "$value": "{Opacity.Light.20}"
+      }
+    },
+    "Ai": {
+      "Default Gradient Start": {
+        "$type": "color",
+        "$value": "{Warm Red.40}"
+      },
+      "Default Gradient End": {
+        "$type": "color",
+        "$value": "{Spruce.20}"
       }
     }
   },
@@ -1408,14 +1392,6 @@
       "Accent": {
         "$type": "color",
         "$value": "{Misc.Red.80}"
-      },
-      "Critical Dark": {
-        "$type": "color",
-        "$value": "{RAG.Critical.100}"
-      },
-      "Critical Light": {
-        "$type": "color",
-        "$value": "{RAG.Critical.20}"
       },
       "Foreground": {
         "$type": "color",
@@ -1906,56 +1882,6 @@
         "$value": "{Lilac.10}"
       }
     },
-    "RAG": {
-      "3": {
-        "Warning": {
-          "$type": "color",
-          "$value": "{RAG.Warning.100}"
-        },
-        "Error": {
-          "$type": "color",
-          "$value": "{RAG.Error.100}"
-        },
-        "Success": {
-          "$type": "color",
-          "$value": "{RAG.Success.100}"
-        }
-      },
-      "8": {
-        "Success-light": {
-          "$type": "color",
-          "$value": "{RAG.Success.20}"
-        },
-        "Success": {
-          "$type": "color",
-          "$value": "{RAG.Success.100}"
-        },
-        "Error-light": {
-          "$type": "color",
-          "$value": "{RAG.Error.20}"
-        },
-        "Warning-light": {
-          "$type": "color",
-          "$value": "{RAG.Warning.20}"
-        },
-        "Error": {
-          "$type": "color",
-          "$value": "{RAG.Error.100}"
-        },
-        "Warning": {
-          "$type": "color",
-          "$value": "{RAG.Warning.100}"
-        },
-        "Informational-light": {
-          "$type": "color",
-          "$value": "{RAG.Information.20}"
-        },
-        "Informational": {
-          "$type": "color",
-          "$value": "{RAG.Information.100}"
-        }
-      }
-    },
     "Level": {
       "Secondary": {
         "$type": "color",
@@ -1964,56 +1890,6 @@
       "Primary": {
         "$type": "color",
         "$value": "{Warm Gray.30}"
-      }
-    },
-    "RAG (Deprecated)": {
-      "3": {
-        "Warning": {
-          "$type": "color",
-          "$value": "{RAG.Warning.100}"
-        },
-        "Error": {
-          "$type": "color",
-          "$value": "{RAG.Error.100}"
-        },
-        "Success": {
-          "$type": "color",
-          "$value": "{RAG.Success.100}"
-        }
-      },
-      "8": {
-        "Success-light": {
-          "$type": "color",
-          "$value": "{RAG.Success.20}"
-        },
-        "Success": {
-          "$type": "color",
-          "$value": "{RAG.Success.100}"
-        },
-        "Error-light": {
-          "$type": "color",
-          "$value": "{RAG.Error.20}"
-        },
-        "Warning-light": {
-          "$type": "color",
-          "$value": "{RAG.Warning.20}"
-        },
-        "Error": {
-          "$type": "color",
-          "$value": "{RAG.Error.100}"
-        },
-        "Warning": {
-          "$type": "color",
-          "$value": "{RAG.Warning.100}"
-        },
-        "Informational-light": {
-          "$type": "color",
-          "$value": "{RAG.Information.20}"
-        },
-        "Informational": {
-          "$type": "color",
-          "$value": "{RAG.Information.100}"
-        }
       }
     },
     "Neutral": {
