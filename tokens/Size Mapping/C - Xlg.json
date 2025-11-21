@@ -1,30 +1,30 @@
 {
   "Full": {
-    "value": "{Center-Aligned - Xlg.Full Width}",
-    "type": "number"
+    "$type": "number",
+    "$value": "{Center-Aligned - Xlg.Full Width}"
   },
   "Two-Third": {
-    "value": "{Center-Aligned - Xlg.Two-Third}",
-    "type": "number"
+    "$type": "number",
+    "$value": "{Center-Aligned - Xlg.Two-Third}"
   },
   "One-Third": {
-    "value": "{Center-Aligned - Xlg.One-Third}",
-    "type": "number"
+    "$type": "number",
+    "$value": "{Center-Aligned - Xlg.One-Third}"
   },
   "Three-Fourth": {
-    "value": "{Center-Aligned - Xlg.Three-Fourth}",
-    "type": "number"
+    "$type": "number",
+    "$value": "{Center-Aligned - Xlg.Three-Fourth}"
   },
   "Half": {
-    "value": "{Center-Aligned - Xlg.Half}",
-    "type": "number"
+    "$type": "number",
+    "$value": "{Center-Aligned - Xlg.Half}"
   },
   "One-Fourth": {
-    "value": "{Center-Aligned - Xlg.One-Fourth}",
-    "type": "number"
+    "$type": "number",
+    "$value": "{Center-Aligned - Xlg.One-Fourth}"
   },
   "Canvas Size": {
-    "value": "{Center-Aligned - Xlg.Canvas}",
-    "type": "number"
+    "$type": "number",
+    "$value": "{Center-Aligned - Xlg.Canvas}"
   }
 }
