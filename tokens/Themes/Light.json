@@ -1383,7 +1383,7 @@
     "Error": {
       "Light": {
         "$type": "color",
-        "$value": "{RAG.Error.100}"
+        "$value": "{RAG.Error.20}"
       },
       "Dark": {
         "$type": "color",
