@@ -2,347 +2,347 @@
   "Tags": {
     "Background": {
       "Blue": {
-        "$type": "color",
-        "$value": "{RAG.Information.20}"
+        "value": "{RAG.Information.20}",
+        "type": "color"
       },
       "Warning": {
-        "$type": "color",
-        "$value": "{RAG.Warning.20}"
+        "value": "{RAG.Warning.20}",
+        "type": "color"
       },
       "Success": {
-        "$type": "color",
-        "$value": "{RAG.Success.20}"
+        "value": "{RAG.Success.20}",
+        "type": "color"
       },
       "Error": {
-        "$type": "color",
-        "$value": "{RAG.Error.20}"
+        "value": "{RAG.Error.20}",
+        "type": "color"
       },
       "Disabled": {
-        "$type": "color",
-        "$value": "{Warm Gray.80}"
+        "value": "{Warm Gray.80}",
+        "type": "color"
       },
       "Cat 6": {
-        "$type": "color",
-        "$value": "{Ai Interactive.15}"
+        "value": "{Ai Interactive.15}",
+        "type": "color"
       },
       "Spruce": {
-        "$type": "color",
-        "$value": "{Spruce.20}"
+        "value": "{Spruce.20}",
+        "type": "color"
       },
       "Interactive": {
-        "$type": "color",
-        "$value": "{Interactive.15}"
+        "value": "{Interactive.15}",
+        "type": "color"
       },
       "Cat 4": {
-        "$type": "color",
-        "$value": "{Blush.30}"
+        "value": "{Blush.30}",
+        "type": "color"
       },
       "Cat 3": {
-        "$type": "color",
-        "$value": "{Amber.30}"
+        "value": "{Amber.30}",
+        "type": "color"
       },
       "Error Dark": {
-        "$type": "color",
-        "$value": "{RAG.Error.100}"
+        "value": "{RAG.Error.100}",
+        "type": "color"
       },
       "Warning Dark": {
-        "$type": "color",
-        "$value": "{RAG.Warning.100}"
+        "value": "{RAG.Warning.100}",
+        "type": "color"
       },
       "Cat 2": {
-        "$type": "color",
-        "$value": "{Jade.30}"
+        "value": "{Jade.30}",
+        "type": "color"
       },
       "Success Dark": {
-        "$type": "color",
-        "$value": "{RAG.Success.100}"
+        "value": "{RAG.Success.100}",
+        "type": "color"
       },
       "Cat 5": {
-        "$type": "color",
-        "$value": "{Lilac.30}"
+        "value": "{Lilac.30}",
+        "type": "color"
       },
       "Critical Light": {
-        "$type": "color",
-        "$value": "{RAG.Critical.20}"
+        "value": "{RAG.Critical.20}",
+        "type": "color"
       },
       "Information Dark": {
-        "$type": "color",
-        "$value": "{RAG.Information.100}"
+        "value": "{RAG.Information.100}",
+        "type": "color"
       },
       "Cat 1": {
-        "$type": "color",
-        "$value": "{Sea.10}"
+        "value": "{Sea.10}",
+        "type": "color"
       },
       "Gray": {
-        "$type": "color",
-        "$value": "{Cool Gray.10}"
+        "value": "{Cool Gray.10}",
+        "type": "color"
       },
       "Critical Dark": {
-        "$type": "color",
-        "$value": "{RAG.Critical.100}"
+        "value": "{RAG.Critical.100}",
+        "type": "color"
       }
     },
     "Hover": {
       "Cat 6": {
-        "$type": "color",
-        "$value": "{Ai Interactive.25}"
+        "value": "{Ai Interactive.25}",
+        "type": "color"
       },
       "Cat 4": {
-        "$type": "color",
-        "$value": "{Blush.40}"
+        "value": "{Blush.40}",
+        "type": "color"
       },
       "Cat 3": {
-        "$type": "color",
-        "$value": "{Amber.40}"
+        "value": "{Amber.40}",
+        "type": "color"
       },
       "Cat 2": {
-        "$type": "color",
-        "$value": "{Jade.40}"
+        "value": "{Jade.40}",
+        "type": "color"
       },
       "Cat 1": {
-        "$type": "color",
-        "$value": "{Sea.20}"
+        "value": "{Sea.20}",
+        "type": "color"
       },
       "Cat 5": {
-        "$type": "color",
-        "$value": "{Lilac.40}"
+        "value": "{Lilac.40}",
+        "type": "color"
       },
       "Blue Dark": {
-        "$type": "color",
-        "$value": "{RAG.Information.20}"
+        "value": "{RAG.Information.20}",
+        "type": "color"
       },
       "Warning": {
-        "$type": "color",
-        "$value": "{RAG.Warning.20}"
+        "value": "{RAG.Warning.20}",
+        "type": "color"
       },
       "Warning Light": {
-        "$type": "color",
-        "$value": "{RAG.Warning.100}"
+        "value": "{RAG.Warning.100}",
+        "type": "color"
       },
       "Critical Dark": {
-        "$type": "color",
-        "$value": "{RAG.Critical.20}"
+        "value": "{RAG.Critical.20}",
+        "type": "color"
       },
       "Success": {
-        "$type": "color",
-        "$value": "{RAG.Success.20}"
+        "value": "{RAG.Success.20}",
+        "type": "color"
       },
       "Critical Light": {
-        "$type": "color",
-        "$value": "{RAG.Critical.100}"
+        "value": "{RAG.Critical.100}",
+        "type": "color"
       },
       "Interactive": {
-        "$type": "color",
-        "$value": "{Interactive.30}"
+        "value": "{Interactive.30}",
+        "type": "color"
       },
       "Blue": {
-        "$type": "color",
-        "$value": "{RAG.Information.100}"
+        "value": "{RAG.Information.100}",
+        "type": "color"
       },
       "Error Light": {
-        "$type": "color",
-        "$value": "{RAG.Error.100}"
+        "value": "{RAG.Error.100}",
+        "type": "color"
       },
       "Success Light": {
-        "$type": "color",
-        "$value": "{RAG.Success.100}"
+        "value": "{RAG.Success.100}",
+        "type": "color"
       },
       "Gray": {
-        "$type": "color",
-        "$value": "{Cool Gray.30}"
+        "value": "{Cool Gray.30}",
+        "type": "color"
       },
       "Spruce": {
-        "$type": "color",
-        "$value": "{Spruce.30}"
+        "value": "{Spruce.30}",
+        "type": "color"
       },
       "Error": {
-        "$type": "color",
-        "$value": "{RAG.Error.20}"
+        "value": "{RAG.Error.20}",
+        "type": "color"
       }
     }
   },
   "Ai Interactive": {
     "10": {
-      "$type": "color",
-      "$value": "#d4d4e8"
+      "value": "#d4d4e8",
+      "type": "color"
     },
     "15": {
-      "$type": "color",
-      "$value": "#bbbbdb"
+      "value": "#bbbbdb",
+      "type": "color"
     },
     "20": {
-      "$type": "color",
-      "$value": "#a2a2ce"
+      "value": "#a2a2ce",
+      "type": "color"
     },
     "25": {
-      "$type": "color",
-      "$value": "#8988c0"
+      "value": "#8988c0",
+      "type": "color"
     },
     "30": {
-      "$type": "color",
-      "$value": "#706fb3"
+      "value": "#706fb3",
+      "type": "color"
     },
     "35": {
-      "$type": "color",
-      "$value": "#5756a6"
+      "value": "#5756a6",
+      "type": "color"
     },
     "40": {
-      "$type": "color",
-      "$value": "#484786"
+      "value": "#484786",
+      "type": "color"
     },
     "45": {
-      "$type": "color",
-      "$value": "#403f74"
+      "value": "#403f74",
+      "type": "color"
     },
     "50": {
-      "$type": "color",
-      "$value": "#373662"
+      "value": "#373662",
+      "type": "color"
     },
     "60": {
-      "$type": "color",
-      "$value": "#2f2e50"
+      "value": "#2f2e50",
+      "type": "color"
     },
     "70": {
-      "$type": "color",
-      "$value": "#26263f"
+      "value": "#26263f",
+      "type": "color"
     },
     "75": {
-      "$type": "color",
-      "$value": "#1a1924"
+      "value": "#1a1924",
+      "type": "color"
     },
     "80": {
-      "$type": "color",
-      "$value": "#15151b"
+      "value": "#15151b",
+      "type": "color"
     },
     "90": {
-      "$type": "color",
-      "$value": "#121219"
+      "value": "#121219",
+      "type": "color"
     },
     "100": {
-      "$type": "color",
-      "$value": "#0e0e17"
+      "value": "#0e0e17",
+      "type": "color"
     },
     "Shadow": {
       "Light": {
         "15": {
-          "$type": "color",
-          "$value": "#8988c026"
+          "value": "#8988c026",
+          "type": "color"
         },
         "20": {
-          "$type": "color",
-          "$value": "#8988c033"
+          "value": "#8988c033",
+          "type": "color"
         },
         "30": {
-          "$type": "color",
-          "$value": "#8988c04d"
+          "value": "#8988c04d",
+          "type": "color"
         },
         "50": {
-          "$type": "color",
-          "$value": "#8988c080"
+          "value": "#8988c080",
+          "type": "color"
         }
       },
       "Dark": {
         "15": {
-          "$type": "color",
-          "$value": "#37366226"
+          "value": "#37366226",
+          "type": "color"
         },
         "20": {
-          "$type": "color",
-          "$value": "#37366233"
+          "value": "#37366233",
+          "type": "color"
         },
         "30": {
-          "$type": "color",
-          "$value": "#3736624d"
+          "value": "#3736624d",
+          "type": "color"
         },
         "50": {
-          "$type": "color",
-          "$value": "#37366280"
+          "value": "#37366280",
+          "type": "color"
         },
         "15 2": {
-          "$type": "color",
-          "$value": "#373662"
+          "value": "#373662",
+          "type": "color"
         }
       }
     },
     "Opaque": {
       "45-75Pct": {
-        "$type": "color",
-        "$value": "#403f74bf"
+        "value": "#403f74bf",
+        "type": "color"
       },
       "40-40Pct": {
-        "$type": "color",
-        "$value": "#48478666"
+        "value": "#48478666",
+        "type": "color"
       },
       "30-80Pct": {
-        "$type": "color",
-        "$value": "#706fb3cc"
+        "value": "#706fb3cc",
+        "type": "color"
       },
       "45-5Pct": {
-        "$type": "color",
-        "$value": "#403f741a"
+        "value": "#403f741a",
+        "type": "color"
       },
       "45-50Pct": {
-        "$type": "color",
-        "$value": "#403f7480"
+        "value": "#403f7480",
+        "type": "color"
       }
     },
     "05": {
-      "$type": "color",
-      "$value": "#e1e1ef"
+      "value": "#e1e1ef",
+      "type": "color"
     },
     "01": {
-      "$type": "color",
-      "$value": "#f5f5fa"
+      "value": "#f5f5fa",
+      "type": "color"
     }
   },
   "Data Viz": {
     "RAG": {
       "3": {
         "Error": {
-          "$type": "color",
-          "$value": "{RAG.Error.100}"
+          "value": "{RAG.Error.100}",
+          "type": "color"
         },
         "Warning": {
-          "$type": "color",
-          "$value": "{RAG.Warning.100}"
+          "value": "{RAG.Warning.100}",
+          "type": "color"
         },
         "Success": {
-          "$type": "color",
-          "$value": "{RAG.Success.100}"
+          "value": "{RAG.Success.100}",
+          "type": "color"
         }
       },
       "8": {
         "Informational": {
-          "$type": "color",
-          "$value": "{RAG.Information.100}"
+          "value": "{RAG.Information.100}",
+          "type": "color"
         },
         "Informational-light": {
-          "$type": "color",
-          "$value": "{RAG.Information.20}"
+          "value": "{RAG.Information.20}",
+          "type": "color"
         },
         "Warning": {
-          "$type": "color",
-          "$value": "{RAG.Warning.100}"
+          "value": "{RAG.Warning.100}",
+          "type": "color"
         },
         "Warning-light": {
-          "$type": "color",
-          "$value": "{RAG.Warning.20}"
+          "value": "{RAG.Warning.20}",
+          "type": "color"
         },
         "Error": {
-          "$type": "color",
-          "$value": "{RAG.Error.100}"
+          "value": "{RAG.Error.100}",
+          "type": "color"
         },
         "Error-light": {
-          "$type": "color",
-          "$value": "{RAG.Error.20}"
+          "value": "{RAG.Error.20}",
+          "type": "color"
         },
         "Success": {
-          "$type": "color",
-          "$value": "{RAG.Success.100}"
+          "value": "{RAG.Success.100}",
+          "type": "color"
         },
         "Success-light": {
-          "$type": "color",
-          "$value": "{RAG.Success.20}"
+          "value": "{RAG.Success.20}",
+          "type": "color"
         }
       }
     }
