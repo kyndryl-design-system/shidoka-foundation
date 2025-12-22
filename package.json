@@ -60,7 +60,7 @@
     "chromatic": "^11.2.0",
     "copy-to-clipboard": "^3.3.3",
     "eslint": "^8.57.0",
-    "eslint-plugin-storybook": "^10.0.6",
+    "eslint-plugin-storybook": "^10.1.10",
     "husky": "^8.0.3",
     "lint-staged": "^15.5.0",
     "lit": "^3.3.0",
