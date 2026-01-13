@@ -1396,20 +1396,6 @@
       "Tertiary": {
         "$type": "color",
         "$value": "{Opacity.Light.10}"
-      },
-      "Ai": {
-        "Primary": {
-          "$type": "color",
-          "$value": "{Ai Interactive.30}"
-        },
-        "Secondary": {
-          "$type": "color",
-          "$value": "{Ai Interactive.50}"
-        },
-        "Tertiary": {
-          "$type": "color",
-          "$value": "{Ai Interactive.70}"
-        }
       }
     },
     "UI": {
@@ -2510,7 +2496,7 @@
     },
     "Variant Border": {
       "$type": "color",
-      "$value": "{Border.Accent.Primary}"
+      "$value": "{Spring Green.80}"
     }
   },
   "States": {
@@ -2841,7 +2827,7 @@
       },
       "Disabled": {
         "$type": "color",
-        "$value": "{Text.Level.Disabled}"
+        "$value": "{Dark Stone.40}"
       },
       "Sea": {
         "$type": "color",
@@ -2917,7 +2903,7 @@
       },
       "Disabled": {
         "$type": "color",
-        "$value": "{Icon.Disabled}"
+        "$value": "{Dark Stone.40}"
       },
       "Red": {
         "$type": "color",
@@ -2990,7 +2976,7 @@
         },
         "Warning": {
           "$type": "color",
-          "$value": "{Text.Level.Dark}"
+          "$value": "{Dark Stone.80}"
         },
         "Success": {
           "$type": "color",
@@ -3002,33 +2988,33 @@
         },
         "Others": {
           "$type": "color",
-          "$value": "{Text.Level.Dark}"
+          "$value": "{Dark Stone.80}"
         }
       },
       "Icon": {
         "Critical": {
           "$type": "color",
-          "$value": "{Icon.Light}"
+          "$value": "{Dark Stone.10}"
         },
         "Information": {
           "$type": "color",
-          "$value": "{Icon.Light}"
+          "$value": "{Dark Stone.10}"
         },
         "Success": {
           "$type": "color",
-          "$value": "{Icon.Light}"
+          "$value": "{Dark Stone.10}"
         },
         "Warning": {
           "$type": "color",
-          "$value": "{Icon.Dark}"
+          "$value": "{Dark Stone.80}"
         },
         "Others": {
           "$type": "color",
-          "$value": "{Icon.Dark}"
+          "$value": "{Dark Stone.80}"
         },
         "Error": {
           "$type": "color",
-          "$value": "{Icon.Light}"
+          "$value": "{Dark Stone.10}"
         }
       }
     },
@@ -3056,7 +3042,7 @@
         },
         "Others": {
           "$type": "color",
-          "$value": "{Text.Level.Primary}"
+          "$value": "{Dark Stone.10}"
         }
       },
       "Background": {
@@ -3088,7 +3074,7 @@
       "Icon": {
         "Others": {
           "$type": "color",
-          "$value": "{Icon.Primary}"
+          "$value": "{Dark Stone.10}"
         },
         "Critical": {
           "$type": "color",
@@ -3162,7 +3148,7 @@
         },
         "Others": {
           "$type": "color",
-          "$value": "{Text.Level.Primary}"
+          "$value": "{Dark Stone.10}"
         }
       },
       "Background": {
@@ -3214,7 +3200,7 @@
         },
         "Others": {
           "$type": "color",
-          "$value": "{Text.Level.Primary}"
+          "$value": "{Dark Stone.10}"
         }
       }
     }
@@ -3241,169 +3227,7 @@
   },
   "Others": {
     "$type": "color",
-    "$value": "{Text.Level.Primary}"
-  },
-  "Status Selector": {
-    "Icon": {
-      "Error": {
-        "Enabled": {
-          "$type": "color",
-          "$value": "#fededa"
-        },
-        "Hover": {
-          "$type": "color",
-          "$value": "#fededa"
-        },
-        "Focused": {
-          "$type": "color",
-          "$value": "#fededa"
-        },
-        "Selected": {
-          "$type": "color",
-          "$value": "#fededa"
-        },
-        "Pressed": {
-          "$type": "color",
-          "$value": "#fededa"
-        },
-        "Disabled": {
-          "$type": "color",
-          "$value": "#a8a5a6"
-        }
-      },
-      "Warning": {
-        "Enabled": {
-          "$type": "color",
-          "$value": "#ffd46a"
-        },
-        "Hover": {
-          "$type": "color",
-          "$value": "#ffd46a"
-        },
-        "Focused": {
-          "$type": "color",
-          "$value": "#ffd46a"
-        },
-        "Selected": {
-          "$type": "color",
-          "$value": "#ffd46a"
-        },
-        "Pressed": {
-          "$type": "color",
-          "$value": "#ffd46a"
-        },
-        "Disabled": {
-          "$type": "color",
-          "$value": "#a8a5a6"
-        }
-      },
-      "Success": {
-        "Enabled": {
-          "$type": "color",
-          "$value": "#e8fff1"
-        },
-        "Hover": {
-          "$type": "color",
-          "$value": "#e8fff1"
-        },
-        "Focused": {
-          "$type": "color",
-          "$value": "#e8fff1"
-        },
-        "Selected": {
-          "$type": "color",
-          "$value": "#e8fff1"
-        },
-        "Pressed": {
-          "$type": "color",
-          "$value": "#e8fff1"
-        },
-        "Disabled": {
-          "$type": "color",
-          "$value": "#a8a5a6"
-        }
-      },
-      "Information": {
-        "Low": {
-          "Enabled": {
-            "$type": "color",
-            "$value": "#e9f2ff"
-          },
-          "Hover": {
-            "$type": "color",
-            "$value": "#e9f2ff"
-          },
-          "Focused": {
-            "$type": "color",
-            "$value": "#e9f2ff"
-          },
-          "Selected": {
-            "$type": "color",
-            "$value": "#e9f2ff"
-          },
-          "Pressed": {
-            "$type": "color",
-            "$value": "#e9f2ff"
-          },
-          "Disabled": {
-            "$type": "color",
-            "$value": "#a8a5a6"
-          }
-        },
-        "Medium": {
-          "Enabled": {
-            "$type": "color",
-            "$value": "#ffffff"
-          },
-          "Hover": {
-            "$type": "color",
-            "$value": "#ffffff"
-          },
-          "Focused": {
-            "$type": "color",
-            "$value": "#ffffff"
-          },
-          "Selected": {
-            "$type": "color",
-            "$value": "#ffffff"
-          },
-          "Pressed": {
-            "$type": "color",
-            "$value": "#ffffff"
-          },
-          "Disabled": {
-            "$type": "color",
-            "$value": "#a8a5a6"
-          }
-        },
-        "High": {
-          "Enabled": {
-            "$type": "color",
-            "$value": "#ffffff"
-          },
-          "Hover": {
-            "$type": "color",
-            "$value": "#ffffff"
-          },
-          "Focused": {
-            "$type": "color",
-            "$value": "#ffffff"
-          },
-          "Selected": {
-            "$type": "color",
-            "$value": "#011e4e"
-          },
-          "Pressed": {
-            "$type": "color",
-            "$value": "#ffffff"
-          },
-          "Disabled": {
-            "$type": "color",
-            "$value": "#a8a5a6"
-          }
-        }
-      }
-    }
+    "$value": "{Dark Stone.10}"
   },
   "AI": {
     "Enabled": {
