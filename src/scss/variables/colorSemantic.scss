@@ -416,7 +416,7 @@
   --kd-color-status-warning-foreground: light-dark(var(--kd-color-rag-warning-100), var(--kd-color-neutral-white));
   --kd-color-status-warning-foreground---dark: light-dark(var(--kd-color-rag-warning-100), var(--kd-color-neutral-black));
   --kd-color-status-error-light: light-dark(var(--kd-color-rag-error-20), var(--kd-color-rag-error-20));
-  --kd-color-status-error-dark: light-dark(var(--kd-color-rag-error-100), var(--kd-color-rag-error-20));
+  --kd-color-status-error-dark: light-dark(var(--kd-color-rag-error-110), var(--kd-color-rag-error-20));
   --kd-color-status-error-accent: light-dark(var(--kd-color-misc-red-light), var(--kd-color-misc-red-80));
   --kd-color-status-error-foreground: light-dark(var(--kd-color-rag-error-100), var(--kd-color-neutral-white));
   --kd-color-status-success-light: light-dark(var(--kd-color-rag-success-20), var(--kd-color-rag-success-20));
@@ -714,12 +714,6 @@
   --kd-color-badge-light-icon-success: light-dark(var(--kd-color-spring-green-40), var(--kd-color-spring-green-10));
   --kd-color-badge-light-icon-information: light-dark(var(--kd-color-rag-information-100), var(--kd-color-rag-information-20));
   --kd-color-badge-light-icon-others: light-dark(var(--kd-color-dark-stone-80), var(--kd-color-dark-stone-10));
-  --kd-color-critical: light-dark(var(--kd-color-warm-red-90), var(--kd-color-misc-red-40));
-  --kd-color-error: light-dark(var(--kd-color-warm-red-70), var(--kd-color-warm-red-20));
-  --kd-color-warning: light-dark(var(--kd-color-amber-80), var(--kd-color-amber-20));
-  --kd-color-success: light-dark(var(--kd-color-spring-green-60), var(--kd-color-spring-green-10));
-  --kd-color-information: light-dark(var(--kd-color-rag-information-110), var(--kd-color-rag-information-20));
-  --kd-color-others: light-dark(var(--kd-color-dark-stone-80), var(--kd-color-dark-stone-10));
   --kd-color-ai-enabled: light-dark(var(--kd-color-spruce-15), var(--kd-color-spruce-80));
   --kd-color-ai-hover: light-dark(var(--kd-color-spruce-20), var(--kd-color-spruce-70));
   --kd-color-ai-focused: light-dark(var(--kd-color-spruce-15), var(--kd-color-spruce-80));

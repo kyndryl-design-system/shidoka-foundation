@@ -3205,30 +3205,6 @@
       }
     }
   },
-  "Critical": {
-    "$type": "color",
-    "$value": "#000000"
-  },
-  "Error": {
-    "$type": "color",
-    "$value": "#000000"
-  },
-  "Warning": {
-    "$type": "color",
-    "$value": "#000000"
-  },
-  "Success": {
-    "$type": "color",
-    "$value": "#000000"
-  },
-  "Information": {
-    "$type": "color",
-    "$value": "#000000"
-  },
-  "Others": {
-    "$type": "color",
-    "$value": "#000000"
-  },
   "AI": {
     "Enabled": {
       "$type": "color",
