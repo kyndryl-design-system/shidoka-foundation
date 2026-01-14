@@ -1905,7 +1905,7 @@
       },
       "Dark": {
         "$type": "color",
-        "$value": "{RAG.Error.100}"
+        "$value": "{RAG.Error.110}"
       },
       "Accent": {
         "$type": "color",
@@ -3204,30 +3204,6 @@
         }
       }
     }
-  },
-  "Critical": {
-    "$type": "color",
-    "$value": "{Warm Red.90}"
-  },
-  "Error": {
-    "$type": "color",
-    "$value": "{Warm Red.70}"
-  },
-  "Warning": {
-    "$type": "color",
-    "$value": "{Amber.80}"
-  },
-  "Success": {
-    "$type": "color",
-    "$value": "{Spring Green.60}"
-  },
-  "Information": {
-    "$type": "color",
-    "$value": "{RAG.Information.110}"
-  },
-  "Others": {
-    "$type": "color",
-    "$value": "{Dark Stone.80}"
   },
   "AI": {
     "Enabled": {

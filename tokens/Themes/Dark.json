@@ -3205,30 +3205,6 @@
       }
     }
   },
-  "Critical": {
-    "$type": "color",
-    "$value": "{Misc.Red.40}"
-  },
-  "Error": {
-    "$type": "color",
-    "$value": "{Warm Red.20}"
-  },
-  "Warning": {
-    "$type": "color",
-    "$value": "{Amber.20}"
-  },
-  "Success": {
-    "$type": "color",
-    "$value": "{Spring Green.10}"
-  },
-  "Information": {
-    "$type": "color",
-    "$value": "{RAG.Information.20}"
-  },
-  "Others": {
-    "$type": "color",
-    "$value": "{Dark Stone.10}"
-  },
   "AI": {
     "Enabled": {
       "$type": "color",
