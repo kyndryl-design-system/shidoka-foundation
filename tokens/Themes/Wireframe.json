@@ -864,6 +864,32 @@
             "$value": "#ffffff"
           }
         }
+      },
+      "AI": {
+        "Enabled": {
+          "$type": "color",
+          "$value": "#ffffff"
+        },
+        "Hover": {
+          "$type": "color",
+          "$value": "#ffffff"
+        },
+        "Focused": {
+          "$type": "color",
+          "$value": "#ffffff"
+        },
+        "Selected": {
+          "$type": "color",
+          "$value": "#ffffff"
+        },
+        "Pressed": {
+          "$type": "color",
+          "$value": "#ffffff"
+        },
+        "Disabled": {
+          "$type": "color",
+          "$value": "#ffffff"
+        }
       }
     }
   },
@@ -1351,6 +1377,192 @@
     "AI Red": {
       "$type": "color",
       "$value": "{Wireframe.Dark}"
+    },
+    "Status Picker": {
+      "Error": {
+        "Enabled": {
+          "$type": "color",
+          "$value": "#000000"
+        },
+        "Hover": {
+          "$type": "color",
+          "$value": "#000000"
+        },
+        "Focused": {
+          "$type": "color",
+          "$value": "#000000"
+        },
+        "Selected": {
+          "$type": "color",
+          "$value": "#000000"
+        },
+        "Pressed": {
+          "$type": "color",
+          "$value": "#000000"
+        },
+        "Disabled": {
+          "$type": "color",
+          "$value": "{Dark Stone.40}"
+        }
+      },
+      "Warning": {
+        "Enabled": {
+          "$type": "color",
+          "$value": "#000000"
+        },
+        "Hover": {
+          "$type": "color",
+          "$value": "#000000"
+        },
+        "Focused": {
+          "$type": "color",
+          "$value": "#000000"
+        },
+        "Selected": {
+          "$type": "color",
+          "$value": "#000000"
+        },
+        "Pressed": {
+          "$type": "color",
+          "$value": "#000000"
+        },
+        "Disabled": {
+          "$type": "color",
+          "$value": "{Dark Stone.40}"
+        }
+      },
+      "Success": {
+        "Enabled": {
+          "$type": "color",
+          "$value": "#000000"
+        },
+        "Hover": {
+          "$type": "color",
+          "$value": "#000000"
+        },
+        "Focused": {
+          "$type": "color",
+          "$value": "#000000"
+        },
+        "Selected": {
+          "$type": "color",
+          "$value": "#000000"
+        },
+        "Pressed": {
+          "$type": "color",
+          "$value": "#000000"
+        },
+        "Disabled": {
+          "$type": "color",
+          "$value": "{Dark Stone.40}"
+        }
+      },
+      "Information": {
+        "Low": {
+          "Enabled": {
+            "$type": "color",
+            "$value": "#000000"
+          },
+          "Hover": {
+            "$type": "color",
+            "$value": "#000000"
+          },
+          "Focused": {
+            "$type": "color",
+            "$value": "#000000"
+          },
+          "Selected": {
+            "$type": "color",
+            "$value": "#000000"
+          },
+          "Pressed": {
+            "$type": "color",
+            "$value": "#000000"
+          },
+          "Disabled": {
+            "$type": "color",
+            "$value": "{Dark Stone.40}"
+          }
+        },
+        "Medium": {
+          "Enabled": {
+            "$type": "color",
+            "$value": "#000000"
+          },
+          "Hover": {
+            "$type": "color",
+            "$value": "#000000"
+          },
+          "Focused": {
+            "$type": "color",
+            "$value": "#000000"
+          },
+          "Selected": {
+            "$type": "color",
+            "$value": "#000000"
+          },
+          "Pressed": {
+            "$type": "color",
+            "$value": "#000000"
+          },
+          "Disabled": {
+            "$type": "color",
+            "$value": "{Dark Stone.40}"
+          }
+        },
+        "High": {
+          "Enabled": {
+            "$type": "color",
+            "$value": "#000000"
+          },
+          "Hover": {
+            "$type": "color",
+            "$value": "#000000"
+          },
+          "Focused": {
+            "$type": "color",
+            "$value": "#000000"
+          },
+          "Selected": {
+            "$type": "color",
+            "$value": "#000000"
+          },
+          "Pressed": {
+            "$type": "color",
+            "$value": "#000000"
+          },
+          "Disabled": {
+            "$type": "color",
+            "$value": "{Dark Stone.40}"
+          }
+        }
+      },
+      "AI": {
+        "Enabled": {
+          "$type": "color",
+          "$value": "#000000"
+        },
+        "Hover": {
+          "$type": "color",
+          "$value": "#000000"
+        },
+        "Focused": {
+          "$type": "color",
+          "$value": "#000000"
+        },
+        "Selected": {
+          "$type": "color",
+          "$value": "#000000"
+        },
+        "Pressed": {
+          "$type": "color",
+          "$value": "#000000"
+        },
+        "Disabled": {
+          "$type": "color",
+          "$value": "{Dark Stone.40}"
+        }
+      }
     }
   },
   "Border": {
