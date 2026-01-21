@@ -891,6 +891,16 @@
           "$value": "#ffffff"
         }
       }
+    },
+    "Query Builder": {
+      "Odd Group": {
+        "$type": "color",
+        "$value": "#ffffff"
+      },
+      "Even Group": {
+        "$type": "color",
+        "$value": "#e0e0e0"
+      }
     }
   },
   "Text": {
