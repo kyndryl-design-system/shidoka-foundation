@@ -891,6 +891,16 @@
           "$value": "{Warm Gray.10}"
         }
       }
+    },
+    "Query Builder": {
+      "Odd Group": {
+        "$type": "color",
+        "$value": "{Cool Gray.8}"
+      },
+      "Even Group": {
+        "$type": "color",
+        "$value": "{Cool Gray.3}"
+      }
     }
   },
   "Text": {

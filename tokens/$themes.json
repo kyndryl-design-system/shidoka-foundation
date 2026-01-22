@@ -1132,7 +1132,9 @@
       "Icon.Status Picker.Information.High.Focused": "b550736943fab95fe75833d1d8a2101cd32ca920",
       "Icon.Status Picker.Information.High.Selected": "27588147fc359ed97558d43d53dfadfeecbb4618",
       "Icon.Status Picker.Information.High.Pressed": "0c0cbd958d3e8c5aa6d0a5dd5801f4744ea0420f",
-      "Icon.Status Picker.Information.High.Disabled": "105fecbb0a045fa30364947920b5c8282d8608a3"
+      "Icon.Status Picker.Information.High.Disabled": "105fecbb0a045fa30364947920b5c8282d8608a3",
+      "Background.Query Builder.Odd Group": "333d97c2eee1e509238c5d893c119a9293ecf6f2",
+      "Background.Query Builder.Even Group": "aef8900e50b8ea19be720a31a5bcfc3447e60c34"
     },
     "$figmaModeId": "114:4",
     "$figmaCollectionId": "VariableCollectionId:114:768"
@@ -1914,7 +1916,9 @@
       "Icon.Status Picker.Information.High.Focused": "b550736943fab95fe75833d1d8a2101cd32ca920",
       "Icon.Status Picker.Information.High.Selected": "27588147fc359ed97558d43d53dfadfeecbb4618",
       "Icon.Status Picker.Information.High.Pressed": "0c0cbd958d3e8c5aa6d0a5dd5801f4744ea0420f",
-      "Icon.Status Picker.Information.High.Disabled": "105fecbb0a045fa30364947920b5c8282d8608a3"
+      "Icon.Status Picker.Information.High.Disabled": "105fecbb0a045fa30364947920b5c8282d8608a3",
+      "Background.Query Builder.Odd Group": "333d97c2eee1e509238c5d893c119a9293ecf6f2",
+      "Background.Query Builder.Even Group": "aef8900e50b8ea19be720a31a5bcfc3447e60c34"
     },
     "$figmaModeId": "13995:1",
     "$figmaCollectionId": "VariableCollectionId:114:768"
@@ -2696,7 +2700,9 @@
       "Icon.Status Picker.Information.High.Focused": "b550736943fab95fe75833d1d8a2101cd32ca920",
       "Icon.Status Picker.Information.High.Selected": "27588147fc359ed97558d43d53dfadfeecbb4618",
       "Icon.Status Picker.Information.High.Pressed": "0c0cbd958d3e8c5aa6d0a5dd5801f4744ea0420f",
-      "Icon.Status Picker.Information.High.Disabled": "105fecbb0a045fa30364947920b5c8282d8608a3"
+      "Icon.Status Picker.Information.High.Disabled": "105fecbb0a045fa30364947920b5c8282d8608a3",
+      "Background.Query Builder.Odd Group": "333d97c2eee1e509238c5d893c119a9293ecf6f2",
+      "Background.Query Builder.Even Group": "aef8900e50b8ea19be720a31a5bcfc3447e60c34"
     },
     "$figmaModeId": "18419:1",
     "$figmaCollectionId": "VariableCollectionId:114:768"
