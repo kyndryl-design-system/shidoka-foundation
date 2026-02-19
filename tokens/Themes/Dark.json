@@ -2,57 +2,122 @@
   "Background": {
     "Container": {
       "Default": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Interactive.115}"
       },
       "Subtle": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Opacity.Light.5}"
       },
       "Bold": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Cool Gray.40}"
       },
       "Soft": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Interactive.113}"
       },
       "Footer": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Interactive.115}"
       },
       "Secondary": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Interactive.107}"
       },
       "Ai": {
         "Default": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Interactive.120}"
         },
         "Subtle": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Opacity.Light.5}"
         },
         "Level 2": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Interactive.110}"
         }
       },
       "Surface Tint": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Opacity.Dark.85}"
       },
       "Tertiary": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Opacity.Light.5}"
       },
       "Overlay": {
         "Background": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Interactive.107}"
         },
         "Footer": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Interactive.105}"
         }
@@ -61,48 +126,103 @@
     "UI": {
       "Default": {
         "Dark": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Cool Gray.10}"
         },
         "Brand": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Warm Red.50-brand}"
         },
         "Default": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Cool Gray.10}"
         },
         "Hover": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Interactive.20}"
         },
         "Pressed": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Interactive.20}"
         },
         "Focus": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Interactive.20}"
         },
         "Disabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Opacity.Light.5}"
         },
         "Secondary": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Interactive.40}"
         }
       },
       "Hollow": {
         "Default": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Cool Gray.90}"
         },
         "Hover": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Interactive.70}"
         },
         "Pressed": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Interactive.30}"
         }
@@ -112,66 +232,141 @@
       "Primary": {
         "State": {
           "Default": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Spruce.60}"
           },
           "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Spruce.40}"
           },
           "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Spruce.70}"
           },
           "Selected": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Spruce.90}"
           },
           "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Spruce.90}"
           }
         },
         "Destructive": {
           "Default": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Misc.Red.80}"
           },
           "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Misc.Red.70}"
           },
           "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Misc.Red.90}"
           },
           "Selected": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Misc.Red.100}"
           },
           "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Misc.Red.100}"
           }
         },
         "AI": {
           "Default": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Opacity.Light.0}"
           },
           "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Opacity.Light.5}"
           },
           "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Interactive.120}"
           },
           "Selected": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Opacity.Light.10}"
           },
           "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Opacity.Light.5}"
           }
@@ -179,22 +374,47 @@
       },
       "Web": {
         "Default": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.60}"
         },
         "Hover": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.80}"
         },
         "Pressed": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.90}"
         },
         "Selected": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.50}"
         },
         "Focused": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.50}"
         }
@@ -202,66 +422,141 @@
       "Secondary": {
         "State": {
           "Default": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Spruce.90}"
           },
           "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Spruce.80}"
           },
           "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Spruce.100}"
           },
           "Selected": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Spruce.80}"
           },
           "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Spruce.80}"
           }
         },
         "Destructive": {
           "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Misc.Red.90}"
           },
           "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Misc.Red.80}"
           },
           "Default": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Misc.Red.100}"
           },
           "Selected": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Misc.Red.70}"
           },
           "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Misc.Red.70}"
           }
         },
         "AI": {
           "Default": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Spruce.90}"
           },
           "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Spruce.80}"
           },
           "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Spruce.100}"
           },
           "Selected": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Spruce.80}"
           },
           "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Spruce.80}"
           }
@@ -270,22 +565,47 @@
       "Tertiary": {
         "State": {
           "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Interactive.100}"
           },
           "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Interactive.110}"
           },
           "Default": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Interactive.105}"
           },
           "Selected": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Interactive.115}"
           },
           "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Interactive.115}"
           }
@@ -294,36 +614,76 @@
       "Ghost": {
         "State": {
           "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Interactive.95}"
           },
           "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Interactive.110}"
           },
           "Selected": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Interactive.105}"
           }
         },
         "AI": {
           "Default": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Opacity.Light.0}"
           },
           "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Opacity.Light.5}"
           },
           "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Interactive.120}"
           },
           "Selected": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Interactive.120}"
           },
           "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Opacity.Light.5}"
           }
@@ -332,61 +692,131 @@
     },
     "Accent": {
       "Subtle": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Interactive.105}"
       },
       "Secondary": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Interactive.107}"
       },
       "Tertiary": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Cool Gray.70}"
       },
       "Light": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Interactive.110}"
       }
     },
     "Opacity": {
       "1": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Opacity.Light.3}"
       },
       "2": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Opacity.Light.3}"
       },
       "3": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Opacity.Light.3}"
       },
       "4": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Opacity.Light.40}"
       },
       "8": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Opacity.Dark.85}"
       },
       "Disabled": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Cool Gray.3}"
       },
       "4 - Dark": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Opacity.Dark.40}"
       },
       "8 - Dark": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Opacity.Dark.85}"
       },
       "Inverse": {
         "1": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Interactive.115 Opaque}"
         },
         "Backdrop": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Opacity.Light.10}"
         }
@@ -394,61 +824,126 @@
     },
     "Forms": {
       "Secondary": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Interactive.105}"
       },
       "Default": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Opacity.Dark.30}"
       },
       "Ai": {
         "Default": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Opacity.Dark.30}"
         }
       },
       "Disabled": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Cool Gray.80}"
       }
     },
     "Table": {
       "row-active": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Interactive.100}"
       },
       "alt-row": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Cool Gray.93}"
       },
       "footer": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Interactive.105}"
       },
       "row": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Cool Gray.90}"
       },
       "row-active-nested": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Interactive.90}"
       },
       "header": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Interactive.105}"
       }
     },
     "Page": {
       "Overlay": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Opacity.Dark.85}"
       },
       "Default": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Interactive.110}"
       },
       "Dashboard": {
         "Dashboard Default": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Interactive.115}"
         }
@@ -456,20 +951,40 @@
     },
     "Logo": {
       "Bridge-txt": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Dark Stone.10}"
       },
       "AI": {
         "Indicator": {
           "Head": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Warm Red.20}"
           },
           "Halo": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Warm Red.40}"
           },
           "Background": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Warm Red.90}"
           }
@@ -478,74 +993,154 @@
     },
     "Navigation": {
       "local-nav": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Opacity.Light.3}"
       },
       "footer": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Opacity.Light.3}"
       },
       "default": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Opacity.Light.3}"
       }
     },
     "Gradients": {
       "Interactive Gradient End": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Interactive.100}"
       },
       "Interactive Gradient Start": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Interactive.107}"
       },
       "Ai": {
         "Linear Top Gradient 1": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Warm Red.70}"
         },
         "Linear Bottom Gradient 1": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Interactive.120}"
         },
         "Loader Start Gradient": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Opacity.AI Warm Red.40}"
         },
         "Loader End Gradient": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Opacity.AI Spruce.40}"
         },
         "Loader Mid Gradient": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Opacity.Dark.10}"
         }
       },
       "Interactive Gradient End 2": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Interactive.113 Opaque}"
       }
     },
     "Card": {
       "Background": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Opacity.Light.3}"
       },
       "Default": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Opacity.Light.5}"
       },
       "Hover": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Opacity.Light.10}"
       }
     },
     "Highlight": {
       "FIll": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Skye.80}"
       },
       "Border": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Skye.50}"
       }
@@ -553,38 +1148,78 @@
     "Loader": {
       "Skeleton": {
         "Default": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.70}"
         },
         "Secondary": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.60}"
         },
         "Tertiary": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.60}"
         }
       },
       "Bar": {
         "Primary": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Cool Gray.10}"
         },
         "Secondary": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Cool Gray.70}"
         }
       },
       "Progress": {
         "Complete": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spruce.30}"
         },
         "Active": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Interactive.80-primary}"
         },
         "Background": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Interactive.105}"
         }
@@ -593,44 +1228,94 @@
     "Link": {
       "Level": {
         "Default-Light": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Interactive.70}"
         },
         "Hover-Light": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Interactive.60}"
         },
         "Pressed-Light": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Interactive.95}"
         },
         "Disabled-Light": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Opacity.Dark.30}"
         }
       },
       "AI": {
         "Default": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spruce.20}"
         },
         "Hover": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spruce.50}"
         },
         "Pressed": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spruce.70}"
         },
         "Focused": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spruce.20}"
         },
         "Disabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Opacity.Light.30}"
         },
         "Secondary": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.10}"
         }
@@ -639,67 +1324,147 @@
     "Menu": {
       "State": {
         "Default": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Interactive.115}"
         },
         "Focused": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Interactive.115}"
         },
         "Hover": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spruce.70}"
         },
         "Pressed": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spruce.90}"
         },
         "Open": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Interactive.105}"
         },
         "Disabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Interactive.115}"
         },
         "Category": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Interactive.115}"
         },
         "Active": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spruce.50}"
         },
         "Ai": {
           "Active": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Interactive.105}"
           },
           "Category": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Interactive.115}"
           },
           "Default": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Interactive.115}"
           },
           "Disabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Opacity.Light.5}"
           },
           "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Interactive.110}"
           },
           "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Cool Gray.80}"
           },
           "Open": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Interactive.105}"
           },
           "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Interactive.90}"
           }
@@ -709,78 +1474,168 @@
     "Status Buttons": {
       "Error": {
         "Hover": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Misc.Red.90}"
         },
         "Enabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Error.110}"
         },
         "Focused": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Error.110}"
         },
         "Selected": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
-          "$value": "{Misc.Red.80}"
+          "$value": "{Misc.Red.70}"
         },
         "Pressed": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Error.120}"
         },
         "Disabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Warm Gray.90}"
         }
       },
       "Warning": {
         "Enabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Warning.110}"
         },
         "Hover": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Amber.90}"
         },
         "Focused": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Warning.110}"
         },
         "Selected": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Amber.80}"
         },
         "Pressed": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Amber.100}"
         },
         "Disabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Warm Gray.90}"
         }
       },
       "Success": {
         "Enabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spring Green.70}"
         },
         "Hover": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spring Green.60}"
         },
         "Focused": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spring Green.70}"
         },
         "Selected": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
-          "$value": "{Spring Green.50}"
+          "$value": "{Spring Green.40}"
         },
         "Pressed": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spring Green.80}"
         },
         "Disabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Warm Gray.90}"
         }
@@ -788,78 +1643,168 @@
       "Information": {
         "Low": {
           "Enabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Sea.100}"
           },
           "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Sea.90}"
           },
           "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Sea.100}"
           },
           "Selected": {
-            "$type": "color",
-            "$value": "{Sea.80}"
-          },
-          "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Sea.105}"
           },
+          "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
+            "$type": "color",
+            "$value": "{Sea.110}"
+          },
           "Disabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Warm Gray.90}"
           }
         },
         "Medium": {
           "Enabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Sea.80}"
           },
           "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Sea.60}"
           },
           "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Sea.80}"
           },
           "Selected": {
-            "$type": "color",
-            "$value": "{Sea.90}"
-          },
-          "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Sea.100}"
           },
+          "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
+            "$type": "color",
+            "$value": "{Sea.105}"
+          },
           "Disabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Warm Gray.90}"
           }
         },
         "High": {
           "Enabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Misc.Blue.20}"
           },
           "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
-            "$value": "{Misc.Blue.10}"
+            "$value": "{Misc.Blue.40}"
           },
           "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Misc.Blue.20}"
           },
           "Selected": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
-            "$value": "{Misc.Blue.30}"
+            "$value": "{Misc.Blue.60}"
           },
           "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
-            "$value": "{Misc.Blue.40}"
+            "$value": "{Misc.Blue.80}"
           },
           "Disabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Warm Gray.90}"
           }
@@ -867,26 +1812,56 @@
       },
       "AI": {
         "Enabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spruce.80}"
         },
         "Hover": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spruce.70}"
         },
         "Focused": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spruce.80}"
         },
         "Selected": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spruce.60}"
         },
         "Pressed": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spruce.90}"
         },
         "Disabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Warm Gray.90}"
         }
@@ -894,10 +1869,20 @@
     },
     "Query Builder": {
       "Odd Group": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Interactive.120}"
       },
       "Even Group": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Interactive.110}"
       }
@@ -906,52 +1891,112 @@
   "Text": {
     "Level": {
       "Primary": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Dark Stone.10}"
       },
       "Secondary": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Dark Stone.20}"
       },
       "Tertiary": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Spruce.30}"
       },
       "Tertiary-bold": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Spruce.10}"
       },
       "Dark": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Dark Stone.80}"
       },
       "Light": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Neutral.White}"
       },
       "Disabled": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Dark Stone.40}"
       }
     },
     "Variant": {
       "Brand": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Warm Red.50-brand}"
       },
       "Inversed": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Dark Stone.90}"
       },
       "Eyebrow": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Spruce.30}"
       },
       "Destructive": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Misc.Red.Light}"
       },
       "Placeholder": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Dark Stone.50}"
       }
@@ -959,18 +2004,38 @@
     "Link": {
       "Level": {
         "Default": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spruce.20}"
         },
         "Hover": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spruce.50}"
         },
         "Pressed": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spruce.70}"
         },
         "Disabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Opacity.Light.40}"
         }
@@ -978,72 +2043,152 @@
     },
     "Label": {
       "Light Label": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Dark Stone.20}"
       },
       "Dark Label": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Dark Stone.20}"
       }
     },
     "Title": {
       "Tertiary": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Interactive.30}"
       },
       "Secondary": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Interactive.15}"
       },
       "Primary": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Interactive.5}"
       },
       "Ai Primary": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Interactive.5}"
       },
       "Ai Secondary": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Interactive.15}"
       },
       "Ai Tertiary": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Spruce.20}"
       }
     },
     "Forms": {
       "Input Field Text": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Dark Stone.20}"
       },
       "Label-Secondary": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Dark Stone.30}"
       },
       "Label-Primary": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Dark Stone.20}"
       },
       "Disabled": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Cool Gray.90}"
       }
     },
     "Density": {
       "Medium": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Dark Stone.20}"
       },
       "Dark": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Cool Gray.10}"
       },
       "Light": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Opacity.Light.86}"
       },
       "Darker": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Neutral.White}"
       }
@@ -1051,50 +2196,105 @@
     "Button": {
       "Light": {
         "Primary": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Interactive.10}"
         },
         "Destructive": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Neutral.White}"
         },
         "Secondary": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spruce.30}"
         },
         "Tertiary": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spruce.30}"
         },
         "Disabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Cool Gray.5}"
         }
       },
       "Dark": {
         "Primary": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Neutral.White}"
         },
         "Destructive": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Neutral.White}"
         },
         "Secondary": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Neutral.White}"
         },
         "Tertiary": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Neutral.White}"
         },
         "Disabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Misc.Red.Light}"
         }
       },
       "Ai": {
         "Default": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.20}"
         }
@@ -1102,18 +2302,38 @@
     },
     "Status": {
       "Red": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Misc.Red.50}"
       },
       "Amber": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Misc.Yellow.Dark}"
       },
       "Green": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Misc.Green.30}"
       },
       "Blue": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Misc.Blue.110}"
       }
@@ -1121,78 +2341,168 @@
     "Status Buttons": {
       "Error": {
         "Enabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Error.10}"
         },
         "Hover": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Error.10}"
         },
         "Focused": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Error.10}"
         },
         "Selected": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
-          "$value": "{RAG.Error.10}"
+          "$value": "{Neutral.White}"
         },
         "Pressed": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Error.10}"
         },
         "Disabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.40}"
         }
       },
       "Warning": {
         "Enabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Misc.Yellow.10}"
         },
         "Hover": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Misc.Yellow.10}"
         },
         "Focused": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Misc.Yellow.10}"
         },
         "Selected": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
-          "$value": "{Misc.Yellow.10}"
+          "$value": "{Neutral.White}"
         },
         "Pressed": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Misc.Yellow.10}"
         },
         "Disabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.40}"
         }
       },
       "Success": {
         "Enabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Success.10}"
         },
         "Hover": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Success.10}"
         },
         "Focused": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Success.10}"
         },
         "Selected": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
-          "$value": "{RAG.Success.10}"
+          "$value": "{Spring Green.100}"
         },
         "Pressed": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Success.10}"
         },
         "Disabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.40}"
         }
@@ -1200,78 +2510,168 @@
       "Information": {
         "Low": {
           "Enabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{RAG.Information.10}"
           },
           "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{RAG.Information.10}"
           },
           "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{RAG.Information.10}"
           },
           "Selected": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{RAG.Information.10}"
           },
           "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{RAG.Information.10}"
           },
           "Disabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Dark Stone.40}"
           }
         },
         "Medium": {
           "Enabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{RAG.Information.10}"
           },
           "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Sea.110}"
           },
           "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{RAG.Information.10}"
           },
           "Selected": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{RAG.Information.10}"
           },
           "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{RAG.Information.10}"
           },
           "Disabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Dark Stone.40}"
           }
         },
         "High": {
           "Enabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{RAG.Information.120}"
           },
           "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{RAG.Information.120}"
           },
           "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{RAG.Information.120}"
           },
           "Selected": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{RAG.Information.125}"
           },
           "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
-            "$value": "{RAG.Information.120}"
+            "$value": "{Neutral.White}"
           },
           "Disabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Dark Stone.40}"
           }
@@ -1279,26 +2679,56 @@
       },
       "AI": {
         "Enabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spruce.20}"
         },
         "Hover": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spruce.15}"
         },
         "Focused": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spruce.10}"
         },
         "Selected": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spruce.10}"
         },
         "Pressed": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spruce.20}"
         },
         "Disabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.40}"
         }
@@ -1307,162 +2737,347 @@
   },
   "Icon": {
     "Primary": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Cool Gray.10}"
     },
     "Secondary": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Cool Gray.30}"
     },
     "Tertiary": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Spruce.20}"
     },
     "Inverse": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Cool Gray.90}"
     },
     "Brand": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Warm Red.50-brand}"
     },
     "Disabled": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Dark Stone.40}"
     },
     "Destructive": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Warm Red.40}"
     },
     "switcher-icon": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Interactive.60}"
     },
     "Accent": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Skye.50}"
     },
     "Duotone": {
       "Primary": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Cool Gray.10}"
       },
       "Secondary": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Warm Red.50-brand}"
       },
       "Inverse": {
         "Primary": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.10}"
         },
         "Secondary": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.10}"
         }
       }
     },
     "Dark": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Dark Stone.80}"
     },
     "Light": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Dark Stone.10}"
     },
     "Interactive": {
       "Primary": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Spruce.40}"
       },
       "Secondary": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Spruce.20}"
       }
     },
     "AI Spruce": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Spruce.20}"
     },
     "AI Red": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Warm Red.40}"
     },
     "Status Buttons": {
       "Error": {
         "Enabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Error.10}"
         },
         "Hover": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Error.10}"
         },
         "Focused": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Error.10}"
         },
         "Selected": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Error.10}"
         },
         "Pressed": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Error.10}"
         },
         "Disabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.40}"
         }
       },
       "Warning": {
         "Enabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Misc.Yellow.10}"
         },
         "Hover": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Misc.Yellow.10}"
         },
         "Focused": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Misc.Yellow.10}"
         },
         "Selected": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Misc.Yellow.10}"
         },
         "Pressed": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Misc.Yellow.10}"
         },
         "Disabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.40}"
         }
       },
       "Success": {
         "Enabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Success.10}"
         },
         "Hover": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Success.10}"
         },
         "Focused": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Success.10}"
         },
         "Selected": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Success.10}"
         },
         "Pressed": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Success.10}"
         },
         "Disabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.40}"
         }
@@ -1470,78 +3085,168 @@
       "Information": {
         "Low": {
           "Enabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{RAG.Information.10}"
           },
           "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{RAG.Information.10}"
           },
           "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{RAG.Information.10}"
           },
           "Selected": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{RAG.Information.10}"
           },
           "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{RAG.Information.10}"
           },
           "Disabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Dark Stone.40}"
           }
         },
         "Medium": {
           "Enabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{RAG.Information.10}"
           },
           "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Sea.110}"
           },
           "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{RAG.Information.10}"
           },
           "Selected": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{RAG.Information.10}"
           },
           "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{RAG.Information.10}"
           },
           "Disabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Dark Stone.40}"
           }
         },
         "High": {
           "Enabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{RAG.Information.120}"
           },
           "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{RAG.Information.120}"
           },
           "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{RAG.Information.120}"
           },
           "Selected": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{RAG.Information.125}"
           },
           "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{RAG.Information.120}"
           },
           "Disabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Dark Stone.40}"
           }
@@ -1549,26 +3254,56 @@
       },
       "AI": {
         "Enabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spruce.20}"
         },
         "Hover": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spruce.15}"
         },
         "Focused": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spruce.10}"
         },
         "Selected": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spruce.10}"
         },
         "Pressed": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spruce.20}"
         },
         "Disabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.40}"
         }
@@ -1578,100 +3313,219 @@
   "Border": {
     "Variants": {
       "Light": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Opacity.Light.10}"
       },
       "Focus": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Spruce.40}"
       },
       "Destructive": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Warm Red.30}"
       },
       "Brand": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Warm Red.50-brand}"
       },
       "Inverse": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Cool Gray.90}"
       },
       "Transparent": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Opacity.Dark.0}"
       },
       "Ai": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Opacity.AI Warm Red.60}"
+      },
+      "Drag": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        "$type": "color",
+        "$value": "{Spruce.70}"
       }
     },
     "Level": {
       "Primary": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Opacity.Light.30}"
       },
       "Secondary": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Opacity.Light.20}"
       },
       "Tertiary": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Opacity.Light.10}"
       }
     },
     "UI": {
       "Pressed": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Interactive.10}"
       },
       "Default": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Opacity.Light.30}"
       },
       "Hover": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Interactive.20}"
       },
       "Disabled": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Opacity.Light.20}"
       },
       "Error": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{RAG.Error.20}"
       },
       "Component Border": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Interactive.50}"
       }
     },
     "Accent": {
       "Primary": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Spring Green.80}"
       },
       "Secondary": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Interactive.100}"
       }
     },
     "Card": {
       "Hover": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Spruce.20}"
       },
       "Default": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Opacity.Light.20}"
       },
       "Clickable": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Spruce.40}"
       }
     },
     "Forms": {
       "Default": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Cool Gray.70}"
       }
@@ -1680,44 +3534,94 @@
       "Primary": {
         "Destructive": {
           "Default": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Warm Red.80}"
           },
           "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Warm Red.70}"
           },
           "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Warm Red.90}"
           },
           "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Warm Red.20}"
           },
           "Selected": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Warm Red.100}"
           }
         },
         "State": {
           "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Spruce.70}"
           },
           "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Spruce.40}"
           },
           "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Spruce.50}"
           },
           "Default": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Spruce.60}"
           },
           "Selected": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Spruce.90}"
           }
@@ -1726,44 +3630,94 @@
       "Secondary": {
         "State": {
           "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Spruce.100}"
           },
           "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Spruce.80}"
           },
           "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Spruce.80}"
           },
           "Default": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Spruce.90}"
           },
           "Selected": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Spruce.80}"
           }
         },
         "Destructive": {
           "Default": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Misc.Red.20}"
           },
           "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Misc.Red.80}"
           },
           "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Misc.Red.90}"
           },
           "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Misc.Red.30}"
           },
           "Selected": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Misc.Red.70}"
           }
@@ -1772,22 +3726,47 @@
       "Tertiary": {
         "State": {
           "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Interactive.100}"
           },
           "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Interactive.115}"
           },
           "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Interactive.110}"
           },
           "Default": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Interactive.105}"
           },
           "Selected": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Interactive.115}"
           }
@@ -1796,44 +3775,94 @@
       "Ai": {
         "State": {
           "Default": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Opacity.AI Warm Red.0}"
           },
           "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Warm Red.40}"
           },
           "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Opacity.AI Warm Red.0}"
           },
           "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Opacity.AI Warm Red.0}"
           },
           "Selected": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Opacity.AI Warm Red.0}"
           }
         },
         "Secondary": {
           "Default": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Spruce.60}"
           },
           "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Spruce.80}"
           },
           "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Spruce.50}"
           },
           "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Spruce.80}"
           },
           "Selected": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Spruce.80}"
           }
@@ -1841,22 +3870,47 @@
       },
       "Web": {
         "Default": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.30}"
         },
         "Focused": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.50}"
         },
         "Hover": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.80}"
         },
         "Pressed": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.90}"
         },
         "Selected": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.50}"
         }
@@ -1864,30 +3918,60 @@
     },
     "Dropshadow": {
       "Ai": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Warm Red.100}"
       }
     },
     "Container": {
       "Hover": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Spruce.40}"
       },
       "Selected": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Spruce.70}"
       },
       "Default": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Opacity.Light.20}"
       }
     },
     "Ai": {
       "Default Gradient Start": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Warm Red.40}"
       },
       "Default Gradient End": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Spruce.20}"
       }
@@ -1895,78 +3979,168 @@
     "Status Buttons": {
       "Error": {
         "Enabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Misc.Red.40}"
         },
         "Hover": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
-          "$value": "{RAG.Error.10}"
+          "$value": "{Misc.Red.30}"
         },
         "Focused": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Misc.Red.50}"
         },
         "Selected": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
-          "$value": "{Misc.Red.30}"
+          "$value": "{Misc.Red.20}"
         },
         "Pressed": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Misc.Red.70}"
         },
         "Disabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Opacity.Light.20}"
         }
       },
       "Warning": {
         "Enabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Amber.20}"
         },
         "Hover": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Misc.Yellow.30}"
         },
         "Focused": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Amber.20}"
         },
         "Selected": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
-          "$value": "{Misc.Yellow.40}"
+          "$value": "{Misc.Yellow.20}"
         },
         "Pressed": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Amber.60}"
         },
         "Disabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Opacity.Light.20}"
         }
       },
       "Success": {
         "Enabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Success.20}"
         },
         "Hover": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spring Green.40}"
         },
         "Focused": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spring Green.30}"
         },
         "Selected": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
-          "$value": "{Spring Green.30}"
+          "$value": "{Spring Green.10}"
         },
         "Pressed": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spring Green.60}"
         },
         "Disabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Opacity.Light.20}"
         }
@@ -1974,78 +4148,168 @@
       "Information": {
         "Low": {
           "Enabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
-            "$value": "{Misc.Blue.30}"
+            "$value": "{Misc.Blue.40}"
           },
           "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Misc.Blue.30}"
           },
           "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Misc.Blue.30}"
           },
           "Selected": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Misc.Blue.10}"
           },
           "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Misc.Blue.30}"
           },
           "Disabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Opacity.Light.20}"
           }
         },
         "Medium": {
           "Enabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Misc.Blue.30}"
           },
           "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Misc.Blue.10}"
           },
           "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Misc.Blue.30}"
           },
           "Selected": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Misc.Blue.30}"
           },
           "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Misc.Blue.30}"
           },
           "Disabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Opacity.Light.20}"
           }
         },
         "High": {
           "Enabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Misc.Blue.80}"
           },
           "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Misc.Blue.80}"
           },
           "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Sea.50}"
           },
           "Selected": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
-            "$value": "{Misc.Blue.90}"
+            "$value": "{Sea.20}"
           },
           "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Sea.5}"
           },
           "Disabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ]
+            },
             "$type": "color",
             "$value": "{Opacity.Light.20}"
           }
@@ -2053,26 +4317,56 @@
       },
       "AI": {
         "Enabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spruce.50}"
         },
         "Hover": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spruce.50}"
         },
         "Focused": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spruce.50}"
         },
         "Selected": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spruce.30}"
         },
         "Pressed": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spruce.50}"
         },
         "Disabled": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Opacity.Light.20}"
         }
@@ -2082,108 +4376,228 @@
   "Status": {
     "Informational": {
       "Light": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{RAG.Information.20}"
       },
       "Dark": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{RAG.Information.100}"
       },
       "Accent": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Spruce.70}"
       },
       "Foreground": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Neutral.White}"
       }
     },
     "Warning": {
       "Light": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{RAG.Warning.20}"
       },
       "Dark": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{RAG.Warning.100}"
       },
       "Accent": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Misc.Yellow.30}"
       },
       "Foreground": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Neutral.White}"
       },
       "Foreground - Dark": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Neutral.Black}"
       }
     },
     "Error": {
       "Light": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{RAG.Error.20}"
       },
       "Dark": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{RAG.Error.20}"
       },
       "Accent": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Misc.Red.80}"
       },
       "Foreground": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Neutral.White}"
       }
     },
     "Success": {
       "Light": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{RAG.Success.20}"
       },
       "Dark": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{RAG.Success.100}"
       },
       "Accent": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Misc.Green.60}"
       },
       "Foreground": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Neutral.White}"
       }
     },
     "Neutral": {
       "Light": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Warm Gray.20}"
       },
       "Dark": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Warm Gray.60}"
       },
       "Foreground": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Neutral.White}"
       }
     },
     "Critical": {
       "Dark": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{RAG.Critical.100}"
       },
       "Light": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{RAG.Critical.20}"
       },
       "Foreground": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Neutral.White}"
       },
       "Accent": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Misc.Red.80}"
       }
@@ -2192,42 +4606,92 @@
   "Data Viz": {
     "Categorical 01": {
       "10": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Lilac.30}"
       },
       "09": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Blush.10}"
       },
       "08": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Amber.30}"
       },
       "07": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Jade.10}"
       },
       "01": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Sea.40}"
       },
       "05": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Lilac.10}"
       },
       "06": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Sea.20}"
       },
       "04": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Blush.30}"
       },
       "03": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Amber.10}"
       },
       "02": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Jade.30}"
       }
@@ -2235,89 +4699,194 @@
     "Divergent 01": {
       "Positive": {
         "10": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Sea.100}"
         },
         "20": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Sea.90}"
         },
         "30": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Sea.80}"
         },
         "40": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Sea.70}"
         },
         "50": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Sea.60}"
         },
         "60": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Sea.50}"
         },
         "70": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Sea.40}"
         },
         "80": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Sea.30}"
         },
         "90": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Sea.20}"
         },
         "100": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Sea.10}"
         }
       },
       "Negative": {
         "10": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Amber.100}"
         },
         "20": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Amber.90}"
         },
         "30": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Amber.80}"
         },
         "40": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Amber.70}"
         },
         "50": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Amber.60}"
         },
         "60": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Amber.50}"
         },
         "70": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Amber.40}"
         },
         "80": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Amber.30}"
         },
         "90": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Amber.20}"
         },
         "100": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Amber.10}"
         }
       },
       "Neutral": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Dark Stone.80}"
       }
@@ -2325,88 +4894,193 @@
     "Divergent 02": {
       "Positive": {
         "10": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Jade.100}"
         },
         "20": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Jade.90}"
         },
         "30": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Jade.80}"
         },
         "40": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Jade.70}"
         },
         "50": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Jade.60}"
         },
         "60": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Jade.50}"
         },
         "70": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Jade.40}"
         },
         "80": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Jade.30}"
         },
         "90": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Jade.20}"
         },
         "100": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Jade.10}"
         }
       },
       "Neutral": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Dark Stone.80}"
       },
       "Negative": {
         "10": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Blush.100}"
         },
         "20": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Blush.90}"
         },
         "30": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Blush.80}"
         },
         "40": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Blush.70}"
         },
         "50": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Blush.60}"
         },
         "60": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Blush.50}"
         },
         "70": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Blush.40}"
         },
         "80": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Blush.30}"
         },
         "90": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Blush.20}"
         },
         "100": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Blush.10}"
         }
@@ -2414,220 +5088,480 @@
     },
     "Sequential 01": {
       "10": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Sea.100}"
       },
       "20": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Sea.90}"
       },
       "30": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Sea.80}"
       },
       "40": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Sea.70}"
       },
       "50": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Sea.60}"
       },
       "60": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Sea.50}"
       },
       "70": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Sea.40}"
       },
       "80": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Sea.30}"
       },
       "90": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Sea.20}"
       },
       "100": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Sea.10}"
       }
     },
     "Sequential 02": {
       "10": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Jade.100}"
       },
       "20": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Jade.90}"
       },
       "30": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Jade.80}"
       },
       "40": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Jade.70}"
       },
       "50": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Jade.60}"
       },
       "60": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Jade.50}"
       },
       "70": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Jade.40}"
       },
       "80": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Jade.30}"
       },
       "90": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Jade.20}"
       },
       "100": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Jade.10}"
       }
     },
     "Sequential 03": {
       "10": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Amber.100}"
       },
       "20": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Amber.90}"
       },
       "30": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Amber.80}"
       },
       "40": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Amber.70}"
       },
       "50": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Amber.60}"
       },
       "60": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Amber.50}"
       },
       "70": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Amber.40}"
       },
       "80": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Amber.30}"
       },
       "90": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Amber.20}"
       },
       "100": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Amber.10}"
       }
     },
     "Sequential 04": {
       "10": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Blush.100}"
       },
       "20": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Blush.90}"
       },
       "30": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Blush.80}"
       },
       "40": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Blush.70}"
       },
       "50": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Blush.60}"
       },
       "60": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Blush.50}"
       },
       "70": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Blush.40}"
       },
       "80": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Blush.30}"
       },
       "90": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Blush.20}"
       },
       "100": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Blush.10}"
       }
     },
     "Sequential 05": {
       "10": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Lilac.100}"
       },
       "20": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Lilac.90}"
       },
       "30": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Lilac.80}"
       },
       "40": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Lilac.70}"
       },
       "50": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Lilac.60}"
       },
       "60": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Lilac.50}"
       },
       "70": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Lilac.40}"
       },
       "80": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Lilac.30}"
       },
       "90": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Lilac.20}"
       },
       "100": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Lilac.10}"
       }
     },
     "Level": {
       "Secondary": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Warm Gray.60}"
       },
       "Primary": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Warm Gray.30}"
       }
@@ -2635,16 +5569,31 @@
     "Neutral": {
       "Border": {
         "Primary": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Opacity.Light.86}"
         },
         "Secondary": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Opacity.Light.30}"
         }
       },
       "Background": {
         "Color": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Cool Gray.80}"
         }
@@ -2654,10 +5603,20 @@
   "Utility": {
     "Interactive": {
       "graphic-alt": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Cool Gray.60}"
       },
       "graphic": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Cool Gray.80}"
       }
@@ -2665,108 +5624,228 @@
     "Elevation": {
       "Default": {
         "1": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Opacity.Dark.10}"
         },
         "2": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Opacity.Dark.3}"
         },
         "L1": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Opacity.Dark.20}"
         },
         "L2": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Opacity.Dark.30}"
         },
         "L2 - Overflow": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Opacity.Dark.50}"
         },
         "L3": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Opacity.Dark.25}"
         },
         "L4": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Opacity.Dark.15}"
         }
       },
       "AI": {
         "L1": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Opacity.AI Warm Red.20}"
         },
         "L2": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Opacity.AI Warm Red.30}"
         },
         "L2 - Overflow": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Opacity.AI Warm Red.50}"
         },
         "L3": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Opacity.AI Warm Red.25}"
         },
         "L4": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Opacity.AI Warm Red.15}"
         }
       }
     },
     "Variant Border": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Spring Green.80}"
     }
   },
   "States": {
     "Disabled-label": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Warm Gray.50}"
     },
     "Static Solid Label": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Cool Gray.5}"
     },
     "Disabled": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Dark Stone.80}"
     },
     "Static": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Cool Gray.5}"
     }
   },
   "Main Palette": {
     "Accent": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Warm Red.50-brand}"
     },
     "Secondary": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Spruce.20}"
     },
     "Tertiary": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Spring Green.80}"
     },
     "Primary": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Interactive.70}"
     }
   },
   "Container": {
     "footer": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Interactive.105}"
     },
     "Interactive-flat": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Interactive.107}"
     },
     "utility": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Interactive.105}"
     }
@@ -2774,64 +5853,134 @@
   "Date and Time Picker": {
     "Text": {
       "Placeholder": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Dark Stone.20}"
       },
       "Default": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Dark Stone.10}"
       },
       "Secondary": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Dark Stone.40}"
       },
       "Title": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Dark Stone.10}"
       },
       "Inverse": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Neutral.Black}"
       },
       "Dark": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Neutral.Black}"
       },
       "Light": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Neutral.White}"
       }
     },
     "Icon": {
       "Default": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Cool Gray.10}"
       }
     },
     "Background": {
       "Container": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Interactive.105}"
       },
       "Hover": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Interactive.60}"
       },
       "Default": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Cool Gray.10}"
       },
       "Pressed": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Interactive.60}"
       },
       "Container 2": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Interactive.107}"
       }
     },
     "Border": {
       "Focus": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Interactive.20}"
       }
@@ -2839,174 +5988,389 @@
   },
   "Code View": {
     "builtin": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Jade.20}"
     },
     "boolean": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Warm Red.10}"
     },
     "background": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Cool Gray.90}"
     },
     "languagestring": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Amber.10}"
     },
     "variable": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Amber.10}"
     },
     "unit": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Warm Red.10}"
     },
     "tag": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Warm Red.10}"
     },
     "symbol": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Warm Red.10}"
     },
     "string": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Jade.20}"
     },
     "punctuation": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Cool Gray.20}"
     },
     "attribute": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Sea.10}"
     },
     "pseudo-class": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Sea.10}"
     },
     "selector": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Jade.20}"
     },
     "number": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Warm Red.10}"
     },
     "inserted": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Jade.20}"
     },
     "important": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Amber.20}"
     },
     "property": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Warm Red.10}"
     },
     "prolog": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Cool Gray.20}"
     },
     "hexcode": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Warm Red.10}"
     },
     "operator": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Amber.10}"
     },
     "id": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Warm Red.10}"
     },
     "doctype": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Cool Gray.30}"
     },
     "parameter": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Neutral.White}"
     },
     "char": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Jade.20}"
     },
     "deleted": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Warm Red.10}"
     },
     "class": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Jade.20}"
     },
     "attr-value": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Sea.10}"
     },
     "entity": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Amber.10}"
     },
     "cdata": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Cool Gray.30}"
     },
     "default": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Neutral.White}"
     },
     "function": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Blush.20}"
     },
     "constant": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Warm Red.10}"
     },
     "pseudo-element": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Sea.10}"
     },
     "class-name": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Blush.20}"
     },
     "comment": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Cool Gray.20}"
     },
     "attr-name": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Jade.20}"
     },
     "url": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Amber.10}"
     },
     "keyword": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Sea.10}"
     },
     "regex": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Amber.20}"
     },
     "atrule": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Sea.10}"
     },
     "console": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Blush.20}"
     },
     "method": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Blush.20}"
     },
     "language-javascript": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Amber.10}"
     }
@@ -3014,146 +6378,316 @@
   "Tag": {
     "Background": {
       "Default": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Warm Gray.90}"
       },
       "Spruce": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Warm Gray.90}"
       },
       "Sea": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Warm Gray.90}"
       },
       "Lilac": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Warm Gray.90}"
       },
       "AI": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Spruce.80}"
       },
       "Disabled": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Warm Gray.90}"
       },
       "Red": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Warm Gray.90}"
       }
     },
     "Text": {
       "Default": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Earth.20}"
       },
       "Disabled": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Dark Stone.40}"
       },
       "Sea": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Sea.20}"
       },
       "AI": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Spruce.20}"
       },
       "Lilac": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Lilac.20}"
       },
       "Spruce": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Spruce.20}"
       },
       "Red": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Warm Red.20}"
       }
     },
     "Border": {
       "Default": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Warm Gray.80}"
       },
       "AI": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Spruce.50}"
       },
       "Spruce": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Warm Gray.80}"
       },
       "Sea": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Warm Gray.80}"
       },
       "Lilac": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Warm Gray.80}"
       },
       "Disabled": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Warm Gray.90}"
       },
       "Red": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Warm Red.20}"
       }
     },
     "Icon": {
       "Default": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Earth.20}"
       },
       "Spruce": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Spruce.20}"
       },
       "Sea": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Sea.20}"
       },
       "Lilac": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Lilac.20}"
       },
       "AI": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Spruce.20}"
       },
       "Disabled": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Dark Stone.40}"
       },
       "Red": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Warm Red.20}"
       }
     },
     "Hover": {
       "Default": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Warm Gray.70}"
       },
       "Spruce": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Warm Gray.70}"
       },
       "Sea": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Warm Gray.70}"
       },
       "AI": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Spruce.90}"
       },
       "Liliac": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Warm Gray.70}"
       },
       "Red": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        },
         "$type": "color",
         "$value": "{Warm Gray.70}"
       }
@@ -3163,78 +6697,168 @@
     "Heavy": {
       "Background": {
         "Critical": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Critical.100}"
         },
         "Error": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Error.100}"
         },
         "Warning": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Warning.100}"
         },
         "Success": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Success.110}"
         },
         "Information": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Information.110}"
         },
         "Others": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Earth.20}"
         }
       },
       "Text": {
         "Critical": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Neutral.White}"
         },
         "Error": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Neutral.White}"
         },
         "Warning": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.80}"
         },
         "Success": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Neutral.White}"
         },
         "Information": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Neutral.White}"
         },
         "Others": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.80}"
         }
       },
       "Icon": {
         "Critical": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.10}"
         },
         "Information": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.10}"
         },
         "Success": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.10}"
         },
         "Warning": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.80}"
         },
         "Others": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.80}"
         },
         "Error": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.10}"
         }
@@ -3243,104 +6867,224 @@
     "Medium": {
       "Text": {
         "Critical": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Warm Red.10}"
         },
         "Error": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Warm Red.10}"
         },
         "Warning": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Amber.10}"
         },
         "Success": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Success.15}"
         },
         "Information": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Information.10}"
         },
         "Others": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.10}"
         }
       },
       "Background": {
         "Critical": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Critical.110}"
         },
         "Error": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Error.110}"
         },
         "Warning": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Warning.110}"
         },
         "Success": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Success.110}"
         },
         "Information": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Information.110}"
         },
         "Others": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Earth.80}"
         }
       },
       "Icon": {
         "Others": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.10}"
         },
         "Critical": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Warm Red.10}"
         },
         "Success": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Success.15}"
         },
         "Error": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Warm Red.10}"
         },
         "Information": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Information.10}"
         },
         "Warning": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Amber.10}"
         }
       },
       "Border": {
         "Critical": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Blush.80}"
         },
         "Error": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Warm Red.40}"
         },
         "Warning": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Amber.20}"
         },
         "Success": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spring Green.40}"
         },
         "Information": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Information.10}"
         },
         "Others": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.10}"
         }
@@ -3349,78 +7093,168 @@
     "Light": {
       "Text": {
         "Critical": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Misc.Red.40}"
         },
         "Error": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Warm Red.20}"
         },
         "Warning": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Amber.20}"
         },
         "Success": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spring Green.10}"
         },
         "Information": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Information.20}"
         },
         "Others": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.10}"
         }
       },
       "Background": {
         "Critical": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Warm Gray.90}"
         },
         "Error": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Warm Gray.90}"
         },
         "Warning": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Warm Gray.90}"
         },
         "Success": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Warm Gray.90}"
         },
         "Information": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Warm Gray.90}"
         },
         "Others": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Warm Gray.90}"
         }
       },
       "Icon": {
         "Critical": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Misc.Red.40}"
         },
         "Error": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Warm Red.20}"
         },
         "Warning": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Amber.20}"
         },
         "Success": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Spring Green.10}"
         },
         "Information": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{RAG.Information.20}"
         },
         "Others": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ]
+          },
           "$type": "color",
           "$value": "{Dark Stone.10}"
         }
@@ -3429,26 +7263,56 @@
   },
   "AI": {
     "Enabled": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Spruce.80}"
     },
     "Hover": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Spruce.70}"
     },
     "Focused": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Spruce.80}"
     },
     "Selected": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Spruce.60}"
     },
     "Pressed": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Spruce.90}"
     },
     "Disabled": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      },
       "$type": "color",
       "$value": "{Warm Gray.90}"
     }
