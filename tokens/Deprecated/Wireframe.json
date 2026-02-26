@@ -19,27 +19,27 @@
       },
       "Disabled": {
         "$type": "color",
-        "$value": "{Warm Gray.10}"
+        "$value": "{Warm Gray.80}"
       },
       "Cat 6": {
         "$type": "color",
-        "$value": "{Ai Interactive.10}"
+        "$value": "{Ai Interactive.15}"
       },
       "Spruce": {
         "$type": "color",
-        "$value": "{Spruce.10}"
+        "$value": "{Spruce.20}"
       },
       "Interactive": {
         "$type": "color",
-        "$value": "{Earth.10}"
+        "$value": "{Interactive.15}"
       },
       "Cat 4": {
         "$type": "color",
-        "$value": "{Blush.10}"
+        "$value": "{Blush.30}"
       },
       "Cat 3": {
         "$type": "color",
-        "$value": "{Amber.10}"
+        "$value": "{Amber.30}"
       },
       "Error Dark": {
         "$type": "color",
@@ -51,7 +51,7 @@
       },
       "Cat 2": {
         "$type": "color",
-        "$value": "{Jade.10}"
+        "$value": "{Jade.30}"
       },
       "Success Dark": {
         "$type": "color",
@@ -59,7 +59,7 @@
       },
       "Cat 5": {
         "$type": "color",
-        "$value": "{Lilac.10}"
+        "$value": "{Lilac.30}"
       },
       "Critical Light": {
         "$type": "color",
@@ -85,19 +85,19 @@
     "Hover": {
       "Cat 6": {
         "$type": "color",
-        "$value": "{Ai Interactive.15}"
+        "$value": "{Ai Interactive.25}"
       },
       "Cat 4": {
         "$type": "color",
-        "$value": "{Blush.20}"
+        "$value": "{Blush.40}"
       },
       "Cat 3": {
         "$type": "color",
-        "$value": "{Amber.20}"
+        "$value": "{Amber.40}"
       },
       "Cat 2": {
         "$type": "color",
-        "$value": "{Jade.20}"
+        "$value": "{Jade.40}"
       },
       "Cat 1": {
         "$type": "color",
@@ -105,7 +105,7 @@
       },
       "Cat 5": {
         "$type": "color",
-        "$value": "{Lilac.20}"
+        "$value": "{Lilac.40}"
       },
       "Blue Dark": {
         "$type": "color",
@@ -149,11 +149,11 @@
       },
       "Gray": {
         "$type": "color",
-        "$value": "{Cool Gray.20}"
+        "$value": "{Cool Gray.30}"
       },
       "Spruce": {
         "$type": "color",
-        "$value": "{Spruce.20}"
+        "$value": "{Spruce.30}"
       },
       "Error": {
         "$type": "color",
@@ -352,15 +352,15 @@
       "Ai": {
         "Primary": {
           "$type": "color",
-          "$value": "{Ai Interactive.35}"
+          "$value": "#000000"
         },
         "Secondary": {
           "$type": "color",
-          "$value": "{Ai Interactive.25}"
+          "$value": "#000000"
         },
         "Tertiary": {
           "$type": "color",
-          "$value": "{Ai Interactive.10}"
+          "$value": "#000000"
         }
       }
     }

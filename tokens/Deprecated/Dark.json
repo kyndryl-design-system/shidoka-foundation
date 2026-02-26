@@ -346,5 +346,23 @@
         }
       }
     }
+  },
+  "Border": {
+    "Level": {
+      "Ai": {
+        "Primary": {
+          "$type": "color",
+          "$value": "{Ai Interactive.30}"
+        },
+        "Secondary": {
+          "$type": "color",
+          "$value": "{Ai Interactive.50}"
+        },
+        "Tertiary": {
+          "$type": "color",
+          "$value": "{Ai Interactive.70}"
+        }
+      }
+    }
   }
 }

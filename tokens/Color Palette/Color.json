@@ -1158,6 +1158,10 @@
     }
   },
   "Sea": {
+    "5": {
+      "$type": "color",
+      "$value": "#c1ecff"
+    },
     "10": {
       "$type": "color",
       "$value": "#ace1f8"
@@ -1201,6 +1205,14 @@
     "100": {
       "$type": "color",
       "$value": "#004765"
+    },
+    "105": {
+      "$type": "color",
+      "$value": "#01344a"
+    },
+    "110": {
+      "$type": "color",
+      "$value": "#002535"
     }
   },
   "Lilac": {
@@ -1313,7 +1325,7 @@
     "Error": {
       "10": {
         "$type": "color",
-        "$value": "{Warm Red.10}"
+        "$value": "#fededa"
       },
       "20": {
         "$type": "color",
@@ -1325,7 +1337,11 @@
       },
       "110": {
         "$type": "color",
-        "$value": "{Misc.Red.100}"
+        "$value": "#891000"
+      },
+      "120": {
+        "$type": "color",
+        "$value": "#640b00"
       }
     },
     "Success": {
@@ -1347,7 +1363,7 @@
       },
       "110": {
         "$type": "color",
-        "$value": "{Spring Green.60}"
+        "$value": "#187e3f"
       }
     },
     "Warning": {
@@ -1358,6 +1374,14 @@
       "20": {
         "$type": "color",
         "$value": "#ffe88e"
+      },
+      "30": {
+        "$type": "color",
+        "$value": "#ffd966"
+      },
+      "40": {
+        "$type": "color",
+        "$value": "#ffc83d"
       },
       "100": {
         "$type": "color",
@@ -1381,9 +1405,25 @@
         "$type": "color",
         "$value": "#1473ff"
       },
+      "105": {
+        "$type": "color",
+        "$value": "#0343a2"
+      },
       "110": {
         "$type": "color",
         "$value": "#0255d0"
+      },
+      "115": {
+        "$type": "color",
+        "$value": "#02306f"
+      },
+      "120": {
+        "$type": "color",
+        "$value": "#012862"
+      },
+      "125": {
+        "$type": "color",
+        "$value": "#011e4e"
       }
     }
   },
