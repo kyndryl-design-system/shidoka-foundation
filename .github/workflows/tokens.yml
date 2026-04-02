@@ -29,6 +29,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: ${{ env.COMMIT_MSG }}
+          commit_options: '--signoff'
       - name: Create pull request
         continue-on-error: true
         run: gh pr create --base main --head tokens --title '${{ env.COMMIT_MSG }}' --body 'Created by the update-tokens GitHub Actions workflow'
