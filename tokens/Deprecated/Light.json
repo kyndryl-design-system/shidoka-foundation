@@ -2,160 +2,394 @@
   "Tags": {
     "Background": {
       "Blue": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{RAG.Information.20}"
       },
       "Warning": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{RAG.Warning.20}"
       },
       "Success": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{RAG.Success.20}"
       },
       "Error": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{RAG.Error.20}"
       },
       "Disabled": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{Warm Gray.10}"
       },
       "Cat 6": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{Ai Interactive.10}"
       },
       "Spruce": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{Spruce.10}"
       },
       "Interactive": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{Earth.10}"
       },
       "Cat 4": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{Blush.10}"
       },
       "Cat 3": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{Amber.10}"
       },
       "Error Dark": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{RAG.Error.100}"
       },
       "Warning Dark": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{RAG.Warning.100}"
       },
       "Cat 2": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{Jade.10}"
       },
       "Success Dark": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{RAG.Success.100}"
       },
       "Cat 5": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{Lilac.10}"
       },
       "Critical Light": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{RAG.Critical.20}"
       },
       "Information Dark": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{RAG.Information.100}"
       },
       "Cat 1": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{Sea.10}"
       },
       "Gray": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{Cool Gray.10}"
       },
       "Critical Dark": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{RAG.Critical.100}"
       }
     },
     "Hover": {
       "Cat 6": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{Ai Interactive.15}"
       },
       "Cat 4": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{Blush.20}"
       },
       "Cat 3": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{Amber.20}"
       },
       "Cat 2": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{Jade.20}"
       },
       "Cat 1": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{Sea.20}"
       },
       "Cat 5": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{Lilac.20}"
       },
       "Blue Dark": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{RAG.Information.20}"
       },
       "Warning": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{RAG.Warning.20}"
       },
       "Warning Light": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{RAG.Warning.100}"
       },
       "Critical Dark": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{RAG.Critical.20}"
       },
       "Success": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{RAG.Success.20}"
       },
       "Critical Light": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{RAG.Critical.100}"
       },
       "Interactive": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{Interactive.30}"
       },
       "Blue": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{RAG.Information.100}"
       },
       "Error Light": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{RAG.Error.100}"
       },
       "Success Light": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{RAG.Success.100}"
       },
       "Gray": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{Cool Gray.20}"
       },
       "Spruce": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{Spruce.20}"
       },
       "Error": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": true
+        },
         "$type": "color",
         "$value": "{RAG.Error.20}"
       }
@@ -163,102 +397,201 @@
   },
   "Ai Interactive": {
     "10": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
       "$type": "color",
       "$value": "#d4d4e8"
     },
     "15": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
       "$type": "color",
       "$value": "#bbbbdb"
     },
     "20": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
       "$type": "color",
       "$value": "#a2a2ce"
     },
     "25": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
       "$type": "color",
       "$value": "#8988c0"
     },
     "30": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
       "$type": "color",
       "$value": "#706fb3"
     },
     "35": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
       "$type": "color",
       "$value": "#5756a6"
     },
     "40": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
       "$type": "color",
       "$value": "#484786"
     },
     "45": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
       "$type": "color",
       "$value": "#403f74"
     },
     "50": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
       "$type": "color",
       "$value": "#373662"
     },
     "60": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
       "$type": "color",
       "$value": "#2f2e50"
     },
     "70": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
       "$type": "color",
       "$value": "#26263f"
     },
     "75": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
       "$type": "color",
       "$value": "#1a1924"
     },
     "80": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
       "$type": "color",
       "$value": "#15151b"
     },
     "90": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
       "$type": "color",
       "$value": "#121219"
     },
     "100": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
       "$type": "color",
       "$value": "#0e0e17"
     },
     "Shadow": {
       "Light": {
         "15": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
           "$type": "color",
           "$value": "#8988c026"
         },
         "20": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
           "$type": "color",
           "$value": "#8988c033"
         },
         "30": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
           "$type": "color",
           "$value": "#8988c04d"
         },
         "50": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
           "$type": "color",
           "$value": "#8988c080"
         }
       },
       "Dark": {
         "15": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
           "$type": "color",
           "$value": "#37366226"
         },
         "20": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
           "$type": "color",
           "$value": "#37366233"
         },
         "30": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
           "$type": "color",
           "$value": "#3736624d"
         },
         "50": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
           "$type": "color",
           "$value": "#37366280"
         },
         "15 2": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
           "$type": "color",
           "$value": "#373662"
         }
@@ -266,31 +599,58 @@
     },
     "Opaque": {
       "45-75Pct": {
+        "$extensions": {
+          "com.figma.hiddenFromPublishing": false
+        },
         "$type": "color",
         "$value": "#403f74bf"
       },
       "40-40Pct": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
         "$type": "color",
         "$value": "#48478666"
       },
       "30-80Pct": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
         "$type": "color",
         "$value": "#706fb3cc"
       },
       "45-5Pct": {
+        "$extensions": {
+          "com.figma.hiddenFromPublishing": false
+        },
         "$type": "color",
         "$value": "#403f741a"
       },
       "45-50Pct": {
+        "$extensions": {
+          "com.figma.hiddenFromPublishing": false
+        },
         "$type": "color",
         "$value": "#403f7480"
       }
     },
     "05": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
       "$type": "color",
       "$value": "#e1e1ef"
     },
     "01": {
+      "$extensions": {
+        "com.figma.hiddenFromPublishing": false
+      },
       "$type": "color",
       "$value": "#f5f5fa"
     }
@@ -299,48 +659,114 @@
     "RAG": {
       "3": {
         "Error": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
           "$type": "color",
           "$value": "{RAG.Error.100}"
         },
         "Warning": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
           "$type": "color",
           "$value": "{RAG.Warning.100}"
         },
         "Success": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
           "$type": "color",
           "$value": "{RAG.Success.100}"
         }
       },
       "8": {
         "Informational": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
           "$type": "color",
           "$value": "{RAG.Information.100}"
         },
         "Informational-light": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
           "$type": "color",
           "$value": "{RAG.Information.20}"
         },
         "Warning": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
           "$type": "color",
           "$value": "{RAG.Warning.100}"
         },
         "Warning-light": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
           "$type": "color",
           "$value": "{RAG.Warning.20}"
         },
         "Error": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
           "$type": "color",
           "$value": "{RAG.Error.100}"
         },
         "Error-light": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
           "$type": "color",
           "$value": "{RAG.Error.20}"
         },
         "Success": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
           "$type": "color",
           "$value": "{RAG.Success.100}"
         },
         "Success-light": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
           "$type": "color",
           "$value": "{RAG.Success.20}"
         }
@@ -351,14 +777,32 @@
     "Level": {
       "Ai": {
         "Primary": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
           "$type": "color",
           "$value": "{Ai Interactive.35}"
         },
         "Secondary": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
           "$type": "color",
           "$value": "{Ai Interactive.25}"
         },
         "Tertiary": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
           "$type": "color",
           "$value": "{Ai Interactive.10}"
         }
