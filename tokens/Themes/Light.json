@@ -1788,7 +1788,7 @@
             "com.figma.hiddenFromPublishing": false
           },
           "$type": "color",
-          "$value": "{Spring Green.30}"
+          "$value": "{Spring Green.40}"
         },
         "Pressed": {
           "$extensions": {
@@ -2881,7 +2881,7 @@
               "com.figma.hiddenFromPublishing": false
             },
             "$type": "color",
-            "$value": "{Neutral.Black}"
+            "$value": "{Sea.110}"
           },
           "Disabled": {
             "$extensions": {
@@ -2966,6 +2966,192 @@
             },
             "$type": "color",
             "$value": "{Neutral.White}"
+          },
+          "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Neutral.White}"
+          },
+          "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Neutral.White}"
+          },
+          "Selected": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Neutral.White}"
+          },
+          "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Neutral.White}"
+          },
+          "Disabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Dark Stone.40}"
+          }
+        },
+        "Low Outline": {
+          "Enabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Misc.Blue.75}"
+          },
+          "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Sea.105}"
+          },
+          "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Sea.90}"
+          },
+          "Selected": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Sea.110}"
+          },
+          "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Sea.110}"
+          },
+          "Disabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Dark Stone.40}"
+          }
+        },
+        "Medium Outline": {
+          "Enabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Misc.Blue.90}"
+          },
+          "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Sea.105}"
+          },
+          "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Sea.100}"
+          },
+          "Selected": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Sea.110}"
+          },
+          "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Neutral.White}"
+          },
+          "Disabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Dark Stone.40}"
+          }
+        },
+        "High Outline": {
+          "Enabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Sea.110}"
           },
           "Hover": {
             "$extensions": {
@@ -3664,6 +3850,192 @@
             },
             "$type": "color",
             "$value": "{Neutral.White}"
+          },
+          "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Neutral.White}"
+          },
+          "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Neutral.White}"
+          },
+          "Selected": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Neutral.White}"
+          },
+          "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Neutral.White}"
+          },
+          "Disabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Dark Stone.40}"
+          }
+        },
+        "Low Outline": {
+          "Enabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Misc.Blue.75}"
+          },
+          "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Sea.105}"
+          },
+          "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Sea.90}"
+          },
+          "Selected": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Sea.110}"
+          },
+          "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Sea.110}"
+          },
+          "Disabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Dark Stone.40}"
+          }
+        },
+        "Medium Outline": {
+          "Enabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Misc.Blue.90}"
+          },
+          "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Sea.105}"
+          },
+          "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Sea.100}"
+          },
+          "Selected": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Sea.110}"
+          },
+          "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Neutral.White}"
+          },
+          "Disabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Dark Stone.40}"
+          }
+        },
+        "High Outline": {
+          "Enabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Sea.110}"
           },
           "Hover": {
             "$extensions": {
@@ -4929,7 +5301,193 @@
               "com.figma.hiddenFromPublishing": false
             },
             "$type": "color",
-            "$value": "{Sea.70}"
+            "$value": "{Misc.Blue.90}"
+          },
+          "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Sea.90}"
+          },
+          "Selected": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Sea.110}"
+          },
+          "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Sea.90}"
+          },
+          "Disabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Opacity.Dark.20}"
+          }
+        },
+        "Low Outline": {
+          "Enabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Misc.Blue.50}"
+          },
+          "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Misc.Blue.70}"
+          },
+          "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Misc.Blue.70}"
+          },
+          "Selected": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Misc.Blue.100}"
+          },
+          "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Misc.Blue.90}"
+          },
+          "Disabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Opacity.Dark.20}"
+          }
+        },
+        "Medium Outline": {
+          "Enabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Misc.Blue.80}"
+          },
+          "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Sea.80}"
+          },
+          "Focused": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Sea.80}"
+          },
+          "Selected": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Sea.105}"
+          },
+          "Pressed": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Sea.90}"
+          },
+          "Disabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Opacity.Dark.20}"
+          }
+        },
+        "High Outline": {
+          "Enabled": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Sea.105}"
+          },
+          "Hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "$type": "color",
+            "$value": "{Misc.Blue.90}"
           },
           "Focused": {
             "$extensions": {

@@ -1793,6 +1793,16 @@
         "$type": "color",
         "$value": "#3082af"
       },
+      "75": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "$type": "color",
+        "$value": "#2e7ba5"
+      },
       "80": {
         "$extensions": {
           "com.figma.hiddenFromPublishing": false
