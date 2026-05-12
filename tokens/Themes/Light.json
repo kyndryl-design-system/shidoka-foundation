@@ -1788,7 +1788,7 @@
             "com.figma.hiddenFromPublishing": false
           },
           "$type": "color",
-          "$value": "{Spring Green.40}"
+          "$value": "{Spring Green.30}"
         },
         "Pressed": {
           "$extensions": {
@@ -1798,7 +1798,7 @@
             "com.figma.hiddenFromPublishing": false
           },
           "$type": "color",
-          "$value": "{Spring Green.70}"
+          "$value": "{Spring Green.60}"
         },
         "Disabled": {
           "$extensions": {
@@ -2716,7 +2716,7 @@
             "com.figma.hiddenFromPublishing": false
           },
           "$type": "color",
-          "$value": "{Misc.Yellow.100}"
+          "$value": "{Amber.80}"
         },
         "Hover": {
           "$extensions": {
@@ -2778,7 +2778,7 @@
             "com.figma.hiddenFromPublishing": false
           },
           "$type": "color",
-          "$value": "{Spring Green.100}"
+          "$value": "{Spring Green.70}"
         },
         "Hover": {
           "$extensions": {
@@ -3600,7 +3600,7 @@
             "com.figma.hiddenFromPublishing": false
           },
           "$type": "color",
-          "$value": "{Misc.Yellow.100}"
+          "$value": "{Amber.80}"
         },
         "Hover": {
           "$extensions": {
@@ -3662,7 +3662,7 @@
             "com.figma.hiddenFromPublishing": false
           },
           "$type": "color",
-          "$value": "{Spring Green.100}"
+          "$value": "{Spring Green.70}"
         },
         "Hover": {
           "$extensions": {
