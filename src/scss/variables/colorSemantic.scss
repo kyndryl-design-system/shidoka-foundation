@@ -561,6 +561,8 @@
   --kd-color-status-critical-light: light-dark(var(--kd-color-rag-critical-20), var(--kd-color-rag-critical-20));
   --kd-color-status-critical-foreground: light-dark(var(--kd-color-rag-critical-100), var(--kd-color-neutral-white));
   --kd-color-status-critical-accent: light-dark(var(--kd-color-misc-red-light), var(--kd-color-misc-red-80));
+  --kd-color-status-read: light-dark(var(--kd-color-interactive-3), var(--kd-color-interactive-107));
+  --kd-color-status-unread: light-dark(var(--kd-color-spruce-15), var(--kd-color-spruce-90));
   --kd-color-data-viz-categorical-01-10: light-dark(var(--kd-color-lilac-20), var(--kd-color-lilac-30));
   --kd-color-data-viz-categorical-01-09: light-dark(var(--kd-color-blush-40), var(--kd-color-blush-10));
   --kd-color-data-viz-categorical-01-08: light-dark(var(--kd-color-amber-20), var(--kd-color-amber-30));
