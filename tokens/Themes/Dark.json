@@ -5909,6 +5909,26 @@
         "$type": "color",
         "$value": "{Misc.Red.80}"
       }
+    },
+    "Read": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{Interactive.107}"
+    },
+    "Unread": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{Spruce.90}"
     }
   },
   "Data Viz": {

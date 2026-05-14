@@ -1217,7 +1217,9 @@
       "Icon.Status Buttons.Information.High Outline.Focused": "561c5babb189d9248a7701f5b6843365ff29d2ef",
       "Icon.Status Buttons.Information.High Outline.Selected": "bfc08d709199f032e5518ee20dfa22a3fbab281e",
       "Icon.Status Buttons.Information.High Outline.Pressed": "9a1ca8f7dc98add77f31fa0ede75442026602d0c",
-      "Icon.Status Buttons.Information.High Outline.Disabled": "b16a466deabbee83a541affcb5fb7bb4e126bf51"
+      "Icon.Status Buttons.Information.High Outline.Disabled": "b16a466deabbee83a541affcb5fb7bb4e126bf51",
+      "Status.Read": "595a6b5d977357675b61de54daab4bf5917c2194",
+      "Status.Unread": "327c15cfb25a3e88375b602b3e9e1575535ad507"
     },
     "$figmaModeId": "114:4",
     "$figmaCollectionId": "VariableCollectionId:114:768"
@@ -2082,7 +2084,9 @@
       "Icon.Status Buttons.Information.High Outline.Focused": "561c5babb189d9248a7701f5b6843365ff29d2ef",
       "Icon.Status Buttons.Information.High Outline.Selected": "bfc08d709199f032e5518ee20dfa22a3fbab281e",
       "Icon.Status Buttons.Information.High Outline.Pressed": "9a1ca8f7dc98add77f31fa0ede75442026602d0c",
-      "Icon.Status Buttons.Information.High Outline.Disabled": "b16a466deabbee83a541affcb5fb7bb4e126bf51"
+      "Icon.Status Buttons.Information.High Outline.Disabled": "b16a466deabbee83a541affcb5fb7bb4e126bf51",
+      "Status.Read": "595a6b5d977357675b61de54daab4bf5917c2194",
+      "Status.Unread": "327c15cfb25a3e88375b602b3e9e1575535ad507"
     },
     "$figmaModeId": "13995:1",
     "$figmaCollectionId": "VariableCollectionId:114:768"
@@ -2947,7 +2951,9 @@
       "Icon.Status Buttons.Information.High Outline.Focused": "561c5babb189d9248a7701f5b6843365ff29d2ef",
       "Icon.Status Buttons.Information.High Outline.Selected": "bfc08d709199f032e5518ee20dfa22a3fbab281e",
       "Icon.Status Buttons.Information.High Outline.Pressed": "9a1ca8f7dc98add77f31fa0ede75442026602d0c",
-      "Icon.Status Buttons.Information.High Outline.Disabled": "b16a466deabbee83a541affcb5fb7bb4e126bf51"
+      "Icon.Status Buttons.Information.High Outline.Disabled": "b16a466deabbee83a541affcb5fb7bb4e126bf51",
+      "Status.Read": "595a6b5d977357675b61de54daab4bf5917c2194",
+      "Status.Unread": "327c15cfb25a3e88375b602b3e9e1575535ad507"
     },
     "$figmaModeId": "18419:1",
     "$figmaCollectionId": "VariableCollectionId:114:768"
