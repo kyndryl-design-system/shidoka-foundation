@@ -12,6 +12,9 @@
   --kd-color-background-container-tertiary: light-dark(var(--kd-color-opacity-dark-3), var(--kd-color-opacity-light-5));
   --kd-color-background-container-overlay-background: light-dark(var(--kd-color-neutral-white), var(--kd-color-interactive-107));
   --kd-color-background-container-overlay-footer: light-dark(var(--kd-color-interactive-5), var(--kd-color-interactive-105));
+  --kd-color-background-container-misc-cloud: light-dark(var(--kd-color-cloud-100), var(--kd-color-cloud-10));
+  --kd-color-background-container-misc-spruce: light-dark(var(--kd-color-spruce-100), var(--kd-color-spruce-10));
+  --kd-color-background-container-misc-spring: light-dark(var(--kd-color-spring-green-90), var(--kd-color-spring-green-10));
   --kd-color-background-ui-default-dark: light-dark(var(--kd-color-dark-stone-80), var(--kd-color-cool-gray-10));
   --kd-color-background-ui-default-brand: light-dark(var(--kd-color-warm-red-50-brand), var(--kd-color-warm-red-50-brand));
   --kd-color-background-ui-default-default: light-dark(var(--kd-color-dark-stone-50), var(--kd-color-cool-gray-10));
@@ -561,8 +564,6 @@
   --kd-color-status-critical-light: light-dark(var(--kd-color-rag-critical-20), var(--kd-color-rag-critical-20));
   --kd-color-status-critical-foreground: light-dark(var(--kd-color-rag-critical-100), var(--kd-color-neutral-white));
   --kd-color-status-critical-accent: light-dark(var(--kd-color-misc-red-light), var(--kd-color-misc-red-80));
-  --kd-color-status-read: light-dark(var(--kd-color-interactive-3), var(--kd-color-interactive-107));
-  --kd-color-status-unread: light-dark(var(--kd-color-spruce-15), var(--kd-color-spruce-90));
   --kd-color-data-viz-categorical-01-10: light-dark(var(--kd-color-lilac-20), var(--kd-color-lilac-30));
   --kd-color-data-viz-categorical-01-09: light-dark(var(--kd-color-blush-40), var(--kd-color-blush-10));
   --kd-color-data-viz-categorical-01-08: light-dark(var(--kd-color-amber-20), var(--kd-color-amber-30));
@@ -853,6 +854,10 @@
   --kd-color-ai-selected: light-dark(var(--kd-color-spruce-15), var(--kd-color-spruce-60));
   --kd-color-ai-pressed: light-dark(var(--kd-color-spruce-30), var(--kd-color-spruce-90));
   --kd-color-ai-disabled: light-dark(var(--kd-color-warm-gray-10), var(--kd-color-warm-gray-90));
+  --kd-color-temporary-background-read: light-dark(var(--kd-color-interactive-3), var(--kd-color-interactive-107));
+  --kd-color-temporary-background-unread: light-dark(var(--kd-color-spruce-15), var(--kd-color-spruce-90));
+  --kd-color-temporary-border-read: light-dark(var(--kd-color-interactive-3), var(--kd-color-interactive-107));
+  --kd-color-temporary-border-unread: light-dark(var(--kd-color-spruce-30), var(--kd-color-spruce-60));
   --kd-color-tags-background-blue: light-dark(var(--kd-color-rag-information-20), var(--kd-color-rag-information-20));
   --kd-color-tags-background-warning: light-dark(var(--kd-color-rag-warning-20), var(--kd-color-rag-warning-20));
   --kd-color-tags-background-success: light-dark(var(--kd-color-rag-success-20), var(--kd-color-rag-success-20));
