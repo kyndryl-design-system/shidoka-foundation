@@ -134,6 +134,38 @@
           "$type": "color",
           "$value": "{Interactive.5}"
         }
+      },
+      "Misc": {
+        "Cloud": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "$type": "color",
+          "$value": "{Cloud.100}"
+        },
+        "Spruce": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "$type": "color",
+          "$value": "{Spruce.100}"
+        },
+        "Spring": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "$type": "color",
+          "$value": "{Spring Green.90}"
+        }
       }
     },
     "UI": {
@@ -5909,26 +5941,6 @@
         "$type": "color",
         "$value": "{Misc.Red.Light}"
       }
-    },
-    "Read": {
-      "$extensions": {
-        "com.figma.scopes": [
-          "ALL_SCOPES"
-        ],
-        "com.figma.hiddenFromPublishing": false
-      },
-      "$type": "color",
-      "$value": "{Interactive.3}"
-    },
-    "Unread": {
-      "$extensions": {
-        "com.figma.scopes": [
-          "ALL_SCOPES"
-        ],
-        "com.figma.hiddenFromPublishing": false
-      },
-      "$type": "color",
-      "$value": "{Spruce.15}"
     }
   },
   "Data Viz": {
@@ -8933,6 +8945,52 @@
       },
       "$type": "color",
       "$value": "{Warm Gray.10}"
+    }
+  },
+  "Temporary": {
+    "Background": {
+      "Read": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "$type": "color",
+        "$value": "{Interactive.3}"
+      },
+      "Unread": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "$type": "color",
+        "$value": "{Spruce.15}"
+      }
+    },
+    "Border": {
+      "Read": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "$type": "color",
+        "$value": "{Interactive.3}"
+      },
+      "Unread": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "$type": "color",
+        "$value": "{Spruce.30}"
+      }
     }
   }
 }

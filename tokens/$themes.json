@@ -1218,8 +1218,13 @@
       "Icon.Status Buttons.Information.High Outline.Selected": "bfc08d709199f032e5518ee20dfa22a3fbab281e",
       "Icon.Status Buttons.Information.High Outline.Pressed": "9a1ca8f7dc98add77f31fa0ede75442026602d0c",
       "Icon.Status Buttons.Information.High Outline.Disabled": "b16a466deabbee83a541affcb5fb7bb4e126bf51",
-      "Status.Read": "595a6b5d977357675b61de54daab4bf5917c2194",
-      "Status.Unread": "327c15cfb25a3e88375b602b3e9e1575535ad507"
+      "Temporary.Background.Read": "595a6b5d977357675b61de54daab4bf5917c2194",
+      "Temporary.Background.Unread": "327c15cfb25a3e88375b602b3e9e1575535ad507",
+      "Temporary.Border.Read": "87cc5e391abf852e323db92966c080fc90bd9995",
+      "Temporary.Border.Unread": "2206f452eafd2e883ac73e14672fd790f85405da",
+      "Background.Container.Misc.Cloud": "74a56a66a589d0df2e479114fefce5d4cc52f95f",
+      "Background.Container.Misc.Spruce": "265e27ec47e282f2f6c7dd4a676ed21945d6b400",
+      "Background.Container.Misc.Spring": "4a72ab97a632970c87cf6b0c068361b13d32bc66"
     },
     "$figmaModeId": "114:4",
     "$figmaCollectionId": "VariableCollectionId:114:768"
@@ -2085,8 +2090,13 @@
       "Icon.Status Buttons.Information.High Outline.Selected": "bfc08d709199f032e5518ee20dfa22a3fbab281e",
       "Icon.Status Buttons.Information.High Outline.Pressed": "9a1ca8f7dc98add77f31fa0ede75442026602d0c",
       "Icon.Status Buttons.Information.High Outline.Disabled": "b16a466deabbee83a541affcb5fb7bb4e126bf51",
-      "Status.Read": "595a6b5d977357675b61de54daab4bf5917c2194",
-      "Status.Unread": "327c15cfb25a3e88375b602b3e9e1575535ad507"
+      "Temporary.Background.Read": "595a6b5d977357675b61de54daab4bf5917c2194",
+      "Temporary.Background.Unread": "327c15cfb25a3e88375b602b3e9e1575535ad507",
+      "Temporary.Border.Read": "87cc5e391abf852e323db92966c080fc90bd9995",
+      "Temporary.Border.Unread": "2206f452eafd2e883ac73e14672fd790f85405da",
+      "Background.Container.Misc.Cloud": "74a56a66a589d0df2e479114fefce5d4cc52f95f",
+      "Background.Container.Misc.Spruce": "265e27ec47e282f2f6c7dd4a676ed21945d6b400",
+      "Background.Container.Misc.Spring": "4a72ab97a632970c87cf6b0c068361b13d32bc66"
     },
     "$figmaModeId": "13995:1",
     "$figmaCollectionId": "VariableCollectionId:114:768"
@@ -2952,8 +2962,13 @@
       "Icon.Status Buttons.Information.High Outline.Selected": "bfc08d709199f032e5518ee20dfa22a3fbab281e",
       "Icon.Status Buttons.Information.High Outline.Pressed": "9a1ca8f7dc98add77f31fa0ede75442026602d0c",
       "Icon.Status Buttons.Information.High Outline.Disabled": "b16a466deabbee83a541affcb5fb7bb4e126bf51",
-      "Status.Read": "595a6b5d977357675b61de54daab4bf5917c2194",
-      "Status.Unread": "327c15cfb25a3e88375b602b3e9e1575535ad507"
+      "Temporary.Background.Read": "595a6b5d977357675b61de54daab4bf5917c2194",
+      "Temporary.Background.Unread": "327c15cfb25a3e88375b602b3e9e1575535ad507",
+      "Temporary.Border.Read": "87cc5e391abf852e323db92966c080fc90bd9995",
+      "Temporary.Border.Unread": "2206f452eafd2e883ac73e14672fd790f85405da",
+      "Background.Container.Misc.Cloud": "74a56a66a589d0df2e479114fefce5d4cc52f95f",
+      "Background.Container.Misc.Spruce": "265e27ec47e282f2f6c7dd4a676ed21945d6b400",
+      "Background.Container.Misc.Spring": "4a72ab97a632970c87cf6b0c068361b13d32bc66"
     },
     "$figmaModeId": "18419:1",
     "$figmaCollectionId": "VariableCollectionId:114:768"
