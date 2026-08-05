@@ -30,15 +30,29 @@ export function getPreferredColorScheme() {
 }
 
 const LIGHT_DARK_PREFIX = 'light-dark(';
+const HEX_COLOR_PATTERN =
+  /^#(?:[0-9a-fA-F]{3}|[0-9a-fA-F]{4}|[0-9a-fA-F]{6}|[0-9a-fA-F]{8})$/;
+const CSS_COLOR_FUNCTION_PATTERN =
+  /^(?:rgba?|hsla?|hwb|lab|lch|oklab|oklch|color)\(/i;
+const CSS_VAR_PATTERN =
+  /^var\(\s*(--[\w-]+)\s*(?:,\s*((?:[^()]+|\([^()]*\))*))?\s*\)$/i;
 
 function isLightDarkFunction(value: string): boolean {
   const normalized = value.trim().toLowerCase();
   return normalized.startsWith(LIGHT_DARK_PREFIX) && normalized.endsWith(')');
 }
 
+function isHexColor(value: string): boolean {
+  return HEX_COLOR_PATTERN.test(value.trim());
+}
+
+function isCssColorFunction(value: string): boolean {
+  return CSS_COLOR_FUNCTION_PATTERN.test(value.trim());
+}
+
 /**
  * Split `light-dark(light, dark)` into channels without breaking on commas inside
- * nested functions such as `rgb(1, 2, 3)`.
+ * nested functions such as `rgb(1, 2, 3)` or `var(--token, fallback)`.
  */
 function parseLightDark(value: string): { light: string; dark: string } | null {
   const trimmed = value.trim();
@@ -96,6 +110,7 @@ function supportsLightDark(): boolean {
 
 /**
  * Resolve `var(--token)` through the cascade so the browser evaluates `light-dark()`.
+ * Used only when a concrete authored channel (especially hex) is unavailable.
  */
 function resolveTokenColorViaProbe(token: string): string {
   const probe = document.createElement('span');
@@ -106,26 +121,107 @@ function resolveTokenColorViaProbe(token: string): string {
   return resolved;
 }
 
+function warnUnresolved(token: string, detail: string): void {
+  if (typeof console !== 'undefined' && typeof console.warn === 'function') {
+    console.warn(`getTokenThemeVal('${token}'): ${detail}`);
+  }
+}
+
+/**
+ * Resolve a channel or concrete color value without forcing rgb() when hex is available.
+ * Preserves `#RRGGBB` so consumers that append hex alpha (e.g. `color + '80'`) keep working.
+ */
+function resolveColorValue(
+  value: string,
+  originalToken: string,
+  seen: Set<string>
+): string {
+  const trimmed = value.trim();
+  if (!trimmed) {
+    return '';
+  }
+
+  if (isHexColor(trimmed) || isCssColorFunction(trimmed)) {
+    return trimmed;
+  }
+
+  if (isLightDarkFunction(trimmed)) {
+    const parsed = parseLightDark(trimmed);
+    if (!parsed) {
+      return '';
+    }
+    const channel = preferDarkScheme() ? parsed.dark : parsed.light;
+    return resolveColorValue(channel, originalToken, seen);
+  }
+
+  const varMatch = trimmed.match(CSS_VAR_PATTERN);
+  if (varMatch) {
+    const nestedToken = varMatch[1];
+    const fallback = varMatch[2]?.trim();
+
+    if (seen.has(nestedToken)) {
+      warnUnresolved(
+        originalToken,
+        `circular custom property reference at "${nestedToken}".`
+      );
+      return fallback ? resolveColorValue(fallback, originalToken, seen) : '';
+    }
+
+    seen.add(nestedToken);
+    const nestedRaw = getComputedStyle(document.documentElement)
+      .getPropertyValue(nestedToken)
+      .trim();
+
+    if (nestedRaw) {
+      const resolvedNested = resolveColorValue(nestedRaw, nestedToken, seen);
+      if (resolvedNested) {
+        return resolvedNested;
+      }
+    }
+
+    if (fallback) {
+      return resolveColorValue(fallback, originalToken, seen);
+    }
+
+    return '';
+  }
+
+  // Last resort: cascade probe (typically yields rgb()/rgba()).
+  if (supportsLightDark()) {
+    const probed = resolveTokenColorViaProbe(originalToken);
+    if (probed && !isLightDarkFunction(probed)) {
+      return probed;
+    }
+  }
+
+  return trimmed;
+}
+
 /**
  * Resolve a design-token CSS custom property to a concrete color for the active
  * color scheme.
  *
- * Prefers cascade resolution (`var(--token)` → computed `color`) so browsers that
- * already evaluate `light-dark()` are not broken by string-splitting. Falls back to
- * parsing a literal `light-dark(light, dark)` value when needed.
+ * Resolution order is intentionally charts-safe:
+ * 1. Return already-resolved concrete colors as-is (do not string-split them).
+ * 2. For literal `light-dark(...)`, pick the scheme channel with a paren-aware
+ *    parser and preserve hex when present (so `color + '80'` keeps working).
+ * 3. Resolve nested `var(--token)` channels.
+ * 4. Probe via computed `color` only when a authored hex/channel is unavailable.
+ *
+ * Missing tokens return `''` (with a console warning) to preserve existing
+ * falsy fallbacks such as `getTokenThemeVal(token) || hex`.
  *
  * @param token - CSS custom property name, e.g. `--kd-color-background-ui`.
- * @returns A concrete color string (often `rgb(...)` or `#RRGGBB`).
- * @throws If the token is missing/empty or cannot be resolved.
+ * @returns A concrete color string (preferably `#RRGGBB` when authored that way),
+ * or `''` when unresolved.
  *
  * Ensure `<meta name="color-scheme" content="light dark">` (or `light` / `dark`)
  * is present when tokens use `light-dark()`.
  */
 export function getTokenThemeVal(token: string): string {
   if (typeof document === 'undefined') {
-    throw new Error(
-      `getTokenThemeVal('${token}') requires a browser document environment.`
-    );
+    warnUnresolved(token, 'requires a browser document environment.');
+    return '';
   }
 
   const raw = getComputedStyle(document.documentElement)
@@ -133,31 +229,15 @@ export function getTokenThemeVal(token: string): string {
     .trim();
 
   if (!raw) {
-    throw new Error(
-      `getTokenThemeVal('${token}'): CSS custom property is not defined or is empty.`
-    );
+    warnUnresolved(token, 'CSS custom property is not defined or is empty.');
+    return '';
   }
 
-  // Engine already returned a concrete color — do not string-split it.
-  if (!isLightDarkFunction(raw)) {
-    return raw;
+  const resolved = resolveColorValue(raw, token, new Set([token]));
+  if (!resolved) {
+    warnUnresolved(token, `could not resolve color from value "${raw}".`);
+    return '';
   }
 
-  // Literal light-dark(...): prefer cascade resolution when the engine supports it.
-  if (supportsLightDark()) {
-    const probed = resolveTokenColorViaProbe(token);
-    if (probed && !isLightDarkFunction(probed)) {
-      return probed;
-    }
-  }
-
-  // Fallback: pick a channel from meta / prefers-color-scheme.
-  const parsed = parseLightDark(raw);
-  if (parsed) {
-    return preferDarkScheme() ? parsed.dark : parsed.light;
-  }
-
-  throw new Error(
-    `getTokenThemeVal('${token}'): could not resolve color from value "${raw}".`
-  );
+  return resolved;
 }
