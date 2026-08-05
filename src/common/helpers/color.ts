@@ -29,39 +29,135 @@ export function getPreferredColorScheme() {
   return 'light';
 }
 
+const LIGHT_DARK_PREFIX = 'light-dark(';
+
+function isLightDarkFunction(value: string): boolean {
+  const normalized = value.trim().toLowerCase();
+  return normalized.startsWith(LIGHT_DARK_PREFIX) && normalized.endsWith(')');
+}
+
 /**
- * The function `getTokenThemeVal` retrieves the appropriate color value based on the current color
- * scheme and preferred color scheme.
- * @param {string} token - The `getTokenThemeVal` function takes a `token` parameter, which is a string
- * representing a CSS variable name. The function retrieves the computed value of the CSS variable
- * specified by the `token` parameter and returns the appropriate color value based on the color scheme
- * (light or dark) and preferred color
- * @returns The `getTokenThemeVal` function returns the appropriate color value based on the color
- * scheme and preferred color scheme. If the color scheme is 'light dark' and the preferred color
- * scheme is 'dark', it returns the second color from the `lightDarkColors` array. If the color scheme
- * is 'light dark' and the preferred color scheme is not 'dark', it returns the first color from the
+ * Split `light-dark(light, dark)` into channels without breaking on commas inside
+ * nested functions such as `rgb(1, 2, 3)`.
  */
-export function getTokenThemeVal(token: string) {
-  const computedValue = getComputedStyle(
-    document.documentElement
-  ).getPropertyValue(token);
-
-  const lightDarkColors = computedValue
-    .split('light-dark(')
-    .join('')
-    .split(')')
-    .join('')
-    .split(', ');
-
-  if (getColorScheme() === 'light dark') {
-    if (getPreferredColorScheme() === 'dark') {
-      return lightDarkColors[1];
-    } else {
-      return lightDarkColors[0];
-    }
-  } else if (getColorScheme() === 'dark') {
-    return lightDarkColors[1];
-  } else {
-    return lightDarkColors[0];
+function parseLightDark(value: string): { light: string; dark: string } | null {
+  const trimmed = value.trim();
+  if (!isLightDarkFunction(trimmed)) {
+    return null;
   }
+
+  const inner = trimmed.slice(LIGHT_DARK_PREFIX.length, -1);
+  let depth = 0;
+  let commaIndex = -1;
+
+  for (let i = 0; i < inner.length; i++) {
+    const char = inner[i];
+    if (char === '(') {
+      depth++;
+    } else if (char === ')') {
+      depth--;
+    } else if (char === ',' && depth === 0) {
+      commaIndex = i;
+      break;
+    }
+  }
+
+  if (commaIndex === -1) {
+    return null;
+  }
+
+  const light = inner.slice(0, commaIndex).trim();
+  const dark = inner.slice(commaIndex + 1).trim();
+  if (!light || !dark) {
+    return null;
+  }
+
+  return { light, dark };
+}
+
+function preferDarkScheme(): boolean {
+  const scheme = getColorScheme();
+  if (scheme === 'dark') {
+    return true;
+  }
+  if (scheme === 'light dark') {
+    return getPreferredColorScheme() === 'dark';
+  }
+  return false;
+}
+
+function supportsLightDark(): boolean {
+  return (
+    typeof CSS !== 'undefined' &&
+    typeof CSS.supports === 'function' &&
+    CSS.supports('color', 'light-dark(#000, #fff)')
+  );
+}
+
+/**
+ * Resolve `var(--token)` through the cascade so the browser evaluates `light-dark()`.
+ */
+function resolveTokenColorViaProbe(token: string): string {
+  const probe = document.createElement('span');
+  probe.style.color = `var(${token})`;
+  document.documentElement.appendChild(probe);
+  const resolved = getComputedStyle(probe).color.trim();
+  probe.remove();
+  return resolved;
+}
+
+/**
+ * Resolve a design-token CSS custom property to a concrete color for the active
+ * color scheme.
+ *
+ * Prefers cascade resolution (`var(--token)` → computed `color`) so browsers that
+ * already evaluate `light-dark()` are not broken by string-splitting. Falls back to
+ * parsing a literal `light-dark(light, dark)` value when needed.
+ *
+ * @param token - CSS custom property name, e.g. `--kd-color-background-ui`.
+ * @returns A concrete color string (often `rgb(...)` or `#RRGGBB`).
+ * @throws If the token is missing/empty or cannot be resolved.
+ *
+ * Ensure `<meta name="color-scheme" content="light dark">` (or `light` / `dark`)
+ * is present when tokens use `light-dark()`.
+ */
+export function getTokenThemeVal(token: string): string {
+  if (typeof document === 'undefined') {
+    throw new Error(
+      `getTokenThemeVal('${token}') requires a browser document environment.`
+    );
+  }
+
+  const raw = getComputedStyle(document.documentElement)
+    .getPropertyValue(token)
+    .trim();
+
+  if (!raw) {
+    throw new Error(
+      `getTokenThemeVal('${token}'): CSS custom property is not defined or is empty.`
+    );
+  }
+
+  // Engine already returned a concrete color — do not string-split it.
+  if (!isLightDarkFunction(raw)) {
+    return raw;
+  }
+
+  // Literal light-dark(...): prefer cascade resolution when the engine supports it.
+  if (supportsLightDark()) {
+    const probed = resolveTokenColorViaProbe(token);
+    if (probed && !isLightDarkFunction(probed)) {
+      return probed;
+    }
+  }
+
+  // Fallback: pick a channel from meta / prefers-color-scheme.
+  const parsed = parseLightDark(raw);
+  if (parsed) {
+    return preferDarkScheme() ? parsed.dark : parsed.light;
+  }
+
+  throw new Error(
+    `getTokenThemeVal('${token}'): could not resolve color from value "${raw}".`
+  );
 }
