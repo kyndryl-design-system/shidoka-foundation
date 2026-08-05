@@ -34,8 +34,7 @@ const HEX_COLOR_PATTERN =
   /^#(?:[0-9a-fA-F]{3}|[0-9a-fA-F]{4}|[0-9a-fA-F]{6}|[0-9a-fA-F]{8})$/;
 const CSS_COLOR_FUNCTION_PATTERN =
   /^(?:rgba?|hsla?|hwb|lab|lch|oklab|oklch|color)\(/i;
-const CSS_VAR_PATTERN =
-  /^var\(\s*(--[\w-]+)\s*(?:,\s*((?:[^()]+|\([^()]*\))*))?\s*\)$/i;
+const CSS_VAR_NAME_PATTERN = /^--[\w-]+$/;
 
 function isLightDarkFunction(value: string): boolean {
   const normalized = value.trim().toLowerCase();
@@ -48,6 +47,51 @@ function isHexColor(value: string): boolean {
 
 function isCssColorFunction(value: string): boolean {
   return CSS_COLOR_FUNCTION_PATTERN.test(value.trim());
+}
+
+/**
+ * Parse `var(--token)` / `var(--token, fallback)` without nested regex quantifiers
+ * (avoids ReDoS on malformed input). Fallback may legally contain commas.
+ */
+function parseCssVar(
+  value: string
+): { token: string; fallback?: string } | null {
+  const trimmed = value.trim();
+  if (!trimmed.toLowerCase().startsWith('var(') || !trimmed.endsWith(')')) {
+    return null;
+  }
+
+  const inner = trimmed.slice(4, -1).trim();
+  if (!inner.startsWith('--')) {
+    return null;
+  }
+
+  let depth = 0;
+  let commaIndex = -1;
+  for (let i = 0; i < inner.length; i++) {
+    const char = inner[i];
+    if (char === '(') {
+      depth++;
+    } else if (char === ')') {
+      depth--;
+    } else if (char === ',' && depth === 0) {
+      commaIndex = i;
+      break;
+    }
+  }
+
+  if (commaIndex === -1) {
+    const token = inner.trim();
+    return CSS_VAR_NAME_PATTERN.test(token) ? { token } : null;
+  }
+
+  const token = inner.slice(0, commaIndex).trim();
+  const fallback = inner.slice(commaIndex + 1).trim();
+  if (!CSS_VAR_NAME_PATTERN.test(token)) {
+    return null;
+  }
+
+  return fallback ? { token, fallback } : { token };
 }
 
 /**
@@ -154,10 +198,10 @@ function resolveColorValue(
     return resolveColorValue(channel, originalToken, seen);
   }
 
-  const varMatch = trimmed.match(CSS_VAR_PATTERN);
-  if (varMatch) {
-    const nestedToken = varMatch[1];
-    const fallback = varMatch[2]?.trim();
+  const cssVar = parseCssVar(trimmed);
+  if (cssVar) {
+    const nestedToken = cssVar.token;
+    const fallback = cssVar.fallback;
 
     if (seen.has(nestedToken)) {
       warnUnresolved(
