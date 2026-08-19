@@ -79,6 +79,8 @@ jobs:
     # needs: [Build_Storybook]
     timeout-minutes: 60
     runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.62.1-noble
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -91,20 +93,7 @@ jobs:
       - name: Install dependencies
         run: npm ci --legacy-peer-deps
 
-      - name: Install Playwright
-        run: npx playwright@latest install --with-deps
-
-      # - name: Download build-storybook artifact
-      #   uses: actions/download-artifact@v4
-      #   with:
-      #     name: build-storybook-artifact
-      #     path: storybook-static
-
-      # - name: Serve Storybook and run tests
-      #   run: |
-      #     npx concurrently -k -s first -n "SB,TEST" -c "magenta,blue" \
-      #       "npx http-server storybook-static --port 6006 --silent" \
-      #       "npx wait-on tcp:6006 && npm run test"
-
       - name: Run tests
+        env:
+          HOME: /root
         run: npm run test
