@@ -5,6 +5,9 @@ on:
   workflow_call:
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 env:
   GH_TOKEN: '${{ secrets.GH_TOKEN }}'
 
