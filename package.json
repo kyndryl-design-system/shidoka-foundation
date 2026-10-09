@@ -54,8 +54,8 @@
     "@storybook/web-components-vite": "^10.2.13",
     "@typescript-eslint/eslint-plugin": "^5.48.1",
     "@typescript-eslint/parser": "^5.48.1",
-    "@vitest/browser-playwright": "^4.1.8",
-    "@vitest/coverage-v8": "^4.1.8",
+    "@vitest/browser-playwright": "^4.1.11",
+    "@vitest/coverage-v8": "^4.1.11",
     "axe-playwright": "^2.0.1",
     "chromatic": "^11.2.0",
     "copy-to-clipboard": "^3.3.3",
@@ -82,7 +82,7 @@
     "storybook": "^10.2.13",
     "typescript": "^4.9.4",
     "vite": "^7.3.6",
-    "vitest": "^4.1.10"
+    "vitest": "^4.1.11"
   },
   "customElements": "custom-elements.json",
   "lint-staged": {
@@ -90,6 +90,12 @@
     "*.{js,ts,json,css,scss,md,mdx}": "prettier --write"
   },
   "overrides": {
-    "storybook": "$storybook"
+    "storybook": "$storybook",
+    "postcss-modules-local-by-default": {
+      "postcss-selector-parser": "^7.1.6"
+    },
+    "postcss-modules-scope": {
+      "postcss-selector-parser": "^7.1.6"
+    }
   }
 }
